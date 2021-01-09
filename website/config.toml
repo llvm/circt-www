@@ -18,7 +18,7 @@ disablePathToLower = true
 [Params]
 
     # Souce Code repository section
-    description = "Multi-Level IR Compiler Framework"
+    description = "Circuit IR Compilers and Tools"
     # Update menubar link too.
     # TODO(jpienaar): Find a way that doesn't duplicate it or
     # require redirect.

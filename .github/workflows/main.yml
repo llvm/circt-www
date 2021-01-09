@@ -52,7 +52,7 @@ jobs:
 
     - name: Build Website
       run: (cd website && hugo --minify -d ../public &&
-            echo -n mlir.llvm.org > ../public/CNAME )
+            echo -n circt.llvm.org > ../public/CNAME )
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3

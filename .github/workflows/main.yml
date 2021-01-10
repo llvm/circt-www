@@ -6,7 +6,7 @@ on:
     - main
   schedule:
     # Always regenerate once every 4 hour
-    - cron:  '27 */4 * * *'
+    - cron:  '15 */4 * * *'
 
 jobs:
   build-deploy:

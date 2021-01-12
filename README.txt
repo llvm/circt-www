@@ -6,8 +6,8 @@ from the `gh-pages` branch of the same repo using GitHub pages.
 To contribute, feel free to fork this repository and send a pull-request.
 
 The website is deployed on every push to this repository using a GitHub
-action defined in `.github/workflows/main.yml`. It also runs every 4 hours
-to catch updates from the CIRCT source repository, which
+action defined in `.github/workflows/main.yml`. It also runs once at the end of 
+every day to catch updates from the CIRCT source repository, which
 is used for generating some docs.
 
 We are using the [Hugo](https://gohugo.io/) framework for generating the
@@ -23,4 +23,3 @@ hugo server.
 A large part of the documentation is auto-generated from the CIRCT source
 code. See the workflow `.github/workflows/main.yml` for the instructions
 to reproduce the entirety of https://circt.llvm.org/ locally.
-

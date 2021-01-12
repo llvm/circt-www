@@ -7,7 +7,7 @@ To contribute, feel free to fork this repository and send a pull-request.
 
 The website is deployed on every push to this repository using a GitHub
 action defined in `.github/workflows/main.yml`. It also runs once at the end of 
-every day to catch updates from the CIRCT source repository, which
+each day to catch updates from the CIRCT source repository, which
 is used for generating some docs.
 
 We are using the [Hugo](https://gohugo.io/) framework for generating the

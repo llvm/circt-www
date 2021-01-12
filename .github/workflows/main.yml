@@ -137,6 +137,7 @@ jobs:
           publish_branch: gh-pages
           publish_dir: ./public
           force_orphan: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
 

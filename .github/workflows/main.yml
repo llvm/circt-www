@@ -18,7 +18,7 @@ jobs:
       - name: Timestamp Begin
         run: date
 
-      # Clone the CIRCT repo and its submodules. Do shallow clone to save clone
+      # Clone the CIRCT repo and its submodules.Do shallow clone to save clone
       # time.
       - name: Get CIRCT
         uses: actions/checkout@v2

@@ -18,11 +18,13 @@ participate, you can do so in a number of different ways:
 
 1) Join our [Discourse Forum](https://llvm.discourse.group/c/Projects-that-want-to-become-official-LLVM-Projects/circt/) on the LLVM Discourse server.  To get a "mailing list" like experience click the bell icon in the upper right and switch to "Watching".  It is also helpful to go to your Discourse profile, then the "emails" tab, and check "Enable mailing list mode".
 
-2) Join our weekly video chat.  Please see the
+2) For real-time discussion join the [CIRCT channel](https://discord.com/channels/636084430946959380/742572728787402763) of the LLVM discord server.
+
+3) Join our weekly video chat.  Please see the
 [meeting notes document](https://docs.google.com/document/d/1fOSRdyZR2w75D87yU2Ma9h2-_lEPL4NxvhJGJd-s5pk/edit#)
 for more information.
 
-3) Contribute code.  CIRCT follows all of the LLVM Policies: you can create pull
+4) Contribute code.  CIRCT follows all of the LLVM Policies: you can create pull
    requests for the CIRCT repository, and gain commit access using the [standard
    LLVM policies](https://llvm.discourse.group/c/Projects-that-want-to-become-official-LLVM-Projects/circt/).
 

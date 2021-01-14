@@ -7,13 +7,19 @@ weight: 1
 
 ## [Open design meeting](https://docs.google.com/document/d/1fOSRdyZR2w75D87yU2Ma9h2-_lEPL4NxvhJGJd-s5pk/edit#heading=h.rcuxyx55hyqp) presentations
 
+* Jan 13, 2021: Rachit Nigam talked about Calyx Intermediate language ;
+[slides](https://rachitnigam.com/files/slides/calyx.pdf)
+[recording](https://sifive.zoom.us/rec/share/NvoM4qs6f0r8b1Rzt_jpRiOC9fWxba1j1zuDx8idWye4O6KgZBojxKXc48tKrCCp.tUFXyNHI3eoR1V8r)
+password = ^v3aP1yt
+
+
 * Jan 6, 2021: Mike Urbach presented slides on NPComp to Static Hardware ;
-[slides](https://docs.google.com/presentation/d/1MyQWWFsksfMO5DVdJkpSnL1POQLibVb0RbGwCQm9JcY/edit?usp=sharing)-
-[recording](https://sifive.zoom.us/rec/share/J6uVkQsxLvqNy1iMXoxuCaDfNrsI3O7Gue1magWykcjhV1EdUBdFk9R8Mr3MGjPs.UQrjhAN9u8gJ0La0) Password = **1$.^Iw#4**
+[slides](https://docs.google.com/presentation/d/1MyQWWFsksfMO5DVdJkpSnL1POQLibVb0RbGwCQm9JcY/edit?usp=sharing)
+[recording](https://sifive.zoom.us/rec/share/J6uVkQsxLvqNy1iMXoxuCaDfNrsI3O7Gue1magWykcjhV1EdUBdFk9R8Mr3MGjPs.UQrjhAN9u8gJ0La0) Password = 1$.^Iw#4
 
 * Dec 16, 2020: Richard Townsend talked about his Haskell to hardware work ;
 [slides](http://www.cs.columbia.edu/~sedwards/papers/townsend2017functional.pdf)
-[recording](https://sifive.zoom.us/rec/share/5a_ICg-LBbv6IzUjwmO4POUdo3gr8qH5rcC3T1Mi563OlD4aWlD-8RU3aH88FWr3.z9cXYF4pyVJfYVkc) Password = **g?f9As8G**
+[recording](https://sifive.zoom.us/rec/share/5a_ICg-LBbv6IzUjwmO4POUdo3gr8qH5rcC3T1Mi563OlD4aWlD-8RU3aH88FWr3.z9cXYF4pyVJfYVkc) Password = g?f9As8G
 
 * Dec 9, 2020: David Durst gave a talk about Aetherling ;
 [paper](https://aetherling.org/aetherling.pdf)
@@ -26,13 +32,13 @@ weight: 1
 [project website](https://mflowgen.readthedocs.io/en/latest/)
 
 * Oct 28, 2020: Cheng Tan talked about OpenCGRA work happening at PNNL ;
-[gitHub project](https://github.com/pnnl/OpenCGRA)
+[github project](https://github.com/pnnl/OpenCGRA)
 
 * Oct 21, 2020: Sitao Huang talked about PyLog work happening at UIUC ;
 [slides](https://drive.google.com/file/d/1k-fLrgfo3Mh4Kv4uCOS8VDLX5ngG5znj/view?usp=sharing)
 
 * Sep 30, 2020: Wilson Snyder presented an overview of Verilator and its infrastructure ;
-[gitHub project](https://github.com/verilator/verilator)
+[github project](https://github.com/verilator/verilator)
 
 * Sep 23, 2020: Rachit Nigam, Adrian Sampson talked about Dahlia language ;
 [web demo](https://capra.cs.cornell.edu/dahlia/)
@@ -57,5 +63,5 @@ weight: 1
 [presentation](https://drive.google.com/file/d/1UYQAfHrzcsdXUZ93bHPTPNwrscwx89M-/view?usp=sharing)
 
 * June 10, 2020: John Demme talked about Elastic-Silicon-Interconnect project ;
-[gitHub project](https://github.com/microsoft/Elastic-Silicon-Interconnect)
+[github project](https://github.com/microsoft/Elastic-Silicon-Interconnect)
 

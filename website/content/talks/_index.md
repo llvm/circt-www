@@ -7,19 +7,21 @@ weight: 1
 
 ## [Open design meeting](https://docs.google.com/document/d/1fOSRdyZR2w75D87yU2Ma9h2-_lEPL4NxvhJGJd-s5pk/edit#heading=h.rcuxyx55hyqp) presentations
 
+* Jan 27, 2021: Jie Wang talked about AutoSA ;
+[recording](https://sifive.zoom.us/rec/play/ds7NksD03x8_hJ9oiwg4pk-c7JaChrU6py1QAC7Or9lm-giOZ-ZOS-XQNK5glYa6OJm9-MT9mRwMSKE5.CMopCniDF4nhfGXw?continueMode=true)
+[github project](https://github.com/UCLA-VAST/AutoSA)
+
 * Jan 13, 2021: Rachit Nigam talked about Calyx Intermediate language ;
 [slides](https://rachitnigam.com/files/slides/calyx.pdf)
 [recording](https://sifive.zoom.us/rec/share/NvoM4qs6f0r8b1Rzt_jpRiOC9fWxba1j1zuDx8idWye4O6KgZBojxKXc48tKrCCp.tUFXyNHI3eoR1V8r)
-password = ^v3aP1yt
-
 
 * Jan 6, 2021: Mike Urbach presented slides on NPComp to Static Hardware ;
 [slides](https://docs.google.com/presentation/d/1MyQWWFsksfMO5DVdJkpSnL1POQLibVb0RbGwCQm9JcY/edit?usp=sharing)
-[recording](https://sifive.zoom.us/rec/share/J6uVkQsxLvqNy1iMXoxuCaDfNrsI3O7Gue1magWykcjhV1EdUBdFk9R8Mr3MGjPs.UQrjhAN9u8gJ0La0) Password = 1$.^Iw#4
+[recording](https://sifive.zoom.us/rec/share/J6uVkQsxLvqNy1iMXoxuCaDfNrsI3O7Gue1magWykcjhV1EdUBdFk9R8Mr3MGjPs.UQrjhAN9u8gJ0La0)
 
 * Dec 16, 2020: Richard Townsend talked about his Haskell to hardware work ;
 [slides](http://www.cs.columbia.edu/~sedwards/papers/townsend2017functional.pdf)
-[recording](https://sifive.zoom.us/rec/share/5a_ICg-LBbv6IzUjwmO4POUdo3gr8qH5rcC3T1Mi563OlD4aWlD-8RU3aH88FWr3.z9cXYF4pyVJfYVkc) Password = g?f9As8G
+[recording](https://sifive.zoom.us/rec/share/5a_ICg-LBbv6IzUjwmO4POUdo3gr8qH5rcC3T1Mi563OlD4aWlD-8RU3aH88FWr3.z9cXYF4pyVJfYVkc)
 
 * Dec 9, 2020: David Durst gave a talk about Aetherling ;
 [paper](https://aetherling.org/aetherling.pdf)

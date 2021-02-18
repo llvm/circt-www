@@ -147,7 +147,7 @@ jobs:
             -DCMAKE_BUILD_TYPE=Release \
             -DMLIR_DIR=../circt_src/llvm/install/lib/cmake/mlir/ \
             -DLLVM_DIR=../circt_src/llvm/install/lib/cmake/llvm/
-          make circt-doc doxygen-circt -j$(nproc))
+          make circt-doc doxygen-circt -j$(nproc)
 
       - name: Install doxygen docs
         run: cp -r circt_src/build/docs/doxygen/html website/static/doxygen

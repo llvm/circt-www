@@ -31,7 +31,7 @@ jobs:
       # Extract the LLVM submodule hash for use in the cache key.
       - name: Get LLVM Hash
         id: get-llvm-hash
-        run: echo "::set-output name=hash::$(git rev-parse @:./llvm)"
+        run: echo "::set-output name=hash::$(git rev-parse @:./circt_src/llvm)"
         shell: bash
 
       # Try to fetch LLVM from the cache.
@@ -48,7 +48,21 @@ jobs:
         run: (mkdir -p circt_src/llvm/build &&
            mkdir -p circt_src/llvm/install &&
            cd circt_src/llvm/build &&
-           cmake ../llvm -DBUILD_SHARED_LIBS=ON -DLLVM_BUILD_EXAMPLES=OFF -DLLVM_TARGETS_TO_BUILD="host" -DCMAKE_INSTALL_PREFIX=../install -DLLVM_ENABLE_PROJECTS='mlir' -DLLVM_OPTIMIZED_TABLEGEN=ON -DLLVM_ENABLE_OCAMLDOC=OFF -DLLVM_ENABLE_BINDINGS=OFF -DLLVM_INSTALL_UTILS=ON -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DLLVM_ENABLE_LLD=ON -DCMAKE_BUILD_TYPE=Release -DLLVM_ENABLE_ASSERTIONS=ON &&
+           cmake ../llvm \
+            -DBUILD_SHARED_LIBS=ON \
+            -DLLVM_BUILD_EXAMPLES=OFF \
+            -DLLVM_TARGETS_TO_BUILD="host" \
+            -DCMAKE_INSTALL_PREFIX=../install \
+            -DLLVM_ENABLE_PROJECTS='mlir' \
+            -DLLVM_OPTIMIZED_TABLEGEN=ON \
+            -DLLVM_ENABLE_OCAMLDOC=OFF \
+            -DLLVM_ENABLE_BINDINGS=OFF \
+            -DLLVM_INSTALL_UTILS=ON \
+            -DCMAKE_C_COMPILER=clang \
+            -DCMAKE_CXX_COMPILER=clang++ \
+            -DLLVM_ENABLE_LLD=ON \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DLLVM_ENABLE_ASSERTIONS=ON &&
            cmake --build . --target install -- -j$(nproc))
 
   # --- end of build-llvm job
@@ -65,7 +79,7 @@ jobs:
 
       - uses: actions/checkout@v1
 
-      - name: Install doxygen
+      - name: Install Doxygen
         run: sudo apt-get install doxygen graphviz
 
       # Clone the CIRCT repo and its submodules. Do shallow clone to save clone
@@ -81,7 +95,7 @@ jobs:
       # Extract the LLVM submodule hash for use in the cache key.
       - name: Get LLVM Hash
         id: get-llvm-hash
-        run: echo "::set-output name=hash::$(git rev-parse @:./llvm)"
+        run: echo "::set-output name=hash::$(git rev-parse @:./circt_src/llvm)"
         shell: bash
 
       # Try to fetch LLVM from the cache
@@ -100,14 +114,32 @@ jobs:
         run: (mkdir -p circt_src/llvm/build &&
            mkdir -p circt_src/llvm/install &&
            cd circt_src/llvm/build &&
-           cmake ../llvm -DBUILD_SHARED_LIBS=ON -DLLVM_BUILD_EXAMPLES=OFF -DLLVM_TARGETS_TO_BUILD="host" -DCMAKE_INSTALL_PREFIX=../install -DLLVM_ENABLE_PROJECTS='mlir' -DLLVM_OPTIMIZED_TABLEGEN=ON -DLLVM_ENABLE_OCAMLDOC=OFF -DLLVM_ENABLE_BINDINGS=OFF -DLLVM_INSTALL_UTILS=ON -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DLLVM_ENABLE_LLD=ON -DCMAKE_BUILD_TYPE=Release -DLLVM_ENABLE_ASSERTIONS=ON &&
+           cmake ../llvm \
+             -DBUILD_SHARED_LIBS=ON \
+             -DLLVM_BUILD_EXAMPLES=OFF \
+             -DLLVM_TARGETS_TO_BUILD="host" \
+             -DCMAKE_INSTALL_PREFIX=../install \
+             -DLLVM_ENABLE_PROJECTS='mlir' \
+             -DLLVM_OPTIMIZED_TABLEGEN=ON \
+             -DLLVM_ENABLE_OCAMLDOC=OFF \
+             -DLLVM_ENABLE_BINDINGS=OFF \
+             -DLLVM_INSTALL_UTILS=ON \
+             -DCMAKE_C_COMPILER=clang \
+             -DCMAKE_CXX_COMPILER=clang++ \
+             -DLLVM_ENABLE_LLD=ON \
+             -DCMAKE_BUILD_TYPE=Release \
+             -DLLVM_ENABLE_ASSERTIONS=ON &&
            cmake --build . --target install -- -j$(nproc))
 
       # Build the CIRCT circt-doc and doxygen-circt target to build docs.
       - name: Build CIRCT Dialect docs & doxygen src
         run: (mkdir circt_src/build &&
           cd circt_src/build &&
-          cmake .. -DCIRCT_INCLUDE_DOCS=ON -DCMAKE_BUILD_TYPE=Release -DMLIR_DIR=../circt_src/llvm/install/lib/cmake/mlir/ -DLLVM_DIR=../circt_src/llvm/install/lib/cmake/llvm/ &&
+          cmake .. \
+            -DCIRCT_INCLUDE_DOCS=ON \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DMLIR_DIR=../circt_src/llvm/install/lib/cmake/mlir/ \
+            -DLLVM_DIR=../circt_src/llvm/install/lib/cmake/llvm/ &&
           make circt-doc doxygen-circt -j$(nproc))
 
       - name: Install doxygen docs

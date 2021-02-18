@@ -31,7 +31,9 @@ jobs:
       # Extract the LLVM submodule hash for use in the cache key.
       - name: Get LLVM Hash
         id: get-llvm-hash
-        run: echo "::set-output name=hash::$(git rev-parse @:./circt_src/llvm)"
+        run: |
+          cd ./circt_src
+          echo "::set-output name=hash::$(git rev-parse @:./llvm)"
         shell: bash
 
       # Try to fetch LLVM from the cache.
@@ -40,7 +42,7 @@ jobs:
         uses: actions/cache@v2
         with:
           path: circt_src/llvm
-          key: ${{runner.os}}-llvm-install-${{steps.get-llvm-hash.outputs.hash}}
+          key: ${{ runner.os }}-llvm-install-${{ steps.get-llvm-hash.outputs.hash }}
 
       # Build LLVM if we didn't hit in the cache.
       - name: Rebuild and Install LLVM
@@ -96,7 +98,9 @@ jobs:
       # Extract the LLVM submodule hash for use in the cache key.
       - name: Get LLVM Hash
         id: get-llvm-hash
-        run: echo "::set-output name=hash::$(git rev-parse @:./circt_src/llvm)"
+        run: |
+          cd ./circt_src
+          echo "::set-output name=hash::$(git rev-parse @:./llvm)"
         shell: bash
 
       # Try to fetch LLVM from the cache
@@ -105,7 +109,7 @@ jobs:
         uses: actions/cache@v2
         with:
           path: circt_src/llvm
-          key: ${{runner.os}}-llvm-install-${{steps.get-llvm-hash.outputs.hash}}
+          key: ${{ runner.os }}-llvm-install-${{ steps.get-llvm-hash.outputs.hash }}
 
       # Build LLVM if we didn't hit in the cache. Even though we build it in
       # the previous job, there is a low chance that it'll have been evicted by

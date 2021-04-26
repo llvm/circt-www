@@ -43,11 +43,11 @@ these tools are generally built with
 interchange.  Verilog has well known design issues, and limitations, e.g.
 suffering from poor location tracking support.
 
-The CIRCT project is an (experimental!) effort looking to apply MLIR and
-the LLVM development methodology to the domain of hardware design tools.  Many
-of us dream of having reusable infrastructure that is modular, uses
-library-based design techniques, is more consistent, and builds on the best
-practices in compiler infrastructure and compiler design techniques.
+The [CIRCT project](https://github.com/llvm/circt) is an (experimental!) effort 
+looking to apply MLIR and the LLVM development methodology to the domain of 
+hardware design tools.  Many of us dream of having reusable infrastructure that 
+is modular, uses library-based design techniques, is more consistent, and builds 
+on the best practices in compiler infrastructure and compiler design techniques.
 
 By working together, we hope that we can build a new center of gravity to draw
 contributions from the small (but enthusiastic!) community of people who work

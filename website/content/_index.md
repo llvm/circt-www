@@ -56,3 +56,5 @@ enables new higher-level abstractions for hardware design, and
 perhaps some pieces may even be adopted by proprietary tools in time.
 
 For more information, please see our longer [charter document](docs/Charter.md).
+
+Nightly performance plots: https://circt.org/perf/

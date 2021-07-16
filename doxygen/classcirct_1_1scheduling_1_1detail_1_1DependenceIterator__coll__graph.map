@@ -1,0 +1,17 @@
+<map id="circt::scheduling::detail::DependenceIterator" name="circt::scheduling::detail::DependenceIterator">
+<area shape="rect" id="node1" title="An iterator to transparently surface an operation&#39;s def&#45;use dependences from the SSA subgraph (induce..." alt="" coords="719,407,915,449"/>
+<area shape="rect" id="node2" title=" " alt="" coords="385,161,593,231"/>
+<area shape="rect" id="node3" href="$classcirct_1_1scheduling_1_1Problem.html" title="This class models the most basic scheduling problem." alt="" coords="421,255,557,297"/>
+<area shape="rect" id="node4" title=" " alt="" coords="17,5,195,61"/>
+<area shape="rect" id="node5" title=" " alt="" coords="30,86,182,127"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,152,207,179"/>
+<area shape="rect" id="node7" title=" " alt="" coords="30,203,182,245"/>
+<area shape="rect" id="node8" title=" " alt="" coords="11,269,201,296"/>
+<area shape="rect" id="node9" title=" " alt="" coords="24,321,188,362"/>
+<area shape="rect" id="node10" title=" " alt="" coords="63,397,149,424"/>
+<area shape="rect" id="node11" href="$classcirct_1_1scheduling_1_1detail_1_1Dependence.html" title="A wrapper class to uniformly handle def&#45;use and auxiliary dependence edges." alt="" coords="415,459,563,501"/>
+<area shape="rect" id="node12" title=" " alt="" coords="59,492,153,519"/>
+<area shape="rect" id="node13" title=" " alt="" coords="45,543,167,569"/>
+<area shape="rect" id="node14" title=" " alt="" coords="389,525,589,566"/>
+<area shape="rect" id="node15" title=" " alt="" coords="449,591,530,617"/>
+</map>

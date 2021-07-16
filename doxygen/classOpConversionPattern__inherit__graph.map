@@ -1,0 +1,6 @@
+<map id="OpConversionPattern" name="OpConversionPattern">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,164,83"/>
+<area shape="rect" id="node2" href="$structConvertHWModule.html" title="This works on each HW module, creates corresponding entities, moves the bodies of the modules into th..." alt="" coords="212,5,475,32"/>
+<area shape="rect" id="node3" href="$structConvertInstance.html" title="This works on each instance op, converting them to the LLHD dialect." alt="" coords="228,56,459,83"/>
+<area shape="rect" id="node4" href="$structConvertOutput.html" title="This works on each output op, creating ops to drive the appropriate results." alt="" coords="239,107,448,133"/>
+</map>

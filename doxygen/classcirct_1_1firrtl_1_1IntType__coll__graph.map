@@ -1,0 +1,5 @@
+<map id="circt::firrtl::IntType" name="circt::firrtl::IntType">
+<area shape="rect" id="node1" title="This is the common base class between SIntType and UIntType." alt="" coords="19,155,159,181"/>
+<area shape="rect" id="node2" href="$classcirct_1_1firrtl_1_1FIRRTLType.html" title=" " alt="" coords="5,80,172,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="63,5,115,32"/>
+</map>

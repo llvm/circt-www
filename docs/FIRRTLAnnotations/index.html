@@ -1,0 +1,306 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>FIRRTL Annotations - CIRCT</title><meta name=description content="Circuit IR Compilers and Tools"><meta name=generator content="Hugo 0.64.1"><link href=https://circt.llvm.org/index.xml rel=alternate type=application/rss+xml><link rel=canonical href=https://circt.llvm.org/docs/FIRRTLAnnotations/><link rel=stylesheet href=https://circt.llvm.org/css/theme.css><script src=https://use.fontawesome.com/releases/v5.0.6/js/all.js></script><link rel=stylesheet href=https://circt.llvm.org/css/chroma.min.css><script src=https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js></script><script src=https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js></script><script src=https://circt.llvm.org/js/bundle.js></script><script type=text/javascript src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type=text/x-mathjax-config>
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$', '$'] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+    }
+  });
+</script><style>:root{}</style></head><body><div class=container><header><h1><div><img src=https://circt.llvm.org//circt-logo.svg width=40px align=absmiddle>
+CIRCT</div></h1><p class=description>Circuit IR Compilers and Tools</p></header><div class=global-menu><nav><ul><li class=parent><a href>Community<i class="fas fa-angle-right"></i></a><ul class=sub-menu><li class=child><a href=https://llvm.discourse.group/c/Projects-that-want-to-become-official-LLVM-Projects/circt/40>Forums</a></li><li class=child><a href=https://discord.gg/xS7Z362>Chat</a></li></ul></li><li class=parent><a href=https://github.com/llvm/circt/tree/main/>Source<i class="fas fa-angle-right"></i></a><ul class=sub-menu><li class=child><a href=/doxygen/>Doxygen</a></li><li class=child><a href=https://github.com/llvm/circt/tree/main/>GitHub</a></li></ul></li></ul></nav></div><div class=content-container><main><h1>FIRRTL Annotations</h1><p>The Scala FIRRTL Compiler (SFC) provides a mechanism to encode arbitrary
+metadata and associate it with zero or more &ldquo;things&rdquo; in a FIRRTL circuit. This
+mechanism is an <em>Annotation</em> and the association is described using one or more
+<em>Targets</em>. Annotations should be viewed an extension to the FIRRTL IR
+specification, and can greatly affect the meaning and interpretation of the IR.</p><p>Annotations are represented as a dictionary, with a &ldquo;class&rdquo; field which
+describes which annotation it is, and a &ldquo;target&rdquo; field which represents the IR
+object it is attached to. The annotation&rsquo;s class matches the name of a Java
+class in the Scala Chisel/FIRRTL code base. Annotations may have arbitrary
+additional fields attached. Some annotation classes extend other annotations,
+which effectively means that the subclass annotation implies to effect of the
+parent annotation.</p><p>Annotations are serializable to JSON and either live in a separate file (e.g.,
+during the handoff between Chisel and the SFC) or are stored in-memory (e.g.,
+during SFC-based compilation). The SFC pass API requires that passes describe
+which targets in the circuit they update. SFC infrastructure then
+automatically updates annotations so they are always synchronized with their
+corresponding FIRRTL IR.</p><p>An example of an annotation is the <code>DontTouchAnnotation</code>, which can be used to
+indicate to the compiler that a wire &ldquo;foo&rdquo; should not be optimized away.</p><div class=highlight><pre class=chroma><code class=language-json data-lang=json><span class=p>{</span>
+  <span class=nt>&#34;class&#34;</span><span class=p>:</span><span class=s2>&#34;firrtl.transforms.DontTouchAnnotation&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;target&#34;</span><span class=s2>&#34;~MyCircuit|MyModule&gt;foo&#34;</span>
+<span class=p>}</span>
+</code></pre></div><p>Some annotations have more complex interactions with the IR. For example the
+<a href=https://www.chisel-lang.org/api/latest/chisel3/util/experimental/BoringUtils$.html>BoringUtils</a>
+provides FIRRTL with annotations which can be used to wire together any two
+things across the module instance hierarchy.</p><h2 id=motivation>Motivation&nbsp;<a class=headline-hash href=#motivation>¶</a></h2><p>Historically, annotations grew out of three choices in the design of FIRRTL IR:</p><ol><li>FIRRTL IR is not extensible with user-defined IR nodes.</li><li>FIRRTL IR is not parameterized.</li><li>FIRRTL IR does not support in-IR attributes.</li></ol><p>Annotations have then been used for all manner of extensions including:</p><ol><li>Encoding SystemVerilog nodes into the IR using special printfs, an example of
+working around (1) above.</li><li>Setting the reset vector of different, identical CPU cores, an example of
+working around (2) above.</li><li>Encoding sources and sinks that should be wired together by an SFC pass, an
+example of (3) above.</li></ol><h2 id=targets>Targets&nbsp;<a class=headline-hash href=#targets>¶</a></h2><p>A circuit is described, stored, and optimized in a folded representation. For
+example, there may be multiple instances of a module which will eventually
+become multiple physical copies of that module on the die.</p><p>Targets are a mechanism to identify specific hardware in specific instances of
+modules in a FIRRTL circuit. A target consists of a circuit, a root module, an
+optional instance hierarchy, and an optional reference. A target can only
+identify hardware with a name, e.g., a circuit, module, instance, register,
+wire, or node. References may further refer to specific fields or subindices in
+aggregates. A target with no instance hierarchy is local. A target with an
+instance hierarchy is non-local.</p><p>Targets use a shorthand syntax of the form:</p><pre><code>target ::= “~” (circuit) (“|” (module) (“/” (instance) “:” (module) )* (“&gt;” (ref) )?)?
+</code></pre><p>A reference is a name inside a module and one or more qualifying tokens that
+encode subfields (of a bundle) or subindices (of a vector):</p><pre><code>reference ::= (name) (&quot;[&quot; (index) &quot;]&quot; | &quot;.&quot; (field))*
+</code></pre><p>Targets are specific enough to refer to any specific module in a folded,
+unfolded, or partially folded representation.</p><p>To show some examples of what these look like, consider the following example
+circuit. This consists of four instances of module <code>Baz</code>, two instances of
+module <code>Bar</code>, and one instance of module <code>Foo</code>:</p><pre><code class=language-firrtl data-lang=firrtl>circuit Foo:
+  module Foo:
+    inst a of Bar
+    inst b of Bar
+  module Bar:
+    inst c of Baz
+    inst d of Baz
+  module Baz:
+    skip
+</code></pre><table><thead><tr><th>Folded Module</th><th>Unfolded Modules</th></tr></thead><tbody><tr><td><img title="Folded Modules" src=includes/img/firrtl-folded-module.png></td><td><img title="Unfolded Modules" src=includes/img/firrtl-unfolded-module.png></td></tr></tbody></table><p>Using targets (or multiple targets), any specific module, instance, or
+combination of instances can be expressed. Some examples include:</p><table><thead><tr><th>Target</th><th>Description</th></tr></thead><tbody><tr><td><code>~Foo</code></td><td>refers to the whole circuit</td></tr><tr><td><code>~Foo|Foo</code></td><td>refers to the top module</td></tr><tr><td><code>~Foo|Bar</code></td><td>refers to module <code>Bar</code> (or both instances of module <code>Bar</code>)</td></tr><tr><td><code>~Foo|Foo/a:Bar</code></td><td>refers just to one instance of module <code>Bar</code></td></tr><tr><td><code>~Foo|Foo/b:Bar/c:Baz</code></td><td>refers to one instance of module <code>Baz</code></td></tr><tr><td><code>~Foo|Bar/d:Baz</code></td><td>refers to two instances of module <code>Baz</code></td></tr></tbody></table><p>If a target does not contain an instance path, it is a <em>local</em> target. A local
+target points to all instances of a module. If a target contains an instance
+path, it is a <em>non-local</em> target. A non-local target <em>may</em> not point to all
+instances of a module. Additionally, a non-local target may have an equivalent
+local target representation.</p><h2 id=inline-annotations>Inline Annotations&nbsp;<a class=headline-hash href=#inline-annotations>¶</a></h2><p>The MLIR FIRRTL compiler supports an inline format for annotations as an
+extension to the FIRRTL syntax. These inline annotations are helpful for making
+single-file annotated FIRRTL code. This is not supported by the Scala FIRRTL
+compiler.</p><p>Inline annotations are attached to the <code>circuit</code>, and are JSON wrapped in <code>%[</code>
+and <code>]</code>.</p><pre><code class=language-firrtl data-lang=firrtl>circuit Foo: %[[{&quot;a&quot;:&quot;a&quot;,&quot;target&quot;:&quot;~Foo&quot;}]]
+  module Foo:
+    skip
+</code></pre><h2 id=annotations-in-circt>Annotations in CIRCT&nbsp;<a class=headline-hash href=#annotations-in-circt>¶</a></h2><p>We plan to provide full support for annotations in CIRCT. The FIRRTL dialect
+current supports:</p><ol><li>All non-local annotations can be parsed and applied to the correct circuit
+component.</li><li>Annotations, with and without references, are copied to the correct ground
+type in the <code>LowerTypes</code> pass.</li></ol><p>Annotations can be parsed using the <code>--annotation-file</code> command line argument
+to the <code>firtool</code> utility. Alternatively, we provide a non-standard way of
+encoding annotations in the FIRRTL IR textual representation. We provide this
+non-standard support primarily to make test writing easier. As an example of
+this, consider the following JSON annotation file:</p><div class=highlight><pre class=chroma><code class=language-json data-lang=json><span class=p>[</span>
+  <span class=p>{</span>
+    <span class=nt>&#34;target&#34;</span><span class=p>:</span> <span class=s2>&#34;~Foo|Foo&#34;</span><span class=p>,</span>
+    <span class=nt>&#34;hello&#34;</span><span class=p>:</span> <span class=s2>&#34;world&#34;</span>
+  <span class=p>}</span>
+<span class=p>]</span>
+</code></pre></div><p>This can be equivalently, in CIRCT, expressed as:</p><pre><code class=language-firrtl data-lang=firrtl>circuit Foo: %[[{&quot;target&quot;:&quot;~Foo|Foo&quot;,&quot;hello&quot;:&quot;world&quot;}]]
+  module Foo:
+    skip
+</code></pre><p>During parsing, annotations are &ldquo;scattered&rdquo; into the MLIR representation as
+operation or port attributes. As an example of this, the above parses into the
+following MLIR representation:</p><div class=highlight><pre class=chroma><code class=language-mlir data-lang=mlir>firrtl<span class=p>.</span>circuit <span class=s>&#34;Foo&#34;</span>  <span class=p>{</span>
+  firrtl<span class=p>.</span>module <span class=nf>@Foo</span><span class=p>(</span><span class=p>)</span> attributes <span class=p>{</span><span class=nl>annotations =</span> <span class=p>[</span><span class=p>{</span><span class=nl>hello =</span> <span class=s>&#34;world&#34;</span><span class=p>}</span><span class=p>]</span><span class=p>}</span> <span class=p>{</span>
+    firrtl<span class=p>.</span>skip
+  <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div><p>Targets without references have their targets stripped during scattering since
+target information is redundant once annotation metadata is attached to the IR.
+Targets with references have the reference portion of the target included in
+the attribute. The <code>LowerTypes</code> pass then uses this reference information to
+attach annotation metadata to only the <em>lowered</em> portion of a targeted circuit
+component.</p><p>Annotations are expected to be fully removed via custom transforms, conversion
+to other MLIR operations, or dropped. A warning will be emitted if there are
+any unused annotations still in the circuit. For example, the <code>ModuleInliner</code>
+pass removes <code>firrtl.passes.InlineAnnotation</code> by inlining annotated modules or
+instances. JSON Annotations map to the builtin MLIR attributes. An annotation
+is implemented using a DictionaryAttr, which holds the class, target, any
+annotation specific data.</p><h2 id=annotations>Annotations&nbsp;<a class=headline-hash href=#annotations>¶</a></h2><p>Annotations here are written in their JSON format. A &ldquo;reference target&rdquo;
+indicates that the annotation could target anything object in the hierarchy,
+although there may be further restrictions in the annotation.</p><h3 id=blackboxinlineannohttpswwwchisel-langorgapifirrtllatestfirrtltransformsblackboxinlineannohtml><a href=https://www.chisel-lang.org/api/firrtl/latest/firrtl/transforms/BlackBoxInlineAnno.html>BlackBoxInlineAnno</a></h3><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>class</td><td>string</td><td><code>firrtl.transforms.BlackBoxInlineAnno</code></td></tr><tr><td>target</td><td>string</td><td>An ExtModule name target</td></tr><tr><td>name</td><td>string</td><td>A full path to a file</td></tr><tr><td>text</td><td>string</td><td>Literal verilog code.</td></tr></tbody></table><p>Specifies the black box source code (<code>text</code>) inline. Generates a file with
+the given <code>name</code> in the target directory.</p><p>Example:</p><div class=highlight><pre class=chroma><code class=language-json data-lang=json><span class=p>{</span>
+  <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;firrtl.transforms.BlackBoxInlineAnno&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;target&#34;</span><span class=p>:</span> <span class=s2>&#34;~Foo|Foo&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;name&#34;</span><span class=p>:</span> <span class=s2>&#34;blackbox-inline.v&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;text&#34;</span><span class=p>:</span> <span class=s2>&#34;module ExtInline(); endmodule\n&#34;</span>
+<span class=p>}</span>
+</code></pre></div><h3 id=blackboxpathannohttpswwwchisel-langorgapifirrtllatestfirrtltransformsblackboxpathannohtml><a href=https://www.chisel-lang.org/api/firrtl/latest/firrtl/transforms/BlackBoxPathAnno.html>BlackBoxPathAnno</a></h3><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>class</td><td>string</td><td><code>firrtl.transforms.BlackBoxPathAnno</code></td></tr><tr><td>target</td><td>string</td><td>An ExtModule name target</td></tr><tr><td>path</td><td>string</td><td>ModuleName target</td></tr></tbody></table><p>Specifies the file <code>path</code> as source code for the module. Copies the file
+to the target directory.</p><p>Example:</p><div class=highlight><pre class=chroma><code class=language-json data-lang=json><span class=p>{</span>
+  <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;firrtl.transforms.BlackBoxPathAnno&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;target&#34;</span><span class=p>:</span> <span class=s2>&#34;~Foo|Foo&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;path&#34;</span><span class=p>:</span> <span class=s2>&#34;myfile.v&#34;</span>
+<span class=p>}</span>
+</code></pre></div><h3 id=blackboxresourceannohttpswwwchisel-langorgapifirrtllatestfirrtltransformsblackboxresourceannohtml><a href=https://www.chisel-lang.org/api/firrtl/latest/firrtl/transforms/BlackBoxResourceAnno.html>BlackBoxResourceAnno</a></h3><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>class</td><td>string</td><td><code>firrtl.transforms.BlackBoxResourceAnno</code></td></tr><tr><td>target</td><td>string</td><td>An ExtModule name target</td></tr><tr><td>path</td><td>string</td><td>ModuleName target</td></tr></tbody></table><p>Specifies the file <code>path</code> as source code for the module. In contrast to
+the <code>BlackBoxPathAnno</code>, the file is searched for in the black box resource
+search path. This is a remnant of the Scala origins of FIRRTL. Copies the
+file to the target directory.</p><p>Example:</p><div class=highlight><pre class=chroma><code class=language-json data-lang=json><span class=p>{</span>
+  <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;firrtl.transforms.BlackBoxResourceAnno&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;target&#34;</span><span class=p>:</span> <span class=s2>&#34;~Foo|Foo&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;resourceId&#34;</span><span class=p>:</span> <span class=s2>&#34;myfile.v&#34;</span>
+<span class=p>}</span>
+</code></pre></div><h3 id=blackboxresourcefilenameannohttpswwwchisel-langorgapifirrtllatestfirrtltransformsblackboxresourcefilenameannohtml><a href=https://www.chisel-lang.org/api/firrtl/latest/firrtl/transforms/BlackBoxResourceFileNameAnno.html>BlackBoxResourceFileNameAnno</a></h3><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>class</td><td>string</td><td><code>firrtl.transforms.BlackBoxFileNameAnno</code></td></tr><tr><td>resourceFileName</td><td>string</td><td>Output filename</td></tr></tbody></table><p>Specifies the output file name for the list of black box source files that
+is generated as a collateral of the pass.</p><p>Example:</p><div class=highlight><pre class=chroma><code class=language-json data-lang=json><span class=p>{</span>
+  <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;firrtl.transforms.BlackBoxResourceFileNameAnno&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;resourceFileName&#34;</span><span class=p>:</span> <span class=s2>&#34;FileList.f&#34;</span>
+<span class=p>}</span>
+</code></pre></div><h3 id=blackboxtargetdirannohttpswwwchisel-langorgapifirrtllatestfirrtltransformsblackboxtargetdirannohtml><a href=https://www.chisel-lang.org/api/firrtl/latest/firrtl/transforms/BlackBoxTargetDirAnno.html>BlackBoxTargetDirAnno</a></h3><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>class</td><td>string</td><td><code>firrtl.transforms.BlackBoxTargetDirAnno</code></td></tr><tr><td>targetDir</td><td>string</td><td>Output directory</td></tr></tbody></table><p>Overrides the target directory into which black box source files are
+emitted.</p><p>Example:</p><div class=highlight><pre class=chroma><code class=language-json data-lang=json><span class=p>{</span>
+  <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;firrtl.transforms.BlackBoxTargetDirAnno&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;targetDir&#34;</span><span class=p>:</span> <span class=s2>&#34;/tmp/circt/output&#34;</span>
+<span class=p>}</span>
+</code></pre></div><h3 id=donttouchannotationhttpswwwchisel-langorgapifirrtllatestfirrtltransformsdonttouchannotationhtml><a href=https://www.chisel-lang.org/api/firrtl/latest/firrtl/transforms/DontTouchAnnotation.html>DontTouchAnnotation</a></h3><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>class</td><td>string</td><td><code>firrte.transforms.DontTouchAnnotation</code></td></tr><tr><td>target</td><td>string</td><td>Reference target</td></tr></tbody></table><p>The <code>DontTouchAnnotation</code> prevents the removal of elements through
+optimization. This annotation is an optimization barrier, for
+example, it blocks constant propagation through it.
+This annotation also ensures that the name of the object is
+preserved, and not discarded or modified.</p><p>Example:</p><div class=highlight><pre class=chroma><code class=language-json data-lang=json><span class=p>{</span>
+  <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;firrtl.transforms.DontTouchAnnotation&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;target&#34;</span><span class=p>:</span> <span class=s2>&#34;~Foo|Bar/d:Baz&#34;</span>
+<span class=p>}</span>
+</code></pre></div><h3 id=flattenannotationhttpswwwchisel-langorgapifirrtllatestfirrtltransformsflattenannotationhtml><a href=https://www.chisel-lang.org/api/firrtl/latest/firrtl/transforms/FlattenAnnotation.html>FlattenAnnotation</a></h3><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>class</td><td>string</td><td><code>firrtl.transforms.FlattenAnnotation</code></td></tr><tr><td>target</td><td>string</td><td>Reference target</td></tr></tbody></table><p>Indicates that the target should be flattened, which means that child instances
+will be recursively inlined.</p><p>Example:</p><div class=highlight><pre class=chroma><code class=language-json data-lang=json><span class=p>{</span>
+  <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;firrtl.transforms.FlattenAnnotation&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;target&#34;</span><span class=p>:</span> <span class=s2>&#34;~Foo|Bar/d:Baz&#34;</span>
+<span class=p>}</span>
+</code></pre></div><h3 id=fullasyncresetannotation>FullAsyncResetAnnotation&nbsp;<a class=headline-hash href=#fullasyncresetannotation>¶</a></h3><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>class</td><td>string</td><td><code>sifive.enterprise.firrtl.FullAsyncResetAnnotation</code></td></tr><tr><td>target</td><td>string</td><td>Reference target</td></tr></tbody></table><p>Indicates that all reset-less registers which are children of the target will
+have an asynchronous reset attached, with a reset value of 0.</p><p>A module targeted by this annotation is not allowed to reside in multiple
+hierarchies.</p><p>Example:</p><div class=highlight><pre class=chroma><code class=language-json data-lang=json><span class=p>{</span>
+  <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;sifive.enterprise.firrtl.FullAsyncResetAnnotation&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;target&#34;</span><span class=p>:</span> <span class=s2>&#34;~Foo|Bar/d:Baz&#34;</span>
+<span class=p>}</span>
+</code></pre></div><h3 id=ignorefullasyncresetannotation>IgnoreFullAsyncResetAnnotation&nbsp;<a class=headline-hash href=#ignorefullasyncresetannotation>¶</a></h3><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>class</td><td>string</td><td><code>sifive.enterprise.firrtl.IgnoreFullAsyncResetAnnotation</code></td></tr><tr><td>target</td><td>string</td><td>Reference target</td></tr></tbody></table><p>This annotation indicates that the target should be excluded from the
+FullAsyncResetAnnotation of a parent module.</p><p>Example:</p><div class=highlight><pre class=chroma><code class=language-json data-lang=json><span class=p>{</span>
+  <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;sifive.enterprise.firrtl.IgnoreFullAsyncResetAnnotation&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;target&#34;</span><span class=p>:</span> <span class=s2>&#34;~Foo|Bar/d:Baz&#34;</span>
+<span class=p>}</span>
+</code></pre></div><h3 id=inlineannotationhttpswwwchisel-langorgapifirrtllatestfirrtlpassesinlineannotationhtml><a href=https://www.chisel-lang.org/api/firrtl/latest/firrtl/passes/InlineAnnotation.html>InlineAnnotation</a></h3><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>class</td><td>string</td><td><code>firrtl.passes.InlineAnnotation</code></td></tr><tr><td>target</td><td>string</td><td>Reference target</td></tr></tbody></table><p>Indicates that the target should be inlined.</p><p>Example:</p><div class=highlight><pre class=chroma><code class=language-json data-lang=json><span class=p>{</span>
+  <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;firrtl.passes.InlineAnnotation&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;target&#34;</span><span class=p>:</span> <span class=s2>&#34;~Foo|Bar/d:Baz&#34;</span>
+<span class=p>}</span>
+</code></pre></div><h3 id=nestedprefixmodulesannotation>NestedPrefixModulesAnnotation&nbsp;<a class=headline-hash href=#nestedprefixmodulesannotation>¶</a></h3><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>class</td><td>string</td><td><code>sifive.enterprise.firrtl.NestedPrefixModulesAnnotation</code></td></tr><tr><td>prefix</td><td>string</td><td>Prefix to use</td></tr><tr><td>inclusive</td><td>bool</td><td>Whether this prefix is inclusive of the target</td></tr></tbody></table><p>Prefixes all module names under the target with the required prefix. If
+<code>inclusive</code> is true, it includes the target module in the renaming. If
+<code>inclusive</code> is false, it will only rename modules instantiated underneath the
+target module. If a module is required to have two different prefixes, it will
+be cloned.</p><p>Example:</p><div class=highlight><pre class=chroma><code class=language-json data-lang=json><span class=p>{</span>
+  <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;sifive.enterprise.firrtl.NestedPrefixModulesAnnotation&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;prefix&#34;</span><span class=p>:</span> <span class=s2>&#34;MyPrefix_&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;inclusive&#34;</span><span class=p>:</span> <span class=kc>true</span>
+<span class=p>}</span>
+</code></pre></div><h2 id=grand-central>Grand Central&nbsp;<a class=headline-hash href=#grand-central>¶</a></h2><p>Grand Central provides annotations for creating cross module references and
+SystemVerilog interfaces.</p><h3 id=views>Views&nbsp;<a class=headline-hash href=#views>¶</a></h3><p>Grand Central views are used from Chisel to allow users to encapsulate monitor
+logic that gets emitted separately from the DUT. The generated interfaces
+provide a stable view of modules which are connected to the target module
+through SystemVerilog bind statements.</p><h4 id=targettokenfield>TargetToken$Field&nbsp;<a class=headline-hash href=#targettokenfield>¶</a></h4><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>class</td><td>string</td><td><code>firrtl.annotations.TargetToken$Field</code></td></tr><tr><td>value</td><td>string or integer</td><td>Index or element name</td></tr></tbody></table><p>This is used to represent an index in to an aggregate type, such as an index or
+array.</p><h4 id=referencetarget>ReferenceTarget&nbsp;<a class=headline-hash href=#referencetarget>¶</a></h4><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>circuit</td><td>string</td><td>Name of the encapsulating circuit</td></tr><tr><td>module</td><td>string</td><td>Name of the root module of this reference</td></tr><tr><td>path</td><td>array</td><td>Path through instance and Modules</td></tr><tr><td>ref</td><td>string</td><td>Name of the component</td></tr><tr><td>component</td><td>array</td><td>List of TargetToken$Field subcomponent of this reference</td></tr></tbody></table><p>A reference target is a JSON serialization of a regular reference target
+string.</p><h4 id=unknowngroundtype>UnknownGroundType&nbsp;<a class=headline-hash href=#unknowngroundtype>¶</a></h4><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>class</td><td>string</td><td><code>sifive.enterprise.grandcentral.GrandCentralView$UnknownGroundType$</code></td></tr></tbody></table><p>This represents an unknown FIRRTL ground type.</p><h4 id=augmentedgroundtype>AugmentedGroundType&nbsp;<a class=headline-hash href=#augmentedgroundtype>¶</a></h4><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>class</td><td>string</td><td><code>sifive.enterprise.grandcentral.AugmentedGroundType</code></td></tr><tr><td>ref</td><td>object</td><td>ReferenceTarget of the target component</td></tr><tr><td>tpe</td><td>object</td><td>UnknownGroundType</td></tr></tbody></table><p>Creates a SystemVerilog logic type.</p><p>Example:</p><div class=highlight><pre class=chroma><code class=language-json data-lang=json><span class=p>{</span>
+  <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;sifive.enterprise.grandcentral.AugmentedGroundType&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;ref&#34;</span><span class=p>:</span> <span class=p>{</span>
+    <span class=nt>&#34;circuit&#34;</span><span class=p>:</span> <span class=s2>&#34;GCTInterface&#34;</span><span class=p>,</span>
+    <span class=nt>&#34;module&#34;</span><span class=p>:</span> <span class=s2>&#34;GCTInterface&#34;</span><span class=p>,</span>
+    <span class=nt>&#34;path&#34;</span><span class=p>:</span> <span class=p>[</span><span class=p>]</span><span class=p>,</span>
+    <span class=nt>&#34;ref&#34;</span><span class=p>:</span> <span class=s2>&#34;a&#34;</span><span class=p>,</span>
+    <span class=nt>&#34;component&#34;</span><span class=p>:</span> <span class=p>[</span>
+      <span class=p>{</span>
+        <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;firrtl.annotations.TargetToken$Field&#34;</span><span class=p>,</span>
+        <span class=nt>&#34;value&#34;</span><span class=p>:</span> <span class=s2>&#34;_2&#34;</span>
+      <span class=p>}</span><span class=p>,</span>
+      <span class=p>{</span>
+        <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;firrtl.annotations.TargetToken$Index&#34;</span><span class=p>,</span>
+        <span class=nt>&#34;value&#34;</span><span class=p>:</span> <span class=mi>0</span>
+      <span class=p>}</span>
+    <span class=p>]</span>
+  <span class=p>}</span><span class=p>,</span>
+  <span class=nt>&#34;tpe&#34;</span><span class=p>:</span> <span class=p>{</span>
+    <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;sifive.enterprise.grandcentral.GrandCentralView$UnknownGroundType$&#34;</span>
+  <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div><h4 id=augmentedvectortype>AugmentedVectorType&nbsp;<a class=headline-hash href=#augmentedvectortype>¶</a></h4><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>class</td><td>string</td><td><code>sifive.enterprise.grandcentral.AugmentedVectorType</code></td></tr><tr><td>elements</td><td>array</td><td>List of augmented types.</td></tr></tbody></table><p>Creates a SystemVerilog unpacked array.</p><p>Example:</p><div class=highlight><pre class=chroma><code class=language-json data-lang=json><span class=p>{</span>
+  <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;sifive.enterprise.grandcentral.AugmentedVectorType&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;elements&#34;</span><span class=p>:</span> <span class=p>[</span>
+    <span class=p>{</span>
+      <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;sifive.enterprise.grandcentral.AugmentedGroundType&#34;</span><span class=p>,</span>
+      <span class=nt>&#34;ref&#34;</span><span class=p>:</span> <span class=p>{</span>
+        <span class=nt>&#34;circuit&#34;</span><span class=p>:</span> <span class=s2>&#34;GCTInterface&#34;</span><span class=p>,</span>
+        <span class=nt>&#34;module&#34;</span><span class=p>:</span> <span class=s2>&#34;GCTInterface&#34;</span><span class=p>,</span>
+        <span class=nt>&#34;path&#34;</span><span class=p>:</span> <span class=p>[</span><span class=p>]</span><span class=p>,</span>
+        <span class=nt>&#34;ref&#34;</span><span class=p>:</span> <span class=s2>&#34;a&#34;</span><span class=p>,</span>
+        <span class=nt>&#34;component&#34;</span><span class=p>:</span> <span class=p>[</span><span class=p>]</span>
+      <span class=p>}</span><span class=p>,</span>
+      <span class=nt>&#34;tpe&#34;</span><span class=p>:</span> <span class=p>{</span>
+        <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;sifive.enterprise.grandcentral.GrandCentralView$UnknownGroundType$&#34;</span>
+      <span class=p>}</span>
+    <span class=p>}</span><span class=p>,</span>
+    <span class=p>{</span>
+      <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;sifive.enterprise.grandcentral.AugmentedGroundType&#34;</span><span class=p>,</span>
+      <span class=nt>&#34;ref&#34;</span><span class=p>:</span> <span class=p>{</span>
+        <span class=nt>&#34;circuit&#34;</span><span class=p>:</span> <span class=s2>&#34;GCTInterface&#34;</span><span class=p>,</span>
+        <span class=nt>&#34;module&#34;</span><span class=p>:</span> <span class=s2>&#34;GCTInterface&#34;</span><span class=p>,</span>
+        <span class=nt>&#34;path&#34;</span><span class=p>:</span> <span class=p>[</span><span class=p>]</span><span class=p>,</span>
+        <span class=nt>&#34;ref&#34;</span><span class=p>:</span> <span class=s2>&#34;b&#34;</span><span class=p>,</span>
+        <span class=nt>&#34;component&#34;</span><span class=p>:</span> <span class=p>[</span><span class=p>]</span>
+      <span class=p>}</span><span class=p>,</span>
+      <span class=nt>&#34;tpe&#34;</span><span class=p>:</span> <span class=p>{</span>
+        <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;sifive.enterprise.grandcentral.GrandCentralView$UnknownGroundType$&#34;</span>
+      <span class=p>}</span>
+    <span class=p>}</span>
+  <span class=p>]</span>
+<span class=p>}</span>
+</code></pre></div><h4 id=augmentedfield>AugmentedField&nbsp;<a class=headline-hash href=#augmentedfield>¶</a></h4><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>name</td><td>string</td><td>Name of the field</td></tr><tr><td>description</td><td>string</td><td>A textual description of this type</td></tr><tr><td>tpe</td><td>string</td><td>A nested augmented type</td></tr></tbody></table><p>A field in an augmented bundle type. This can provide a small description of
+what the field in the bundle is.</p><h4 id=augmentedbundletype>AugmentedBundleType&nbsp;<a class=headline-hash href=#augmentedbundletype>¶</a></h4><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>class</td><td>string</td><td>sifive.enterprise.grandcentral.AugmentedBundleType</td></tr><tr><td>defName</td><td>string</td><td>The name of the SystemVerilog interface</td></tr><tr><td>elements</td><td>array</td><td>List of AugmentedFields</td></tr></tbody></table><p>Creates a SystemVerilog interface for each bundle type.</p><h4 id=grandcentralviewserializedviewannotation>GrandCentralView$SerializedViewAnnotation&nbsp;<a class=headline-hash href=#grandcentralviewserializedviewannotation>¶</a></h4><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>class</td><td>string</td><td>sifive.enterprise.grandcentral.GrandCentralView$SerializedViewAnnotation</td></tr><tr><td>name</td><td>string</td><td>Name of the view, no affect on output</td></tr><tr><td>companion</td><td>string</td><td>Module target of an empty module to insert cross module references in to</td></tr><tr><td>parent</td><td>string</td><td>Module target of the module the interface will be referencing</td></tr><tr><td>view</td><td>object</td><td>AugmentedBundleType representing the interface</td></tr></tbody></table><p>Grand Central Interfaces are used to emit SystemVerilog interfaces with stable
+names. <code>SerializedViewAnnotation</code> implies <code>DontTouchAnnotation</code> on any
+<code>AugmentedGroundType.ref</code> target.</p><p>Example:</p><div class=highlight><pre class=chroma><code class=language-json data-lang=json><span class=p>{</span>
+  <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;sifive.enterprise.grandcentral.GrandCentralView$SerializedViewAnnotation&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;name&#34;</span><span class=p>:</span> <span class=s2>&#34;view&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;companion&#34;</span><span class=p>:</span> <span class=s2>&#34;~GCTInterface|view_companion&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;parent&#34;</span><span class=p>:</span> <span class=s2>&#34;~GCTInterface|GCTInterface&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;view&#34;</span><span class=p>:</span> <span class=p>{</span>
+    <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;sifive.enterprise.grandcentral.AugmentedBundleType&#34;</span><span class=p>,</span>
+    <span class=nt>&#34;defName&#34;</span><span class=p>:</span> <span class=s2>&#34;ViewName&#34;</span><span class=p>,</span>
+    <span class=nt>&#34;elements&#34;</span><span class=p>:</span> <span class=p>[</span>
+      <span class=p>{</span>
+        <span class=nt>&#34;name&#34;</span><span class=p>:</span> <span class=s2>&#34;port&#34;</span><span class=p>,</span>
+        <span class=nt>&#34;description&#34;</span><span class=p>:</span> <span class=s2>&#34;the port &#39;a&#39; in GCTInterface&#34;</span><span class=p>,</span>
+        <span class=nt>&#34;tpe&#34;</span><span class=p>:</span> <span class=p>{</span>
+          <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;sifive.enterprise.grandcentral.AugmentedGroundType&#34;</span><span class=p>,</span>
+          <span class=nt>&#34;ref&#34;</span><span class=p>:</span> <span class=p>{</span>
+            <span class=nt>&#34;circuit&#34;</span><span class=p>:</span> <span class=s2>&#34;GCTInterface&#34;</span><span class=p>,</span>
+            <span class=nt>&#34;module&#34;</span><span class=p>:</span> <span class=s2>&#34;GCTInterface&#34;</span><span class=p>,</span>
+            <span class=nt>&#34;path&#34;</span><span class=p>:</span> <span class=p>[</span><span class=p>]</span><span class=p>,</span>
+            <span class=nt>&#34;ref&#34;</span><span class=p>:</span> <span class=s2>&#34;a&#34;</span><span class=p>,</span>
+            <span class=nt>&#34;component&#34;</span><span class=p>:</span> <span class=p>[</span><span class=p>]</span>
+          <span class=p>}</span><span class=p>,</span>
+          <span class=nt>&#34;tpe&#34;</span><span class=p>:</span> <span class=p>{</span>
+            <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;sifive.enterprise.grandcentral.GrandCentralView$UnknownGroundType$&#34;</span>
+          <span class=p>}</span>
+        <span class=p>}</span>
+      <span class=p>}</span>
+    <span class=p>]</span>
+  <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div><h3 id=data-taps>Data Taps&nbsp;<a class=headline-hash href=#data-taps>¶</a></h3><p>Grand Central Taps are a tool for representing cross module references. They
+enable users to &ldquo;tap&rdquo; into signal anywhere in the module hierarchy and treat
+them as local, read-only signals.</p><p><code>DataTaps</code> annotations are used to fill in the body of a FIRRTL external module
+with cross-module references to other modules. Each <code>DataTapKey</code> corresponds
+to one output port on the <code>DataTapsAnnotation</code> external module.</p><h4 id=referencedatatapkey>ReferenceDataTapKey&nbsp;<a class=headline-hash href=#referencedatatapkey>¶</a></h4><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>class</td><td>string</td><td><code>sifive.enterprise.grandcentral.ReferenceDataTapKey</code></td></tr><tr><td>source</td><td>string</td><td>Reference target of the source signal.</td></tr><tr><td>portName</td><td>string</td><td>Reference target of the data tap black box port</td></tr></tbody></table><p>This key allows tapping a target in FIRRTL.</p><h4 id=datatapmodulesignalkey>DataTapModuleSignalKey&nbsp;<a class=headline-hash href=#datatapmodulesignalkey>¶</a></h4><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>class</td><td>string</td><td>sifive.enterprise.grandcentral.DataTapModuleSignalKey</td></tr><tr><td>module</td><td>string</td><td>ExtModule name of the target black box</td></tr><tr><td>internalPath</td><td>string</td><td>The path within the module</td></tr><tr><td>portName</td><td>string</td><td>Reference target of the data tap black box port</td></tr></tbody></table><p>This key allows tapping a point by name in a blackbox.</p><h4 id=literaldatatapkey>LiteralDataTapKey&nbsp;<a class=headline-hash href=#literaldatatapkey>¶</a></h4><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>class</td><td>string</td><td>sifive.enterprise.grandcentral.LiteralDataTapKey</td></tr><tr><td>literal</td><td>string</td><td>FIRRTL constant literal</td></tr><tr><td>portName</td><td>string</td><td>Reference target of the data tap black box port</td></tr></tbody></table><p>This key allows the creation of a FIRRTL literal.</p><h4 id=datatapsannotation>DataTapsAnnotation&nbsp;<a class=headline-hash href=#datatapsannotation>¶</a></h4><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>class</td><td>string</td><td>sifive.enterprise.grandcentral.DataTapsAnnotation</td></tr><tr><td>blackbox</td><td>string</td><td>ExtModule name of the black box with ports referenced by the keys</td></tr><tr><td>keys</td><td>array</td><td>List of DataTapKeys</td></tr></tbody></table><p>The <code>DataTapsAnnotation</code> is a collection of all the data taps in a circuit.
+This will cause a data tap module to be emitted. The <code>DataTapsAnnotation</code>
+implies <code>DontTouchAnnotation</code> on any <code>ReferenceDataTapKey.source</code> target.</p><p>Example:</p><div class=highlight><pre class=chroma><code class=language-json data-lang=json><span class=p>{</span>
+  <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;sifive.enterprise.grandcentral.DataTapsAnnotation&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;blackBox&#34;</span><span class=p>:</span> <span class=s2>&#34;~GCTDataTap|DataTap&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;keys&#34;</span><span class=p>:</span> <span class=p>[</span>
+    <span class=p>{</span>
+      <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;sifive.enterprise.grandcentral.ReferenceDataTapKey&#34;</span><span class=p>,</span>
+      <span class=nt>&#34;source&#34;</span><span class=p>:</span> <span class=s2>&#34;~GCTDataTap|GCTDataTap&gt;r&#34;</span><span class=p>,</span>
+      <span class=nt>&#34;portName&#34;</span><span class=p>:</span> <span class=s2>&#34;~GCTDataTap|DataTap&gt;_0&#34;</span>
+    <span class=p>}</span><span class=p>,</span>
+    <span class=p>{</span>
+      <span class=nt>&#34;class&#34;</span><span class=p>:</span><span class=s2>&#34;sifive.enterprise.grandcentral.DataTapModuleSignalKey&#34;</span><span class=p>,</span>
+      <span class=nt>&#34;module&#34;</span><span class=p>:</span><span class=s2>&#34;~GCTDataTap|BlackBox&#34;</span><span class=p>,</span>
+      <span class=nt>&#34;internalPath&#34;</span><span class=p>:</span><span class=s2>&#34;baz.qux&#34;</span><span class=p>,</span>
+      <span class=nt>&#34;portName&#34;</span><span class=p>:</span><span class=s2>&#34;~GCTDataTap|DataTap&gt;_1&#34;</span>
+    <span class=p>}</span><span class=p>,</span>
+    <span class=p>{</span>
+      <span class=nt>&#34;class&#34;</span><span class=p>:</span><span class=s2>&#34;sifive.enterprise.grandcentral.LiteralDataTapKey&#34;</span><span class=p>,</span>
+      <span class=nt>&#34;literal&#34;</span><span class=p>:</span><span class=s2>&#34;UInt&lt;16&gt;(\&#34;h2a\&#34;)&#34;</span><span class=p>,</span>
+      <span class=nt>&#34;portName&#34;</span><span class=p>:</span><span class=s2>&#34;~GCTDataTap|DataTap&gt;_3&#34;</span>
+    <span class=p>}</span>
+  <span class=p>]</span>
+<span class=p>}</span>
+</code></pre></div><h3 id=memory-taps>Memory Taps&nbsp;<a class=headline-hash href=#memory-taps>¶</a></h3><p>Memory taps are a special version of data taps which are used for targeting the
+FIRRTL memory vectors.</p><h4 id=memtapannotation>MemTapAnnotation&nbsp;<a class=headline-hash href=#memtapannotation>¶</a></h4><table><thead><tr><th>Property</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>class</td><td>string</td><td>sifive.enterprise.grandcentral.MemTapAnnotation</td></tr><tr><td>taps</td><td>array of strings</td><td>An array of components corresponding to the elements of the tap vector</td></tr><tr><td>source</td><td>string</td><td>Reference target to a FIRRTL memory element</td></tr></tbody></table><p><code>MemoryTapAnnotation</code> is used to create a data tap to a FIRRTL memory. The
+contents of the MemTap module are the cross-module references to each row of
+the tapped memory. Attaching this annotation to memories with aggregate data
+types is not supported.</p><p>Example:</p><div class=highlight><pre class=chroma><code class=language-json data-lang=json><span class=p>{</span>
+  <span class=nt>&#34;class&#34;</span><span class=p>:</span> <span class=s2>&#34;sifive.enterprise.grandcentral.MemTapAnnotation&#34;</span><span class=p>,</span>
+  <span class=nt>&#34;taps&#34;</span><span class=p>:</span><span class=p>[</span>
+    <span class=s2>&#34;GCTMemTap.MemTap.mem[0]&#34;</span><span class=p>,</span>
+    <span class=s2>&#34;GCTMemTap.MemTap.mem[1]&#34;</span>
+  <span class=p>]</span><span class=p>,</span>
+  <span class=nt>&#34;source&#34;</span><span class=p>:</span><span class=s2>&#34;~GCTMemTap|GCTMemTap&gt;mem&#34;</span>
+<span class=p>}</span>
+</code></pre></div><div class=edit-meta><br></div><nav class=pagination><a class="nav nav-prev" href=/docs/Charter/ title="CIRCT Charter"><i class="fas fa-arrow-left" aria-hidden=true></i>Prev - CIRCT Charter</a>
+<a class="nav nav-next" href=/docs/RationaleFIRRTL/ title="FIRRTL Dialect Rationale">Next - FIRRTL Dialect Rationale <i class="fas fa-arrow-right" aria-hidden=true></i></a></nav><footer><p class=powered>Powered by <a href=https://gohugo.io>Hugo</a>. Theme by <a href=https://themes.gohugo.io/hugo-theme-techdoc/>TechDoc</a>. Designed by <a href=https://github.com/thingsym/hugo-theme-techdoc>Thingsym</a>.</p></footer></main><div class=sidebar><nav class=slide-menu><ul><li><a href=https://circt.llvm.org/>Home</a></li><li><a href=/talks/>Talks and Related Publications</a></li><li><a href=/getting_started/>Getting Started</a></li><li class="parent has-sub-menu"><a href=/docs/>Code Documentation<span class="mark opened">-</span></a><ul class=sub-menu><li class=has-sub-menu><a href=/docs/CommandGuide/>CommandGuide<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=/docs/CommandGuide/handshake-runner/>handshake-runner</a></li></ul></li><li class=has-sub-menu><a href=/docs/Dialects/>Dialects<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=/docs/Dialects/Calyx/>'calyx' Dialect</a></li><li><a href=/docs/Dialects/Comb/>'comb' Dialect</a></li><li><a href=/docs/Dialects/ESI/>'esi' Dialect</a></li><li><a href=/docs/Dialects/FIRRTL/>'firrtl' Dialect</a></li><li><a href=/docs/Dialects/Handshake/>'handshake' Dialect</a></li><li><a href=/docs/Dialects/HW/>'hw' Dialect</a></li><li><a href=/docs/Dialects/LLHD/>'llhd' Dialect</a></li><li><a href=/docs/Dialects/MSFT/>'msft' Dialect</a></li><li><a href=/docs/Dialects/Seq/>'seq' Dialect</a></li><li><a href=/docs/Dialects/StaticLogic/>'staticlogic' Dialect</a></li><li><a href=/docs/Dialects/SV/>'sv' Dialect</a></li></ul></li><li class=has-sub-menu><a href=/docs/ESI/>ESI<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=/docs/ESI/cosim/>ESI cosimulation model</a></li></ul></li><li><a href=/docs/CalyxPasses/></a></li><li><a href=/docs/Charter/>CIRCT Charter</a></li><li class=active><a href=/docs/FIRRTLAnnotations/>FIRRTL Annotations</a></li><li><a href=/docs/RationaleFIRRTL/>FIRRTL Dialect Rationale</a></li><li><a href=/docs/GettingStarted/>Getting Started with the CIRCT Project</a></li><li><a href=/docs/RationaleHW-SV/>HW and SV Dialect Rationale</a></li><li><a href=/docs/Passes/>Passes</a></li><li><a href=/docs/RationaleSeq/>Seq(uential) Dialect Rationale</a></li><li><a href=/docs/PythonBindings/>Using the Python Bindings</a></li></ul></li></ul></nav><div class=sidebar-footer></div></div></div><a href=# id=backtothetop-fixed class=backtothetop data-backtothetop-duration=600 data-backtothetop-easing=easeOutQuart data-backtothetop-fixed-fadein=1000 data-backtothetop-fixed-fadeout=1000 data-backtothetop-fixed-bottom=10 data-backtothetop-fixed-right=20><span class="fa-layers fa-fw"><i class="fas fa-circle"></i><i class="fas fa-arrow-circle-up"></i></span></a></div></body></html>

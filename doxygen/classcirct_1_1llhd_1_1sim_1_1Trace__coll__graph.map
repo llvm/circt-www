@@ -1,0 +1,12 @@
+<map id="circt::llhd::sim::Trace" name="circt::llhd::sim::Trace">
+<area shape="rect" id="node1" title=" " alt="" coords="517,212,673,239"/>
+<area shape="rect" id="node2" title=" " alt="" coords="214,5,306,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="185,57,335,98"/>
+<area shape="rect" id="node4" title=" " alt="" coords="199,123,321,149"/>
+<area shape="rect" id="node5" title=" " alt="" coords="183,173,337,229"/>
+<area shape="rect" id="node6" href="$structcirct_1_1llhd_1_1sim_1_1Time.html" title="The simulator&#39;s internal representation of time." alt="" coords="183,253,337,280"/>
+<area shape="rect" id="node7" title=" " alt="" coords="5,253,80,280"/>
+<area shape="rect" id="node8" title=" " alt="" coords="163,305,357,346"/>
+<area shape="rect" id="node9" title=" " alt="" coords="199,371,321,397"/>
+<area shape="rect" id="node10" title=" " alt="" coords="161,422,359,463"/>
+</map>

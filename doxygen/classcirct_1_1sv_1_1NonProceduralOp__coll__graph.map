@@ -1,0 +1,4 @@
+<map id="circt::sv::NonProceduralOp&lt; ConcreteType &gt;" name="circt::sv::NonProceduralOp&lt; ConcreteType &gt;">
+<area shape="rect" id="node1" title="This class verifies that the specified op is not located in a procedural region." alt="" coords="49,95,223,136"/>
+<area shape="rect" id="node2" href="$classmlir_1_1OpTrait_1_1TraitBase.html" title=" " alt="" coords="5,5,267,47"/>
+</map>

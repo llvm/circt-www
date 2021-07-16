@@ -1,0 +1,8 @@
+<map id="circt::esi::cosim::RpcServer" name="circt::esi::cosim::RpcServer">
+<area shape="rect" id="node1" title="The main RpcServer." alt="" coords="137,213,269,255"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,13,69,39"/>
+<area shape="rect" id="node5" href="$classcirct_1_1esi_1_1cosim_1_1EndpointRegistry.html" title="The Endpoint registry is where Endpoints report their existence (register) and they are looked up by ..." alt="" coords="79,109,212,151"/>
+<area shape="rect" id="node3" title=" " alt="" coords="236,117,311,143"/>
+<area shape="rect" id="node4" title=" " alt="" coords="348,117,399,143"/>
+<area shape="rect" id="node6" title=" " alt="" coords="93,5,243,47"/>
+</map>

@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['uinttype_1596',['UIntType',['../classcirct_1_1firrtl_1_1UIntType.html',1,'circt::firrtl']]],
+  ['unaryop_1597',['UnaryOp',['../namespace__comb__ops__ext.html#a807bce54a146f6eee1d0a239bc706f66',1,'_comb_ops_ext']]],
+  ['unaryopbuilder_1598',['UnaryOpBuilder',['../class__comb__ops__ext_1_1UnaryOpBuilder.html',1,'_comb_ops_ext']]],
+  ['unbundledid_1599',['UnbundledID',['../FIRParser_8cpp.html#afe451dd478f1f9dc6a09385810d4e8b4',1,'FIRParser.cpp']]],
+  ['unbundledvalueentry_1600',['UnbundledValueEntry',['../FIRParser_8cpp.html#a3d4a0772f4eb85a99dd5d7bb3a2ad79e',1,'FIRParser.cpp']]],
+  ['unbundledvalueslist_1601',['UnbundledValuesList',['../FIRParser_8cpp.html#a00eb91531bf95cee5ce582ccc88517ca',1,'FIRParser.cpp']]],
+  ['unconnectedsignalerror_1602',['UnconnectedSignalError',['../classcirct_1_1support_1_1UnconnectedSignalError.html',1,'circt::support']]],
+  ['underlyingtype_1603',['underlyingType',['../structcirct_1_1llhd_1_1detail_1_1SigTypeStorage.html#a155685874fcad13cfc68273c47108d36',1,'circt::llhd::detail::SigTypeStorage::underlyingType()'],['../structcirct_1_1llhd_1_1detail_1_1PtrTypeStorage.html#a8694f3a87126cd1a713643575fb6ef3f',1,'circt::llhd::detail::PtrTypeStorage::underlyingType()']]],
+  ['unit_1604',['unit',['../structcirct_1_1llhd_1_1sim_1_1Instance.html#a404795926fef60277124f06d2018e0de',1,'circt::llhd::sim::Instance']]],
+  ['unitfptr_1605',['unitFPtr',['../structcirct_1_1llhd_1_1sim_1_1Instance.html#a974909c09d58a0b08478fc6ed6753e5f',1,'circt::llhd::sim::Instance']]],
+  ['unpackattribute_1606',['unpackAttribute',['../namespacecirct_1_1firrtl_1_1direction.html#a6140e02ca8b02426c3f526a0df1c3ade',1,'circt::firrtl::direction']]],
+  ['unsat_1607',['unsat',['../structLinIneq.html#a92e1924248699c1bebbe9ebe2424c6a5',1,'LinIneq']]],
+  ['unused_1608',['unused',['../structcirct_1_1llhd_1_1sim_1_1Slot.html#ac2d02bfd91082d1dfa00342783e7099f',1,'circt::llhd::sim::Slot::unused()'],['../classcirct_1_1llhd_1_1sim_1_1UpdateQueue.html#a99b9fab229d9547c060ba2867d3ba764',1,'circt::llhd::sim::UpdateQueue::unused()']]],
+  ['unwrap_1609',['unwrap',['../classcirct_1_1firrtl_1_1InstanceGraphNode.html#a78bc9848e63407f5ee852a2b5100fa19',1,'circt::firrtl::InstanceGraphNode::unwrap()'],['../classcirct_1_1firrtl_1_1InstanceGraph.html#aa0733f86e6a9648b272d2b1d51263fa0',1,'circt::firrtl::InstanceGraph::unwrap()']]],
+  ['unwrapllvmptr_1610',['unwrapLLVMPtr',['../LLHDToLLVM_8cpp.html#a5e17a142740039dcd177f60e1b68801b',1,'LLHDToLLVM.cpp']]],
+  ['updategroupassignmentguards_1611',['updateGroupAssignmentGuards',['../GoInsertion_8cpp.html#a35c1559f901b44b25cd136c1c0acf03e',1,'GoInsertion.cpp']]],
+  ['updatequeue_1612',['UpdateQueue',['../classcirct_1_1llhd_1_1sim_1_1UpdateQueue.html',1,'circt::llhd::sim']]],
+  ['updatetime_1613',['updateTime',['../HandshakeOps_8cpp.html#ab0523ea11ad4e0c7617d3b26b0c13852',1,'HandshakeOps.cpp']]],
+  ['use_5fiterator_1614',['use_iterator',['../classcirct_1_1firrtl_1_1InstanceGraphNode.html#a5e1fa3737825f593c5c3dd628585dfb0',1,'circt::firrtl::InstanceGraphNode']]],
+  ['usealwaysff_1615',['useAlwaysFF',['../structcirct_1_1LoweringOptions.html#a67e8fec8ff4bb4d9488d9a5d12080523',1,'circt::LoweringOptions']]],
+  ['userdata_1616',['userData',['../structmlirMSFTGeneratorCallback.html#a7194a0847d3a64a69378675909b66d6c',1,'mlirMSFTGeneratorCallback']]],
+  ['uses_1617',['uses',['../classcirct_1_1firrtl_1_1InstanceGraphNode.html#a74db33f987e754bf570b109a3ea13dff',1,'circt::firrtl::InstanceGraphNode']]],
+  ['uses_5fbegin_1618',['uses_begin',['../classcirct_1_1firrtl_1_1InstanceGraphNode.html#aad8e4226cf369dccfa39d1de0bed6c77',1,'circt::firrtl::InstanceGraphNode']]],
+  ['uses_5fend_1619',['uses_end',['../classcirct_1_1firrtl_1_1InstanceGraphNode.html#aff3e8f8480533e9244c4b47e6f585274',1,'circt::firrtl::InstanceGraphNode']]],
+  ['usevec_1620',['UseVec',['../classcirct_1_1firrtl_1_1InstanceGraphNode.html#ac775c4802c3f08c740cdda99f6135bdb',1,'circt::firrtl::InstanceGraphNode']]]
+];

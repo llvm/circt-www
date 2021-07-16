@@ -1,0 +1,4 @@
+<map id="circt::llhd::sim::UpdateQueue" name="circt::llhd::sim::UpdateQueue">
+<area shape="rect" id="node1" title="This is equivalent to and std::priorityQueue&lt;Slot&gt; ordered using the greater operator,..." alt="" coords="5,95,175,136"/>
+<area shape="rect" id="node2" title=" " alt="" coords="16,5,164,47"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="circt::llhd::sim::Slot" name="circt::llhd::sim::Slot">
+<area shape="rect" id="node1" title="The simulator&#39;s internal representation of one queue slot." alt="" coords="500,191,647,217"/>
+<area shape="rect" id="node2" title=" " alt="" coords="175,5,353,61"/>
+<area shape="rect" id="node3" title=" " alt="" coords="177,85,351,141"/>
+<area shape="rect" id="node4" title=" " alt="" coords="234,165,294,192"/>
+<area shape="rect" id="node5" title=" " alt="" coords="239,216,289,243"/>
+<area shape="rect" id="node6" href="$structcirct_1_1llhd_1_1sim_1_1Time.html" title="The simulator&#39;s internal representation of time." alt="" coords="187,267,341,293"/>
+<area shape="rect" id="node7" title=" " alt="" coords="5,267,80,293"/>
+<area shape="rect" id="node8" title=" " alt="" coords="161,317,367,344"/>
+</map>

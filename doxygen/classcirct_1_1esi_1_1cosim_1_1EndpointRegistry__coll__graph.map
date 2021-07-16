@@ -1,0 +1,5 @@
+<map id="circt::esi::cosim::EndpointRegistry" name="circt::esi::cosim::EndpointRegistry">
+<area shape="rect" id="node1" title="The Endpoint registry is where Endpoints report their existence (register) and they are looked up by ..." alt="" coords="79,109,212,151"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,155,47"/>
+<area shape="rect" id="node3" title=" " alt="" coords="179,13,243,39"/>
+</map>

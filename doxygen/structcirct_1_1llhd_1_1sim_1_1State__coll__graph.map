@@ -1,0 +1,12 @@
+<map id="circt::llhd::sim::State" name="circt::llhd::sim::State">
+<area shape="rect" id="node1" title="The simulator&#39;s state." alt="" coords="605,137,761,163"/>
+<area shape="rect" id="node2" title=" " alt="" coords="311,5,491,47"/>
+<area shape="rect" id="node3" href="$classcirct_1_1llhd_1_1sim_1_1UpdateQueue.html" title="This is equivalent to and std::priorityQueue&lt;Slot&gt; ordered using the greater operator,..." alt="" coords="316,71,485,112"/>
+<area shape="rect" id="node4" title=" " alt="" coords="34,5,182,47"/>
+<area shape="rect" id="node5" title=" " alt="" coords="67,71,149,98"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,122,211,149"/>
+<area shape="rect" id="node7" title=" " alt="" coords="371,137,430,163"/>
+<area shape="rect" id="node8" href="$structcirct_1_1llhd_1_1sim_1_1Time.html" title="The simulator&#39;s internal representation of time." alt="" coords="323,187,478,214"/>
+<area shape="rect" id="node9" title=" " alt="" coords="71,194,145,221"/>
+<area shape="rect" id="node10" title=" " alt="" coords="318,239,483,280"/>
+</map>

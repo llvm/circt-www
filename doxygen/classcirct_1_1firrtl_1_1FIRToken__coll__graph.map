@@ -1,0 +1,5 @@
+<map id="circt::firrtl::FIRToken" name="circt::firrtl::FIRToken">
+<area shape="rect" id="node1" title="This represents a specific token for .fir files." alt="" coords="5,95,156,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="10,5,61,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="85,5,167,32"/>
+</map>

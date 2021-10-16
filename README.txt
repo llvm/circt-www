@@ -23,3 +23,4 @@ hugo server.
 A large part of the documentation is auto-generated from the CIRCT source
 code. See the workflow `.github/workflows/main.yml` for the instructions
 to reproduce the entirety of https://circt.llvm.org/ locally.
+

@@ -7,6 +7,17 @@ weight: 1
 
 ## [Open design meeting](https://docs.google.com/document/d/1fOSRdyZR2w75D87yU2Ma9h2-_lEPL4NxvhJGJd-s5pk/edit#heading=h.rcuxyx55hyqp) presentations
 
+* Nov 17, 2021: "Charting CIRCT: the present and near future landscape" by John Demme, Fabian Schuiki, Mike Urbach, and Andrew Young at LLVM Developer Meeting 2021;
+[slides](https://llvm.org/devmtg/2021-11/slides/2021-ChartingCIRC-TThePresentAndFutureLandscape.pdf)
+[recording](https://www.youtube.com/watch?v=K-Aqyce5ra0)
+
+* Nov 17, 2021:  “CIRCT: Lifting hardware development out of the 20th century” by Andrew Lenharth, and Chris Lattner at LLVM Developer Meeting 2021;
+[slides](https://llvm.org/devmtg/2021-11/slides/2021-CIRCT-LiftingHardwareDevOutOfThe20thCentury.pdf)
+[recording](https://www.youtube.com/watch?v=ee01_yHjs9k)
+
+* Apr 19, 2021: "The Golden Age of Compiler Design in an Era of HW/SW Co-design" by Chris Lattner at ASPLOS 2021 ;
+[recording](https://www.youtube.com/watch?v=4HgShra-KnY)
+
 * Jan 27, 2021: Jie Wang talked about AutoSA ;
 [recording](https://sifive.zoom.us/rec/play/ds7NksD03x8_hJ9oiwg4pk-c7JaChrU6py1QAC7Or9lm-giOZ-ZOS-XQNK5glYa6OJm9-MT9mRwMSKE5.CMopCniDF4nhfGXw?continueMode=true)
 [github project](https://github.com/UCLA-VAST/AutoSA)

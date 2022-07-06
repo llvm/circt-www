@@ -157,6 +157,8 @@ jobs:
 
       - name: Install CIRCT Source docs
         run: ./copy_docs.sh circt_src/docs/ website/content/docs/ &&
+            ./process_included_docs.sh website/content/docs/ &&
+            echo "Hack around file/directory name conflict" && rm -Rf website/content/docs/Interfaces &&
             mkdir -p website/content/includes/ &&
             cp -rv circt_src/docs/includes/img website/content/includes/
 

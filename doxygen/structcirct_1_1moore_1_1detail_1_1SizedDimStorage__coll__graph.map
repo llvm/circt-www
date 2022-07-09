@@ -1,0 +1,9 @@
+<map id="circt::moore::detail::SizedDimStorage" name="circt::moore::detail::SizedDimStorage">
+<area shape="rect" id="node1" title=" " alt="" coords="73,380,219,421"/>
+<area shape="rect" id="node2" href="$structcirct_1_1moore_1_1detail_1_1DimStorage.html" title=" " alt="" coords="5,276,151,317"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,157,108,184"/>
+<area shape="rect" id="node4" href="$classcirct_1_1moore_1_1UnpackedType.html" title="An unpacked SystemVerilog type." alt="" coords="133,157,335,184"/>
+<area shape="rect" id="node5" href="$classcirct_1_1moore_1_1SVType.html" title="Base class for all SystemVerilog types in the Moore dialect." alt="" coords="157,81,311,108"/>
+<area shape="rect" id="node6" title=" " alt="" coords="208,5,260,32"/>
+<area shape="rect" id="node7" title=" " alt="" coords="175,283,256,310"/>
+</map>

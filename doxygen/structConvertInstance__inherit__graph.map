@@ -1,0 +1,4 @@
+<map id="ConvertInstance" name="ConvertInstance">
+<area shape="rect" id="node1" title="This works on each instance op, converting them to the LLHD dialect." alt="" coords="21,95,149,121"/>
+<area shape="rect" id="node2" href="$classOpConversionPattern.html" title=" " alt="" coords="5,5,164,47"/>
+</map>

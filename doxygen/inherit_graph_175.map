@@ -1,0 +1,29 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,569,89,596"/>
+<area shape="rect" id="node2" href="$classcirct_1_1moore_1_1ChandleType.html" title="The chandle type." alt="" coords="191,5,382,32"/>
+<area shape="rect" id="node3" href="$classcirct_1_1moore_1_1EnumType.html" title="An enum type." alt="" coords="199,56,374,83"/>
+<area shape="rect" id="node4" href="$classcirct_1_1moore_1_1EventType.html" title="The event type." alt="" coords="199,107,374,133"/>
+<area shape="rect" id="node5" href="$classcirct_1_1moore_1_1IntType.html" title="An integer vector or atom type." alt="" coords="209,157,364,184"/>
+<area shape="rect" id="node6" href="$classcirct_1_1moore_1_1NamedTypeBase.html" title="A named type." alt="" coords="178,209,395,250"/>
+<area shape="rect" id="node7" href="$classcirct_1_1moore_1_1PackedRangeDim.html" title="A packed range dimension, like [a:b]." alt="" coords="176,275,397,301"/>
+<area shape="rect" id="node8" href="$classcirct_1_1moore_1_1PackedStructType.html" title="A packed struct." alt="" coords="176,325,397,352"/>
+<area shape="rect" id="node9" href="$classcirct_1_1moore_1_1PackedUnsizedDim.html" title="A packed unsized dimension, like []." alt="" coords="171,376,403,403"/>
+<area shape="rect" id="node10" href="$classcirct_1_1moore_1_1RealType.html" title="A real type." alt="" coords="203,427,370,453"/>
+<area shape="rect" id="node11" href="$classcirct_1_1moore_1_1RefTypeBase.html" title="A type reference." alt="" coords="191,478,383,519"/>
+<area shape="rect" id="node12" href="$classcirct_1_1moore_1_1StringType.html" title="The string type." alt="" coords="199,544,375,571"/>
+<area shape="rect" id="node13" href="$classcirct_1_1moore_1_1UnpackedArrayDim.html" title="An unpacked array dimension, like [a]." alt="" coords="169,595,404,621"/>
+<area shape="rect" id="node14" href="$classcirct_1_1moore_1_1UnpackedAssocDim.html" title="An unpacked associative dimension, like [T] or [*]." alt="" coords="168,645,405,672"/>
+<area shape="rect" id="node15" href="$classcirct_1_1moore_1_1UnpackedQueueDim.html" title="An unpacked queue dimension with optional bound, like [$] or [$:a]." alt="" coords="166,696,407,723"/>
+<area shape="rect" id="node16" href="$classcirct_1_1moore_1_1UnpackedRangeDim.html" title="An unpacked range dimension, like [a:b]." alt="" coords="167,747,407,773"/>
+<area shape="rect" id="node17" href="$classcirct_1_1moore_1_1UnpackedStructType.html" title="An unpacked struct." alt="" coords="167,797,407,824"/>
+<area shape="rect" id="node18" href="$classcirct_1_1moore_1_1UnpackedUnsizedDim.html" title="An unpacked unsized dimension, like []." alt="" coords="161,848,412,875"/>
+<area shape="rect" id="node19" href="$classcirct_1_1moore_1_1VoidType.html" title="The void type." alt="" coords="203,899,370,925"/>
+<area shape="rect" id="node20" href="$classcirct_1_1moore_1_1NamedTypeBase.html" title=" " alt="" coords="156,949,417,1005"/>
+<area shape="rect" id="node22" href="$classcirct_1_1moore_1_1NamedTypeBase.html" title=" " alt="" coords="137,1029,436,1085"/>
+<area shape="rect" id="node24" href="$classcirct_1_1moore_1_1RefTypeBase.html" title=" " alt="" coords="169,1109,405,1165"/>
+<area shape="rect" id="node26" href="$classcirct_1_1moore_1_1RefTypeBase.html" title=" " alt="" coords="149,1189,424,1245"/>
+<area shape="rect" id="node21" href="$classcirct_1_1moore_1_1PackedNamedType.html" title="A packed named type. See NamedTypeBase for details." alt="" coords="493,964,724,991"/>
+<area shape="rect" id="node23" href="$classcirct_1_1moore_1_1UnpackedNamedType.html" title="An unpacked named type. See NamedTypeBase for details." alt="" coords="484,1044,733,1071"/>
+<area shape="rect" id="node25" href="$classcirct_1_1moore_1_1PackedRefType.html" title="A packed named type. See NamedTypeBase for details." alt="" coords="506,1124,711,1151"/>
+<area shape="rect" id="node27" href="$classcirct_1_1moore_1_1UnpackedRefType.html" title="An unpacked named type. See NamedTypeBase for details." alt="" coords="497,1204,721,1231"/>
+</map>

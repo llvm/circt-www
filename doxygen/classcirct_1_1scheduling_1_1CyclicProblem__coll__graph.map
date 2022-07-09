@@ -1,0 +1,13 @@
+<map id="circt::scheduling::CyclicProblem" name="circt::scheduling::CyclicProblem">
+<area shape="rect" id="node1" title="This class models a cyclic scheduling problem." alt="" coords="767,262,903,303"/>
+<area shape="rect" id="node2" href="$classcirct_1_1scheduling_1_1Problem.html" title="This class models the most basic scheduling problem." alt="" coords="427,203,563,245"/>
+<area shape="rect" id="node3" title=" " alt="" coords="17,5,195,61"/>
+<area shape="rect" id="node4" title=" " alt="" coords="30,86,182,127"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,152,207,179"/>
+<area shape="rect" id="node6" title=" " alt="" coords="30,203,182,245"/>
+<area shape="rect" id="node7" title=" " alt="" coords="11,269,201,296"/>
+<area shape="rect" id="node8" title=" " alt="" coords="24,321,188,362"/>
+<area shape="rect" id="node9" title=" " alt="" coords="63,387,149,413"/>
+<area shape="rect" id="node10" title=" " alt="" coords="385,269,605,296"/>
+<area shape="rect" id="node11" title=" " alt="" coords="416,321,575,362"/>
+</map>

@@ -1,0 +1,373 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>HW Dialect Rationale - CIRCT</title><meta name=description content="Circuit IR Compilers and Tools"><meta name=generator content="Hugo 0.101.0"><link href=https://circt.llvm.org/index.xml rel=alternate type=application/rss+xml><link rel=canonical href=https://circt.llvm.org/docs/Dialects/HW/RationaleHW/><link rel=stylesheet href=https://circt.llvm.org/css/theme.css><script src=https://use.fontawesome.com/releases/v5.0.6/js/all.js></script>
+<link rel=stylesheet href=https://circt.llvm.org/css/chroma.min.css><script src=https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js></script>
+<script src=https://circt.llvm.org/js/bundle.js></script>
+<script type=text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type=text/x-mathjax-config>
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$', '$'] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+    }
+  });
+</script><style>:root{}</style></head><body><div class=container><header><h1><div><img src=https://circt.llvm.org//circt-logo.svg width=40px align=absmiddle>
+CIRCT</div></h1><p class=description>Circuit IR Compilers and Tools</p></header><div class=global-menu><nav><ul><li class=parent><a href>Community<i class="fas fa-angle-right"></i></a><ul class=sub-menu><li class=child><a href=https://llvm.discourse.group/c/Projects-that-want-to-become-official-LLVM-Projects/circt/40>Forums</a></li><li class=child><a href=https://discord.gg/xS7Z362>Chat</a></li></ul></li><li class=parent><a href=https://github.com/llvm/circt/tree/main/>Source<i class="fas fa-angle-right"></i></a><ul class=sub-menu><li class=child><a href=/doxygen/>Doxygen</a></li><li class=child><a href=https://github.com/llvm/circt/tree/main/>GitHub</a></li></ul></li></ul></nav></div><div class=content-container><main><h1>HW Dialect Rationale</h1><p>This document describes various design points of the <code>hw</code> dialect as well as
+global perspective on the <code>hw</code>, <code>comb</code>, and <code>sv</code> dialects, why
+they are the way they are, and current status. This follows in the spirit of
+other
+<a href=https://mlir.llvm.org/docs/Rationale/>MLIR Rationale docs</a>. For more
+information about the other dialects, please see the
+<a href=RationaleComb.md>Comb Dialect Rationale</a> and
+<a href=RationaleSV.md>SV Dialect
+Rationale</a>.</p><ul><li><a href=#hw-dialect-rationale>HW Dialect Rationale</a><ul><li><a href=#general-introduction>General Introduction</a></li><li><a href=#introduction-to-the-hw-dialect>Introduction to the <code>hw</code> Dialect</a></li><li><a href=#hw-type-system><code>hw</code> Type System</a></li><li><a href=#hwmodule-and-hwinstance><code>hw.module</code> and <code>hw.instance</code></a><ul><li><a href=#instance-paths>Instance paths</a></li></ul></li><li><a href=#parameterized-modules>Parameterized Modules</a><ul><li><a href=#valid-parameter-expression-attributes>Valid Parameter Expression Attributes</a></li><li><a href=#parameter-expression-canonicalization>Parameter Expression Canonicalization</a></li><li><a href=#using-parameters-in-the-body-of-a-module>Using parameters in the body of a module</a></li><li><a href=#parameterized-types>Parameterized Types</a></li><li><a href=#answers-to-other-common-questions>Answers to other common questions</a></li></ul></li><li><a href=#type-declarations>Type declarations</a><ul><li><a href=#type-declaration-ir]>Type declaration IR</a></li><li><a href=#type-declaration-system-verilog-output>Type declaration System Verilog output</a></li><li><a href=#type-canonicalization>Type canonicalization</a></li><li><a href=#open-issues>Open Issues</a></li></ul></li><li><a href=#symbols-and-visibility>Symbols and Visibility</a></li><li><a href=#future-directions>Future Directions</a></li></ul></li></ul><h2 id=general-introduction>General Introduction&nbsp;<a class=headline-hash href=#general-introduction>¶</a></h2><p><a href=https://en.wikipedia.org/wiki/SystemVerilog>SystemVerilog</a> is an industry
+standard language for hardware design and verification, is known by a large
+number of engineers who write it manually, and is
+an important interchange format between EDA tools. However, while it is
+ubiquitous, SystemVerilog is not easy to generate or transform. Furthermore, it
+is non-trivial for compiler tools to generate high-quality human-readable
+SystemVerilog.</p><p>The <code>hw</code>, <code>comb</code> and <code>sv</code> dialects attempt to address these problems with
+several major contributions:</p><ol><li>The <code>hw</code> dialect provides unifying structure and
+abstractions that are useful for a wide range of hardware modeling problems.
+It allows other dialects to &ldquo;mix in&rdquo; with it to provide higher level
+functionality. <code>hw</code> is roughly akin to the &ldquo;std&rdquo; dialect in MLIR (but better
+curated).</li><li>The <code>comb</code> dialect provides a common set of operations for combinational
+logic. This dialect is designed to allow easy analysis and transformation.</li><li>The <code>sv</code> dialect provides direct access to a wide variety
+of SystemVerilog constructs, including behavioral constructs, syntactic
+sugar constructs, and even idioms like <code>ifdef</code> blocks.</li><li>The <code>circt</code> project provides a high quality implementation and a number of useful compiler
+passes for analyzing and transforming these dialects, and a SystemVerilog
+emitter that generates pretty output.</li></ol><p>The combination of these capabilities provides a useful suite of functionality
+for compiler tools that want to generate high quality SystemVerilog.</p><h2 id=introduction-to-the-hw-dialect>Introduction to the <code>hw</code> Dialect&nbsp;<a class=headline-hash href=#introduction-to-the-hw-dialect>¶</a></h2><p>The <code>hw</code> dialect defines a set of common functionality, such as <code>hw.module</code> and
+<code>hw.instance</code> for representing hardware modules, as well as common types (e.g.
+<code>hw.array&lt;xx></code>) and attributes. It is <em>not</em> designed to model SystemVerilog or
+any other hardware
+design language directly, and doesn&rsquo;t contain combinational or sequential
+operations and does not have &ldquo;connect&rdquo; semantics. Instead, it is designed to be
+a flexible and extensible substrate that may be extended with higher level
+dialects mixed into it (like <code>sv</code>, <code>comb</code>, and <code>seq</code> in the future, etc).</p><h2 id=hw-type-system><code>hw</code> Type System&nbsp;<a class=headline-hash href=#hw-type-system>¶</a></h2><p>TODO: Describe inout types. Analogy to lvalues vs rvalues. Array indices for
+both forms. Arrays, structs,
+moving
+<a href=https://github.com/llvm/circt/issues/389>UnpackedArray</a> to SV someday.</p><p>CLEANUP: InOut types is defined in the <code>hw</code> dialect, but logically lives at the
+<code>sv</code> dialect level. <code>sv</code> provides connects, wires and other syntactic
+constructs that work with the inout type. These aren&rsquo;t necessary
+for combinational logic, but are nonetheless pretty useful when generating
+Verilog.</p><h2 id=hwmodule-and-hwinstance><code>hw.module</code> and <code>hw.instance</code>&nbsp;<a class=headline-hash href=#hwmodule-and-hwinstance>¶</a></h2><p>The basic structure of a hardware design is made up an &ldquo;instance tree&rdquo; of
+&ldquo;modules&rdquo; and &ldquo;instances&rdquo; that refer to them. There are loose analogies to
+software programs which have corresponding &ldquo;functions&rdquo; and &ldquo;calls&rdquo; (but there
+are also major differences, see &ldquo;
+<a href=#instance-paths>Instance paths</a>&rdquo; below).
+Modules can have a
+definition <code>hw.module</code>, they can be a definition of an external module whose
+signature is known but whose body is provided separately <code>hw.module.extern</code>,
+and can be a definition of an external module with a known signature that
+can/will be generated in the future on demand (<code>hw.module.generated</code>).</p><p>A simple example module looks like this (many more can be found in the
+testsuite):</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-mlir data-lang=mlir><span class=line><span class=cl>hw<span class=p>.</span>module <span class=nf>@two_and_three</span><span class=p>(</span><span class=nv>%in</span><span class=p>:</span> <span class=k>i4</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=p>(</span>twoX<span class=p>:</span> <span class=k>i4</span><span class=p>,</span> threeX<span class=p>:</span> <span class=k>i4</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%0</span> <span class=p>=</span> comb<span class=p>.</span>add <span class=nv>%in</span><span class=p>,</span> <span class=nv>%in</span> <span class=p>:</span> <span class=k>i4</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%1</span> <span class=p>=</span> comb<span class=p>.</span>add <span class=nv>%a</span><span class=p>,</span> <span class=nv>%0</span> <span class=p>:</span> <span class=k>i4</span>
+</span></span><span class=line><span class=cl>  hw<span class=p>.</span>output <span class=nv>%0</span><span class=p>,</span> <span class=nv>%1</span> <span class=p>:</span> <span class=k>i4</span><span class=p>,</span> <span class=k>i4</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>The signature of a modules have these major components:</p><ol><li>A symbol <code>name</code> which specifies the MLIR name for the module
+(<code>@two_and_three</code> in the example above). This is what connects instances to
+modules in a stable way.</li><li>A list of input ports, each of which has a type (<code>%in: i4</code> in the example
+above). Each input port is available as an SSA value through a block
+argument in the entry block of an <code>hw.module</code>, allowing them to be used
+within its body. &ldquo;inout&rdquo; ports are modeled as inputs with an <code>!hw.inout&lt;T></code>
+type. Input port names are prefixed with a <code>%</code> because they are available
+as SSA values in the body.</li><li>A list of result port names and types (<code>twoX: i4</code> and <code>threeX: i4</code> in the
+example above). In a <code>hw.module</code> definition, the values for the
+results are provided by the operands to the <code>hw.output</code> terminator in the
+body block. The names of result ports are not prefixed with <code>%</code> because
+they are not MLIR SSA values.</li><li>A list of module &ldquo;parameters&rdquo;, which provide parametric polymorphism
+capabilities (somewhat similar to C++ templates) for modules. These are
+described in more detail in the &ldquo;
+<a href=#parameterized-modules>Parameterized
+Modules</a> section below.</li><li>The <code>verilogName</code> attribute can be used to override the name for an external
+module. TODO: we should eliminate this in the future and just use the symbol.</li><li>Other ad-hoc attributes. The <code>hw</code> dialect is intended to allow open
+extensibility by other dialects. Ad-hoc attributes put on <code>hw</code> dialect
+modules should be namespace qualified according to the dialect they come
+from to avoid conflicts.</li></ol><p>This definition is fairly close to the Verilog family, but there are some
+notable differences: for example:</p><ul><li>We split output ports from input ports, don&rsquo;t use <code>hw.output</code> instead of
+connects to specify the results. This allows better SSA dataflow
+analysis from the <code>hw.output</code> which is useful for inter-module analyses.</li><li>We allow arbitrary types for module ports. The <code>hw</code> dialect is generally
+designed to be extensible by other dialects, and thus being permissive here
+is useful. That said, the
+<a href=VerilogGeneration.md>Verilog exporter</a> does not
+support arbitrary user-defined types.</li><li>The <code>comb</code> dialect in particular does not use signed integer types, its
+operators do not support zero-width integer types. Modules in the <code>hw</code> dialect,
+on the other hand, do support both of these. Zero width ports are omitted (printed as
+comments) when generating Verilog.</li></ul><h3 id=globalrefop>GlobalRefOp&nbsp;<a class=headline-hash href=#globalrefop>¶</a></h3><p>The GlobalRefOp operation (<code>hw.globalRef</code>) can be used to identify the unique
+instance path of an operation globally.
+<code>hw.globalRef</code> can be used to attach nonlocal annotations in FIRRTL dialect
+and also for metadata emission.
+<code>hw.globalRef</code> defines a symbol and contains a list of module local
+<code>hw.innerNameRef</code> symbols to define the instance path.
+For example, in the following example, <code>@glbl_B_M1</code> specifies instance
+&ldquo;h1&rdquo; in module <code>@A</code>, followed by instance
+&ldquo;M1&rdquo; in module <code>@B</code>.</p><p><code>hw.globalRef</code> can define a unique instance path, and each element along the way
+carries an attribute <code>circt.globalRef</code>, pointing to the global op.
+Thus instances participating in nonlocal paths are readily apparent.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-mlir data-lang=mlir><span class=line><span class=cl>  hw<span class=p>.</span>globalRef <span class=nf>@glbl_B_M1</span> <span class=p>[</span><span class=nv>#hw.innerNameRef</span><span class=p>&lt;</span><span class=nf>@A</span><span class=p>::</span><span class=nf>@inst_1</span><span class=p>&gt;,</span> <span class=nv>#hw.innerNameRef</span><span class=p>&lt;</span><span class=nf>@B</span><span class=p>::</span><span class=nf>@memInst</span><span class=p>&gt;]</span>
+</span></span><span class=line><span class=cl>  hw<span class=p>.</span>globalRef <span class=nf>@glbl_D_M1</span> <span class=p>[</span><span class=nv>#hw.innerNameRef</span><span class=p>&lt;</span><span class=nf>@A</span><span class=p>::</span><span class=nf>@inst_0</span><span class=p>&gt;,</span> <span class=nv>#hw.innerNameRef</span><span class=p>&lt;</span><span class=nf>@C</span><span class=p>::</span><span class=nf>@inst</span><span class=p>&gt;,</span> <span class=nv>#hw.innerNameRef</span><span class=p>&lt;</span><span class=nf>@D</span><span class=p>::</span><span class=nf>@memInst</span><span class=p>&gt;]</span>
+</span></span><span class=line><span class=cl>  hw<span class=p>.</span>globalRef <span class=nf>@glbl_D_M2</span> <span class=p>[</span><span class=nv>#hw.innerNameRef</span><span class=p>&lt;</span><span class=nf>@A</span><span class=p>::</span><span class=nf>@SF</span><span class=p>&gt;,</span> <span class=nv>#hw.innerNameRef</span><span class=p>&lt;</span><span class=nf>@F</span><span class=p>::</span><span class=nf>@symA</span><span class=p>&gt;]</span>
+</span></span><span class=line><span class=cl>  hw<span class=p>.</span>globalRef <span class=nf>@glbl_D_M3</span> <span class=p>[</span><span class=nv>#hw.innerNameRef</span><span class=p>&lt;</span><span class=nf>@A</span><span class=p>::</span><span class=nf>@SF</span><span class=p>&gt;,</span> <span class=nv>#hw.innerNameRef</span><span class=p>&lt;</span><span class=nf>@F</span><span class=p>::</span><span class=nf>@symB</span><span class=p>&gt;]</span>
+</span></span><span class=line><span class=cl>  hw<span class=p>.</span>module <span class=nf>@D</span><span class=p>()</span> <span class=p>-&gt;</span> <span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    hw<span class=p>.</span>instance <span class=s>&#34;M1&#34;</span> sym <span class=nf>@memInst</span> <span class=nf>@FIRRTLMem</span><span class=p>()</span> <span class=p>-&gt;</span> <span class=p>()</span> <span class=p>{</span><span class=nl>circt.globalRef =</span> <span class=p>[</span><span class=nv>#hw.globalNameRef</span><span class=p>&lt;</span><span class=nf>@glbl_D_M1</span><span class=p>&gt;]}</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  hw<span class=p>.</span>module <span class=nf>@B</span><span class=p>()</span> <span class=p>-&gt;</span> <span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>     hw<span class=p>.</span>instance <span class=s>&#34;M1&#34;</span> sym <span class=nf>@memInst</span> <span class=nf>@FIRRTLMem</span><span class=p>()</span> <span class=p>-&gt;</span> <span class=p>()</span> <span class=p>{</span><span class=nl>circt.globalRef =</span> <span class=p>[</span><span class=nv>#hw.globalNameRef</span><span class=p>&lt;</span><span class=nf>@glbl_B_M1</span><span class=p>&gt;]}</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  hw<span class=p>.</span>module <span class=nf>@C</span><span class=p>()</span> <span class=p>-&gt;</span> <span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    hw<span class=p>.</span>instance <span class=s>&#34;m&#34;</span> sym <span class=nf>@inst</span> <span class=nf>@D</span><span class=p>()</span> <span class=p>-&gt;</span> <span class=p>()</span> <span class=p>{</span><span class=nl>circt.globalRef =</span> <span class=p>[</span><span class=nv>#hw.globalNameRef</span><span class=p>&lt;</span><span class=nf>@glbl_D_M1</span><span class=p>&gt;]}</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  hw<span class=p>.</span>module <span class=nf>@A</span><span class=p>()</span> <span class=p>-&gt;</span> <span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    hw<span class=p>.</span>instance <span class=s>&#34;h1&#34;</span> sym <span class=nf>@inst_1</span> <span class=nf>@B</span><span class=p>()</span> <span class=p>-&gt;</span> <span class=p>()</span> <span class=p>{</span><span class=nl>circt.globalRef =</span> <span class=p>[</span><span class=nv>#hw.globalNameRef</span><span class=p>&lt;</span><span class=nf>@glbl_B_M1</span><span class=p>&gt;]}</span>
+</span></span><span class=line><span class=cl>    hw<span class=p>.</span>instance <span class=s>&#34;h2&#34;</span> sym <span class=nf>@inst_0</span> <span class=nf>@C</span><span class=p>()</span> <span class=p>-&gt;</span> <span class=p>()</span> <span class=p>{</span><span class=nl>circt.globalRef =</span> <span class=p>[</span><span class=nv>#hw.globalNameRef</span><span class=p>&lt;</span><span class=nf>@glbl_D_M1</span><span class=p>&gt;]}</span>
+</span></span><span class=line><span class=cl>    <span class=nv>%c0</span> <span class=p>=</span> hw<span class=p>.</span><span class=kt>constant</span> <span class=m>0</span> <span class=p>:</span> <span class=k>i1</span>
+</span></span><span class=line><span class=cl>    <span class=nv>%2</span> <span class=p>=</span> hw<span class=p>.</span>instance <span class=s>&#34;ab&#34;</span> sym <span class=nf>@SF</span>  <span class=nf>@F</span> <span class=p>(</span>a1<span class=p>:</span> <span class=nv>%c0</span><span class=p>:</span> <span class=k>i1</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=p>(</span>a2 <span class=p>:</span> <span class=k>i1</span><span class=p>)</span> <span class=p>{</span><span class=nl>circt.globalRef =</span> <span class=p>[</span><span class=nv>#hw.globalNameRef</span><span class=p>&lt;</span><span class=nf>@glbl_D_M2</span><span class=p>&gt;,</span> <span class=nv>#hw.globalNameRef</span><span class=p>&lt;</span><span class=nf>@glbl_D_M3</span><span class=p>&gt;]}</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  hw<span class=p>.</span>module<span class=p>.</span>extern  <span class=nf>@F</span><span class=p>(</span><span class=nv>%a1</span><span class=p>:</span> <span class=k>i1</span> <span class=p>{</span><span class=nl>hw.exportPort =</span> <span class=nf>@symA</span><span class=p>,</span> <span class=nl>circt.globalRef =</span> <span class=p>[</span><span class=nv>#hw.globalNameRef</span><span class=p>&lt;</span><span class=nf>@glbl_D_M2</span><span class=p>&gt;]})</span> <span class=p>-&gt;</span> <span class=p>(</span>a2<span class=p>:</span> <span class=k>i1</span> <span class=p>{</span><span class=nl>hw.exportPort =</span> <span class=nf>@symB</span><span class=p>,</span> <span class=nl>circt.globalRef =</span> <span class=p>[</span><span class=nv>#hw.globalNameRef</span><span class=p>&lt;</span><span class=nf>@glbl_D_M3</span><span class=p>&gt;]})</span> attributes <span class=p>{}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>sv<span class=p>.</span>verbatim <span class=s>&#34;{{0}}&#34;</span> <span class=p>{</span> <span class=nl>symbols =</span> <span class=p>[</span><span class=nf>@glbl_D_M1</span><span class=p>]</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl>sv<span class=p>.</span>verbatim <span class=s>&#34;{{0}}&#34;</span> <span class=p>{</span> <span class=nl>symbols =</span> <span class=p>[</span><span class=nf>@glbl_B_M1</span><span class=p>]</span> <span class=p>}</span>
+</span></span></code></pre></div><h3 id=instance-paths>Instance paths&nbsp;<a class=headline-hash href=#instance-paths>¶</a></h3><p>An IR for Hardware is different than an IR for Software in a very important way:
+while each function in a software program usually compiles into one blob of
+binary code no matter how many times it is called, each instance in a hardware
+design is typically fully instantiated, because different instances turn into
+different gates. The consequence of this is that the instance tree is really a
+compression mechanism that is eventually elaborated away.</p><p>This compression approach has major advantages: it is much better for memory
+and compile time to represent a single definition of a hardware block than the
+(possibly thousands or millions) of concrete instances that will eventually be
+required. However, hardware engineers often do need to reason about and control
+the different instances in some cases (e.g. providing physical layout
+constraints for one instance but not the rest).</p><p>TODO: Bake out a design for instance path references, an equivalent to the
+FIRRTL dialect <code>InstanceGraph</code> type, etc.</p><h2 id=parameterized-modules>Parameterized Modules&nbsp;<a class=headline-hash href=#parameterized-modules>¶</a></h2><p>The <code>hw</code> dialect supports parametric &ldquo;compile-time&rdquo; polymorphism for modules.
+This allows for metaprogramming along the instance tree, guaranteed
+&ldquo;instantiation time&rdquo; optimizations and code generation, further enables
+the &ldquo;IR compression&rdquo; benefits of using instances in the first place, and enables
+the generation of parameters in generated Verilog (which can increase the
+perceived readability of the generated code).</p><p>Parameters are declared on modules (including generated and external ones)
+with angle brackets: each parameter has a name and type, and can optionally
+have a default value. Instances of a parameterized module provide a value for
+each parameter (even defaulted ones) in the same order:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-mlir data-lang=mlir><span class=line><span class=cl><span class=c>// This module has two parameters &#34;p1&#34; and &#34;p2&#34;.
+</span></span></span><span class=line><span class=cl><span class=c></span>hw<span class=p>.</span>module<span class=p>.</span>extern <span class=nf>@parameterized</span><span class=p>&lt;</span>p1<span class=p>:</span> <span class=nl>i42 =</span> <span class=m>17</span><span class=p>,</span> p2<span class=p>:</span> <span class=k>i1</span><span class=p>&gt;(</span><span class=nv>%in</span><span class=p>:</span> <span class=k>i8</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=p>(</span>out<span class=p>:</span> <span class=k>i8</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>hw<span class=p>.</span>module <span class=nf>@UseParameterized</span><span class=p>(</span><span class=nv>%a</span><span class=p>:</span> <span class=k>i8</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=p>(</span>ww<span class=p>:</span> <span class=k>i8</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%r0</span> <span class=p>=</span> hw<span class=p>.</span>instance <span class=s>&#34;inst&#34;</span> <span class=nf>@parameters</span><span class=p>&lt;</span>p1<span class=p>:</span> <span class=nl>i42 =</span> <span class=m>17</span><span class=p>,</span> p2<span class=p>:</span> <span class=nl>i1 =</span> <span class=m>1</span><span class=p>&gt;(</span>in<span class=p>:</span> <span class=nv>%a</span><span class=p>:</span> <span class=k>i8</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=p>(</span>out<span class=p>:</span> <span class=k>i8</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>  hw<span class=p>.</span>output <span class=nv>%r0</span> <span class=p>:</span> <span class=k>i8</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>This approach makes analysis and transformation of the IR simple, predictable,
+and efficient: because the parameter list on instances and on modules always
+line up, they are indexable by integers (instead of strings), intermodule
+analysis is straight-forward (no filling in of default values etc), and
+Verilog generation is always predictable: the default value for a parameter
+is used when the instance and the module default are the same (e.g. in the
+example above, <code>p1</code> is not printed at the instance site because it is the same
+as the default.</p><p>The <code>sv</code> dialect provides the <code>sv.localparam</code> operation, which is used for
+naming constants. These may be derived from module parameters or may just be
+nicely named constants intended to improve readability. This is part of the
+<code>sv</code> dialect (not the <code>hw</code> dialect) because it only makes sense as a concept
+when generating Verilog.</p><p><strong>Compatibility with classic Verilog</strong></p><p>Note that typed parameters are a SystemVerilog extension, many Verilog-only
+tools do not support them. If you need compatibility with Verilog-only tools,
+please use <code>i32</code> integer, <code>f64</code>, and string parameters only. All module
+parameter definitions
+<a href=https://github.com/llvm/circt/issues/1848#issuecomment-933558192>should have default values</a> for maximum tool compatibility as well, even if
+they are always overridden.</p><p><strong>TODO:</strong> CIRCT could do parameter legalization to convert parameters smaller or
+larger than 32-bits to 32-bits when generating Verilog-only output.</p><h3 id=valid-parameter-expression-attributes>Valid Parameter Expression Attributes&nbsp;<a class=headline-hash href=#valid-parameter-expression-attributes>¶</a></h3><p>The following attributes may be used as expressions involving parameters at
+an instance site or in the default value for a parameter declaration on a
+module:</p><ul><li>IntegerAttr/FloatAttr/StringAttr constants may be used as simple leaf values.</li><li>The <code>#hw.param.decl.ref</code> attribute is used to refer to the value of a
+parameter in the current module. This is valid in most positions where a
+parameter attribute is used - except in the default value for a module.</li><li>The <code>#hw.param.expr</code> operator allows combining other parameter expressions
+into an expression tree. Expression trees have important canonicalization
+rules to ensure important cases are canonicalized to uniquable
+representations.</li><li><code>#hw.param.verbatim&lt;"some string"></code> may be used to provide an opaque blob of
+textual Verilog that is uniqued by its string contents. This is intended
+as a general &ldquo;escape hatch&rdquo; that allows frontend authors to express anything
+Verilog cannot, even if first-class IR support doesn&rsquo;t exist yet. CIRCT does not
+provide any checking to ensure that this is correct or safe, and assumes it
+is single expression - parenthesize the string contents if not to be safe.
+This
+<a href=https://github.com/llvm/circt/issues/1881>should eventually support
+substitutions</a> like
+<code>sv.verbatim.expr</code>.</li></ul><p>Because parameter expressions are MLIR attributes, they are immortal values
+that are uniqued based on their structure. This has several important
+implications, including:</p><ul><li>A parameter reference (<code>#hw.param.decl.ref</code>) to a parameter <code>x</code> doesn&rsquo;t know
+what module it is in. The verifier checks that parameter expressions are
+valid within the body of a module, and that the types line up between the
+parameter reference and the declaration (after all, two different modules can
+have two different parameters named <code>x</code> with different types).</li><li>We want to depend on MLIR canonicalizing and uniquing the pointer address of
+attributes in a predictable way to ensure that further derived uniqued objects
+(e.g. a parameterized integer type) is also uniqued correctly. For example,
+we do not want the types <code>hw.int&lt;x+1></code> and <code>hw.int&lt;1+x></code> to turn into
+different types. See the
+<a href=#parameter-expression-canonicalization>Parameter Expression
+Canonicalization</a> section below for
+more details.</li><li>Whereas the rest of the <code>hw</code> dialect is generally open for extension, the
+current grammar of attribute expressions is closed: you have to hack the
+HW dialect verifier and VerilogEmitter to add new kinds of valid expressions.
+This is considered a limitation, we&rsquo;d like to move to an attribute interface
+at some point that would allow dialect-defined attributes. For example, this
+would allow moving <code>hw.param.verbatim</code> attribute down to the <code>sv</code> dialect.</li></ul><p>Note that there is no parameter expression equivalent for <code>comb.sub</code>:
+<code>(sub x, y)</code> is represented with <code>(add x, (mul y, -1))</code> which makes maintaining
+canonical form simpler and more consistent.</p><h3 id=parameter-expression-canonicalization>Parameter Expression Canonicalization&nbsp;<a class=headline-hash href=#parameter-expression-canonicalization>¶</a></h3><p>As mentioned above, it is important to canonicalize parameter expressions. This
+slightly reduces memory usage, but more importantly ensures that equivalent
+parameter expressions are pointer equivalent: we don&rsquo;t want <code>x+1</code> and <code>1+x</code> to
+be different, because that would cause everything derived from them to be as
+well.</p><p>On the other hand, we expect to support a lot of weird expressions over time (at
+least the full complement that Verilog supports) and canonicalizing arbitrary
+expressions in a predictable way is untenable. As such, we support
+canonicalizing a fixed set of expressions predictably: more may be added in
+the future.</p><p>This set includes:</p><ul><li>Constant folding: parameter expressions with all integer constant operands
+are folded to their corresponding result.</li><li>Constant identities are simplified, e.g. <code>p1 & 0</code> into <code>0</code>, <code>p1 * 1</code> into
+<code>p1</code>, <code>p1 &lt;&lt; 0</code> into <code>p1</code>, <code>p1 >> 0</code> into <code>p1</code>, <code>p1 / 1</code> into <code>p1</code> and
+<code>p1 % 1</code> into <code>0</code>.</li><li>Constant operand merging: any constant operands in associative operations are
+merged into a single operand and moved to the right, e.g. <code>(add 4, x, 2)</code>
+into <code>(add x, 6)</code>.</li><li>Fully associative operators flatten subexpressions, e.g.
+<code>(add x, (add y, z))</code> into <code>(add x, y, z)</code>.</li><li>We simplify affine expressions into a sum of products representation, pulling
+additions out of products, e.g. <code>(a+b)*c*d</code> into <code>(a*c*d + b*c*d)</code></li><li>Operands of fully-associative expressions are put into a stable order, at
+least for the case of affine expressions involving constant integers and
+named parameters. For example <code>p2+p1</code> turns into <code>p1+p2</code> reliably. The
+actual ordering moves subexpressions to the start of the list (more complex
+ones first) followed by verbatims, followed by parameter references, followed
+by constants, each group sorted w.r.t. each other.</li><li>Common operand factoring for adds, e.g. <code>(a+b+a)</code> into <code>(2*a + b)</code> and
+<code>(a*4 + a)</code> into <code>(a*5)</code></li><li>Shift left by constant is canonicalized into multiply to compose correctly
+with affine expression canonicalization, e.g. <code>(shl x, 1)</code> into
+<code>(mul x, 2)</code>.</li><li>As mentioned above, <code>sub</code> is not supported as a ParamExprAttr - it is
+represented as multiply by <code>-1</code>. This allows it to trivially compose
+with affine expression canonicalizations.</li></ul><h3 id=clog2-parameter-expression>clog2 Parameter Expression&nbsp;<a class=headline-hash href=#clog2-parameter-expression>¶</a></h3><p>A <code>clog2</code> parameter expression opcode is provided, which calculates the ceiling
+of log base 2 of its argument. This is useful for calculating things like the
+minimum bitwidth needed to address memory of a parameterized size.</p><p>Note that <code>clog2(0)</code> is <code>0</code>, which follows the Verilog spec.</p><h3 id=using-parameters-in-the-body-of-a-module>Using parameters in the body of a module&nbsp;<a class=headline-hash href=#using-parameters-in-the-body-of-a-module>¶</a></h3><p>Parameters are not
+<a href=https://en.wikipedia.org/wiki/Static_single_assignment_form>SSA values</a>, so they cannot directly be used within the body
+of the module. Just like you use <code>hw.constant</code> to project a constant integer
+value into the SSA domain, you can use the <code>hw.param.value</code> to project a
+parameter expression, like so:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-mlir data-lang=mlir><span class=line><span class=cl>hw<span class=p>.</span>module <span class=nf>@M1</span><span class=p>&lt;</span>param1<span class=p>:</span> <span class=k>i1</span><span class=p>&gt;(</span><span class=nv>%clock</span> <span class=p>:</span> <span class=k>i1</span><span class=p>,</span> <span class=p>...)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=p>...</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%param1</span> <span class=p>=</span> hw<span class=p>.</span>param<span class=p>.</span>value <span class=nl>i1 =</span> <span class=nv>#hw.param.decl.ref</span><span class=p>&lt;</span><span class=s>&#34;param1&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>...</span>
+</span></span><span class=line><span class=cl>    sv<span class=p>.</span>if <span class=nv>%param1</span> <span class=p>{</span>  <span class=c>// Compile-time conditional on parameter.
+</span></span></span><span class=line><span class=cl><span class=c></span>      sv<span class=p>.</span>fwrite <span class=s>&#34;Only happens when the parameter is set\n&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=p>...</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>Alternately, you can project them with a specific name, you can use the
+<code>sv.localparam</code> declaration like so:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-mlir data-lang=mlir><span class=line><span class=cl>hw<span class=p>.</span>module <span class=nf>@M1</span><span class=p>&lt;</span>param1<span class=p>:</span> <span class=k>i1</span><span class=p>&gt;(</span><span class=nv>%clock</span> <span class=p>:</span> <span class=k>i1</span><span class=p>,</span> <span class=p>...)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=p>...</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%param1</span> <span class=p>=</span> sv<span class=p>.</span><span class=kt>loc</span>alparam <span class=p>:</span> <span class=k>i1</span> <span class=p>{</span> <span class=nl>value =</span> <span class=nv>#hw.param.decl.ref</span><span class=p>&lt;</span><span class=s>&#34;param1&#34;</span><span class=p>&gt;:</span> <span class=k>i1</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=p>...</span>
+</span></span><span class=line><span class=cl>    sv<span class=p>.</span>if <span class=nv>%param1</span> <span class=p>{</span>  <span class=c>// Compile-time conditional on parameter.
+</span></span></span><span class=line><span class=cl><span class=c></span>      sv<span class=p>.</span>fwrite <span class=s>&#34;Only happens when the parameter is set\n&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=p>...</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>Using <code>sv.localparam</code> is helpful when you&rsquo;re looking to produce specifically
+pretty Verilog for human consumption. The optimizer won&rsquo;t fold aggressively
+around these names.</p><h3 id=parameterized-types>Parameterized Types&nbsp;<a class=headline-hash href=#parameterized-types>¶</a></h3><p>TODO: Not done yet.</p><h3 id=answers-to-other-common-questions>Answers to other common questions&nbsp;<a class=headline-hash href=#answers-to-other-common-questions>¶</a></h3><p>During the design work on parameterized modules, we had several proposals for
+alternative designs a lot of discussion on this. See in particular, these
+discussions at the open design meetings:</p><ul><li><a href="https://docs.google.com/document/d/1fOSRdyZR2w75D87yU2Ma9h2-_lEPL4NxvhJGJd-s5pk/edit#heading=h.gdy95njn5105">September 15, 2021</a>:
+discussion about using SSA values vs attributes for expressions, whether
+parameters should just be a &ldquo;special kind of port&rdquo; etc.</li><li><a href="https://docs.google.com/document/d/1fOSRdyZR2w75D87yU2Ma9h2-_lEPL4NxvhJGJd-s5pk/edit#heading=h.tcwfqa9fi7u2">September 22, 2021</a>:
+discussions on expression canonicalization, parameterized type casting and
+other topics.</li></ul><p>This section tries to condense some of those discussions into key points:</p><p><strong>Why do instances repeat default parameters from modules?</strong></p><p>As described above, the full set of module parameters are specified on an
+instance, even if some have default values. The reason for this is that we want
+the IR to be simple and efficient to analyze by the compiler: keeping (and
+verifying that) instance parameters are in canonical form means that we can
+index them with integers instead of names (just like module input and result
+ports), and intermodule analysis/optimization doesn&rsquo;t have to handle default
+values as a special case. Instead they are just a matter for frontends and
+the Verilog exporter to care about.</p><p><strong>Why model parameters with attributes instead of SSA values?</strong></p><p>It seems unfortunate to replicate some parts of the <code>comb</code> dialect (e.g.
+<code>comb.add</code>) as attributes rather than just reusing the existing attributes.
+Such a design has historical familiarity (e.g. LLVM&rsquo;s <code>ConstantExpr</code> class)
+which led to a bunch of complexity in LLVM that would have been better avoided
+(and yes - there are much better designs for LLVM&rsquo;s purposes than what it has
+now).</p><p>All that said, using attributes is the right thing for a number of reasons:</p><ol><li>This arithmetic happens at metaprogramming time, these ops do not turn into
+hardware. It use important and useful to be able to know that structurally.</li><li>We need to verify parameter expressions are valid for the module they are
+defined in - it isn&rsquo;t generally ok for the verifier of the <code>hw.instance</code> op
+to walk an arbitrary amount of IR to check that an SSA value is valid as a
+parameter.</li><li>We need to support parameterized types like <code>!hw.int&lt;n></code>: because MLIR types
+are immortal and uniqued, they can refer to attributes but cannot refer to
+<a href=https://en.wikipedia.org/wiki/Static_single_assignment_form>SSA values</a>
+(which may be destroyed).</li><li>Operations need to be able to compute their own type without creating other
+operations. For example, we need to compute that the result type of
+<code>comb.concat %a, %b : (i1, !hw.int&lt;n>)</code> is <code>!hw.int&lt;n+1></code> without introducing
+a new <code>comb.add</code> node to &ldquo;add one to n&rdquo;.</li><li>In practice, comb ops and the canonicalizations that apply to them have very
+different goals than the canonicalizations we apply to parameter expressions.</li></ol><h2 id=type-declarations>Type declarations&nbsp;<a class=headline-hash href=#type-declarations>¶</a></h2><p><strong>Type declaration IR</strong></p><p><em>Type Scope Operation</em></p><p>A
+<a href=Dialects/HW/#hwtype_scope-circthwtypescopeop>Type Scope</a> declares a single
+region with a single block that contains type declarations. Type scopes provide
+a means to group type declarations. Type scopes have a symbol and are themselves
+symbol tables, so they may be looked up, and type declarations may be looked up
+within them.</p><p><em>Type Declaration Operation</em></p><p>A
+<a href=https://circt.llvm.org/docs/Dialects/HW/#hwtypedecl-circthwtypedeclop>Type Declaration</a>
+declares a symbolic name for a type. It consists of:</p><ul><li>A symbolic name, which can be referred to in the IR by a Type Alias Type.</li><li>A type attribute, which contains the underlying type the name refers to</li><li>An optional string attribute, which specifies a name to give the type in the
+output. If not specified, the symbolic name is used in the output.</li></ul><p><em>Type Alias Type</em></p><p>A
+<a href=https://circt.llvm.org/docs/Dialects/HW/#an-symbolic-reference-to-a-type-declaration>Type Alias</a>
+refers to a type declaration symbolically. It consists of:</p><ul><li>A symbolic reference to a Type Scope and Type Declaration within the scope</li><li>A copy of the underlying type, cached in type storage</li><li>A copy of the canonical type, cached in type storage</li></ul><p><strong>Type declaration System Verilog output</strong></p><p>In ExportVerilog, Type Scopes may be split into their own output file, included
+at the top of multiple split output files, or included via a header file.</p><p>Each Type Declaration will be emitted according to the System Verilog spec,
+section 6.18, User-defined types. For example:</p><pre tabindex=0><code>typedef logic mytype;
+</code></pre><p><strong>Type canonicalization</strong></p><p>We take an approach to type canonicalization similar to
+<a href=https://clang.llvm.org/docs/InternalsManual.html#canonical-types>Clang</a>.</p><p>To implement this, CIRCT has an extra layer of indirection in the ODS
+declarations of types that may be targeted by Type Declarations. This layer
+makes it possible to generically let operations declare their operands and
+results to be of a specific type, and also accept type declarations that
+canonicalize to that type.</p><p>The HW dialect types are declared in
+<a href=https://github.com/llvm/circt/blob/main/include/circt/Dialect/HW/HWTypesImpl.td>HWTypesImpl.td</a>,
+which declares the actual type and is used to generate the C++ wrappers. To make
+these types usable in ODS operations in a generic way that support type
+declarations, wrapper types are declared in
+<a href=https://github.com/llvm/circt/blob/main/include/circt/Dialect/HW/HWTypes.td>HWTypes.td</a>,
+which uses helpers to define dialect types that may be either the declared type,
+or a type declaration whose canonical type is the declared type.</p><p>In order to &ldquo;see through&rdquo; type declarations and get at the canonical type, a set
+of helper functions are added to the hardware dialect: <code>hw::type_isa</code>,
+<code>hw::type_cast</code>, and <code>hw::type_dyn_cast</code>. These should generally be used instead
+of the MLIR <code>Type::isa</code>, <code>Type::cast</code>, and <code>Type::dyn_cast</code>, because they
+transparently support type declarations.</p><p>As the Clang docs state: &ldquo;The only hard part here is remembering not to use the
+isa/cast/dyn_cast operations.&rdquo;</p><p><strong>Open Issues</strong></p><p><em>Duplicated type in Type Alias Type IR</em></p><p>In order to support Type canonicalization, the Type Alias Type keeps a copy of
+the underlying type, as well as what it canonicalizes to, cached in Type
+storage. This allows the helpers like <code>hw::type_isa</code> to efficiently query the
+underlying type or canonical type in constant time.</p><p>Ideally, the Type Alias Type would only contain a symbolic reference to the
+declaration, and at construction time (during parsing or when built
+programmatically) look up and cache the underlying type and its canonical type.</p><p>Unfortunately, this is not currently possible with the MLIR parser API. There is
+some discussion about this on
+<a href=https://discourse.llvm.org/t/contextual-type-verification/4525>Discourse</a>,
+and it seems like a good enhancement. This is tracked in issue
+<a href=https://github.com/llvm/circt/issues/1642>#1642</a>.
+Until then, we must duplicate the type in the IR.</p><h2 id=symbols-and-visibility>Symbols and Visibility&nbsp;<a class=headline-hash href=#symbols-and-visibility>¶</a></h2><p>Verilog has a broad notion of what can be named outside the context of its
+declaration. This is compounded by the many tools which have additional source
+files which refer to Verilog names (e.g. tcl files). However, we do not want to
+require that every wire, register, instance, localparam, port, etc which can be
+named not be touched by passes. We want only entities marked as public facing
+to impede transformation.</p><p>For this reason, wires, registers, and instances may optionally define a symbol.
+When the symbol is defined, the entity is considered part of the visible
+interface and should be preserved in transformation. Entities without a symbol
+defined are considered private and may be changed by transformation.</p><p><strong>Implementation constraints</strong></p><p>Currently, MLIR restricts symbol resolution to looking in and downward through
+any nested symbol tables when resolving symbols. This assumption has
+implications for verification, the pass manager, and threading. Until symbol
+references are more general, SV and HW dialects do not define symbol tables for
+modules. Therefore, wires, registers, and interfaces exist in the same
+namespace as modules. It is encouraged that one prefaces the names to avoid
+conflict with modules. The symbol names on these entities has no bearing on the
+output Verilog, each of these entities has a defined way to assign its name (SSA
+value name for wires and regs, a non-optional string for instances).</p><p>As MLIR symbol support improves, it is desired to move to per-module symbol
+tables and to unify names with symbol names.</p><p><strong>Ports</strong></p><p>Module ports are remotely nameable entities in Verilog, but are not easily named
+with symbols. A suggested workaround is to attach a wire to a port and use its
+symbol for remote references. Instance ports have a similar problem.</p><h2 id=future-directions>Future Directions&nbsp;<a class=headline-hash href=#future-directions>¶</a></h2><p>There are many possible future directions that we anticipate tackling, when and
+if the need arises:</p><p><strong>More support for IR</strong></p><p>Many in the CIRCT community are interested in adding first-class support for
+parametric modules &ndash; similar but more general than SystemVerilog module
+parameters. It isn&rsquo;t clear yet whether this should be part of the HW dialect
+or something higher level.</p><p>Separate from a &ldquo;good&rdquo; representation of parametric modules, the SV dialect
+could grow direct support for representing the SystemVerilog functionality
+in this space, including even things like &ldquo;generate&rdquo; blocks.</p><p><strong>EDA Tool-specific Subdialects</strong></p><p>The EDA tool ecosystem is filled with a wide range of tools with different
+capabilities &ndash; for example
+<a href=https://symbiflow.github.io/sv-tests-results/>see this
+table</a> for one compilation of
+different systems and their capabilities. As such, we expect that the day will
+come where a frontend wants to generate fancy features for some modern systems,
+but cannot afford to break compatibility with other ecosystem tools.</p><p>Given the design of the HW/SV dialects, there is no need to resort to &ldquo;lowest
+common denominator&rdquo; approach here: we can allow frontends to generate &ldquo;fancy&rdquo;
+features, then use progressive lowering when dealing with tools that can&rsquo;t
+handle them. This can also allow IP providers to decide what flavor
+of features they want to provide to their customers (or provide multiple
+different choices).</p><p><strong>SystemVerilog Parser</strong></p><p>As the SV dialect grows out, it becomes natural to think about building a high
+quality parser that reads SystemVerilog source code and parses it into the SV
+dialect. Such functionality could be very useful to help build tooling for the
+SystemVerilog ecosystem.</p><p>Such a parser should follow clang-style principles of producing high quality
+diagnostics, preserving source location information, being built as a library,
+etc.</p><div class=edit-meta><br></div><nav class=pagination><a class="nav nav-prev" href=https://circt.llvm.org/docs/Dialects/HW/ title="'hw' Dialect"><i class="fas fa-arrow-left" aria-hidden=true></i> Prev - 'hw' Dialect</a>
+<a class="nav nav-next" href=https://circt.llvm.org/docs/Dialects/LLHD/ title="'llhd' Dialect">Next - 'llhd' Dialect <i class="fas fa-arrow-right" aria-hidden=true></i></a></nav><footer><p class=powered>Powered by <a href=https://gohugo.io>Hugo</a>. Theme by <a href=https://themes.gohugo.io/hugo-theme-techdoc/>TechDoc</a>. Designed by <a href=https://github.com/thingsym/hugo-theme-techdoc>Thingsym</a>.</p></footer></main><div class=sidebar><nav class=slide-menu><ul><li><a href=https://circt.llvm.org/>Home</a></li><li><a href=https://circt.llvm.org/talks/>Talks and Related Publications</a></li><li><a href=https://circt.llvm.org/getting_started/>Getting Started</a></li><li class="parent has-sub-menu"><a href=https://circt.llvm.org/docs/>Code Documentation<span class="mark opened">-</span></a><ul class=sub-menu><li class=has-sub-menu><a href=https://circt.llvm.org/docs/CommandGuide/>CommandGuide<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/CommandGuide/handshake-runner/>handshake-runner</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Charter/>CIRCT Charter</a></li><li class="parent has-sub-menu"><a href=https://circt.llvm.org/docs/Dialects/>Dialects<span class="mark opened">-</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Calyx/>'calyx' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/CHIRRTL/>'chirrtl' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Comb/>'comb' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Comb/RationaleComb/>`comb` Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/ESI/>'esi' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/ESI/cosim/>ESI cosimulation model</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/types/>ESI data types and communication types</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/services/>ESI Global Services</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/software_api/>ESI Software APIs</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/notes/>Miscellaneous Notes</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/RationaleESI/>The Elastic Silicon Interconnect dialect</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/>'firrtl' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/FIRRTLAnnotations/>FIRRTL Annotations</a></li><li><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/RationaleFIRRTL/>FIRRTL Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/FSM/>'fsm' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/FSM/RationaleFSM/>FSM Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Handshake/>'handshake' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Handshake/RationaleHandshake/>Handshake Dialect Rationale</a></li></ul></li><li class="parent has-sub-menu"><a href=https://circt.llvm.org/docs/Dialects/HW/>'hw' Dialect<span class="mark opened">-</span></a><ul class=sub-menu><li class=active><a href=https://circt.llvm.org/docs/Dialects/HW/RationaleHW/>HW Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/LLHD/>'llhd' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/Moore/>'moore' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/MSFT/>'msft' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Seq/>'seq' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Seq/RationaleSeq/>Seq(uential) Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/StaticLogic/>'staticlogic' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/SV/>'sv' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/SV/RationaleSV/>SV Dialect Rationale</a></li></ul></li></ul></li><li><a href=https://circt.llvm.org/docs/GettingStarted/>Getting Started with the CIRCT Project</a></li><li><a href=https://circt.llvm.org/docs/Passes/>Passes</a></li><li><a href=https://circt.llvm.org/docs/PyCDE/>PyCDE</a></li><li><a href=https://circt.llvm.org/docs/Scheduling/>Static scheduling infrastructure</a></li><li><a href=https://circt.llvm.org/docs/RationaleSymbols/>Symbol and Inner Symbol Rationale</a></li><li><a href=https://circt.llvm.org/docs/PythonBindings/>Using the Python Bindings</a></li><li><a href=https://circt.llvm.org/docs/VerilogGeneration/>Verilog and SystemVerilog Generation</a></li></ul></li></ul></nav><div class=sidebar-footer></div></div></div><a href=# id=backtothetop-fixed class=backtothetop data-backtothetop-duration=600 data-backtothetop-easing=easeOutQuart data-backtothetop-fixed-fadein=1000 data-backtothetop-fixed-fadeout=1000 data-backtothetop-fixed-bottom=10 data-backtothetop-fixed-right=20><span class="fa-layers fa-fw"><i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i></span></a></div></body></html>

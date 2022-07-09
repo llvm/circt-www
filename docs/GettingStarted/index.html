@@ -1,0 +1,147 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>Getting Started with the CIRCT Project - CIRCT</title><meta name=description content="Circuit IR Compilers and Tools"><meta name=generator content="Hugo 0.101.0"><link href=https://circt.llvm.org/index.xml rel=alternate type=application/rss+xml><link rel=canonical href=https://circt.llvm.org/docs/GettingStarted/><link rel=stylesheet href=https://circt.llvm.org/css/theme.css><script src=https://use.fontawesome.com/releases/v5.0.6/js/all.js></script>
+<link rel=stylesheet href=https://circt.llvm.org/css/chroma.min.css><script src=https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js></script>
+<script src=https://circt.llvm.org/js/bundle.js></script>
+<script type=text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type=text/x-mathjax-config>
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$', '$'] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+    }
+  });
+</script><style>:root{}</style></head><body><div class=container><header><h1><div><img src=https://circt.llvm.org//circt-logo.svg width=40px align=absmiddle>
+CIRCT</div></h1><p class=description>Circuit IR Compilers and Tools</p></header><div class=global-menu><nav><ul><li class=parent><a href>Community<i class="fas fa-angle-right"></i></a><ul class=sub-menu><li class=child><a href=https://llvm.discourse.group/c/Projects-that-want-to-become-official-LLVM-Projects/circt/40>Forums</a></li><li class=child><a href=https://discord.gg/xS7Z362>Chat</a></li></ul></li><li class=parent><a href=https://github.com/llvm/circt/tree/main/>Source<i class="fas fa-angle-right"></i></a><ul class=sub-menu><li class=child><a href=/doxygen/>Doxygen</a></li><li class=child><a href=https://github.com/llvm/circt/tree/main/>GitHub</a></li></ul></li></ul></nav></div><div class=content-container><main><h1>Getting Started with the CIRCT Project</h1><h2 id=overview>Overview&nbsp;<a class=headline-hash href=#overview>¶</a></h2><p>Welcome to the CIRCT project!</p><p>&ldquo;CIRCT&rdquo; stands for &ldquo;Circuit IR Compilers and Tools&rdquo;. The CIRCT project is an
+(experimental!) effort looking to apply MLIR and the LLVM development
+methodology to the domain of hardware design tools.</p><p>Take a look at the following diagram, which gives a brief overview of the
+current
+<a href=includes/img/dialects.svg>dialects and how they interact</a>:</p><p align=center><img src=includes/img/dialectlegend.svg></p><p align=center><img src=includes/img/dialects.svg></p><h2 id=setting-this-up>Setting this up&nbsp;<a class=headline-hash href=#setting-this-up>¶</a></h2><p>These commands can be used to setup CIRCT project:</p><ol><li><strong>Install Dependencies</strong> of LLVM/MLIR according to
+<a href=https://mlir.llvm.org/getting_started/>the
+instructions</a>, including cmake and
+ninja.</li></ol><p>If you plan to use the Python bindings, you should start by reading
+<a href=https://mlir.llvm.org/docs/Bindings/Python/#building>the
+instructions</a> for building
+the MLIR Python bindings, which describe extra dependencies, CMake variables,
+and helpful Python development practices. Note the extra CMake variables, which
+you will need to specify in step 3) below.</p><ol start=2><li><strong>Check out LLVM and CIRCT repos.</strong> CIRCT contains LLVM as a git
+submodule. The LLVM repo here includes staged changes to MLIR which
+may be necessary to support CIRCT. It also represents the version of
+LLVM that has been tested. MLIR is still changing relatively rapidly,
+so feel free to use the current version of LLVM, but APIs may have
+changed.</li></ol><pre tabindex=0><code>$ git clone git@github.com:circt/circt.git
+$ cd circt
+$ git submodule init
+$ git submodule update
+</code></pre><p><em>Note:</em> The repository is set up so that <code>git submodule update</code> performs a
+shallow clone, meaning it downloads just enough of the LLVM repository to check
+out the currently specified commit. If you wish to work with the full history of
+the LLVM repository, you can manually &ldquo;unshallow&rdquo; the submodule:</p><pre tabindex=0><code>$ cd llvm
+$ git fetch --unshallow
+</code></pre><ol start=3><li><strong>Build and test LLVM/MLIR:</strong></li></ol><pre tabindex=0><code>$ cd circt
+$ mkdir llvm/build
+$ cd llvm/build
+$ cmake -G Ninja ../llvm \
+    -DLLVM_ENABLE_PROJECTS=&#34;mlir&#34; \
+    -DLLVM_TARGETS_TO_BUILD=&#34;X86;RISCV&#34; \
+    -DLLVM_ENABLE_ASSERTIONS=ON \
+    -DCMAKE_BUILD_TYPE=DEBUG
+$ ninja
+$ ninja check-mlir
+</code></pre><ol start=4><li><strong>Build and test CIRCT:</strong></li></ol><pre tabindex=0><code>$ cd circt
+$ mkdir build
+$ cd build
+$ cmake -G Ninja .. \
+    -DMLIR_DIR=$PWD/../llvm/build/lib/cmake/mlir \
+    -DLLVM_DIR=$PWD/../llvm/build/lib/cmake/llvm \
+    -DLLVM_ENABLE_ASSERTIONS=ON \
+    -DCMAKE_BUILD_TYPE=DEBUG
+$ ninja
+$ ninja check-circt
+$ ninja check-circt-integration # Run the integration tests.
+</code></pre><p>The <code>-DCMAKE_BUILD_TYPE=DEBUG</code> flag enables debug information, which makes the
+whole tree compile slower, but allows you to step through code into the LLVM
+and MLIR frameworks.</p><p>To get something that runs fast, use <code>-DCMAKE_BUILD_TYPE=Release</code> or
+<code>-DCMAKE_BUILD_TYPE=RelWithDebInfo</code> if you want to go fast and optionally if
+you want debug info to go with it. <code>Release</code> mode makes a very large difference
+in performance.</p><p>If you plan to use the Python bindings, you should also specify
+<code>-DCIRCT_BINDINGS_PYTHON_ENABLED=ON</code>.</p><ol start=5><li><strong>Optionally configure your environment</strong>:</li></ol><p>It is useful to add the <code>.../circt/build/bin</code> and <code>.../circt/llvm/build/bin</code>
+directories to the end of your PATH, allowing you to use the tools like <code>circt-opt</code>
+in a natural way on the command line. Similarly, you need to be in the build
+directory to invoke ninja, which is super annoying. You might find a bash/zsh
+alias like this to be useful:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>build<span class=o>()</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>  <span class=o>(</span><span class=nb>cd</span> <span class=nv>$HOME</span>/Projects/circt/build/<span class=p>;</span> ninja <span class=nv>$1</span> <span class=nv>$2</span> <span class=nv>$3</span><span class=o>)</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></div><p>This allows you to invoke <code>build check-circt</code> from any directory and have it do
+the right thing.</p><ol start=6><li><strong>Run the Verilator tests:</strong> (optional)</li></ol><p><a href=https://github.com/verilator/verilator>Verilator</a> can be used to check
+SystemVerilog code. To run the tests, build or install a <strong>recent</strong> version
+of Verilator (at least v4.034, ideally v4.110 or later to avoid a known bug).
+(Some Linux distributions have <em>ancient</em> versions.) If Verilator is in your
+PATH, <code>build check-circt</code> should run the tests which require Verilator.</p><p>We provide a script <code>utils/get-verilator.sh</code> to automate the download and
+compilation of Verilator into a known location. The testing script will check
+this location first. This script assumes that all the Verilator package
+dependencies are installed on your system. They are:</p><ul><li>make</li><li>autoconf</li><li>g++</li><li>flex</li><li>bison</li><li>libfl2 # Ubuntu only (ignore if gives error)</li><li>libfl-dev # Ubuntu only (ignore if gives error)</li></ul><ol start=7><li><strong>Install Cap&rsquo;nProto</strong> (optional, affects ESI dialect only)</li></ol><p>Some of the ESI dialect code requires
+<a href=https://capnproto.org/>libcapnp</a>, 0.9.1 or newer.
+(Specifically, the
+<a href=ESI/cosim.md>cosimulation</a> component.) Most of
+the ESI cosim integration tests also require the python bindings: pycapnp.
+The <code>utils/get-capnp.sh</code> script downloads, compiles, and installs a known
+good version to a directory within the circt source code. It optionally
+installs pycapnp via &lsquo;pip3&rsquo;. The capnp compile requires libtool.
+Alternatively, you can use a docker image we provide via
+<code>utils/run-docker.sh</code>.</p><ol start=8><li><strong>Install OR-Tools</strong> (optional, enables additional schedulers)</li></ol><p><a href=https://developers.google.com/optimization/>OR-Tools</a> is an open source
+software suite for (mathematical) optimization. It provides a uniform interface
+to several open-source and commercial solvers, e.g. for linear programs and
+satisfiability problems. Here, it is optionally used in the static scheduling
+infrastructure. Binary distributions often do not include the required CMake
+build info. The <code>utils/get-or-tools.sh</code> script downloads, compiles, and
+installs a known good version to a directory within the CIRCT source code,
+where it is then picked up automatically by the build.</p><h2 id=windows-notes-on-setting-up-with-ninja>Windows: notes on setting up with Ninja&nbsp;<a class=headline-hash href=#windows-notes-on-setting-up-with-ninja>¶</a></h2><p>Building on Windows using MSVC + Ninja + Python support is straight forward,
+though full of landmines. Here are some notes:</p><ul><li>Ninja and cmake must be run in a VS Developer Command shell. If you use
+Powershell and don&rsquo;t want to start the VS GUI, you can run:</li></ul><div class=highlight><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=line><span class=cl><span class=p>&gt;</span> <span class=nv>$vsPath</span> <span class=p>=</span> <span class=p>&amp;(</span><span class=nb>Join-Path</span> <span class=p>${</span><span class=n>env</span><span class=err>:</span><span class=n>ProgramFiles</span><span class=p>(</span><span class=n>x86</span><span class=p>)}</span> <span class=s2>&#34;\Microsoft Visual Studio\Installer\vswhere.exe&#34;</span><span class=p>)</span> <span class=n>-property</span> <span class=n>installationpath</span>
+</span></span><span class=line><span class=cl><span class=p>&gt;</span> <span class=nb>Import-Module</span> <span class=p>(</span><span class=nb>Get-ChildItem</span> <span class=nv>$vsPath</span> <span class=n>-Recurse</span> <span class=o>-File</span> <span class=n>-Filter</span> <span class=n>Microsoft</span><span class=p>.</span><span class=n>VisualStudio</span><span class=p>.</span><span class=n>DevShell</span><span class=p>.</span><span class=n>dll</span><span class=p>).</span><span class=n>FullName</span>
+</span></span><span class=line><span class=cl><span class=p>&gt;</span> <span class=nb>Enter-VsDevShell</span> <span class=n>-VsInstallPath</span> <span class=nv>$vsPath</span> <span class=n>-SkipAutomaticLocation</span>
+</span></span></code></pre></div><ul><li>VSCode&rsquo;s cmake configure does not operate properly with Python support. The
+symptom is that the build will complete, but importing <code>circt</code> or <code>mlir</code> crashes
+Python. Doing everything from the command line is the only way CIRCT compiles
+have been made to work.</li></ul><p>Cheat sheet for powershell:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=line><span class=cl><span class=c># Install cmake, ninja, and Visual Studio</span>
+</span></span><span class=line><span class=cl><span class=p>&gt;</span> <span class=n>python</span> <span class=n>-m</span> <span class=n>pip</span> <span class=n>install</span> <span class=n>psutil</span> <span class=n>pyyaml</span> <span class=n>numpy</span> <span class=n>pybind11</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>&gt;</span> <span class=nv>$vsPath</span> <span class=p>=</span> <span class=p>&amp;(</span><span class=nb>Join-Path</span> <span class=p>${</span><span class=n>env</span><span class=err>:</span><span class=n>ProgramFiles</span><span class=p>(</span><span class=n>x86</span><span class=p>)}</span> <span class=s2>&#34;\Microsoft Visual Studio\Installer\vswhere.exe&#34;</span><span class=p>)</span> <span class=n>-property</span> <span class=n>installationpath</span>
+</span></span><span class=line><span class=cl><span class=p>&gt;</span> <span class=nb>Import-Module</span> <span class=p>(</span><span class=nb>Get-ChildItem</span> <span class=nv>$vsPath</span> <span class=n>-Recurse</span> <span class=o>-File</span> <span class=n>-Filter</span> <span class=n>Microsoft</span><span class=p>.</span><span class=n>VisualStudio</span><span class=p>.</span><span class=n>DevShell</span><span class=p>.</span><span class=n>dll</span><span class=p>).</span><span class=n>FullName</span>
+</span></span><span class=line><span class=cl><span class=p>&gt;</span> <span class=nb>Enter-VsDevShell</span> <span class=n>-VsInstallPath</span> <span class=nv>$vsPath</span> <span class=n>-SkipAutomaticLocation</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>&gt;</span> <span class=nb>cd </span><span class=p>&lt;</span><span class=n>circt</span> <span class=n>clone</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&gt;</span> <span class=n>cmake</span> <span class=n>-B</span><span class=p>&lt;</span><span class=n>build_dir</span><span class=p>&gt;</span> <span class=n>llvm</span><span class=p>/</span><span class=n>llvm</span> <span class=p>`</span>
+</span></span><span class=line><span class=cl>    <span class=n>-GNinja</span> <span class=p>`</span>
+</span></span><span class=line><span class=cl>    <span class=n>-DLLVM_ENABLE_PROJECTS</span><span class=p>=</span><span class=n>mlir</span> <span class=p>`</span>
+</span></span><span class=line><span class=cl>    <span class=n>-DCMAKE_BUILD_TYPE</span><span class=p>=</span><span class=n>Debug</span> <span class=p>`</span>
+</span></span><span class=line><span class=cl>    <span class=n>-DLLVM_TARGETS_TO_BUILD</span><span class=p>=</span><span class=n>X86</span> <span class=p>`</span>
+</span></span><span class=line><span class=cl>    <span class=n>-DLLVM_ENABLE_ASSERTIONS</span><span class=p>=</span><span class=n>ON</span> <span class=p>`</span>
+</span></span><span class=line><span class=cl>    <span class=n>-DMLIR_ENABLE_BINDINGS_PYTHON</span><span class=p>=</span><span class=n>ON</span> <span class=p>`</span>
+</span></span><span class=line><span class=cl>    <span class=n>-DLLVM_EXTERNAL_PROJECTS</span><span class=p>=</span><span class=n>circt</span> <span class=p>`</span>
+</span></span><span class=line><span class=cl>    <span class=n>-DLLVM_EXTERNAL_CIRCT_SOURCE_DIR</span><span class=p>=</span><span class=s2>&#34;</span><span class=p>$(</span><span class=n>PWD</span><span class=p>)</span><span class=s2>&#34;</span> <span class=p>`</span>
+</span></span><span class=line><span class=cl>    <span class=n>-DCIRCT_BINDINGS_PYTHON_ENABLED</span><span class=p>=</span><span class=n>ON</span> <span class=p>`</span>
+</span></span><span class=line><span class=cl>    <span class=n>-DCMAKE_EXPORT_COMPILE_COMMANDS</span><span class=p>=</span><span class=n>ON</span>
+</span></span><span class=line><span class=cl><span class=p>&gt;</span> <span class=n>ninja</span> <span class=n>-C</span><span class=p>&lt;</span><span class=n>build_dir</span><span class=p>&gt;</span> <span class=nb>check-circt</span>
+</span></span></code></pre></div><h2 id=submitting-changes-to-circt>Submitting changes to CIRCT&nbsp;<a class=headline-hash href=#submitting-changes-to-circt>¶</a></h2><p>The project is small so there are few formal process yet. We generally follow
+the LLVM and MLIR community practices, but we currently use pull requests and
+GitHub issues. Here are some high-level guidelines:</p><ul><li><p>Please use clang-format in the LLVM style. There are good plugins
+for common editors like VSCode, Atom, etc, or you can run it
+manually. This makes code easier to read and understand.</p></li><li><p>Beyond mechanical formatting issues, please follow the
+<a href=https://llvm.org/docs/CodingStandards.html>LLVM Coding
+Standards</a>.</p></li><li><p>Please practice &ldquo;
+<a href=https://llvm.org/docs/DeveloperPolicy.html#incremental-development>incremental development</a>&rdquo;,
+preferring to send a small series of incremental patches rather than large
+patches. There are other policies in the LLVM Developer Policy document that
+are worth skimming.</p></li><li><p>Please use &ldquo;Squash and Merge&rdquo; in PRs when they are approved - we don&rsquo;t
+need the intra-change history in the repository history.</p></li><li><p>Please create a PR to get a code review. For reviewers, it is good to look
+at the primary author of the code you are touching to make sure they are at
+least CC&rsquo;d on the PR.</p></li></ul><h2 id=submitting-changes-to-llvm--mlir>Submitting changes to LLVM / MLIR&nbsp;<a class=headline-hash href=#submitting-changes-to-llvm--mlir>¶</a></h2><p>This project depends on MLIR and LLVM, and it is occasionally useful to improve
+them.
+To get set up for this:</p><ol><li>Follow the &ldquo;
+<a href=https://mlir.llvm.org/getting_started/Contributing/>How to Contribute</a>&rdquo;
+instructions, and install the right tools, e.g. &lsquo;arcanist&rsquo; and <code>clang-format</code>.</li><li>Get an LLVM Phabricator account</li><li><a href=https://llvm.org/docs/DeveloperPolicy.html#obtaining-commit-access>Ask for LLVM commit access</a>,
+the barrier is low.</li></ol><h3 id=submitting-a-patch>Submitting a patch&nbsp;<a class=headline-hash href=#submitting-a-patch>¶</a></h3><p>The patch flow goes like this:</p><ol><li>Check out the LLVM mono repo (as described above).</li><li>Make changes to your codebase.</li><li>Stage your changes with <code>git add</code>.</li><li>Run clang-format to tidy up the details of the patch with <code>git clang-format origin/main</code></li><li>Create a
+<a href=https://llvm.org/docs/Phabricator.html>patch in Phabricator</a> with <code>arc diff</code>.</li><li>Iterate on review, changing your code and sending another patch with <code>arc diff</code>.</li></ol><p>When your review converges and your patch is approved, do the following:</p><ol><li>commit your changes with <code>git commit</code></li><li>rebase your changes with <code>git pull --rebase</code></li><li>retest your patch with <code>ninja check-mlir</code> (or whatever other target makes sense)</li><li>push your changes with <code>git push</code></li></ol><div class=edit-meta><br></div><nav class=pagination><a class="nav nav-prev" href=https://circt.llvm.org/docs/Dialects/SV/RationaleSV/ title="SV Dialect Rationale"><i class="fas fa-arrow-left" aria-hidden=true></i> Prev - SV Dialect Rationale</a>
+<a class="nav nav-next" href=https://circt.llvm.org/docs/Passes/ title=Passes>Next - Passes <i class="fas fa-arrow-right" aria-hidden=true></i></a></nav><footer><p class=powered>Powered by <a href=https://gohugo.io>Hugo</a>. Theme by <a href=https://themes.gohugo.io/hugo-theme-techdoc/>TechDoc</a>. Designed by <a href=https://github.com/thingsym/hugo-theme-techdoc>Thingsym</a>.</p></footer></main><div class=sidebar><nav class=slide-menu><ul><li><a href=https://circt.llvm.org/>Home</a></li><li><a href=https://circt.llvm.org/talks/>Talks and Related Publications</a></li><li><a href=https://circt.llvm.org/getting_started/>Getting Started</a></li><li class="parent has-sub-menu"><a href=https://circt.llvm.org/docs/>Code Documentation<span class="mark opened">-</span></a><ul class=sub-menu><li class=has-sub-menu><a href=https://circt.llvm.org/docs/CommandGuide/>CommandGuide<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/CommandGuide/handshake-runner/>handshake-runner</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Charter/>CIRCT Charter</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/>Dialects<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Calyx/>'calyx' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/CHIRRTL/>'chirrtl' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Comb/>'comb' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Comb/RationaleComb/>`comb` Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/ESI/>'esi' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/ESI/cosim/>ESI cosimulation model</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/types/>ESI data types and communication types</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/services/>ESI Global Services</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/software_api/>ESI Software APIs</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/notes/>Miscellaneous Notes</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/RationaleESI/>The Elastic Silicon Interconnect dialect</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/>'firrtl' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/FIRRTLAnnotations/>FIRRTL Annotations</a></li><li><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/RationaleFIRRTL/>FIRRTL Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/FSM/>'fsm' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/FSM/RationaleFSM/>FSM Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Handshake/>'handshake' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Handshake/RationaleHandshake/>Handshake Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/HW/>'hw' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/HW/RationaleHW/>HW Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/LLHD/>'llhd' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/Moore/>'moore' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/MSFT/>'msft' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Seq/>'seq' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Seq/RationaleSeq/>Seq(uential) Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/StaticLogic/>'staticlogic' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/SV/>'sv' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/SV/RationaleSV/>SV Dialect Rationale</a></li></ul></li></ul></li><li class=active><a href=https://circt.llvm.org/docs/GettingStarted/>Getting Started with the CIRCT Project</a></li><li><a href=https://circt.llvm.org/docs/Passes/>Passes</a></li><li><a href=https://circt.llvm.org/docs/PyCDE/>PyCDE</a></li><li><a href=https://circt.llvm.org/docs/Scheduling/>Static scheduling infrastructure</a></li><li><a href=https://circt.llvm.org/docs/RationaleSymbols/>Symbol and Inner Symbol Rationale</a></li><li><a href=https://circt.llvm.org/docs/PythonBindings/>Using the Python Bindings</a></li><li><a href=https://circt.llvm.org/docs/VerilogGeneration/>Verilog and SystemVerilog Generation</a></li></ul></li></ul></nav><div class=sidebar-footer></div></div></div><a href=# id=backtothetop-fixed class=backtothetop data-backtothetop-duration=600 data-backtothetop-easing=easeOutQuart data-backtothetop-fixed-fadein=1000 data-backtothetop-fixed-fadeout=1000 data-backtothetop-fixed-bottom=10 data-backtothetop-fixed-right=20><span class="fa-layers fa-fw"><i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i></span></a></div></body></html>

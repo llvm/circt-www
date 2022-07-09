@@ -1,0 +1,13 @@
+<map id="TraitBase" name="TraitBase">
+<area shape="rect" id="node1" title=" " alt="" coords="5,307,88,334"/>
+<area shape="rect" id="node2" href="$classcirct_1_1calyx_1_1Combinational.html" title="Signals that the following operation is combinational." alt="" coords="155,5,397,47"/>
+<area shape="rect" id="node3" href="$classcirct_1_1calyx_1_1ControlLike.html" title="Signals that the following operation is &quot;control&#45;like.&quot;." alt="" coords="165,71,387,112"/>
+<area shape="rect" id="node4" href="$classcirct_1_1firrtl_1_1SameOperandsIntTypeKind.html" title="A binary operation where the operands have the same integer kind." alt="" coords="174,136,378,177"/>
+<area shape="rect" id="node5" href="$classcirct_1_1sv_1_1NonProceduralOp.html" title="This class verifies that the specified op is not located in a procedural region." alt="" coords="137,201,415,243"/>
+<area shape="rect" id="node6" href="$classcirct_1_1sv_1_1ProceduralOp.html" title="This class verifies that the specified op is located in a procedural region." alt="" coords="159,267,393,308"/>
+<area shape="rect" id="node7" href="$classcirct_1_1sv_1_1ProceduralRegion.html" title="Signals that an operations regions are procedural." alt="" coords="145,332,407,373"/>
+<area shape="rect" id="node8" href="$classcirct_1_1sv_1_1VendorExtension.html" title="This class provides a verifier for ops that are expecting their parent to be one of the given parent ..." alt="" coords="147,397,405,439"/>
+<area shape="rect" id="node9" href="$classmlir_1_1OpTrait_1_1HasClock.html" title=" " alt="" coords="171,463,381,504"/>
+<area shape="rect" id="node10" href="$classmlir_1_1OpTrait_1_1InnerRefNamespace.html" title="This trait is for operations that define a scope for resolving InnerRef&#39;s, and provides verification ..." alt="" coords="136,528,416,569"/>
+<area shape="rect" id="node11" href="$classmlir_1_1OpTrait_1_1InnerSymbolTable.html" title="A trait for inner symbol table functionality on an operation." alt="" coords="151,594,401,650"/>
+</map>

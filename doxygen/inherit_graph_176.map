@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,274,108,301"/>
+<area shape="rect" id="node2" href="$structcirct_1_1moore_1_1detail_1_1DimStorage.html" title=" " alt="" coords="163,103,308,144"/>
+<area shape="rect" id="node7" href="$structcirct_1_1moore_1_1detail_1_1EnumTypeStorage.html" title=" " alt="" coords="162,168,309,209"/>
+<area shape="rect" id="node8" href="$structcirct_1_1moore_1_1detail_1_1IndirectTypeStorage.html" title=" " alt="" coords="156,233,315,275"/>
+<area shape="rect" id="node9" href="$structcirct_1_1moore_1_1detail_1_1IntTypeStorage.html" title=" " alt="" coords="163,299,308,340"/>
+<area shape="rect" id="node10" href="$structcirct_1_1moore_1_1detail_1_1RealTypeStorage.html" title=" " alt="" coords="163,364,308,405"/>
+<area shape="rect" id="node11" href="$structcirct_1_1moore_1_1detail_1_1StructTypeStorage.html" title=" " alt="" coords="161,429,309,471"/>
+<area shape="rect" id="node3" href="$structcirct_1_1moore_1_1detail_1_1AssocDimStorage.html" title=" " alt="" coords="369,5,515,47"/>
+<area shape="rect" id="node4" href="$structcirct_1_1moore_1_1detail_1_1RangeDimStorage.html" title=" " alt="" coords="368,71,516,112"/>
+<area shape="rect" id="node5" href="$structcirct_1_1moore_1_1detail_1_1SizedDimStorage.html" title=" " alt="" coords="369,136,515,177"/>
+<area shape="rect" id="node6" href="$structcirct_1_1moore_1_1detail_1_1UnsizedDimStorage.html" title=" " alt="" coords="363,201,521,243"/>
+</map>

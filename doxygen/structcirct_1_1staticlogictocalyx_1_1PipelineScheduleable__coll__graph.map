@@ -1,0 +1,11 @@
+<map id="circt::staticlogictocalyx::PipelineScheduleable" name="circt::staticlogictocalyx::PipelineScheduleable">
+<area shape="rect" id="node1" title=" " alt="" coords="86,392,259,433"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,288,156,329"/>
+<area shape="rect" id="node3" title=" " alt="" coords="29,191,129,218"/>
+<area shape="rect" id="node4" href="$classcirct_1_1staticlogictocalyx_1_1StaticLogicWhileOp.html" title=" " alt="" coords="182,288,355,329"/>
+<area shape="rect" id="node5" href="$classcirct_1_1calyx_1_1WhileOpInterface.html" title=" " alt="" coords="153,184,387,225"/>
+<area shape="rect" id="node6" href="$classcirct_1_1calyx_1_1LoopInterface.html" title=" " alt="" coords="41,5,232,32"/>
+<area shape="rect" id="node8" href="$classcirct_1_1calyx_1_1WhileOpInterface.html" title=" " alt="" coords="161,95,413,121"/>
+<area shape="rect" id="node7" href="$classstaticlogic_1_1PipelineWhileOp.html" title=" " alt="" coords="453,95,583,121"/>
+<area shape="rect" id="node9" title=" " alt="" coords="268,5,307,32"/>
+</map>

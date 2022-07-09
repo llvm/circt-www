@@ -1,0 +1,11 @@
+<map id="circt::hw::InstanceGraphNode::UseIterator" name="circt::hw::InstanceGraphNode::UseIterator">
+<area shape="rect" id="node1" title="Iterator for module uses." alt="" coords="627,44,806,85"/>
+<area shape="rect" id="node2" title=" " alt="" coords="312,5,488,76"/>
+<area shape="rect" id="node3" href="$classcirct_1_1hw_1_1InstanceRecord.html" title="This is an edge in the InstanceGraph." alt="" coords="308,154,492,181"/>
+<area shape="rect" id="node6" href="$classcirct_1_1hw_1_1InstanceGraphNode.html" title="This is a Node in the InstanceGraph." alt="" coords="611,235,823,262"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,107,196,163"/>
+<area shape="rect" id="node5" title=" " alt="" coords="37,187,164,214"/>
+<area shape="rect" id="node7" title=" " alt="" coords="304,220,496,261"/>
+<area shape="rect" id="node8" title=" " alt="" coords="308,286,492,313"/>
+<area shape="rect" id="node9" title=" " alt="" coords="341,337,459,363"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="include/circt/Dialect/FIRRTL/FIRRTLAttributes.h" name="include/circt/Dialect/FIRRTL/FIRRTLAttributes.h">
+<area shape="rect" id="node1" title=" " alt="" coords="865,5,1059,47"/>
+<area shape="rect" id="node2" href="$FIRRTLDialect_8h.html" title=" " alt="" coords="675,95,823,136"/>
+<area shape="rect" id="node4" href="$LLVM_8h.html" title=" " alt="" coords="885,273,1039,300"/>
+<area shape="rect" id="node13" title=" " alt="" coords="999,95,1170,136"/>
+<area shape="rect" id="node3" href="$HWDialect_8h.html" title=" " alt="" coords="263,191,475,218"/>
+<area shape="rect" id="node7" title=" " alt="" coords="674,273,861,300"/>
+<area shape="rect" id="node8" title=" " alt="" coords="5,273,132,300"/>
+<area shape="rect" id="node11" title=" " alt="" coords="499,184,649,225"/>
+<area shape="rect" id="node12" title=" " alt="" coords="674,184,823,225"/>
+<area shape="rect" id="node9" title=" " alt="" coords="157,273,391,300"/>
+<area shape="rect" id="node10" title=" " alt="" coords="416,273,649,300"/>
+<area shape="rect" id="node5" title=" " alt="" coords="785,348,937,375"/>
+<area shape="rect" id="node6" title=" " alt="" coords="961,348,1166,375"/>
+</map>

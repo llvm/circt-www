@@ -1,0 +1,7 @@
+<map id="circt::firrtl::InnerRefNamespace" name="circt::firrtl::InnerRefNamespace">
+<area shape="rect" id="node1" title="This class represents the namespace in which InnerRef&#39;s can be resolved." alt="" coords="81,361,307,388"/>
+<area shape="rect" id="node2" href="$classcirct_1_1firrtl_1_1InnerSymbolTableCollection.html" title="This class represents a collection of InnerSymbolTable&#39;s." alt="" coords="13,257,188,299"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,124,196,195"/>
+<area shape="rect" id="node4" title=" " alt="" coords="55,5,146,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="212,265,317,291"/>
+</map>

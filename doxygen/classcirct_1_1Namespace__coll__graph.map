@@ -1,0 +1,4 @@
+<map id="circt::Namespace" name="circt::Namespace">
+<area shape="rect" id="node1" title="A namespace that is used to store existing names and generate new names in some scope within the IR." alt="" coords="16,95,151,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,161,32"/>
+</map>

@@ -1,0 +1,130 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>FSM Dialect Rationale - CIRCT</title><meta name=description content="Circuit IR Compilers and Tools"><meta name=generator content="Hugo 0.101.0"><link href=https://circt.llvm.org/index.xml rel=alternate type=application/rss+xml><link rel=canonical href=https://circt.llvm.org/docs/Dialects/FSM/RationaleFSM/><link rel=stylesheet href=https://circt.llvm.org/css/theme.css><script src=https://use.fontawesome.com/releases/v5.0.6/js/all.js></script>
+<link rel=stylesheet href=https://circt.llvm.org/css/chroma.min.css><script src=https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js></script>
+<script src=https://circt.llvm.org/js/bundle.js></script>
+<script type=text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type=text/x-mathjax-config>
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$', '$'] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+    }
+  });
+</script><style>:root{}</style></head><body><div class=container><header><h1><div><img src=https://circt.llvm.org//circt-logo.svg width=40px align=absmiddle>
+CIRCT</div></h1><p class=description>Circuit IR Compilers and Tools</p></header><div class=global-menu><nav><ul><li class=parent><a href>Community<i class="fas fa-angle-right"></i></a><ul class=sub-menu><li class=child><a href=https://llvm.discourse.group/c/Projects-that-want-to-become-official-LLVM-Projects/circt/40>Forums</a></li><li class=child><a href=https://discord.gg/xS7Z362>Chat</a></li></ul></li><li class=parent><a href=https://github.com/llvm/circt/tree/main/>Source<i class="fas fa-angle-right"></i></a><ul class=sub-menu><li class=child><a href=/doxygen/>Doxygen</a></li><li class=child><a href=https://github.com/llvm/circt/tree/main/>GitHub</a></li></ul></li></ul></nav></div><div class=content-container><main><h1>FSM Dialect Rationale</h1><p>This document describes various design points of the FSM dialect, why they are
+the way they are, and current status. This follows in the spirit of other
+<a href=https://mlir.llvm.org/docs/Rationale/>MLIR Rationale docs</a>.</p><h2 id=introduction>Introduction&nbsp;<a class=headline-hash href=#introduction>¶</a></h2><p><a href=https://en.wikipedia.org/wiki/Finite-state_machine>Finite-state machine (FSM)</a>
+is an abstract machine that can be in exactly one of a finite number of states
+at any given time. The FSM can change from one state to another in response to
+some inputs; the change from one state to another is called a transition.
+Verification, Hardware IP block control, system state control, hardware design,
+and software design have aspects that are succinctly described as some form of
+FSM. For integrated development purposes, late design-time choice, and
+per-project choice, we want to encode system descriptions in an FSM form. We
+want a compiler to be able to manipulate, query, and generate code in multiple
+domains, such as SW drivers, firmware, RTL hardware, and verification.</p><p>The FSM dialect in CIRCT is designed to provide a set of abstractions for FSM
+with the following features:</p><ol><li>Provide explicit and structural representations of states, transitions, and
+internal variables of an FSM, allowing convenient analysis and transformation.</li><li>Provide a target-agnostic representation of FSM, allowing the state machine
+to be instantiated and attached to other dialects from different domains.</li><li>By cooperating with two conversion passes, FSMToHW and FSMToStandard, allow
+to lower the FSM abstraction into HW+Comb+SV (Hardware) and Standard+SCF+MemRef
+(Software) dialects for the purposes of simulation, code generation, etc.</li></ol><h2 id=operations>Operations&nbsp;<a class=headline-hash href=#operations>¶</a></h2><h3 id=two-ways-of-instantiation>Two ways of instantiation&nbsp;<a class=headline-hash href=#two-ways-of-instantiation>¶</a></h3><p>A state machine is defined by an <code>fsm.machine</code> operation, which contains all
+the states and transitions of the state machine. <code>fsm.machine</code> has a list of
+inputs and outputs and explicit state type:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-mlir data-lang=mlir><span class=line><span class=cl>fsm<span class=p>.</span>machine <span class=nf>@foo</span><span class=p>(</span><span class=nv>%arg0</span><span class=p>:</span> <span class=k>i1</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=k>i1</span> attributes <span class=p>{</span><span class=nl>stateType =</span> <span class=k>i1</span><span class=p>}</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=p>...</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>FSM dialect provides two ways to instantiate a state machine: <code>fsm.hw_instance</code>
+is intended for use in HW context (usually described by graph regions) and
+<code>fsm.instance</code>+<code>fsm.trigger</code> is intended for use in a SW context (usually
+described by CFG regions). In HW IRs (such as HW+Comb+SV and FIRRTL), although
+an MLIR value is only defined once in the IR, it is actually &ldquo;driven&rdquo; by its
+predecessors continuously during the runtime and can &ldquo;hold&rdquo; different values at
+different moments. However, in the world of SW IRs (such as Standard+SCF), we
+don&rsquo;t have such a semantics &ndash; SW IRs “run” sequentially.</p><p>Here we define that each <em>trigger</em> causes the possibility of a transition from
+one state to another state through exactly one transition. In a SW context,
+<code>fsm.instance</code> generates an <code>InstanceType</code> value to represent a state machine
+instance. Each <code>fsm.trigger</code> targets a machine instance and explicitly causes a
+<em>trigger</em>. Therefore, <code>fsm.trigger</code> may change the state of the machine
+instance thus is a side-effecting operation. The following MLIR code shows an
+example of instantiating and triggering the state machine defined above:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-mlir data-lang=mlir><span class=line><span class=cl><span class=kt>func</span> <span class=nf>@bar</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%foo_inst</span> <span class=p>=</span> fsm<span class=p>.</span>instance <span class=s>&#34;foo_inst&#34;</span> <span class=nf>@foo</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%in0</span> <span class=p>=</span> <span class=p>...</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%out0</span> <span class=p>=</span> fsm<span class=p>.</span>trigger <span class=nv>%foo_inst</span><span class=p>(</span><span class=nv>%in0</span><span class=p>)</span> <span class=p>:</span> <span class=p>(</span><span class=k>i1</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=k>i1</span>
+</span></span><span class=line><span class=cl>  <span class=p>...</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%in1</span> <span class=p>=</span> <span class=p>...</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%out1</span> <span class=p>=</span> fsm<span class=p>.</span>trigger <span class=nv>%foo_inst</span><span class=p>(</span><span class=nv>%in1</span><span class=p>)</span> <span class=p>:</span> <span class=p>(</span><span class=k>i1</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=k>i1</span>
+</span></span><span class=line><span class=cl>  <span class=kt>return</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>In the contrast, to comply with the HW semantics, <code>fsm.hw_instance</code> directly
+consumes inputs and generates results. The operand and result types must align
+with the type of the referenced <code>fsm.machine</code>. In a HW context, <em>trigger</em>s are
+implicitly initiated by the processors of <code>fsm.hw_instance</code>. The following
+MLIR code shows an example of instantiating the same state machine in HW IRs:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-mlir data-lang=mlir><span class=line><span class=cl>hw<span class=p>.</span>module <span class=nf>@qux</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%in</span> <span class=p>=</span> <span class=p>...</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%out</span> <span class=p>=</span> fsm<span class=p>.</span>hw_instance <span class=s>&#34;foo_inst&#34;</span> <span class=nf>@foo</span><span class=p>(</span><span class=nv>%in</span><span class=p>)</span> <span class=p>:</span> <span class=p>(</span><span class=k>i1</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=k>i1</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><h3 id=explicit-state-and-transition-representation>Explicit state and transition representation&nbsp;<a class=headline-hash href=#explicit-state-and-transition-representation>¶</a></h3><p>Each state of an FSM is represented explicitly with an <code>fsm.state</code> operation.
+<code>fsm.state</code> must have an <code>output</code> CFG region representing the combinational
+logic of generating the state machine&rsquo;s outputs. The output region must have an
+<code>fsm.output</code> operation as terminator and the operand types of the <code>fsm.output</code>
+must align with the result types of the state machine. <code>fsm.state</code> also
+contains a list of <code>fsm.transition</code> operations representing the outgoing
+transitions that can be triggered from the current state. <code>fsm.state</code> also has
+a symbol name that can be referred to by <code>fsm.transition</code>s as the next state.
+The following MLIR code shows a running example:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-mlir data-lang=mlir><span class=line><span class=cl>fsm<span class=p>.</span>machine <span class=nf>@foo</span><span class=p>(</span><span class=nv>%arg0</span><span class=p>:</span> <span class=k>i1</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=k>i1</span> attributes <span class=p>{</span><span class=nl>stateType =</span> <span class=k>i1</span><span class=p>}</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  fsm<span class=p>.</span>state <span class=s>&#34;IDLE&#34;</span> output  <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nv>%true</span> <span class=p>=</span> <span class=kt>constant</span> true
+</span></span><span class=line><span class=cl>    fsm<span class=p>.</span>output <span class=nv>%true</span> <span class=p>:</span> <span class=k>i1</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span> transitions  <span class=p>{</span>
+</span></span><span class=line><span class=cl>    fsm<span class=p>.</span>transition <span class=nf>@BUSY</span> <span class=p>...</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  fsm<span class=p>.</span>state <span class=s>&#34;BUSY&#34;</span> output  <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nv>%false</span> <span class=p>=</span> <span class=kt>constant</span> false
+</span></span><span class=line><span class=cl>    fsm<span class=p>.</span>output <span class=nv>%false</span> <span class=p>:</span> <span class=k>i1</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span> transitions  <span class=p>{</span>
+</span></span><span class=line><span class=cl>    fsm<span class=p>.</span>transition <span class=nf>@BUSY</span> <span class=p>...</span>
+</span></span><span class=line><span class=cl>    fsm<span class=p>.</span>transition <span class=nf>@IDLE</span> <span class=p>...</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><h3 id=guard-region-of-transitions>Guard region of transitions&nbsp;<a class=headline-hash href=#guard-region-of-transitions>¶</a></h3><p><code>fsm.transition</code> has an optional <code>guard</code> CFG region, which must be terminated
+with an <code>fsm.return</code> operation returning a Boolean value to indicate whether
+the transition is taken:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-mlir data-lang=mlir><span class=line><span class=cl>fsm<span class=p>.</span>machine <span class=nf>@foo</span><span class=p>(</span><span class=nv>%arg0</span><span class=p>:</span> <span class=k>i1</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=k>i1</span> attributes <span class=p>{</span><span class=nl>stateType =</span> <span class=k>i1</span><span class=p>}</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  fsm<span class=p>.</span>state <span class=s>&#34;IDLE&#34;</span> output  <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nv>%true</span> <span class=p>=</span> <span class=kt>constant</span> true
+</span></span><span class=line><span class=cl>    fsm<span class=p>.</span>output <span class=nv>%true</span> <span class=p>:</span> <span class=k>i1</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span> transitions  <span class=p>{</span>
+</span></span><span class=line><span class=cl>    fsm<span class=p>.</span>transition <span class=nf>@BUSY</span> guard  <span class=p>{</span>
+</span></span><span class=line><span class=cl>      fsm<span class=p>.</span><span class=kt>return</span> <span class=nv>%arg0</span> <span class=p>:</span> <span class=k>i1</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=p>...</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>If a state has more than one transition, multiple transitions are prioritized
+in the order that they appear in the transitions region. Guards must also not
+contain any operations with side effects, enabling the evaluation of guards to
+be parallelized. Note that an empty guard region is evaluated as true, which
+means the corresponding transition is always taken.</p><h3 id=action-region-of-transitions-and-internal-variables>Action region of transitions and internal variables&nbsp;<a class=headline-hash href=#action-region-of-transitions-and-internal-variables>¶</a></h3><p>To avoid <em>state explosion</em>, we introduce <code>fsm.variable</code> operation (similar to
+the
+<a href=https://en.wikipedia.org/wiki/UML_state_machine>extended state</a> in UML
+state machine) to represent a variable associated with an FSM instance and can
+hold a value of any type, which can be updated through <code>fsm.update</code> operations.</p><p><code>fsm.transition</code> has an optional <code>action</code> CFG region representing the actions
+associated with the current transition. The action region can contain
+side-effecting operations. <code>fsm.update</code> must be contained by the action region
+of a transition. The following MLIR code shows a running example:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-mlir data-lang=mlir><span class=line><span class=cl>fsm<span class=p>.</span>machine <span class=nf>@foo</span><span class=p>(</span><span class=nv>%arg0</span><span class=p>:</span> <span class=k>i1</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=k>i1</span> attributes <span class=p>{</span><span class=nl>stateType =</span> <span class=k>i1</span><span class=p>}</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%cnt</span> <span class=p>=</span> fsm<span class=p>.</span>variable <span class=s>&#34;cnt&#34;</span> <span class=p>{</span><span class=nl>initValue =</span> <span class=m>0</span> <span class=p>:</span> <span class=k>i16</span><span class=p>}</span> <span class=p>:</span> <span class=k>i16</span>
+</span></span><span class=line><span class=cl>  fsm<span class=p>.</span>state <span class=s>&#34;IDLE&#34;</span> output  <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nv>%true</span> <span class=p>=</span> <span class=kt>constant</span> true
+</span></span><span class=line><span class=cl>    fsm<span class=p>.</span>output <span class=nv>%true</span> <span class=p>:</span> <span class=k>i1</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span> transitions  <span class=p>{</span>
+</span></span><span class=line><span class=cl>    fsm<span class=p>.</span>transition <span class=nf>@BUSY</span> guard  <span class=p>{</span>
+</span></span><span class=line><span class=cl>      fsm<span class=p>.</span><span class=kt>return</span> <span class=nv>%arg0</span> <span class=p>:</span> <span class=k>i1</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span> action  <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nv>%c256_i16</span> <span class=p>=</span> <span class=kt>constant</span> <span class=m>256</span> <span class=p>:</span> <span class=k>i16</span>
+</span></span><span class=line><span class=cl>      fsm<span class=p>.</span>update <span class=nv>%cnt</span><span class=p>,</span> <span class=nv>%c256_i16</span> <span class=p>:</span> <span class=k>i16</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=p>...</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><div class=edit-meta><br></div><nav class=pagination><a class="nav nav-prev" href=https://circt.llvm.org/docs/Dialects/FSM/ title="'fsm' Dialect"><i class="fas fa-arrow-left" aria-hidden=true></i> Prev - 'fsm' Dialect</a>
+<a class="nav nav-next" href=https://circt.llvm.org/docs/Dialects/Handshake/ title="'handshake' Dialect">Next - 'handshake' Dialect <i class="fas fa-arrow-right" aria-hidden=true></i></a></nav><footer><p class=powered>Powered by <a href=https://gohugo.io>Hugo</a>. Theme by <a href=https://themes.gohugo.io/hugo-theme-techdoc/>TechDoc</a>. Designed by <a href=https://github.com/thingsym/hugo-theme-techdoc>Thingsym</a>.</p></footer></main><div class=sidebar><nav class=slide-menu><ul><li><a href=https://circt.llvm.org/>Home</a></li><li><a href=https://circt.llvm.org/talks/>Talks and Related Publications</a></li><li><a href=https://circt.llvm.org/getting_started/>Getting Started</a></li><li class="parent has-sub-menu"><a href=https://circt.llvm.org/docs/>Code Documentation<span class="mark opened">-</span></a><ul class=sub-menu><li class=has-sub-menu><a href=https://circt.llvm.org/docs/CommandGuide/>CommandGuide<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/CommandGuide/handshake-runner/>handshake-runner</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Charter/>CIRCT Charter</a></li><li class="parent has-sub-menu"><a href=https://circt.llvm.org/docs/Dialects/>Dialects<span class="mark opened">-</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Calyx/>'calyx' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/CHIRRTL/>'chirrtl' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Comb/>'comb' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Comb/RationaleComb/>`comb` Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/ESI/>'esi' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/ESI/cosim/>ESI cosimulation model</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/types/>ESI data types and communication types</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/services/>ESI Global Services</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/software_api/>ESI Software APIs</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/notes/>Miscellaneous Notes</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/RationaleESI/>The Elastic Silicon Interconnect dialect</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/>'firrtl' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/FIRRTLAnnotations/>FIRRTL Annotations</a></li><li><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/RationaleFIRRTL/>FIRRTL Dialect Rationale</a></li></ul></li><li class="parent has-sub-menu"><a href=https://circt.llvm.org/docs/Dialects/FSM/>'fsm' Dialect<span class="mark opened">-</span></a><ul class=sub-menu><li class=active><a href=https://circt.llvm.org/docs/Dialects/FSM/RationaleFSM/>FSM Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Handshake/>'handshake' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Handshake/RationaleHandshake/>Handshake Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/HW/>'hw' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/HW/RationaleHW/>HW Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/LLHD/>'llhd' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/Moore/>'moore' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/MSFT/>'msft' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Seq/>'seq' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Seq/RationaleSeq/>Seq(uential) Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/StaticLogic/>'staticlogic' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/SV/>'sv' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/SV/RationaleSV/>SV Dialect Rationale</a></li></ul></li></ul></li><li><a href=https://circt.llvm.org/docs/GettingStarted/>Getting Started with the CIRCT Project</a></li><li><a href=https://circt.llvm.org/docs/Passes/>Passes</a></li><li><a href=https://circt.llvm.org/docs/PyCDE/>PyCDE</a></li><li><a href=https://circt.llvm.org/docs/Scheduling/>Static scheduling infrastructure</a></li><li><a href=https://circt.llvm.org/docs/RationaleSymbols/>Symbol and Inner Symbol Rationale</a></li><li><a href=https://circt.llvm.org/docs/PythonBindings/>Using the Python Bindings</a></li><li><a href=https://circt.llvm.org/docs/VerilogGeneration/>Verilog and SystemVerilog Generation</a></li></ul></li></ul></nav><div class=sidebar-footer></div></div></div><a href=# id=backtothetop-fixed class=backtothetop data-backtothetop-duration=600 data-backtothetop-easing=easeOutQuart data-backtothetop-fixed-fadein=1000 data-backtothetop-fixed-fadeout=1000 data-backtothetop-fixed-bottom=10 data-backtothetop-fixed-right=20><span class="fa-layers fa-fw"><i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i></span></a></div></body></html>

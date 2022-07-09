@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classcirct_1_1hw_1_1InstanceGraphBase.html" title="This graph tracks modules and where they are instantiated." alt="" coords="5,31,216,57"/>
+<area shape="rect" id="node2" href="$classcirct_1_1firrtl_1_1InstanceGraph.html" title="This graph tracks modules and where they are instantiated." alt="" coords="264,5,451,32"/>
+<area shape="rect" id="node3" href="$classcirct_1_1hw_1_1InstanceGraph.html" title="HW&#45;specific instance graph with a virtual entry node linking to all publicly visible modules." alt="" coords="268,56,447,83"/>
+</map>

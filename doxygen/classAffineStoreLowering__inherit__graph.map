@@ -1,0 +1,5 @@
+<map id="AffineStoreLowering" name="AffineStoreLowering">
+<area shape="rect" id="node1" title="Apply the affine map from an &#39;affine.store&#39; operation to its operands, and feed the results to a newl..." alt="" coords="25,200,179,227"/>
+<area shape="rect" id="node2" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="5,109,199,151"/>
+<area shape="rect" id="node3" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="5,5,199,47"/>
+</map>

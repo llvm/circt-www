@@ -1,0 +1,4 @@
+<map id="HashTableStack&lt; KeyT, ValueT &gt;" name="HashTableStack&lt; KeyT, ValueT &gt;">
+<area shape="rect" id="node1" title="This is a stack of hashtables, if lookup fails in the top&#45;most hashtable, it will attempt to lookup i..." alt="" coords="14,95,190,136"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,199,32"/>
+</map>

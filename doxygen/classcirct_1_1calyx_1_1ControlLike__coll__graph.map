@@ -1,0 +1,4 @@
+<map id="circt::calyx::ControlLike&lt; ConcreteType &gt;" name="circt::calyx::ControlLike&lt; ConcreteType &gt;">
+<area shape="rect" id="node1" title="Signals that the following operation is &quot;control&#45;like.&quot;." alt="" coords="29,95,203,136"/>
+<area shape="rect" id="node2" href="$classmlir_1_1OpTrait_1_1TraitBase.html" title=" " alt="" coords="5,5,227,47"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="circt::hw::PortInfo" name="circt::hw::PortInfo">
+<area shape="rect" id="node1" title="This holds the name, type, direction of a module&#39;s ports." alt="" coords="124,109,259,136"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,89,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="113,5,165,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="190,5,297,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="321,5,381,32"/>
+</map>

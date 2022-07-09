@@ -1,0 +1,27 @@
+<map id="circt::calyx::PartialLoweringPattern&lt; OpType, RewritePatternType &gt;" name="circt::calyx::PartialLoweringPattern&lt; OpType, RewritePatternType &gt;">
+<area shape="rect" id="node1" title="Base class for partial lowering passes." alt="" coords="225,441,505,483"/>
+<area shape="rect" id="node3" href="$classcirct_1_1calyx_1_1PartialLoweringPattern.html" title=" " alt="" coords="801,368,1003,409"/>
+<area shape="rect" id="node5" href="$classcirct_1_1calyx_1_1PartialLoweringPattern.html" title=" " alt="" coords="779,434,1025,490"/>
+<area shape="rect" id="node7" href="$classcirct_1_1calyx_1_1PartialLoweringPattern.html" title=" " alt="" coords="794,515,1010,556"/>
+<area shape="rect" id="node2" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="5,441,176,483"/>
+<area shape="rect" id="node4" href="$classcirct_1_1calyx_1_1RewriteMemoryAccesses.html" title="This pass rewrites memory accesses that have a width mismatch." alt="" coords="1075,368,1280,409"/>
+<area shape="rect" id="node6" href="$classcirct_1_1calyx_1_1InlineCombGroups.html" title="This pass recursively inlines use&#45;def chains of combinational logic (from non&#45;stateful groups) into g..." alt="" coords="1090,441,1265,483"/>
+<area shape="rect" id="node8" href="$classcirct_1_1calyx_1_1FuncOpPartialLoweringPattern.html" title="FuncOpPartialLoweringPatterns are patterns which intend to match on FuncOps and then perform their ow..." alt="" coords="1082,515,1273,556"/>
+<area shape="rect" id="node9" href="$classcirct_1_1calyx_1_1BuildBasicBlockRegs.html" title="Builds registers for each block argument in the program." alt="" coords="1349,5,1519,47"/>
+<area shape="rect" id="node10" href="$classcirct_1_1calyx_1_1BuildReturnRegs.html" title="Builds registers for the return statement of the program and constant assignments to the component re..." alt="" coords="1329,71,1539,98"/>
+<area shape="rect" id="node11" href="$classcirct_1_1calyx_1_1ConvertIndexTypes.html" title="Converts all index&#45;typed operations and values to i32 values." alt="" coords="1340,123,1528,164"/>
+<area shape="rect" id="node12" href="$classcirct_1_1scftocalyx_1_1BuildControl.html" title="Builds a control schedule by traversing the CFG of the function and associating this with the previou..." alt="" coords="1368,188,1500,229"/>
+<area shape="rect" id="node13" href="$classcirct_1_1scftocalyx_1_1BuildOpGroups.html" title="Iterate through the operations of a source function and instantiate components or primitives based on..." alt="" coords="1368,253,1500,295"/>
+<area shape="rect" id="node14" href="$classcirct_1_1scftocalyx_1_1BuildWhileGroups.html" title="In BuildWhileGroups, a register is created for each iteration argumenet of the while op." alt="" coords="1365,319,1503,360"/>
+<area shape="rect" id="node15" href="$classcirct_1_1scftocalyx_1_1CleanupFuncOps.html" title="Erases FuncOp operations." alt="" coords="1368,384,1500,425"/>
+<area shape="rect" id="node16" href="$structcirct_1_1scftocalyx_1_1FuncOpConversion.html" title="Creates a new Calyx component for each FuncOp in the program." alt="" coords="1363,449,1505,491"/>
+<area shape="rect" id="node17" href="$classcirct_1_1scftocalyx_1_1LateSSAReplacement.html" title="LateSSAReplacement contains various functions for replacing SSA values that were not replaced during ..." alt="" coords="1353,515,1515,556"/>
+<area shape="rect" id="node18" href="$classcirct_1_1staticlogictocalyx_1_1BuildControl.html" title="Builds a control schedule by traversing the CFG of the function and associating this with the previou..." alt="" coords="1347,580,1521,621"/>
+<area shape="rect" id="node19" href="$classcirct_1_1staticlogictocalyx_1_1BuildOpGroups.html" title="Iterate through the operations of a source function and instantiate components or primitives based on..." alt="" coords="1347,645,1521,687"/>
+<area shape="rect" id="node20" href="$classcirct_1_1staticlogictocalyx_1_1BuildPipelineGroups.html" title="Builds groups for assigning registers for pipeline stages." alt="" coords="1347,711,1521,752"/>
+<area shape="rect" id="node21" href="$classcirct_1_1staticlogictocalyx_1_1BuildPipelineRegs.html" title="Builds registers for each pipeline stage in the program." alt="" coords="1347,776,1521,817"/>
+<area shape="rect" id="node22" href="$classcirct_1_1staticlogictocalyx_1_1BuildWhileGroups.html" title="In BuildWhileGroups, a register is created for each iteration argumenet of the while op." alt="" coords="1347,841,1521,883"/>
+<area shape="rect" id="node23" href="$classcirct_1_1staticlogictocalyx_1_1CleanupFuncOps.html" title="Erases FuncOp operations." alt="" coords="1347,907,1521,948"/>
+<area shape="rect" id="node24" href="$structcirct_1_1staticlogictocalyx_1_1FuncOpConversion.html" title="Creates a new Calyx component for each FuncOp in the program." alt="" coords="1347,972,1521,1013"/>
+<area shape="rect" id="node25" href="$classcirct_1_1staticlogictocalyx_1_1LateSSAReplacement.html" title="LateSSAReplacement contains various functions for replacing SSA values that were not replaced during ..." alt="" coords="1347,1037,1521,1079"/>
+</map>

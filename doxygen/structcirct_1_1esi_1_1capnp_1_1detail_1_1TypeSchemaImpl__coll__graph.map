@@ -1,0 +1,11 @@
+<map id="circt::esi::capnp::detail::TypeSchemaImpl" name="circt::esi::capnp::detail::TypeSchemaImpl">
+<area shape="rect" id="node1" title="Actual implementation of TypeSchema to keep all the details out of the header." alt="" coords="568,150,747,191"/>
+<area shape="rect" id="node2" title=" " alt="" coords="311,5,363,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="257,56,417,83"/>
+<area shape="rect" id="node4" title=" " alt="" coords="279,107,396,133"/>
+<area shape="rect" id="node5" title=" " alt="" coords="281,157,393,184"/>
+<area shape="rect" id="node6" title=" " alt="" coords="308,208,367,235"/>
+<area shape="rect" id="node7" title=" " alt="" coords="244,259,431,285"/>
+<area shape="rect" id="node8" title=" " alt="" coords="5,259,105,285"/>
+<area shape="rect" id="node9" title=" " alt="" coords="280,309,395,336"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="circt::firrtl::ClockType" name="circt::firrtl::ClockType">
+<area shape="rect" id="node1" title="firrtl.Clock describe wires and ports meant for carrying clock signals." alt="" coords="20,109,179,136"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,193,61"/>
+</map>

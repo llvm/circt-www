@@ -1,0 +1,4 @@
+<map id="circt::firrtl::FVectorType" name="circt::firrtl::FVectorType">
+<area shape="rect" id="node1" title="VectorType is a fixed size collection of elements, like an array." alt="" coords="23,109,195,136"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,212,61"/>
+</map>

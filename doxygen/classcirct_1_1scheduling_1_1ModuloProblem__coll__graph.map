@@ -1,0 +1,15 @@
+<map id="circt::scheduling::ModuloProblem" name="circt::scheduling::ModuloProblem">
+<area shape="rect" id="node1" title="This class models the modulo scheduling problem as the composition of the cyclic problem and the reso..." alt="" coords="1001,207,1137,248"/>
+<area shape="rect" id="node2" href="$classcirct_1_1scheduling_1_1CyclicProblem.html" title="This class models a cyclic scheduling problem." alt="" coords="791,239,927,280"/>
+<area shape="rect" id="node3" href="$classcirct_1_1scheduling_1_1Problem.html" title="This class models the most basic scheduling problem." alt="" coords="427,181,563,223"/>
+<area shape="rect" id="node13" href="$classcirct_1_1scheduling_1_1SharedOperatorsProblem.html" title="This class models a resource&#45;constrained scheduling problem." alt="" coords="767,172,952,213"/>
+<area shape="rect" id="node4" title=" " alt="" coords="17,71,195,127"/>
+<area shape="rect" id="node5" title=" " alt="" coords="30,152,182,193"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,218,207,245"/>
+<area shape="rect" id="node7" title=" " alt="" coords="30,269,182,311"/>
+<area shape="rect" id="node8" title=" " alt="" coords="11,335,201,362"/>
+<area shape="rect" id="node9" title=" " alt="" coords="24,5,188,47"/>
+<area shape="rect" id="node10" title=" " alt="" coords="63,386,149,413"/>
+<area shape="rect" id="node11" title=" " alt="" coords="385,247,605,274"/>
+<area shape="rect" id="node12" title=" " alt="" coords="416,299,575,340"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classcirct_1_1scheduling_1_1Problem.html" title="This class models the most basic scheduling problem." alt="" coords="5,71,141,112"/>
+<area shape="rect" id="node2" href="$classcirct_1_1scheduling_1_1ChainingProblem.html" title="This class models the accumulation of physical propagation delays on combinational paths along SSA de..." alt="" coords="214,5,350,47"/>
+<area shape="rect" id="node3" href="$classcirct_1_1scheduling_1_1CyclicProblem.html" title="This class models a cyclic scheduling problem." alt="" coords="214,71,350,112"/>
+<area shape="rect" id="node5" href="$classcirct_1_1scheduling_1_1SharedOperatorsProblem.html" title="This class models a resource&#45;constrained scheduling problem." alt="" coords="189,136,375,177"/>
+<area shape="rect" id="node4" href="$classcirct_1_1scheduling_1_1ModuloProblem.html" title="This class models the modulo scheduling problem as the composition of the cyclic problem and the reso..." alt="" coords="423,104,559,145"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="circt::firrtl::ModuleNamespace" name="circt::firrtl::ModuleNamespace">
+<area shape="rect" id="node1" title="The namespace of a FModuleLike operation, generally inhabited by its ports and declarations." alt="" coords="5,80,224,107"/>
+<area shape="rect" id="node2" href="$classcirct_1_1Namespace.html" title="A namespace that is used to store existing names and generate new names in some scope within the IR." alt="" coords="47,5,182,32"/>
+</map>

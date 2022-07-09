@@ -1,0 +1,7 @@
+<map id="circt::calyx::InlineCombGroups" name="circt::calyx::InlineCombGroups">
+<area shape="rect" id="node1" title="This pass recursively inlines use&#45;def chains of combinational logic (from non&#45;stateful groups) into g..." alt="" coords="1075,39,1249,80"/>
+<area shape="rect" id="node2" href="$classcirct_1_1calyx_1_1PartialLoweringPattern.html" title=" " alt="" coords="779,31,1025,87"/>
+<area shape="rect" id="node3" title=" " alt="" coords="244,5,487,47"/>
+<area shape="rect" id="node4" href="$classcirct_1_1calyx_1_1PartialLoweringPattern.html" title="Base class for partial lowering passes." alt="" coords="225,71,505,112"/>
+<area shape="rect" id="node5" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="5,71,176,112"/>
+</map>

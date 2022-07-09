@@ -1,0 +1,8 @@
+<map id="circt::esi::ESIPortValidReadyMapping" name="circt::esi::ESIPortValidReadyMapping">
+<area shape="rect" id="node1" title="A triple of signals which represent a latency insensitive interface with valid/ready semantics." alt="" coords="110,228,273,269"/>
+<area shape="rect" id="node2" href="$structcirct_1_1hw_1_1PortInfo.html" title="This holds the name, type, direction of a module&#39;s ports." alt="" coords="124,109,259,136"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,89,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="113,5,165,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="190,5,297,32"/>
+<area shape="rect" id="node6" title=" " alt="" coords="321,5,381,32"/>
+</map>

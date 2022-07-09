@@ -1,0 +1,31 @@
+<map id="lib/Dialect" name="lib/Dialect">
+<area shape="rect" id="node2" href="dir_e3eacf76b7ff90caa424574a4b3fd843.html" title="Calyx" alt="" coords="1235,63,1307,111"/>
+<area shape="rect" id="node15" href="dir_d44c64559bbebec7f509842c48db8b23.html" title="include" alt="" coords="635,159,707,207"/>
+<area shape="rect" id="edge13-headlabel" href="dir_000048_000001.html" title="36" alt="" coords="716,182,734,197"/>
+<area shape="rect" id="node3" href="dir_d37761344a7d0e0fa9c39f5f975cc778.html" title="Comb" alt="" coords="1139,63,1211,111"/>
+<area shape="rect" id="edge10-headlabel" href="dir_000051_000001.html" title="10" alt="" coords="717,181,734,195"/>
+<area shape="rect" id="node4" href="dir_8547f46dd3e886e73fec95a7c794e399.html" title="ESI" alt="" coords="1043,63,1115,111"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000052_000001.html" title="40" alt="" coords="717,179,735,194"/>
+<area shape="rect" id="node5" href="dir_5ecba3b4683443cdd5d71918532517b3.html" title="FIRRTL" alt="" coords="947,63,1019,111"/>
+<area shape="rect" id="edge8-headlabel" href="dir_000056_000001.html" title="284" alt="" coords="713,181,738,196"/>
+<area shape="rect" id="node6" href="dir_5aa0fe565eb1e0be999e18e4c2b80ade.html" title="FSM" alt="" coords="851,63,923,111"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000060_000001.html" title="10" alt="" coords="718,173,735,188"/>
+<area shape="rect" id="node7" href="dir_940b081ae4a4f2f4557f426b15134969.html" title="Handshake" alt="" coords="731,63,826,111"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000062_000001.html" title="17" alt="" coords="708,146,725,160"/>
+<area shape="rect" id="node8" href="dir_f15fffa025b0b9a7f2b6906150b771ce.html" title="HW" alt="" coords="635,63,707,111"/>
+<area shape="rect" id="edge9-headlabel" href="dir_000064_000001.html" title="39" alt="" coords="670,133,688,148"/>
+<area shape="rect" id="node9" href="dir_4cc3bea91969bf9d4b608ab45c1c096d.html" title="LLHD" alt="" coords="539,63,611,111"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000066_000001.html" title="26" alt="" coords="631,132,649,147"/>
+<area shape="rect" id="node10" href="dir_61c572522447c247003dbf66f5ddf44d.html" title="Moore" alt="" coords="443,63,515,111"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000070_000001.html" title="4" alt="" coords="615,153,624,168"/>
+<area shape="rect" id="node11" href="dir_f20495419592fc7e112c904322a7b483.html" title="MSFT" alt="" coords="347,63,419,111"/>
+<area shape="rect" id="edge7-headlabel" href="dir_000071_000001.html" title="35" alt="" coords="608,163,626,177"/>
+<area shape="rect" id="node12" href="dir_55725818e440b2563b9f81ea011e73a0.html" title="Seq" alt="" coords="251,63,323,111"/>
+<area shape="rect" id="edge12-headlabel" href="dir_000072_000001.html" title="9" alt="" coords="612,161,622,176"/>
+<area shape="rect" id="node13" href="dir_8c307c21a7288e7218afd57c14d36e62.html" title="StaticLogic" alt="" coords="133,63,227,111"/>
+<area shape="rect" id="edge11-headlabel" href="dir_000074_000001.html" title="1" alt="" coords="612,163,622,178"/>
+<area shape="rect" id="node14" href="dir_c465ecf799257f87761cabc84faf8407.html" title="SV" alt="" coords="37,63,109,111"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000075_000001.html" title="46" alt="" coords="608,165,625,180"/>
+<area shape="rect" id="clust2" href="dir_1a25ec519b6c1121408b67cc33ce3f15.html" alt="" coords="27,52,1413,121"/>
+<area shape="rect" id="clust1" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html" title="lib" alt="" coords="16,16,1424,132"/>
+</map>

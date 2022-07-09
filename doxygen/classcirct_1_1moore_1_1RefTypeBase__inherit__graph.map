@@ -1,0 +1,8 @@
+<map id="circt::moore::RefTypeBase&lt; ConcreteTy, BaseTy &gt;" name="circt::moore::RefTypeBase&lt; ConcreteTy, BaseTy &gt;">
+<area shape="rect" id="node1" title="A type reference." alt="" coords="249,54,441,95"/>
+<area shape="rect" id="node3" href="$classcirct_1_1moore_1_1RefTypeBase.html" title=" " alt="" coords="708,5,983,61"/>
+<area shape="rect" id="node5" href="$classcirct_1_1moore_1_1RefTypeBase.html" title=" " alt="" coords="727,85,963,141"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,47,200,103"/>
+<area shape="rect" id="node4" href="$classcirct_1_1moore_1_1UnpackedRefType.html" title="An unpacked named type. See NamedTypeBase for details." alt="" coords="1032,20,1256,47"/>
+<area shape="rect" id="node6" href="$classcirct_1_1moore_1_1PackedRefType.html" title="A packed named type. See NamedTypeBase for details." alt="" coords="1041,100,1247,127"/>
+</map>

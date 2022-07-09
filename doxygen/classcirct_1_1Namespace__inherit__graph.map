@@ -1,0 +1,6 @@
+<map id="circt::Namespace" name="circt::Namespace">
+<area shape="rect" id="node1" title="A namespace that is used to store existing names and generate new names in some scope within the IR." alt="" coords="5,56,140,83"/>
+<area shape="rect" id="node2" href="$structcirct_1_1firrtl_1_1CircuitNamespace.html" title="The namespace of a CircuitOp, generally inhabited by modules." alt="" coords="191,5,403,32"/>
+<area shape="rect" id="node3" href="$structcirct_1_1firrtl_1_1ModuleNamespace.html" title="The namespace of a FModuleLike operation, generally inhabited by its ports and declarations." alt="" coords="188,56,407,83"/>
+<area shape="rect" id="node4" href="$structcirct_1_1hw_1_1ModuleNamespace.html" title=" " alt="" coords="193,107,402,133"/>
+</map>

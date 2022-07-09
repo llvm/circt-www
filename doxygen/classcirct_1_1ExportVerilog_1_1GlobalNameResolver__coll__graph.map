@@ -1,0 +1,9 @@
+<map id="circt::ExportVerilog::GlobalNameResolver" name="circt::ExportVerilog::GlobalNameResolver">
+<area shape="rect" id="node1" title="This class keeps track of modules and interfaces that need to be renamed, as well as module ports and..." alt="" coords="103,332,271,373"/>
+<area shape="rect" id="node2" href="$structcirct_1_1ExportVerilog_1_1GlobalNameTable.html" title="This class keeps track of global names at the module/interface level." alt="" coords="21,228,167,269"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,109,183,165"/>
+<area shape="rect" id="node4" title=" " alt="" coords="49,5,139,32"/>
+<area shape="rect" id="node5" href="$structcirct_1_1ExportVerilog_1_1NameCollisionResolver.html" title=" " alt="" coords="191,228,373,269"/>
+<area shape="rect" id="node6" title=" " alt="" coords="229,124,289,151"/>
+<area shape="rect" id="node7" title=" " alt="" coords="404,124,485,151"/>
+</map>

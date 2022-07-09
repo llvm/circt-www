@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="5,49,176,90"/>
+<area shape="rect" id="node2" href="$structCommonTailPatternWithPar.html" title="if a with @G { par { par { if a with @G { ..." alt="" coords="226,5,425,32"/>
+<area shape="rect" id="node3" href="$structCommonTailPatternWithSeq.html" title="seq { if a with @G { if a with @G { seq { ..." alt="" coords="224,56,427,83"/>
+<area shape="rect" id="node4" href="$structEmptyIfBody.html" title="This pattern checks for one of two cases that will lead to IfOp deletion: (1) Then and Else bodies ar..." alt="" coords="272,107,379,133"/>
+</map>

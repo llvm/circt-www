@@ -1,0 +1,4 @@
+<map id="circt::firrtl::OpAnnoTarget" name="circt::firrtl::OpAnnoTarget">
+<area shape="rect" id="node1" title="This represents an annotation targeting a specific operation." alt="" coords="5,80,189,107"/>
+<area shape="rect" id="node2" href="$structcirct_1_1firrtl_1_1AnnoTarget.html" title="An annotation target is used to keep track of something that is targeted by an Annotation." alt="" coords="14,5,181,32"/>
+</map>

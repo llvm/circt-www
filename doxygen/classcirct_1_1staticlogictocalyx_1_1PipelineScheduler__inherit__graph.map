@@ -1,0 +1,6 @@
+<map id="circt::staticlogictocalyx::PipelineScheduler" name="circt::staticlogictocalyx::PipelineScheduler">
+<area shape="rect" id="node1" title="Holds additional information required for scheduling StaticLogic pipelines." alt="" coords="49,185,223,227"/>
+<area shape="rect" id="node4" href="$classcirct_1_1staticlogictocalyx_1_1ComponentLoweringState.html" title="Handles the current state of lowering of a Calyx component." alt="" coords="37,276,235,317"/>
+<area shape="rect" id="node2" href="$classcirct_1_1calyx_1_1SchedulerInterface.html" title=" " alt="" coords="25,95,247,136"/>
+<area shape="rect" id="node3" href="$classcirct_1_1calyx_1_1SchedulerInterface.html" title="Holds common utilities used for scheduling when lowering to Calyx." alt="" coords="5,5,267,32"/>
+</map>

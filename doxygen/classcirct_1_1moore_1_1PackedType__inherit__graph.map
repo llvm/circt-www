@@ -1,0 +1,9 @@
+<map id="circt::moore::PackedType" name="circt::moore::PackedType">
+<area shape="rect" id="node1" title="A packed SystemVerilog type." alt="" coords="108,229,291,256"/>
+<area shape="rect" id="node5" href="$classcirct_1_1moore_1_1PackedDim.html" title="A packed dimension." alt="" coords="5,311,185,338"/>
+<area shape="rect" id="node6" href="$classcirct_1_1moore_1_1IndirectTypeBase.html" title=" " alt="" coords="210,304,397,345"/>
+<area shape="rect" id="node2" href="$classcirct_1_1moore_1_1UnpackedType.html" title="An unpacked SystemVerilog type." alt="" coords="98,155,301,181"/>
+<area shape="rect" id="node3" href="$classcirct_1_1moore_1_1SVType.html" title="Base class for all SystemVerilog types in the Moore dialect." alt="" coords="122,80,277,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="173,5,225,32"/>
+<area shape="rect" id="node7" href="$classcirct_1_1moore_1_1PackedIndirectType.html" title="A packed type indirection. See IndirectTypeBase for details." alt="" coords="187,393,419,420"/>
+</map>

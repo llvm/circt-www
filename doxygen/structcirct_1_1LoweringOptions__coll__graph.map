@@ -1,0 +1,6 @@
+<map id="circt::LoweringOptions" name="circt::LoweringOptions">
+<area shape="rect" id="node1" title="Options which control the emission from CIRCT to Verilog." alt="" coords="163,241,330,268"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,56,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="206,5,287,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="441,5,575,32"/>
+</map>

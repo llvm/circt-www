@@ -1,0 +1,11 @@
+<map id="circt::moore::detail::EnumTypeStorage" name="circt::moore::detail::EnumTypeStorage">
+<area shape="rect" id="node1" title=" " alt="" coords="206,323,353,364"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,233,108,260"/>
+<area shape="rect" id="node3" title=" " alt="" coords="132,233,216,260"/>
+<area shape="rect" id="node4" title=" " alt="" coords="241,233,318,260"/>
+<area shape="rect" id="node5" href="$classcirct_1_1moore_1_1PackedType.html" title="A packed SystemVerilog type." alt="" coords="343,233,525,260"/>
+<area shape="rect" id="node6" href="$classcirct_1_1moore_1_1UnpackedType.html" title="An unpacked SystemVerilog type." alt="" coords="333,157,535,184"/>
+<area shape="rect" id="node7" href="$classcirct_1_1moore_1_1SVType.html" title="Base class for all SystemVerilog types in the Moore dialect." alt="" coords="357,81,511,108"/>
+<area shape="rect" id="node8" title=" " alt="" coords="408,5,460,32"/>
+<area shape="rect" id="node9" title=" " alt="" coords="550,233,601,260"/>
+</map>

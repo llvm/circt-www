@@ -23,6 +23,10 @@ build CIRCT with LLVM and MLIR.
 The following instructions for compiling and testing CIRCT assume that you have
 `git`, `ninja`, and a working C++ toolchain.
 
+*Note:* CIRCT is known to build with at least GCC 9.4 and Clang 13.0.1, but
+older versions may not be supported. It is recommended to use the same C++
+toolchain to compile both LLVM and CIRCT to avoid potential issues.
+
 1) **Check out LLVM and CIRCT repos.**  CIRCT contains LLVM as a git
 submodule.  The LLVM repo here includes staged changes to MLIR which
 may be necessary to support CIRCT.  It also represents the version of

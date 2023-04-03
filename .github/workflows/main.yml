@@ -9,81 +9,16 @@ on:
     # Always regenerate once at the end of day
     - cron: '0 0 * * *'
 jobs:
-  # Build the LLVM submodule then cache it. Do not rebuild if hit in the cache.
-  build-llvm:
-    name: Build LLVM
-    runs-on: ubuntu-latest
-    steps:
-
-      - name: Timestamp Begin
-        run: date
-
-      # Clone the CIRCT repo and its submodules.Do shallow clone to save clone
-      # time.
-      - name: Get CIRCT
-        uses: actions/checkout@v2
-        with:
-          repository: llvm/circt
-          fetch-depth: 2
-          submodules: "true"
-          path: 'circt_src'
-
-      # Extract the LLVM submodule hash for use in the cache key.
-      - name: Get LLVM Hash
-        id: get-llvm-hash
-        run: |
-          cd ./circt_src
-          echo "::set-output name=hash::$(git rev-parse @:./llvm)"
-        shell: bash
-
-      # Try to fetch LLVM from the cache.
-      - name: Cache LLVM
-        id: cache-llvm
-        uses: actions/cache@v2
-        with:
-          path: circt_src/llvm
-          key: ${{ runner.os }}-llvm-install-${{ steps.get-llvm-hash.outputs.hash }}
-
-      # Build LLVM if we didn't hit in the cache.
-      - name: Rebuild and Install LLVM
-        if: steps.cache-llvm.outputs.cache-hit != 'true'
-        run: |
-          mkdir -p circt_src/llvm/build
-          mkdir -p circt_src/llvm/install
-          cd circt_src/llvm/build
-          cmake ../llvm \
-            -DBUILD_SHARED_LIBS=ON \
-            -DLLVM_BUILD_EXAMPLES=OFF \
-            -DLLVM_TARGETS_TO_BUILD="host" \
-            -DCMAKE_INSTALL_PREFIX=../install \
-            -DLLVM_ENABLE_PROJECTS='mlir' \
-            -DLLVM_OPTIMIZED_TABLEGEN=ON \
-            -DLLVM_ENABLE_OCAMLDOC=OFF \
-            -DLLVM_ENABLE_BINDINGS=OFF \
-            -DLLVM_INSTALL_UTILS=ON \
-            -DCMAKE_C_COMPILER=clang \
-            -DCMAKE_CXX_COMPILER=clang++ \
-            -DLLVM_ENABLE_LLD=ON \
-            -DCMAKE_BUILD_TYPE=Release \
-            -DLLVM_ENABLE_ASSERTIONS=ON
-          cmake --build . --target install -- -j$(nproc)
-
-  # --- end of build-llvm job
 
   # Build CIRCT and run its tests.
   build-deploy:
-    name: Build CIRCT
-    needs: build-llvm
+    name: Build CIRCT website
     runs-on: ubuntu-latest
     steps:
-
-      - name: Configure Environment
-        run: echo "$GITHUB_WORKSPACE/llvm/install/bin" >> $GITHUB_PATH
-
       - uses: actions/checkout@v1
 
       - name: Install Doxygen
-        run: sudo apt-get install doxygen graphviz
+        run: sudo apt-get install doxygen graphviz ninja-build
 
       # Clone the CIRCT repo and its submodules. Do shallow clone to save clone
       # time.
@@ -95,65 +30,27 @@ jobs:
           submodules: "true"
           path: 'circt_src'
 
-      # Extract the LLVM submodule hash for use in the cache key.
-      - name: Get LLVM Hash
-        id: get-llvm-hash
-        run: |
-          cd ./circt_src
-          echo "::set-output name=hash::$(git rev-parse @:./llvm)"
-        shell: bash
-
-      # Try to fetch LLVM from the cache
-      - name: Cache LLVM
-        id: cache-llvm
-        uses: actions/cache@v2
-        with:
-          path: circt_src/llvm
-          key: ${{ runner.os }}-llvm-install-${{ steps.get-llvm-hash.outputs.hash }}
-
-      # Build LLVM if we didn't hit in the cache. Even though we build it in
-      # the previous job, there is a low chance that it'll have been evicted by
-      # the time we get here.
-      - name: Rebuild and Install LLVM
-        if: steps.cache-llvm.outputs.cache-hit != 'true'
-        run: |
-          mkdir -p circt_src/llvm/build
-          mkdir -p circt_src/llvm/install
-          cd circt_src/llvm/build
-          cmake ../llvm \
-            -DBUILD_SHARED_LIBS=ON \
-            -DLLVM_BUILD_EXAMPLES=OFF \
-            -DLLVM_TARGETS_TO_BUILD="host" \
-            -DCMAKE_INSTALL_PREFIX=../install \
-            -DLLVM_ENABLE_PROJECTS='mlir' \
-            -DLLVM_OPTIMIZED_TABLEGEN=ON \
-            -DLLVM_ENABLE_OCAMLDOC=OFF \
-            -DLLVM_ENABLE_BINDINGS=OFF \
-            -DLLVM_INSTALL_UTILS=ON \
-            -DCMAKE_C_COMPILER=clang \
-            -DCMAKE_CXX_COMPILER=clang++ \
-            -DLLVM_ENABLE_LLD=ON \
-            -DCMAKE_BUILD_TYPE=Release \
-            -DLLVM_ENABLE_ASSERTIONS=ON
-          cmake --build . --target install -- -j$(nproc)
-
       # Build the CIRCT circt-doc and doxygen-circt target to build docs.
       - name: Build CIRCT Dialect docs & doxygen src
         run: |
           mkdir circt_src/build &&
           cd circt_src/build &&
-          cmake .. \
+          cmake -GNinja ../llvm/llvm \
             -DCIRCT_INCLUDE_DOCS=ON \
             -DCMAKE_BUILD_TYPE=Release \
-            -DMLIR_DIR=../circt_src/llvm/install/lib/cmake/mlir/ \
-            -DLLVM_DIR=../circt_src/llvm/install/lib/cmake/llvm/
-          make circt-doc doxygen-circt -j$(nproc)
+            -DLLVM_ENABLE_PROJECTS=mlir \
+            -DLLVM_EXTERNAL_PROJECTS=circt \
+            -DLLVM_EXTERNAL_CIRCT_SOURCE_DIR=.. \
+            -DCMAKE_C_COMPILER=clang \
+            -DCMAKE_CXX_COMPILER=clang++ \
+            -DLLVM_USE_LINKER=lld
+          ninja circt-doc doxygen-circt -j$(nproc)
 
       - name: Install doxygen docs
-        run: cp -r circt_src/build/docs/doxygen/html website/static/doxygen
+        run: cp -r circt_src/build/tools/circt/docs/doxygen/html website/static/doxygen
 
       - name: Install CIRCT Dialect docs
-        run: ./copy_docs.sh circt_src/build/docs/ website/content/docs/
+        run: ./copy_docs.sh circt_src/build/tools/circt/docs/ website/content/docs/
 
       - name: Install CIRCT Source docs
         run: ./copy_docs.sh circt_src/docs/ website/content/docs/ &&

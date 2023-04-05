@@ -35,7 +35,7 @@ so feel free to use the current version of LLVM, but APIs may have
 changed.
 
 ```
-$ git clone git@github.com:circt/circt.git
+$ git clone https://github.com/llvm/circt.git
 $ cd circt
 $ git submodule init
 $ git submodule update

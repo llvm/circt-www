@@ -29,7 +29,7 @@ for more information.
    LLVM policies](https://llvm.discourse.group/c/Projects-that-want-to-become-official-LLVM-Projects/circt/).
 
 Also take a look at the following diagram, which gives a brief overview of the current [dialects and how they interact](includes/img/dialects.svg):
-
+<p align="center"><img src="includes/img/dialectlegend.svg"/></p>
 <p align="center"><img src="includes/img/dialects.svg"/></p>
 
 ## Motivation

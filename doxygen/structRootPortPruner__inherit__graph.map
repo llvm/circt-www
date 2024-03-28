@@ -1,0 +1,6 @@
+<map id="RootPortPruner" name="RootPortPruner">
+<area shape="rect" id="node1" title="A sample reduction pattern that removes ports from the root firrtl.module if the port is not used or ..." alt="" coords="26,276,146,303"/>
+<area shape="rect" id="node2" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="5,185,167,227"/>
+<area shape="rect" id="node3" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="19,5,142,32"/>
+<area shape="rect" id="node4" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="102,81,243,123"/>
+</map>

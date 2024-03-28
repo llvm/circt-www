@@ -1,0 +1,5 @@
+<map id="circt::scheduling::SharedOperatorsProblem" name="circt::scheduling::SharedOperatorsProblem">
+<area shape="rect" id="node1" title="This class models a resource&#45;constrained scheduling problem." alt="" coords="5,95,191,136"/>
+<area shape="rect" id="node3" href="$classcirct_1_1scheduling_1_1ModuloProblem.html" title="This class models the modulo scheduling problem as the composition of the cyclic problem and the reso..." alt="" coords="30,184,166,225"/>
+<area shape="rect" id="node2" href="$classcirct_1_1scheduling_1_1Problem.html" title="This class models the most basic scheduling problem." alt="" coords="30,5,166,47"/>
+</map>

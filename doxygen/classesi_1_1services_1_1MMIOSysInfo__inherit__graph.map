@@ -1,0 +1,5 @@
+<map id="esi::services::MMIOSysInfo" name="esi::services::MMIOSysInfo">
+<area shape="rect" id="node1" title="Implement the SysInfo API for a standard MMIO protocol." alt="" coords="5,155,203,181"/>
+<area shape="rect" id="node2" href="$classesi_1_1services_1_1SysInfo.html" title="Information about the Accelerator system." alt="" coords="25,80,183,107"/>
+<area shape="rect" id="node3" href="$classesi_1_1services_1_1Service.html" title="Parent class of all APIs modeled as &#39;services&#39;." alt="" coords="25,5,183,32"/>
+</map>

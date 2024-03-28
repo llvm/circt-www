@@ -1,0 +1,10 @@
+<map id="PartialLowerRegion" name="PartialLowerRegion">
+<area shape="rect" id="node1" title="Allows to partially lower a region by matching on the parent operation to then call the provided part..." alt="" coords="611,79,757,105"/>
+<area shape="rect" id="node2" title=" " alt="" coords="300,5,441,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="316,56,425,83"/>
+<area shape="rect" id="node4" href="$classLowerRegionTarget.html" title=" " alt="" coords="297,107,444,133"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,56,140,83"/>
+<area shape="rect" id="node6" title=" " alt="" coords="39,107,106,133"/>
+<area shape="rect" id="node7" title=" " alt="" coords="47,157,98,184"/>
+<area shape="rect" id="node8" title=" " alt="" coords="264,157,477,213"/>
+</map>

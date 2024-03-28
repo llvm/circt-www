@@ -1,0 +1,6 @@
+<map id="circt::ExportSystemC::TypeEmissionPattern&lt; Ty &gt;" name="circt::ExportSystemC::TypeEmissionPattern&lt; Ty &gt;">
+<area shape="rect" id="node1" title="This is a convenience class providing default implementations for type emission patterns." alt="" coords="5,276,215,317"/>
+<area shape="rect" id="node2" href="$structcirct_1_1ExportSystemC_1_1TypeEmissionPatternBase.html" title="This is intended to be the base class for all emission patterns matching on types." alt="" coords="11,185,209,227"/>
+<area shape="rect" id="node3" href="$classcirct_1_1ExportSystemC_1_1PatternBase.html" title="This is indented to be the base class for all emission patterns." alt="" coords="31,95,189,136"/>
+<area shape="rect" id="node4" title=" " alt="" coords="60,5,160,32"/>
+</map>

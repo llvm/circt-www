@@ -1,0 +1,199 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>Verilog and SystemVerilog Generation - CIRCT</title><meta name=description content="Circuit IR Compilers and Tools"><meta name=generator content="Hugo 0.101.0"><link href=https://circt.llvm.org/index.xml rel=alternate type=application/rss+xml><link rel=canonical href=https://circt.llvm.org/docs/VerilogGeneration/><link rel=stylesheet href=https://circt.llvm.org/css/theme.css><script src=https://use.fontawesome.com/releases/v5.0.6/js/all.js></script>
+<link rel=stylesheet href=https://circt.llvm.org/css/chroma.min.css><script src=https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js></script>
+<script src=https://circt.llvm.org/js/bundle.js></script>
+<script type=text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type=text/x-mathjax-config>
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$', '$'] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+    }
+  });
+</script><style>:root{}</style></head><body><div class=container><header><h1><div><img src=https://circt.llvm.org//circt-logo.svg width=40px align=absmiddle>
+CIRCT</div></h1><p class=description>Circuit IR Compilers and Tools</p></header><div class=global-menu><nav><ul><li class=parent><a href>Community<i class="fas fa-angle-right"></i></a><ul class=sub-menu><li class=child><a href=https://llvm.discourse.group/c/Projects-that-want-to-become-official-LLVM-Projects/circt/40>Forums</a></li><li class=child><a href=https://discord.gg/xS7Z362>Chat</a></li></ul></li><li class=parent><a href=https://github.com/llvm/circt/tree/main/>Source<i class="fas fa-angle-right"></i></a><ul class=sub-menu><li class=child><a href=/doxygen/>Doxygen</a></li><li class=child><a href=https://github.com/llvm/circt/tree/main/>GitHub</a></li></ul></li></ul></nav></div><div class=content-container><main><h1>Verilog and SystemVerilog Generation</h1><p><a href=https://en.wikipedia.org/wiki/Verilog>Verilog</a> and
+<a href=https://en.wikipedia.org/wiki/SystemVerilog>SystemVerilog</a> are critical
+components of the hardware design tool
+ecosystem, but generating syntactically correct Verilog that is acceptable by a
+wide range
+of tools is a challenge &ndash; and generating &ldquo;good looking&rdquo; output even more so.
+This document describes CIRCT&rsquo;s approach and support for generating Verilog and
+SystemVerilog, some of the features and capabilities provided, and information
+about the internal layering of the related subsystems.</p><h2 id=why-is-this-hard>Why is this hard?&nbsp;<a class=headline-hash href=#why-is-this-hard>¶</a></h2><p>One of the goals of CIRCT is to insulate &ldquo;front end&rdquo; authors from the details of
+Verilog generation. We would like to see innovation at the authoring level, and
+the problems in that space are quite different than the challenges of creating
+syntactically correct Verilog.</p><p>Further, the Verilog/SystemVerilog languages were primarily designed to be a
+human-authored programming language, and have evolved over the years with many
+new and exciting features. At the same time, the industry is full of critical
+EDA tools - but these have mixed support for different language features. Open
+source tools in particular have
+<a href=https://chipsalliance.github.io/sv-tests-results/>mixed
+support</a> for new features.
+Different emission styles also impact
+<a href=http://www.sunburst-design.com/papers/CummingsDVCon2019_Yikes_SV_Coding_rev1_0.pdf>simulator performance</a>
+and have many other considerations. We would like clients of CIRCT to be insulated from this complexity where possible.</p><p>Beyond the capabilities of different tools, in many cases the output of CIRCT
+is run through various &ldquo;linters&rdquo; that look for antipatterns or possible bugs in
+the output. While it is difficult to work with arbitrary 3rd party linters, we
+would like the output of CIRCT-based tools to be as &ldquo;lint clean by definition&rdquo;
+as possible.</p><p>Finally, our goal is for the generated Verilog to be as readable and polished as
+possible - some users of CIRCT generate IP that is sold to customers, and the
+quality of the generated Verilog directly reflects on the quality of the
+corresponding products. This means that small details, including indentation
+and use of the correct idioms is important.</p><h2 id=baseline-assumptions>Baseline Assumptions&nbsp;<a class=headline-hash href=#baseline-assumptions>¶</a></h2><p>Circt assumes, as a baseline, that tools support the subset of verilog specified
+in IEEE 1364.1-2002 &ldquo;IEEE Standard for Verilog Register Transfer Level
+Synthesis&rdquo;. Although this standard is deprecated and no replacement has been
+created for System Verilog, it provides a reasonable, established, and defined
+subset of the verilog specification which all tools should support. Circt may
+assume more features than specified in that document (e.g. system verilog
+constructs), but should be willing to consider lowering to simpler
+implementations when justified to support a major tool and when such lowering is
+possible. Supporting tools which do not meet this baseline will require
+substantial justification.</p><h2 id=controlling-output-style-with-loweringoptions>Controlling output style with <code>LoweringOptions</code>&nbsp;<a class=headline-hash href=#controlling-output-style-with-loweringoptions>¶</a></h2><p>The primary interface to control the output style from a CIRCT-based tool is
+through the
+<a href=https://github.com/llvm/circt/blob/main/include/circt/Support/LoweringOptions.h><code>circt::LoweringOptions</code></a>
+structure. It contains a number of properties (e.g. <code>emittedLineLength</code> or
+<code>disallowLocalVariables</code>) that affect lowering and emission of Verilog &ndash; in
+this case, what length of lines the emitter should aim for (e.g. 80 columns
+wide, 120 wide, etc), and whether the emitter is allowed to use <code>automatic logic</code> declarations in nested blocks or not.</p><p>The defaults in <code>LoweringOptions</code> are set up to generate aesthetically pleasing
+output, and to use the modern features of SystemVerilog where possible. Client
+tools and frontends can change these, e.g. if they need to generate standard
+Verilog for older tools.</p><p>Command line tools generally provide a <code>--lowering-options=</code> flag that
+allows end-users to override the defaults or the front-end provided features.
+If you&rsquo;re using <code>firtool</code> for example, you can pass
+<code>--lowering-options=emittedLineLength=200</code> to change the line length. This can
+be useful for experimentation, or when a frontend doesn&rsquo;t have other ways to
+control the output.</p><p>The current set of &ldquo;tool capability&rdquo; Lowering Options is:</p><ul><li><code>noAlwaysComb</code> (default=<code>false</code>). If true, emits <code>sv.alwayscomb</code> as Verilog
+<code>always @(*)</code> statements. Otherwise, print them as <code>always_comb</code>.</li><li><code>exprInEventControl</code> (default=<code>false</code>). If true, expressions are
+allowed in the sensitivity list of <code>always</code> statements, otherwise they are
+forced to be simple wires. Some EDA tools rely on these being simple wires.</li><li><code>disallowPackedArrays</code> (default=<code>false</code>). If true, eliminate packed arrays
+for tools that don&rsquo;t support them (e.g. Yosys).</li><li><code>disallowPackedStructAssignments</code> (default=<code>false</code>). If true, eliminate packed
+struct assignments in favor of a wire + assignments to the individual fields.</li><li><code>disallowLocalVariables</code> (default=<code>false</code>). If true, do not emit
+SystemVerilog locally scoped &ldquo;automatic&rdquo; or logic declarations - emit top
+level wire and reg&rsquo;s instead.</li><li><code>verifLabels</code> (default=<code>false</code>). If true, verification statements
+like <code>assert</code>, <code>assume</code>, and <code>cover</code> will always be emitted with a label. If
+the statement has no label in the IR, a generic one will be created. Some EDA
+tools require verification statements to be labeled.</li></ul><p>The current set of &ldquo;style&rdquo; Lowering Options is:</p><ul><li><code>emittedLineLength</code> (default=<code>90</code>). This is the target width of lines in an
+emitted Verilog source file in columns.</li><li><code>locationInfoStyle</code> (default=<code>plain</code>). This option controls emitted location
+information style. The available styles are:<ul><li><code>plain</code>: <code>// perf/regress/AndNot.fir:3:10, :7:{10,17}</code></li><li><code>wrapInAtSquareBracket</code>: <code>// @[perf/regress/AndNot.fir:3:10, :7:{10,17}]</code></li><li><code>none</code>: (no comment emitted)</li></ul></li><li><code>disallowPortDeclSharing</code> (default=<code>false</code>). If true, emit one port per
+declaration. Instead of <code>input a,\n b</code> this will produce
+<code>input a,\n input b</code>. When false, ports are emitted using the same
+declaration when possible.</li><li><code>printDebugInfo</code> (default=<code>false</code>). If true, emit additional debug information
+(e.g. inner symbols) into comments.</li><li><code>disallowMuxInlining</code> (default=<code>false</code>). If true, every mux expression is spilled to a wire.
+This is used to avoid emitting deeply nested mux expressions to improve readability.</li><li><code>wireSpillingHeuristic</code> (default=<code>spillNone</code>). This controls extra wire spilling performed
+in PrepareForEmission to improve readability and debuggability. It is possible to combine
+several heuristics by specifying <code>wireSpillingHeuristic</code> multiple times.
+(e.g. <code>wireSpillingHeuristic=spillLargeTermsWithNamehints,wireSpillingHeuristic=spillAllMux</code>).<ul><li><code>spillLargeTermsWithNamehints</code>: If spillLargeTermsWithNamehints is specified, expressions
+with meaningful namehints (i.e. names which start with &ldquo;_&rdquo;) are spilled to wires.
+For a namehint with &ldquo;_&rdquo; prefix, if the term size is greater than <code>wireSpillingNamehintTermLimit</code>
+(default=3), then the expression is spilled.</li></ul></li><li><code>emitWireInPorts</code> (default=<code>false</code>). Emits <code>wire</code> in port lists rather than
+relying on &lsquo;default_nettype&rsquo;. For instance, instead of <code>input a</code> this option
+would emit that port as <code>input wire a</code>.</li><li><code>emitBindComments</code> (default=<code>false</code>). Emits a comment wherever an instance or
+interface instance is not printed, because it was emitted as a bind elsewhere.</li><li><code>omitVersionComment</code> (default=<code>false</code>). Avoids emitting a version comment
+(e.g. <code>// Generated by CIRCT ...</code>) at the top of each verilog file.</li></ul><p>The current set of &ldquo;lint warnings fix&rdquo; Lowering Options is:</p><ul><li><code>explicitBitcast</code> (default=<code>false</code>). If true, add an explicit bitcast for
+avoiding bitwidth mismatch lint warnings (e.g. <code>8'(a+b)</code>).</li><li><code>disallowExpressionInliningInPorts</code> (default=<code>false</code>). If true, every expression
+passed to an instance port is driven by a wire. Some lint tools dislike expressions
+being inlined into input ports so this option avoids such warnings.</li><li><code>caseInsensitiveKeywords</code> (default=<code>false</code>). If true, then check for
+collisions with Verilog keywords insensitively. E.g., this will treat a
+variable called <code>WIRE</code> as a collision with the keyword and rename it to
+<code>WIRE_0</code> (or similar). When set to <code>false</code>, then <code>WIRE</code> will not be renamed.</li></ul><h2 id=recommended-loweringoptions-by-target>Recommended <code>LoweringOptions</code> by Target&nbsp;<a class=headline-hash href=#recommended-loweringoptions-by-target>¶</a></h2><p>This section presents a list of recommended <code>LoweringOptions</code> for various tools.
+Unlike LLVM, CIRCT doesn&rsquo;t use target triples to specify options. Instead,
+depending on the target you may use, you&rsquo;ll need to manually specify the
+appropriate options. Please refer
+<a href=/docs/ToolsWorkarounds/>ToolsWorkarounds</a>
+for the more details of each issue.</p><h3 id=questa>Questa&nbsp;<a class=headline-hash href=#questa>¶</a></h3><p>For Questa, we recommend using the <code>emitWireInPorts</code> option. This option is
+helpful because Questa emits warnings when ports do not have net types such as
+<code>wire</code>, <code>reg</code>, or <code>logic</code>.</p><h3 id=spyglass>Spyglass&nbsp;<a class=headline-hash href=#spyglass>¶</a></h3><p>We suggest using two options for Spyglass: <code>explicitBitcast</code> and
+<code>disallowExpressionInliningInPorts</code>. Spyglass implements its own width rules,
+and <code>explicitBitcast</code> helps to ensure that the widths are correctly inferred.
+Additionally, <code>disallowExpressionInliningInPorts</code> helps to surpass <code>NoExprInPorts</code>
+lint warnings.</p><h3 id=verilator>Verilator&nbsp;<a class=headline-hash href=#verilator>¶</a></h3><p>For Verilator, we recommend using the <code>locationInfoStyle=wrapInAtSquareBracket</code>
+and <code>disallowLocalVariables</code> options. Verilator treats comments such as <code>// verilator ..</code> as verilator metadata. If your file location starts with &ldquo;verilator&rdquo;,
+the location string will be recognized as verilator metadata, but it will cause
+a complication error. The <code>locationInfoStyle=wrapInAtSquareBracket</code> option helps
+to wrap file locations in <code>@[..]</code> to avoid this issue. Additionally, Verilator
+sometimes infers automatic logic variables as latches and emits warnings if these
+variables are conditionally assigned in procedural statements, so we recommend
+using <code>disallowLocalVariables</code>.</p><h3 id=vivado>Vivado&nbsp;<a class=headline-hash href=#vivado>¶</a></h3><p>For Vivado, we recommend using the <code>mitigateVivadoArrayIndexConstPropBug</code> option.
+Vivado (at least 2020.2, 2021.2, and 2022.2) has a bug in constant propagation,
+and this option helps to create a wire with the desired behavior.</p><h3 id=yosys>Yosys&nbsp;<a class=headline-hash href=#yosys>¶</a></h3><p>For Yosys, we recommend using the <code>disallowLocalVariables</code> and <code>disallowPackedArrays</code>
+options. Yosys doesn&rsquo;t parse <code>automatic</code> variables, so <code>disallowLocalVariables</code> is
+required. Additionally, Yosys doesn&rsquo;t accept packed arrays, so we suggest using
+<code>disallowPackedArrays</code>.</p><h3 id=specifying-loweringoptions-in-a-front-end-hdl-tool>Specifying <code>LoweringOptions</code> in a front-end HDL tool&nbsp;<a class=headline-hash href=#specifying-loweringoptions-in-a-front-end-hdl-tool>¶</a></h3><p>The
+<a href=https://github.com/llvm/circt/blob/main/include/circt/Support/LoweringOptions.h><code>circt::LoweringOptions</code> struct itself</a>
+is very simple: it projects each of the lowering options as a boolean, integer
+or other property. This allows C++ code to set up and query these properties
+with a natural and easy to use API.</p><p>That said, this struct is merely a convenience the actual truth is encoded into
+the IR as a <code>circt.loweringOptions</code> string attribute on the top level
+<code>builtin.module</code> declaration. Any frontend can set these options by setting
+this attribute on the IR that they generate.</p><h2 id=adding-new-lowering-options>Adding new Lowering Options&nbsp;<a class=headline-hash href=#adding-new-lowering-options>¶</a></h2><p>Adding new <code>LoweringOptions</code> is pretty easy, but we want to be able to scale to
+having lots of these and want them to remain as consistent as we can. Please
+follow these guidelines when adding new things:</p><ol><li><p>Don&rsquo;t use <code>LoweringOptions</code> to change the semantics of IR nodes in
+ExportVerilog. Instead, add new IR nodes to model the different semantic
+concepts that you need, and query <code>LoweringOptions</code> to decide what construct
+to lower to.</p></li><li><p>Make the default setting of the flag generate modern and clean SystemVerilog
+code. Flags should make the output more conservative/verbose/boring.</p></li><li><p>Name boolean options with active verb and reuse the existing ones (e.g.
+<code>disallow</code>) where possible. Try to make new options consistently named.</p></li><li><p>Consider making <code>ExportVerilog</code> reject invalid constructs with an error
+message - a compiler bug that causes CIRCT to generate the wrong construct
+is pretty certain to be better diagnosed by CIRCT itself than by the EDA tool
+that consumes the output.</p></li><li><p>Keep this documentation up to date.</p></li></ol><h2 id=using-the-verilog-exporter-in-a-passmanager-pipeline>Using the Verilog Exporter in a PassManager pipeline&nbsp;<a class=headline-hash href=#using-the-verilog-exporter-in-a-passmanager-pipeline>¶</a></h2><p>When building a new compiler, you get to decide what order to run passes in,
+and the order of passes can greatly affect the quality of the generated IR.
+There are many ways to do this, but we&rsquo;d recommend you follow the example of a
+well maintained tool in CIRCT (e.g. <code>firtool</code>). Something like this as the end
+of your pipeline should work well:</p><pre tabindex=0><code>  // Optional: perform general cleanups and structure the modules in a
+  // consistent way.
+  auto &amp;modulePM = pm.nest&lt;hw::HWModuleOp&gt;();
+  modulePM.addPass(sv::createHWCleanupPass());
+  modulePM.addPass(createCSEPass());
+  modulePM.addPass(createSimpleCanonicalizerPass());
+
+  // Required: Legalize unsupported operations within modules.  Do not run
+  // passes after this that aren&#39;t aware of LoweringOptions.
+  modulePM.addPass(sv::createHWLegalizeModulesPass());
+
+  // Optional: Tidy up the IR to improve Verilog emission quality.
+  modulePM.addPass(sv::createPrettifyVerilogPass());
+
+  // Actually export the module.
+  exportVerilog(theModule, ...);
+</code></pre><h2 id=signal-naming>Signal naming&nbsp;<a class=headline-hash href=#signal-naming>¶</a></h2><p>ExportVerilog checks all signal (and instance) names for keyword conflicts and
+duplicated names. Whenever these conditions are encountered, ExportVerilog will
+change the name to avoid the conflict.</p><h3 id=ops-with-explicit-names>Ops with explicit names&nbsp;<a class=headline-hash href=#ops-with-explicit-names>¶</a></h3><p>The <code>sv.reg</code> operation, <code>sv.wire</code> operation, and the various instance operations
+in the hw dialect have a <code>name</code> attribute which gets used.</p><h3 id=out-of-line-expressions-temporaries>Out-of-line expressions (&ldquo;temporaries&rdquo;)&nbsp;<a class=headline-hash href=#out-of-line-expressions-temporaries>¶</a></h3><p>Expressions are sometimes not emitted inlined (out-of-line) for a variety of
+reasons. These wire (or <code>automatic logic</code>) names or existence is <strong>not
+guaranteed</strong> to be stable. (Meaning they could change for <em>any</em> reason.) They,
+therefore, should not be relied upon for anything but local waveform debugging.
+In general, any name with prefixed with an underscore should not be relied upon.</p><p>These names come from the following sources, listed here in proirity order:</p><ol><li>The <code>sv.namehint</code> dialect attribute (which can be attached to any operation).</li><li>If ExportVerilog has a rule to derive a name based on the operation and
+operands, it will do so. (e.g. <code>hw.extract</code> operations get name
+<code>_&lt;operandName>_&lt;highBit>to&lt;lowBit></code> as of writing).</li><li><code>_T</code> or <code>_T_x</code> wherein <code>x</code> is a number.</li></ol><h2 id=exportverilog-internals><code>exportVerilog</code> Internals&nbsp;<a class=headline-hash href=#exportverilog-internals>¶</a></h2><p>It turns out that producing syntactically correct Verilog that is also pretty is
+really hard. As such, we&rsquo;ve taken a few steps to improve separation of concerns
+and thus simplify the implementation of Verilog emission. It is important to
+understand the division of responsibilities between these components when adding
+new features or fixing bugs in the existing code.</p><p>In particular, we split responsibilities between three major components, which
+are run in this order:</p><ol><li>The optional
+<a href=https://github.com/llvm/circt/blob/main/lib/Dialect/SV/Transforms/PrettifyVerilog.cpp><code>PrettifyVerilog</code> pass</a>.
+It is never required for correctness, but has a major impact on
+&ldquo;prettiness&rdquo;, and should always be used in practice.</li><li>The mandatory [<code>PrepareForEmission</code> logic] that is built into the
+<code>exportVerilog</code> function, and is thus mandatory.</li><li>The core
+<a href=https://github.com/llvm/circt/blob/main/lib/Conversion/ExportVerilog/ExportVerilog.cpp><code>ExportVerilog</code></a> logic, which handles printing out
+of Verilog source code.</li></ol><p>The first two of these are highly parameterized on <code>LoweringOptions</code>, and we&rsquo;re
+trying to minimize the complexity in the last one. Let&rsquo;s discuss each of them
+in inverse order.</p><h3 id=the-core-exportverilog-logic>The core <code>ExportVerilog</code> logic&nbsp;<a class=headline-hash href=#the-core-exportverilog-logic>¶</a></h3><p>The core of <code>ExportVerilog</code> walks the IR and prints out syntactically correct
+Verilog to an <code>llvm::raw_ostream</code>.</p><p>TODO: Talk about line splitting, preorder traversal, NameCollector, etc. Cross
+block references always go through a temporary. This doesn&rsquo;t support cyclic
+graph region references in the top level of a hw.module.</p><p>Because the Prepass logic has already been run, it knows it doesn&rsquo;t have to
+handle invalid output - it will have already been lowered by Prepass or other
+things earlier in the pipeline. As such, it can just diagnose any invalid
+things that may have slipped through with an error.</p><h3 id=the-prepareforemission-logic-built-into-exportverilog>The <code>PrepareForEmission</code> logic built into <code>ExportVerilog</code>&nbsp;<a class=headline-hash href=#the-prepareforemission-logic-built-into-exportverilog>¶</a></h3><p>This functionality is a logically distinct lowering pass that happens to run as
+part of ExportVerilog (so it cannot be forgotten or drift away from the
+exporter). It is structured as a lowering pass that rewrites invalid constructs
+as lower level ones, e.g. injecting explicit wires in places to break cyclic
+combinational logic circuits or duplicating array indexing operations into the
+same block as the uses (so they&rsquo;ll be sure to be inlined).</p><p><code>PrepareForEmission</code> also collects some information about local names that are
+used by the emitter later.</p><h3 id=prettifyverilog-internals><code>PrettifyVerilog</code> Internals&nbsp;<a class=headline-hash href=#prettifyverilog-internals>¶</a></h3><p><code>PrettifyVerilog</code> is an optional pass that is run right before the Verilog
+emitter. It introduces prettier but non-canonical forms of expressions that
+align with user expectations: for example, we print &ldquo;a-1&rdquo; instead of &ldquo;a+255&rdquo;.</p><p>When in SystemVerilog mode, this pass sinks expressions into nested regions
+(e.g. into procedural if regions) whenever it can to encourage inline emission
+of subexpressions. It also moves instances to the end of the module, which
+eliminates temporaries and makes the output more predictable.</p><div class=edit-meta><br></div><nav class=pagination><a class="nav nav-prev" href=https://circt.llvm.org/docs/PythonBindings/ title="Using the Python Bindings"><i class="fas fa-arrow-left" aria-hidden=true></i> Prev - Using the Python Bindings</a>
+<a class="nav nav-next" href=https://circt.llvm.org/docs/CommandGuide/ title=CommandGuide>Next - CommandGuide <i class="fas fa-arrow-right" aria-hidden=true></i></a></nav><footer><p class=powered>Powered by <a href=https://gohugo.io>Hugo</a>. Theme by <a href=https://themes.gohugo.io/hugo-theme-techdoc/>TechDoc</a>. Designed by <a href=https://github.com/thingsym/hugo-theme-techdoc>Thingsym</a>.</p></footer></main><div class=sidebar><nav class=slide-menu><ul><li><a href=https://circt.llvm.org/>Home</a></li><li><a href=https://circt.llvm.org/talks/>Talks and Related Publications</a></li><li><a href=https://circt.llvm.org/getting_started/>Getting Started</a></li><li class="parent has-sub-menu"><a href=https://circt.llvm.org/docs/>Code Documentation<span class="mark opened">-</span></a><ul class=sub-menu><li class=has-sub-menu><a href=https://circt.llvm.org/docs/CommandGuide/>CommandGuide<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/CommandGuide/handshake-runner/>handshake-runner</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Charter/>CIRCT Charter</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/>Dialects<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/ESIAppID/></a></li><li><a href=https://circt.llvm.org/docs/Dialects/Arc/>'arc' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/Calyx/>'calyx' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/CHIRRTL/>'chirrtl' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Comb/>'comb' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Comb/RationaleComb/>`comb` Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/DC/>'dc' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/DC/RationaleDC/>DC Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Emit/>'emit' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Emit/RationaleEmit/>Emission (Emit) Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/ESI/>'esi' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/ESI/cosim/>ESI cosimulation model</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/types/>ESI data types and communication types</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/services/>ESI Global Services</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/software_api/>ESI Software APIs</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/notes/>Miscellaneous Notes</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/RationaleESI/>The Elastic Silicon Interconnect dialect</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/>'firrtl' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/FIRRTLAnnotations/>FIRRTL Annotations</a></li><li><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/RationaleFIRRTL/>FIRRTL Dialect Rationale</a></li><li><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/FIRRTLIntrinsics/>Intrinsics</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/FSM/>'fsm' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/FSM/RationaleFSM/>FSM Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Handshake/>'handshake' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Handshake/RationaleHandshake/>Handshake Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/HW/>'hw' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/HW/RationaleHW/>HW Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/HWArith/>'hwarith' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/HWArith/RationaleHWArith/>HW Arith Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Ibis/>'ibis' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Ibis/RationaleIbis/>`ibis` Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/LLHD/>'llhd' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/LoopSchedule/>'loopschedule' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/LoopSchedule/LoopSchedule/>LoopSchedule Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/LTL/>'ltl' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/Moore/>'moore' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/MSFT/>'msft' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/OM/>'om' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/OM/RationaleOM/>Object Model Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Pipeline/>'pipeline' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Pipeline/RationalePipeline/>Pipeline Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Seq/>'seq' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Seq/RationaleSeq/>Seq(uential) Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/Sim/>'sim' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Sim/>'sim' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Sim/RationaleSim/>Simulation (Sim) Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/SSP/>'ssp' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/SSP/RationaleSSP/>SSP Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/SV/>'sv' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/SV/RationaleSV/>SV Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/SystemC/>'systemc' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/SystemC/RationaleSystemC/>SystemC Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/Verif/>'verif' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/Debug/>Debug Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Interop/>Interop Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Interop/RationaleInterop/>Interoperability Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/SMT/>SMT Dialect</a></li></ul></li><li><a href=https://circt.llvm.org/docs/ToolsWorkarounds/>EDA Tool Workarounds</a></li><li><a href=https://circt.llvm.org/docs/FormalVerification/>Formal Verification Tooling</a></li><li><a href=https://circt.llvm.org/docs/GettingStarted/>Getting Started with the CIRCT Project</a></li><li><a href=https://circt.llvm.org/docs/HLS/>HLS in CIRCT</a></li><li><a href=https://circt.llvm.org/docs/Passes/>Passes</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/PyCDE/>Python CIRCT Design Entry (PyCDE)<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/PyCDE/compiling/>Compiling CIRCT and PyCDE</a></li><li><a href=https://circt.llvm.org/docs/PyCDE/basics/>PyCDE Basics</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Scheduling/>Static scheduling infrastructure</a></li><li><a href=https://circt.llvm.org/docs/RationaleSymbols/>Symbol and Inner Symbol Rationale</a></li><li><a href=https://circt.llvm.org/docs/PythonBindings/>Using the Python Bindings</a></li><li class=active><a href=https://circt.llvm.org/docs/VerilogGeneration/>Verilog and SystemVerilog Generation</a></li></ul></li></ul></nav><div class=sidebar-footer></div></div></div><a href=# id=backtothetop-fixed class=backtothetop data-backtothetop-duration=600 data-backtothetop-easing=easeOutQuart data-backtothetop-fixed-fadein=1000 data-backtothetop-fixed-fadeout=1000 data-backtothetop-fixed-bottom=10 data-backtothetop-fixed-right=20><span class="fa-layers fa-fw"><i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i></span></a></div></body></html>

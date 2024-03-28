@@ -1,0 +1,21 @@
+<map id="circt::OpReduction&lt; OpTy &gt;" name="circt::OpReduction&lt; OpTy &gt;">
+<area shape="rect" id="node1" title=" " alt="" coords="177,208,319,249"/>
+<area shape="rect" id="node3" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="521,5,662,47"/>
+<area shape="rect" id="node5" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="511,77,672,119"/>
+<area shape="rect" id="node8" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="521,143,662,184"/>
+<area shape="rect" id="node10" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="521,208,662,249"/>
+<area shape="rect" id="node12" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="518,273,665,315"/>
+<area shape="rect" id="node14" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="521,339,662,380"/>
+<area shape="rect" id="node16" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="511,417,671,459"/>
+<area shape="rect" id="node2" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="5,215,128,242"/>
+<area shape="rect" id="node4" href="$structStateElimination.html" title="A sample reduction pattern that converts arc.state operations to the simpler arc.call operation and r..." alt="" coords="759,6,890,33"/>
+<area shape="rect" id="node6" href="$structFIRRTLModuleExternalizer.html" title="A sample reduction pattern that maps firrtl.module to firrtl.extmodule." alt="" coords="729,57,921,83"/>
+<area shape="rect" id="node7" href="$structRootPortPruner.html" title="A sample reduction pattern that removes ports from the root firrtl.module if the port is not used or ..." alt="" coords="765,107,885,134"/>
+<area shape="rect" id="node9" href="$structModuleExternalizer.html" title="A sample reduction pattern that maps hw.module to hw.module.extern." alt="" coords="751,158,899,185"/>
+<area shape="rect" id="node11" href="$structMemoryStubber.html" title="A sample reduction pattern that maps firrtl.mem to a set of invalidated wires." alt="" coords="761,215,888,242"/>
+<area shape="rect" id="node13" href="$structModuleNameSanitizer.html" title="Psuedo&#45;reduction that sanitizes module, instance, and port names." alt="" coords="741,281,908,307"/>
+<area shape="rect" id="node15" href="$structNodeSymbolRemover.html" title="This reduction removes symbols on node ops." alt="" coords="743,338,907,365"/>
+<area shape="rect" id="node17" href="$structEagerInliner.html" title="A sample reduction pattern that eagerly inlines instances." alt="" coords="775,389,875,415"/>
+<area shape="rect" id="node18" href="$structExtmoduleInstanceRemover.html" title="A sample reduction pattern that replaces instances of firrtl.extmodule with wires." alt="" coords="721,439,928,466"/>
+<area shape="rect" id="node19" href="$structInstanceStubber.html" title="A sample reduction pattern that maps firrtl.instance to a set of invalidated wires." alt="" coords="761,490,888,517"/>
+</map>

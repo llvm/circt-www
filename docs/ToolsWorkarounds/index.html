@@ -1,0 +1,104 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>EDA Tool Workarounds - CIRCT</title><meta name=description content="Circuit IR Compilers and Tools"><meta name=generator content="Hugo 0.101.0"><link href=https://circt.llvm.org/index.xml rel=alternate type=application/rss+xml><link rel=canonical href=https://circt.llvm.org/docs/ToolsWorkarounds/><link rel=stylesheet href=https://circt.llvm.org/css/theme.css><script src=https://use.fontawesome.com/releases/v5.0.6/js/all.js></script>
+<link rel=stylesheet href=https://circt.llvm.org/css/chroma.min.css><script src=https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js></script>
+<script src=https://circt.llvm.org/js/bundle.js></script>
+<script type=text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type=text/x-mathjax-config>
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$', '$'] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+    }
+  });
+</script><style>:root{}</style></head><body><div class=container><header><h1><div><img src=https://circt.llvm.org//circt-logo.svg width=40px align=absmiddle>
+CIRCT</div></h1><p class=description>Circuit IR Compilers and Tools</p></header><div class=global-menu><nav><ul><li class=parent><a href>Community<i class="fas fa-angle-right"></i></a><ul class=sub-menu><li class=child><a href=https://llvm.discourse.group/c/Projects-that-want-to-become-official-LLVM-Projects/circt/40>Forums</a></li><li class=child><a href=https://discord.gg/xS7Z362>Chat</a></li></ul></li><li class=parent><a href=https://github.com/llvm/circt/tree/main/>Source<i class="fas fa-angle-right"></i></a><ul class=sub-menu><li class=child><a href=/doxygen/>Doxygen</a></li><li class=child><a href=https://github.com/llvm/circt/tree/main/>GitHub</a></li></ul></li></ul></nav></div><div class=content-container><main><h1>EDA Tool Workarounds</h1><p>This documents various bugs found in EDA tools and their workarounds in circt.
+Each but will have a brief description, example code, and the mitigation added
+(with links to the commit when possible).</p><h1 id=automatic-variables-cause-latch-warnings>Automatic Variables Cause Latch Warnings</h1><p>Verilator issues a latch warning for fully-initialized, automatic variables. This precludes using locally scoped variables.
+<a href=https://github.com/verilator/verilator/issues/4022>https://github.com/verilator/verilator/issues/4022</a></p><h2 id=example>Example&nbsp;<a class=headline-hash href=#example>¶</a></h2><pre tabindex=0><code>module ALU(
+  input         clock,
+  input  [4:0]  operation,
+  input  [63:0] inputs_1,
+                inputs_0,
+                inputs_2,
+  input  [16:0] immediate,
+  output [63:0] output_0
+);
+  reg  [63:0]  casez_tmp_1;
+  always_comb begin
+    automatic logic [63:0] lowHigh;
+    casez (operation)
+      5&#39;b00011:
+        casez_tmp_1 = inputs_0 &amp; inputs_1;
+      5&#39;b00100:
+        casez_tmp_1 = inputs_0 | inputs_1;
+      5&#39;b00101:
+        casez_tmp_1 = inputs_0 ^ inputs_1;
+      5&#39;b01001: begin
+        automatic logic [16:0] _aluOutput_T_22 =
+          immediate &gt;&gt; {14&#39;h0, inputs_2, inputs_1[0], inputs_0[0]};
+        casez_tmp_1 = {63&#39;h0, _aluOutput_T_22[0]};
+      end
+      default:
+        casez_tmp_1 = inputs_0;
+    endcase
+  end
+endmodule
+</code></pre><p>Gives:</p><pre tabindex=0><code>$ verilator --version
+Verilator 5.008 2023-03-04 rev v5.008
+$ verilator --lint-only ALU.sv
+%Warning-LATCH: ALU.sv:11:3: Latch inferred for signal &#39;ALU.unnamedblk1.unnamedblk2._aluOutput_T_22&#39; (not all control paths of combinational always assign a value)
+                           : ... Suggest use of always_latch for intentional latches
+   11 |   always_comb begin
+      |   ^~~~~~~~~~~
+                ... For warning description see https://verilator.org/warn/LATCH?v=4.218
+                ... Use &#34;/* verilator lint_off LATCH */&#34; and lint_on around source to disable this message.
+%Error: Exiting due to 1 warning(s)
+</code></pre><h2 id=workaround>Workaround&nbsp;<a class=headline-hash href=#workaround>¶</a></h2><p>Flag added to promote all storage to the top level of a module.
+<a href=https://github.com/llvm/circt/commit/3c8b4b47b600ea6bcc6da56fe9b81d6fe4022e4c>https://github.com/llvm/circt/commit/3c8b4b47b600ea6bcc6da56fe9b81d6fe4022e4c</a></p><h1 id=inline-array-calculations-can-cause-synthesis-failures>Inline Array calculations can cause synthesis failures</h1><p>Some tools have bugs (version dependent) in const prop in this case.</p><h2 id=example-1>Example&nbsp;<a class=headline-hash href=#example-1>¶</a></h2><pre tabindex=0><code>module Foo (input clock, input in, output [2:0] out);
+  reg [2:0] state;
+  wire [7:0][2:0] array = 24&#39;h4 &lt;&lt; 6;
+  wire [2:0] a = array[state];
+  wire [2:0] b = array[state + 3&#39;h1 + 3&#39;h1];
+  // works:      array[state + (3&#39;h1 + 3&#39;h1)]
+  // works:      array[state + 3&#39;h2]
+  always @(posedge clock) state &lt;= in ? a : b;
+  assign out = b;
+endmodule
+</code></pre><h2 id=workaround-1>Workaround&nbsp;<a class=headline-hash href=#workaround-1>¶</a></h2><p>Flag added to export verilog to force array index calculations to not be inline.</p><p><a href=https://github.com/llvm/circt/commit/15a1f95f2d59767f20b459a12ac42338de22bc97>https://github.com/llvm/circt/commit/15a1f95f2d59767f20b459a12ac42338de22bc97</a></p><h1 id=memory-semantics-changed-by-synthesis>Memory semantics changed by synthesis</h1><p>Read/Write forwarding behavior is dependent on memory size, since the synthesis
+tool changes it&rsquo;s mapping based on that. The &ldquo;optimized&rdquo; mapping does not
+preserve the behavior of the verilog. This is a known issue reported on various
+forums by multiple people. There are some version dependencies on when this
+manifests.</p><h2 id=example-2>Example&nbsp;<a class=headline-hash href=#example-2>¶</a></h2><pre tabindex=0><code>Qux:
+  module Qux:
+    input clock: Clock
+    input addr: UInt&lt;1&gt;
+    input r: {en: UInt&lt;1&gt;, flip data: {a: UInt&lt;32&gt;, b: UInt&lt;32&gt;}, addr: UInt&lt;1&gt;}
+    input w: {en: UInt&lt;1&gt;, data: {a: UInt&lt;32&gt;, b: UInt&lt;32&gt;}, addr: UInt&lt;1&gt;, mask: {a: UInt&lt;1&gt;, b: UInt&lt;1&gt;}}
+
+    mem m :
+      data-type =&gt; {a: UInt&lt;32&gt;, b: UInt&lt;32&gt;}
+      depth =&gt; 1
+      reader =&gt; r
+      writer =&gt; w
+      read-latency =&gt; 0
+      write-latency =&gt; 1
+      read-under-write =&gt; undefined
+
+    m.r.clk &lt;= clock
+    m.r.en &lt;= r.en
+    m.r.addr &lt;= r.addr
+    r.data &lt;= m.r.data
+
+    m.w.clk &lt;= clock
+    m.w.en &lt;= w.en
+    m.w.addr &lt;= w.addr
+    m.w.data &lt;= w.data
+    m.w.mask &lt;= w.mask
+</code></pre><p>Compile with either firtool -repl-seq-mem -repl-seq-mem-file=mem.conf Foo.fir and firrtl -i Foo.fir.</p><h2 id=workaround-2>Workaround&nbsp;<a class=headline-hash href=#workaround-2>¶</a></h2><p>FIRRTL memory lowering has a flag to generate attributes on memory
+implementations that preserve the behavior described in the verilog. This is
+not a general solution, this bug could impact anyone making memory-looking
+things. It was decided not to try to reverse engineer the conditions which
+cause the bug to manifest (since they are version dependent), thus there isn&rsquo;t
+a universal fix that can be applied in the generated verilog.</p><p><a href=https://github.com/llvm/circt/commit/e9f443be475e0ef796c0c6af1ce09d6e783fcd5a>https://github.com/llvm/circt/commit/e9f443be475e0ef796c0c6af1ce09d6e783fcd5a</a></p><div class=edit-meta><br></div><nav class=pagination><a class="nav nav-prev" href=https://circt.llvm.org/docs/Dialects/SMT/ title="SMT Dialect"><i class="fas fa-arrow-left" aria-hidden=true></i> Prev - SMT Dialect</a>
+<a class="nav nav-next" href=https://circt.llvm.org/docs/FormalVerification/ title="Formal Verification Tooling">Next - Formal Verification Tooling <i class="fas fa-arrow-right" aria-hidden=true></i></a></nav><footer><p class=powered>Powered by <a href=https://gohugo.io>Hugo</a>. Theme by <a href=https://themes.gohugo.io/hugo-theme-techdoc/>TechDoc</a>. Designed by <a href=https://github.com/thingsym/hugo-theme-techdoc>Thingsym</a>.</p></footer></main><div class=sidebar><nav class=slide-menu><ul><li><a href=https://circt.llvm.org/>Home</a></li><li><a href=https://circt.llvm.org/talks/>Talks and Related Publications</a></li><li><a href=https://circt.llvm.org/getting_started/>Getting Started</a></li><li class="parent has-sub-menu"><a href=https://circt.llvm.org/docs/>Code Documentation<span class="mark opened">-</span></a><ul class=sub-menu><li class=has-sub-menu><a href=https://circt.llvm.org/docs/CommandGuide/>CommandGuide<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/CommandGuide/handshake-runner/>handshake-runner</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Charter/>CIRCT Charter</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/>Dialects<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/ESIAppID/></a></li><li><a href=https://circt.llvm.org/docs/Dialects/Arc/>'arc' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/Calyx/>'calyx' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/CHIRRTL/>'chirrtl' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Comb/>'comb' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Comb/RationaleComb/>`comb` Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/DC/>'dc' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/DC/RationaleDC/>DC Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Emit/>'emit' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Emit/RationaleEmit/>Emission (Emit) Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/ESI/>'esi' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/ESI/cosim/>ESI cosimulation model</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/types/>ESI data types and communication types</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/services/>ESI Global Services</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/software_api/>ESI Software APIs</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/notes/>Miscellaneous Notes</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/RationaleESI/>The Elastic Silicon Interconnect dialect</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/>'firrtl' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/FIRRTLAnnotations/>FIRRTL Annotations</a></li><li><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/RationaleFIRRTL/>FIRRTL Dialect Rationale</a></li><li><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/FIRRTLIntrinsics/>Intrinsics</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/FSM/>'fsm' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/FSM/RationaleFSM/>FSM Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Handshake/>'handshake' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Handshake/RationaleHandshake/>Handshake Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/HW/>'hw' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/HW/RationaleHW/>HW Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/HWArith/>'hwarith' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/HWArith/RationaleHWArith/>HW Arith Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Ibis/>'ibis' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Ibis/RationaleIbis/>`ibis` Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/LLHD/>'llhd' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/LoopSchedule/>'loopschedule' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/LoopSchedule/LoopSchedule/>LoopSchedule Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/LTL/>'ltl' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/Moore/>'moore' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/MSFT/>'msft' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/OM/>'om' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/OM/RationaleOM/>Object Model Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Pipeline/>'pipeline' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Pipeline/RationalePipeline/>Pipeline Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Seq/>'seq' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Seq/RationaleSeq/>Seq(uential) Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/Sim/>'sim' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Sim/>'sim' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Sim/RationaleSim/>Simulation (Sim) Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/SSP/>'ssp' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/SSP/RationaleSSP/>SSP Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/SV/>'sv' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/SV/RationaleSV/>SV Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/SystemC/>'systemc' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/SystemC/RationaleSystemC/>SystemC Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/Verif/>'verif' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/Debug/>Debug Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Interop/>Interop Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Interop/RationaleInterop/>Interoperability Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/SMT/>SMT Dialect</a></li></ul></li><li class=active><a href=https://circt.llvm.org/docs/ToolsWorkarounds/>EDA Tool Workarounds</a></li><li><a href=https://circt.llvm.org/docs/FormalVerification/>Formal Verification Tooling</a></li><li><a href=https://circt.llvm.org/docs/GettingStarted/>Getting Started with the CIRCT Project</a></li><li><a href=https://circt.llvm.org/docs/HLS/>HLS in CIRCT</a></li><li><a href=https://circt.llvm.org/docs/Passes/>Passes</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/PyCDE/>Python CIRCT Design Entry (PyCDE)<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/PyCDE/compiling/>Compiling CIRCT and PyCDE</a></li><li><a href=https://circt.llvm.org/docs/PyCDE/basics/>PyCDE Basics</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Scheduling/>Static scheduling infrastructure</a></li><li><a href=https://circt.llvm.org/docs/RationaleSymbols/>Symbol and Inner Symbol Rationale</a></li><li><a href=https://circt.llvm.org/docs/PythonBindings/>Using the Python Bindings</a></li><li><a href=https://circt.llvm.org/docs/VerilogGeneration/>Verilog and SystemVerilog Generation</a></li></ul></li></ul></nav><div class=sidebar-footer></div></div></div><a href=# id=backtothetop-fixed class=backtothetop data-backtothetop-duration=600 data-backtothetop-easing=easeOutQuart data-backtothetop-fixed-fadein=1000 data-backtothetop-fixed-fadeout=1000 data-backtothetop-fixed-bottom=10 data-backtothetop-fixed-right=20><span class="fa-layers fa-fw"><i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i></span></a></div></body></html>

@@ -1,0 +1,7 @@
+<map id="circt::moore::PackedRefType" name="circt::moore::PackedRefType">
+<area shape="rect" id="node1" title="A packed named type. See NamedTypeBase for details." alt="" coords="1016,57,1221,84"/>
+<area shape="rect" id="node2" href="$classcirct_1_1moore_1_1RefTypeBase.html" title=" " alt="" coords="731,43,967,99"/>
+<area shape="rect" id="node3" title=" " alt="" coords="249,5,464,61"/>
+<area shape="rect" id="node4" href="$classcirct_1_1moore_1_1RefTypeBase.html" title="A type reference." alt="" coords="261,86,453,127"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,79,200,135"/>
+</map>

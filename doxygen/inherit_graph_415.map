@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="5,50,199,91"/>
+<area shape="rect" id="node2" href="$structcirct_1_1esi_1_1detail_1_1RemoveOpLowering.html" title="Generic pattern for removing an op during pattern conversion." alt="" coords="274,5,446,61"/>
+<area shape="rect" id="node3" href="$structcirct_1_1msft_1_1RemoveOpLowering.html" title="Generic pattern for removing an op during pattern conversion." alt="" coords="247,86,473,127"/>
+</map>

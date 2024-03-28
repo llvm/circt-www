@@ -1,0 +1,4 @@
+<map id="circt::arc::RuntimeCostEstimateDialectInterface" name="circt::arc::RuntimeCostEstimateDialectInterface">
+<area shape="rect" id="node1" title="A dialect interface to get runtime cost estimates of MLIR operations." alt="" coords="24,109,252,151"/>
+<area shape="rect" id="node2" href="$classmlir_1_1DialectInterface_1_1Base.html" title=" " alt="" coords="5,5,271,61"/>
+</map>

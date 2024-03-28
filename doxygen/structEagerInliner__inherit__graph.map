@@ -1,0 +1,6 @@
+<map id="EagerInliner" name="EagerInliner">
+<area shape="rect" id="node1" title="A sample reduction pattern that eagerly inlines instances." alt="" coords="35,276,135,303"/>
+<area shape="rect" id="node2" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="5,185,165,227"/>
+<area shape="rect" id="node3" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="19,5,141,32"/>
+<area shape="rect" id="node4" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="101,81,243,123"/>
+</map>

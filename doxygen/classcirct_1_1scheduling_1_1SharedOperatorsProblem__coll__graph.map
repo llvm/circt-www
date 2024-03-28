@@ -1,0 +1,14 @@
+<map id="circt::scheduling::SharedOperatorsProblem" name="circt::scheduling::SharedOperatorsProblem">
+<area shape="rect" id="node1" title="This class models a resource&#45;constrained scheduling problem." alt="" coords="1019,445,1204,486"/>
+<area shape="rect" id="node2" href="$classcirct_1_1scheduling_1_1Problem.html" title="This class models the most basic scheduling problem." alt="" coords="833,283,969,325"/>
+<area shape="rect" id="node3" title=" " alt="" coords="465,57,643,113"/>
+<area shape="rect" id="node4" title=" " alt="" coords="512,137,596,164"/>
+<area shape="rect" id="node5" href="$classllvm_1_1SmallDenseMap.html" title=" " alt="" coords="455,189,653,230"/>
+<area shape="rect" id="node6" href="$classllvm_1_1SmallDenseMap.html" title=" " alt="" coords="5,181,225,237"/>
+<area shape="rect" id="node7" title=" " alt="" coords="478,254,630,295"/>
+<area shape="rect" id="node8" title=" " alt="" coords="453,320,655,347"/>
+<area shape="rect" id="node9" title=" " alt="" coords="478,371,630,413"/>
+<area shape="rect" id="node10" title=" " alt="" coords="459,437,649,464"/>
+<area shape="rect" id="node11" title=" " alt="" coords="472,490,636,531"/>
+<area shape="rect" id="node12" title=" " alt="" coords="511,7,597,33"/>
+</map>

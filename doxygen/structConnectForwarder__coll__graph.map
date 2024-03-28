@@ -1,0 +1,6 @@
+<map id="ConnectForwarder" name="ConnectForwarder">
+<area shape="rect" id="node1" title="A sample reduction pattern that pushes connected values through wires." alt="" coords="177,184,317,211"/>
+<area shape="rect" id="node2" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="51,95,174,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,220,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="198,95,387,121"/>
+</map>

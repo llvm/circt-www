@@ -1,0 +1,6 @@
+<map id="MemoryStubber" name="MemoryStubber">
+<area shape="rect" id="node1" title="A sample reduction pattern that maps firrtl.mem to a set of invalidated wires." alt="" coords="13,276,139,303"/>
+<area shape="rect" id="node2" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="5,185,147,227"/>
+<area shape="rect" id="node3" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="9,5,132,32"/>
+<area shape="rect" id="node4" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="92,81,233,123"/>
+</map>

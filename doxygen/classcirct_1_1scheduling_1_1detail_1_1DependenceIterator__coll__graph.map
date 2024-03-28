@@ -1,0 +1,20 @@
+<map id="circt::scheduling::detail::DependenceIterator" name="circt::scheduling::detail::DependenceIterator">
+<area shape="rect" id="node1" title="An iterator to transparently surface an operation&#39;s def&#45;use dependences from the SSA subgraph (induce..." alt="" coords="1167,517,1363,558"/>
+<area shape="rect" id="node2" title=" " alt="" coords="833,225,1041,295"/>
+<area shape="rect" id="node3" href="$classcirct_1_1scheduling_1_1Problem.html" title="This class models the most basic scheduling problem." alt="" coords="869,319,1005,361"/>
+<area shape="rect" id="node4" title=" " alt="" coords="465,5,643,61"/>
+<area shape="rect" id="node5" title=" " alt="" coords="512,85,596,112"/>
+<area shape="rect" id="node6" href="$classllvm_1_1SmallDenseMap.html" title=" " alt="" coords="455,137,653,178"/>
+<area shape="rect" id="node7" href="$classllvm_1_1SmallDenseMap.html" title=" " alt="" coords="5,129,225,185"/>
+<area shape="rect" id="node8" title=" " alt="" coords="478,202,630,243"/>
+<area shape="rect" id="node9" title=" " alt="" coords="453,268,655,295"/>
+<area shape="rect" id="node10" title=" " alt="" coords="478,319,630,361"/>
+<area shape="rect" id="node11" title=" " alt="" coords="459,385,649,412"/>
+<area shape="rect" id="node12" title=" " alt="" coords="472,437,636,478"/>
+<area shape="rect" id="node13" title=" " alt="" coords="511,507,597,533"/>
+<area shape="rect" id="node14" href="$classcirct_1_1scheduling_1_1detail_1_1Dependence.html" title="A wrapper class to uniformly handle def&#45;use and auxiliary dependence edges." alt="" coords="863,569,1011,610"/>
+<area shape="rect" id="node15" title=" " alt="" coords="507,601,601,628"/>
+<area shape="rect" id="node16" title=" " alt="" coords="493,652,615,679"/>
+<area shape="rect" id="node17" title=" " alt="" coords="837,634,1037,675"/>
+<area shape="rect" id="node18" title=" " alt="" coords="897,700,978,727"/>
+</map>

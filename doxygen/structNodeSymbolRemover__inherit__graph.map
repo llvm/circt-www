@@ -1,0 +1,6 @@
+<map id="NodeSymbolRemover" name="NodeSymbolRemover">
+<area shape="rect" id="node1" title="This reduction removes symbols on node ops." alt="" coords="5,276,169,303"/>
+<area shape="rect" id="node2" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="17,185,158,227"/>
+<area shape="rect" id="node3" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="21,5,143,32"/>
+<area shape="rect" id="node4" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="103,81,245,123"/>
+</map>

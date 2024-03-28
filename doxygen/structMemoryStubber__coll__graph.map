@@ -1,0 +1,9 @@
+<map id="MemoryStubber" name="MemoryStubber">
+<area shape="rect" id="node1" title="A sample reduction pattern that maps firrtl.mem to a set of invalidated wires." alt="" coords="215,379,341,405"/>
+<area shape="rect" id="node2" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="134,275,275,316"/>
+<area shape="rect" id="node3" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="51,95,174,121"/>
+<area shape="rect" id="node5" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="134,171,275,212"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,5,220,32"/>
+<area shape="rect" id="node6" href="$structNLARemover.html" title="A tracker for track NLAs affected by a reduction." alt="" coords="316,282,424,309"/>
+<area shape="rect" id="node7" title=" " alt="" coords="299,178,475,205"/>
+</map>

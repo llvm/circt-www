@@ -1,0 +1,13 @@
+<map id="esi::Instance" name="esi::Instance">
+<area shape="rect" id="node1" title="Subclass of HWModule which represents a submodule instance." alt="" coords="516,289,620,316"/>
+<area shape="rect" id="node2" href="$classesi_1_1HWModule.html" title="Represents either the top level or an instance of a hardware module." alt="" coords="331,195,451,221"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,211,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="21,57,195,98"/>
+<area shape="rect" id="node5" title=" " alt="" coords="29,122,187,163"/>
+<area shape="rect" id="node6" title=" " alt="" coords="21,187,195,229"/>
+<area shape="rect" id="node7" title=" " alt="" coords="29,253,187,294"/>
+<area shape="rect" id="node8" title=" " alt="" coords="13,318,203,359"/>
+<area shape="rect" id="node9" href="$structesi_1_1AppID.html" title=" " alt="" coords="347,384,435,411"/>
+<area shape="rect" id="node10" title=" " alt="" coords="79,384,137,411"/>
+<area shape="rect" id="node11" title=" " alt="" coords="29,435,187,461"/>
+</map>

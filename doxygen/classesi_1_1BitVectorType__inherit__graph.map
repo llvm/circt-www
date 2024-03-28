@@ -1,0 +1,8 @@
+<map id="esi::BitVectorType" name="esi::BitVectorType">
+<area shape="rect" id="node1" title="Bit vectors include signed, unsigned, and signless integers." alt="" coords="57,80,196,107"/>
+<area shape="rect" id="node3" href="$classesi_1_1BitsType.html" title="Bits are just an array of bits." alt="" coords="5,155,109,181"/>
+<area shape="rect" id="node4" href="$classesi_1_1IntegerType.html" title="Integers are bit vectors which may be signed or unsigned and are interpreted as numbers." alt="" coords="133,155,259,181"/>
+<area shape="rect" id="node2" href="$classesi_1_1Type.html" title="Root class of the ESI type system." alt="" coords="87,5,166,32"/>
+<area shape="rect" id="node5" href="$classesi_1_1SIntType.html" title="Signed integer." alt="" coords="79,229,183,256"/>
+<area shape="rect" id="node6" href="$classesi_1_1UIntType.html" title="Unsigned integer." alt="" coords="207,229,313,256"/>
+</map>

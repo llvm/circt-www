@@ -1,0 +1,14 @@
+<map id="circt::llhd::sim::Instance" name="circt::llhd::sim::Instance">
+<area shape="rect" id="node1" title="The simulator internal representation of an instance." alt="" coords="591,294,768,321"/>
+<area shape="rect" id="node2" title=" " alt="" coords="223,5,427,47"/>
+<area shape="rect" id="node3" title=" " alt="" coords="295,71,355,98"/>
+<area shape="rect" id="node4" href="$structcirct_1_1llhd_1_1sim_1_1ProcState.html" title="State structure for process persistence across suspension." alt="" coords="233,249,417,275"/>
+<area shape="rect" id="node5" title=" " alt="" coords="27,201,65,227"/>
+<area shape="rect" id="node6" title=" " alt="" coords="21,135,71,162"/>
+<area shape="rect" id="node7" title=" " alt="" coords="7,321,85,347"/>
+<area shape="rect" id="node8" title=" " alt="" coords="5,251,87,278"/>
+<area shape="rect" id="node9" href="$classcirct_1_1llhd_1_1sim_1_1Time.html" title="The simulator&#39;s internal representation of time." alt="" coords="247,399,402,426"/>
+<area shape="rect" id="node10" title=" " alt="" coords="9,402,83,429"/>
+<area shape="rect" id="node11" title=" " alt="" coords="295,450,354,477"/>
+<area shape="rect" id="node12" title=" " alt="" coords="263,501,386,527"/>
+</map>

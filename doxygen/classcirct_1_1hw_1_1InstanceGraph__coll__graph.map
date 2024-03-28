@@ -1,0 +1,15 @@
+<map id="circt::hw::InstanceGraph" name="circt::hw::InstanceGraph">
+<area shape="rect" id="node1" title="HW&#45;specific instance graph with a virtual entry node linking to all publicly visible modules." alt="" coords="797,159,975,185"/>
+<area shape="rect" id="node2" href="$classcirct_1_1igraph_1_1InstanceGraph.html" title="This graph tracks modules and where they are instantiated." alt="" coords="457,123,658,149"/>
+<area shape="rect" id="node3" title=" " alt="" coords="19,173,225,229"/>
+<area shape="rect" id="node4" title=" " alt="" coords="16,5,228,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,57,239,98"/>
+<area shape="rect" id="node6" title=" " alt="" coords="79,123,165,149"/>
+<area shape="rect" id="node7" href="$classcirct_1_1igraph_1_1InstanceGraphNode.html" title="This is a Node in the InstanceGraph." alt="" coords="440,283,675,309"/>
+<area shape="rect" id="node10" href="$classcirct_1_1igraph_1_1InstanceRecord.html" title="This is an edge in the InstanceGraph." alt="" coords="783,345,989,372"/>
+<area shape="rect" id="node8" title=" " alt="" coords="26,305,218,346"/>
+<area shape="rect" id="node9" title=" " alt="" coords="30,371,214,397"/>
+<area shape="rect" id="node11" title=" " alt="" coords="462,353,653,409"/>
+<area shape="rect" id="node12" title=" " alt="" coords="481,433,634,460"/>
+<area shape="rect" id="node13" title=" " alt="" coords="49,253,195,280"/>
+</map>

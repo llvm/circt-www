@@ -1,0 +1,4 @@
+<map id="ConnectInvalidator" name="ConnectInvalidator">
+<area shape="rect" id="node1" title="A sample reduction pattern that replaces the right&#45;hand&#45;side of firrtl.connect and firrtl...." alt="" coords="5,80,151,107"/>
+<area shape="rect" id="node2" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="17,5,139,32"/>
+</map>

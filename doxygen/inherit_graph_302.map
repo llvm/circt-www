@@ -1,0 +1,8 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classesi_1_1services_1_1Service.html" title="Parent class of all APIs modeled as &#39;services&#39;." alt="" coords="5,81,164,108"/>
+<area shape="rect" id="node2" href="$classesi_1_1services_1_1CustomService.html" title="A service for which there are no standard services registered." alt="" coords="212,5,421,32"/>
+<area shape="rect" id="node3" href="$classesi_1_1services_1_1FuncService.html" title="Service for calling functions." alt="" coords="222,56,411,83"/>
+<area shape="rect" id="node4" href="$classesi_1_1services_1_1MMIO.html" title=" " alt="" coords="242,107,391,133"/>
+<area shape="rect" id="node5" href="$classesi_1_1services_1_1SysInfo.html" title="Information about the Accelerator system." alt="" coords="237,157,396,184"/>
+<area shape="rect" id="node6" href="$classesi_1_1services_1_1MMIOSysInfo.html" title="Implement the SysInfo API for a standard MMIO protocol." alt="" coords="469,157,667,184"/>
+</map>

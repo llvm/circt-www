@@ -1,0 +1,6 @@
+<map id="circt::calyx::RewriteMemoryAccesses" name="circt::calyx::RewriteMemoryAccesses">
+<area shape="rect" id="node1" title="This pass rewrites memory accesses that have a width mismatch." alt="" coords="944,5,1149,47"/>
+<area shape="rect" id="node2" href="$classcirct_1_1calyx_1_1PartialLoweringPattern.html" title=" " alt="" coords="692,5,895,47"/>
+<area shape="rect" id="node3" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="5,11,176,52"/>
+<area shape="rect" id="node4" href="$classcirct_1_1calyx_1_1PartialLoweringPattern.html" title="Base class for partial lowering passes." alt="" coords="225,40,505,81"/>
+</map>

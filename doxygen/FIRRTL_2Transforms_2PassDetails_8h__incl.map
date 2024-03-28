@@ -1,0 +1,52 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Dialect/FIRRTL/Transforms/PassDetails.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Dialect/FIRRTL/Transforms/PassDetails.h">
+<area shape="rect" id="node1" title=" " alt="" coords="4151,5,4367,76"/>
+<area shape="rect" id="node2" href="$FIRRTLOps_8h.html" title=" " alt="" coords="2437,124,2585,165"/>
+<area shape="rect" id="node45" href="$Dialect_2FIRRTL_2Passes_8h.html" title=" " alt="" coords="4248,124,4396,165"/>
+<area shape="rect" id="node46" title=" " alt="" coords="4083,221,4209,247"/>
+<area shape="rect" id="node50" title=" " alt="" coords="4637,213,4785,255"/>
+<area shape="rect" id="node3" href="$CHIRRTLDialect_8h.html" title=" " alt="" coords="3113,213,3261,255"/>
+<area shape="rect" id="node5" href="$FIRRTLDialect_8h.html" title=" " alt="" coords="2935,571,3083,612"/>
+<area shape="rect" id="node13" href="$FIRRTLOpInterfaces_8h.html" title=" " alt="" coords="1757,303,1922,344"/>
+<area shape="rect" id="node23" href="$HWOpInterfaces_8h.html" title=" " alt="" coords="451,399,700,426"/>
+<area shape="rect" id="node25" href="$HWTypes_8h.html" title=" " alt="" coords="1143,489,1346,515"/>
+<area shape="rect" id="node27" href="$InnerSymbolTable_8h.html" title=" " alt="" coords="1954,481,2167,523"/>
+<area shape="rect" id="node28" title=" " alt="" coords="415,578,579,605"/>
+<area shape="rect" id="node32" title=" " alt="" coords="3389,310,3591,337"/>
+<area shape="rect" id="node33" title=" " alt="" coords="3615,303,3797,344"/>
+<area shape="rect" id="node34" title=" " alt="" coords="3821,303,4007,344"/>
+<area shape="rect" id="node38" href="$SeqAttributes_8h.html" title=" " alt="" coords="2293,489,2525,515"/>
+<area shape="rect" id="node39" href="$FieldRef_8h.html" title=" " alt="" coords="5,399,177,426"/>
+<area shape="rect" id="node40" href="$InstanceGraph_8h.html" title=" " alt="" coords="800,399,1015,426"/>
+<area shape="rect" id="node41" title=" " alt="" coords="2344,221,2479,247"/>
+<area shape="rect" id="node42" title=" " alt="" coords="2503,221,2717,247"/>
+<area shape="rect" id="node43" title=" " alt="" coords="2741,213,2917,255"/>
+<area shape="rect" id="node44" title=" " alt="" coords="2941,213,3089,255"/>
+<area shape="rect" id="node4" href="$FIRRTLAttributes_8h.html" title=" " alt="" coords="2651,481,2799,523"/>
+<area shape="rect" id="node7" href="$LLVM_8h.html" title=" " alt="" coords="1399,749,1554,776"/>
+<area shape="rect" id="node8" title=" " alt="" coords="2393,749,2579,776"/>
+<area shape="rect" id="node9" title=" " alt="" coords="3179,749,3305,776"/>
+<area shape="rect" id="node16" href="$FIRRTLTypes_8h.html" title=" " alt="" coords="1533,392,1681,433"/>
+<area shape="rect" id="node35" title=" " alt="" coords="2701,303,2863,344"/>
+<area shape="rect" id="node36" title=" " alt="" coords="2887,303,3039,344"/>
+<area shape="rect" id="node37" title=" " alt="" coords="3064,303,3212,344"/>
+<area shape="rect" id="node6" href="$HWDialect_8h.html" title=" " alt="" coords="2523,667,2735,694"/>
+<area shape="rect" id="node10" href="$OMDialect_8h.html" title=" " alt="" coords="3209,667,3419,694"/>
+<area shape="rect" id="node11" title=" " alt="" coords="2759,660,2909,701"/>
+<area shape="rect" id="node12" title=" " alt="" coords="2934,660,3083,701"/>
+<area shape="rect" id="node14" href="$FIRRTLAnnotations_8h.html" title=" " alt="" coords="1717,481,1879,523"/>
+<area shape="rect" id="node15" title=" " alt="" coords="1782,578,1942,605"/>
+<area shape="rect" id="node19" title=" " alt="" coords="705,578,867,605"/>
+<area shape="rect" id="node20" title=" " alt="" coords="1522,489,1693,515"/>
+<area shape="rect" id="node21" href="$HWAttributes_8h.html" title=" " alt="" coords="2067,578,2297,605"/>
+<area shape="rect" id="node22" title=" " alt="" coords="2151,667,2296,694"/>
+<area shape="rect" id="node31" title=" " alt="" coords="1877,392,2065,433"/>
+<area shape="rect" id="node17" href="$HWTypeInterfaces_8h.html" title=" " alt="" coords="1193,578,1454,605"/>
+<area shape="rect" id="node18" title=" " alt="" coords="1432,667,1551,694"/>
+<area shape="rect" id="node24" href="$HWInstanceImplementation_8h.html" title=" " alt="" coords="279,660,488,701"/>
+<area shape="rect" id="node29" href="$InstanceGraphInterface_8h.html" title=" " alt="" coords="663,481,866,523"/>
+<area shape="rect" id="node30" title=" " alt="" coords="266,489,538,515"/>
+<area shape="rect" id="node26" title=" " alt="" coords="891,578,1118,605"/>
+<area shape="rect" id="node47" title=" " alt="" coords="4434,221,4613,247"/>
+<area shape="rect" id="node48" title=" " alt="" coords="4234,221,4311,247"/>
+<area shape="rect" id="node49" title=" " alt="" coords="4335,221,4410,247"/>
+</map>

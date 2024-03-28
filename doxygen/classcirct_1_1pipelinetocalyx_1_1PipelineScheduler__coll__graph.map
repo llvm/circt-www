@@ -1,0 +1,10 @@
+<map id="circt::pipelinetocalyx::PipelineScheduler" name="circt::pipelinetocalyx::PipelineScheduler">
+<area shape="rect" id="node1" title="Holds additional information required for scheduling Pipeline pipelines." alt="" coords="1625,117,1784,158"/>
+<area shape="rect" id="node2" href="$classcirct_1_1calyx_1_1SchedulerInterface.html" title=" " alt="" coords="1353,25,1576,66"/>
+<area shape="rect" id="node3" href="$classcirct_1_1calyx_1_1SchedulerInterface.html" title="Holds common utilities used for scheduling when lowering to Calyx." alt="" coords="832,32,1093,59"/>
+<area shape="rect" id="node4" title=" " alt="" coords="392,23,568,65"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,124,96,151"/>
+<area shape="rect" id="node6" title=" " alt="" coords="612,83,808,125"/>
+<area shape="rect" id="node7" title=" " alt="" coords="1117,143,1329,199"/>
+<area shape="rect" id="node8" title=" " alt="" coords="616,204,804,260"/>
+</map>

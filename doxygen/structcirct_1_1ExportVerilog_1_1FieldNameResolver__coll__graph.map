@@ -1,0 +1,13 @@
+<map id="circt::ExportVerilog::FieldNameResolver" name="circt::ExportVerilog::FieldNameResolver">
+<area shape="rect" id="node1" title=" " alt="" coords="1188,157,1345,198"/>
+<area shape="rect" id="node2" href="$structcirct_1_1ExportVerilog_1_1GlobalNameTable.html" title="This class keeps track of global names at the module/interface level." alt="" coords="823,63,968,105"/>
+<area shape="rect" id="node3" title=" " alt="" coords="321,5,543,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,71,96,97"/>
+<area shape="rect" id="node5" title=" " alt="" coords="343,56,521,112"/>
+<area shape="rect" id="node6" title=" " alt="" coords="591,126,763,167"/>
+<area shape="rect" id="node7" title=" " alt="" coords="817,195,973,221"/>
+<area shape="rect" id="node8" href="$structcirct_1_1LoweringOptions.html" title="Options which control the emission from CIRCT to Verilog." alt="" coords="812,389,979,416"/>
+<area shape="rect" id="node9" title=" " alt="" coords="407,337,457,364"/>
+<area shape="rect" id="node10" title=" " alt="" coords="391,441,473,468"/>
+<area shape="rect" id="node11" title=" " alt="" coords="365,492,499,519"/>
+</map>

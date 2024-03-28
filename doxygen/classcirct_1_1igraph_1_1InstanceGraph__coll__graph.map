@@ -1,0 +1,7 @@
+<map id="circt::igraph::InstanceGraph" name="circt::igraph::InstanceGraph">
+<area shape="rect" id="node1" title="This graph tracks modules and where they are instantiated." alt="" coords="440,115,641,141"/>
+<area shape="rect" id="node2" title=" " alt="" coords="19,5,225,61"/>
+<area shape="rect" id="node3" title=" " alt="" coords="16,85,228,112"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,137,239,178"/>
+<area shape="rect" id="node5" title=" " alt="" coords="79,203,165,229"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="circt::firrtl::SameOperandsIntTypeKind&lt; ConcreteOp &gt;" name="circt::firrtl::SameOperandsIntTypeKind&lt; ConcreteOp &gt;">
+<area shape="rect" id="node1" title="A binary operation where the operands have the same integer kind." alt="" coords="37,109,241,151"/>
+<area shape="rect" id="node2" href="$classmlir_1_1OpTrait_1_1TraitBase.html" title=" " alt="" coords="5,5,272,61"/>
+</map>

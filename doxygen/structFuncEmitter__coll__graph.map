@@ -1,0 +1,8 @@
+<map id="FuncEmitter" name="FuncEmitter">
+<area shape="rect" id="node1" title="Emit a systemc.cpp.func function." alt="" coords="1208,20,1308,47"/>
+<area shape="rect" id="node2" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPattern.html" title=" " alt="" coords="995,5,1159,61"/>
+<area shape="rect" id="node3" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPatternBase.html" title="This is intended to be the base class for all emission patterns matching on operations." alt="" coords="428,13,613,54"/>
+<area shape="rect" id="node6" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPattern.html" title="This is a convenience class providing default implementations for operation emission patterns." alt="" coords="663,42,864,83"/>
+<area shape="rect" id="node4" href="$classcirct_1_1ExportSystemC_1_1PatternBase.html" title="This is indented to be the base class for all emission patterns." alt="" coords="220,13,379,54"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,20,105,47"/>
+</map>

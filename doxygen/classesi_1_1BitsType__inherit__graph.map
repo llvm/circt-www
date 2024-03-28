@@ -1,0 +1,5 @@
+<map id="esi::BitsType" name="esi::BitsType">
+<area shape="rect" id="node1" title="Bits are just an array of bits." alt="" coords="23,155,127,181"/>
+<area shape="rect" id="node2" href="$classesi_1_1BitVectorType.html" title="Bit vectors include signed, unsigned, and signless integers." alt="" coords="5,80,144,107"/>
+<area shape="rect" id="node3" href="$classesi_1_1Type.html" title="Root class of the ESI type system." alt="" coords="35,5,114,32"/>
+</map>

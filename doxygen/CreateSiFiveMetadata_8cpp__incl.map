@@ -1,0 +1,52 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Dialect/FIRRTL/Transforms/CreateSiFiveMetadata.cpp" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Dialect/FIRRTL/Transforms/CreateSiFiveMetadata.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="2888,5,3104,76"/>
+<area shape="rect" id="node2" href="$FIRRTL_2Transforms_2PassDetails_8h.html" title=" " alt="" coords="3391,131,3500,158"/>
+<area shape="rect" id="node3" href="$FIRRTLOps_8h.html" title=" " alt="" coords="2754,213,2902,255"/>
+<area shape="rect" id="node6" href="$OMDialect_8h.html" title=" " alt="" coords="5,660,216,687"/>
+<area shape="rect" id="node10" href="$FIRRTLAnnotations_8h.html" title=" " alt="" coords="3107,481,3269,523"/>
+<area shape="rect" id="node12" title=" " alt="" coords="3880,578,4043,605"/>
+<area shape="rect" id="node14" href="$FIRRTLTypes_8h.html" title=" " alt="" coords="1183,481,1331,523"/>
+<area shape="rect" id="node15" href="$HWAttributes_8h.html" title=" " alt="" coords="1084,660,1313,687"/>
+<area shape="rect" id="node28" href="$Dialect_2FIRRTL_2Passes_8h.html" title=" " alt="" coords="3685,213,3833,255"/>
+<area shape="rect" id="node31" href="$EmitOps_8h.html" title=" " alt="" coords="1027,392,1162,433"/>
+<area shape="rect" id="node37" title=" " alt="" coords="2926,578,3141,605"/>
+<area shape="rect" id="node39" href="$AnnotationDetails_8h.html" title=" " alt="" coords="536,213,691,255"/>
+<area shape="rect" id="node40" href="$FIRRTLInstanceGraph_8h.html" title=" " alt="" coords="3140,124,3316,165"/>
+<area shape="rect" id="node41" href="$FIRRTLUtils_8h.html" title=" " alt="" coords="2866,124,3014,165"/>
+<area shape="rect" id="node42" href="$InnerSymbolNamespace_8h.html" title=" " alt="" coords="1948,213,2161,255"/>
+<area shape="rect" id="node43" href="$OMAttributes_8h.html" title=" " alt="" coords="145,578,373,605"/>
+<area shape="rect" id="node44" href="$OMOps_8h.html" title=" " alt="" coords="133,489,323,515"/>
+<area shape="rect" id="node45" href="$SVOps_8h.html" title=" " alt="" coords="1775,399,1953,426"/>
+<area shape="rect" id="node46" title=" " alt="" coords="3575,131,3711,158"/>
+<area shape="rect" id="node47" title=" " alt="" coords="3735,131,3947,158"/>
+<area shape="rect" id="node48" title=" " alt="" coords="3972,131,4151,158"/>
+<area shape="rect" id="node49" title=" " alt="" coords="4175,131,4329,158"/>
+<area shape="rect" id="node50" title=" " alt="" coords="4353,131,4503,158"/>
+<area shape="rect" id="node29" title=" " alt="" coords="3583,310,3710,337"/>
+<area shape="rect" id="node30" title=" " alt="" coords="3734,303,3882,344"/>
+<area shape="rect" id="node4" href="$CHIRRTLDialect_8h.html" title=" " alt="" coords="1962,303,2110,344"/>
+<area shape="rect" id="node5" href="$FIRRTLDialect_8h.html" title=" " alt="" coords="499,571,647,612"/>
+<area shape="rect" id="node9" href="$FIRRTLOpInterfaces_8h.html" title=" " alt="" coords="2605,392,2771,433"/>
+<area shape="rect" id="node16" href="$HWOpInterfaces_8h.html" title=" " alt="" coords="2563,489,2813,515"/>
+<area shape="rect" id="node17" href="$HWTypes_8h.html" title=" " alt="" coords="2597,578,2800,605"/>
+<area shape="rect" id="node18" href="$InnerSymbolTable_8h.html" title=" " alt="" coords="2259,571,2472,612"/>
+<area shape="rect" id="node19" title=" " alt="" coords="2579,660,2743,687"/>
+<area shape="rect" id="node20" title=" " alt="" coords="1857,489,2060,515"/>
+<area shape="rect" id="node21" href="$SeqAttributes_8h.html" title=" " alt="" coords="3573,578,3805,605"/>
+<area shape="rect" id="node22" href="$FieldRef_8h.html" title=" " alt="" coords="2287,399,2459,426"/>
+<area shape="rect" id="node23" href="$InstanceGraph_8h.html" title=" " alt="" coords="3191,310,3406,337"/>
+<area shape="rect" id="node26" title=" " alt="" coords="2338,310,2473,337"/>
+<area shape="rect" id="node27" title=" " alt="" coords="2497,310,2711,337"/>
+<area shape="rect" id="node7" href="$LLVM_8h.html" title=" " alt="" coords="1891,660,2045,687"/>
+<area shape="rect" id="node8" title=" " alt="" coords="1105,735,1292,761"/>
+<area shape="rect" id="node11" title=" " alt="" coords="3099,660,3259,687"/>
+<area shape="rect" id="node13" title=" " alt="" coords="3317,571,3499,612"/>
+<area shape="rect" id="node24" title=" " alt="" coords="3413,399,3585,426"/>
+<area shape="rect" id="node25" title=" " alt="" coords="3191,399,3337,426"/>
+<area shape="rect" id="node32" title=" " alt="" coords="651,481,847,523"/>
+<area shape="rect" id="node33" href="$EmitDialect_8h.html" title=" " alt="" coords="1183,571,1318,612"/>
+<area shape="rect" id="node34" href="$SeqDialect_8h.html" title=" " alt="" coords="1407,578,1622,605"/>
+<area shape="rect" id="node35" href="$SeqTypes_8h.html" title=" " alt="" coords="1407,489,1612,515"/>
+<area shape="rect" id="node36" href="$BuilderUtils_8h.html" title=" " alt="" coords="1637,489,1833,515"/>
+<area shape="rect" id="node38" title=" " alt="" coords="871,481,1006,523"/>
+</map>

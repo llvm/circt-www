@@ -1,0 +1,8 @@
+<map id="circt::moore::StructMember" name="circt::moore::StructMember">
+<area shape="rect" id="node1" title="A member of a struct." alt="" coords="53,247,253,273"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,157,89,184"/>
+<area shape="rect" id="node3" title=" " alt="" coords="114,157,191,184"/>
+<area shape="rect" id="node4" href="$classcirct_1_1moore_1_1UnpackedType.html" title="An unpacked SystemVerilog type." alt="" coords="215,157,418,184"/>
+<area shape="rect" id="node5" href="$classcirct_1_1moore_1_1SVType.html" title="Base class for all SystemVerilog types in the Moore dialect." alt="" coords="239,81,394,108"/>
+<area shape="rect" id="node6" title=" " alt="" coords="291,5,343,32"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="circt::firrtl::detail::BundleTypeStorage" name="circt::firrtl::detail::BundleTypeStorage">
+<area shape="rect" id="node1" title=" " alt="" coords="772,174,927,215"/>
+<area shape="rect" id="node2" href="$structcirct_1_1firrtl_1_1detail_1_1FIRRTLBaseTypeStorage.html" title=" " alt="" coords="425,31,611,73"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,141,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="48,56,99,83"/>
+<area shape="rect" id="node5" title=" " alt="" coords="481,97,555,124"/>
+<area shape="rect" id="node6" title=" " alt="" coords="469,148,567,175"/>
+<area shape="rect" id="node7" href="$structcirct_1_1firrtl_1_1RecursiveTypeProperties.html" title="A collection of bits indicating the recursive properties of a type." alt="" coords="439,199,597,241"/>
+<area shape="rect" id="node8" title=" " alt="" coords="48,207,99,233"/>
+<area shape="rect" id="node9" title=" " alt="" coords="440,265,596,306"/>
+<area shape="rect" id="node10" title=" " alt="" coords="23,307,123,333"/>
+<area shape="rect" id="node11" title=" " alt="" coords="423,330,613,371"/>
+</map>

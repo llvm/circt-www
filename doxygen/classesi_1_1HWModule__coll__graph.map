@@ -1,0 +1,9 @@
+<map id="esi::HWModule" name="esi::HWModule">
+<area shape="rect" id="node1" title="Represents either the top level or an instance of a hardware module." alt="" coords="331,163,451,189"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,211,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="21,57,195,98"/>
+<area shape="rect" id="node4" title=" " alt="" coords="29,122,187,163"/>
+<area shape="rect" id="node5" title=" " alt="" coords="21,187,195,229"/>
+<area shape="rect" id="node6" title=" " alt="" coords="29,253,187,294"/>
+<area shape="rect" id="node7" title=" " alt="" coords="13,318,203,359"/>
+</map>

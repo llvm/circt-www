@@ -1,0 +1,13 @@
+<map id="circt::FirRegLowering" name="circt::FirRegLowering">
+<area shape="rect" id="node1" title="Lower FirRegOp to sv.reg and sv.always." alt="" coords="875,275,1033,302"/>
+<area shape="rect" id="node2" href="$classllvm_1_1SmallDenseMap.html" title=" " alt="" coords="464,5,636,47"/>
+<area shape="rect" id="node3" href="$classllvm_1_1SmallDenseMap.html" title=" " alt="" coords="5,101,225,157"/>
+<area shape="rect" id="node4" href="$classllvm_1_1SmallDenseMap.html" title=" " alt="" coords="452,71,648,112"/>
+<area shape="rect" id="node6" href="$classllvm_1_1SmallDenseMap.html" title=" " alt="" coords="467,137,633,193"/>
+<area shape="rect" id="node11" href="$classllvm_1_1SmallDenseMap.html" title=" " alt="" coords="467,217,633,288"/>
+<area shape="rect" id="node5" title=" " alt="" coords="525,313,575,339"/>
+<area shape="rect" id="node7" title=" " alt="" coords="492,363,608,390"/>
+<area shape="rect" id="node8" href="$classhw_1_1HWModuleOp.html" title=" " alt="" coords="483,414,617,441"/>
+<area shape="rect" id="node9" href="$classhw_1_1ModuleLike.html" title=" " alt="" coords="56,414,175,441"/>
+<area shape="rect" id="node10" title=" " alt="" coords="509,465,591,491"/>
+</map>

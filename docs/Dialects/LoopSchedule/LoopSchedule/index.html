@@ -1,0 +1,91 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>LoopSchedule Dialect Rationale - CIRCT</title><meta name=description content="Circuit IR Compilers and Tools"><meta name=generator content="Hugo 0.101.0"><link href=https://circt.llvm.org/index.xml rel=alternate type=application/rss+xml><link rel=canonical href=https://circt.llvm.org/docs/Dialects/LoopSchedule/LoopSchedule/><link rel=stylesheet href=https://circt.llvm.org/css/theme.css><script src=https://use.fontawesome.com/releases/v5.0.6/js/all.js></script>
+<link rel=stylesheet href=https://circt.llvm.org/css/chroma.min.css><script src=https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js></script>
+<script src=https://circt.llvm.org/js/bundle.js></script>
+<script type=text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type=text/x-mathjax-config>
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$', '$'] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+    }
+  });
+</script><style>:root{}</style></head><body><div class=container><header><h1><div><img src=https://circt.llvm.org//circt-logo.svg width=40px align=absmiddle>
+CIRCT</div></h1><p class=description>Circuit IR Compilers and Tools</p></header><div class=global-menu><nav><ul><li class=parent><a href>Community<i class="fas fa-angle-right"></i></a><ul class=sub-menu><li class=child><a href=https://llvm.discourse.group/c/Projects-that-want-to-become-official-LLVM-Projects/circt/40>Forums</a></li><li class=child><a href=https://discord.gg/xS7Z362>Chat</a></li></ul></li><li class=parent><a href=https://github.com/llvm/circt/tree/main/>Source<i class="fas fa-angle-right"></i></a><ul class=sub-menu><li class=child><a href=/doxygen/>Doxygen</a></li><li class=child><a href=https://github.com/llvm/circt/tree/main/>GitHub</a></li></ul></li></ul></nav></div><div class=content-container><main><h1>LoopSchedule Dialect Rationale</h1><p>This document describes various design points of the <code>loopschedule</code> dialect, why it is
+the way it is, and current status. This follows in the spirit of other
+<a href=https://mlir.llvm.org/docs/Rationale/>MLIR
+Rationale docs</a>.</p><h2 id=introduction>Introduction&nbsp;<a class=headline-hash href=#introduction>¶</a></h2><p>The <code>loopschedule</code> dialect provides a collection of ops to represent software-like loops
+after scheduling. There are currently two main kinds of loops that can be represented:
+pipelined and sequential. Pipelined loops allow multiple iterations of the loop to be
+in-flight at a time and have an associated initiation interval (<code>II</code>) to specify the number
+of cycles between the start of successive loop iterations. In contrast, sequential loops
+are guaranteed to only have one iteration in-flight at any given time.</p><p>A primary goal of the <code>loopschedule</code> dialect, as opposed to many other High-Level Synthesis
+(HLS) representations, is to maintain the structure of loops after scheduling. As such, the
+<code>loopschedule</code> ops are inspired by the <code>scf</code> and <code>affine</code> dialect ops.</p><h2 id=pipelined-loops>Pipelined Loops&nbsp;<a class=headline-hash href=#pipelined-loops>¶</a></h2><p>Pipelined loops are represented with the <code>loopschedule.pipeline</code> op. A <code>pipeline</code>
+loop resembles a <code>while</code> loop in the <code>scf</code> dialect, but the body must contain only
+<code>loopschedule.pipeline.stage</code> and <code>loopschedule.terminator</code> ops. To have a better
+understanding of how <code>loopschedule.pipeline</code> works, we will look at the following
+example:</p><pre tabindex=0><code>func.func @test1(%arg0: memref&lt;10xi32&gt;) -&gt; i32 {
+  %c0 = arith.constant 0 : index
+  %c1 = arith.constant 1 : index
+  %c10 = arith.constant 10 : index
+  %c0_i32 = arith.constant 0 : i32
+  %0 = loopschedule.pipeline II = 1 iter_args(%arg1 = %c0, %arg2 = %c0_i32) : (index, i32) -&gt; i32 {
+    %1 = arith.cmpi ult, %arg1, %c10 : index
+    loopschedule.register %1 : i1
+  } do {
+    %1:2 = loopschedule.pipeline.stage start = 0 {
+      %3 = arith.addi %arg1, %c1 : index
+      %4 = memref.load %arg0[%arg1] : memref&lt;10xi32&gt;
+      loopschedule.register %3, %4 : index, i32
+    } : index, i32
+    %2 = loopschedule.pipeline.stage start = 1 {
+      %3 = arith.addi %1#1, %arg2 : i32
+      pipeline.register %3 : i32
+    } : i32
+    loopschedule.terminator iter_args(%1#0, %2), results(%2) : (index, i32) -&gt; i32
+  }
+  return %0 : i32
+}
+</code></pre><p>A <code>pipeline</code> op first defines the initial values for the <code>iter_args</code>. <code>iter_args</code> are values that will
+be passed back to the first stage after the last stage of the pipeline. The pipeline also defines a
+specific, static <code>II</code>. Each pipeline stage in the <code>do</code> block represents a series of ops run in parallel.</p><p>Values are registered at the end of a stage and passed out as results for future pipeline stages to
+use. Each pipeline stage must have a defined start time, which is the number of cycles between the
+start of the pipeline and when the first valid data will be available as input to that stage.</p><p>Finally, the terminator is called with the <code>iter_args</code> for the next iteration and the result values
+that will be returned when the pipeline completes. Even though the terminator is located at the
+end of the loop body, its values are passed back to a previous stage whenever needed. We do not
+need to wait for an entire iteration to finish before <code>iter_args</code> become valid for the next iteration.</p><p>Multi-cycle and pipelined ops can also be supported in <code>pipeline</code> loops. In the following example,
+assume the multiply op is bound to a 3-stage pipelined multiplier:</p><pre tabindex=0><code>func.func @test1(%arg0: memref&lt;10xi32&gt;, %arg1: memref&lt;10xi32&gt;) {
+  %c0 = arith.constant 0 : index
+  %c1 = arith.constant 1 : index
+  %c10 = arith.constant 10 : index
+  %c1_i32 = arith.constant 1 : i32
+  loopschedule.pipeline II = 1 iter_args(%arg2 = %c0) : (index, i32) -&gt; () {
+    %1 = arith.cmpi ult, %arg1, %c10 : index
+    loopschedule.register %1 : i1
+  } do {
+    %1:2 = loopschedule.pipeline.stage start = 0 {
+      %3 = arith.addi %arg1, %c1 : index
+      %4 = memref.load %arg0[%arg2] : memref&lt;10xi32&gt;
+      loopschedule.register %3, %4 : index, i32
+    } : index, i32
+    %2:2 = loopschedule.pipeline.stage start = 1 {
+      %3 = arith.muli %1#1, %c1_i32 : i32
+      pipeline.register %3, %1#0 : i32
+    } : i32
+    loopschedule.pipeline.stage start = 4 {
+      memref.store %2#0, %arg0[%2#1] : i32
+      pipeline.register
+    } : i32
+    loopschedule.terminator iter_args(%1#0), results() : (index, i32) -&gt; ()
+  }
+  return
+}
+</code></pre><p>Here, the <code>II</code> is still 1 because new values can be introduced to the multiplier every cycle. The last
+stage is delayed by 3 cycles because of the 3 cycle latency of the multiplier. The <code>pipeline</code> op is
+currently tightly coupled to the lowering implementation used, as the latency of operators is not
+represented in the IR, but rather an implicit assumption made when lowering later. The scheduling
+problem is constructed with these implicit operator latencies in mind. This coupling can be addressed
+in the future with a proper operator library to maintain explicit operator latencies in the IR.</p><h2 id=status>Status&nbsp;<a class=headline-hash href=#status>¶</a></h2><p>Added pipeline loop representation, more documentation and rationale to come as ops are added.</p><div class=edit-meta><br></div><nav class=pagination><a class="nav nav-prev" href=https://circt.llvm.org/docs/Dialects/LoopSchedule/ title="'loopschedule' Dialect"><i class="fas fa-arrow-left" aria-hidden=true></i> Prev - 'loopschedule' Dialect</a>
+<a class="nav nav-next" href=https://circt.llvm.org/docs/Dialects/LTL/ title="'ltl' Dialect">Next - 'ltl' Dialect <i class="fas fa-arrow-right" aria-hidden=true></i></a></nav><footer><p class=powered>Powered by <a href=https://gohugo.io>Hugo</a>. Theme by <a href=https://themes.gohugo.io/hugo-theme-techdoc/>TechDoc</a>. Designed by <a href=https://github.com/thingsym/hugo-theme-techdoc>Thingsym</a>.</p></footer></main><div class=sidebar><nav class=slide-menu><ul><li><a href=https://circt.llvm.org/>Home</a></li><li><a href=https://circt.llvm.org/talks/>Talks and Related Publications</a></li><li><a href=https://circt.llvm.org/getting_started/>Getting Started</a></li><li class="parent has-sub-menu"><a href=https://circt.llvm.org/docs/>Code Documentation<span class="mark opened">-</span></a><ul class=sub-menu><li class=has-sub-menu><a href=https://circt.llvm.org/docs/CommandGuide/>CommandGuide<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/CommandGuide/handshake-runner/>handshake-runner</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Charter/>CIRCT Charter</a></li><li class="parent has-sub-menu"><a href=https://circt.llvm.org/docs/Dialects/>Dialects<span class="mark opened">-</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/ESIAppID/></a></li><li><a href=https://circt.llvm.org/docs/Dialects/Arc/>'arc' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/Calyx/>'calyx' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/CHIRRTL/>'chirrtl' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Comb/>'comb' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Comb/RationaleComb/>`comb` Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/DC/>'dc' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/DC/RationaleDC/>DC Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Emit/>'emit' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Emit/RationaleEmit/>Emission (Emit) Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/ESI/>'esi' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/ESI/cosim/>ESI cosimulation model</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/types/>ESI data types and communication types</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/services/>ESI Global Services</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/software_api/>ESI Software APIs</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/notes/>Miscellaneous Notes</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/RationaleESI/>The Elastic Silicon Interconnect dialect</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/>'firrtl' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/FIRRTLAnnotations/>FIRRTL Annotations</a></li><li><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/RationaleFIRRTL/>FIRRTL Dialect Rationale</a></li><li><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/FIRRTLIntrinsics/>Intrinsics</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/FSM/>'fsm' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/FSM/RationaleFSM/>FSM Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Handshake/>'handshake' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Handshake/RationaleHandshake/>Handshake Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/HW/>'hw' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/HW/RationaleHW/>HW Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/HWArith/>'hwarith' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/HWArith/RationaleHWArith/>HW Arith Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Ibis/>'ibis' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Ibis/RationaleIbis/>`ibis` Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/LLHD/>'llhd' Dialect</a></li><li class="parent has-sub-menu"><a href=https://circt.llvm.org/docs/Dialects/LoopSchedule/>'loopschedule' Dialect<span class="mark opened">-</span></a><ul class=sub-menu><li class=active><a href=https://circt.llvm.org/docs/Dialects/LoopSchedule/LoopSchedule/>LoopSchedule Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/LTL/>'ltl' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/Moore/>'moore' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/MSFT/>'msft' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/OM/>'om' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/OM/RationaleOM/>Object Model Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Pipeline/>'pipeline' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Pipeline/RationalePipeline/>Pipeline Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Seq/>'seq' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Seq/RationaleSeq/>Seq(uential) Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/Sim/>'sim' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Sim/>'sim' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Sim/RationaleSim/>Simulation (Sim) Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/SSP/>'ssp' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/SSP/RationaleSSP/>SSP Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/SV/>'sv' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/SV/RationaleSV/>SV Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/SystemC/>'systemc' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/SystemC/RationaleSystemC/>SystemC Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/Verif/>'verif' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/Debug/>Debug Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Interop/>Interop Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Interop/RationaleInterop/>Interoperability Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/SMT/>SMT Dialect</a></li></ul></li><li><a href=https://circt.llvm.org/docs/ToolsWorkarounds/>EDA Tool Workarounds</a></li><li><a href=https://circt.llvm.org/docs/FormalVerification/>Formal Verification Tooling</a></li><li><a href=https://circt.llvm.org/docs/GettingStarted/>Getting Started with the CIRCT Project</a></li><li><a href=https://circt.llvm.org/docs/HLS/>HLS in CIRCT</a></li><li><a href=https://circt.llvm.org/docs/Passes/>Passes</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/PyCDE/>Python CIRCT Design Entry (PyCDE)<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/PyCDE/compiling/>Compiling CIRCT and PyCDE</a></li><li><a href=https://circt.llvm.org/docs/PyCDE/basics/>PyCDE Basics</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Scheduling/>Static scheduling infrastructure</a></li><li><a href=https://circt.llvm.org/docs/RationaleSymbols/>Symbol and Inner Symbol Rationale</a></li><li><a href=https://circt.llvm.org/docs/PythonBindings/>Using the Python Bindings</a></li><li><a href=https://circt.llvm.org/docs/VerilogGeneration/>Verilog and SystemVerilog Generation</a></li></ul></li></ul></nav><div class=sidebar-footer></div></div></div><a href=# id=backtothetop-fixed class=backtothetop data-backtothetop-duration=600 data-backtothetop-easing=easeOutQuart data-backtothetop-fixed-fadein=1000 data-backtothetop-fixed-fadeout=1000 data-backtothetop-fixed-bottom=10 data-backtothetop-fixed-right=20><span class="fa-layers fa-fw"><i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i></span></a></div></body></html>

@@ -1,0 +1,6 @@
+<map id="ModuleNameSanitizer" name="ModuleNameSanitizer">
+<area shape="rect" id="node1" title="Psuedo&#45;reduction that sanitizes module, instance, and port names." alt="" coords="5,276,172,303"/>
+<area shape="rect" id="node2" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="15,185,162,227"/>
+<area shape="rect" id="node3" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="22,5,145,32"/>
+<area shape="rect" id="node4" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="105,81,246,123"/>
+</map>

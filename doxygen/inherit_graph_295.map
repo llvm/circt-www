@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classesi_1_1HWModule.html" title="Represents either the top level or an instance of a hardware module." alt="" coords="5,31,125,57"/>
+<area shape="rect" id="node2" href="$classesi_1_1Accelerator.html" title="Top level accelerator class." alt="" coords="173,5,296,32"/>
+<area shape="rect" id="node3" href="$classesi_1_1Instance.html" title="Subclass of HWModule which represents a submodule instance." alt="" coords="183,56,287,83"/>
+</map>

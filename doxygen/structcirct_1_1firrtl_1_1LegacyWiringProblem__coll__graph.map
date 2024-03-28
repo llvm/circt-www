@@ -1,0 +1,6 @@
+<map id="circt::firrtl::LegacyWiringProblem" name="circt::firrtl::LegacyWiringProblem">
+<area shape="rect" id="node1" title="A representation of a legacy Wiring problem consisting of a signal source that should be connected to..." alt="" coords="5,184,187,225"/>
+<area shape="rect" id="node2" title=" " alt="" coords="28,95,87,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="111,95,278,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="145,5,245,32"/>
+</map>

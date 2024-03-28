@@ -1,0 +1,8 @@
+<map id="circt::ExportVerilog::NameCollisionResolver" name="circt::ExportVerilog::NameCollisionResolver">
+<area shape="rect" id="node1" title=" " alt="" coords="95,345,278,387"/>
+<area shape="rect" id="node2" title=" " alt="" coords="13,256,169,283"/>
+<area shape="rect" id="node3" href="$structcirct_1_1LoweringOptions.html" title="Options which control the emission from CIRCT to Verilog." alt="" coords="199,256,366,283"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,5,56,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="242,5,323,32"/>
+<area shape="rect" id="node6" title=" " alt="" coords="451,5,586,32"/>
+</map>

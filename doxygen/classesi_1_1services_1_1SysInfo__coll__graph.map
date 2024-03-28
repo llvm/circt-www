@@ -1,0 +1,4 @@
+<map id="esi::services::SysInfo" name="esi::services::SysInfo">
+<area shape="rect" id="node1" title="Information about the Accelerator system." alt="" coords="5,80,164,107"/>
+<area shape="rect" id="node2" href="$classesi_1_1services_1_1Service.html" title="Parent class of all APIs modeled as &#39;services&#39;." alt="" coords="5,5,164,32"/>
+</map>

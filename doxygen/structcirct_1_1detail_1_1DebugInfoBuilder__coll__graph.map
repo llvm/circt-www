@@ -1,0 +1,9 @@
+<map id="circt::detail::DebugInfoBuilder" name="circt::detail::DebugInfoBuilder">
+<area shape="rect" id="node1" title="Helper to populate a DebugInfo with nodes." alt="" coords="548,136,719,177"/>
+<area shape="rect" id="node2" href="$structcirct_1_1DebugInfo.html" title="Debug information attached to an operation and the operations nested within." alt="" coords="357,143,483,170"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,192,47"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,71,192,112"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,136,192,177"/>
+<area shape="rect" id="node6" title=" " alt="" coords="55,202,142,229"/>
+<area shape="rect" id="node7" title=" " alt="" coords="13,253,185,295"/>
+</map>

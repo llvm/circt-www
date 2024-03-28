@@ -1,0 +1,9 @@
+<map id="esi::backends::cosim::CosimAccelerator" name="esi::backends::cosim::CosimAccelerator">
+<area shape="rect" id="node1" title="Connect to an ESI simulation." alt="" coords="948,93,1105,135"/>
+<area shape="rect" id="node2" href="$classesi_1_1AcceleratorConnection.html" title="Abstract class representing a connection to an accelerator." alt="" coords="592,50,788,77"/>
+<area shape="rect" id="node3" href="$classesi_1_1Context.html" title="AcceleratorConnections, Accelerators, and Manifests must all share a context." alt="" coords="311,13,411,39"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,5,180,47"/>
+<area shape="rect" id="node5" title=" " alt="" coords="269,63,452,119"/>
+<area shape="rect" id="node6" title=" " alt="" coords="626,101,754,127"/>
+<area shape="rect" id="node7" title=" " alt="" coords="593,151,787,207"/>
+</map>

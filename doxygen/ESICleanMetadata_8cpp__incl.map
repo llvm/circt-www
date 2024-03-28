@@ -1,0 +1,52 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Dialect/ESI/Passes/ESICleanMetadata.cpp" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Dialect/ESI/Passes/ESICleanMetadata.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="3111,5,3299,76"/>
+<area shape="rect" id="node2" href="$ESI_2PassDetails_8h.html" title=" " alt="" coords="3145,124,3266,151"/>
+<area shape="rect" id="node32" href="$ESIOps_8h.html" title=" " alt="" coords="989,199,1174,225"/>
+<area shape="rect" id="node40" href="$ESIPasses_8h.html" title=" " alt="" coords="4151,199,4355,225"/>
+<area shape="rect" id="node3" href="$CombDialect_8h.html" title=" " alt="" coords="3762,587,3905,628"/>
+<area shape="rect" id="node8" href="$ESIDialect_8h.html" title=" " alt="" coords="625,348,831,375"/>
+<area shape="rect" id="node9" href="$HWOps_8h.html" title=" " alt="" coords="1982,423,2173,449"/>
+<area shape="rect" id="node11" href="$LLVM_8h.html" title=" " alt="" coords="1224,765,1379,792"/>
+<area shape="rect" id="node12" href="$HWDialect_8h.html" title=" " alt="" coords="2802,683,3014,710"/>
+<area shape="rect" id="node37" href="$SeqDialect_8h.html" title=" " alt="" coords="286,683,501,710"/>
+<area shape="rect" id="node41" title=" " alt="" coords="3914,273,4041,300"/>
+<area shape="rect" id="node45" title=" " alt="" coords="4065,273,4292,300"/>
+<area shape="rect" id="node46" href="$SVDialect_8h.html" title=" " alt="" coords="3436,505,3636,531"/>
+<area shape="rect" id="node48" href="$SVOps_8h.html" title=" " alt="" coords="2052,348,2231,375"/>
+<area shape="rect" id="node49" title=" " alt="" coords="2995,199,3173,225"/>
+<area shape="rect" id="node50" title=" " alt="" coords="3197,199,3456,225"/>
+<area shape="rect" id="node4" title=" " alt="" coords="3449,765,3636,792"/>
+<area shape="rect" id="node5" title=" " alt="" coords="330,765,457,792"/>
+<area shape="rect" id="node6" title=" " alt="" coords="3747,676,3893,717"/>
+<area shape="rect" id="node7" title=" " alt="" coords="3581,676,3723,717"/>
+<area shape="rect" id="node30" title=" " alt="" coords="739,423,968,449"/>
+<area shape="rect" id="node31" title=" " alt="" coords="488,423,715,449"/>
+<area shape="rect" id="node10" href="$EmitOpInterfaces_8h.html" title=" " alt="" coords="1289,676,1439,717"/>
+<area shape="rect" id="node14" href="$HWEnums_8h.html" title=" " alt="" coords="3295,683,3505,710"/>
+<area shape="rect" id="node15" href="$HWOpInterfaces_8h.html" title=" " alt="" coords="1407,505,1657,531"/>
+<area shape="rect" id="node16" href="$HWTypes_8h.html" title=" " alt="" coords="1131,594,1333,621"/>
+<area shape="rect" id="node17" title=" " alt="" coords="1551,594,1715,621"/>
+<area shape="rect" id="node18" href="$BuilderUtils_8h.html" title=" " alt="" coords="1833,505,2029,531"/>
+<area shape="rect" id="node19" title=" " alt="" coords="1739,594,1887,621"/>
+<area shape="rect" id="node20" title=" " alt="" coords="1963,594,2178,621"/>
+<area shape="rect" id="node22" title=" " alt="" coords="1080,505,1283,531"/>
+<area shape="rect" id="node23" title=" " alt="" coords="2104,505,2317,531"/>
+<area shape="rect" id="node24" title=" " alt="" coords="2342,497,2541,539"/>
+<area shape="rect" id="node25" title=" " alt="" coords="2565,497,2741,539"/>
+<area shape="rect" id="node26" title=" " alt="" coords="3231,497,3412,539"/>
+<area shape="rect" id="node27" title=" " alt="" coords="869,497,1056,539"/>
+<area shape="rect" id="node28" title=" " alt="" coords="2766,505,2943,531"/>
+<area shape="rect" id="node29" title=" " alt="" coords="2967,505,3155,531"/>
+<area shape="rect" id="node13" title=" " alt="" coords="2791,765,3025,792"/>
+<area shape="rect" id="node21" title=" " alt="" coords="2520,594,2677,621"/>
+<area shape="rect" id="node33" href="$ESIAttributes_8h.html" title=" " alt="" coords="472,273,696,300"/>
+<area shape="rect" id="node34" href="$ESITypes_8h.html" title=" " alt="" coords="251,273,448,300"/>
+<area shape="rect" id="node35" href="$HWAttributes_8h.html" title=" " alt="" coords="3388,423,3617,449"/>
+<area shape="rect" id="node36" href="$SeqTypes_8h.html" title=" " alt="" coords="488,505,693,531"/>
+<area shape="rect" id="node38" title=" " alt="" coords="720,273,968,300"/>
+<area shape="rect" id="node39" title=" " alt="" coords="43,273,226,300"/>
+<area shape="rect" id="node42" title=" " alt="" coords="4367,273,4545,300"/>
+<area shape="rect" id="node43" title=" " alt="" coords="4569,273,4647,300"/>
+<area shape="rect" id="node44" title=" " alt="" coords="4671,273,4745,300"/>
+<area shape="rect" id="node47" title=" " alt="" coords="3363,594,3586,621"/>
+</map>

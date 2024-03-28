@@ -1,0 +1,4 @@
+<map id="esi::Instance" name="esi::Instance">
+<area shape="rect" id="node1" title="Subclass of HWModule which represents a submodule instance." alt="" coords="13,80,117,107"/>
+<area shape="rect" id="node2" href="$classesi_1_1HWModule.html" title="Represents either the top level or an instance of a hardware module." alt="" coords="5,5,125,32"/>
+</map>

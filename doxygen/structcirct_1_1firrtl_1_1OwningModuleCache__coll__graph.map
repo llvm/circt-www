@@ -1,0 +1,18 @@
+<map id="circt::firrtl::OwningModuleCache" name="circt::firrtl::OwningModuleCache">
+<area shape="rect" id="node1" title="This implements an analysis to determine which module owns a given path operation." alt="" coords="1268,315,1459,357"/>
+<area shape="rect" id="node2" href="$classcirct_1_1firrtl_1_1InstanceGraph.html" title="This graph tracks modules and where they are instantiated." alt="" coords="925,217,1111,244"/>
+<area shape="rect" id="node3" href="$classcirct_1_1igraph_1_1InstanceGraph.html" title="This graph tracks modules and where they are instantiated." alt="" coords="457,123,658,149"/>
+<area shape="rect" id="node4" title=" " alt="" coords="19,173,225,229"/>
+<area shape="rect" id="node5" title=" " alt="" coords="16,5,228,32"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,57,239,98"/>
+<area shape="rect" id="node7" title=" " alt="" coords="79,123,165,149"/>
+<area shape="rect" id="node8" href="$classcirct_1_1igraph_1_1InstanceGraphNode.html" title="This is a Node in the InstanceGraph." alt="" coords="440,283,675,309"/>
+<area shape="rect" id="node11" href="$classcirct_1_1igraph_1_1InstanceRecord.html" title="This is an edge in the InstanceGraph." alt="" coords="915,345,1121,372"/>
+<area shape="rect" id="node9" title=" " alt="" coords="26,305,218,346"/>
+<area shape="rect" id="node10" title=" " alt="" coords="30,371,214,397"/>
+<area shape="rect" id="node12" title=" " alt="" coords="462,345,653,401"/>
+<area shape="rect" id="node13" title=" " alt="" coords="481,425,634,452"/>
+<area shape="rect" id="node14" title=" " alt="" coords="49,253,195,280"/>
+<area shape="rect" id="node15" title=" " alt="" coords="933,419,1103,461"/>
+<area shape="rect" id="node16" title=" " alt="" coords="512,476,603,503"/>
+</map>

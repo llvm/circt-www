@@ -1,0 +1,9 @@
+<map id="circt::firrtl::IntType" name="circt::firrtl::IntType">
+<area shape="rect" id="node1" title="This is the common base class between SIntType and UIntType." alt="" coords="956,65,1096,92"/>
+<area shape="rect" id="node2" href="$classcirct_1_1firrtl_1_1FIRRTLBaseType.html" title=" " alt="" coords="708,28,907,55"/>
+<area shape="rect" id="node3" title=" " alt="" coords="325,5,567,61"/>
+<area shape="rect" id="node4" href="$classcirct_1_1firrtl_1_1WidthQualifiedTypeTrait.html" title=" " alt="" coords="713,86,902,127"/>
+<area shape="rect" id="node5" title=" " alt="" coords="313,86,579,127"/>
+<area shape="rect" id="node6" href="$classcirct_1_1firrtl_1_1WidthQualifiedTypeTrait.html" title="Trait for types which have a width." alt="" coords="347,151,545,193"/>
+<area shape="rect" id="node7" title=" " alt="" coords="5,144,264,200"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="circt::msft::RemoveOpLowering&lt; OpTy &gt;" name="circt::msft::RemoveOpLowering&lt; OpTy &gt;">
+<area shape="rect" id="node1" title="Generic pattern for removing an op during pattern conversion." alt="" coords="5,95,232,136"/>
+<area shape="rect" id="node2" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="22,5,215,47"/>
+</map>

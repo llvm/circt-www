@@ -1,0 +1,12 @@
+<map id="circt::msft::TclEmitter" name="circt::msft::TclEmitter">
+<area shape="rect" id="node1" title="Instantiate for all Tcl emissions." alt="" coords="924,168,1084,195"/>
+<area shape="rect" id="node2" title=" " alt="" coords="576,8,664,35"/>
+<area shape="rect" id="node3" title=" " alt="" coords="521,59,719,144"/>
+<area shape="rect" id="node4" title=" " alt="" coords="61,40,151,67"/>
+<area shape="rect" id="node5" href="$classcirct_1_1hw_1_1HWSymbolCache.html" title="This stores lookup tables to make manipulating and working with the IR more efficient." alt="" coords="522,168,718,195"/>
+<area shape="rect" id="node6" href="$classcirct_1_1SymbolCacheBase.html" title="Base symbol cache class to allow for cache lookup through a pointer to some abstract cache." alt="" coords="17,91,195,117"/>
+<area shape="rect" id="node7" title=" " alt="" coords="81,233,131,260"/>
+<area shape="rect" id="node8" title=" " alt="" coords="5,141,207,197"/>
+<area shape="rect" id="node9" title=" " alt="" coords="513,300,727,327"/>
+<area shape="rect" id="node10" title=" " alt="" coords="64,300,148,327"/>
+</map>

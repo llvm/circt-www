@@ -1,0 +1,143 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>Object Model Dialect Rationale - CIRCT</title><meta name=description content="Circuit IR Compilers and Tools"><meta name=generator content="Hugo 0.101.0"><link href=https://circt.llvm.org/index.xml rel=alternate type=application/rss+xml><link rel=canonical href=https://circt.llvm.org/docs/Dialects/OM/RationaleOM/><link rel=stylesheet href=https://circt.llvm.org/css/theme.css><script src=https://use.fontawesome.com/releases/v5.0.6/js/all.js></script>
+<link rel=stylesheet href=https://circt.llvm.org/css/chroma.min.css><script src=https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js></script>
+<script src=https://circt.llvm.org/js/bundle.js></script>
+<script type=text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type=text/x-mathjax-config>
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$', '$'] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+    }
+  });
+</script><style>:root{}</style></head><body><div class=container><header><h1><div><img src=https://circt.llvm.org//circt-logo.svg width=40px align=absmiddle>
+CIRCT</div></h1><p class=description>Circuit IR Compilers and Tools</p></header><div class=global-menu><nav><ul><li class=parent><a href>Community<i class="fas fa-angle-right"></i></a><ul class=sub-menu><li class=child><a href=https://llvm.discourse.group/c/Projects-that-want-to-become-official-LLVM-Projects/circt/40>Forums</a></li><li class=child><a href=https://discord.gg/xS7Z362>Chat</a></li></ul></li><li class=parent><a href=https://github.com/llvm/circt/tree/main/>Source<i class="fas fa-angle-right"></i></a><ul class=sub-menu><li class=child><a href=/doxygen/>Doxygen</a></li><li class=child><a href=https://github.com/llvm/circt/tree/main/>GitHub</a></li></ul></li></ul></nav></div><div class=content-container><main><h1>Object Model Dialect Rationale</h1><p>This document describes various design points of the <code>om</code> dialect. This follows
+in the spirit of other
+<a href=https://mlir.llvm.org/docs/Rationale/>MLIR Rationale docs</a>.</p><h2 id=motivation>Motivation&nbsp;<a class=headline-hash href=#motivation>¶</a></h2><p>The goal of the <code>om</code> dialect is to develop an IR suitable for domain modeling. It
+intends to accomplish this by providing constructs for capturing an
+<a href=https://en.wikipedia.org/wiki/Object_model>Object Model</a> (OM). Domain modeling
+in this context means capturing design intent and supporting tooling related to
+the creation of CPUs and SoCs. Anything other than RTL level design entry falls
+under this broad categorization, and must be intimately tied to RTL level design
+entry in a stable way.</p><p>This includes modeling domains such as:</p><ul><li>Physical hierarchies</li><li>Power specifications</li><li>Clocks and clock domains</li><li>Bus interfaces</li><li>Software bringup</li><li>And much more&mldr;</li></ul><p>This dialect encompasses a very generic compiler IR capable of representing
+concepts from these varied domains. This is not to say that we should never
+develop domain-specific compiler IRs for such domains. To the contrary, it is
+expected that over time we will continuously re-evaluate the uses of the <code>om</code>
+dialect, and graduate well-understood models into domain-specific IRs through
+further dialects.</p><p>Domain models should support tooling built around the design with well-defined
+and type safe APIs. This includes tools generating collateral such as:</p><ul><li>Synthesis constraints</li><li>IP-XACT</li><li>DTS</li><li>And much more…</li></ul><h2 id=background>Background&nbsp;<a class=headline-hash href=#background>¶</a></h2><p>Lots of discussions and prior art have informed the design of the <code>om</code> dialect.</p><h3 id=ontologies>Ontologies&nbsp;<a class=headline-hash href=#ontologies>¶</a></h3><p>Domain modeling is intimately tied to the philosophical topic of
+<a href=https://en.wikipedia.org/wiki/Ontology_%28information_science%29>ontologies</a>. The
+<code>om</code> dialect should be able to support an ontology of interest as it evolves.
+This requires data structures that derive their power from simplicity. The
+dialect attempts to provide a few, orthogonal structures that can be composed to
+flexibly support a variety of domain modeling needs in powerful ways.</p><h3 id=domain-models-apis>Domain Models APIs&nbsp;<a class=headline-hash href=#domain-models-apis>¶</a></h3><p>The domain models should not exist in a vacuum. They must be queried via
+well-defined APIs to be of use to the various tools that require them. The design
+of the data structures should simultaneously capture the domain model and support
+querying it in a natural way.</p><h3 id=inspiration-from-modern-languages>Inspiration from Modern Languages&nbsp;<a class=headline-hash href=#inspiration-from-modern-languages>¶</a></h3><p>While many modern languages have influenced this design, the simplest analogy
+might be in terms of Java classes. The <code>om</code> dialect constructs are similar to
+how Java defines classes, with constructors and public data members, but without
+generic data types.</p><p>Class constructors and public data member separate how Objects are created from
+how they are used. The removal of generic data types requires the domain model
+to be monomorphized.</p><p>The design for Classes also draws on OCaml and C++.</p><h2 id=core-constructs>Core Constructs&nbsp;<a class=headline-hash href=#core-constructs>¶</a></h2><h3 id=classes>Classes&nbsp;<a class=headline-hash href=#classes>¶</a></h3><p>Class definitions have a name, a formal parameter list, and a body.</p><p>The formal parameter list provides a name and a type for each parameter that
+must be supplied to instantiate the Class. In the IR, formal parameters become
+block arguments, much like function formal parameters in software compilers.
+After Classes are defined, they can be instantiated as Objects in the IR by
+supplying actual parameters for each declared formal parameter.</p><p>The body provides a way to describe both the publicly exported Fields of the
+Class, as well as its internal implementation.</p><p>The list of formal parameters describes what is needed to create a Class, and
+the list of Fields describes how a Class can be used. They need not be the same,
+although for simple Classes, like Scala case classes, they may be. Together, the
+formal parameters and Fields describe the public API of a Class.</p><p>One or more Classes may be entrypoints into the domain model, providing
+different top-level views into the graph. Such Classes have no formal
+parameters, and define their entrypoint to the domain model in terms of the
+Fields they expose, which may be instantiated Objects or other primitives. One
+way to think of this is as an alternative to top-level Object instances that are
+not inside any Class; such Objects can always be made Fields of a new top-level
+Class with no actual parameters.</p><p>The internal implementation is responsible for assigning values to the Fields,
+and is defined in terms of a small expression grammar including:</p><ul><li>Instantiations of Classes to create Objects by passing expressions as actual
+parameters</li><li>Accessing Fields on instantiated Objects</li><li>References to formal parameters</li><li>Primitive values like integers, strings, and symbols</li><li>Container values like lists</li><li>Expressions involving primitive and container values</li></ul><p>This modeling of Classes might be most similar to Java classes, which define
+public constructors and members. The proposed modeling of Classes is restricted
+to data members, and there is no such things as a method for Classes.</p><h3 id=fields>Fields&nbsp;<a class=headline-hash href=#fields>¶</a></h3><p>Fields are how arbitrary data can be exposed by each Object, according to the
+types defined in the Class the Object is instantiating. Fields are namespaced by
+the class or interface they are defined in. Fields are name-value pairs, where
+the name is given in the Class definition and the value is any expression in the
+same small expression grammar described under Classes.</p><p>Where the expression assigned to each Field comes from is an internal detail
+that cannot be accessed via Objects of a Class. Only the Field’s value can be
+accessed, by name, externally.</p><p>The type system for Fields is left open and extensible: any Type representable
+in MLIR is allowed. This includes:</p><ul><li>Builtin MLIR types like integer, float, symbol references, etc.</li><li>Core CIRCT types like HW inner reference</li><li>Types defined by the domain model via Classes</li><li>Container types like lists</li><li>Other new types defined for domain modeling</li></ul><h3 id=objects>Objects&nbsp;<a class=headline-hash href=#objects>¶</a></h3><p>Objects represent a specific entity from the ontology that is being captured in
+the domain model. They have a very small list of required attributes, which
+allows the platform to reason about all Objects in a uniform way. As such,
+addition of new attributes should be reviewed and debated carefully.</p><p>The initial list of required attributes for all Objects is:</p><ul><li>Class definition name: the name of the Class this Object is instantiating</li></ul><p>An Object instantiation must also supply a list of actual parameters that match
+the Class’s formal parameters. These actual parameters can be any expression in
+the same small expression grammar used to assign values to Fields of Classes.
+Object instances are values just like other expressions, and can be assigned to
+named Fields in a Class or passed as actual parameters in other Object
+instantiations.</p><p>The type of an Object is governed by its Class, and a new custom type is added
+to support a reference to a Class in the type system. When Objects are passed as
+actual parameters to other Object instantiations, they are passed by reference.</p><p>Fields defined by Classes can be accessed from concrete Object instances. Field
+accesses accept an instance of an Object, and a list of Fields to refer to
+within the Object and potential children Objects. Object Field accesses are
+values just like other expressions, and can be assigned to named Fields in a
+Class or passed as actual parameters in Object instantiations.</p><h3 id=expressions>Expressions&nbsp;<a class=headline-hash href=#expressions>¶</a></h3><p>The small expression grammar described under Classes includes expressions
+involving primitive and container values. This sections describes the rationale
+for such expressions.</p><p>In order for a Class to effectively capture parts of a domain model, it may be
+necessary for the Class to represent computation in terms of its formal
+parameters.</p><p>For example, a Class might represent a device that is attached to a bus, and
+accessible at some address. If that address is implemented as an offset relative
+to some base address, the Class could have an input integer as a formal
+parameter representing the base address, a Field representing the device
+address, and internally add some constant offset to the base address before
+assigning the resulting value into the Field.</p><p>As another example, a Class might internally instantiate Objects of some other
+Classes, access Fields of those Objects, create a container holding the values
+of those fields, and assign the container to a Field. Using container
+construction expressions, this can be represented directly in the Class,
+allowing it to abstract over the Objects it creates internally.</p><h2 id=alternatives-considered>Alternatives Considered&nbsp;<a class=headline-hash href=#alternatives-considered>¶</a></h2><h3 id=other-libraries-and-tools-for-domain-modeling>Other Libraries and Tools for Domain Modeling&nbsp;<a class=headline-hash href=#other-libraries-and-tools-for-domain-modeling>¶</a></h3><p>Many powerful libraries and tools exist for building domain models in a variety
+of programming languages. It would be possible to implement the goals using any
+such system, but this misses the opportunity to continue leveraging MLIR based
+tooling. These other systems may be powerful, but so is MLIR, and integrating new
+systems comes with a cost. With MLIR, the infrastructure is already in place to
+achieve the goal of creating modular libraries in a common framework.</p><h3 id=specific-ir-for-domain-modeling>Specific IR for Domain Modeling&nbsp;<a class=headline-hash href=#specific-ir-for-domain-modeling>¶</a></h3><p>MLIR has excellent support for flexibly defining IRs that model different
+domains. Why not use this power to model domains directly in the IR using the
+appropriate abstractions?</p><p>Operations could be defined for bus interfaces, address maps, and all the other
+domain models. This would enable very precise modeling, verification,
+documentation, etc. to all be captured in the IR. We could build up a library of
+all the domain models we care about.</p><p>The problem with this approach is it puts the burden of domain modeling on
+compiler engineers. Any new property or domain model will require new IR
+definitions. This puts compiler engineers on the critical path of all domain
+model related tasks, which is not scalable.</p><p>There is a potential future world where it becomes tractable to define specific
+IRs without getting a compiler engineer involved. Tools like
+<a href=https://pldi22.sigplan.org/details/pldi-2022-pldi/33/IRDL-An-IR-Definition-Language-for-SSA-Compilers>IRDL</a>
+are being built right now, which could allow developers to conveniently express
+domain-specific IRs in an ergonomic way from a programming language of their
+choosing. But this is still very research oriented, and may not be ready for
+production in the near term.</p><p>In the meantime, defining a few core abstractions that let the compiler reason
+about the domain models in a limited but useful way is sufficient to enable many
+use-cases without putting compiler engineers on the critical path.</p><p>However, as mentioned in the initial motivation, we also want to be diligent
+about reviewing the uses of the generic model, and promoting well-defined
+modeling into domain-specific IRs once they are ready to be hardened and little
+churn in the modeling is expected.</p><h3 id=generic-ir-with-objects>Generic IR with Objects&nbsp;<a class=headline-hash href=#generic-ir-with-objects>¶</a></h3><p>The first <code>om</code> dialect proposal simply had Containers, Properties on Containers,
+and references between Containers. This was a Smalltalk-style “everything is an
+object” system, where the only way to interact with an object would be through
+its Properties and References (as opposed to messages in Smalltalk).</p><p>Such a system is extremely simple, yet powerful. However, this does not lend
+itself to all of our stated goals. This leads to a dynamically typed system,
+where the compiler has little static knowledge. This is actually somewhat akin to
+the current Object Model JSON design. We want to keep the simplicity and power,
+but bring a more statically typed approach to bear.</p><h3 id=generic-ir-with-objects-and-protocols>Generic IR with Objects and Protocols&nbsp;<a class=headline-hash href=#generic-ir-with-objects-and-protocols>¶</a></h3><p>The second <code>om</code> dialect proposal split Containers into two concepts: Objects and
+Protocols. Objects had Properties, and Protocols defined a set of Properties that
+an Object must have. This started to bring more static information to the system,
+where multiple Objects could be reasoned about in terms of Protocols.</p><p>However, this was still insufficient. The design point of having Objects
+implement Protocols was a step in the right direction, but only a step. The type
+system gained slightly more static information, but was still only defined in
+terms of loose collections of Objects.</p><h3 id=generic-ir-with-objects-structs-and-traits>Generic IR with Objects, Structs, and Traits&nbsp;<a class=headline-hash href=#generic-ir-with-objects-structs-and-traits>¶</a></h3><p>The third <code>om</code> dialect proposal split Protocols into two concepts: Structs and
+Traits. The name and design was inspired by Rust. Structs defined Fields that
+instances of Structs would have. This separation between definition and instance
+was another crucial step in the right direction. The type system was defined in
+terms of Structs, inheritance, and Traits that Structs implement. Objects were
+typed in terms of the Struct they were instantiating.</p><p>However, there was still a key ingredient missing. Struct definitions were a
+simple list of flat Fields, and Object instantiations simply provided concrete
+values for each field. The missing ingredient was a separation between what was
+needed to instantiate a Struct and what was exposed as Fields of a Struct.</p><p>This addition led to the current design of the <code>om</code> dialect. Modulo some
+renaming, the key difference was that Struct definitions were given a formal
+parameter list, and Struct bodies were updated to admit a small grammar of
+expressions to compute the Struct’s various Fields.</p><div class=edit-meta><br></div><nav class=pagination><a class="nav nav-prev" href=https://circt.llvm.org/docs/Dialects/OM/ title="'om' Dialect"><i class="fas fa-arrow-left" aria-hidden=true></i> Prev - 'om' Dialect</a>
+<a class="nav nav-next" href=https://circt.llvm.org/docs/Dialects/Pipeline/ title="'pipeline' Dialect">Next - 'pipeline' Dialect <i class="fas fa-arrow-right" aria-hidden=true></i></a></nav><footer><p class=powered>Powered by <a href=https://gohugo.io>Hugo</a>. Theme by <a href=https://themes.gohugo.io/hugo-theme-techdoc/>TechDoc</a>. Designed by <a href=https://github.com/thingsym/hugo-theme-techdoc>Thingsym</a>.</p></footer></main><div class=sidebar><nav class=slide-menu><ul><li><a href=https://circt.llvm.org/>Home</a></li><li><a href=https://circt.llvm.org/talks/>Talks and Related Publications</a></li><li><a href=https://circt.llvm.org/getting_started/>Getting Started</a></li><li class="parent has-sub-menu"><a href=https://circt.llvm.org/docs/>Code Documentation<span class="mark opened">-</span></a><ul class=sub-menu><li class=has-sub-menu><a href=https://circt.llvm.org/docs/CommandGuide/>CommandGuide<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/CommandGuide/handshake-runner/>handshake-runner</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Charter/>CIRCT Charter</a></li><li class="parent has-sub-menu"><a href=https://circt.llvm.org/docs/Dialects/>Dialects<span class="mark opened">-</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/ESIAppID/></a></li><li><a href=https://circt.llvm.org/docs/Dialects/Arc/>'arc' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/Calyx/>'calyx' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/CHIRRTL/>'chirrtl' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Comb/>'comb' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Comb/RationaleComb/>`comb` Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/DC/>'dc' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/DC/RationaleDC/>DC Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Emit/>'emit' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Emit/RationaleEmit/>Emission (Emit) Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/ESI/>'esi' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/ESI/cosim/>ESI cosimulation model</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/types/>ESI data types and communication types</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/services/>ESI Global Services</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/software_api/>ESI Software APIs</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/notes/>Miscellaneous Notes</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/RationaleESI/>The Elastic Silicon Interconnect dialect</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/>'firrtl' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/FIRRTLAnnotations/>FIRRTL Annotations</a></li><li><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/RationaleFIRRTL/>FIRRTL Dialect Rationale</a></li><li><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/FIRRTLIntrinsics/>Intrinsics</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/FSM/>'fsm' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/FSM/RationaleFSM/>FSM Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Handshake/>'handshake' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Handshake/RationaleHandshake/>Handshake Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/HW/>'hw' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/HW/RationaleHW/>HW Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/HWArith/>'hwarith' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/HWArith/RationaleHWArith/>HW Arith Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Ibis/>'ibis' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Ibis/RationaleIbis/>`ibis` Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/LLHD/>'llhd' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/LoopSchedule/>'loopschedule' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/LoopSchedule/LoopSchedule/>LoopSchedule Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/LTL/>'ltl' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/Moore/>'moore' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/MSFT/>'msft' Dialect</a></li><li class="parent has-sub-menu"><a href=https://circt.llvm.org/docs/Dialects/OM/>'om' Dialect<span class="mark opened">-</span></a><ul class=sub-menu><li class=active><a href=https://circt.llvm.org/docs/Dialects/OM/RationaleOM/>Object Model Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Pipeline/>'pipeline' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Pipeline/RationalePipeline/>Pipeline Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Seq/>'seq' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Seq/RationaleSeq/>Seq(uential) Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/Sim/>'sim' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Sim/>'sim' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Sim/RationaleSim/>Simulation (Sim) Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/SSP/>'ssp' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/SSP/RationaleSSP/>SSP Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/SV/>'sv' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/SV/RationaleSV/>SV Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/SystemC/>'systemc' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/SystemC/RationaleSystemC/>SystemC Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/Verif/>'verif' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/Debug/>Debug Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Interop/>Interop Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Interop/RationaleInterop/>Interoperability Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/SMT/>SMT Dialect</a></li></ul></li><li><a href=https://circt.llvm.org/docs/ToolsWorkarounds/>EDA Tool Workarounds</a></li><li><a href=https://circt.llvm.org/docs/FormalVerification/>Formal Verification Tooling</a></li><li><a href=https://circt.llvm.org/docs/GettingStarted/>Getting Started with the CIRCT Project</a></li><li><a href=https://circt.llvm.org/docs/HLS/>HLS in CIRCT</a></li><li><a href=https://circt.llvm.org/docs/Passes/>Passes</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/PyCDE/>Python CIRCT Design Entry (PyCDE)<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/PyCDE/compiling/>Compiling CIRCT and PyCDE</a></li><li><a href=https://circt.llvm.org/docs/PyCDE/basics/>PyCDE Basics</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Scheduling/>Static scheduling infrastructure</a></li><li><a href=https://circt.llvm.org/docs/RationaleSymbols/>Symbol and Inner Symbol Rationale</a></li><li><a href=https://circt.llvm.org/docs/PythonBindings/>Using the Python Bindings</a></li><li><a href=https://circt.llvm.org/docs/VerilogGeneration/>Verilog and SystemVerilog Generation</a></li></ul></li></ul></nav><div class=sidebar-footer></div></div></div><a href=# id=backtothetop-fixed class=backtothetop data-backtothetop-duration=600 data-backtothetop-easing=easeOutQuart data-backtothetop-fixed-fadein=1000 data-backtothetop-fixed-fadeout=1000 data-backtothetop-fixed-bottom=10 data-backtothetop-fixed-right=20><span class="fa-layers fa-fw"><i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i></span></a></div></body></html>

@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="5,5,199,47"/>
+<area shape="rect" id="node2" href="$classAffineLoadLowering.html" title="Apply the affine map from an &#39;affine.load&#39; operation to its operands, and feed the results to a newly..." alt="" coords="247,13,397,39"/>
+</map>

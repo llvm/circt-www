@@ -1,0 +1,8 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classmlir_1_1DialectInterface_1_1Base.html" title=" " alt="" coords="5,104,165,145"/>
+<area shape="rect" id="node2" href="$structcirct_1_1ReducePatternDialectInterface.html" title="A dialect interface to provide reduction patterns to a reducer tool." alt="" coords="228,71,427,112"/>
+<area shape="rect" id="node6" href="$classcirct_1_1arc_1_1RuntimeCostEstimateDialectInterface.html" title="A dialect interface to get runtime cost estimates of MLIR operations." alt="" coords="213,136,441,177"/>
+<area shape="rect" id="node3" href="$structcirct_1_1arc_1_1ArcReducePatternDialectInterface.html" title="A dialect interface to provide reduction patterns to a reducer tool." alt="" coords="489,5,691,47"/>
+<area shape="rect" id="node4" href="$structcirct_1_1firrtl_1_1FIRRTLReducePatternDialectInterface.html" title="A dialect interface to provide reduction patterns to a reducer tool." alt="" coords="497,71,683,112"/>
+<area shape="rect" id="node5" href="$structcirct_1_1hw_1_1HWReducePatternDialectInterface.html" title="A dialect interface to provide reduction patterns to a reducer tool." alt="" coords="489,136,691,177"/>
+</map>

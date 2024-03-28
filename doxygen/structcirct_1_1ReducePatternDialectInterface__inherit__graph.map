@@ -1,0 +1,7 @@
+<map id="circt::ReducePatternDialectInterface" name="circt::ReducePatternDialectInterface">
+<area shape="rect" id="node1" title="A dialect interface to provide reduction patterns to a reducer tool." alt="" coords="271,71,469,112"/>
+<area shape="rect" id="node3" href="$structcirct_1_1arc_1_1ArcReducePatternDialectInterface.html" title="A dialect interface to provide reduction patterns to a reducer tool." alt="" coords="517,5,719,47"/>
+<area shape="rect" id="node4" href="$structcirct_1_1firrtl_1_1FIRRTLReducePatternDialectInterface.html" title="A dialect interface to provide reduction patterns to a reducer tool." alt="" coords="525,71,711,112"/>
+<area shape="rect" id="node5" href="$structcirct_1_1hw_1_1HWReducePatternDialectInterface.html" title="A dialect interface to provide reduction patterns to a reducer tool." alt="" coords="517,136,719,177"/>
+<area shape="rect" id="node2" href="$classmlir_1_1DialectInterface_1_1Base.html" title=" " alt="" coords="5,63,223,119"/>
+</map>

@@ -1,0 +1,32 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Arc/ArcOps.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Arc/ArcOps.h">
+<area shape="rect" id="node1" title=" " alt="" coords="3194,5,3382,76"/>
+<area shape="rect" id="node2" href="$LowerArcToLLVM_8cpp.html" title=" " alt="" coords="5,124,197,195"/>
+<area shape="rect" id="node3" href="$ConvertToArcs_8cpp.html" title=" " alt="" coords="221,124,437,195"/>
+<area shape="rect" id="node4" href="$ArcDialect_8cpp.html" title=" " alt="" coords="462,131,677,187"/>
+<area shape="rect" id="node5" href="$ArcFolds_8cpp.html" title=" " alt="" coords="701,131,904,187"/>
+<area shape="rect" id="node6" href="$ArcOps_8cpp.html" title=" " alt="" coords="928,131,1123,187"/>
+<area shape="rect" id="node7" href="$ArcReductions_8cpp.html" title=" " alt="" coords="1147,131,1389,187"/>
+<area shape="rect" id="node8" href="$ModelInfo_8cpp.html" title=" " alt="" coords="1413,131,1627,187"/>
+<area shape="rect" id="node9" href="$AddTaps_8cpp.html" title=" " alt="" coords="1651,124,1845,195"/>
+<area shape="rect" id="node10" href="$AllocateState_8cpp.html" title=" " alt="" coords="1869,124,2062,195"/>
+<area shape="rect" id="node11" href="$ArcCanonicalizer_8cpp.html" title=" " alt="" coords="2086,124,2279,195"/>
+<area shape="rect" id="node12" href="$Arc_2Transforms_2Dedup_8cpp.html" title=" " alt="" coords="2303,124,2497,195"/>
+<area shape="rect" id="node13" href="$GroupResetsAndEnables_8cpp.html" title=" " alt="" coords="2521,124,2733,195"/>
+<area shape="rect" id="node14" href="$InferMemories_8cpp.html" title=" " alt="" coords="2757,124,2950,195"/>
+<area shape="rect" id="node15" href="$InferStateProperties_8cpp.html" title=" " alt="" coords="2974,124,3167,195"/>
+<area shape="rect" id="node16" href="$InlineArcs_8cpp.html" title=" " alt="" coords="3191,124,3385,195"/>
+<area shape="rect" id="node17" href="$InlineModules_8cpp.html" title=" " alt="" coords="3409,124,3602,195"/>
+<area shape="rect" id="node18" href="$IsolateClocks_8cpp.html" title=" " alt="" coords="3626,124,3819,195"/>
+<area shape="rect" id="node19" href="$LatencyRetiming_8cpp.html" title=" " alt="" coords="3843,124,4037,195"/>
+<area shape="rect" id="node20" href="$LegalizeStateUpdate_8cpp.html" title=" " alt="" coords="4061,124,4254,195"/>
+<area shape="rect" id="node21" href="$LowerArcsToFuncs_8cpp.html" title=" " alt="" coords="4278,124,4471,195"/>
+<area shape="rect" id="node22" href="$LowerClocksToFuncs_8cpp.html" title=" " alt="" coords="4495,124,4689,195"/>
+<area shape="rect" id="node23" href="$LowerLUT_8cpp.html" title=" " alt="" coords="4713,124,4906,195"/>
+<area shape="rect" id="node24" href="$LowerState_8cpp.html" title=" " alt="" coords="4930,124,5123,195"/>
+<area shape="rect" id="node25" href="$LowerVectorizations_8cpp.html" title=" " alt="" coords="5147,124,5341,195"/>
+<area shape="rect" id="node26" href="$MakeTables_8cpp.html" title=" " alt="" coords="5365,124,5558,195"/>
+<area shape="rect" id="node27" href="$MuxToControlFlow_8cpp.html" title=" " alt="" coords="5582,124,5775,195"/>
+<area shape="rect" id="node28" href="$SimplifyVariadicOps_8cpp.html" title=" " alt="" coords="5799,124,5993,195"/>
+<area shape="rect" id="node29" href="$SplitLoops_8cpp.html" title=" " alt="" coords="6017,124,6210,195"/>
+<area shape="rect" id="node30" href="$StripSV_8cpp.html" title=" " alt="" coords="6234,124,6427,195"/>
+</map>

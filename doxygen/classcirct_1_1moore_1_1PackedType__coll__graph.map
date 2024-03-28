@@ -1,0 +1,6 @@
+<map id="circt::moore::PackedType" name="circt::moore::PackedType">
+<area shape="rect" id="node1" title="A packed SystemVerilog type." alt="" coords="15,229,198,256"/>
+<area shape="rect" id="node2" href="$classcirct_1_1moore_1_1UnpackedType.html" title="An unpacked SystemVerilog type." alt="" coords="5,155,208,181"/>
+<area shape="rect" id="node3" href="$classcirct_1_1moore_1_1SVType.html" title="Base class for all SystemVerilog types in the Moore dialect." alt="" coords="29,80,184,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="81,5,133,32"/>
+</map>

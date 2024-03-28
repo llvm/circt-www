@@ -1,0 +1,8 @@
+<map id="circt::msft::PassCommon" name="circt::msft::PassCommon">
+<area shape="rect" id="node1" title="A set of methods which are broadly useful in a number of dialects." alt="" coords="893,55,1076,81"/>
+<area shape="rect" id="node2" title=" " alt="" coords="496,7,703,63"/>
+<area shape="rect" id="node3" title=" " alt="" coords="61,21,151,48"/>
+<area shape="rect" id="node4" href="$classcirct_1_1SymbolCache.html" title="Default symbol cache implementation; stores associations between names (StringAttr&#39;s) to mlir::Operat..." alt="" coords="526,87,673,113"/>
+<area shape="rect" id="node5" href="$classcirct_1_1SymbolCacheBase.html" title="Base symbol cache class to allow for cache lookup through a pointer to some abstract cache." alt="" coords="17,79,195,105"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,130,207,171"/>
+</map>

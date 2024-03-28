@@ -1,0 +1,5 @@
+<map id="IfOpHoisting" name="IfOpHoisting">
+<area shape="rect" id="node1" title="Helper to hoist computation out of scf::IfOp branches, turning it into a mux&#45;like operation,..." alt="" coords="51,200,153,227"/>
+<area shape="rect" id="node2" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="5,109,199,151"/>
+<area shape="rect" id="node3" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="5,5,199,47"/>
+</map>

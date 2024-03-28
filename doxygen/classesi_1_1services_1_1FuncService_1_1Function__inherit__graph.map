@@ -1,0 +1,5 @@
+<map id="esi::services::FuncService::Function" name="esi::services::FuncService::Function">
+<area shape="rect" id="node1" title="A function call which gets attached to a service port." alt="" coords="5,155,195,196"/>
+<area shape="rect" id="node2" href="$classesi_1_1services_1_1ServicePort.html" title="Add a custom interface to a service client at a particular point in the design hierarchy." alt="" coords="7,80,193,107"/>
+<area shape="rect" id="node3" href="$classesi_1_1BundlePort.html" title="Services provide connections to &#39;bundles&#39; – collections of named, unidirectional communication channe..." alt="" coords="40,5,160,32"/>
+</map>

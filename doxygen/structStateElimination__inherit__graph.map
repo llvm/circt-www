@@ -1,0 +1,6 @@
+<map id="StateElimination" name="StateElimination">
+<area shape="rect" id="node1" title="A sample reduction pattern that converts arc.state operations to the simpler arc.call operation and r..." alt="" coords="11,276,141,303"/>
+<area shape="rect" id="node2" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="5,185,147,227"/>
+<area shape="rect" id="node3" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="9,5,132,32"/>
+<area shape="rect" id="node4" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="92,81,233,123"/>
+</map>

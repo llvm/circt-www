@@ -1,0 +1,4 @@
+<map id="FIRRTLConstantifier" name="FIRRTLConstantifier">
+<area shape="rect" id="node1" title="A sample reduction pattern that replaces FIRRTL operations with a constant zero of their type." alt="" coords="5,80,155,107"/>
+<area shape="rect" id="node2" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="19,5,141,32"/>
+</map>

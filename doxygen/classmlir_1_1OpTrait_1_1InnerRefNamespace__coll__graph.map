@@ -1,0 +1,4 @@
+<map id="mlir::OpTrait::InnerRefNamespace&lt; ConcreteType &gt;" name="mlir::OpTrait::InnerRefNamespace&lt; ConcreteType &gt;">
+<area shape="rect" id="node1" title="This trait is for operations that define a scope for resolving InnerRef&#39;s, and provides verification ..." alt="" coords="24,95,267,136"/>
+<area shape="rect" id="node2" href="$classmlir_1_1OpTrait_1_1TraitBase.html" title=" " alt="" coords="5,5,285,47"/>
+</map>

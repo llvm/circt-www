@@ -1,0 +1,4 @@
+<map id="ConnectSourceOperandForwarder&lt; OpNum &gt;" name="ConnectSourceOperandForwarder&lt; OpNum &gt;">
+<area shape="rect" id="node1" title="A sample reduction pattern that replaces a single&#45;use wire and register with an operand of the source..." alt="" coords="5,80,244,121"/>
+<area shape="rect" id="node2" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="63,5,186,32"/>
+</map>

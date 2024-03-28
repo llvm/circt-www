@@ -1,0 +1,8 @@
+<map id="BaseTy" name="BaseTy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,46,73,73"/>
+<area shape="rect" id="node2" href="$classcirct_1_1moore_1_1IndirectTypeBase.html" title="Common base class for name and type reference indirections." alt="" coords="123,39,309,80"/>
+<area shape="rect" id="node3" href="$classcirct_1_1moore_1_1IndirectTypeBase.html" title=" " alt="" coords="487,5,673,47"/>
+<area shape="rect" id="node5" href="$classcirct_1_1moore_1_1IndirectTypeBase.html" title=" " alt="" coords="487,71,673,112"/>
+<area shape="rect" id="node4" href="$classcirct_1_1moore_1_1UnpackedIndirectType.html" title="An unpacked type indirection. See IndirectTypeBase for details." alt="" coords="723,13,973,39"/>
+<area shape="rect" id="node6" href="$classcirct_1_1moore_1_1PackedIndirectType.html" title="A packed type indirection. See IndirectTypeBase for details." alt="" coords="732,78,964,105"/>
+</map>

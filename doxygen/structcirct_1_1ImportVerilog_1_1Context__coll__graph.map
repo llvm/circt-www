@@ -1,0 +1,16 @@
+<map id="circt::ImportVerilog::Context" name="circt::ImportVerilog::Context">
+<area shape="rect" id="node1" title="A helper class to facilitate the conversion from a Slang AST to MLIR operations." alt="" coords="820,303,967,345"/>
+<area shape="rect" id="node2" href="$classllvm_1_1SmallDenseMap.html" title=" " alt="" coords="444,14,660,55"/>
+<area shape="rect" id="node3" href="$classllvm_1_1SmallDenseMap.html" title=" " alt="" coords="5,7,225,63"/>
+<area shape="rect" id="node4" title=" " alt="" coords="508,80,596,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="455,131,649,187"/>
+<area shape="rect" id="node6" title=" " alt="" coords="70,145,161,172"/>
+<area shape="rect" id="node7" title=" " alt="" coords="446,211,658,253"/>
+<area shape="rect" id="node8" title=" " alt="" coords="509,277,595,304"/>
+<area shape="rect" id="node9" title=" " alt="" coords="459,328,645,384"/>
+<area shape="rect" id="node10" title=" " alt="" coords="483,408,621,435"/>
+<area shape="rect" id="node11" title=" " alt="" coords="441,459,663,501"/>
+<area shape="rect" id="node12" title=" " alt="" coords="469,525,635,552"/>
+<area shape="rect" id="node13" title=" " alt="" coords="65,525,165,552"/>
+<area shape="rect" id="node14" title=" " alt="" coords="499,576,605,603"/>
+</map>

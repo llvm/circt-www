@@ -1,0 +1,11 @@
+<map id="circt::FirMemConfig" name="circt::FirMemConfig">
+<area shape="rect" id="node1" title="The configuration of a FIR memory." alt="" coords="377,301,525,328"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,102,84,129"/>
+<area shape="rect" id="node3" title=" " alt="" coords="108,95,256,136"/>
+<area shape="rect" id="node4" title=" " alt="" coords="132,5,232,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="281,102,339,129"/>
+<area shape="rect" id="node6" title=" " alt="" coords="421,102,481,129"/>
+<area shape="rect" id="node7" title=" " alt="" coords="587,102,638,129"/>
+<area shape="rect" id="node8" title=" " alt="" coords="695,102,749,129"/>
+<area shape="rect" id="node9" title=" " alt="" coords="819,102,902,129"/>
+</map>

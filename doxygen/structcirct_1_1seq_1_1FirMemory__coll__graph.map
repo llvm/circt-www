@@ -1,0 +1,10 @@
+<map id="circt::seq::FirMemory" name="circt::seq::FirMemory">
+<area shape="rect" id="node1" title="Helper structure carrying information about FIR memory generated ops." alt="" coords="314,287,473,313"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,64,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="147,95,207,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="285,95,336,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="361,95,535,121"/>
+<area shape="rect" id="node6" title=" " alt="" coords="398,5,498,32"/>
+<area shape="rect" id="node7" title=" " alt="" coords="559,95,614,121"/>
+<area shape="rect" id="node8" title=" " alt="" coords="677,95,760,121"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="EmptyIfBody" name="EmptyIfBody">
+<area shape="rect" id="node1" title="This pattern checks for one of two cases that will lead to IfOp deletion: (1) Then and Else bodies ar..." alt="" coords="37,200,144,227"/>
+<area shape="rect" id="node2" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="5,109,176,151"/>
+<area shape="rect" id="node3" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="5,5,176,47"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="circt::pretty::PrintEventAndStorageListener&lt; CallableTy, DataTy &gt;" name="circt::pretty::PrintEventAndStorageListener&lt; CallableTy, DataTy &gt;">
+<area shape="rect" id="node1" title="Note: Callable class must implement a callable with signature: void (Data)" alt="" coords="313,213,548,269"/>
+<area shape="rect" id="node2" href="$classcirct_1_1pretty_1_1TokenStringSaver.html" title="PrettyPrinter::Listener that saves strings while live." alt="" coords="176,109,355,151"/>
+<area shape="rect" id="node3" href="$structcirct_1_1pretty_1_1PrettyPrinter_1_1Listener.html" title="Listener to Token storage events." alt="" coords="5,5,192,47"/>
+<area shape="rect" id="node4" title=" " alt="" coords="217,13,314,39"/>
+<area shape="rect" id="node5" title=" " alt="" coords="339,13,475,39"/>
+<area shape="rect" id="node6" title=" " alt="" coords="379,117,482,143"/>
+<area shape="rect" id="node7" title=" " alt="" coords="506,117,643,143"/>
+</map>

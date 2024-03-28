@@ -1,0 +1,7 @@
+<map id="VariableEmitter" name="VariableEmitter">
+<area shape="rect" id="node1" title="Emit a systemc.cpp.variable operation." alt="" coords="1016,20,1139,47"/>
+<area shape="rect" id="node2" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPattern.html" title=" " alt="" coords="803,5,967,61"/>
+<area shape="rect" id="node3" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPatternBase.html" title="This is intended to be the base class for all emission patterns matching on operations." alt="" coords="213,13,399,54"/>
+<area shape="rect" id="node5" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPattern.html" title="This is a convenience class providing default implementations for operation emission patterns." alt="" coords="448,42,649,83"/>
+<area shape="rect" id="node4" href="$classcirct_1_1ExportSystemC_1_1PatternBase.html" title="This is indented to be the base class for all emission patterns." alt="" coords="5,13,164,54"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="circt::calyx::MultipleGroupDonePattern" name="circt::calyx::MultipleGroupDonePattern">
+<area shape="rect" id="node1" title="When building groups which contain accesses to multiple sequential components, a group_done op is cre..." alt="" coords="5,200,199,241"/>
+<area shape="rect" id="node2" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="17,109,187,151"/>
+<area shape="rect" id="node3" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="17,5,187,47"/>
+</map>

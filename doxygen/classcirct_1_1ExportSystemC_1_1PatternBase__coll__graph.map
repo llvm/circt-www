@@ -1,0 +1,4 @@
+<map id="circt::ExportSystemC::PatternBase" name="circt::ExportSystemC::PatternBase">
+<area shape="rect" id="node1" title="This is indented to be the base class for all emission patterns." alt="" coords="5,95,164,136"/>
+<area shape="rect" id="node2" title=" " alt="" coords="35,5,135,32"/>
+</map>

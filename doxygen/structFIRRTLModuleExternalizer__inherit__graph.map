@@ -1,0 +1,6 @@
+<map id="FIRRTLModuleExternalizer" name="FIRRTLModuleExternalizer">
+<area shape="rect" id="node1" title="A sample reduction pattern that maps firrtl.module to firrtl.extmodule." alt="" coords="5,276,197,303"/>
+<area shape="rect" id="node2" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="21,185,182,227"/>
+<area shape="rect" id="node3" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="35,5,157,32"/>
+<area shape="rect" id="node4" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="117,81,259,123"/>
+</map>

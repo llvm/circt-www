@@ -1,0 +1,11 @@
+<map id="circt::scftocalyx::ComponentLoweringState" name="circt::scftocalyx::ComponentLoweringState">
+<area shape="rect" id="node1" title="Handles the current state of lowering of a Calyx component." alt="" coords="1075,96,1265,137"/>
+<area shape="rect" id="node2" href="$classcirct_1_1calyx_1_1ComponentLoweringStateInterface.html" title=" " alt="" coords="787,5,1022,47"/>
+<area shape="rect" id="node3" href="$classcirct_1_1scftocalyx_1_1WhileLoopLoweringStateInterface.html" title=" " alt="" coords="784,71,1025,112"/>
+<area shape="rect" id="node4" href="$classcirct_1_1calyx_1_1LoopLoweringStateInterface.html" title=" " alt="" coords="375,71,593,112"/>
+<area shape="rect" id="node5" href="$classcirct_1_1calyx_1_1LoopLoweringStateInterface.html" title=" " alt="" coords="5,104,196,145"/>
+<area shape="rect" id="node7" href="$classcirct_1_1calyx_1_1LoopLoweringStateInterface.html" title=" " alt="" coords="383,136,585,177"/>
+<area shape="rect" id="node6" href="$classcirct_1_1scftocalyx_1_1ForLoopLoweringStateInterface.html" title=" " alt="" coords="793,136,1017,177"/>
+<area shape="rect" id="node8" href="$classcirct_1_1calyx_1_1SchedulerInterface.html" title=" " alt="" coords="793,201,1016,243"/>
+<area shape="rect" id="node9" href="$classcirct_1_1calyx_1_1SchedulerInterface.html" title="Holds common utilities used for scheduling when lowering to Calyx." alt="" coords="353,209,615,235"/>
+</map>

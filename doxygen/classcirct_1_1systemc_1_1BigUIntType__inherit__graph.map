@@ -1,0 +1,4 @@
+<map id="circt::systemc::BigUIntType" name="circt::systemc::BigUIntType">
+<area shape="rect" id="node1" title="Represents a finite word&#45;length unsigned integer in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="272,20,471,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,224,61"/>
+</map>

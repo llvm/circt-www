@@ -1,0 +1,6 @@
+<map id="esi::ReadChannelPort" name="esi::ReadChannelPort">
+<area shape="rect" id="node1" title="A ChannelPort which reads data from the accelerator." alt="" coords="5,260,167,287"/>
+<area shape="rect" id="node2" href="$classesi_1_1ChannelPort.html" title="Unidirectional channels are the basic communication primitive between the host and accelerator." alt="" coords="22,184,150,211"/>
+<area shape="rect" id="node3" href="$classesi_1_1Type.html" title="Root class of the ESI type system." alt="" coords="47,95,125,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="57,5,115,32"/>
+</map>

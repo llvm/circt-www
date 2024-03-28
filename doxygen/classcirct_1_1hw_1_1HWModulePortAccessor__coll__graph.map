@@ -1,0 +1,8 @@
+<map id="circt::hw::HWModulePortAccessor" name="circt::hw::HWModulePortAccessor">
+<area shape="rect" id="node1" title=" " alt="" coords="171,303,409,329"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,199,183,225"/>
+<area shape="rect" id="node3" title=" " alt="" coords="207,199,373,225"/>
+<area shape="rect" id="node4" href="$structcirct_1_1hw_1_1ModulePortInfo.html" title="This holds a decoded list of input/inout and output ports for a module or instance." alt="" coords="397,199,580,225"/>
+<area shape="rect" id="node5" title=" " alt="" coords="417,95,560,136"/>
+<area shape="rect" id="node6" title=" " alt="" coords="439,5,539,32"/>
+</map>

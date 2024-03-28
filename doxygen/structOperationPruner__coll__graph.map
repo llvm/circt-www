@@ -1,0 +1,7 @@
+<map id="OperationPruner" name="OperationPruner">
+<area shape="rect" id="node1" title="A sample reduction pattern that removes operations which either produce no results or their results h..." alt="" coords="219,184,347,211"/>
+<area shape="rect" id="node2" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="51,95,174,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,220,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="198,95,369,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="393,95,621,121"/>
+</map>

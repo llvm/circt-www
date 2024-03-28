@@ -1,0 +1,9 @@
+<map id="circt::firtool::FirtoolOptions" name="circt::firtool::FirtoolOptions">
+<area shape="rect" id="node1" title="Set of options used to control the behavior of the firtool pipeline." alt="" coords="406,256,601,283"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,137,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="241,5,355,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="458,5,549,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="582,5,633,32"/>
+<area shape="rect" id="node6" title=" " alt="" coords="850,5,909,32"/>
+<area shape="rect" id="node7" title=" " alt="" coords="1037,5,1143,32"/>
+</map>

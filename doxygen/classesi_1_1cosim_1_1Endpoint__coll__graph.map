@@ -1,0 +1,7 @@
+<map id="esi::cosim::Endpoint" name="esi::cosim::Endpoint">
+<area shape="rect" id="node1" title="Implements a bi&#45;directional, thread&#45;safe bridge between the RPC server and DPI functions." alt="" coords="163,109,317,136"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="168,5,232,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="256,5,307,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="331,5,389,32"/>
+</map>

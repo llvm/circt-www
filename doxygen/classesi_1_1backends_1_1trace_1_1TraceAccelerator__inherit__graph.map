@@ -1,0 +1,4 @@
+<map id="esi::backends::trace::TraceAccelerator" name="esi::backends::trace::TraceAccelerator">
+<area shape="rect" id="node1" title="Connect to an ESI simulation." alt="" coords="28,80,179,121"/>
+<area shape="rect" id="node2" href="$classesi_1_1AcceleratorConnection.html" title="Abstract class representing a connection to an accelerator." alt="" coords="5,5,201,32"/>
+</map>

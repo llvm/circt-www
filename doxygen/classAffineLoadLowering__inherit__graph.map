@@ -1,0 +1,5 @@
+<map id="AffineLoadLowering" name="AffineLoadLowering">
+<area shape="rect" id="node1" title="Apply the affine map from an &#39;affine.load&#39; operation to its operands, and feed the results to a newly..." alt="" coords="27,200,177,227"/>
+<area shape="rect" id="node2" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="5,109,199,151"/>
+<area shape="rect" id="node3" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="5,5,199,47"/>
+</map>

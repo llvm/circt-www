@@ -1,0 +1,41 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,991,128,1017"/>
+<area shape="rect" id="node2" href="$classcirct_1_1moore_1_1NamedTypeBase.html" title=" " alt="" coords="176,5,475,61"/>
+<area shape="rect" id="node4" href="$classcirct_1_1moore_1_1NamedTypeBase.html" title=" " alt="" coords="195,85,456,141"/>
+<area shape="rect" id="node6" href="$classcirct_1_1moore_1_1RefTypeBase.html" title=" " alt="" coords="188,165,463,221"/>
+<area shape="rect" id="node8" href="$classcirct_1_1moore_1_1RefTypeBase.html" title=" " alt="" coords="207,245,443,301"/>
+<area shape="rect" id="node10" href="$classcirct_1_1moore_1_1ChandleType.html" title="The chandle type." alt="" coords="230,325,421,352"/>
+<area shape="rect" id="node11" href="$classcirct_1_1moore_1_1EnumType.html" title="An enum type." alt="" coords="238,376,413,403"/>
+<area shape="rect" id="node12" href="$classcirct_1_1moore_1_1EventType.html" title="The event type." alt="" coords="238,427,413,453"/>
+<area shape="rect" id="node13" href="$classcirct_1_1moore_1_1IntType.html" title="An integer vector or atom type." alt="" coords="248,477,403,504"/>
+<area shape="rect" id="node14" href="$classcirct_1_1moore_1_1NamedTypeBase.html" title="A named type." alt="" coords="217,529,434,570"/>
+<area shape="rect" id="node15" href="$classcirct_1_1moore_1_1PackedRangeDim.html" title="A packed range dimension, like [a:b]." alt="" coords="215,595,436,621"/>
+<area shape="rect" id="node16" href="$classcirct_1_1moore_1_1PackedStructType.html" title="A packed struct." alt="" coords="215,645,436,672"/>
+<area shape="rect" id="node17" href="$classcirct_1_1moore_1_1PackedUnsizedDim.html" title="A packed unsized dimension, like []." alt="" coords="209,696,441,723"/>
+<area shape="rect" id="node18" href="$classcirct_1_1moore_1_1RealType.html" title="A real type." alt="" coords="242,747,409,773"/>
+<area shape="rect" id="node19" href="$classcirct_1_1moore_1_1RefTypeBase.html" title="A type reference." alt="" coords="229,798,421,839"/>
+<area shape="rect" id="node20" href="$classcirct_1_1moore_1_1StringType.html" title="The string type." alt="" coords="237,864,413,891"/>
+<area shape="rect" id="node21" href="$classcirct_1_1moore_1_1UnpackedArrayDim.html" title="An unpacked array dimension, like [a]." alt="" coords="208,915,443,941"/>
+<area shape="rect" id="node22" href="$classcirct_1_1moore_1_1UnpackedAssocDim.html" title="An unpacked associative dimension, like [T] or [*]." alt="" coords="207,965,444,992"/>
+<area shape="rect" id="node23" href="$classcirct_1_1moore_1_1UnpackedQueueDim.html" title="An unpacked queue dimension with optional bound, like [$] or [$:a]." alt="" coords="205,1016,446,1043"/>
+<area shape="rect" id="node24" href="$classcirct_1_1moore_1_1UnpackedRangeDim.html" title="An unpacked range dimension, like [a:b]." alt="" coords="205,1067,445,1093"/>
+<area shape="rect" id="node25" href="$classcirct_1_1moore_1_1UnpackedStructType.html" title="An unpacked struct." alt="" coords="205,1117,445,1144"/>
+<area shape="rect" id="node26" href="$classcirct_1_1moore_1_1UnpackedUnsizedDim.html" title="An unpacked unsized dimension, like []." alt="" coords="200,1168,451,1195"/>
+<area shape="rect" id="node27" href="$classcirct_1_1moore_1_1VoidType.html" title="The void type." alt="" coords="242,1219,409,1245"/>
+<area shape="rect" id="node28" href="$classcirct_1_1systemc_1_1BigIntType.html" title="Represents a finite word&#45;length signed integer in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="231,1269,420,1296"/>
+<area shape="rect" id="node29" href="$classcirct_1_1systemc_1_1BigUIntType.html" title="Represents a finite word&#45;length unsigned integer in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="226,1320,425,1347"/>
+<area shape="rect" id="node30" href="$classcirct_1_1systemc_1_1BitVectorBaseType.html" title="Represents a finite word&#45;length bit vector in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="235,1371,415,1413"/>
+<area shape="rect" id="node31" href="$classcirct_1_1systemc_1_1BitVectorType.html" title="Represents a finite word&#45;length bit vector in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="220,1437,431,1464"/>
+<area shape="rect" id="node32" href="$classcirct_1_1systemc_1_1IntBaseType.html" title="Represents a limited word&#45;length signed integer in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="225,1488,425,1515"/>
+<area shape="rect" id="node33" href="$classcirct_1_1systemc_1_1IntType.html" title="Represents a limited word&#45;length signed integer in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="241,1539,409,1565"/>
+<area shape="rect" id="node34" href="$classcirct_1_1systemc_1_1LogicVectorBaseType.html" title="Represents a finite word&#45;length bit vector in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="227,1590,423,1631"/>
+<area shape="rect" id="node35" href="$classcirct_1_1systemc_1_1LogicVectorType.html" title="Represents a finite word&#45;length bit vector (of four&#45;state values) in SystemC as described in IEEE 166..." alt="" coords="212,1656,439,1683"/>
+<area shape="rect" id="node36" href="$classcirct_1_1systemc_1_1SignedType.html" title="Represents a finite word&#45;length signed integer in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="228,1707,423,1733"/>
+<area shape="rect" id="node37" href="$classcirct_1_1systemc_1_1UIntBaseType.html" title="Represents a limited word&#45;length unsigned integer in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="220,1757,431,1784"/>
+<area shape="rect" id="node38" href="$classcirct_1_1systemc_1_1UIntType.html" title="Represents a limited word&#45;length unsigned integer in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="236,1808,415,1835"/>
+<area shape="rect" id="node39" href="$classcirct_1_1systemc_1_1UnsignedType.html" title="Represents a finite word&#45;length unsigned integer in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="219,1859,431,1885"/>
+<area shape="rect" id="node3" href="$classcirct_1_1moore_1_1UnpackedNamedType.html" title="An unpacked named type. See NamedTypeBase for details." alt="" coords="523,20,772,47"/>
+<area shape="rect" id="node5" href="$classcirct_1_1moore_1_1PackedNamedType.html" title="A packed named type. See NamedTypeBase for details." alt="" coords="532,100,763,127"/>
+<area shape="rect" id="node7" href="$classcirct_1_1moore_1_1UnpackedRefType.html" title="An unpacked named type. See NamedTypeBase for details." alt="" coords="535,180,759,207"/>
+<area shape="rect" id="node9" href="$classcirct_1_1moore_1_1PackedRefType.html" title="A packed named type. See NamedTypeBase for details." alt="" coords="545,260,750,287"/>
+</map>

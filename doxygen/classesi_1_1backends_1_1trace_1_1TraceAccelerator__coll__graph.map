@@ -1,0 +1,8 @@
+<map id="esi::backends::trace::TraceAccelerator" name="esi::backends::trace::TraceAccelerator">
+<area shape="rect" id="node1" title="Connect to an ESI simulation." alt="" coords="869,91,1020,132"/>
+<area shape="rect" id="node2" href="$classesi_1_1AcceleratorConnection.html" title="Abstract class representing a connection to an accelerator." alt="" coords="592,50,788,77"/>
+<area shape="rect" id="node3" href="$classesi_1_1Context.html" title="AcceleratorConnections, Accelerators, and Manifests must all share a context." alt="" coords="311,13,411,39"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,5,180,47"/>
+<area shape="rect" id="node5" title=" " alt="" coords="269,63,452,119"/>
+<area shape="rect" id="node6" title=" " alt="" coords="593,101,787,157"/>
+</map>

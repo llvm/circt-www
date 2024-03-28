@@ -1,0 +1,4 @@
+<map id="circt::ExportSystemC::FrozenEmissionPatternSet&lt; PatternTy, KeyTy &gt;" name="circt::ExportSystemC::FrozenEmissionPatternSet&lt; PatternTy, KeyTy &gt;">
+<area shape="rect" id="node1" title="This class intends to collect a set of emission patterns in a way to provide fast lookups,..." alt="" coords="22,124,221,180"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,237,61"/>
+</map>

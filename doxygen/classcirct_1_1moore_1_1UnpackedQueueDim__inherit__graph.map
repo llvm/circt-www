@@ -1,0 +1,4 @@
+<map id="circt::moore::UnpackedQueueDim" name="circt::moore::UnpackedQueueDim">
+<area shape="rect" id="node1" title="An unpacked queue dimension with optional bound, like [$] or [$:a]." alt="" coords="267,27,508,54"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,219,76"/>
+</map>

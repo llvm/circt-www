@@ -1,0 +1,9 @@
+<map id="circt::igraph::InstanceRecord" name="circt::igraph::InstanceRecord">
+<area shape="rect" id="node1" title="This is an edge in the InstanceGraph." alt="" coords="304,226,511,253"/>
+<area shape="rect" id="node4" href="$classcirct_1_1igraph_1_1InstanceGraphNode.html" title="This is a Node in the InstanceGraph." alt="" coords="625,121,860,147"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,178,196,234"/>
+<area shape="rect" id="node3" title=" " alt="" coords="24,258,177,285"/>
+<area shape="rect" id="node5" title=" " alt="" coords="311,5,503,47"/>
+<area shape="rect" id="node6" title=" " alt="" coords="315,71,499,98"/>
+<area shape="rect" id="node7" title=" " alt="" coords="334,122,481,149"/>
+</map>

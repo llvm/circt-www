@@ -1,0 +1,21 @@
+<map id="circt::ExportSystemC::OpEmissionPattern&lt; Op &gt;" name="circt::ExportSystemC::OpEmissionPattern&lt; Op &gt;">
+<area shape="rect" id="node1" title="This is a convenience class providing default implementations for operation emission patterns." alt="" coords="448,293,649,334"/>
+<area shape="rect" id="node4" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPattern.html" title=" " alt="" coords="849,5,1013,61"/>
+<area shape="rect" id="node6" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPattern.html" title=" " alt="" coords="849,85,1013,141"/>
+<area shape="rect" id="node8" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPattern.html" title=" " alt="" coords="849,165,1013,221"/>
+<area shape="rect" id="node10" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPattern.html" title=" " alt="" coords="849,245,1013,301"/>
+<area shape="rect" id="node12" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPattern.html" title=" " alt="" coords="849,325,1013,381"/>
+<area shape="rect" id="node14" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPattern.html" title=" " alt="" coords="849,405,1013,461"/>
+<area shape="rect" id="node16" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPattern.html" title=" " alt="" coords="849,485,1013,541"/>
+<area shape="rect" id="node18" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPattern.html" title=" " alt="" coords="849,565,1013,621"/>
+<area shape="rect" id="node2" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPatternBase.html" title="This is intended to be the base class for all emission patterns matching on operations." alt="" coords="213,293,399,334"/>
+<area shape="rect" id="node3" href="$classcirct_1_1ExportSystemC_1_1PatternBase.html" title="This is indented to be the base class for all emission patterns." alt="" coords="5,293,164,334"/>
+<area shape="rect" id="node5" href="$structBindPortEmitter.html" title="Emit a systemc.instance.bind_port operation using the operator() rather than .bind() variant." alt="" coords="1085,20,1210,47"/>
+<area shape="rect" id="node7" href="$structReturnEmitter.html" title="Emit a systemc.cpp.return operation." alt="" coords="1091,100,1204,127"/>
+<area shape="rect" id="node9" href="$structVariableEmitter.html" title="Emit a systemc.cpp.variable operation." alt="" coords="1086,180,1209,207"/>
+<area shape="rect" id="node11" href="$classCallIndirectEmitter.html" title="Emit a systemc.cpp.call_indirect operation." alt="" coords="1075,260,1219,287"/>
+<area shape="rect" id="node13" href="$structFuncEmitter.html" title="Emit a systemc.cpp.func function." alt="" coords="1097,340,1197,367"/>
+<area shape="rect" id="node15" href="$classCallEmitter.html" title="Emit a systemc.cpp.call operation." alt="" coords="1100,420,1195,447"/>
+<area shape="rect" id="node17" href="$structAssignEmitter.html" title="Emit a systemc.cpp.assign operation." alt="" coords="1091,500,1204,527"/>
+<area shape="rect" id="node19" href="$structMemberAccessEmitter.html" title="Emit a systemc.cpp.member_access operation." alt="" coords="1063,580,1232,607"/>
+</map>

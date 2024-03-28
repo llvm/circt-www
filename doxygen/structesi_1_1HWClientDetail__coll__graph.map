@@ -1,0 +1,8 @@
+<map id="esi::HWClientDetail" name="esi::HWClientDetail">
+<area shape="rect" id="node1" title="A description of a hardware client." alt="" coords="171,213,320,240"/>
+<area shape="rect" id="node2" href="$classesi_1_1AppIDPath.html" title=" " alt="" coords="27,117,143,143"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,165,32"/>
+<area shape="rect" id="node4" href="$structesi_1_1ServicePortDesc.html" title="A description of a service port." alt="" coords="168,117,323,143"/>
+<area shape="rect" id="node5" title=" " alt="" coords="216,5,275,32"/>
+<area shape="rect" id="node6" title=" " alt="" coords="347,109,506,151"/>
+</map>

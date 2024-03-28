@@ -1,0 +1,47 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Handshake/HandshakeInterfaces.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Handshake/HandshakeInterfaces.h">
+<area shape="rect" id="node1" title=" " alt="" coords="2796,5,3027,76"/>
+<area shape="rect" id="node2" href="$HandshakeOps_8h.html" title=" " alt="" coords="1453,124,1684,195"/>
+<area shape="rect" id="node27" href="$IbisOps_8h.html" title=" " alt="" coords="4227,124,4415,195"/>
+<area shape="rect" id="node3" href="$CFToHandshake_8h.html" title=" " alt="" coords="2768,243,2956,313"/>
+<area shape="rect" id="node11" href="$CFToHandshake_8cpp.html" title=" " alt="" coords="2391,361,2616,432"/>
+<area shape="rect" id="node13" href="$Visitor_8h.html" title=" " alt="" coords="1607,243,1837,313"/>
+<area shape="rect" id="node14" href="$HandshakeToDC_8cpp.html" title=" " alt="" coords="1881,361,2109,432"/>
+<area shape="rect" id="node15" href="$HandshakeToHW_8cpp.html" title=" " alt="" coords="2134,361,2366,432"/>
+<area shape="rect" id="node16" href="$HandshakeDialect_8cpp.html" title=" " alt="" coords="1964,243,2208,313"/>
+<area shape="rect" id="node17" href="$HandshakeExecutableOps_8cpp.html" title=" " alt="" coords="2232,243,2476,313"/>
+<area shape="rect" id="node18" href="$HandshakeOps_8cpp.html" title=" " alt="" coords="2500,243,2744,313"/>
+<area shape="rect" id="node19" href="$Analysis_8cpp.html" title=" " alt="" coords="1613,361,1857,432"/>
+<area shape="rect" id="node20" href="$Buffers_8cpp.html" title=" " alt="" coords="5,361,249,432"/>
+<area shape="rect" id="node21" href="$LegalizeMemrefs_8cpp.html" title=" " alt="" coords="273,361,517,432"/>
+<area shape="rect" id="node22" href="$LockFunctions_8cpp.html" title=" " alt="" coords="541,361,785,432"/>
+<area shape="rect" id="node23" href="$LowerExtmemToHW_8cpp.html" title=" " alt="" coords="809,361,1053,432"/>
+<area shape="rect" id="node24" href="$Materialization_8cpp.html" title=" " alt="" coords="1077,361,1321,432"/>
+<area shape="rect" id="node25" href="$Handshake_2Transforms_2PassDetails_8h.html" title=" " alt="" coords="1024,243,1268,313"/>
+<area shape="rect" id="node26" href="$PassHelpers_8cpp.html" title=" " alt="" coords="1345,361,1589,432"/>
+<area shape="rect" id="node4" href="$Conversion_2Passes_8h.html" title=" " alt="" coords="2640,361,2828,432"/>
+<area shape="rect" id="node12" href="$IbisConvertCFToHandshake_8cpp.html" title=" " alt="" coords="2853,361,3082,432"/>
+<area shape="rect" id="node5" href="$InitAllPasses_8h.html" title=" " alt="" coords="2043,480,2246,536"/>
+<area shape="rect" id="node6" href="$CAPI_2Conversion_2Passes_8cpp.html" title=" " alt="" coords="2271,480,2499,536"/>
+<area shape="rect" id="node7" href="$FSM_8cpp.html" title=" " alt="" coords="2523,480,2711,536"/>
+<area shape="rect" id="node8" href="$Handshake_8cpp.html" title=" " alt="" coords="2735,480,2965,536"/>
+<area shape="rect" id="node9" href="$HWArith_8cpp.html" title=" " alt="" coords="2989,480,3199,536"/>
+<area shape="rect" id="node10" href="$Firtool_2Firtool_8cpp.html" title=" " alt="" coords="3224,480,3412,536"/>
+<area shape="rect" id="node28" href="$IbisDialect_8cpp.html" title=" " alt="" coords="4426,250,4645,306"/>
+<area shape="rect" id="node29" href="$IbisOps_8cpp.html" title=" " alt="" coords="4669,250,4868,306"/>
+<area shape="rect" id="node30" href="$IbisTypes_8cpp.html" title=" " alt="" coords="4891,250,5102,306"/>
+<area shape="rect" id="node31" href="$IbisAddOperatorLibrary_8cpp.html" title=" " alt="" coords="4917,361,5119,432"/>
+<area shape="rect" id="node32" href="$IbisArgifyBlocksPass_8cpp.html" title=" " alt="" coords="5143,361,5338,432"/>
+<area shape="rect" id="node33" href="$IbisCallPrep_8cpp.html" title=" " alt="" coords="5362,361,5557,432"/>
+<area shape="rect" id="node34" href="$IbisCleanSelfdrivers_8cpp.html" title=" " alt="" coords="5581,361,5775,432"/>
+<area shape="rect" id="node35" href="$IbisContainerize_8cpp.html" title=" " alt="" coords="5799,361,5994,432"/>
+<area shape="rect" id="node36" href="$IbisContainersToHW_8cpp.html" title=" " alt="" coords="3106,361,3301,432"/>
+<area shape="rect" id="node37" href="$IbisConvertHandshakeToDC_8cpp.html" title=" " alt="" coords="3325,361,3557,432"/>
+<area shape="rect" id="node38" href="$IbisInlineSBlocksPass_8cpp.html" title=" " alt="" coords="3581,361,3775,432"/>
+<area shape="rect" id="node39" href="$IbisMethodsToContainers_8cpp.html" title=" " alt="" coords="3799,361,4015,432"/>
+<area shape="rect" id="node40" href="$IbisPassPipelines_8cpp.html" title=" " alt="" coords="3735,243,3930,313"/>
+<area shape="rect" id="node41" href="$IbisPortrefLowering_8cpp.html" title=" " alt="" coords="4039,361,4234,432"/>
+<area shape="rect" id="node42" href="$IbisPrepareScheduling_8cpp.html" title=" " alt="" coords="4258,361,4455,432"/>
+<area shape="rect" id="node43" href="$IbisReblockPass_8cpp.html" title=" " alt="" coords="4479,361,4674,432"/>
+<area shape="rect" id="node44" href="$IbisTunneling_8cpp.html" title=" " alt="" coords="4698,361,4893,432"/>
+<area shape="rect" id="node45" href="$Ibis_2Transforms_2PassDetails_8h.html" title=" " alt="" coords="4157,243,4351,313"/>
+</map>

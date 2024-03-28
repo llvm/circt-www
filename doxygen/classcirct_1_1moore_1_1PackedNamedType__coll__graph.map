@@ -1,0 +1,8 @@
+<map id="circt::moore::PackedNamedType" name="circt::moore::PackedNamedType">
+<area shape="rect" id="node1" title="A packed named type. See NamedTypeBase for details." alt="" coords="1023,99,1253,125"/>
+<area shape="rect" id="node2" href="$classcirct_1_1moore_1_1NamedTypeBase.html" title=" " alt="" coords="672,36,933,92"/>
+<area shape="rect" id="node3" title=" " alt="" coords="249,5,479,61"/>
+<area shape="rect" id="node4" href="$classcirct_1_1moore_1_1NamedTypeBase.html" title="A named type." alt="" coords="255,86,473,127"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,79,200,135"/>
+<area shape="rect" id="node6" title=" " alt="" coords="752,116,853,143"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="circt::systemc::IntType" name="circt::systemc::IntType">
+<area shape="rect" id="node1" title="Represents a limited word&#45;length signed integer in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="33,109,201,136"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,229,61"/>
+</map>

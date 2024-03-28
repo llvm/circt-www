@@ -1,0 +1,52 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Target/ExportSystemC/Patterns/SystemCEmissionPatterns.cpp" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Target/ExportSystemC/Patterns/SystemCEmissionPatterns.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="355,5,635,76"/>
+<area shape="rect" id="node2" href="$SystemCEmissionPatterns_8h.html" title=" " alt="" coords="393,131,597,158"/>
+<area shape="rect" id="node6" href="$EmissionPrinter_8h.html" title=" " alt="" coords="222,131,369,158"/>
+<area shape="rect" id="node11" href="$SystemCOps_8h.html" title=" " alt="" coords="3113,124,3275,165"/>
+<area shape="rect" id="node3" href="$EmissionPatternSupport_8h.html" title=" " alt="" coords="284,310,485,337"/>
+<area shape="rect" id="node4" href="$LLVM_8h.html" title=" " alt="" coords="1122,735,1277,761"/>
+<area shape="rect" id="node5" title=" " alt="" coords="1123,809,1275,836"/>
+<area shape="rect" id="node7" href="$EmissionPattern_8h.html" title=" " alt="" coords="41,221,179,247"/>
+<area shape="rect" id="node10" title=" " alt="" coords="204,221,435,247"/>
+<area shape="rect" id="node8" title=" " alt="" coords="76,310,221,337"/>
+<area shape="rect" id="node9" title=" " alt="" coords="5,310,52,337"/>
+<area shape="rect" id="node12" href="$HWInstanceImplementation_8h.html" title=" " alt="" coords="627,392,836,433"/>
+<area shape="rect" id="node20" href="$HWOps_8h.html" title=" " alt="" coords="2161,221,2352,247"/>
+<area shape="rect" id="node27" title=" " alt="" coords="2951,399,3099,426"/>
+<area shape="rect" id="node32" title=" " alt="" coords="3174,303,3350,344"/>
+<area shape="rect" id="node33" title=" " alt="" coords="3374,303,3555,344"/>
+<area shape="rect" id="node37" href="$SystemCAttributes_8h.html" title=" " alt="" coords="3642,481,3805,523"/>
+<area shape="rect" id="node42" href="$SystemCDialect_8h.html" title=" " alt="" coords="3966,213,4129,255"/>
+<area shape="rect" id="node44" href="$SystemCOpInterfaces_8h.html" title=" " alt="" coords="674,213,853,255"/>
+<area shape="rect" id="node46" href="$SystemCTypes_8h.html" title=" " alt="" coords="3214,481,3377,523"/>
+<area shape="rect" id="node48" title=" " alt="" coords="3257,213,3398,255"/>
+<area shape="rect" id="node49" title=" " alt="" coords="3423,221,3645,247"/>
+<area shape="rect" id="node50" title=" " alt="" coords="3770,213,3933,255"/>
+<area shape="rect" id="node13" href="$PortImplementation_8h.html" title=" " alt="" coords="612,489,885,515"/>
+<area shape="rect" id="node19" title=" " alt="" coords="909,489,996,515"/>
+<area shape="rect" id="node14" href="$HWTypes_8h.html" title=" " alt="" coords="1301,578,1503,605"/>
+<area shape="rect" id="node15" href="$HWDialect_8h.html" title=" " alt="" coords="2664,660,2876,687"/>
+<area shape="rect" id="node18" title=" " alt="" coords="3009,660,3128,687"/>
+<area shape="rect" id="node16" title=" " alt="" coords="2677,735,2863,761"/>
+<area shape="rect" id="node17" title=" " alt="" coords="3505,735,3632,761"/>
+<area shape="rect" id="node21" href="$EmitOpInterfaces_8h.html" title=" " alt="" coords="2897,303,3048,344"/>
+<area shape="rect" id="node23" href="$HWEnums_8h.html" title=" " alt="" coords="1730,660,1941,687"/>
+<area shape="rect" id="node24" href="$HWOpInterfaces_8h.html" title=" " alt="" coords="989,310,1239,337"/>
+<area shape="rect" id="node25" title=" " alt="" coords="912,399,1076,426"/>
+<area shape="rect" id="node26" href="$BuilderUtils_8h.html" title=" " alt="" coords="1364,310,1560,337"/>
+<area shape="rect" id="node28" title=" " alt="" coords="1440,399,1655,426"/>
+<area shape="rect" id="node29" title=" " alt="" coords="1585,310,1787,337"/>
+<area shape="rect" id="node30" title=" " alt="" coords="1811,310,2025,337"/>
+<area shape="rect" id="node31" title=" " alt="" coords="2049,303,2248,344"/>
+<area shape="rect" id="node34" title=" " alt="" coords="2273,303,2459,344"/>
+<area shape="rect" id="node35" title=" " alt="" coords="2484,310,2661,337"/>
+<area shape="rect" id="node36" title=" " alt="" coords="2685,310,2873,337"/>
+<area shape="rect" id="node22" title=" " alt="" coords="1202,399,1365,426"/>
+<area shape="rect" id="node38" title=" " alt="" coords="3401,578,3547,605"/>
+<area shape="rect" id="node39" title=" " alt="" coords="3829,578,3961,605"/>
+<area shape="rect" id="node40" title=" " alt="" coords="3986,571,4149,612"/>
+<area shape="rect" id="node41" title=" " alt="" coords="3623,571,3805,612"/>
+<area shape="rect" id="node43" title=" " alt="" coords="3965,303,4130,344"/>
+<area shape="rect" id="node45" title=" " alt="" coords="662,303,865,344"/>
+<area shape="rect" id="node47" title=" " alt="" coords="3214,571,3377,612"/>
+</map>

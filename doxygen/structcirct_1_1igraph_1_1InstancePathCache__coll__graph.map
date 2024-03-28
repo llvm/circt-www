@@ -1,0 +1,11 @@
+<map id="circt::igraph::InstancePathCache" name="circt::igraph::InstancePathCache">
+<area shape="rect" id="node1" title="A data structure that caches and provides absolute paths to module instances in the IR." alt="" coords="885,134,1076,175"/>
+<area shape="rect" id="node2" title=" " alt="" coords="505,29,697,85"/>
+<area shape="rect" id="node3" title=" " alt="" coords="77,11,167,37"/>
+<area shape="rect" id="node4" href="$classcirct_1_1igraph_1_1InstanceGraph.html" title="This graph tracks modules and where they are instantiated." alt="" coords="500,141,701,168"/>
+<area shape="rect" id="node5" title=" " alt="" coords="19,61,225,117"/>
+<area shape="rect" id="node6" title=" " alt="" coords="16,141,228,168"/>
+<area shape="rect" id="node7" title=" " alt="" coords="5,193,239,234"/>
+<area shape="rect" id="node8" title=" " alt="" coords="79,259,165,285"/>
+<area shape="rect" id="node9" title=" " alt="" coords="533,192,669,219"/>
+</map>

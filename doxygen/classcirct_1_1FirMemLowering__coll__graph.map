@@ -1,0 +1,13 @@
+<map id="circt::FirMemLowering" name="circt::FirMemLowering">
+<area shape="rect" id="node1" title="FIR memory lowering helper." alt="" coords="845,140,1012,167"/>
+<area shape="rect" id="node2" title=" " alt="" coords="519,13,607,40"/>
+<area shape="rect" id="node3" href="$classcirct_1_1SymbolCache.html" title="Default symbol cache implementation; stores associations between names (StringAttr&#39;s) to mlir::Operat..." alt="" coords="490,64,637,91"/>
+<area shape="rect" id="node4" href="$classcirct_1_1SymbolCacheBase.html" title="Base symbol cache class to allow for cache lookup through a pointer to some abstract cache." alt="" coords="17,5,195,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,57,207,98"/>
+<area shape="rect" id="node6" href="$classcirct_1_1Namespace.html" title="A namespace that is used to store existing names and generate new names in some scope within the IR." alt="" coords="496,115,631,141"/>
+<area shape="rect" id="node7" title=" " alt="" coords="28,123,184,149"/>
+<area shape="rect" id="node8" title=" " alt="" coords="511,165,616,192"/>
+<area shape="rect" id="node9" title=" " alt="" coords="473,216,653,243"/>
+<area shape="rect" id="node10" title=" " alt="" coords="451,267,676,309"/>
+<area shape="rect" id="node11" title=" " alt="" coords="61,275,151,301"/>
+</map>

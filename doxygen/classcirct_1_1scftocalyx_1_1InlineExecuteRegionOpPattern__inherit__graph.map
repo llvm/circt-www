@@ -1,0 +1,4 @@
+<map id="circt::scftocalyx::InlineExecuteRegionOpPattern" name="circt::scftocalyx::InlineExecuteRegionOpPattern">
+<area shape="rect" id="node1" title="Inlines Calyx ExecuteRegionOp operations within their parent blocks." alt="" coords="5,95,224,136"/>
+<area shape="rect" id="node2" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="29,5,200,47"/>
+</map>

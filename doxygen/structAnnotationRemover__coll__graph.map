@@ -1,0 +1,7 @@
+<map id="AnnotationRemover" name="AnnotationRemover">
+<area shape="rect" id="node1" title="A sample reduction pattern that removes FIRRTL annotations from ports and operations." alt="" coords="146,184,298,211"/>
+<area shape="rect" id="node2" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="91,95,214,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,220,32"/>
+<area shape="rect" id="node4" href="$structNLARemover.html" title="A tracker for track NLAs affected by a reduction." alt="" coords="259,95,367,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="245,5,421,32"/>
+</map>

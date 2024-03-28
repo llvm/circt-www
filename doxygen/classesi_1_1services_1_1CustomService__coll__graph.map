@@ -1,0 +1,7 @@
+<map id="esi::services::CustomService" name="esi::services::CustomService">
+<area shape="rect" id="node1" title="A service for which there are no standard services registered." alt="" coords="141,171,351,197"/>
+<area shape="rect" id="node2" href="$classesi_1_1services_1_1Service.html" title="Parent class of all APIs modeled as &#39;services&#39;." alt="" coords="5,81,164,108"/>
+<area shape="rect" id="node3" href="$classesi_1_1AppIDPath.html" title=" " alt="" coords="188,81,304,108"/>
+<area shape="rect" id="node4" title=" " alt="" coords="166,5,326,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="329,81,387,108"/>
+</map>

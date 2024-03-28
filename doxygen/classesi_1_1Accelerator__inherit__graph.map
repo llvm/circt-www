@@ -1,0 +1,4 @@
+<map id="esi::Accelerator" name="esi::Accelerator">
+<area shape="rect" id="node1" title="Top level accelerator class." alt="" coords="5,80,128,107"/>
+<area shape="rect" id="node2" href="$classesi_1_1HWModule.html" title="Represents either the top level or an instance of a hardware module." alt="" coords="7,5,127,32"/>
+</map>

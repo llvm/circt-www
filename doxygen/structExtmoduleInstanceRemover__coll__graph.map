@@ -1,0 +1,12 @@
+<map id="ExtmoduleInstanceRemover" name="ExtmoduleInstanceRemover">
+<area shape="rect" id="node1" title="A sample reduction pattern that replaces instances of firrtl.extmodule with wires." alt="" coords="1289,95,1496,121"/>
+<area shape="rect" id="node2" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="997,29,1157,70"/>
+<area shape="rect" id="node3" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="428,7,551,33"/>
+<area shape="rect" id="node5" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="633,29,774,70"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,7,220,33"/>
+<area shape="rect" id="node6" href="$structNLARemover.html" title="A tracker for track NLAs affected by a reduction." alt="" coords="1023,95,1131,121"/>
+<area shape="rect" id="node7" title=" " alt="" coords="615,95,791,121"/>
+<area shape="rect" id="node8" href="$structdetail_1_1SymbolCache.html" title="A utility doing lazy construction of SymbolTables and SymbolUserMaps, which is handy for reductions t..." alt="" coords="999,145,1155,172"/>
+<area shape="rect" id="node9" title=" " alt="" coords="618,145,789,172"/>
+<area shape="rect" id="node10" title=" " alt="" coords="600,197,807,238"/>
+</map>

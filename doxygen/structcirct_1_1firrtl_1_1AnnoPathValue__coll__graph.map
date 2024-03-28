@@ -1,0 +1,10 @@
+<map id="circt::firrtl::AnnoPathValue" name="circt::firrtl::AnnoPathValue">
+<area shape="rect" id="node1" title=" " alt="" coords="221,288,411,315"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,199,208,225"/>
+<area shape="rect" id="node3" title=" " alt="" coords="57,102,157,129"/>
+<area shape="rect" id="node4" href="$structcirct_1_1firrtl_1_1AnnoTarget.html" title="An annotation target is used to keep track of something that is targeted by an Annotation." alt="" coords="233,199,399,225"/>
+<area shape="rect" id="node5" href="$structcirct_1_1firrtl_1_1detail_1_1AnnoTargetImpl.html" title=" " alt="" coords="250,95,382,136"/>
+<area shape="rect" id="node6" title=" " alt="" coords="237,5,297,32"/>
+<area shape="rect" id="node7" title=" " alt="" coords="321,5,407,32"/>
+<area shape="rect" id="node8" title=" " alt="" coords="423,199,505,225"/>
+</map>

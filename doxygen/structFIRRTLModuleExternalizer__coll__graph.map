@@ -1,0 +1,14 @@
+<map id="FIRRTLModuleExternalizer" name="FIRRTLModuleExternalizer">
+<area shape="rect" id="node1" title="A sample reduction pattern that maps firrtl.module to firrtl.extmodule." alt="" coords="1296,121,1488,148"/>
+<area shape="rect" id="node2" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="999,29,1160,70"/>
+<area shape="rect" id="node3" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="428,7,551,33"/>
+<area shape="rect" id="node5" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="633,29,774,70"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,7,220,33"/>
+<area shape="rect" id="node6" href="$structNLARemover.html" title="A tracker for track NLAs affected by a reduction." alt="" coords="1025,95,1133,121"/>
+<area shape="rect" id="node7" title=" " alt="" coords="615,95,791,121"/>
+<area shape="rect" id="node8" href="$structdetail_1_1SymbolCache.html" title="A utility doing lazy construction of SymbolTables and SymbolUserMaps, which is handy for reductions t..." alt="" coords="1001,145,1157,172"/>
+<area shape="rect" id="node9" title=" " alt="" coords="618,145,789,172"/>
+<area shape="rect" id="node10" title=" " alt="" coords="600,197,807,238"/>
+<area shape="rect" id="node11" href="$structModuleSizeCache.html" title="Utility to track the transitive size of modules." alt="" coords="1011,232,1148,259"/>
+<area shape="rect" id="node12" title=" " alt="" coords="618,262,789,303"/>
+</map>

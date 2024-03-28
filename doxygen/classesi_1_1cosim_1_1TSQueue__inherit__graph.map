@@ -1,0 +1,7 @@
+<map id="esi::cosim::TSQueue&lt; T &gt;" name="esi::cosim::TSQueue&lt; T &gt;">
+<area shape="rect" id="node1" title="Thread safe queue. Just wraps std::queue protected with a lock." alt="" coords="5,123,197,150"/>
+<area shape="rect" id="node2" href="$classesi_1_1cosim_1_1TSQueue.html" title=" " alt="" coords="375,5,529,47"/>
+<area shape="rect" id="node3" href="$classesi_1_1cosim_1_1TSQueue.html" title=" " alt="" coords="375,71,529,127"/>
+<area shape="rect" id="node4" href="$classesi_1_1cosim_1_1TSQueue.html" title=" " alt="" coords="375,152,529,193"/>
+<area shape="rect" id="node5" href="$classesi_1_1cosim_1_1TSQueue.html" title=" " alt="" coords="375,218,529,274"/>
+</map>

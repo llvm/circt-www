@@ -1,0 +1,13 @@
+<map id="circt::firrtl::FirMemory" name="circt::firrtl::FirMemory">
+<area shape="rect" id="node1" title=" " alt="" coords="414,287,577,313"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,127,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="151,95,235,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="259,95,337,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="361,95,419,121"/>
+<area shape="rect" id="node6" title=" " alt="" coords="465,95,525,121"/>
+<area shape="rect" id="node7" title=" " alt="" coords="586,95,637,121"/>
+<area shape="rect" id="node8" title=" " alt="" coords="661,95,836,121"/>
+<area shape="rect" id="node9" title=" " alt="" coords="699,5,799,32"/>
+<area shape="rect" id="node10" title=" " alt="" coords="860,95,915,121"/>
+<area shape="rect" id="node11" title=" " alt="" coords="976,95,1063,121"/>
+</map>

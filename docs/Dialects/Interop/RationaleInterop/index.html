@@ -1,0 +1,423 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>Interoperability Dialect Rationale - CIRCT</title><meta name=description content="Circuit IR Compilers and Tools"><meta name=generator content="Hugo 0.101.0"><link href=https://circt.llvm.org/index.xml rel=alternate type=application/rss+xml><link rel=canonical href=https://circt.llvm.org/docs/Dialects/Interop/RationaleInterop/><link rel=stylesheet href=https://circt.llvm.org/css/theme.css><script src=https://use.fontawesome.com/releases/v5.0.6/js/all.js></script>
+<link rel=stylesheet href=https://circt.llvm.org/css/chroma.min.css><script src=https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js></script>
+<script src=https://circt.llvm.org/js/bundle.js></script>
+<script type=text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type=text/x-mathjax-config>
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$', '$'] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+    }
+  });
+</script><style>:root{}</style></head><body><div class=container><header><h1><div><img src=https://circt.llvm.org//circt-logo.svg width=40px align=absmiddle>
+CIRCT</div></h1><p class=description>Circuit IR Compilers and Tools</p></header><div class=global-menu><nav><ul><li class=parent><a href>Community<i class="fas fa-angle-right"></i></a><ul class=sub-menu><li class=child><a href=https://llvm.discourse.group/c/Projects-that-want-to-become-official-LLVM-Projects/circt/40>Forums</a></li><li class=child><a href=https://discord.gg/xS7Z362>Chat</a></li></ul></li><li class=parent><a href=https://github.com/llvm/circt/tree/main/>Source<i class="fas fa-angle-right"></i></a><ul class=sub-menu><li class=child><a href=/doxygen/>Doxygen</a></li><li class=child><a href=https://github.com/llvm/circt/tree/main/>GitHub</a></li></ul></li></ul></nav></div><div class=content-container><main><h1>Interoperability Dialect Rationale</h1><p>This document describes the various design points of the Interop dialect, a
+dialect that is used to represent partially lowered interoperability layers and
+that provides common interfaces and utilities for automated interop generation.
+This follows in the spirit of other
+<a href=https://mlir.llvm.org/docs/Rationale/>MLIR Rationale docs</a>.</p><ul><li><a href=#interoperability-dialect-rationale>Interoperability Dialect Rationale</a><ul><li><a href=#introduction>Introduction</a></li><li><a href=#procedural-interop>Procedural Interop</a><ul><li><a href=#representing-partial-lowerings>Representing Partial Lowerings</a></li><li><a href=#interop-mechanisms>Interop Mechanisms</a></li><li><a href=#instance-side-lowering>Instance-side Lowering</a></li><li><a href=#container-side-lowering>Container-side Lowering</a></li><li><a href=#bridging-between-interop-mechanism>Bridging between Interop Mechanisms</a></li><li><a href=#how-to-use-this-dialect>How to use this dialect</a></li><li><a href=#design-considerations>Design considerations</a></li></ul></li></ul></li></ul><h2 id=introduction>Introduction&nbsp;<a class=headline-hash href=#introduction>¶</a></h2><p>The increasing number of CIRCT-based backends as well as the usage of many
+external tools raises questions about interoperability and composition of
+those tools. Are we supposed to write interop-layers between them by hand or
+can this also be automatically generated? Can we generate interfaces to the
+outside in multiple standardized formats/languages automatically?</p><p>Let&rsquo;s pick simulation as a concrete example. We have Verilator, CIRCT-based
+event-driven (e.g., <code>llhd-sim</code>) and potentially non-event-driven simulators
+that could be mixed using interop to use the faster, more constraint
+one for most of the design and switch to the slower, more general one for
+parts of the design that require the generality.
+They all provide their own interface for writing testbenches in a way that
+suits them best. Verilator has its custom C++ interface as well as SystemC
+support, <code>llhd-sim</code> expects the testbench to be written in LLHD (e.g., compiled
+from SystemVerilog), and nobody knows what the interface of the third would look
+like (maybe a custom C-header?). This means, if we want to simulate a design
+with all three, we have to write the testbench three times or at least some
+layer between the TB and the simulator interfaces. This dialect aims to solve
+this issue by auto-generating an interface from a selection of standarized
+formats (e.g., a SystemC or SystemVerilog module) such that the testbench has
+to be written only once and switching to another simulator just means changing
+one CLI argument.
+What if we have to use some blackbox Verilog code in the design? Is it compiled
+by a (not yet existent) SystemVerilog front-end and simulated by the CIRCT-based
+simulators or could it also be useful to simulate the blackbox using Verilator
+and everything surrounding it using the CIRCT-based simulator? This dialect can
+provide the latter by implementing an interop operation and one lowering per
+simulator rather than custom pair-wise interop implementations.</p><p>We make a clear distinction between procedural and structural interop because
+it is not possible to provide direct interop between a purely structural
+language and a purely procedural language. To achieve interop between them,
+one has to use at least one bridging language that has (some) support for both
+as a translation layer.</p><h2 id=procedural-interop>Procedural Interop&nbsp;<a class=headline-hash href=#procedural-interop>¶</a></h2><p>The <code>interop</code> dialect provides a few operations to represent partially lowered
+procedural interop instances presented in the
+<a href=#representing-partial-lowerings>next section</a> as well as an interface to be
+implemented by the surrounding module and rewrite patterns to call into those
+interface implementations presented in the section about
+<a href=#container-side-lowering>&lsquo;Container-side Lowering&rsquo;</a>.
+It also provides common rewrite patterns to insert translation layers between
+different interop mechanisms like textural C++, C-foreign-functions, Verilog,
+etc. They are discussed in more detail in the sections
+<a href=#interop-mechanisms>&lsquo;Interop Mechanisms&rsquo;</a> and
+<a href=#bridging-between-interop-mechanisms>&lsquo;Bridging between Interop Mechanisms&rsquo;</a>.</p><h3 id=representing-partial-lowerings>Representing Partial Lowerings&nbsp;<a class=headline-hash href=#representing-partial-lowerings>¶</a></h3><p>There are four operations to represent partially lowered procedural interop in
+the IR:</p><ul><li><code>interop.procedural.alloc</code></li><li><code>interop.procedural.init</code></li><li><code>interop.procedural.update</code></li><li><code>interop.procedural.dealloc</code></li></ul><p>The <code>alloc</code> operation returns a variadic list of values that represent
+persistent state, i.e., state that has to persist across multiple executions
+of the <code>update</code> operation. For example, it can be lowered to C++ class fields
+that are persistent across multiple calls of a member function, or to global
+simulator state that persists over simulation cycles, etc.</p><p>Additionally, it has an attribute that specifies the interop mechanism under
+which the state types are valid (the <code>cpp</code> in the example below). This is
+necessary to allow bridging patterns to map the types to valid types in the
+other interop mechanism, e.g., to an opaque pointer, if it does not support
+the same types.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-mlir data-lang=mlir><span class=line><span class=cl><span class=nv>%state</span> <span class=p>=</span> interop<span class=p>.</span>procedural<span class=p>.</span>alloc cpp <span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;</span>
+</span></span></code></pre></div><p>The <code>init</code> operation takes the variadic list of states from the <code>alloc</code>
+operation as operands and has a body with a <code>return</code> operation that has a
+variadic list of operands that matches the types of the states and
+represent the initial values to be assigned to the state values. The assignment
+will be inserted by the container-side lowering of the interop operations.
+The operation also has an interop mechanism attribute for the same reason as
+above and, additionally, to wrap the operations in the body in a way to make
+them executable in the other interop mechanism, e.g., wrap them in a
+<code>extern "C"</code> function to make it callable from C or LLVM IR.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-mlir data-lang=mlir><span class=line><span class=cl>interop<span class=p>.</span>procedural<span class=p>.</span>init cpp <span class=nv>%state</span> <span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%0</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>new<span class=p>()</span> <span class=p>:</span> <span class=p>()</span> <span class=p>-&gt;</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;</span>
+</span></span><span class=line><span class=cl>  interop<span class=p>.</span><span class=kt>return</span> <span class=nv>%0</span> <span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>The <code>update</code> operation is similar to the <code>alloc</code> operation in that it has an
+interop mechanism attribute for the same reason and takes the state values as
+operands, but also passes them on to the body via block arguments using
+pass-by-value semantics. In addition to the state values, it also takes a variadic
+list of inputs and also passes them on to the body. The <code>return</code> inside the body
+then returns the result values after doing some computation inside the body.
+If the state needs to be mutated, it has to be a pointer type. If we need to be
+able to change the actual state value in the future, we could return updated
+states via the <code>return</code> operation (currently not allowed).</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-mlir data-lang=mlir><span class=line><span class=cl><span class=nv>%1</span> <span class=p>=</span> interop<span class=p>.</span>procedural<span class=p>.</span>update cpp <span class=p>[</span><span class=nv>%state</span><span class=p>](</span><span class=nv>%x</span><span class=p>,</span> <span class=nv>%x</span><span class=p>)</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>  <span class=p>[!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;](</span><span class=k>i32</span><span class=p>,</span> <span class=k>i32</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=k>i32</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=nl>^bb0</span><span class=p>(</span><span class=nv>%arg0</span><span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;,</span> <span class=nv>%arg1</span><span class=p>:</span> <span class=k>i32</span><span class=p>,</span> <span class=nv>%arg2</span><span class=p>:</span> <span class=k>i32</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>  interop<span class=p>.</span><span class=kt>return</span> <span class=nv>%5</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>The <code>dealloc</code> operation shall be executed right before the state requested by
+the <code>alloc</code> operation is released. This allows the instance to do some cleanup,
+e.g., when the state type was a pointer and the instance performed some
+<code>malloc</code>. Structurally the operation is the same as the <code>update</code> operation, but
+without input and output values. The state is also passed by value.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-mlir data-lang=mlir><span class=line><span class=cl>interop<span class=p>.</span>procedural<span class=p>.</span>dealloc cpp <span class=nv>%state</span> <span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=nl>^bb0</span><span class=p>(</span><span class=nv>%arg0</span><span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;):</span>
+</span></span><span class=line><span class=cl>  systemc<span class=p>.</span>cpp<span class=p>.</span>delete <span class=nv>%arg0</span> <span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;</span>
+</span></span><span class=line><span class=cl>  interop<span class=p>.</span><span class=kt>return</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><h3 id=interop-mechanisms>Interop Mechanisms&nbsp;<a class=headline-hash href=#interop-mechanisms>¶</a></h3><p>A variety of interop mechanisms can be supported. This allows to perform interop
+on different abstraction levels and only fall back to C-foreign-functions when
+nothing else is supported.</p><p>Currently supported interop mechanisms:</p><ul><li>CFFI: C-foreign-functions, i.e., all interop operations are lowered to C
+functions and function calls.</li><li>CPP: textual C++, i.e., the interop operations are lowered to the <code>systemc</code>
+and <code>emitc</code> dialects and printed as C++ code. In the future, more dialects
+(such as <code>scf</code>) could be supported.</li></ul><p>Adding a new interop mechanism requires changes to the <code>interop</code> dialect. At
+a minimum, the table-gen enum has to be modified and a bridging pattern has to
+be added.</p><h3 id=instance-side-lowering>Instance-side Lowering&nbsp;<a class=headline-hash href=#instance-side-lowering>¶</a></h3><p>The instance-side lowering always has to happen before the container-side
+lowering since that pass should create the interop operations that will then
+be picked up by the container-side lowering pass and properly embedded in the
+context of the container operation.</p><p>To illustrate how this works, consider a design represented in <code>hw</code>, <code>comb</code>, and
+<code>seq</code>. We want to simulate that design using Verilator and provide a SystemC
+wrapper (basically what Verilator itself can also do using the SystemC Output
+Mode <code>--sc</code>). As a first step, the
+top-level module has to be cloned without the region and a
+<code>systemc.interop.verilated</code> operation has to be inserted in the body to
+instantiate the previously cloned module (here represented as the extern module
+<code>@Bar</code>) as a verilated module. The input and output ports get connected 1-1.
+The original design is then exported through <code>ExportVerilog</code> and verilated,
+while our wrapper module is lowered by the instance-side lowering.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-mlir data-lang=mlir><span class=line><span class=cl>hw<span class=p>.</span>module<span class=p>.</span>extern <span class=nf>@Bar</span> <span class=p>(</span><span class=nv>%a</span><span class=p>:</span> <span class=k>i32</span><span class=p>,</span> <span class=nv>%b</span><span class=p>:</span> <span class=k>i32</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=p>(</span>c<span class=p>:</span> <span class=k>i32</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>hw<span class=p>.</span>module <span class=nf>@Foo</span> <span class=p>(</span><span class=nv>%x</span><span class=p>:</span> <span class=k>i32</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=p>(</span>y<span class=p>:</span> <span class=k>i32</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%c</span> <span class=p>=</span> systemc<span class=p>.</span>interop<span class=p>.</span>verilated <span class=s>&#34;inst&#34;</span> <span class=nf>@Bar</span> <span class=p>(</span>a<span class=p>:</span> <span class=nv>%x</span><span class=p>:</span> <span class=k>i32</span><span class=p>,</span> b<span class=p>:</span> <span class=nv>%x</span><span class=p>:</span> <span class=k>i32</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=p>(</span>c<span class=p>:</span> <span class=k>i32</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>  hw<span class=p>.</span>output <span class=nv>%c</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>As a result, the above code example is lowered to the following code. This is
+implemented as a pattern on the <code>systemc.interop.verilated</code> operation in the
+dialect conversion framework. Note that it is required to provide a rewrite
+pattern for this lowering to enable one-shot lowering of all interop operations
+in a design during a lowering pipeline. The patterns for all instance-side
+interop lowerings of a dialect are provided by a population function
+(e.g., <code>populateInstanceInteropLoweringPatterns(RewritePatternSet&)</code>) exposed
+in their public API. Each dialect should also provide a pass with all its
+instance-side lowering patterns populated for partial interop lowering.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-mlir data-lang=mlir><span class=line><span class=cl>hw<span class=p>.</span>module <span class=nf>@Foo</span><span class=p>(</span><span class=nv>%x</span><span class=p>:</span> <span class=k>i32</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=p>(</span>y<span class=p>:</span> <span class=k>i32</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%state</span> <span class=p>=</span> interop<span class=p>.</span>procedural<span class=p>.</span>alloc cpp <span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;</span>
+</span></span><span class=line><span class=cl>  interop<span class=p>.</span>procedural<span class=p>.</span>init cpp <span class=nv>%state</span> <span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nv>%2</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>new<span class=p>()</span> <span class=p>:</span> <span class=p>()</span> <span class=p>-&gt;</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;</span>
+</span></span><span class=line><span class=cl>    interop<span class=p>.</span><span class=kt>return</span> <span class=nv>%2</span> <span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%1</span> <span class=p>=</span> interop<span class=p>.</span>procedural<span class=p>.</span>update cpp <span class=p>[</span><span class=nv>%state</span><span class=p>](</span><span class=nv>%x</span><span class=p>,</span> <span class=nv>%x</span><span class=p>)</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=p>[!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;](</span><span class=k>i32</span><span class=p>,</span> <span class=k>i32</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=k>i32</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nl>^bb0</span><span class=p>(</span><span class=nv>%arg0</span><span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;,</span> <span class=nv>%arg1</span><span class=p>:</span> <span class=k>i32</span><span class=p>,</span> <span class=nv>%arg2</span><span class=p>:</span> <span class=k>i32</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=nv>%2</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>member_access <span class=nv>%arg0</span> arrow <span class=s>&#34;a&#34;</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>      <span class=p>(!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;)</span> <span class=p>-&gt;</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>    systemc<span class=p>.</span>cpp<span class=p>.</span>assign <span class=nv>%2</span> <span class=p>=</span> <span class=nv>%arg1</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>    <span class=nv>%3</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>member_access <span class=nv>%arg0</span> arrow <span class=s>&#34;b&#34;</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>      <span class=p>(!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;)</span> <span class=p>-&gt;</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>    systemc<span class=p>.</span>cpp<span class=p>.</span>assign <span class=nv>%3</span> <span class=p>=</span> <span class=nv>%arg2</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>    <span class=nv>%4</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>member_access <span class=nv>%arg0</span> arrow <span class=s>&#34;eval&#34;</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>      <span class=p>(!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;)</span> <span class=p>-&gt;</span> <span class=p>(()</span> <span class=p>-&gt;</span> <span class=p>())</span>
+</span></span><span class=line><span class=cl>    systemc<span class=p>.</span>cpp<span class=p>.</span>call_indirect <span class=nv>%4</span><span class=p>()</span> <span class=p>:</span> <span class=p>()</span> <span class=p>-&gt;</span> <span class=p>()</span>
+</span></span><span class=line><span class=cl>    <span class=nv>%5</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>member_access <span class=nv>%arg0</span> arrow <span class=s>&#34;c&#34;</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>      <span class=p>(!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;)</span> <span class=p>-&gt;</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>    interop<span class=p>.</span><span class=kt>return</span> <span class=nv>%5</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  interop<span class=p>.</span>procedural<span class=p>.</span>dealloc cpp <span class=nv>%state</span> <span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nl>^bb0</span><span class=p>(</span><span class=nv>%arg0</span><span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;):</span>
+</span></span><span class=line><span class=cl>    systemc<span class=p>.</span>cpp<span class=p>.</span>delete <span class=nv>%arg0</span> <span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;</span>
+</span></span><span class=line><span class=cl>    interop<span class=p>.</span><span class=kt>return</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  hw<span class=p>.</span>output <span class=nv>%1</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>In this example, it is possible to do the <code>HWToSystemC</code> conversion before or
+after the instance-side interop lowering, but that might not be the case in
+all situations.</p><h3 id=container-side-lowering>Container-side Lowering&nbsp;<a class=headline-hash href=#container-side-lowering>¶</a></h3><p>The container-side interop lowering is slightly more complex than the
+instance-side lowering, because it consists of an interface that needs to be
+implemented by the container operations (in our example that&rsquo;s the
+<code>systemc.module</code> operation) and four rewrite patterns that are provided by the
+interop dialect and call those interface implementations. Typically, the
+interface is implemented as an external model on the container operation, thus
+the external model and the four rewrite patterns have to be registered in the
+container-side lowering pass.</p><p>Similar to the instance-side lowering, each dialect has to provide a function
+to register all external models implementing the interop interface of that
+dialect as well as a pass that has all those models, the four rewrite patterns,
+and all the bridging patterns, provided by the interop dialect, registered.</p><p>The <code>ProceduralContainerInteropOpInterface</code> provides four function that have
+to be implemented:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=n>LogicalResult</span> <span class=nf>allocState</span><span class=p>(</span><span class=n>PatternRewriter</span><span class=o>&amp;</span><span class=p>,</span> <span class=n>ProceduralAllocOp</span><span class=p>,</span> <span class=n>ProceduralAllocOpAdaptor</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=n>LogicalResult</span> <span class=nf>initState</span><span class=p>(</span><span class=n>PatternRewriter</span><span class=o>&amp;</span><span class=p>,</span> <span class=n>ProceduralInitOp</span><span class=p>,</span> <span class=n>ProceduralInitOpAdaptor</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=n>LogicalResult</span> <span class=nf>updateState</span><span class=p>(</span><span class=n>PatternRewriter</span><span class=o>&amp;</span><span class=p>,</span> <span class=n>ProceduralUpdateOp</span><span class=p>,</span> <span class=n>ProceduralUpdateOpAdaptor</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=n>LogicalResult</span> <span class=nf>deallocState</span><span class=p>(</span><span class=n>PatternRewriter</span><span class=o>&amp;</span><span class=p>,</span> <span class=n>ProceduralDeallocOp</span><span class=p>,</span> <span class=n>ProceduralDeallocOpAdaptor</span><span class=p>);</span>
+</span></span></code></pre></div><p>They are responsible for lowering the respective interop operation in a similar
+fashion as regular rewrite patterns.</p><p>Let&rsquo;s take a look at how the example from the previous section is further
+lowered. After the <code>convert-hw-to-systemc</code> pass it looks like the following:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-mlir data-lang=mlir><span class=line><span class=cl>systemc<span class=p>.</span>module <span class=nf>@Foo</span><span class=p>(</span><span class=nv>%x</span><span class=p>:</span> <span class=p>!</span>systemc<span class=p>.</span>in<span class=p>&lt;!</span>systemc<span class=p>.</span>uint<span class=p>&lt;</span><span class=m>32</span><span class=p>&gt;&gt;,</span>
+</span></span><span class=line><span class=cl>                    <span class=nv>%y</span><span class=p>:</span> <span class=p>!</span>systemc<span class=p>.</span>out<span class=p>&lt;!</span>systemc<span class=p>.</span>uint<span class=p>&lt;</span><span class=m>32</span><span class=p>&gt;&gt;)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  systemc<span class=p>.</span>ctor <span class=p>{</span>
+</span></span><span class=line><span class=cl>    systemc<span class=p>.</span>method <span class=nv>%update</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%update</span> <span class=p>=</span> systemc<span class=p>.</span><span class=kt>func</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nv>%0</span> <span class=p>=</span> systemc<span class=p>.</span>signal<span class=p>.</span>read <span class=nv>%x</span> <span class=p>:</span> <span class=p>!</span>systemc<span class=p>.</span>in<span class=p>&lt;!</span>systemc<span class=p>.</span>uint<span class=p>&lt;</span><span class=m>32</span><span class=p>&gt;&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nv>%state</span> <span class=p>=</span> interop<span class=p>.</span>procedural<span class=p>.</span>alloc cpp <span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;</span>
+</span></span><span class=line><span class=cl>    interop<span class=p>.</span>procedural<span class=p>.</span>init cpp <span class=nv>%state</span> <span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nv>%1</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>new<span class=p>()</span> <span class=p>:</span> <span class=p>()</span> <span class=p>-&gt;</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;</span>
+</span></span><span class=line><span class=cl>      interop<span class=p>.</span><span class=kt>return</span> <span class=nv>%1</span> <span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=nv>%2</span> <span class=p>=</span> systemc<span class=p>.</span>convert <span class=nv>%0</span> <span class=p>:</span> <span class=p>(!</span>systemc<span class=p>.</span>uint<span class=p>&lt;</span><span class=m>32</span><span class=p>&gt;)</span> <span class=p>-&gt;</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>    <span class=nv>%3</span> <span class=p>=</span> interop<span class=p>.</span>procedural<span class=p>.</span>update cpp <span class=p>[</span><span class=nv>%state</span><span class=p>](</span><span class=nv>%2</span><span class=p>,</span> <span class=nv>%2</span><span class=p>)</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>      <span class=p>[!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;](</span><span class=k>i32</span><span class=p>,</span> <span class=k>i32</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=k>i32</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nl>^bb0</span><span class=p>(</span><span class=nv>%arg0</span><span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;,</span> <span class=nv>%arg1</span><span class=p>:</span> <span class=k>i32</span><span class=p>,</span> <span class=nv>%arg2</span><span class=p>:</span> <span class=k>i32</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>      <span class=nv>%4</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>member_access <span class=nv>%arg0</span> arrow <span class=s>&#34;a&#34;</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=p>(!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;)</span> <span class=p>-&gt;</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>      systemc<span class=p>.</span>cpp<span class=p>.</span>assign <span class=nv>%4</span> <span class=p>=</span> <span class=nv>%arg1</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>      <span class=nv>%5</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>member_access <span class=nv>%arg0</span> arrow <span class=s>&#34;b&#34;</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=p>(!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;)</span> <span class=p>-&gt;</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>      systemc<span class=p>.</span>cpp<span class=p>.</span>assign <span class=nv>%5</span> <span class=p>=</span> <span class=nv>%arg2</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>      <span class=nv>%6</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>member_access <span class=nv>%arg0</span> arrow <span class=s>&#34;eval&#34;</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=p>(!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;)</span> <span class=p>-&gt;</span> <span class=p>(()</span> <span class=p>-&gt;</span> <span class=p>())</span>
+</span></span><span class=line><span class=cl>      systemc<span class=p>.</span>cpp<span class=p>.</span>call_indirect <span class=nv>%6</span><span class=p>()</span> <span class=p>:</span> <span class=p>()</span> <span class=p>-&gt;</span> <span class=p>()</span>
+</span></span><span class=line><span class=cl>      <span class=nv>%7</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>member_access <span class=nv>%arg0</span> arrow <span class=s>&#34;c&#34;</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=p>(!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;)</span> <span class=p>-&gt;</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>      interop<span class=p>.</span><span class=kt>return</span> <span class=nv>%7</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    interop<span class=p>.</span>procedural<span class=p>.</span>dealloc cpp <span class=nv>%state</span> <span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nl>^bb0</span><span class=p>(</span><span class=nv>%arg0</span><span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;):</span>
+</span></span><span class=line><span class=cl>      systemc<span class=p>.</span>cpp<span class=p>.</span>delete <span class=nv>%arg0</span> <span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;</span>
+</span></span><span class=line><span class=cl>      interop<span class=p>.</span><span class=kt>return</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=nv>%8</span> <span class=p>=</span> systemc<span class=p>.</span>convert <span class=nv>%3</span> <span class=p>:</span> <span class=p>(</span><span class=k>i32</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=p>!</span>systemc<span class=p>.</span>uint<span class=p>&lt;</span><span class=m>32</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    systemc<span class=p>.</span>signal<span class=p>.</span>write <span class=nv>%y</span><span class=p>,</span> <span class=nv>%8</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>Note that the <code>alloc</code>, <code>init</code>, and <code>dealloc</code> interop operations were not moved
+to the final locations yet, although, the pass could be modified to do this.
+In the SystemC lowering, the interop interface implementation performs the
+movement of these operation to the final location. Doing the lowering leads to
+the following:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-mlir data-lang=mlir><span class=line><span class=cl>systemc<span class=p>.</span>module <span class=nf>@Foo</span><span class=p>(</span><span class=nv>%x</span><span class=p>:</span> <span class=p>!</span>systemc<span class=p>.</span>in<span class=p>&lt;!</span>systemc<span class=p>.</span>uint<span class=p>&lt;</span><span class=m>32</span><span class=p>&gt;&gt;,</span>
+</span></span><span class=line><span class=cl>                    <span class=nv>%y</span><span class=p>:</span> <span class=p>!</span>systemc<span class=p>.</span>out<span class=p>&lt;!</span>systemc<span class=p>.</span>uint<span class=p>&lt;</span><span class=m>32</span><span class=p>&gt;&gt;)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%state</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>variable <span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;</span>
+</span></span><span class=line><span class=cl>  systemc<span class=p>.</span>ctor <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nv>%0</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>new<span class=p>()</span> <span class=p>:</span> <span class=p>()</span> <span class=p>-&gt;</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;</span>
+</span></span><span class=line><span class=cl>    systemc<span class=p>.</span>cpp<span class=p>.</span>assign <span class=nv>%state</span> <span class=p>=</span> <span class=nv>%0</span> <span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;</span>
+</span></span><span class=line><span class=cl>    systemc<span class=p>.</span>method <span class=nv>%update</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%update</span> <span class=p>=</span> systemc<span class=p>.</span><span class=kt>func</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nv>%1</span> <span class=p>=</span> systemc<span class=p>.</span>signal<span class=p>.</span>read <span class=nv>%x</span> <span class=p>:</span> <span class=p>!</span>systemc<span class=p>.</span>in<span class=p>&lt;!</span>systemc<span class=p>.</span>uint<span class=p>&lt;</span><span class=m>32</span><span class=p>&gt;&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=nv>%2</span> <span class=p>=</span> systemc<span class=p>.</span>convert <span class=nv>%1</span> <span class=p>:</span> <span class=p>(!</span>systemc<span class=p>.</span>uint<span class=p>&lt;</span><span class=m>32</span><span class=p>&gt;)</span> <span class=p>-&gt;</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>    <span class=nv>%3</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>member_access <span class=nv>%state</span> arrow <span class=s>&#34;a&#34;</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>      <span class=p>(!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;)</span> <span class=p>-&gt;</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>    systemc<span class=p>.</span>cpp<span class=p>.</span>assign <span class=nv>%3</span> <span class=p>=</span> <span class=nv>%2</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>    <span class=nv>%4</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>member_access <span class=nv>%state</span> arrow <span class=s>&#34;b&#34;</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>      <span class=p>(!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;)</span> <span class=p>-&gt;</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>    systemc<span class=p>.</span>cpp<span class=p>.</span>assign <span class=nv>%4</span> <span class=p>=</span> <span class=nv>%2</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>    <span class=nv>%5</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>member_access <span class=nv>%state</span> arrow <span class=s>&#34;eval&#34;</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>      <span class=p>(!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;)</span> <span class=p>-&gt;</span> <span class=p>(()</span> <span class=p>-&gt;</span> <span class=p>())</span>
+</span></span><span class=line><span class=cl>    systemc<span class=p>.</span>cpp<span class=p>.</span>call_indirect <span class=nv>%5</span><span class=p>()</span> <span class=p>:</span> <span class=p>()</span> <span class=p>-&gt;</span> <span class=p>()</span>
+</span></span><span class=line><span class=cl>    <span class=nv>%6</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>member_access <span class=nv>%state</span> arrow <span class=s>&#34;c&#34;</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>      <span class=p>(!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;)</span> <span class=p>-&gt;</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>    <span class=nv>%7</span> <span class=p>=</span> systemc<span class=p>.</span>convert <span class=nv>%6</span> <span class=p>:</span> <span class=p>(</span><span class=k>i32</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=p>!</span>systemc<span class=p>.</span>uint<span class=p>&lt;</span><span class=m>32</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    systemc<span class=p>.</span>signal<span class=p>.</span>write <span class=nv>%y</span><span class=p>,</span> <span class=nv>%7</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  systemc<span class=p>.</span>cpp<span class=p>.</span>destructor <span class=p>{</span>
+</span></span><span class=line><span class=cl>    systemc<span class=p>.</span>cpp<span class=p>.</span>delete <span class=nv>%state</span> <span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><h3 id=bridging-between-interop-mechanisms>Bridging between Interop Mechanisms&nbsp;<a class=headline-hash href=#bridging-between-interop-mechanisms>¶</a></h3><p>As we have already seen, the instance-side lowering adds an attribute to the
+interop operations to indicate the interop mechanism that has to be supported
+to use the bodies operations and types directly. But what happens when the
+instance annotated the operations to be textual C++, but the interface
+implementation of the container operation only supports CFFI?
+In that case, the dialect that lowers the instance could also provide a lowering
+pattern for that particular interop mechanism (instead of registering the
+bridging patterns), or there can be patterns that convert the interop operations
+to another interop mechanism. Using the dialect conversion framework, this will
+then allow the pass to legalize all operations in the IR by using that extra
+pattern instead of failing because of an illegal operation for which no pattern
+matches.</p><p>Let&rsquo;s take a closer look into the CPP to CFFI bridging pattern. It will convert
+the interop operations from earlier to CFFI compatible versions.</p><p>The <code>alloc</code> operation</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-mlir data-lang=mlir><span class=line><span class=cl><span class=nv>%state</span> <span class=p>=</span> interop<span class=p>.</span>procedural<span class=p>.</span>alloc cpp <span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;</span>
+</span></span></code></pre></div><p>is converted to a version where all types are replaced by opaque pointers:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-mlir data-lang=mlir><span class=line><span class=cl><span class=nv>%state</span> <span class=p>=</span> interop<span class=p>.</span>procedural<span class=p>.</span>alloc cffi <span class=p>:</span> <span class=p>!</span>llvm<span class=p>.</span>ptr
+</span></span></code></pre></div><p>For the <code>update</code> operation</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-mlir data-lang=mlir><span class=line><span class=cl><span class=nv>%1</span> <span class=p>=</span> interop<span class=p>.</span>procedural<span class=p>.</span>update cpp <span class=p>[</span><span class=nv>%state</span><span class=p>](</span><span class=nv>%x</span><span class=p>,</span> <span class=nv>%x</span><span class=p>)</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>  <span class=p>[!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;](</span><span class=k>i32</span><span class=p>,</span> <span class=k>i32</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=k>i32</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=nl>^bb0</span><span class=p>(</span><span class=nv>%arg0</span><span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;,</span> <span class=nv>%arg1</span><span class=p>:</span> <span class=k>i32</span><span class=p>,</span> <span class=nv>%arg2</span><span class=p>:</span> <span class=k>i32</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%2</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>member_access <span class=nv>%arg0</span> arrow <span class=s>&#34;a&#34;</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=p>(!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;)</span> <span class=p>-&gt;</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>  systemc<span class=p>.</span>cpp<span class=p>.</span>assign <span class=nv>%2</span> <span class=p>=</span> <span class=nv>%arg1</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%3</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>member_access <span class=nv>%arg0</span> arrow <span class=s>&#34;b&#34;</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=p>(!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;)</span> <span class=p>-&gt;</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>  systemc<span class=p>.</span>cpp<span class=p>.</span>assign <span class=nv>%3</span> <span class=p>=</span> <span class=nv>%arg2</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%4</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>member_access <span class=nv>%arg0</span> arrow <span class=s>&#34;eval&#34;</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=p>(!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;)</span> <span class=p>-&gt;</span> <span class=p>(()</span> <span class=p>-&gt;</span> <span class=p>())</span>
+</span></span><span class=line><span class=cl>  systemc<span class=p>.</span>cpp<span class=p>.</span>call_indirect <span class=nv>%4</span><span class=p>()</span> <span class=p>:</span> <span class=p>()</span> <span class=p>-&gt;</span> <span class=p>()</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%5</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>member_access <span class=nv>%arg0</span> arrow <span class=s>&#34;c&#34;</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=p>(!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;)</span> <span class=p>-&gt;</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>  interop<span class=p>.</span><span class=kt>return</span> <span class=nv>%5</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>the state types are also converted to opaque pointers and the body is replaced
+with a function call. The original body is moved to a function in another file
+that will be piped through <code>ExportSystemC</code> to generate the textual C++ that
+exports it as a <code>extern "C"</code> function.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-mlir data-lang=mlir><span class=line><span class=cl>systemc<span class=p>.</span>cpp<span class=p>.</span><span class=kt>func</span> externC <span class=nf>@update</span> <span class=p>(</span><span class=nv>%arg0</span><span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;void&#34;</span><span class=p>&gt;&gt;,</span>
+</span></span><span class=line><span class=cl>                                  <span class=nv>%arg1</span><span class=p>:</span> <span class=k>i32</span><span class=p>,</span> <span class=nv>%arg2</span><span class=p>:</span> <span class=k>i32</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=k>i32</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%0</span> <span class=p>=</span> emitc<span class=p>.</span>cast <span class=nv>%arg0</span> <span class=p>:</span> <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;void&#34;</span><span class=p>&gt;&gt;</span> to
+</span></span><span class=line><span class=cl>    <span class=p>!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%2</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>member_access <span class=nv>%0</span> arrow <span class=s>&#34;a&#34;</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=p>(!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;)</span> <span class=p>-&gt;</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>  systemc<span class=p>.</span>cpp<span class=p>.</span>assign <span class=nv>%2</span> <span class=p>=</span> <span class=nv>%arg1</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%3</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>member_access <span class=nv>%0</span> arrow <span class=s>&#34;b&#34;</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=p>(!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;)</span> <span class=p>-&gt;</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>  systemc<span class=p>.</span>cpp<span class=p>.</span>assign <span class=nv>%3</span> <span class=p>=</span> <span class=nv>%arg2</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%4</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>member_access <span class=nv>%0</span> arrow <span class=s>&#34;eval&#34;</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=p>(!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;)</span> <span class=p>-&gt;</span> <span class=p>(()</span> <span class=p>-&gt;</span> <span class=p>())</span>
+</span></span><span class=line><span class=cl>  systemc<span class=p>.</span>cpp<span class=p>.</span>call_indirect <span class=nv>%4</span><span class=p>()</span> <span class=p>:</span> <span class=p>()</span> <span class=p>-&gt;</span> <span class=p>()</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%5</span> <span class=p>=</span> systemc<span class=p>.</span>cpp<span class=p>.</span>member_access <span class=nv>%0</span> arrow <span class=s>&#34;c&#34;</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=p>(!</span>emitc<span class=p>.</span>ptr<span class=p>&lt;!</span>emitc<span class=p>.</span>opaque<span class=p>&lt;</span><span class=s>&#34;VBar&#34;</span><span class=p>&gt;&gt;)</span> <span class=p>-&gt;</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>  interop<span class=p>.</span><span class=kt>return</span> <span class=nv>%5</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=c>// ----- other file
+</span></span></span><span class=line><span class=cl><span class=c></span><span class=kt>func</span><span class=p>.</span><span class=kt>func</span> <span class=nf>@update</span> <span class=p>(</span><span class=nv>%arg0</span><span class=p>:</span> <span class=p>!</span>llvm<span class=p>.</span>ptr<span class=p>,</span> <span class=nv>%arg1</span><span class=p>:</span> <span class=k>i32</span><span class=p>,</span> <span class=nv>%arg2</span><span class=p>:</span> <span class=k>i32</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl><span class=nv>%1</span> <span class=p>=</span> interop<span class=p>.</span>procedural<span class=p>.</span>update cffi <span class=p>[</span><span class=nv>%state</span><span class=p>](</span><span class=nv>%x</span><span class=p>,</span> <span class=nv>%x</span><span class=p>)</span> <span class=p>:</span>
+</span></span><span class=line><span class=cl>  <span class=p>[!</span>llvm<span class=p>.</span>ptr<span class=p>](</span><span class=k>i32</span><span class=p>,</span> <span class=k>i32</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=k>i32</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl><span class=nl>^bb0</span><span class=p>(</span><span class=nv>%arg0</span><span class=p>:</span> <span class=p>!</span>llvm<span class=p>.</span>ptr<span class=p>,</span> <span class=nv>%arg1</span><span class=p>:</span> <span class=k>i32</span><span class=p>,</span> <span class=nv>%arg2</span><span class=p>:</span> <span class=k>i32</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>  <span class=nv>%1</span> <span class=p>=</span> <span class=kt>func</span><span class=p>.</span>call <span class=nf>@update</span><span class=p>(</span><span class=nv>%arg0</span><span class=p>,</span> <span class=nv>%arg1</span><span class=p>,</span> <span class=nv>%arg2</span><span class=p>)</span> <span class=p>:</span> <span class=p>(!</span>llvm<span class=p>.</span>ptr<span class=p>,</span> <span class=k>i32</span><span class=p>,</span> <span class=k>i32</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>  interop<span class=p>.</span><span class=kt>return</span> <span class=nv>%1</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>The <code>init</code> and <code>dealloc</code> operations follow the same pattern as the <code>update</code>
+operation.</p><h3 id=how-to-use-this-dialect>How to use this dialect&nbsp;<a class=headline-hash href=#how-to-use-this-dialect>¶</a></h3><p>First, we need to distinguish between the different ways this dialect might want
+to be used in another dialect or downstream repository:</p><ul><li>Use existing dialects that implement interop lowerings in a specialized
+pipeline: this requires implementing a new pass in the downstream tool that
+registers all the rewrite patterns and external models from the upstream
+dialects required to make the pass succeed in that specialized environment.
+Having a specialized pass allows to reduce the number of dependent dialect as
+all dialects, external models, and patterns that could potentially be needed
+have to be registered upfront in MLIR. It&rsquo;s also more convenient to have a
+one-shot pass instead of a series of partial lowerings.</li><li>Add a new tool or IR that can be used as an instance: implement the
+instance-side lowering pass for your dialect and expose a function to
+populate the rewrite pattern in a provided pattern set.</li><li>Add a new IR that can be used as a container for other interop instances:
+implement the container-side interop interface and a container-side lowering
+pass that registers the implemented interface, the four container-side
+lowering patterns and bridging patterns provided by the <code>interop</code> dialect.</li><li>Add a new interop mechanism: this is currently not supported and requires
+modifications to the <code>interop</code> dialect. Adding a new mechanism requires
+extending the <code>InteropMechanism</code> table-gen enum and adding a bridging pattern
+to CFFI at a minimum.</li></ul><h3 id=design-considerations>Design considerations&nbsp;<a class=headline-hash href=#design-considerations>¶</a></h3><p>This section aims to provide explanations for certain design decisions. It will
+take the form of a Q&A.</p><p><strong>Why does the container-side lowering use interfaces that are called from a</strong>
+<strong>rewrite pattern?</strong></p><p>Generally speaking, switching between interfaces and rewrite patterns allows us
+to control the dependency direction between the container interop operations
+and the interop lowering pass.
+When using external models to describe the lowering, the pass does not need to
+know about that interop operation, it just needs to know about the interface
+that describes the external model. However, the interop operation needs to know
+about the interop lowering pass.
+When using rewrite patterns (without any interfaces), the pattern needs to
+depend on the interop operation and the interop lowering pass needs to depend on
+the patterns.
+While this is also a design consideration, it is not the main concern here.
+Note that the lowering patterns should be provided by the operation that is
+the closest surrounding op (in terms of regions) to the unrealized interop
+operation and that supports interop.
+To illustrate why this approach was taken, we can take a look at some of the
+alternatives considered:</p><ul><li>The dialect exports a function to populate a rewrite pattern that matches on
+the container operation of that dialect. This has the disadvantage that all
+interop casts inside that container have to be handled in that single pattern
+and the pattern thus needs to walk the region. Another problem is that we need
+the closest operation to perform the interop lowering and the rewrite pattern
+driver walks top-down, thus the pattern would need to stop walking at operations
+that also support interop, but it can only know that if it gets a list of such
+operations or if all of the interop supporting operations implement an interface.</li><li>The dialect exports a function to populate a rewrite pattern that matches on
+the interop cast operation. The disadvantage there is that we then potentially
+have a lot of rewrite patterns matching on the same operation and we thus need
+to specify the matching condition to only succeed when the closest interop
+supporting operation is the one that provided the rewrite pattern. Therefore,
+we would still need to know which operations support interop. Alternatively,
+the pattern returns the operation it would match on and the infra tries all
+of them and selectes the one with the closest operation returned, however,
+that doesn&rsquo;t fit the dialect conversion framework very well and would be
+rather bad performance-wise.</li><li>The dialect adds a trait to the operations that support interop. The interop
+rewrite patterns could then be provided by the downstream dialect, match on
+the unrealized interop operations, and add as a matching condition that no
+other operation having the interop trait is closer to the unrealized interop
+operation. This still has the disadvantage that the conversion framework has
+to cycle through potentially many patterns matching on the same operations
+and check quite expensive matching conditions.</li><li>Current implementation: The dialect implements an external model for the
+interop operation. The lowering pass infra then provides the rewrite patterns
+that match on the unrealized interop operations (one per op) and checks for
+the closest parent operation that implements the interface and then calls the
+lowering provided by the interface implementation.</li></ul><p><strong>Why is instance-side lowering implemented using rewrite patterns?</strong></p><p>We also have the option to implement the lowering patterns in an interface or
+directly provide a rewrite pattern with the same trade-offs as mentioned in the
+beginning of the above question. The only advantage of the interface approach
+is the inversion of the dependencies which is not important for us since we
+implement partial lowering passes for every dialect anyways. The pattern based
+approach is more straight-forward to implement though.</p><p><strong>Why are those interfaces implemented as external models?</strong></p><p>Because the interface implementations need to implement a lowering pattern that
+might have to create operations from a few different dialects, it needs to
+include all of them and link against them. This can add a big burden to some
+other user that just wants to use the dialect but is not interested in the
+interop functionality. It also helps to avoid dependency cycles.</p><p><strong>How are the dialects registered that a pass depends on (for which ops may be</strong>
+<strong>created)?</strong></p><p>We have partial lowering passes for each dialect. They have a complete picture
+of what operations they create in the instance- and container-side lowerings
+and can thus register exactly those. The container-side lowerings also need
+to register the dialects needed for the interop mechanism conversion patterns
+which are fixed by the <code>interop</code> dialect.
+When implementing a specialized tool one can set up a specialized one-shot
+pass for interop which registers everything that can occur at that stage of
+the pipeline.</p><p><strong>Why have unrealized interp operations instead of lowering directly?</strong></p><p>They allow us to get rid of the tight coupling between the instance interop
+operations and the surrounding container interop operations. It enables
+partial lowering at various places throughout a lowering pipeline and helps
+keeping the number of dependences on dialects in the lowering pass low.</p><p><strong>Is there a possibility to support multiple interop mechanisms per instance</strong>
+<strong>operation?</strong></p><p>We have to distinguish the case where we know the interop mechanism statically
+at the point in time when we create the lowering pass and the case where the
+mechanism is selected dynamically in the lowering pass.
+The first case is easy to support because one can implement multiple patterns
+that lower the instance operation in different ways and register the one that
+fits the best.
+In a dynamic setting, this is still possible by registering multiple patterns
+for the same op, but the set of operations they match on needs to be disjoint
+and must not depend on any parent operations. As a result, it might be tricky
+to add a specialized lowering without copy-pasting the original lowering
+pattern and restricting its match condition.</p><p><strong>How are the bridges between interop mechanisms provided?</strong></p><p>They are provided by the interop dialect as rewrite patterns similar to how the
+rewrite patterns for the instance interop to interop cast conversion is provided
+by the other dialects. This has the advantage that these conversions, which
+usually follow a common pattern, have to be implemented only once.</p><p><strong>Why are the interop operations four separate operations instead of one with</strong>
+<strong>three regions?</strong></p><p>This allows to move the code fragments for allocation and deallocation to their
+final location not only during the container-side lowering, but also during a
+regular transformation pass that, e.g., collects all the state that needs to be
+persistent over multiple cycles in a simulator and inserts allocation code at
+the top-level.</p><p><strong>Why is there a separate <code>interop.alloc</code> operation? Why not make it part of</strong>
+<strong><code>interop.init</code>?</strong></p><p>We need to have an operation returning SSA values for the state that which can
+be used in the other unrealized interop operations to link them together (we
+always need to know what alloc, update, and dealloc operations belong together).
+Returning those values from the <code>init</code> operation would lead to less flexibility,
+a more complicated <code>init</code> operation, and might be misleading as the body returns
+the values that need to be assigned to the state variables by the container-side
+pass, but the returned values would be the state variables.</p><p><strong>Why is this a separate dialect?</strong></p><p>This dialect provides infrastructure and utilities for all dialects that want
+to implement some kind of interop. Those dialects need to depend on this one.
+The only dialect where it could make sense to add this functionality to is HW,
+but we don&rsquo;t want to bloat HW since it is the core dialect that everyone depends
+on (also the dialects that don&rsquo;t need interop).</p><div class=edit-meta><br></div><nav class=pagination><a class="nav nav-prev" href=https://circt.llvm.org/docs/Dialects/Interop/ title="Interop Dialect"><i class="fas fa-arrow-left" aria-hidden=true></i> Prev - Interop Dialect</a>
+<a class="nav nav-next" href=https://circt.llvm.org/docs/Dialects/SMT/ title="SMT Dialect">Next - SMT Dialect <i class="fas fa-arrow-right" aria-hidden=true></i></a></nav><footer><p class=powered>Powered by <a href=https://gohugo.io>Hugo</a>. Theme by <a href=https://themes.gohugo.io/hugo-theme-techdoc/>TechDoc</a>. Designed by <a href=https://github.com/thingsym/hugo-theme-techdoc>Thingsym</a>.</p></footer></main><div class=sidebar><nav class=slide-menu><ul><li><a href=https://circt.llvm.org/>Home</a></li><li><a href=https://circt.llvm.org/talks/>Talks and Related Publications</a></li><li><a href=https://circt.llvm.org/getting_started/>Getting Started</a></li><li class="parent has-sub-menu"><a href=https://circt.llvm.org/docs/>Code Documentation<span class="mark opened">-</span></a><ul class=sub-menu><li class=has-sub-menu><a href=https://circt.llvm.org/docs/CommandGuide/>CommandGuide<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/CommandGuide/handshake-runner/>handshake-runner</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Charter/>CIRCT Charter</a></li><li class="parent has-sub-menu"><a href=https://circt.llvm.org/docs/Dialects/>Dialects<span class="mark opened">-</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/ESIAppID/></a></li><li><a href=https://circt.llvm.org/docs/Dialects/Arc/>'arc' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/Calyx/>'calyx' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/CHIRRTL/>'chirrtl' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Comb/>'comb' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Comb/RationaleComb/>`comb` Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/DC/>'dc' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/DC/RationaleDC/>DC Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Emit/>'emit' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Emit/RationaleEmit/>Emission (Emit) Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/ESI/>'esi' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/ESI/cosim/>ESI cosimulation model</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/types/>ESI data types and communication types</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/services/>ESI Global Services</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/software_api/>ESI Software APIs</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/notes/>Miscellaneous Notes</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/RationaleESI/>The Elastic Silicon Interconnect dialect</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/>'firrtl' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/FIRRTLAnnotations/>FIRRTL Annotations</a></li><li><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/RationaleFIRRTL/>FIRRTL Dialect Rationale</a></li><li><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/FIRRTLIntrinsics/>Intrinsics</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/FSM/>'fsm' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/FSM/RationaleFSM/>FSM Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Handshake/>'handshake' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Handshake/RationaleHandshake/>Handshake Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/HW/>'hw' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/HW/RationaleHW/>HW Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/HWArith/>'hwarith' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/HWArith/RationaleHWArith/>HW Arith Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Ibis/>'ibis' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Ibis/RationaleIbis/>`ibis` Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/LLHD/>'llhd' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/LoopSchedule/>'loopschedule' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/LoopSchedule/LoopSchedule/>LoopSchedule Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/LTL/>'ltl' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/Moore/>'moore' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/MSFT/>'msft' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/OM/>'om' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/OM/RationaleOM/>Object Model Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Pipeline/>'pipeline' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Pipeline/RationalePipeline/>Pipeline Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Seq/>'seq' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Seq/RationaleSeq/>Seq(uential) Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/Sim/>'sim' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Sim/>'sim' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Sim/RationaleSim/>Simulation (Sim) Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/SSP/>'ssp' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/SSP/RationaleSSP/>SSP Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/SV/>'sv' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/SV/RationaleSV/>SV Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/SystemC/>'systemc' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/SystemC/RationaleSystemC/>SystemC Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/Verif/>'verif' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/Debug/>Debug Dialect</a></li><li class="parent has-sub-menu"><a href=https://circt.llvm.org/docs/Dialects/Interop/>Interop Dialect<span class="mark opened">-</span></a><ul class=sub-menu><li class=active><a href=https://circt.llvm.org/docs/Dialects/Interop/RationaleInterop/>Interoperability Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/SMT/>SMT Dialect</a></li></ul></li><li><a href=https://circt.llvm.org/docs/ToolsWorkarounds/>EDA Tool Workarounds</a></li><li><a href=https://circt.llvm.org/docs/FormalVerification/>Formal Verification Tooling</a></li><li><a href=https://circt.llvm.org/docs/GettingStarted/>Getting Started with the CIRCT Project</a></li><li><a href=https://circt.llvm.org/docs/HLS/>HLS in CIRCT</a></li><li><a href=https://circt.llvm.org/docs/Passes/>Passes</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/PyCDE/>Python CIRCT Design Entry (PyCDE)<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/PyCDE/compiling/>Compiling CIRCT and PyCDE</a></li><li><a href=https://circt.llvm.org/docs/PyCDE/basics/>PyCDE Basics</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Scheduling/>Static scheduling infrastructure</a></li><li><a href=https://circt.llvm.org/docs/RationaleSymbols/>Symbol and Inner Symbol Rationale</a></li><li><a href=https://circt.llvm.org/docs/PythonBindings/>Using the Python Bindings</a></li><li><a href=https://circt.llvm.org/docs/VerilogGeneration/>Verilog and SystemVerilog Generation</a></li></ul></li></ul></nav><div class=sidebar-footer></div></div></div><a href=# id=backtothetop-fixed class=backtothetop data-backtothetop-duration=600 data-backtothetop-easing=easeOutQuart data-backtothetop-fixed-fadein=1000 data-backtothetop-fixed-fadeout=1000 data-backtothetop-fixed-bottom=10 data-backtothetop-fixed-right=20><span class="fa-layers fa-fw"><i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i></span></a></div></body></html>

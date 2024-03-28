@@ -1,0 +1,6 @@
+<map id="ModuleExternalizer" name="ModuleExternalizer">
+<area shape="rect" id="node1" title="A sample reduction pattern that maps hw.module to hw.module.extern." alt="" coords="5,276,153,303"/>
+<area shape="rect" id="node2" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="9,185,150,227"/>
+<area shape="rect" id="node3" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="13,5,135,32"/>
+<area shape="rect" id="node4" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="95,81,237,123"/>
+</map>

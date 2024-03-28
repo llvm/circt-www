@@ -1,0 +1,6 @@
+<map id="esi::AcceleratorConnection" name="esi::AcceleratorConnection">
+<area shape="rect" id="node1" title="Abstract class representing a connection to an accelerator." alt="" coords="119,228,315,255"/>
+<area shape="rect" id="node2" href="$classesi_1_1Context.html" title="AcceleratorConnections, Accelerators, and Manifests must all share a context." alt="" coords="43,124,143,151"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,180,47"/>
+<area shape="rect" id="node4" title=" " alt="" coords="167,109,349,165"/>
+</map>

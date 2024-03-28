@@ -1,0 +1,4 @@
+<map id="circt::esi::detail::RemoveOpLowering&lt; OpTy &gt;" name="circt::esi::detail::RemoveOpLowering&lt; OpTy &gt;">
+<area shape="rect" id="node1" title="Generic pattern for removing an op during pattern conversion." alt="" coords="16,95,188,151"/>
+<area shape="rect" id="node2" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="5,5,199,47"/>
+</map>

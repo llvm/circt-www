@@ -1,0 +1,10 @@
+<map id="circt::firrtl::PortInfo" name="circt::firrtl::PortInfo">
+<area shape="rect" id="node1" title="This holds the name and type that describes the module&#39;s ports." alt="" coords="243,184,387,211"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,89,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="113,95,221,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="245,95,297,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="322,95,399,121"/>
+<area shape="rect" id="node6" href="$classcirct_1_1firrtl_1_1AnnotationSet.html" title="This class provides a read&#45;only projection over the MLIR attributes that represent a set of annotatio..." alt="" coords="424,95,609,121"/>
+<area shape="rect" id="node7" title=" " alt="" coords="476,5,557,32"/>
+<area shape="rect" id="node8" title=" " alt="" coords="633,95,715,121"/>
+</map>

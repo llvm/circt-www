@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classllvm_1_1detail_1_1TypeSwitchBase.html" title=" " alt="" coords="5,46,215,73"/>
+<area shape="rect" id="node2" href="$classcirct_1_1firrtl_1_1FIRRTLTypeSwitch.html" title="This class implements the same functionality as TypeSwitch except that it uses firrtl::type_dyn_cast ..." alt="" coords="263,5,429,47"/>
+<area shape="rect" id="node3" href="$classcirct_1_1firrtl_1_1FIRRTLTypeSwitch_3_01T_00_01void_01_4.html" title="Specialization of FIRRTLTypeSwitch for void returning callables." alt="" coords="263,71,429,112"/>
+</map>

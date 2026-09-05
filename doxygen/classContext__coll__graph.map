@@ -1,0 +1,23 @@
+<map id="Context" name="Context">
+<area shape="rect" id="Node000001" title="This class provides a thread&#45;safe interface to access the analysis results." alt="" coords="883,169,956,194"/>
+<area shape="rect" id="Node000002" href="$classllvm_1_1MapVector.html" title=" " alt="" coords="492,31,736,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="721,72,791,95,860,127,887,146,908,167,905,170,884,151,857,132,789,100,719,77"/>
+<area shape="rect" id="Node000003" href="$classllvm_1_1MapVector.html" title=" " alt="" coords="5,5,253,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="267,30,492,42,492,47,267,35"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1igraph_1_1InstanceGraph.html" title="This graph tracks modules and where they are instantiated." alt="" coords="513,119,715,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="729,141,859,161,883,167,882,173,858,167,728,146"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="86,70,173,95"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="187,84,468,109,527,117,526,122,468,115,186,89"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="23,119,235,145"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="250,129,513,129,513,135,250,135"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="27,169,232,223"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="245,179,468,149,521,142,522,147,468,155,246,184"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="13,248,246,288"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="259,263,312,255,366,243,418,223,466,195,474,186,477,176,481,165,490,154,512,142,514,147,494,158,486,167,483,177,479,189,470,199,421,228,367,248,313,261,260,268"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="535,169,693,194"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="707,179,882,179,882,184,707,184"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="526,218,702,243"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="715,221,786,212,858,199,883,192,885,197,859,204,787,217,716,226"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="511,267,717,293"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="731,271,795,258,857,235,885,215,906,192,910,196,889,219,860,240,797,263,732,276"/>
+</map>

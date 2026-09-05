@@ -1,0 +1,23 @@
+<map id="circt::SMTGlobalsHandler" name="circt::SMTGlobalsHandler">
+<area shape="rect" id="Node000001" title="A symbol cache for LLVM globals and functions relevant to SMT lowering patterns." alt="" coords="801,158,988,183"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="415,21,498,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="512,29,569,31,637,37,709,51,778,74,811,92,841,114,884,156,880,160,838,118,808,96,776,78,707,56,636,42,568,36,512,34"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1Namespace.html" title="A namespace that is used to store existing names and generate new names in some scope within the IR." alt="" coords="389,70,524,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="538,87,652,102,778,127,864,155,862,160,777,132,651,107,537,93"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,25,161,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="175,45,334,64,389,71,389,76,333,69,175,50"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="58,74,109,99"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="122,84,389,81,389,86,122,89"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="357,120,556,160"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="570,145,801,162,801,167,570,151"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="38,191,129,217"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="141,190,185,181,357,153,358,158,186,187,142,195"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="378,184,535,224"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="143,201,378,201,378,207,143,207"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="368,248,545,288"/>
+<area shape="poly" id="edge10_Node000009_Node000007" title=" " alt="" coords="129,219,186,236,279,252,368,261,367,266,279,257,185,241,128,224"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="549,204,659,203,777,195,847,181,849,186,778,200,659,209,549,210"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="559,261,665,250,722,239,777,225,829,204,872,181,874,186,831,209,778,231,723,245,666,255,559,267"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="369,313,545,338"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="559,332,611,332,667,327,723,315,776,295,813,270,844,239,884,182,888,185,848,242,816,274,779,300,725,320,668,332,611,337,559,337"/>
+</map>

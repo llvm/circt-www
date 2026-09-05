@@ -1,0 +1,7 @@
+<map id="esi::services::HostMem" name="esi::services::HostMem">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,79,180,104"/>
+<area shape="rect" id="Node000003" href="$classTraceHostMem.html" title=" " alt="" coords="33,152,152,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="95,118,95,152,90,152,90,118"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1services_1_1Service.html" title="Parent class of all APIs modeled as &#39;services&#39;." alt="" coords="13,5,172,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,44,95,79,90,79,90,44"/>
+</map>

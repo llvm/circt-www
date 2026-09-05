@@ -1,0 +1,13 @@
+<map id="circt::DebugAnalysis" name="circt::DebugAnalysis">
+<area shape="rect" id="Node000001" title="Identify operations and values that are only used for debug info." alt="" coords="217,181,372,207"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,195,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,122,269,179,267,184,138,127"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="253,5,337,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="240,36,181,57,146,76,117,95,114,91,144,71,179,52,239,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="219,93,370,119"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="297,45,297,93,292,93,292,45"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="394,93,593,119"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="335,34,467,91,465,96,333,39"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="297,133,297,181,292,181,292,133"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="459,127,389,160,328,184,326,179,387,155,457,122"/>
+</map>

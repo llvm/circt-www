@@ -1,0 +1,7 @@
+<map id="circt::firrtl::InstanceChoiceMacroTable" name="circt::firrtl::InstanceChoiceMacroTable">
+<area shape="rect" id="Node000001" title=" " alt="" coords="33,255,225,295"/>
+<area shape="rect" id="Node000002" href="$classllvm_1_1MapVector.html" title=" " alt="" coords="28,137,231,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,206,132,254,127,254,127,206"/>
+<area shape="rect" id="Node000003" href="$classllvm_1_1MapVector.html" title=" " alt="" coords="5,5,253,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="132,59,132,137,127,137,127,59"/>
+</map>

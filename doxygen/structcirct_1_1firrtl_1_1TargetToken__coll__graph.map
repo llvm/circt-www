@@ -1,0 +1,7 @@
+<map id="circt::firrtl::TargetToken" name="circt::firrtl::TargetToken">
+<area shape="rect" id="Node000001" title="Stores an index into an aggregate." alt="" coords="7,93,177,119"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,88,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,43,69,68,85,91,80,94,64,71,53,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="112,5,163,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,44,101,94,96,92,122,42"/>
+</map>

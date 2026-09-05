@@ -1,0 +1,18 @@
+<map id="circt::ImportVerilog::ModuleLowering" name="circt::ImportVerilog::ModuleLowering">
+<area shape="rect" id="Node000001" title="Module lowering information." alt="" coords="739,127,885,167"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="391,5,497,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="511,24,609,44,663,60,716,80,755,101,788,125,785,129,752,106,714,84,662,65,608,49,510,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="331,55,557,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="565,95,715,125,739,130,738,135,714,130,564,101"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,100,105,125"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="119,104,330,84,331,89,119,109"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="350,120,538,175"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="100,127,130,135,186,143,244,148,350,149,350,155,243,153,186,149,129,141,99,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="552,145,738,145,738,150,552,150"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="354,199,534,269"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="547,207,738,162,739,167,548,212"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="10,221,101,247"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="115,231,354,231,354,237,115,237"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="403,293,485,319"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="497,298,601,278,659,259,713,234,758,201,792,166,796,170,761,205,716,239,661,264,602,283,498,303"/>
+</map>

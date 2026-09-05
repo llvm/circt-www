@@ -1,0 +1,7 @@
+<map id="test_codegen.StructResult" name="test_codegen.StructResult">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,108,197,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="33,5,93,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,42,99,107,94,109,70,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="117,5,163,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="133,44,108,109,103,107,128,42"/>
+</map>

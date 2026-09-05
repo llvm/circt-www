@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,77,108,102"/>
+<area shape="rect" id="Node000001" href="$classesiaccel_1_1types_1_1BundleType_1_1Channel.html" title=" " alt="" coords="159,5,358,45"/>
+<area shape="poly" id="edge466_Node000000_Node000001" title=" " alt="" coords="109,70,155,55,193,43,194,48,157,60,110,75"/>
+<area shape="rect" id="Node000002" href="$classesiaccel_1_1types_1_1WindowType_1_1Field.html" title=" " alt="" coords="156,69,361,109"/>
+<area shape="poly" id="edge467_Node000000_Node000002" title=" " alt="" coords="122,87,156,87,156,92,122,92"/>
+<area shape="rect" id="Node000003" href="$classesiaccel_1_1types_1_1WindowType_1_1Frame.html" title=" " alt="" coords="156,133,361,173"/>
+<area shape="poly" id="edge468_Node000000_Node000003" title=" " alt="" coords="110,104,157,119,194,131,193,136,155,124,109,109"/>
+</map>

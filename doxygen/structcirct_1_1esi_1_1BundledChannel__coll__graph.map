@@ -1,0 +1,9 @@
+<map id="circt::esi::BundledChannel" name="circt::esi::BundledChannel">
+<area shape="rect" id="Node000001" title=" " alt="" coords="85,93,276,119"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,89,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,36,164,91,161,95,75,40"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="113,5,248,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="183,45,183,93,178,93,178,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="272,5,377,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="298,41,249,72,205,95,202,91,246,67,295,36"/>
+</map>

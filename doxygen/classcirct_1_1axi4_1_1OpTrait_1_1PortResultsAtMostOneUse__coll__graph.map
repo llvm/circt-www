@@ -1,0 +1,5 @@
+<map id="circt::axi4::OpTrait::PortResultsAtMostOneUse&lt; ConcreteType &gt;" name="circt::axi4::OpTrait::PortResultsAtMostOneUse&lt; ConcreteType &gt;">
+<area shape="rect" id="Node000001" title="Constrains an op&#39;s !axi4.port results to at most one use each." alt="" coords="31,108,233,163"/>
+<area shape="rect" id="Node000002" href="$classmlir_1_1OpTrait_1_1TraitBase.html" title=" " alt="" coords="5,5,259,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,74,135,108,129,108,129,74"/>
+</map>

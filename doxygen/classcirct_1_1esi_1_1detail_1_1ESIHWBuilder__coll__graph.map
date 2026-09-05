@@ -1,0 +1,15 @@
+<map id="circt::esi::detail::ESIHWBuilder" name="circt::esi::detail::ESIHWBuilder">
+<area shape="rect" id="Node000001" title="Assist the lowering steps for conversions which need to create auxiliary IR." alt="" coords="515,347,637,387"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="58,24,215,49"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,18,262,7,341,4,381,8,421,17,458,31,492,53,509,75,524,107,549,191,565,280,575,347,570,347,560,281,543,192,519,109,505,78,489,57,456,36,419,22,380,13,341,9,263,12,196,24"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="95,205,179,231"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,216,356,223,436,234,468,242,492,252,518,272,540,297,568,346,564,349,536,300,515,276,489,256,466,247,435,239,355,229,193,221"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="111,309,162,335"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="176,321,315,330,491,349,515,352,514,358,490,354,314,336,175,327"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,392,268,417"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="235,416,293,421,358,422,425,418,490,407,517,398,543,385,545,390,519,403,491,413,425,424,358,428,293,426,234,422"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="49,442,225,482"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="238,473,297,475,362,473,427,463,490,444,510,432,529,417,558,386,562,389,533,421,513,437,492,449,428,468,362,478,297,481,238,478"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="57,506,216,546"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="230,537,291,540,359,537,427,523,459,511,489,496,517,473,539,443,555,413,566,387,571,389,560,415,543,446,521,476,492,500,461,516,428,528,359,542,291,546,230,543"/>
+</map>

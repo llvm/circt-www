@@ -1,0 +1,23 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="5,291,176,331"/>
+<area shape="rect" id="Node000001" href="$classcirct_1_1dc_1_1EliminateBranchToSelectPattern.html" title=" " alt="" coords="241,5,429,45"/>
+<area shape="poly" id="edge330_Node000000_Node000001" title=" " alt="" coords="98,276,113,227,139,168,175,107,197,80,222,55,241,43,244,48,226,59,201,83,179,110,143,170,118,229,103,278"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1dc_1_1EliminateForkOfSourcePattern.html" title=" " alt="" coords="249,69,420,109"/>
+<area shape="poly" id="edge331_Node000000_Node000002" title=" " alt="" coords="104,276,123,240,149,197,183,155,222,119,248,105,250,110,226,124,187,159,154,200,128,242,109,279"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1dc_1_1EliminateForkToForkPattern.html" title=" " alt="" coords="249,133,420,173"/>
+<area shape="poly" id="edge332_Node000000_Node000003" title=" " alt="" coords="115,278,161,229,191,204,223,183,248,171,250,176,225,188,194,209,165,233,119,282"/>
+<area shape="rect" id="Node000004" href="$structcirct_1_1dc_1_1EliminatePackOfUnpackPattern.html" title=" " alt="" coords="248,197,421,237"/>
+<area shape="poly" id="edge333_Node000000_Node000004" title=" " alt="" coords="142,282,223,247,258,235,260,240,225,252,144,287"/>
+<area shape="rect" id="Node000005" href="$structcirct_1_1dc_1_1EliminateRedundantUnpackPattern.html" title=" " alt="" coords="228,261,441,301"/>
+<area shape="poly" id="edge334_Node000000_Node000005" title=" " alt="" coords="189,296,228,291,228,297,190,301"/>
+<area shape="rect" id="Node000006" href="$structcirct_1_1dc_1_1JoinOnBranchPattern.html" title=" " alt="" coords="227,326,442,351"/>
+<area shape="poly" id="edge335_Node000000_Node000006" title=" " alt="" coords="190,319,227,324,227,329,189,325"/>
+<area shape="rect" id="Node000007" href="$structcirct_1_1dc_1_1RemoveDuplicateJoinOperandsPattern.html" title=" " alt="" coords="236,376,433,416"/>
+<area shape="poly" id="edge336_Node000000_Node000007" title=" " alt="" coords="154,333,225,360,265,373,263,378,223,365,152,338"/>
+<area shape="rect" id="Node000008" href="$structcirct_1_1dc_1_1RemoveJoinOnSourcePattern.html" title=" " alt="" coords="224,440,445,480"/>
+<area shape="poly" id="edge337_Node000000_Node000008" title=" " alt="" coords="121,339,167,384,195,406,225,426,251,437,249,442,223,430,192,411,163,388,117,343"/>
+<area shape="rect" id="Node000009" href="$structcirct_1_1dc_1_1StaggeredJoinCanonicalization.html" title=" " alt="" coords="249,504,420,544"/>
+<area shape="poly" id="edge338_Node000000_Node000009" title=" " alt="" coords="110,342,129,377,155,417,187,456,226,490,250,503,248,508,222,494,183,460,151,420,124,379,105,344"/>
+<area shape="rect" id="Node000010" href="$classcirct_1_1scftocalyx_1_1InlineExecuteRegionOpPattern.html" title="Inlines Calyx ExecuteRegionOp operations within their parent blocks." alt="" coords="225,568,444,608"/>
+<area shape="poly" id="edge339_Node000000_Node000010" title=" " alt="" coords="103,343,119,390,145,447,180,505,201,531,226,554,244,566,241,570,222,558,197,535,175,508,140,450,114,392,98,345"/>
+</map>

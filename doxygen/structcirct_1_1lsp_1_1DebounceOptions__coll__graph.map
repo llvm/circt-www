@@ -1,0 +1,7 @@
+<map id="circt::lsp::DebounceOptions" name="circt::lsp::DebounceOptions">
+<area shape="rect" id="Node000001" title="Debounce tuning for document&#45;change bursts." alt="" coords="5,108,205,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="7,5,57,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="29,44,29,64,36,83,48,96,65,106,62,110,45,100,31,85,24,65,24,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="143,5,217,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="175,44,166,65,153,86,126,110,122,106,149,82,161,63,170,42"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="circt::pretty::Token::EndInfo" name="circt::pretty::Token::EndInfo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,183,147,223"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1pretty_1_1Token_1_1TokenInfo.html" title=" " alt="" coords="5,93,147,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,147,79,183,73,183,73,147"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="51,5,101,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="79,44,79,93,73,93,73,44"/>
+</map>

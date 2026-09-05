@@ -1,0 +1,15 @@
+<map id="TechLibraryPattern" name="TechLibraryPattern">
+<area shape="rect" id="Node000001" title="Simple technology library encoded as a HWModuleOp." alt="" coords="245,196,388,221"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1synth_1_1CutRewritePattern.html" title="Base class for cut rewriting patterns used in combinational logic optimization." alt="" coords="5,93,180,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,136,290,193,288,198,150,141"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="35,5,151,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="95,44,95,93,90,93,90,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="204,101,309,126"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="274,136,311,194,307,197,269,139"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="333,101,532,126"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="410,136,333,198,329,194,406,132"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="383,5,483,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="435,44,435,101,430,101,430,44"/>
+<area shape="rect" id="Node000007" href="$classhw_1_1HWModuleOp.html" title=" " alt="" coords="557,101,690,126"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="574,132,355,198,354,193,572,127"/>
+</map>

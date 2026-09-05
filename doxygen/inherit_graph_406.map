@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classesi_1_1ChannelPort.html" title="Unidirectional channels are the basic communication primitive between the host and accelerator." alt="" coords="5,31,133,56"/>
+<area shape="rect" id="Node000001" href="$classesi_1_1ReadChannelPort.html" title="A ChannelPort which reads data from the accelerator." alt="" coords="182,5,343,31"/>
+<area shape="poly" id="edge168_Node000000_Node000001" title=" " alt="" coords="147,31,181,26,182,31,147,36"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1WriteChannelPort.html" title="A ChannelPort which sends data to the accelerator." alt="" coords="181,55,344,80"/>
+<area shape="poly" id="edge170_Node000000_Node000003" title=" " alt="" coords="147,50,181,55,181,60,147,56"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1UnknownReadChannelPort.html" title="Instantiated when a backend does not know how to create a read channel." alt="" coords="393,5,615,31"/>
+<area shape="poly" id="edge169_Node000001_Node000002" title=" " alt="" coords="357,15,393,15,393,21,357,21"/>
+<area shape="rect" id="Node000004" href="$classesi_1_1UnknownWriteChannelPort.html" title="Instantiated when a backend does not know how to create a write channel." alt="" coords="392,55,616,80"/>
+<area shape="poly" id="edge171_Node000003_Node000004" title=" " alt="" coords="358,65,392,65,392,70,358,70"/>
+</map>

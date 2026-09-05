@@ -1,0 +1,9 @@
+<map id="esi::ChannelPort::TranslationInfo::FrameInfo" name="esi::ChannelPort::TranslationInfo::FrameInfo">
+<area shape="rect" id="Node000001" title="Information about each frame in the windowed type." alt="" coords="373,55,580,95"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="89,5,149,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,22,373,56,373,61,163,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="19,55,219,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="233,73,373,73,373,78,233,78"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,119,233,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="245,114,372,91,373,96,246,119"/>
+</map>

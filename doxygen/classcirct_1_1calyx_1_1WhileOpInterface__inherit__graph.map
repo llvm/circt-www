@@ -1,0 +1,15 @@
+<map id="circt::calyx::WhileOpInterface&lt; T &gt;" name="circt::calyx::WhileOpInterface&lt; T &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="520,45,772,70"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1calyx_1_1WhileOpInterface.html" title=" " alt="" coords="1015,5,1229,45"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="786,45,1014,30,1015,35,786,51"/>
+<area shape="rect" id="Node000006" href="$classcirct_1_1calyx_1_1WhileOpInterface.html" title=" " alt="" coords="1015,69,1229,109"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="786,65,796,65,1015,80,1014,85,796,71,786,70"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1calyx_1_1LoopInterface.html" title=" " alt="" coords="280,45,471,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="484,55,520,55,520,60,484,60"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1calyx_1_1BasicLoopInterface.html" title=" " alt="" coords="5,45,231,70"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="244,55,280,55,280,60,244,60"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1pipelinetocalyx_1_1PipelineWhileOp.html" title=" " alt="" coords="1279,5,1437,45"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1243,23,1278,23,1278,28,1243,28"/>
+<area shape="rect" id="Node000007" href="$classcirct_1_1scftocalyx_1_1ScfWhileOp.html" title=" " alt="" coords="1292,69,1424,109"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1243,87,1292,87,1292,92,1243,92"/>
+</map>

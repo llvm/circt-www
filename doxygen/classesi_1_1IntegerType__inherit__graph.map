@@ -1,0 +1,11 @@
+<map id="esi::IntegerType" name="esi::IntegerType">
+<area shape="rect" id="Node000001" title="Integers are bit vectors which may be signed or unsigned and are interpreted as numbers." alt="" coords="59,152,184,177"/>
+<area shape="rect" id="Node000004" href="$classesi_1_1SIntType.html" title="Signed integer." alt="" coords="5,225,109,251"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="104,189,70,227,66,223,100,186"/>
+<area shape="rect" id="Node000005" href="$classesi_1_1UIntType.html" title="Unsigned integer." alt="" coords="133,225,240,251"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="143,186,178,223,174,227,139,189"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1BitVectorType.html" title="Bit vectors include signed, unsigned, and signless integers." alt="" coords="52,79,191,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,118,124,152,119,152,119,118"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1Type.html" title="Root class of the ESI type system." alt="" coords="82,5,161,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="124,44,124,79,119,79,119,44"/>
+</map>

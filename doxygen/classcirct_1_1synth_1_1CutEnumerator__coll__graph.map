@@ -1,0 +1,51 @@
+<map id="circt::synth::CutEnumerator" name="circt::synth::CutEnumerator">
+<area shape="rect" id="Node000001" title="Cut enumeration engine for combinational logic networks." alt="" coords="1239,290,1439,315"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="892,31,1067,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1069,73,1144,103,1182,124,1216,149,1254,184,1287,224,1332,288,1327,291,1283,227,1250,188,1213,153,1179,129,1142,108,1067,78"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1synth_1_1TrackedSpecificBumpPtrAllocator.html" title=" " alt="" coords="879,185,1080,239"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1094,234,1215,264,1297,287,1295,292,1214,269,1093,240"/>
+<area shape="rect" id="Node000004" href="$classllvm_1_1SpecificBumpPtrAllocator_3_01circt_1_1synth_1_1Cut_01_4.html" title=" " alt="" coords="428,185,615,225"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="629,208,655,209,879,211,879,216,655,215,629,214"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="80,221,155,246"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="168,235,412,249,521,253,631,249,760,238,878,224,879,229,760,244,631,255,521,258,412,255,168,240"/>
+<area shape="rect" id="Node000006" href="$classcirct_1_1synth_1_1TrackedSpecificBumpPtrAllocator.html" title=" " alt="" coords="421,121,622,161"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="168,219,432,159,433,164,169,225"/>
+<area shape="rect" id="Node000008" href="$classcirct_1_1synth_1_1TrackedSpecificBumpPtrAllocator.html" title=" " alt="" coords="879,95,1080,150"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="158,212,194,191,227,164,235,153,239,142,243,131,251,119,290,87,324,67,362,54,411,43,535,20,587,17,635,18,683,24,733,34,856,68,880,80,909,93,907,98,878,85,854,73,732,40,682,29,634,23,587,22,536,26,413,48,364,60,326,72,293,91,255,123,247,134,244,144,240,155,231,167,197,196,161,217"/>
+<area shape="rect" id="Node000023" href="$structcirct_1_1synth_1_1CutEnumeratorStats.html" title=" " alt="" coords="655,308,855,348"/>
+<area shape="poly" id="edge26_Node000023_Node000005" title=" " alt="" coords="143,253,191,292,222,311,254,324,287,331,329,336,434,339,654,332,655,337,434,344,329,341,286,336,253,329,219,315,188,297,140,258"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="636,156,879,194,878,199,635,161"/>
+<area shape="poly" id="edge11_Node000008_Node000006" title=" " alt="" coords="636,134,878,124,879,129,636,139"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="5,129,229,154"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="243,139,421,139,421,144,243,144"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="1071,153,1143,182,1216,218,1275,254,1322,288,1319,292,1272,259,1213,222,1141,187,1069,158"/>
+<area shape="rect" id="Node000009" href="$classllvm_1_1SpecificBumpPtrAllocator_3_01circt_1_1synth_1_1CutSet_01_4.html" title=" " alt="" coords="428,57,615,97"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="629,85,855,107,879,109,878,114,854,112,628,90"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="888,263,1071,289"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="1084,281,1239,293,1238,298,1084,286"/>
+<area shape="rect" id="Node000011" href="$structcirct_1_1synth_1_1CutRewriterOptions.html" title="Configuration options for the cut&#45;based rewriting algorithm." alt="" coords="890,469,1069,509"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="1080,463,1147,440,1213,408,1247,385,1278,359,1324,314,1328,317,1282,363,1250,390,1216,413,1149,445,1082,468"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="441,366,602,391"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="616,377,753,386,814,396,856,412,866,423,870,435,873,445,880,455,899,467,896,471,877,459,868,448,865,436,861,426,853,417,812,401,752,391,616,382"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="481,426,562,451"/>
+<area shape="poly" id="edge15_Node000011_Node000013" title=" " alt="" coords="576,439,703,449,855,465,890,471,889,476,854,471,703,455,576,445"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="496,499,547,525"/>
+<area shape="poly" id="edge16_Node000011_Node000014" title=" " alt="" coords="561,512,691,515,772,514,854,509,889,505,890,510,855,515,773,520,691,521,560,517"/>
+<area shape="rect" id="Node000015" href="$classcirct_1_1NPNTable.html" title="Precomputed NPN canonicalization table for 4&#45;input single&#45;output functions." alt="" coords="461,549,581,574"/>
+<area shape="poly" id="edge17_Node000011_Node000015" title=" " alt="" coords="595,560,717,556,786,548,854,536,897,523,936,507,938,512,898,528,855,541,787,554,718,561,595,566"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="45,549,190,574"/>
+<area shape="poly" id="edge18_Node000015_Node000016" title=" " alt="" coords="204,559,461,559,461,564,204,564"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="886,376,1073,445"/>
+<area shape="poly" id="edge19_Node000001_Node000017" title=" " alt="" coords="1086,391,1150,377,1214,359,1268,336,1314,313,1316,318,1271,341,1216,364,1151,382,1087,396"/>
+<area shape="rect" id="Node000018" href="$classcirct_1_1synth_1_1LogicNetwork.html" title="Flat logic network representation for efficient cut enumeration." alt="" coords="884,666,1075,691"/>
+<area shape="poly" id="edge20_Node000001_Node000018" title=" " alt="" coords="1008,655,1103,580,1159,530,1213,476,1249,431,1282,386,1327,314,1332,317,1286,389,1253,435,1217,479,1163,533,1106,584,1011,660"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="484,665,559,690"/>
+<area shape="poly" id="edge21_Node000018_Node000019" title=" " alt="" coords="572,675,884,676,884,681,572,680"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="412,714,631,739"/>
+<area shape="poly" id="edge22_Node000018_Node000020" title=" " alt="" coords="644,716,854,696,905,689,906,694,855,701,645,721"/>
+<area shape="rect" id="Node000021" title=" " alt="" coords="438,763,605,789"/>
+<area shape="poly" id="edge23_Node000018_Node000021" title=" " alt="" coords="618,771,732,761,794,751,854,736,910,714,956,689,959,694,913,719,855,741,795,756,733,766,618,776"/>
+<area shape="rect" id="Node000022" title=" " alt="" coords="417,599,626,639"/>
+<area shape="poly" id="edge24_Node000018_Node000022" title=" " alt="" coords="640,622,745,631,855,645,934,663,933,669,854,651,744,636,639,627"/>
+<area shape="poly" id="edge25_Node000001_Node000023" title=" " alt="" coords="868,321,1080,312,1238,305,1238,310,1080,317,868,326"/>
+</map>

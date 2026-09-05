@@ -1,0 +1,25 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classmlir_1_1DialectInterface_1_1Base.html" title=" " alt="" coords="5,309,165,349"/>
+<area shape="rect" id="Node000001" href="$structcirct_1_1ReducePatternDialectInterface.html" title="A dialect interface to provide reduction patterns to a reducer tool." alt="" coords="228,165,427,205"/>
+<area shape="poly" id="edge266_Node000000_Node000001" title=" " alt="" coords="118,298,162,264,212,231,270,203,273,208,215,236,165,269,122,303"/>
+<area shape="rect" id="Node000007" href="$classcirct_1_1arc_1_1RuntimeCostEstimateDialectInterface.html" title="A dialect interface to get runtime cost estimates of MLIR operations." alt="" coords="213,245,441,285"/>
+<area shape="poly" id="edge272_Node000000_Node000007" title=" " alt="" coords="174,303,251,283,252,288,175,308"/>
+<area shape="rect" id="Node000008" href="$structcirct_1_1firrtl_1_1IntrinsicLoweringDialectInterface.html" title="A dialect interface to provide lowering conversions." alt="" coords="235,309,420,349"/>
+<area shape="poly" id="edge273_Node000000_Node000008" title=" " alt="" coords="179,327,235,327,235,332,179,332"/>
+<area shape="rect" id="Node000010" href="$structcirct_1_1hw_1_1HWModulePortTypeInterface.html" title=" " alt="" coords="222,373,433,413"/>
+<area shape="poly" id="edge275_Node000000_Node000010" title=" " alt="" coords="175,350,252,371,251,376,174,355"/>
+<area shape="rect" id="Node000011" href="$structcirct_1_1hw_1_1ProbeTypeDialectInterface.html" title="Interface for dialects to classify their types as valid probe payloads." alt="" coords="229,437,426,477"/>
+<area shape="poly" id="edge276_Node000000_Node000011" title=" " alt="" coords="120,357,163,391,215,423,243,435,241,440,212,428,160,395,117,361"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1arc_1_1ArcReducePatternDialectInterface.html" title="A dialect interface to provide reduction patterns to a reducer tool." alt="" coords="491,5,692,45"/>
+<area shape="poly" id="edge267_Node000001_Node000002" title=" " alt="" coords="357,154,415,104,451,78,488,55,515,43,517,48,491,60,454,82,418,108,360,158"/>
+<area shape="rect" id="Node000003" href="$structcirct_1_1firrtl_1_1FIRRTLReducePatternDialectInterface.html" title="A dialect interface to provide reduction patterns to a reducer tool." alt="" coords="499,69,684,109"/>
+<area shape="poly" id="edge268_Node000001_Node000003" title=" " alt="" coords="388,158,488,119,523,107,525,112,490,124,390,163"/>
+<area shape="rect" id="Node000004" href="$structcirct_1_1hw_1_1HWReducePatternDialectInterface.html" title="A dialect interface to provide reduction patterns to a reducer tool." alt="" coords="491,133,692,173"/>
+<area shape="poly" id="edge269_Node000001_Node000004" title=" " alt="" coords="440,169,490,163,491,168,440,174"/>
+<area shape="rect" id="Node000005" href="$structcirct_1_1om_1_1OMReducePatternDialectInterface.html" title="A dialect interface to provide reduction patterns to a reducer tool." alt="" coords="490,197,693,237"/>
+<area shape="poly" id="edge270_Node000001_Node000005" title=" " alt="" coords="441,196,490,202,489,208,440,202"/>
+<area shape="rect" id="Node000006" href="$structcirct_1_1rtg_1_1RTGReducePatternDialectInterface.html" title="A dialect interface to provide reduction patterns to a reducer tool." alt="" coords="489,261,693,301"/>
+<area shape="poly" id="edge271_Node000001_Node000006" title=" " alt="" coords="390,208,490,247,525,259,523,264,488,252,388,213"/>
+<area shape="rect" id="Node000009" href="$structcirct_1_1firrtl_1_1FIRRTLIntrinsicLoweringDialectInterface.html" title=" " alt="" coords="497,325,686,365"/>
+<area shape="poly" id="edge274_Node000008_Node000009" title=" " alt="" coords="434,333,497,337,496,342,433,338"/>
+</map>

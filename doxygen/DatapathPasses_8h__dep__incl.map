@@ -1,0 +1,9 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Datapath/DatapathPasses.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Datapath/DatapathPasses.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="239,5,457,75"/>
+<area shape="rect" id="Node000002" href="$InitAllPasses_8h.html" title=" " alt="" coords="5,130,208,185"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="266,83,163,132,160,128,264,78"/>
+<area shape="rect" id="Node000003" href="$ReduceDelay_8cpp.html" title=" " alt="" coords="232,123,464,192"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="351,89,351,122,345,122,345,89"/>
+<area shape="rect" id="Node000004" href="$SynthesisPipeline_8cpp.html" title=" " alt="" coords="489,123,698,192"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="433,78,523,120,520,125,431,83"/>
+</map>

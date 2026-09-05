@@ -1,0 +1,11 @@
+<map id="ModuleOutputPruner" name="ModuleOutputPruner">
+<area shape="rect" id="Node000001" title="Remove unused module output ports." alt="" coords="255,181,411,207"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="51,93,174,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,121,304,179,302,184,154,126"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,220,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="115,45,115,93,110,93,110,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="198,93,467,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="335,133,335,181,330,181,330,133"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="492,93,720,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="557,125,370,184,369,179,555,120"/>
+</map>

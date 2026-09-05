@@ -1,0 +1,24 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/AXI4/AXI4Dialect.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/AXI4/AXI4Dialect.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="369,5,558,75"/>
+<area shape="rect" id="Node000002" href="$AXI4Attributes_8h.html" title=" " alt="" coords="237,123,426,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="417,86,372,124,369,120,413,82"/>
+<area shape="rect" id="Node000003" href="$AXI4Types_8h.html" title=" " alt="" coords="304,240,493,309"/>
+<area shape="poly" id="edge9_Node000001_Node000003" title=" " alt="" coords="462,89,454,139,441,193,420,241,415,239,436,191,449,138,457,88"/>
+<area shape="rect" id="Node000004" href="$AXI4Ops_8h.html" title=" " alt="" coords="106,357,296,427"/>
+<area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="356,54,265,74,217,89,169,108,124,133,82,163,47,199,19,241,11,260,8,275,11,291,19,308,37,329,58,345,107,369,105,374,55,350,33,332,15,311,5,292,3,275,6,258,15,239,43,195,79,159,121,128,167,104,215,84,264,69,355,49"/>
+<area shape="rect" id="Node000005" href="$AXI4Dialect_8cpp.html" title=" " alt="" coords="398,475,631,529"/>
+<area shape="poly" id="edge12_Node000001_Node000005" title=" " alt="" coords="505,85,526,122,547,185,555,237,558,357,562,392,558,427,549,453,536,476,531,473,544,451,553,426,557,392,553,358,549,237,542,186,521,124,500,87"/>
+<area shape="rect" id="Node000007" href="$AXI4Types_8cpp.html" title=" " alt="" coords="320,365,544,419"/>
+<area shape="poly" id="edge13_Node000001_Node000007" title=" " alt="" coords="487,87,504,134,516,191,520,251,516,281,507,310,490,341,466,366,463,363,485,338,503,308,511,280,514,251,511,191,498,135,482,88"/>
+<area shape="rect" id="Node000008" href="$AXI4Attributes_8cpp.html" title=" " alt="" coords="29,247,280,302"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="356,61,288,85,256,103,227,125,202,153,184,186,162,248,157,246,179,184,198,150,223,121,253,98,286,81,355,56"/>
+<area shape="rect" id="Node000009" href="$InitAllDialects_8h.html" title=" " alt="" coords="618,130,830,185"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="553,78,666,128,664,132,551,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="360,203,381,238,377,241,356,205"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="270,202,196,250,193,245,267,197"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="330,319,260,359,257,355,328,314"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="415,322,427,364,421,365,409,324"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="310,428,439,472,437,477,308,433"/>
+<area shape="rect" id="Node000006" href="$AXI4Ops_8cpp.html" title=" " alt="" coords="95,475,307,529"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="204,440,204,474,198,474,198,440"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="CirctESIBundleTypeBundleChannel" name="CirctESIBundleTypeBundleChannel">
+<area shape="rect" id="Node000001" title=" " alt="" coords="79,93,271,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,111,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,37,153,91,150,95,82,41"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="135,5,216,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="178,44,178,93,173,93,173,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="241,5,318,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="267,44,244,71,212,95,208,91,240,67,263,41"/>
+</map>

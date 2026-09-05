@@ -1,0 +1,23 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,205,141,230"/>
+<area shape="rect" id="Node000001" href="$structcirct_1_1firrtl_1_1detail_1_1ClassTypeStorage.html" title=" " alt="" coords="211,69,357,109"/>
+<area shape="poly" id="edge380_Node000000_Node000001" title=" " alt="" coords="95,193,136,156,188,119,213,107,216,112,191,124,139,160,98,197"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1firrtl_1_1detail_1_1FIRRTLBaseTypeStorage.html" title=" " alt="" coords="191,133,377,173"/>
+<area shape="poly" id="edge381_Node000000_Node000002" title=" " alt="" coords="128,198,217,171,218,176,130,203"/>
+<area shape="rect" id="Node000008" href="$structcirct_1_1firrtl_1_1detail_1_1OpenBundleTypeStorage.html" title=" " alt="" coords="189,197,379,237"/>
+<area shape="poly" id="edge387_Node000000_Node000008" title=" " alt="" coords="155,215,189,215,189,220,155,220"/>
+<area shape="rect" id="Node000009" href="$structcirct_1_1firrtl_1_1detail_1_1OpenVectorTypeStorage.html" title=" " alt="" coords="191,261,377,301"/>
+<area shape="poly" id="edge388_Node000000_Node000009" title=" " alt="" coords="130,232,218,259,217,264,128,237"/>
+<area shape="rect" id="Node000010" href="$structcirct_1_1sim_1_1detail_1_1DPIFunctionTypeStorage.html" title=" " alt="" coords="191,325,377,365"/>
+<area shape="poly" id="edge389_Node000000_Node000010" title=" " alt="" coords="98,238,139,275,191,311,216,323,213,328,188,316,136,279,95,242"/>
+<area shape="rect" id="Node000003" href="$structcirct_1_1firrtl_1_1detail_1_1BaseTypeAliasStorage.html" title=" " alt="" coords="427,5,601,45"/>
+<area shape="poly" id="edge382_Node000002_Node000003" title=" " alt="" coords="369,125,377,119,392,104,400,88,409,72,425,55,445,43,448,48,428,59,413,75,405,91,396,107,380,123,372,129"/>
+<area shape="rect" id="Node000004" href="$structcirct_1_1firrtl_1_1detail_1_1BundleTypeStorage.html" title=" " alt="" coords="437,69,591,109"/>
+<area shape="poly" id="edge383_Node000002_Node000004" title=" " alt="" coords="369,127,441,107,442,112,370,132"/>
+<area shape="rect" id="Node000005" href="$structcirct_1_1firrtl_1_1detail_1_1FEnumTypeStorage.html" title=" " alt="" coords="437,133,591,173"/>
+<area shape="poly" id="edge384_Node000002_Node000005" title=" " alt="" coords="391,151,437,151,437,156,391,156"/>
+<area shape="rect" id="Node000006" href="$structcirct_1_1firrtl_1_1detail_1_1FVectorTypeStorage.html" title=" " alt="" coords="435,197,593,237"/>
+<area shape="poly" id="edge385_Node000002_Node000006" title=" " alt="" coords="370,174,442,195,441,200,369,180"/>
+<area shape="rect" id="Node000007" href="$structcirct_1_1firrtl_1_1detail_1_1WidthTypeStorage.html" title=" " alt="" coords="440,261,588,301"/>
+<area shape="poly" id="edge386_Node000002_Node000007" title=" " alt="" coords="372,177,380,183,396,200,405,216,413,232,428,247,448,259,445,263,425,251,409,235,400,218,392,203,377,187,369,182"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="circt::llhd::deseq::ClockInfo" name="circt::llhd::deseq::ClockInfo">
+<area shape="rect" id="Node000001" title="A single clock extracted from a process during trigger analysis." alt="" coords="9,123,138,163"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,64,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="35,45,35,71,41,98,56,121,52,124,36,100,30,72,29,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="88,5,139,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="108,45,82,123,77,122,103,43"/>
+</map>

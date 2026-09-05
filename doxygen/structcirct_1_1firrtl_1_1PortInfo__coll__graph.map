@@ -1,0 +1,19 @@
+<map id="circt::firrtl::PortInfo" name="circt::firrtl::PortInfo">
+<area shape="rect" id="Node000001" title="This holds the name and type that describes the module&#39;s ports." alt="" coords="277,181,421,207"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,89,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,123,114,140,152,155,215,171,277,182,276,187,214,176,151,160,112,145,78,128"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="113,93,165,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,124,228,155,301,179,299,184,226,160,167,129"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="189,93,271,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="252,127,284,155,324,179,322,183,280,159,248,131"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="295,93,403,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="351,133,351,181,346,181,346,133"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="427,93,505,119"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="441,129,366,183,363,179,438,125"/>
+<area shape="rect" id="Node000007" href="$classcirct_1_1firrtl_1_1AnnotationSet.html" title="This class provides a read&#45;only projection over the MLIR attributes that represent a set of annotatio..." alt="" coords="529,93,715,119"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="573,125,386,184,385,179,571,120"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="581,5,663,31"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="625,45,625,93,619,93,619,45"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="739,93,817,119"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="727,125,588,160,422,187,421,181,587,155,726,120"/>
+</map>

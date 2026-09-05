@@ -1,0 +1,7 @@
+<map id="circt::ImportVerilog::VirtualInterfaceMemberAccess" name="circt::ImportVerilog::VirtualInterfaceMemberAccess">
+<area shape="rect" id="Node000001" title="A mapping entry for resolving Slang virtual interface member accesses." alt="" coords="12,93,243,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,124,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,41,117,92,112,95,78,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="148,5,232,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,44,142,95,138,92,172,41"/>
+</map>

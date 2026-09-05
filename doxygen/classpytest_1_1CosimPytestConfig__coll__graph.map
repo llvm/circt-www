@@ -1,0 +1,15 @@
+<map id="pytest.CosimPytestConfig" name="pytest.CosimPytestConfig">
+<area shape="rect" id="Node000001" title=" " alt="" coords="249,181,440,207"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,159,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,44,77,71,78,101,85,130,101,155,124,168,160,178,249,188,249,193,159,183,122,173,97,159,80,132,73,102,72,71,74,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="200,5,255,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="226,44,226,100,234,129,248,156,263,169,282,179,280,184,260,174,244,159,229,131,221,100,221,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="279,5,317,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="294,44,289,98,291,128,300,156,310,169,323,179,320,183,306,173,296,159,286,129,283,98,289,44"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="369,5,419,31"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="394,45,384,98,367,158,355,183,350,180,362,156,379,97,388,44"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="505,5,555,31"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="530,45,520,109,512,139,501,159,473,174,431,184,430,179,471,169,497,155,507,137,515,108,525,44"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="591,5,669,31"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="635,44,635,71,631,102,621,133,602,159,576,174,536,183,440,193,440,188,535,178,574,169,599,155,617,131,626,101,630,71,630,44"/>
+</map>

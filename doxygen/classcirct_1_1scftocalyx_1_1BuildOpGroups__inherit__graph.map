@@ -1,0 +1,13 @@
+<map id="circt::scftocalyx::BuildOpGroups" name="circt::scftocalyx::BuildOpGroups">
+<area shape="rect" id="Node000001" title="Iterate through the operations of a source function and instantiate components or primitives based on..." alt="" coords="1256,37,1388,77"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1calyx_1_1FuncOpPartialLoweringPattern.html" title="FuncOpPartialLoweringPatterns are patterns which intend to match on FuncOps and then perform their ow..." alt="" coords="1016,37,1207,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1221,55,1256,55,1256,60,1221,60"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1calyx_1_1PartialLoweringPattern.html" title=" " alt="" coords="751,37,967,77"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="980,55,1016,55,1016,60,980,60"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="328,5,491,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="505,29,750,47,750,52,504,35"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1calyx_1_1PartialLoweringPattern.html" title="Base class for partial lowering passes." alt="" coords="269,69,549,109"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="563,77,726,65,750,64,751,69,727,71,563,82"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,77,220,102"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="234,87,269,87,269,92,234,92"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="circt::BinaryTruthTable" name="circt::BinaryTruthTable">
+<area shape="rect" id="Node000001" title="Represents a boolean function as a truth table." alt="" coords="19,108,185,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,87,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="44,44,44,64,50,83,61,96,75,106,72,110,57,100,45,85,39,65,39,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="130,5,186,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,44,131,85,114,109,110,106,126,83,146,42"/>
+</map>

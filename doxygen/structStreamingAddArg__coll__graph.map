@@ -1,0 +1,7 @@
+<map id="StreamingAddArg" name="StreamingAddArg">
+<area shape="rect" id="Node000001" title="Packed struct representing a parallel window argument for StreamingAdder." alt="" coords="17,108,153,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,72,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,42,82,107,78,109,48,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="96,5,171,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="125,44,105,85,94,109,89,106,100,83,120,42"/>
+</map>

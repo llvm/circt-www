@@ -1,0 +1,25 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classesi_1_1services_1_1Service.html" title="Parent class of all APIs modeled as &#39;services&#39;." alt="" coords="5,179,164,204"/>
+<area shape="rect" id="Node000001" href="$classesi_1_1services_1_1CallService.html" title="Service for servicing function calls from the accelerator." alt="" coords="226,5,410,31"/>
+<area shape="poly" id="edge185_Node000000_Node000001" title=" " alt="" coords="98,165,142,102,174,68,211,40,235,28,237,33,213,44,177,72,146,105,102,168"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1services_1_1ChannelService.html" title="Service for raw communication channels to/from the accelerator." alt="" coords="212,55,424,80"/>
+<area shape="poly" id="edge186_Node000000_Node000002" title=" " alt="" coords="106,167,152,127,180,106,211,89,241,78,243,83,213,94,183,111,155,131,110,171"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1services_1_1CustomService.html" title="A service for which there are no standard services registered." alt="" coords="213,104,423,129"/>
+<area shape="poly" id="edge187_Node000000_Node000003" title=" " alt="" coords="125,171,211,138,253,127,254,132,213,143,127,176"/>
+<area shape="rect" id="Node000004" href="$classesi_1_1services_1_1FuncService.html" title="Service for calling functions." alt="" coords="223,153,413,179"/>
+<area shape="poly" id="edge188_Node000000_Node000004" title=" " alt="" coords="177,179,223,174,223,179,178,184"/>
+<area shape="rect" id="Node000005" href="$classesi_1_1services_1_1HostMem.html" title=" " alt="" coords="231,203,405,228"/>
+<area shape="poly" id="edge189_Node000000_Node000005" title=" " alt="" coords="178,198,231,204,230,209,178,204"/>
+<area shape="rect" id="Node000007" href="$classesi_1_1services_1_1MMIO.html" title=" " alt="" coords="243,252,393,277"/>
+<area shape="poly" id="edge191_Node000000_Node000007" title=" " alt="" coords="130,207,213,237,259,249,257,254,211,242,128,212"/>
+<area shape="rect" id="Node000009" href="$classesi_1_1services_1_1SysInfo.html" title="Information about the Accelerator system." alt="" coords="239,301,397,327"/>
+<area shape="poly" id="edge193_Node000000_Node000009" title=" " alt="" coords="110,212,155,251,183,271,213,288,244,299,242,304,211,292,180,275,152,255,106,216"/>
+<area shape="rect" id="Node000011" href="$classesi_1_1services_1_1TelemetryService.html" title="Service for retrieving telemetry data from the accelerator." alt="" coords="230,351,406,391"/>
+<area shape="poly" id="edge195_Node000000_Node000011" title=" " alt="" coords="103,214,147,276,178,309,213,337,236,349,233,354,211,342,175,313,143,279,98,217"/>
+<area shape="rect" id="Node000006" href="$classTraceHostMem.html" title=" " alt="" coords="511,203,630,228"/>
+<area shape="poly" id="edge190_Node000005_Node000006" title=" " alt="" coords="419,213,511,213,511,218,419,218"/>
+<area shape="rect" id="Node000008" href="$classTraceMMIO.html" title=" " alt="" coords="523,252,618,277"/>
+<area shape="poly" id="edge192_Node000007_Node000008" title=" " alt="" coords="407,262,523,262,523,267,407,267"/>
+<area shape="rect" id="Node000010" href="$classesi_1_1services_1_1MMIOSysInfo.html" title="Implement the SysInfo API for a standard MMIO protocol." alt="" coords="472,301,669,327"/>
+<area shape="poly" id="edge194_Node000009_Node000010" title=" " alt="" coords="411,311,472,311,472,317,411,317"/>
+</map>

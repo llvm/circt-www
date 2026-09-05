@@ -1,0 +1,24 @@
+<map id="circt::arc::runtime::FmtDescriptor" name="circt::arc::runtime::FmtDescriptor">
+<area shape="rect" id="Node000001" title="A format descriptor, to be given to arcRuntimeFormat." alt="" coords="552,155,689,195"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="287,41,349,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="363,60,442,82,529,116,592,153,589,157,527,120,440,87,362,66"/>
+<area shape="rect" id="Node000003" href="$structcirct_1_1arc_1_1runtime_1_1FmtDescriptor_1_1LiteralFmt.html" title="Literal string formatting options." alt="" coords="219,91,417,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="429,132,529,153,552,158,551,163,527,158,428,137"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,5,72,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="86,16,138,24,165,33,191,45,199,53,204,61,208,69,215,76,239,89,236,94,212,80,204,72,199,64,195,56,188,50,163,38,137,29,85,21"/>
+<area shape="rect" id="Node000005" href="$structcirct_1_1arc_1_1runtime_1_1FmtDescriptor_1_1IntFmt.html" title="Integer formatting options." alt="" coords="231,155,405,195"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="420,173,552,173,552,178,420,178"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,139,72,164"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="86,153,231,165,230,170,86,158"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="9,188,68,213"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="81,194,230,181,231,186,82,200"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="13,256,64,281"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="76,253,212,205,250,193,251,198,214,210,78,258"/>
+<area shape="rect" id="Node000010" href="$structcirct_1_1arc_1_1runtime_1_1FmtDescriptor_1_1SmallLiteral.html" title="Literal string (small string optimization)." alt="" coords="213,219,423,259"/>
+<area shape="poly" id="edge10_Node000010_Node000008" title=" " alt="" coords="78,280,96,285,143,291,163,290,188,285,200,278,212,270,246,257,248,262,215,275,203,283,190,290,164,296,143,297,96,290,77,285"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="13,80,64,105"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="78,92,133,100,162,108,191,120,203,130,215,141,240,153,238,158,212,146,200,134,188,124,161,113,132,105,77,97"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="428,214,527,193,551,188,552,193,529,198,429,219"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="257,284,379,309"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="389,278,422,269,475,252,527,229,588,193,591,198,529,234,477,257,423,274,390,283"/>
+</map>

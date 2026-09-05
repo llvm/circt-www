@@ -1,0 +1,7 @@
+<map id="esiaccel.bsp.common.ChannelMMIO" name="esiaccel.bsp.common.ChannelMMIO">
+<area shape="rect" id="Node000001" title=" " alt="" coords="49,137,307,163"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,207,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,41,174,136,169,138,117,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="231,5,269,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="239,44,187,138,182,136,235,41"/>
+</map>

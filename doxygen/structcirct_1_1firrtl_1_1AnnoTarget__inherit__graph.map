@@ -1,0 +1,7 @@
+<map id="circt::firrtl::AnnoTarget" name="circt::firrtl::AnnoTarget">
+<area shape="rect" id="Node000001" title="An annotation target is used to keep track of something that is targeted by an Annotation." alt="" coords="119,5,286,31"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1firrtl_1_1OpAnnoTarget.html" title="This represents an annotation targeting a specific operation." alt="" coords="5,79,189,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,41,116,81,113,76,173,36"/>
+<area shape="rect" id="Node000003" href="$structcirct_1_1firrtl_1_1PortAnnoTarget.html" title="This represents an annotation targeting a specific port of a module, memory, or instance." alt="" coords="213,79,405,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="232,36,293,76,290,81,230,40"/>
+</map>

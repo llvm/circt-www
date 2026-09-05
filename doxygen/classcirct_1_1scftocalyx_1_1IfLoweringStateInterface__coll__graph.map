@@ -1,0 +1,13 @@
+<map id="circt::scftocalyx::IfLoweringStateInterface" name="circt::scftocalyx::IfLoweringStateInterface">
+<area shape="rect" id="Node000001" title=" " alt="" coords="681,77,864,117"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="381,13,551,53"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="565,45,658,63,705,75,703,80,657,68,564,50"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,85,96,110"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="85,76,119,63,187,48,256,38,380,30,381,36,256,44,188,53,121,68,87,81"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="381,77,551,117"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="110,95,381,95,381,100,110,100"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="372,142,560,197"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="86,115,121,129,185,145,251,156,372,166,372,171,250,161,184,150,119,135,84,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="565,95,681,95,681,100,565,100"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="573,142,686,115,687,120,574,147"/>
+</map>

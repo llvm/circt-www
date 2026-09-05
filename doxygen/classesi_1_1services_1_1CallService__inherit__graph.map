@@ -1,0 +1,5 @@
+<map id="esi::services::CallService" name="esi::services::CallService">
+<area shape="rect" id="Node000001" title="Service for servicing function calls from the accelerator." alt="" coords="5,79,189,104"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1services_1_1Service.html" title="Parent class of all APIs modeled as &#39;services&#39;." alt="" coords="18,5,177,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,44,100,79,95,79,95,44"/>
+</map>

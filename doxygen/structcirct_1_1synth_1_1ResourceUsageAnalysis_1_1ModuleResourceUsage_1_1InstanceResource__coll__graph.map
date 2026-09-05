@@ -1,0 +1,16 @@
+<map id="circt::synth::ResourceUsageAnalysis::ModuleResourceUsage::InstanceResource" name="circt::synth::ResourceUsageAnalysis::ModuleResourceUsage::InstanceResource">
+<area shape="rect" id="Node000001" title="Information about a child module instance." alt="" coords="1223,18,1457,73"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="554,14,638,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="652,25,1223,40,1222,45,652,31"/>
+<area shape="rect" id="Node000003" href="$structcirct_1_1synth_1_1ResourceUsageAnalysis_1_1ModuleResourceUsage.html" title="Resource usage for a single module, including local and total counts." alt="" coords="896,73,1131,113"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="652,33,896,72,896,77,651,38"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1144,72,1222,60,1223,65,1145,77"/>
+<area shape="rect" id="Node000004" href="$structcirct_1_1synth_1_1ResourceUsageAnalysis_1_1ResourceUsage.html" title="Resource usage counts for a set of operations." alt="" coords="495,77,697,117"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="711,102,872,103,896,101,896,107,872,108,711,107"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,83,176,109"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="190,94,494,94,494,100,190,99"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="437,142,755,197"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="768,142,871,124,932,111,933,116,873,129,769,148"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="41,158,141,183"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="155,168,437,167,437,172,155,173"/>
+</map>

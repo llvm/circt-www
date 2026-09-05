@@ -1,0 +1,9 @@
+<map id="HWModulePort" name="HWModulePort">
+<area shape="rect" id="Node000001" title=" " alt="" coords="113,93,231,119"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,109,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,37,158,91,155,95,82,41"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="133,5,211,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="175,45,175,93,169,93,169,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="235,5,453,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="310,39,197,95,194,91,308,34"/>
+</map>

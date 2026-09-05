@@ -1,0 +1,55 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,686,141,711"/>
+<area shape="rect" id="Node000001" href="$classcirct_1_1calyx_1_1PartialLoweringPattern.html" title=" " alt="" coords="221,585,437,625"/>
+<area shape="poly" id="edge479_Node000000_Node000001" title=" " alt="" coords="105,677,144,655,188,635,226,623,228,628,190,640,146,660,107,681"/>
+<area shape="rect" id="Node000023" href="$classcirct_1_1calyx_1_1PartialLoweringPattern.html" title=" " alt="" coords="228,649,431,689"/>
+<area shape="poly" id="edge501_Node000000_Node000023" title=" " alt="" coords="155,687,227,678,228,684,156,692"/>
+<area shape="rect" id="Node000025" href="$structOrOfMuxToMuxChain.html" title=" " alt="" coords="250,714,409,739"/>
+<area shape="poly" id="edge503_Node000000_Node000025" title=" " alt="" coords="156,705,250,715,249,721,155,710"/>
+<area shape="rect" id="Node000026" href="$classcirct_1_1calyx_1_1PartialLoweringPattern.html" title="Base class for partial lowering passes." alt="" coords="189,764,469,804"/>
+<area shape="poly" id="edge504_Node000000_Node000026" title=" " alt="" coords="111,715,190,749,230,761,229,767,188,755,109,720"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1calyx_1_1FuncOpPartialLoweringPattern.html" title="FuncOpPartialLoweringPatterns are patterns which intend to match on FuncOps and then perform their ow..." alt="" coords="525,585,715,625"/>
+<area shape="poly" id="edge480_Node000001_Node000002" title=" " alt="" coords="451,603,524,603,524,608,451,608"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1calyx_1_1BuildBasicBlockRegs.html" title="Builds registers for each block argument in the program." alt="" coords="793,5,963,45"/>
+<area shape="poly" id="edge481_Node000002_Node000003" title=" " alt="" coords="624,571,643,456,674,302,694,224,717,153,742,95,769,55,792,39,795,43,773,59,746,98,722,155,700,225,680,303,648,457,629,572"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1calyx_1_1BuildCallInstance.html" title="Builds instance for the calyx.invoke and calyx.group in order to initialize the instance." alt="" coords="771,70,985,95"/>
+<area shape="poly" id="edge482_Node000002_Node000004" title=" " alt="" coords="618,571,622,479,629,418,642,353,661,285,687,219,723,158,769,105,785,93,788,98,772,109,727,161,692,222,666,287,647,354,635,419,628,479,623,572"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1calyx_1_1BuildReturnRegs.html" title="Builds registers for the return statement of the program and constant assignments to the component re..." alt="" coords="773,119,983,145"/>
+<area shape="poly" id="edge483_Node000002_Node000005" title=" " alt="" coords="619,571,627,487,636,433,649,375,668,315,694,257,727,203,769,155,788,143,791,147,772,159,731,206,698,259,673,317,654,376,641,434,632,488,625,572"/>
+<area shape="rect" id="Node000006" href="$classcirct_1_1calyx_1_1ConvertIndexTypes.html" title="Converts all index&#45;typed operations and values to i32 values." alt="" coords="784,169,972,209"/>
+<area shape="poly" id="edge484_Node000002_Node000006" title=" " alt="" coords="622,571,634,499,659,404,678,354,703,305,733,260,769,219,786,207,789,212,772,223,737,263,707,308,683,356,664,406,639,500,627,572"/>
+<area shape="rect" id="Node000007" href="$classcirct_1_1pipelinetocalyx_1_1BuildControl.html" title="Builds a control schedule by traversing the CFG of the function and associating this with the previou..." alt="" coords="799,233,957,273"/>
+<area shape="poly" id="edge485_Node000002_Node000007" title=" " alt="" coords="625,571,641,510,668,432,687,392,710,352,737,316,769,283,797,266,800,271,772,287,741,319,715,355,692,394,673,434,646,511,630,572"/>
+<area shape="rect" id="Node000008" href="$classcirct_1_1pipelinetocalyx_1_1BuildOpGroups.html" title="Iterate through the operations of a source function and instantiate components or primitives based on..." alt="" coords="799,297,957,337"/>
+<area shape="poly" id="edge486_Node000002_Node000008" title=" " alt="" coords="629,571,648,522,678,461,718,400,742,372,769,347,797,331,800,336,772,351,746,376,722,403,682,464,653,524,634,573"/>
+<area shape="rect" id="Node000009" href="$classcirct_1_1pipelinetocalyx_1_1BuildPipelineGroups.html" title="Builds groups for assigning registers for pipeline stages." alt="" coords="797,361,959,401"/>
+<area shape="poly" id="edge487_Node000002_Node000009" title=" " alt="" coords="636,572,658,534,688,491,726,448,769,411,796,397,798,402,772,416,729,452,692,495,662,537,640,574"/>
+<area shape="rect" id="Node000010" href="$classcirct_1_1pipelinetocalyx_1_1BuildPipelineRegs.html" title="Builds registers for each pipeline stage in the program." alt="" coords="799,425,957,465"/>
+<area shape="poly" id="edge488_Node000002_Node000010" title=" " alt="" coords="647,573,701,523,734,497,769,475,797,463,799,467,772,480,737,502,704,527,651,577"/>
+<area shape="rect" id="Node000011" href="$classcirct_1_1pipelinetocalyx_1_1BuildWhileGroups.html" title="In BuildWhileGroups, a register is created for each iteration argumenet of the while op." alt="" coords="799,489,957,529"/>
+<area shape="poly" id="edge489_Node000002_Node000011" title=" " alt="" coords="676,577,770,539,805,527,807,532,772,544,678,582"/>
+<area shape="rect" id="Node000012" href="$classcirct_1_1pipelinetocalyx_1_1CleanupFuncOps.html" title="Erases FuncOp operations." alt="" coords="799,553,957,593"/>
+<area shape="poly" id="edge490_Node000002_Node000012" title=" " alt="" coords="729,589,798,580,799,586,730,594"/>
+<area shape="rect" id="Node000013" href="$structcirct_1_1pipelinetocalyx_1_1FuncOpConversion.html" title="Creates a new Calyx component for each FuncOp in the program." alt="" coords="799,617,957,657"/>
+<area shape="poly" id="edge491_Node000002_Node000013" title=" " alt="" coords="730,616,799,625,798,630,729,622"/>
+<area shape="rect" id="Node000014" href="$classcirct_1_1pipelinetocalyx_1_1LateSSAReplacement.html" title="LateSSAReplacement contains various functions for replacing SSA values that were not replaced during ..." alt="" coords="793,681,963,721"/>
+<area shape="poly" id="edge492_Node000002_Node000014" title=" " alt="" coords="708,628,724,635,748,651,772,667,801,679,799,684,769,672,745,656,721,640,706,633"/>
+<area shape="rect" id="Node000015" href="$classcirct_1_1scftocalyx_1_1BuildControl.html" title="Builds a control schedule by traversing the CFG of the function and associating this with the previou..." alt="" coords="812,745,944,785"/>
+<area shape="poly" id="edge493_Node000002_Node000015" title=" " alt="" coords="718,630,725,635,743,660,749,685,755,709,772,731,791,744,813,752,811,757,789,748,769,735,750,711,744,686,738,662,721,639,715,635"/>
+<area shape="rect" id="Node000016" href="$classcirct_1_1scftocalyx_1_1BuildForGroups.html" title="In BuildForGroups, a register is created for the iteration argument of the for op." alt="" coords="812,809,944,849"/>
+<area shape="poly" id="edge494_Node000002_Node000016" title=" " alt="" coords="720,631,725,636,740,656,747,677,749,717,751,757,758,776,773,795,791,809,813,818,811,823,788,814,769,799,753,779,746,758,744,718,742,678,735,658,721,639,716,635"/>
+<area shape="rect" id="Node000017" href="$classcirct_1_1scftocalyx_1_1BuildIfGroups.html" title=" " alt="" coords="812,873,944,913"/>
+<area shape="poly" id="edge495_Node000002_Node000017" title=" " alt="" coords="721,632,725,636,744,664,752,693,752,722,749,750,746,778,746,805,754,832,773,860,791,874,813,883,811,888,788,878,769,863,749,834,741,806,741,777,744,749,747,721,747,694,739,667,721,639,718,636"/>
+<area shape="rect" id="Node000018" href="$classcirct_1_1scftocalyx_1_1BuildOpGroups.html" title="Iterate through the operations of a source function and instantiate components or primitives based on..." alt="" coords="812,937,944,977"/>
+<area shape="poly" id="edge496_Node000002_Node000018" title=" " alt="" coords="722,632,725,636,748,673,757,710,755,746,749,782,743,817,742,853,750,888,773,924,791,938,813,947,811,952,788,943,769,927,745,890,736,853,738,817,744,781,750,746,751,710,743,675,721,639,718,636"/>
+<area shape="rect" id="Node000019" href="$classcirct_1_1scftocalyx_1_1BuildWhileGroups.html" title="In BuildWhileGroups, a register is created for each iteration argumenet of the while op." alt="" coords="809,1001,947,1041"/>
+<area shape="poly" id="edge497_Node000002_Node000019" title=" " alt="" coords="722,633,725,636,741,658,752,681,761,726,758,770,749,814,740,857,737,900,746,944,757,966,773,988,789,1001,809,1011,807,1015,786,1006,769,991,752,968,741,946,732,901,735,857,744,813,753,770,756,727,747,683,737,661,721,639,718,636"/>
+<area shape="rect" id="Node000020" href="$classcirct_1_1scftocalyx_1_1CleanupFuncOps.html" title="Erases FuncOp operations." alt="" coords="812,1065,944,1105"/>
+<area shape="poly" id="edge498_Node000002_Node000020" title=" " alt="" coords="722,633,725,636,744,663,756,690,763,716,766,743,761,795,749,846,737,897,732,948,735,974,742,999,754,1025,773,1052,791,1066,813,1076,811,1081,788,1071,769,1055,749,1028,737,1001,729,975,727,948,732,896,744,845,756,794,761,743,758,717,751,691,739,665,721,639,718,636"/>
+<area shape="rect" id="Node000021" href="$structcirct_1_1scftocalyx_1_1FuncOpConversion.html" title="Creates a new Calyx component for each FuncOp in the program." alt="" coords="807,1129,949,1169"/>
+<area shape="poly" id="edge499_Node000002_Node000021" title=" " alt="" coords="722,633,725,636,746,667,760,698,768,729,771,759,764,819,749,878,734,937,727,996,730,1025,738,1055,751,1085,773,1116,788,1129,808,1138,805,1143,785,1134,769,1119,747,1088,733,1057,725,1026,722,996,729,936,744,877,759,818,765,759,763,730,755,700,742,670,721,639,718,636"/>
+<area shape="rect" id="Node000022" href="$classcirct_1_1scftocalyx_1_1LateSSAReplacement.html" title="LateSSAReplacement contains various functions for replacing SSA values that were not replaced during ..." alt="" coords="797,1193,959,1233"/>
+<area shape="poly" id="edge500_Node000002_Node000022" title=" " alt="" coords="722,633,725,636,737,657,746,683,754,749,754,826,749,910,745,993,744,1070,752,1134,761,1160,773,1180,798,1199,795,1203,769,1183,756,1162,747,1135,739,1070,739,993,744,909,748,826,749,749,741,685,732,659,720,639,718,636"/>
+<area shape="rect" id="Node000024" href="$classcirct_1_1calyx_1_1RewriteMemoryAccesses.html" title="This pass rewrites memory accesses that have a width mismatch." alt="" coords="517,649,723,689"/>
+<area shape="poly" id="edge502_Node000023_Node000024" title=" " alt="" coords="445,667,517,667,517,672,445,672"/>
+</map>

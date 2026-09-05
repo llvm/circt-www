@@ -1,0 +1,38 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Tools/circt&#45;verilog&#45;lsp&#45;server/VerilogServerImpl/LSPDiagnosticClient.cpp" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Tools/circt&#45;verilog&#45;lsp&#45;server/VerilogServerImpl/LSPDiagnosticClient.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="605,5,817,89"/>
+<area shape="rect" id="Node000002" href="$LSPDiagnosticClient_8h.html" title=" " alt="" coords="629,137,793,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="714,89,714,124,708,124,708,89"/>
+<area shape="rect" id="Node000003" href="$VerilogDocument_8h.html" title=" " alt="" coords="538,218,684,243"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="698,165,638,211,635,207,695,161"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="708,211,916,251"/>
+<area shape="poly" id="edge18_Node000002_Node000018" title=" " alt="" coords="727,161,778,200,775,204,724,165"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="268,372,444,397"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="537,237,396,245,230,257,87,276,38,288,13,300,8,311,13,322,28,334,50,345,111,361,183,371,255,377,254,383,182,377,110,366,48,350,25,339,9,326,3,311,9,297,36,283,86,271,230,252,395,239,537,232"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="23,299,178,324"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="538,246,189,299,188,294,537,241"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="202,299,404,324"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="567,246,361,298,360,293,565,241"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="428,299,602,324"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="598,246,541,292,538,288,595,241"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="626,299,790,324"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="627,241,685,288,682,292,624,246"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="815,299,972,324"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="653,241,840,293,839,298,651,246"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="997,299,1198,324"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="660,241,697,248,854,274,996,294,995,300,853,279,696,253,659,246"/>
+<area shape="rect" id="Node000011" href="$VerilogIndex_8h.html" title=" " alt="" coords="1223,299,1338,324"/>
+<area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="659,241,697,248,838,266,951,274,1064,281,1210,296,1209,301,1064,287,950,280,838,271,696,253,658,246"/>
+<area shape="poly" id="edge11_Node000011_Node000004" title=" " alt="" coords="1223,325,1211,327,1002,348,793,363,458,382,458,377,793,358,1001,342,1211,321,1222,320"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="741,372,886,397"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="1223,325,1211,327,900,373,900,368,1210,321,1222,319"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="910,372,1074,397"/>
+<area shape="poly" id="edge13_Node000011_Node000013" title=" " alt="" coords="1235,327,1053,371,1051,366,1233,321"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="1098,372,1265,397"/>
+<area shape="poly" id="edge14_Node000011_Node000014" title=" " alt="" coords="1266,326,1210,366,1207,362,1263,322"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="1290,372,1466,397"/>
+<area shape="poly" id="edge15_Node000011_Node000015" title=" " alt="" coords="1297,322,1352,361,1349,366,1294,326"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="1490,372,1673,397"/>
+<area shape="poly" id="edge16_Node000011_Node000016" title=" " alt="" coords="1329,321,1520,366,1519,371,1328,327"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="1697,372,1872,397"/>
+<area shape="poly" id="edge17_Node000011_Node000017" title=" " alt="" coords="1338,318,1690,367,1689,373,1338,323"/>
+</map>

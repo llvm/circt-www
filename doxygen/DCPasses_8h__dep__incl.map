@@ -1,0 +1,13 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/DC/DCPasses.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/DC/DCPasses.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="483,5,671,75"/>
+<area shape="rect" id="Node000002" href="$InitAllPasses_8h.html" title=" " alt="" coords="5,130,208,185"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="470,67,221,125,194,133,192,127,219,120,469,61"/>
+<area shape="rect" id="Node000003" href="$DC_8cpp.html" title=" " alt="" coords="233,130,421,185"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="493,83,385,132,382,128,491,78"/>
+<area shape="rect" id="Node000004" href="$DCToHW_8cpp.html" title=" " alt="" coords="445,130,710,185"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="580,89,580,130,575,130,575,89"/>
+<area shape="rect" id="Node000005" href="$DCMaterialization_8cpp.html" title=" " alt="" coords="734,123,925,192"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="664,78,757,120,755,125,662,83"/>
+<area shape="rect" id="Node000006" href="$DCPrintDot_8cpp.html" title=" " alt="" coords="949,123,1139,192"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="685,61,807,88,938,120,949,123,947,128,937,125,806,93,684,66"/>
+</map>

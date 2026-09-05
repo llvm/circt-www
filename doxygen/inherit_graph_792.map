@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,55,57,80"/>
+<area shape="rect" id="Node000001" href="$classcirct_1_1firrtl_1_1FIRRTLType.html" title=" " alt="" coords="131,5,298,31"/>
+<area shape="poly" id="edge565_Node000000_Node000001" title=" " alt="" coords="70,51,105,39,150,28,151,33,106,45,71,56"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1moore_1_1UnpackedType.html" title="An unpacked SystemVerilog type." alt="" coords="113,55,316,80"/>
+<area shape="poly" id="edge567_Node000000_Node000003" title=" " alt="" coords="71,65,113,65,113,70,71,70"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1systemc_1_1ValueBaseType.html" title="This provides a common base class for all SystemC integers." alt="" coords="105,104,324,129"/>
+<area shape="poly" id="edge569_Node000000_Node000005" title=" " alt="" coords="71,78,106,89,155,101,154,107,105,94,70,83"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1firrtl_1_1PropertyType.html" title=" " alt="" coords="374,5,553,31"/>
+<area shape="poly" id="edge566_Node000001_Node000002" title=" " alt="" coords="312,15,374,15,374,21,312,21"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1moore_1_1PackedType.html" title="A packed SystemVerilog type." alt="" coords="372,55,555,80"/>
+<area shape="poly" id="edge568_Node000003_Node000004" title=" " alt="" coords="330,65,372,65,372,70,330,70"/>
+</map>

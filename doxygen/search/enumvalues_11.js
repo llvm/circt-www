@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['samevectornoshuffle_0',['SAMEVECTORNOSHUFFLE',['../ArcCostModel_8cpp.html#ae6f308c07906a78829e62cd2dfb40167acbb44a900230311ba35454e63ca355da',1,'ArcCostModel.cpp']]],
+  ['samevectorshufflecost_1',['SAMEVECTORSHUFFLECOST',['../ArcCostModel_8cpp.html#ae6f308c07906a78829e62cd2dfb40167a4d4c1d7c9bbcb3065ae24f2e07bd648d',1,'ArcCostModel.cpp']]],
+  ['sat_2',['Sat',['../structcirct_1_1CadicalSATSolverOptions.html#a23ffc30ef681d44a11d8cd0a1dabb4cea13c7d2d737f81f7bf89aed9fbcd0ad55',1,'circt::CadicalSATSolverOptions']]],
+  ['scope_5fresolution_3',['SCOPE_RESOLUTION',['../namespacecirct_1_1ExportSystemC.html#acab2cdae3cb113ec74ad5d2fdf687f75a123e3ac7b7d602598b239c61b88f83f3',1,'circt::ExportSystemC']]],
+  ['shl_4',['SHL',['../namespacecirct_1_1ExportSystemC.html#acab2cdae3cb113ec74ad5d2fdf687f75abb0b9165d75b1fd27d0a869b036baa3c',1,'circt::ExportSystemC']]],
+  ['shr_5',['SHR',['../namespacecirct_1_1ExportSystemC.html#acab2cdae3cb113ec74ad5d2fdf687f75a10ab606ab9efe239a011d327d9301edd',1,'circt::ExportSystemC']]],
+  ['sink_6',['Sink',['../namespacecirct_1_1firrtl.html#a851344b9f9e790b2bbe2a5197ecb057fa1eb558b5d865ebabb06575f5f0042599',1,'circt::firrtl']]],
+  ['sizeof_7',['SIZEOF',['../namespacecirct_1_1ExportSystemC.html#acab2cdae3cb113ec74ad5d2fdf687f75a29852d83fcc6ce67f60b688cac169530',1,'circt::ExportSystemC']]],
+  ['source_8',['Source',['../namespacecirct_1_1firrtl.html#a851344b9f9e790b2bbe2a5197ecb057faf31bbdd1b3e85bccd652680e16935819',1,'circt::firrtl']]],
+  ['space_9',['space',['../namespacecirct_1_1pretty.html#a063614949ecf55fe19f1f07eb2bed148aff2364a0be3d20e46cc69efb36afe9a5',1,'circt::pretty']]],
+  ['spilllargetermswithnamehints_10',['SpillLargeTermsWithNamehints',['../structcirct_1_1LoweringOptions.html#a34431e4ae1701b8a519934bcbd55098ca201626e8da6d74a0bd32c1d19102c8c4',1,'circt::LoweringOptions']]],
+  ['stallable_11',['Stallable',['../namespacecirct_1_1pipeline.html#a5bbc0b6426f961e6debb0cc323230297ac58e26113c3b9a8ccda883674b5152a1',1,'circt::pipeline']]],
+  ['staticsingleconnect_12',['StaticSingleConnect',['../namespacecirct_1_1firrtl.html#a3237321c0668752769bbe5e74d414054a93ee8fa8a0a7f1fa6875f126bf384056',1,'circt::firrtl']]],
+  ['string_13',['String',['../classcirct_1_1pretty_1_1Token.html#a6f59661113154d9573f08097308529e6a27118326006d3829667a400ad23d5d98',1,'circt::pretty::Token']]],
+  ['strip_14',['strip',['../classcirct_1_1firtool_1_1FirtoolOptions.html#a211620eab01608ad43ebddb5cb005a75a031b9e77f5c85a66723c832a06ba2735',1,'circt::firtool::FirtoolOptions::Strip'],['../namespacecirct_1_1firrtl_1_1PreserveValues.html#aefa8e8f1a6031b39d76195ec3007a549a6533eadf8707b9e5d55e6f1692986f0d',1,'circt::firrtl::PreserveValues::Strip'],['../namespacecirct_1_1firrtl.html#a49aa1bf0d9ffcc19a7c0f65ec9217030a031b9e77f5c85a66723c832a06ba2735',1,'circt::firrtl::Strip']]],
+  ['sub_15',['SUB',['../namespacecirct_1_1ExportSystemC.html#acab2cdae3cb113ec74ad5d2fdf687f75a241dd841abade20fcb27b8a9f494e1eb',1,'circt::ExportSystemC']]],
+  ['subscript_16',['SUBSCRIPT',['../namespacecirct_1_1ExportSystemC.html#acab2cdae3cb113ec74ad5d2fdf687f75aacc4ea7681c2acbf273071a100b23005',1,'circt::ExportSystemC']]],
+  ['sva_17',['SVA',['../namespacecirct_1_1firrtl.html#aa6954934b4ed83a99a8b440c013540f8abed610484e27203ea260dc59e683fcfe',1,'circt::firrtl']]]
+];

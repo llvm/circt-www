@@ -1,0 +1,34 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Seq/SeqEnums.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Seq/SeqEnums.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1253,5,1441,75"/>
+<area shape="rect" id="Node000002" href="$SeqPasses_8h.html" title=" " alt="" coords="1253,123,1441,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1350,89,1350,122,1345,122,1345,89"/>
+<area shape="rect" id="Node000003" href="$circt_2Firtool_2Firtool_8h.html" title=" " alt="" coords="72,247,279,302"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1240,163,1060,169,825,182,562,206,429,222,298,243,264,250,263,245,298,237,428,217,562,201,825,177,1060,164,1240,158"/>
+<area shape="rect" id="Node000005" href="$Firtool_2Firtool_8cpp.html" title=" " alt="" coords="223,357,411,412"/>
+<area shape="poly" id="edge15_Node000002_Node000005" title=" " alt="" coords="1240,163,1005,169,723,182,590,192,476,206,390,222,361,232,344,242,326,267,317,298,314,329,315,357,310,357,309,329,311,297,321,265,340,238,359,227,389,217,475,200,590,187,723,177,1005,163,1240,157"/>
+<area shape="rect" id="Node000006" href="$InitAllPasses_8h.html" title=" " alt="" coords="354,247,557,302"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="1240,167,1105,176,937,190,753,212,571,243,539,250,538,245,569,237,753,207,936,185,1104,170,1239,161"/>
+<area shape="rect" id="Node000007" href="$Seq_8cpp.html" title=" " alt="" coords="581,247,769,302"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="1240,172,1027,198,904,218,783,243,754,250,753,245,781,237,903,213,1026,193,1239,166"/>
+<area shape="rect" id="Node000008" href="$ImportVerilog_8cpp.html" title=" " alt="" coords="794,240,1005,309"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="1241,187,1019,243,1005,246,1004,241,1017,237,1239,182"/>
+<area shape="rect" id="Node000009" href="$ExternalizeClockGate_8cpp.html" title=" " alt="" coords="1029,240,1225,309"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="1272,201,1193,242,1190,237,1270,196"/>
+<area shape="rect" id="Node000010" href="$HWMemSimImpl_8cpp.html" title=" " alt="" coords="1249,240,1445,309"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="1350,206,1350,240,1345,240,1345,206"/>
+<area shape="rect" id="Node000011" href="$LowerSeqCompRegCE_8cpp.html" title=" " alt="" coords="1469,240,1665,309"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="1425,196,1504,237,1502,242,1422,201"/>
+<area shape="rect" id="Node000012" href="$LowerSeqFIFO_8cpp.html" title=" " alt="" coords="1689,240,1885,309"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="1455,181,1679,237,1690,241,1688,246,1677,243,1454,186"/>
+<area shape="rect" id="Node000013" href="$LowerSeqHLMem_8cpp.html" title=" " alt="" coords="1909,240,2105,309"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="1455,167,1662,194,1781,214,1899,237,1910,240,1909,245,1897,243,1780,219,1661,199,1455,172"/>
+<area shape="rect" id="Node000014" href="$LowerSeqShiftReg_8cpp.html" title=" " alt="" coords="2129,240,2325,309"/>
+<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="1455,161,1589,170,1755,184,1937,207,2119,237,2130,240,2129,245,2117,243,1937,212,1755,190,1589,175,1455,166"/>
+<area shape="rect" id="Node000015" href="$RegOfVecToMem_8cpp.html" title=" " alt="" coords="2349,240,2545,309"/>
+<area shape="poly" id="edge14_Node000002_Node000015" title=" " alt="" coords="1455,157,1625,163,1846,176,2092,200,2217,217,2338,237,2350,240,2349,245,2338,243,2216,222,2092,205,1846,181,1625,168,1455,163"/>
+<area shape="rect" id="Node000016" href="$pipelines_8cpp.html" title=" " alt="" coords="2570,247,2797,302"/>
+<area shape="poly" id="edge16_Node000002_Node000016" title=" " alt="" coords="1455,156,1660,160,1935,173,2246,197,2404,215,2558,237,2594,245,2593,250,2558,243,2403,220,2245,202,1935,178,1660,166,1455,162"/>
+<area shape="rect" id="Node000004" href="$CAPI_2Firtool_2Firtool_8cpp.html" title=" " alt="" coords="5,357,199,412"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="152,315,122,359,118,356,147,312"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="222,308,284,355,280,359,219,312"/>
+</map>

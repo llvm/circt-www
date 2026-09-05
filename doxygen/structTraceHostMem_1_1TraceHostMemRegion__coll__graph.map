@@ -1,0 +1,17 @@
+<map id="TraceHostMem::TraceHostMemRegion" name="TraceHostMem::TraceHostMemRegion">
+<area shape="rect" id="Node000001" title=" " alt="" coords="597,88,821,128"/>
+<area shape="rect" id="Node000002" href="$structesi_1_1services_1_1HostMem_1_1HostMemRegion.html" title="RAII memory region for host memory." alt="" coords="341,5,516,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="511,47,641,85,640,90,510,52"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="398,70,459,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="474,84,597,95,597,101,473,89"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="399,119,459,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="473,129,573,124,597,122,597,127,574,129,473,134"/>
+<area shape="rect" id="Node000005" href="$structesi_1_1backends_1_1trace_1_1TraceAccelerator_1_1Impl.html" title=" " alt="" coords="341,169,516,209"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="516,163,573,147,643,126,644,131,574,152,517,168"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="59,117,151,142"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="165,133,238,142,318,156,361,167,360,172,317,161,237,147,164,138"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="79,177,130,202"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="144,187,341,187,341,192,144,192"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="5,227,204,267"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="217,224,317,207,340,202,341,208,318,212,218,230"/>
+</map>

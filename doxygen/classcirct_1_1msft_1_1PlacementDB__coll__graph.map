@@ -1,0 +1,17 @@
+<map id="circt::msft::PlacementDB" name="circt::msft::PlacementDB">
+<area shape="rect" id="Node000001" title="A data structure to contain both the locations of the primitives on the device and instance assignmen..." alt="" coords="272,181,455,207"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,111,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,120,227,155,318,179,317,184,225,160,108,125"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="135,93,223,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="218,122,339,179,337,183,216,127"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="248,93,479,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="366,133,366,181,361,181,361,133"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="318,5,409,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="366,45,366,93,361,93,361,45"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="503,93,746,119"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="577,126,399,184,398,179,576,121"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="575,5,675,31"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="627,45,627,93,622,93,622,45"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="770,93,821,119"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="758,124,701,143,636,160,543,177,455,187,454,182,542,171,635,155,699,138,756,119"/>
+</map>

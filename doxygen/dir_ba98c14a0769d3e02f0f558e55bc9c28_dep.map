@@ -1,0 +1,13 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Emit" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Emit">
+<area shape="rect" id="node1" href="dir_bbc986687dd9656ae8e748f49ab15b10.html" title="HW" alt="" coords="31,125,76,151"/>
+<area shape="rect" id="node2" href="dir_ba98c14a0769d3e02f0f558e55bc9c28.html" title="Emit" alt="" coords="27,52,79,77"/>
+<area shape="poly" id="edge2" href="dir_000068_000101.html" alt="" coords="56,78,56,112,51,112,51,78"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000068_000101.html" title="1" alt="" coords="57,100,66,114"/>
+<area shape="rect" id="node3" href="dir_0568441755aceafcfdf1bfdd141d8b0e.html" title="Support" alt="" coords="101,125,173,151"/>
+<area shape="poly" id="edge1" href="dir_000068_000181.html" alt="" coords="69,75,115,114,111,118,65,79"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000068_000181.html" title="4" alt="" coords="110,100,120,114"/>
+<area shape="rect" id="node4" href="dir_f9533008dd0897b8723b163c578c74fc.html" title="Reduce" alt="" coords="198,125,269,151"/>
+<area shape="poly" id="edge3" href="dir_000068_000156.html" alt="" coords="80,74,193,118,191,123,79,79"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000068_000156.html" title="1" alt="" coords="186,103,195,118"/>
+<area shape="rect" id="clust1" href="dir_7d8a60676879864b2b723a77f7e28ce9.html" title="Dialect" alt="" coords="16,16,91,161"/>
+</map>

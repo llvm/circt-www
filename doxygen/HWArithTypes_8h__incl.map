@@ -1,0 +1,21 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/HWArith/HWArithTypes.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/HWArith/HWArithTypes.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="579,5,791,75"/>
+<area shape="rect" id="Node000002" href="$LLVM_8h.html" title=" " alt="" coords="207,130,361,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="579,70,344,129,342,124,578,65"/>
+<area shape="rect" id="Node000005" href="$HWArithDialect_8h.html" title=" " alt="" coords="619,130,752,155"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="688,75,688,116,683,116,683,75"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="776,123,933,163"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="744,73,812,113,810,118,741,77"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,218,157,243"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="258,158,123,215,121,210,256,153"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="181,218,387,243"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="287,156,287,204,281,204,281,156"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="411,218,597,243"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="662,158,542,214,540,210,660,153"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="622,218,749,243"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="688,156,688,204,683,204,683,156"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="773,211,933,251"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="709,153,805,202,803,207,707,158"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="958,211,1117,251"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="733,153,947,205,946,210,732,158"/>
+</map>

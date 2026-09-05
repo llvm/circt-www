@@ -1,0 +1,5 @@
+<map id="HWConstantifier" name="HWConstantifier">
+<area shape="rect" id="Node000001" title="A sample reduction pattern that replaces integer operations with a constant zero of their type." alt="" coords="5,79,133,104"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="8,5,131,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,44,72,79,67,79,67,44"/>
+</map>

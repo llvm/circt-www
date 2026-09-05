@@ -1,0 +1,5 @@
+<map id="OMEvaluator" name="OMEvaluator">
+<area shape="rect" id="Node000001" title="A value type for use in C APIs that just wraps a pointer to an Evaluator." alt="" coords="5,93,112,119"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="28,5,89,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,45,61,93,56,93,56,45"/>
+</map>

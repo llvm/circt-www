@@ -1,0 +1,9 @@
+<map id="circt::arc::StateInfo" name="circt::arc::StateInfo">
+<area shape="rect" id="Node000001" title="Gathers information about a given Arc state." alt="" coords="39,137,184,163"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,57,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="41,43,55,77,75,112,98,135,94,139,71,115,50,79,36,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="82,5,141,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="114,44,114,137,109,137,109,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="165,5,247,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="200,45,183,79,160,115,132,139,128,135,156,112,179,77,195,43"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="StateElimination" name="StateElimination">
+<area shape="rect" id="Node000001" title="A sample reduction pattern that converts arc.state operations to the simpler arc.call operation and r..." alt="" coords="53,360,183,385"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="47,271,189,311"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,324,121,360,115,360,115,324"/>
+<area shape="rect" id="Node000003" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="51,93,174,119"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="116,132,120,271,115,271,111,133"/>
+<area shape="rect" id="Node000005" href="$structcirct_1_1OpReduction.html" title="A reduction pattern for a specific operation." alt="" coords="134,168,275,208"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="138,125,185,166,181,170,134,129"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,5,220,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="115,45,115,93,110,93,110,45"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="181,220,136,272,132,269,177,217"/>
+</map>

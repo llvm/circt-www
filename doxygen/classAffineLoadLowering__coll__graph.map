@@ -1,0 +1,13 @@
+<map id="AffineLoadLowering" name="AffineLoadLowering">
+<area shape="rect" id="Node000001" title="Apply the affine map from an &#39;affine.load&#39; operation to its operands, and feed the results to a newly..." alt="" coords="1235,45,1385,70"/>
+<area shape="rect" id="Node000002" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="824,5,1017,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1031,32,1234,49,1234,54,1031,37"/>
+<area shape="rect" id="Node000003" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="378,5,571,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="585,23,824,23,824,28,585,28"/>
+<area shape="rect" id="Node000004" href="$structcirct_1_1analysis_1_1MemoryDependenceAnalysis.html" title="MemoryDependenceAnalysis traverses any AffineForOps in the FuncOp body and checks for affine memory a..." alt="" coords="793,69,1048,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1062,78,1210,67,1234,64,1235,70,1211,72,1062,84"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="325,69,624,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="638,87,793,87,793,92,638,92"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,77,96,102"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="110,87,325,87,325,92,110,92"/>
+</map>

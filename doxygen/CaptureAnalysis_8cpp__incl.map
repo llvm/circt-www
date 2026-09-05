@@ -1,0 +1,19 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Conversion/ImportVerilog/CaptureAnalysis.cpp" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Conversion/ImportVerilog/CaptureAnalysis.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="439,5,649,75"/>
+<area shape="rect" id="Node000002" href="$CaptureAnalysis_8h.html" title=" " alt="" coords="203,123,343,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="447,77,321,121,319,116,445,72"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="368,123,531,148"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="512,77,473,115,469,111,508,73"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="555,123,722,148"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="580,73,619,111,615,115,576,77"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="746,123,974,148"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="650,70,809,116,807,121,649,75"/>
+<area shape="rect" id="Node000003" href="$LLVM_8h.html" title=" " alt="" coords="105,196,260,221"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="260,150,210,189,207,185,257,146"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="285,196,443,221"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="290,146,340,185,337,189,286,150"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,269,157,295"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="168,224,111,263,108,259,165,219"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="181,269,387,295"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="200,219,258,259,255,263,197,224"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="circt::seq::FirMemory" name="circt::seq::FirMemory">
+<area shape="rect" id="Node000001" title="Helper structure carrying information about FIR memory generated ops." alt="" coords="327,284,485,309"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,65,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="32,132,27,162,26,196,33,230,40,245,50,258,63,264,87,270,158,279,327,290,326,295,157,285,86,275,61,269,47,262,36,248,28,231,21,196,22,161,26,132"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="169,93,224,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,132,188,161,187,195,193,229,209,258,227,269,255,278,327,288,326,294,254,283,225,274,205,262,188,231,182,196,183,161,187,132"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="306,93,365,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="331,133,326,160,323,193,327,227,339,259,351,272,368,282,365,286,348,276,334,261,321,229,318,193,320,160,326,132"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="389,93,564,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="480,133,474,194,466,228,451,261,440,275,427,286,424,282,436,271,446,259,460,227,469,193,475,132"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="427,5,527,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="479,45,479,93,474,93,474,45"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="589,93,671,119"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="624,132,580,262,564,271,541,278,486,289,485,284,540,273,562,266,576,258,619,131"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="707,93,758,119"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="739,133,740,163,736,198,726,232,705,262,690,272,668,280,612,291,548,297,486,299,485,293,548,291,611,286,666,275,687,267,701,258,721,230,731,197,734,162,733,133"/>
+</map>

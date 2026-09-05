@@ -1,0 +1,7 @@
+<map id="BlockControlTerm" name="BlockControlTerm">
+<area shape="rect" id="Node000001" title="Holds information about an handshake &quot;basic block terminator&quot; control operation." alt="" coords="28,93,165,119"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,92,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,41,92,91,88,94,59,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="117,5,175,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="135,44,106,94,101,91,130,41"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="esi::AcceleratorServiceThread" name="esi::AcceleratorServiceThread">
+<area shape="rect" id="Node000001" title="Background thread which services various requests." alt="" coords="367,104,583,129"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="65,5,191,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,29,251,39,343,66,442,101,440,107,342,71,250,45,204,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="96,55,160,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,71,343,94,392,101,391,107,342,99,173,76"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="96,104,160,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="174,114,367,114,367,119,174,119"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,153,251,237"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="264,162,417,127,418,132,265,167"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="49,262,207,302"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="220,258,250,248,311,218,369,184,454,127,457,132,371,189,313,223,252,252,221,263"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="circt::TypeConversionPattern" name="circt::TypeConversionPattern">
+<area shape="rect" id="Node000001" title="Generic pattern which replaces an operation by one of the same operation name, but with converted att..." alt="" coords="5,79,212,104"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="21,5,196,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,44,111,79,106,79,106,44"/>
+</map>

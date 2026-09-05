@@ -1,0 +1,9 @@
+<map id="circt::calyx::WhileOpInterface&lt; T &gt;" name="circt::calyx::WhileOpInterface&lt; T &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="96,168,348,193"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1calyx_1_1LoopInterface.html" title=" " alt="" coords="23,80,213,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,112,210,166,206,170,141,116"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1calyx_1_1BasicLoopInterface.html" title=" " alt="" coords="5,5,231,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="121,45,121,80,115,80,115,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="237,80,276,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="249,119,229,168,224,166,244,117"/>
+</map>

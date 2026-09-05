@@ -1,0 +1,7 @@
+<map id="ReduceNumPartialProducts" name="ReduceNumPartialProducts">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,197,204,223"/>
+<area shape="rect" id="Node000002" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="19,108,190,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,162,107,197,102,197,102,162"/>
+<area shape="rect" id="Node000003" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="19,5,190,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="107,59,107,108,102,108,102,59"/>
+</map>

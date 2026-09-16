@@ -1,0 +1,15 @@
+<map id="circt::scheduling::Problem" name="circt::scheduling::Problem">
+<area shape="rect" id="Node000001" title="This class models the most basic scheduling problem." alt="" coords="5,69,141,109"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1scheduling_1_1ChainingProblem.html" title="This class models the accumulation of physical propagation delays on combinational paths along SSA de..." alt="" coords="214,5,350,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,63,215,43,217,48,153,68"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1scheduling_1_1CyclicProblem.html" title="This class models a cyclic scheduling problem." alt="" coords="214,69,350,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="155,87,214,87,214,92,155,92"/>
+<area shape="rect" id="Node000006" href="$classcirct_1_1scheduling_1_1SharedOperatorsProblem.html" title="This class models a resource&#45;constrained scheduling problem." alt="" coords="189,133,375,173"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="153,111,217,131,215,136,151,116"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1scheduling_1_1ChainingCyclicProblem.html" title="This class models the accumulation of physical propagation delays on combinational paths along SSA de..." alt="" coords="423,37,595,77"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="364,34,423,43,422,48,364,40"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="364,75,422,67,423,72,364,80"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1scheduling_1_1ModuloProblem.html" title="This class models the modulo scheduling problem as the composition of the cyclic problem and the reso..." alt="" coords="441,117,577,157"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="364,104,441,120,440,126,363,109"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="388,143,440,139,441,145,389,148"/>
+</map>

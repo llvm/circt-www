@@ -1,0 +1,33 @@
+<map id="esi::ReadChannelPort" name="esi::ReadChannelPort">
+<area shape="rect" id="Node000001" title="A ChannelPort which reads data from the accelerator." alt="" coords="1021,349,1183,375"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1ChannelPort.html" title="Unidirectional channels are the basic communication primitive between the host and accelerator." alt="" coords="598,61,726,87"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="730,56,792,49,862,48,898,53,934,61,968,75,999,93,1029,121,1052,154,1070,191,1083,229,1098,299,1103,349,1098,349,1093,300,1078,230,1065,193,1047,157,1024,124,996,97,965,79,932,66,898,58,862,54,792,54,730,61"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1Type.html" title="Root class of the ESI type system." alt="" coords="258,29,337,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="351,44,598,66,598,71,350,49"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="13,5,71,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="85,19,258,36,257,41,85,25"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,55,79,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="92,60,257,43,258,49,93,65"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="204,79,391,119"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="404,95,514,90,598,81,598,86,515,95,405,101"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="625,111,699,136"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="713,122,786,125,869,132,946,144,977,153,999,164,1022,184,1042,207,1072,260,1091,311,1101,349,1096,350,1086,313,1067,263,1038,210,1018,187,996,168,975,158,945,149,869,137,785,130,713,127"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="539,160,785,215"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="799,182,849,187,900,196,951,211,999,233,1033,259,1061,291,1097,348,1092,351,1057,294,1029,263,996,238,949,216,899,201,848,192,799,187"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="607,239,717,264"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="732,248,790,250,858,257,929,270,998,290,1049,318,1088,347,1085,351,1047,322,996,295,928,275,857,263,790,256,731,253"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="559,289,765,329"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="779,308,886,314,998,329,1065,347,1064,352,997,334,885,320,779,313"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="593,353,731,379"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="745,363,1021,360,1021,365,745,368"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="632,405,692,431"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="706,417,837,415,917,409,997,397,1036,386,1071,372,1073,377,1038,391,998,402,918,414,837,421,706,422"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="637,455,687,480"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="701,468,760,470,835,469,917,459,996,437,1023,424,1048,407,1086,373,1090,377,1052,411,1026,428,998,442,918,464,835,474,760,476,701,473"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="585,504,739,559"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="753,536,811,536,873,530,937,515,996,490,1030,464,1058,432,1093,373,1097,376,1062,435,1034,468,999,495,938,520,874,535,811,541,753,542"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="630,583,694,608"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="708,600,770,606,845,604,885,599,924,590,961,576,996,557,1019,538,1038,515,1068,463,1086,412,1096,374,1101,376,1091,413,1072,465,1042,518,1022,542,999,562,963,581,925,595,886,605,845,610,769,611,708,606"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="591,632,733,657"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="726,658,787,667,858,669,895,665,931,657,965,645,996,627,1025,600,1048,567,1065,531,1078,494,1093,424,1098,375,1103,375,1098,425,1083,496,1070,534,1052,570,1029,603,999,631,967,650,932,662,896,670,859,674,787,672,725,663"/>
+</map>

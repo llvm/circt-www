@@ -1,0 +1,9 @@
+<map id="circt::scheduling::CyclicProblem" name="circt::scheduling::CyclicProblem">
+<area shape="rect" id="Node000001" title="This class models a cyclic scheduling problem." alt="" coords="113,93,249,133"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1scheduling_1_1ChainingCyclicProblem.html" title="This class models the accumulation of physical propagation delays on combinational paths along SSA de..." alt="" coords="5,181,177,221"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="153,145,113,183,109,179,149,141"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1scheduling_1_1ModuloProblem.html" title="This class models the modulo scheduling problem as the composition of the cyclic problem and the reso..." alt="" coords="202,181,338,221"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="212,141,252,179,248,183,209,145"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1scheduling_1_1Problem.html" title="This class models the most basic scheduling problem." alt="" coords="113,5,249,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,59,183,93,178,93,178,59"/>
+</map>

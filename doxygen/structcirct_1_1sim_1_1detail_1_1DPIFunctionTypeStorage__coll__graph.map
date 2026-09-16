@@ -1,0 +1,11 @@
+<map id="circt::sim::detail::DPIFunctionTypeStorage" name="circt::sim::detail::DPIFunctionTypeStorage">
+<area shape="rect" id="Node000001" title=" " alt="" coords="332,86,519,126"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="21,5,157,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,31,309,63,371,83,369,89,307,69,171,36"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="8,55,171,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,81,332,95,331,100,184,87"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,123,173,148"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="187,137,247,136,308,131,352,123,353,129,308,137,247,141,187,142"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="36,172,143,197"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="156,180,230,174,307,158,350,142,388,124,390,129,352,147,309,163,230,179,157,186"/>
+</map>

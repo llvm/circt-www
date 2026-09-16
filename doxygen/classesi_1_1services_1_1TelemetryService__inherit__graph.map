@@ -1,0 +1,5 @@
+<map id="esi::services::TelemetryService" name="esi::services::TelemetryService">
+<area shape="rect" id="Node000001" title="Service for retrieving telemetry data from the accelerator." alt="" coords="5,79,181,119"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1services_1_1Service.html" title="Parent class of all APIs modeled as &#39;services&#39;." alt="" coords="14,5,173,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,44,96,79,91,79,91,44"/>
+</map>

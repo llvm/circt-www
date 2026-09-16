@@ -1,0 +1,252 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>Getting Started with the CIRCT Project - CIRCT</title><meta name=description content="Circuit IR Compilers and Tools"><meta name=generator content="Hugo 0.101.0"><link href=https://circt.llvm.org/index.xml rel=alternate type=application/rss+xml><link rel=canonical href=https://circt.llvm.org/docs/GettingStarted/><link rel=stylesheet href=https://circt.llvm.org/css/theme.css><script src=https://use.fontawesome.com/releases/v5.0.6/js/all.js></script>
+<link rel=stylesheet href=https://circt.llvm.org/css/chroma.min.css><script src=https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js></script>
+<script src=https://circt.llvm.org/js/bundle.js></script>
+<script type=text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type=text/x-mathjax-config>
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$', '$'] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+    }
+  });
+</script><style>:root{}</style></head><body><div class=container><header><h1><div><img src=https://circt.llvm.org//circt-logo.svg width=40px align=absmiddle>
+CIRCT</div></h1><p class=description>Circuit IR Compilers and Tools</p></header><div class=global-menu><nav><ul><li class=parent><a href>Community<i class="fas fa-angle-right"></i></a><ul class=sub-menu><li class=child><a href=https://llvm.discourse.group/c/Projects-that-want-to-become-official-LLVM-Projects/circt/40>Forums</a></li><li class=child><a href=https://discord.gg/xS7Z362>Chat</a></li></ul></li><li class=parent><a href=https://github.com/llvm/circt/tree/main/>Source<i class="fas fa-angle-right"></i></a><ul class=sub-menu><li class=child><a href=/doxygen/>Doxygen</a></li><li class=child><a href=https://github.com/llvm/circt/tree/main/>GitHub</a></li></ul></li></ul></nav></div><div class=content-container><main><h1>Getting Started with the CIRCT Project</h1><h2 id=overview>Overview&nbsp;<a class=headline-hash href=#overview>¶</a></h2><p>Welcome to the CIRCT project!</p><p>&ldquo;CIRCT&rdquo; stands for &ldquo;Circuit IR Compilers and Tools&rdquo;. The CIRCT project is an
+(experimental!) effort looking to apply MLIR and the LLVM development
+methodology to the domain of hardware design tools.</p><p>CIRCT is an
+<a href=https://llvm.org/docs/DeveloperPolicy.html#incubating-new-projects>LLVM Incubator Project</a> and follows all LLVM policies. Before contributing, please review our
+<a href=/docs/DeveloperPolicy/>Developer Policy</a> and
+<a href=/docs/AIToolPolicy/>AI Tool Use Policy</a>.</p><p>Take a look at the following diagram, which gives a brief overview of the
+current
+<a href=https://circt.llvm.org/includes/img/dialects.svg>dialects and how they interact</a>:</p><p align=center><img src=https://circt.llvm.org/includes/img/dialectlegend.svg></p><p align=center><img src=https://circt.llvm.org/includes/img/dialects.svg></p><h2 id=setting-this-up>Setting this up&nbsp;<a class=headline-hash href=#setting-this-up>¶</a></h2><p>These commands can be used to setup CIRCT project:</p><ol><li><strong>Install Dependencies</strong> of LLVM/MLIR according to
+<a href=https://mlir.llvm.org/getting_started/>the
+instructions</a>, including cmake and
+ninja.</li></ol><p><em>Note:</em> CIRCT is known to build with at least GCC 9.4 and Clang 13.0.1, but
+older versions may not be supported. It is recommended to use the same C++
+toolchain to compile both LLVM and CIRCT to avoid potential issues.</p><p><em>Recommendation:</em> In order to greatly reduce memory usage during linking, we
+recommend using the LLVM linker
+<a href=https://lld.llvm.org/><code>lld</code></a>.</p><p>If you plan to use the Python bindings, you should start by reading
+<a href=https://mlir.llvm.org/docs/Bindings/Python/#building>the
+instructions</a> for building
+the MLIR Python bindings, which describe extra dependencies, CMake variables,
+and helpful Python development practices. Note the extra CMake variables, which
+you will need to specify in step 3) below.</p><ol start=2><li><strong>Check out LLVM and CIRCT repos.</strong> CIRCT contains LLVM as a git
+submodule. The LLVM repo here includes staged changes to MLIR which
+may be necessary to support CIRCT. It also represents the version of
+LLVM that has been tested. MLIR is still changing relatively rapidly,
+so feel free to use the current version of LLVM, but APIs may have
+changed.</li></ol><pre tabindex=0><code>$ git clone git@github.com:circt/circt.git
+$ cd circt
+$ git submodule init
+$ git submodule update
+</code></pre><p><em>Note:</em> The repository is set up so that <code>git submodule update</code> performs a
+shallow clone, meaning it downloads just enough of the LLVM repository to check
+out the currently specified commit. If you wish to work with the full history of
+the LLVM repository, you can manually &ldquo;unshallow&rdquo; the submodule:</p><pre tabindex=0><code>$ cd llvm
+$ git fetch --unshallow
+</code></pre><ol start=3><li><strong>Build and test LLVM/MLIR:</strong></li></ol><pre tabindex=0><code>$ cd circt
+$ mkdir llvm/build
+$ cd llvm/build
+$ cmake -G Ninja ../llvm \
+    -DLLVM_ENABLE_PROJECTS=&#34;mlir&#34; \
+    -DLLVM_TARGETS_TO_BUILD=&#34;host&#34; \
+    -DLLVM_ENABLE_ASSERTIONS=ON \
+    -DCMAKE_BUILD_TYPE=DEBUG \
+    -DLLVM_USE_SPLIT_DWARF=ON \
+    -DLLVM_ENABLE_LLD=ON  
+$ ninja
+$ ninja check-mlir
+</code></pre><ol start=4><li><strong>Build and test CIRCT:</strong></li></ol><pre tabindex=0><code>$ cd circt
+$ mkdir build
+$ cd build
+$ cmake -G Ninja .. \
+    -DMLIR_DIR=$PWD/../llvm/build/lib/cmake/mlir \
+    -DLLVM_DIR=$PWD/../llvm/build/lib/cmake/llvm \
+    -DLLVM_ENABLE_ASSERTIONS=ON \
+    -DCMAKE_BUILD_TYPE=DEBUG \
+    -DLLVM_USE_SPLIT_DWARF=ON \
+    -DLLVM_ENABLE_LLD=ON  
+$ ninja
+$ ninja check-circt
+$ ninja check-circt-integration # Run the integration tests.
+</code></pre><p>In order to use the recommended <code>lld</code> linker, use the <code>-DLLVM_ENABLE_LLD=ON</code>.
+Removing that flag will use your compiler&rsquo;s default linker. More details about
+these problems and their solutions can be found
+<a href=https://llvm.org/docs/GettingStarted.html#common-problems>in the LLVM docs</a>.</p><p>The <code>-DCMAKE_BUILD_TYPE=DEBUG</code> flag enables debug information, which makes the
+whole tree compile slower, but allows you to step through code into the LLVM
+and MLIR frameworks.</p><p>To get something that runs fast, use <code>-DCMAKE_BUILD_TYPE=Release</code> or
+<code>-DCMAKE_BUILD_TYPE=RelWithDebInfo</code> if you want to go fast and optionally if
+you want debug info to go with it. <code>Release</code> mode makes a very large difference
+in performance.</p><p>To use the verilog frontend add <code>-DCIRCT_SLANG_FRONTEND_ENABLED=ON</code>.</p><p>If you plan to use the Python bindings, you should also specify
+<code>-DCIRCT_BINDINGS_PYTHON_ENABLED=ON</code>.</p><ol start=5><li><strong>Optionally configure your environment</strong>:</li></ol><p>It is useful to add the <code>.../circt/build/bin</code> and <code>.../circt/llvm/build/bin</code>
+directories to the end of your PATH, allowing you to use the tools like <code>circt-opt</code>
+in a natural way on the command line. Similarly, you need to be in the build
+directory to invoke ninja, which is super annoying. You might find a bash/zsh
+alias like this to be useful:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>build<span class=o>()</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>  <span class=o>(</span><span class=nb>cd</span> <span class=nv>$HOME</span>/Projects/circt/build/<span class=p>;</span> ninja <span class=nv>$1</span> <span class=nv>$2</span> <span class=nv>$3</span><span class=o>)</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></div><p>This allows you to invoke <code>build check-circt</code> from any directory and have it do
+the right thing.</p><ol start=6><li><strong>Run the Verilator tests:</strong> (optional)</li></ol><p><a href=https://github.com/verilator/verilator>Verilator</a> can be used to check
+SystemVerilog code. To run the tests, build or install a <strong>recent</strong> version
+of Verilator (at least v4.034, ideally v4.110 or later to avoid a known bug).
+(Some Linux distributions have <em>ancient</em> versions.) If Verilator is in your
+PATH, <code>build check-circt</code> should run the tests which require Verilator.</p><p>We provide a script <code>utils/get-verilator.sh</code> to automate the download and
+compilation of Verilator into a known location. The testing script will check
+this location first. This script assumes that all the Verilator package
+dependencies are installed on your system. They are:</p><ul><li>make</li><li>autoconf</li><li>g++</li><li>flex</li><li>bison</li><li>libfl2 # Ubuntu only (ignore if gives error)</li><li>libfl-dev # Ubuntu only (ignore if gives error)</li></ul><ol start=7><li><strong>Install GRPC</strong> (optional, affects ESI runtime only)</li></ol><p>The ESI runtime requires GRPC for cosimulation. The <code>utils/get-grpc.sh</code> script
+installs a known good version of GRPC to a directory within the CIRCT source
+code. Alternatively, you can install GRPC using your package manager, though the
+version may not be compatible with the ESI runtime so results may vary.</p><ol start=8><li><strong>Install OR-Tools</strong> (optional, enables additional schedulers)</li></ol><p><a href=https://developers.google.com/optimization/>OR-Tools</a> is an open source
+software suite for (mathematical) optimization. It provides a uniform interface
+to several open-source and commercial solvers, e.g. for linear programs and
+satisfiability problems. Here, it is optionally used in the static scheduling
+infrastructure. Binary distributions often do not include the required CMake
+build info. The <code>utils/get-or-tools.sh</code> script downloads, compiles, and
+installs a known good version to a directory within the CIRCT source code,</p><h2 id=setting-up-vs-code-workspace>Setting up VS Code Workspace&nbsp;<a class=headline-hash href=#setting-up-vs-code-workspace>¶</a></h2><p>We&rsquo;ve provided an example VS Code file in <code>.vscode/Unified.code-workspace.jsonc</code> that can be used with the VS Code editor. To use the file, first copy to into a workspace file:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl>cp .vscode/Unified.code-workspace.jsonc .vscode/circt.code-workspace
+</span></span></code></pre></div><p>Next, open the workspace file in VS code using the command palette (Ctrl + Shift + P) and selecting &ldquo;Open workspace from file&rdquo; and selecting the <code>.vscode/circt.code-workspace</code> file.</p><p>Alternatively, open the file using:</p><pre tabindex=0><code>code .vscode/circt.code-workspace
+</code></pre><p>and select &ldquo;open workspace&rdquo; on the bottom right.</p><p>Once the workspace is loaded, install the recommended tools and select &ldquo;CMake: Build&rdquo; from the command palette to start the unified build process. This will build the LLVM dependencies and CIRCT together.</p><p>where it is then picked up automatically by the build.</p><h2 id=windows-notes-on-setting-up-with-ninja>Windows: notes on setting up with Ninja&nbsp;<a class=headline-hash href=#windows-notes-on-setting-up-with-ninja>¶</a></h2><p>Building on Windows using MSVC + Ninja + Python support is straight forward,
+though full of landmines. Here are some notes:</p><ul><li>Ninja and cmake must be run in a VS Developer Command shell. If you use
+Powershell and don&rsquo;t want to start the VS GUI, you can run:</li></ul><div class=highlight><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=line><span class=cl><span class=p>&gt;</span> <span class=nv>$vsPath</span> <span class=p>=</span> <span class=p>&amp;(</span><span class=nb>Join-Path</span> <span class=p>${</span><span class=n>env</span><span class=err>:</span><span class=n>ProgramFiles</span><span class=p>(</span><span class=n>x86</span><span class=p>)}</span> <span class=s2>&#34;\Microsoft Visual Studio\Installer\vswhere.exe&#34;</span><span class=p>)</span> <span class=n>-property</span> <span class=n>installationpath</span>
+</span></span><span class=line><span class=cl><span class=p>&gt;</span> <span class=nb>Import-Module</span> <span class=p>(</span><span class=nb>Get-ChildItem</span> <span class=nv>$vsPath</span> <span class=n>-Recurse</span> <span class=o>-File</span> <span class=n>-Filter</span> <span class=n>Microsoft</span><span class=p>.</span><span class=n>VisualStudio</span><span class=p>.</span><span class=n>DevShell</span><span class=p>.</span><span class=n>dll</span><span class=p>).</span><span class=n>FullName</span>
+</span></span><span class=line><span class=cl><span class=p>&gt;</span> <span class=nb>Enter-VsDevShell</span> <span class=n>-VsInstallPath</span> <span class=nv>$vsPath</span> <span class=n>-SkipAutomaticLocation</span>
+</span></span></code></pre></div><ul><li>VSCode&rsquo;s cmake configure does not operate properly with Python support. The
+symptom is that the build will complete, but importing <code>circt</code> or <code>mlir</code> crashes
+Python. Doing everything from the command line is the only way CIRCT compiles
+have been made to work.</li></ul><p>Cheat sheet for powershell:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-powershell data-lang=powershell><span class=line><span class=cl><span class=c># Install cmake, ninja, and Visual Studio</span>
+</span></span><span class=line><span class=cl><span class=p>&gt;</span> <span class=n>python</span> <span class=n>-m</span> <span class=n>pip</span> <span class=n>install</span> <span class=n>psutil</span> <span class=n>pyyaml</span> <span class=n>numpy</span> <span class=n>pybind11</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>&gt;</span> <span class=nv>$vsPath</span> <span class=p>=</span> <span class=p>&amp;(</span><span class=nb>Join-Path</span> <span class=p>${</span><span class=n>env</span><span class=err>:</span><span class=n>ProgramFiles</span><span class=p>(</span><span class=n>x86</span><span class=p>)}</span> <span class=s2>&#34;\Microsoft Visual Studio\Installer\vswhere.exe&#34;</span><span class=p>)</span> <span class=n>-property</span> <span class=n>installationpath</span>
+</span></span><span class=line><span class=cl><span class=p>&gt;</span> <span class=nb>Import-Module</span> <span class=p>(</span><span class=nb>Get-ChildItem</span> <span class=nv>$vsPath</span> <span class=n>-Recurse</span> <span class=o>-File</span> <span class=n>-Filter</span> <span class=n>Microsoft</span><span class=p>.</span><span class=n>VisualStudio</span><span class=p>.</span><span class=n>DevShell</span><span class=p>.</span><span class=n>dll</span><span class=p>).</span><span class=n>FullName</span>
+</span></span><span class=line><span class=cl><span class=p>&gt;</span> <span class=nb>Enter-VsDevShell</span> <span class=n>-VsInstallPath</span> <span class=nv>$vsPath</span> <span class=n>-SkipAutomaticLocation</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>&gt;</span> <span class=nb>cd </span><span class=p>&lt;</span><span class=n>circt</span> <span class=n>clone</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&gt;</span> <span class=n>cmake</span> <span class=n>-B</span><span class=p>&lt;</span><span class=n>build_dir</span><span class=p>&gt;</span> <span class=n>llvm</span><span class=p>/</span><span class=n>llvm</span> <span class=p>`</span>
+</span></span><span class=line><span class=cl>    <span class=n>-GNinja</span> <span class=p>`</span>
+</span></span><span class=line><span class=cl>    <span class=n>-DLLVM_ENABLE_PROJECTS</span><span class=p>=</span><span class=n>mlir</span> <span class=p>`</span>
+</span></span><span class=line><span class=cl>    <span class=n>-DCMAKE_BUILD_TYPE</span><span class=p>=</span><span class=n>Debug</span> <span class=p>`</span>
+</span></span><span class=line><span class=cl>    <span class=n>-DLLVM_TARGETS_TO_BUILD</span><span class=p>=</span><span class=n>X86</span> <span class=p>`</span>
+</span></span><span class=line><span class=cl>    <span class=n>-DLLVM_ENABLE_ASSERTIONS</span><span class=p>=</span><span class=n>ON</span> <span class=p>`</span>
+</span></span><span class=line><span class=cl>    <span class=n>-DMLIR_ENABLE_BINDINGS_PYTHON</span><span class=p>=</span><span class=n>ON</span> <span class=p>`</span>
+</span></span><span class=line><span class=cl>    <span class=n>-DLLVM_EXTERNAL_PROJECTS</span><span class=p>=</span><span class=n>circt</span> <span class=p>`</span>
+</span></span><span class=line><span class=cl>    <span class=n>-DLLVM_EXTERNAL_CIRCT_SOURCE_DIR</span><span class=p>=</span><span class=s2>&#34;</span><span class=p>$(</span><span class=n>PWD</span><span class=p>)</span><span class=s2>&#34;</span> <span class=p>`</span>
+</span></span><span class=line><span class=cl>    <span class=n>-DCIRCT_BINDINGS_PYTHON_ENABLED</span><span class=p>=</span><span class=n>ON</span> <span class=p>`</span>
+</span></span><span class=line><span class=cl>    <span class=n>-DCMAKE_EXPORT_COMPILE_COMMANDS</span><span class=p>=</span><span class=n>ON</span>
+</span></span><span class=line><span class=cl>    <span class=n>-DLLVM_USE_SPLIT_DWARF</span><span class=p>=</span><span class=n>ON</span> 
+</span></span><span class=line><span class=cl>    <span class=n>-DLLVM_ENABLE_LLD</span><span class=p>=</span><span class=n>ON</span>
+</span></span><span class=line><span class=cl><span class=p>&gt;</span> <span class=n>ninja</span> <span class=n>-C</span><span class=p>&lt;</span><span class=n>build_dir</span><span class=p>&gt;</span> <span class=nb>check-circt</span>
+</span></span></code></pre></div><h2 id=submitting-changes-to-circt>Submitting changes to CIRCT&nbsp;<a class=headline-hash href=#submitting-changes-to-circt>¶</a></h2><p>The project is small so there are few formal process yet. We generally follow
+the LLVM and MLIR community practices, but we currently use pull requests and
+GitHub issues. Here are some high-level guidelines:</p><ul><li><p>Please use clang-format in the LLVM style. There are good plugins
+for common editors like VSCode, Atom, etc, or you can run it
+manually. This makes code easier to read and understand.</p></li><li><p>Beyond mechanical formatting issues, please follow the
+<a href=https://llvm.org/docs/CodingStandards.html>LLVM Coding
+Standards</a>.</p></li><li><p>Please practice &ldquo;
+<a href=https://llvm.org/docs/DeveloperPolicy.html#incremental-development>incremental development</a>&rdquo;,
+preferring to send a small series of incremental patches rather than large
+patches. There are other policies in the LLVM Developer Policy document that
+are worth skimming.</p></li><li><p>Please use &ldquo;Squash and Merge&rdquo; in PRs when they are approved - we don&rsquo;t
+need the intra-change history in the repository history.</p></li><li><p>Please create a PR to get a code review. For reviewers, it is good to look
+at the primary author of the code you are touching to make sure they are at
+least CC&rsquo;d on the PR.</p></li></ul><h2 id=submitting-changes-to-llvm--mlir>Submitting changes to LLVM / MLIR&nbsp;<a class=headline-hash href=#submitting-changes-to-llvm--mlir>¶</a></h2><p>This project depends on MLIR and LLVM, and it is occasionally useful to improve
+them.
+To get set up for this:</p><ol><li>Follow the &ldquo;
+<a href=https://mlir.llvm.org/getting_started/Contributing/>How to Contribute</a>&rdquo;
+instructions, and install the right tools, e.g. <code>clang-format</code>.</li><li>Optional:
+<a href=https://llvm.org/docs/DeveloperPolicy.html#obtaining-commit-access>Ask for LLVM commit access</a>,
+the barrier is low. Alternatively, you can ask one of the reviewers on the
+GitHub pull-request to merge for you.</li></ol><h3 id=submitting-a-patch>Submitting a patch&nbsp;<a class=headline-hash href=#submitting-a-patch>¶</a></h3><p>Patches are submitted to LLVM/MLIR via GitHub pull-requests, the basic flow is as follows:</p><ol><li>Check out the LLVM mono repo (as described above) or your fork of the same.</li><li>Make changes to your codebase in a dedicated branch for your patch.</li><li>Stage your changes with <code>git add</code>.</li><li>Run clang-format to tidy up the patch with <code>git clang-format origin/main</code>.</li><li>Run tests with <code>ninja check-mlir</code> (or whatever other target makes sense).</li><li>Publish the branch on your fork of the repository and create a GitHub pull-request.</li></ol><p>When your review converges and your patch is approved, it can be merged directly on GitHub.
+If you have commit access, you can do this yourself, otherwise a reviewer can do it for you.</p><h2 id=writing-a-basic-circt-pass>Writing a basic CIRCT Pass&nbsp;<a class=headline-hash href=#writing-a-basic-circt-pass>¶</a></h2><p>Passes can be added at several levels in CIRCT. Here we illustrate this with a simple pass, targetting
+the <code>hw</code> dialect, that replaces all of the wire names with `foo. This example is very basic and is
+meant for people who want to get a quick and dirty start at writing passes for CIRCT. For more detailed
+tutorials, we recommend looking at the
+<a href=https://mlir.llvm.org/docs/PassManagement/>MLIR docs</a>, and their
+<a href=https://mlir.llvm.org/docs/Tutorials/Toy/>Toy tutorials</a>.<br>To add a simple dialect pass, that doesn&rsquo;t perform any dialect conversion, you can do the following:</p><ol><li>Update your dialect’s Passes.td file to define what your pass will do in a high-level, well documented way,
+e.g. in <code>include/circt/Dialect/HW/Passes.td</code>:</li></ol><pre tabindex=0><code>def FooWires : Pass&lt;&#34;hw-foo-wires&#34;, &#34;hw::HwModuleOp&#34;&gt; {
+  let summary = &#34;Change all wires&#39; name to foo_&lt;n&gt;.&#34;;
+  let description = [{
+    Very basic pass that numbers all of the wires in a given module.
+    The wires&#39; names are then all converte to foo_&lt;that number&gt;.
+  }];
+  let constructor = &#34;circt::hw::createFooWiresPass()&#34;;
+}
+</code></pre><p>Once this is added, compile CIRCT. This will generate a base class for your pass following the naming
+defined in the
+<a href=https://mlir.llvm.org/docs/PassManagement/#tablegen-specification>tablegen description</a>.
+This base class will contain some methods that need to be implemented.
+Your goal is to now implement those.</p><ol start=2><li>Create a new file that contains your pass in the dialect&rsquo;s pass folder, e.g. in <code>lib/Dialect/HW/Transforms</code>.
+Don&rsquo;t forget to also add it in the folder&rsquo;s CMakeLists.txt.
+This file should implement:</li></ol><ul><li>A struct with the name of your pass, which extends the pass base class generated by the tablegen description.</li><li>This struct should define an override of the <code>void runOnOperation()</code> method, e.g.</li></ul><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=k>namespace</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// A test pass that simply replaces all wire names with foo_&lt;n&gt;
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=k>struct</span> <span class=nc>FooWiresPass</span> <span class=o>:</span> <span class=n>FooWiresBase</span><span class=o>&lt;</span><span class=n>FooWiresPass</span><span class=o>&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=kt>void</span> <span class=nf>runOnOperation</span><span class=p>()</span> <span class=k>override</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=p>};</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><ul><li>The <code>runOnOperation</code> method will contain the actual logic of your pass, which you can now implement, e.g.</li></ul><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=kt>void</span> <span class=n>FooWiresPass</span><span class=o>::</span><span class=n>runOnOperation</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>size_t</span> <span class=n>nWires</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=c1>// Counts the number of wires modified
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=n>getOperation</span><span class=p>().</span><span class=n>walk</span><span class=p>([</span><span class=o>&amp;</span><span class=p>](</span><span class=n>hw</span><span class=o>::</span><span class=n>WireOp</span> <span class=n>wire</span><span class=p>)</span> <span class=p>{</span> <span class=c1>// Walk over every wire in the module
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=n>wire</span><span class=p>.</span><span class=n>setName</span><span class=p>(</span><span class=s>&#34;foo_&#34;</span> <span class=o>+</span> <span class=n>std</span><span class=o>::</span><span class=n>to_string</span><span class=p>(</span><span class=n>nWires</span><span class=o>++</span><span class=p>));</span> <span class=c1>// Rename said wire
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=p>});</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><blockquote><p><em>Note</em>: Here <code>getOperation().walk([&](WireOp wire) { ... });</code> is used to traverse every wire in the design, you can also
+use it to generically walk over all operations and then visit them individually
+using a
+<a href=https://en.wikipedia.org/wiki/Visitor_pattern>visitor pattern</a> by overloading type visitors
+defined by each dialect. More details can be found in the
+<a href=https://mlir.llvm.org/docs/Tutorials/UnderstandingTheIRStructure/>MLIR docs</a>, e.g.</p></blockquote><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&#34;circt/Dialect/HW/HWVisitors.h&#34; // defines dispatchTypeOpVisitor which calls visit(op)</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=k>namespace</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// A test pass that simply replaces all wire names with foo_&lt;n&gt;
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=k>struct</span> <span class=nc>VisitorExamplePass</span> 
+</span></span><span class=line><span class=cl>    <span class=o>:</span> <span class=k>public</span> <span class=n>VisitorExampleBase</span><span class=o>&lt;</span><span class=n>VisitorExamplePass</span><span class=o>&gt;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=k>public</span> <span class=n>hw</span><span class=o>::</span><span class=n>TypeOpVisitor</span><span class=o>&lt;</span><span class=n>VisitorExamplePass</span><span class=o>&gt;</span> <span class=c1>// Allows for the visitor overloads to be added
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>public</span><span class=o>:</span>  
+</span></span><span class=line><span class=cl>    <span class=kt>void</span> <span class=n>runOnOperation</span><span class=p>()</span> <span class=k>override</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// Vistor overloads
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kt>void</span> <span class=nf>visitTypeOp</span><span class=p>(</span><span class=n>hw</span><span class=o>::</span><span class=n>ConstantOp</span> <span class=n>op</span><span class=p>)</span> <span class=p>{</span> <span class=cm>/*...*/</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=kt>void</span> <span class=nf>visitTypeOp</span><span class=p>(</span><span class=cm>/*other hw operations*/</span><span class=p>)</span> <span class=p>{</span> <span class=cm>/*...*/</span> <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=p>};</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>void</span> <span class=n>VisitorExamplePass</span><span class=o>::</span><span class=n>runOnOperation</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>module</span><span class=p>.</span><span class=n>walk</span><span class=p>([</span><span class=o>&amp;</span><span class=p>](</span><span class=n>Operation</span><span class=o>*</span> <span class=n>op</span><span class=p>)</span> <span class=p>{</span> <span class=n>dispatchTypeOpVisitor</span><span class=p>(</span><span class=n>op</span><span class=p>);</span> <span class=p>});</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><ul><li>Finally implement the constructor for the pass, as defined in the tablegen description, e.g.</li></ul><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=n>std</span><span class=o>::</span><span class=n>unique_ptr</span><span class=o>&lt;</span><span class=n>mlir</span><span class=o>::</span><span class=n>Pass</span><span class=o>&gt;</span> <span class=n>circt</span><span class=o>::</span><span class=n>hw</span><span class=o>::</span><span class=n>createFooWiresPass</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=n>std</span><span class=o>::</span><span class=n>make_unique</span><span class=o>&lt;</span><span class=n>FooWiresPass</span><span class=o>&gt;</span><span class=p>();</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><ol start=3><li>Define the pass constructor in the dialect&rsquo;s <code>Passes.h</code> file, e.g. in <code>include/circt/Dialect/hw/HWPasses.h</code> add:</li></ol><div class=highlight><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=n>std</span><span class=o>::</span><span class=n>unique_ptr</span><span class=o>&lt;</span><span class=n>mlir</span><span class=o>::</span><span class=n>Pass</span><span class=o>&gt;</span> <span class=n>createFooWiresPass</span><span class=p>();</span>
+</span></span></code></pre></div><ol start=4><li>Make sure to add a test to check your pass, e.g. in <code>test/Dialect/HW</code>:</li></ol><div class=highlight><pre tabindex=0 class=chroma><code class=language-mlir data-lang=mlir><span class=line><span class=cl><span class=c>// RUN: circt-opt --hw-foo-wires %s | FileCheck %s
+</span></span></span><span class=line><span class=cl><span class=c></span>
+</span></span><span class=line><span class=cl>hw<span class=p>.</span>module <span class=nf>@foo</span><span class=p>(</span>in <span class=nv>%a</span><span class=p>:</span> <span class=k>i32</span><span class=p>,</span> in <span class=nv>%b</span><span class=p>:</span> <span class=k>i32</span><span class=p>,</span> out out<span class=p>:</span> <span class=k>i32</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=c>// CHECK:   %c1_i32 = hw.constant 1 : i32
+</span></span></span><span class=line><span class=cl><span class=c></span>  <span class=nv>%c1</span> <span class=p>=</span> hw<span class=p>.</span><span class=kt>constant</span> <span class=m>1</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>  <span class=c>// CHECK:   %foo_0 = hw.wire %c1_i32  : i32
+</span></span></span><span class=line><span class=cl><span class=c></span>  <span class=nv>%wire_1</span> <span class=p>=</span> hw<span class=p>.</span>wire <span class=nv>%c1</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>  <span class=c>// CHECK:   %foo_1 = hw.wire %a  : i32
+</span></span></span><span class=line><span class=cl><span class=c></span>  <span class=nv>%wire_a</span> <span class=p>=</span> hw<span class=p>.</span>wire <span class=nv>%a</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>  <span class=c>// CHECK:   %foo_2 = hw.wire %b  : i32
+</span></span></span><span class=line><span class=cl><span class=c></span>  <span class=nv>%wire_b</span> <span class=p>=</span> hw<span class=p>.</span>wire <span class=nv>%b</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>  <span class=c>// CHECK:   %0 = comb.add bin %foo_1, %foo_0 : i32
+</span></span></span><span class=line><span class=cl><span class=c></span>  <span class=nv>%ap1</span> <span class=p>=</span> comb<span class=p>.</span>add bin <span class=nv>%wire_a</span><span class=p>,</span> <span class=nv>%wire_1</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>  <span class=c>// CHECK:   %foo_3 = hw.wire %0  : i32
+</span></span></span><span class=line><span class=cl><span class=c></span>  <span class=nv>%wire_ap1</span> <span class=p>=</span> hw<span class=p>.</span>wire <span class=nv>%ap1</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>  <span class=c>// CHECK:   %1 = comb.add bin %foo_3, %foo_2 : i32
+</span></span></span><span class=line><span class=cl><span class=c></span>  <span class=nv>%ap1pb</span> <span class=p>=</span> comb<span class=p>.</span>add bin <span class=nv>%wire_ap1</span><span class=p>,</span> <span class=nv>%wire_b</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>  <span class=c>// CHECK:   %foo_4 = hw.wire %1  : i32
+</span></span></span><span class=line><span class=cl><span class=c></span>  <span class=nv>%wire_ap1pb</span> <span class=p>=</span> hw<span class=p>.</span>wire <span class=nv>%ap1pb</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl>  <span class=c>// CHECK:   hw.output %foo_4 : i32
+</span></span></span><span class=line><span class=cl><span class=c></span>  hw<span class=p>.</span>output <span class=nv>%wire_ap1pb</span> <span class=p>:</span> <span class=k>i32</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>Now re-run cmake and compile CIRCT and you should be able to run your new pass!
+By default, every pass is accessible using <code>circt-opt</code> through the name that was defined in the tablegen description,
+e.g. <code>circt-opt --hw-foo-wires &lt;file_name>.mlir</code>.
+These passes can also be included in certain compilation pipelines that are well packaged in tools like firtool.<br>We recommend looking at recently merged Pull-Requests or other
+<a href=https://mlir.llvm.org/docs/Tutorials/>MLIR tutorials</a>
+to learn how to go beyond what we&rsquo;ve shown in this quick start guide.<br>The full source code of this pass is available at the following links:</p><ul><li>Pass Source:
+<a href=https://github.com/llvm/circt/blob/main/lib/Dialect/HW/Transforms/FooWires.cpp>FooWires.cpp</a></li><li>Pass Test:
+<a href=https://github.com/llvm/circt/blob/main/test/Dialect/HW/foo.mlir>foo.mlir</a></li><li>HW Dialect Pass Header:
+<a href=https://github.com/llvm/circt/blob/main/include/circt/Dialect/HW/HWPasses.h#L32>HWPasses.h</a></li><li>Tablegen Description:
+<a href=https://github.com/llvm/circt/blob/main/include/circt/Dialect/HW/Passes.td#L81-L88>Passes.td</a></li><li><a href=https://github.com/llvm/circt/blob/main/lib/Dialect/HW/Transforms/CMakeLists.txt#L8>CMakeLists.txt</a></li></ul><div class=edit-meta><br></div><nav class=pagination><a class="nav nav-prev" href=https://circt.llvm.org/docs/ToolsWorkarounds/ title="EDA Tool Workarounds"><i class="fas fa-arrow-left" aria-hidden=true></i> Prev - EDA Tool Workarounds</a>
+<a class="nav nav-next" href=https://circt.llvm.org/docs/RationaleHierarchyManipulation/ title="Hierarchy Manipulation Rationale">Next - Hierarchy Manipulation Rationale <i class="fas fa-arrow-right" aria-hidden=true></i></a></nav><footer><p class=powered>Powered by <a href=https://gohugo.io>Hugo</a>. Theme by <a href=https://themes.gohugo.io/hugo-theme-techdoc/>TechDoc</a>. Designed by <a href=https://github.com/thingsym/hugo-theme-techdoc>Thingsym</a>.</p></footer></main><div class=sidebar><nav class=slide-menu><ul><li><a href=https://circt.llvm.org/>Home</a></li><li><a href=https://circt.llvm.org/talks/>Talks and Related Publications</a></li><li><a href=https://circt.llvm.org/getting_started/>Getting Started</a></li><li class="parent has-sub-menu"><a href=https://circt.llvm.org/docs/>Code Documentation<span class="mark opened">-</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/EmitPasses/></a></li><li><a href=https://circt.llvm.org/docs/AIToolPolicy/>CIRCT AI Tool Use Policy</a></li><li><a href=https://circt.llvm.org/docs/Charter/>CIRCT Charter</a></li><li><a href=https://circt.llvm.org/docs/DeveloperPolicy/>CIRCT Developer Policy</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/>Dialects<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/ESIAppID/></a></li><li><a href=https://circt.llvm.org/docs/Dialects/Calyx/>'calyx' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/CHIRRTL/>'chirrtl' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Comb/>'comb' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Comb/RationaleComb/>`comb` Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Datapath/>'datapath' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Datapath/RationaleDatapath/>'datapath' Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/DC/>'dc' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/DC/RationaleDC/>DC Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Emit/>'emit' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Emit/RationaleEmit/>Emission (Emit) Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/ESI/>'esi' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/ESI/types/>ESI data types and communication types</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/services/>ESI Global Services</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/software_api/>ESI Software APIs</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/notes/>Miscellaneous Notes</a></li><li><a href=https://circt.llvm.org/docs/Dialects/ESI/RationaleESI/>The Elastic Silicon Interconnect dialect</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/>'firrtl' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/FIRRTLAnnotations/>FIRRTL Annotations</a></li><li><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/RationaleFIRRTL/>FIRRTL Dialect Rationale</a></li><li><a href=https://circt.llvm.org/docs/Dialects/FIRRTL/FIRRTLIntrinsics/>Intrinsics</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/FSM/>'fsm' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/FSM/RationaleFSM/>FSM Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Handshake/>'handshake' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Handshake/RationaleHandshake/>Handshake Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/HW/>'hw' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/HW/RationaleHW/>HW Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/HWArith/>'hwarith' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/HWArith/RationaleHWArith/>HW Arith Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Kanagawa/>'kanagawa' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Kanagawa/RationaleKanagawa/>`kanagawa` Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/LoopSchedule/>'loopschedule' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/LoopSchedule/LoopSchedule/>LoopSchedule Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/MSFT/>'msft' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/OM/>'om' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/OM/RationaleOM/>Object Model Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Pipeline/>'pipeline' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Pipeline/RationalePipeline/>Pipeline Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/RTGTest/>'rtgtest' Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Seq/>'seq' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Seq/RationaleSeq/>Seq(uential) Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/SSP/>'ssp' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/SSP/RationaleSSP/>SSP Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/SV/>'sv' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/SV/RationaleSV/>SV Dialect Rationale</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Synth/>'synth' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Synth/RationaleSynth/>'synth' Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/Synth/LongestPathAnalysis/>Synth Longest Path Analysis</a></li></ul></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/SystemC/>'systemc' Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/SystemC/RationaleSystemC/>SystemC Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/Arc/>Arc Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/AXI4/>AXI4 Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/Debug/>Debug Dialect</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Dialects/Interop/>Interop Dialect<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Dialects/Interop/RationaleInterop/>Interoperability Dialect Rationale</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Dialects/LLHD/>LLHD Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/LTL/>LTL Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/Moore/>Moore Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/Probe/>Probe Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/RTG/>Random Test Generation (RTG) Rationale</a></li><li><a href=https://circt.llvm.org/docs/Dialects/Sim/>Simulation Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/SimDPI/>Simulation Dialect DPI</a></li><li><a href=https://circt.llvm.org/docs/Dialects/SMT/>SMT Dialect</a></li><li><a href=https://circt.llvm.org/docs/Dialects/Verif/>Verif Dialect</a></li></ul></li><li><a href=https://circt.llvm.org/docs/ToolsWorkarounds/>EDA Tool Workarounds</a></li><li class=active><a href=https://circt.llvm.org/docs/GettingStarted/>Getting Started with the CIRCT Project</a></li><li><a href=https://circt.llvm.org/docs/RationaleHierarchyManipulation/>Hierarchy Manipulation Rationale</a></li><li><a href=https://circt.llvm.org/docs/HLS/>HLS in CIRCT</a></li><li><a href=https://circt.llvm.org/docs/CellIFT-Verilog-Flow/>Instrumenting a Verilog Design with CellIFT (CIRCT)</a></li><li><a href=https://circt.llvm.org/docs/Passes/>Passes</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/PyCDE/>Python CIRCT Design Entry (PyCDE)<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/PyCDE/compiling/>Compiling CIRCT and PyCDE</a></li><li><a href=https://circt.llvm.org/docs/PyCDE/basics/>PyCDE Basics</a></li></ul></li><li><a href=https://circt.llvm.org/docs/Scheduling/>Static scheduling infrastructure</a></li><li><a href=https://circt.llvm.org/docs/RationaleSymbols/>Symbol and Inner Symbol Rationale</a></li><li class=has-sub-menu><a href=https://circt.llvm.org/docs/Tools/>Tools<span class="mark closed">+</span></a><ul class=sub-menu><li><a href=https://circt.llvm.org/docs/Tools/circt-bmc/>Bounded Model Checking</a></li><li><a href=https://circt.llvm.org/docs/Tools/handshake-runner/>handshake-runner</a></li><li><a href=https://circt.llvm.org/docs/Tools/circt-synth/>Logic Synthesis</a></li><li><a href=https://circt.llvm.org/docs/Tools/circt-lec/>Logical Equivalence Checking</a></li><li><a href=https://circt.llvm.org/docs/Tools/circt-verilog/>Verilog Front-End</a></li></ul></li><li><a href=https://circt.llvm.org/docs/PythonBindings/>Using the Python Bindings</a></li><li><a href=https://circt.llvm.org/docs/VerilogGeneration/>Verilog and SystemVerilog Generation</a></li></ul></li></ul></nav><div class=sidebar-footer></div></div></div><a href=# id=backtothetop-fixed class=backtothetop data-backtothetop-duration=600 data-backtothetop-easing=easeOutQuart data-backtothetop-fixed-fadein=1000 data-backtothetop-fixed-fadeout=1000 data-backtothetop-fixed-bottom=10 data-backtothetop-fixed-right=20><span class="fa-layers fa-fw"><i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i></span></a></div></body></html>

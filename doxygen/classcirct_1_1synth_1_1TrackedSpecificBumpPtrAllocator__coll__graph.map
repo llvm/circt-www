@@ -1,0 +1,7 @@
+<map id="circt::synth::TrackedSpecificBumpPtrAllocator&lt; T &gt;" name="circt::synth::TrackedSpecificBumpPtrAllocator&lt; T &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="103,93,305,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,229,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,39,188,91,184,95,135,42"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="253,5,328,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="273,42,224,95,220,91,269,39"/>
+</map>

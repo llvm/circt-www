@@ -1,0 +1,56 @@
+<map id="circt::Reduction" name="circt::Reduction">
+<area shape="rect" id="Node000001" title="An abstract reduction pattern." alt="" coords="5,540,128,565"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="581,18,727,58"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,526,78,427,99,292,113,224,131,163,151,113,175,80,221,48,272,26,326,11,382,4,437,3,490,6,581,18,580,24,489,11,437,8,382,10,327,17,274,31,224,53,179,84,156,116,136,165,118,226,104,293,83,427,73,526"/>
+<area shape="rect" id="Node000004" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="581,151,727,191"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="66,526,71,463,87,378,101,333,119,290,144,249,175,213,221,176,264,150,306,133,348,125,392,123,440,126,552,141,591,149,590,154,552,146,440,131,392,128,349,130,307,138,266,155,224,180,179,217,149,252,124,292,106,335,92,380,76,463,71,527"/>
+<area shape="rect" id="Node000006" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="583,251,725,291"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="68,526,76,472,94,403,108,367,126,332,148,300,176,272,222,237,266,212,308,197,351,190,395,190,443,196,553,219,590,232,622,249,620,253,587,237,551,225,442,201,395,196,351,195,310,202,268,217,225,241,179,276,153,303,131,335,113,369,99,405,81,473,73,527"/>
+<area shape="rect" id="Node000008" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="583,399,725,439"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="116,533,177,517,234,507,283,503,366,503,449,499,496,491,551,475,590,458,624,437,627,442,593,463,553,480,498,496,450,504,367,508,283,509,234,513,178,522,118,538"/>
+<area shape="rect" id="Node000010" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="583,490,725,530"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="142,545,583,512,583,518,142,550"/>
+<area shape="rect" id="Node000012" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="578,82,730,122"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="64,526,66,453,80,352,93,298,113,245,140,195,175,151,219,111,262,81,303,61,346,49,391,44,440,46,553,62,610,79,608,84,551,67,439,51,391,50,347,54,305,66,264,86,223,115,179,154,145,198,118,247,99,300,85,353,72,453,70,526"/>
+<area shape="rect" id="Node000013" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="583,322,725,362"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="99,530,135,510,176,491,258,468,364,444,470,419,551,395,620,360,623,364,553,400,472,425,365,449,259,473,178,496,138,515,101,535"/>
+<area shape="rect" id="Node000015" href="$structModuleInternalNameSanitizer.html" title="Pseudo&#45;reduction that sanitizes the names of operations inside modules." alt="" coords="177,568,393,593"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="123,565,177,573,177,578,123,570"/>
+<area shape="poly" id="edge19_Node000001_Node000015" title=" " alt="" coords="142,551,243,565,242,571,141,556"/>
+<area shape="rect" id="Node000016" href="$structHWConstantifier.html" title="A sample reduction pattern that replaces integer operations with a constant zero of their type." alt="" coords="221,617,349,643"/>
+<area shape="poly" id="edge16_Node000001_Node000016" title=" " alt="" coords="105,569,178,602,222,615,221,620,176,607,102,574"/>
+<area shape="rect" id="Node000017" href="$structHWOperandForwarder.html" title="A sample reduction pattern that replaces all uses of an operation with one of its operands." alt="" coords="203,667,368,707"/>
+<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="89,574,128,614,179,652,207,665,204,670,176,656,125,618,85,577"/>
+<area shape="rect" id="Node000018" href="$structModuleInputPruner.html" title="Remove unused module input ports." alt="" coords="213,732,358,757"/>
+<area shape="poly" id="edge18_Node000001_Node000018" title=" " alt="" coords="80,577,95,609,116,648,144,685,179,717,214,733,211,738,176,721,140,689,112,650,90,612,75,579"/>
+<area shape="rect" id="Node000019" href="$structModuleOutputPruner.html" title="Remove unused module output ports." alt="" coords="207,781,363,807"/>
+<area shape="poly" id="edge20_Node000001_Node000019" title=" " alt="" coords="76,578,88,620,109,671,139,723,157,746,179,766,208,782,206,787,176,771,153,750,134,726,104,674,83,622,71,580"/>
+<area shape="rect" id="Node000020" href="$structSVNamehintRemover.html" title="Pseudo&#45;reduction that removes sv.namehint attributes from operations." alt="" coords="204,831,367,856"/>
+<area shape="poly" id="edge21_Node000001_Node000020" title=" " alt="" coords="74,578,83,629,102,694,133,760,154,790,179,816,205,831,202,835,176,820,150,793,128,763,97,696,78,631,68,579"/>
+<area shape="rect" id="Node000021" href="$structcirct_1_1OpReduction.html" title="A reduction pattern for a specific operation." alt="" coords="215,286,356,326"/>
+<area shape="poly" id="edge22_Node000001_Node000021" title=" " alt="" coords="75,526,104,465,125,430,150,397,197,356,245,324,248,328,200,360,154,401,130,433,109,467,80,528"/>
+<area shape="rect" id="Node000022" href="$structcirct_1_1PassReduction.html" title="A reduction pattern that applies an mlir::Pass." alt="" coords="209,880,361,905"/>
+<area shape="poly" id="edge30_Node000001_Node000022" title=" " alt="" coords="71,579,78,639,94,717,108,758,126,798,150,835,179,866,210,883,208,888,176,871,146,838,122,801,103,760,89,719,72,640,66,580"/>
+<area shape="rect" id="Node000003" href="$structModuleNameSanitizer.html" title="Pseudo&#45;reduction that sanitizes module and port names." alt="" coords="811,57,977,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="742,47,811,56,810,62,741,52"/>
+<area shape="rect" id="Node000005" href="$structExtmoduleConventionRemover.html" title="Reduction that removes the convention attribute from external modules." alt="" coords="781,159,1007,184"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="741,169,781,169,781,174,741,174"/>
+<area shape="rect" id="Node000007" href="$structListCreateElementRemover.html" title="A reduction pattern that removes elements from FIRRTL list create operations." alt="" coords="793,259,995,284"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="739,269,793,269,793,274,739,274"/>
+<area shape="rect" id="Node000009" href="$structModuleConventionRemover.html" title="Reduction that removes the convention attribute from regular modules." alt="" coords="793,407,995,432"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="739,417,792,417,792,422,739,422"/>
+<area shape="rect" id="Node000011" href="$structModuleExternalizer.html" title="A sample reduction pattern that maps hw.module to hw.module.extern." alt="" coords="820,497,968,523"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="739,507,820,507,820,513,739,513"/>
+<area shape="poly" id="edge12_Node000012_Node000003" title=" " alt="" coords="743,87,810,78,811,84,744,93"/>
+<area shape="rect" id="Node000014" href="$structStateElimination.html" title="A sample reduction pattern that converts arc.state operations to the simpler arc.call operation and r..." alt="" coords="829,329,959,355"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="739,339,829,339,829,345,739,345"/>
+<area shape="poly" id="edge23_Node000021_Node000002" title=" " alt="" coords="298,272,317,235,343,192,376,149,416,112,455,88,497,69,580,46,581,51,499,74,457,92,419,116,380,152,347,195,322,238,303,274"/>
+<area shape="poly" id="edge24_Node000021_Node000004" title=" " alt="" coords="353,279,597,189,599,194,355,284"/>
+<area shape="poly" id="edge25_Node000021_Node000006" title=" " alt="" coords="370,296,552,279,583,276,583,281,552,285,370,301"/>
+<area shape="poly" id="edge26_Node000021_Node000008" title=" " alt="" coords="354,328,418,350,584,398,583,403,417,355,353,333"/>
+<area shape="poly" id="edge27_Node000021_Node000010" title=" " alt="" coords="319,333,365,372,419,410,507,455,591,487,589,492,505,460,416,415,361,377,316,338"/>
+<area shape="poly" id="edge28_Node000021_Node000012" title=" " alt="" coords="313,274,359,231,416,189,499,148,579,120,581,125,501,153,419,194,362,235,317,278"/>
+<area shape="poly" id="edge29_Node000021_Node000013" title=" " alt="" coords="370,311,583,332,583,338,369,317"/>
+<area shape="rect" id="Node000023" href="$structIMDCEPortReduction.html" title=" " alt="" coords="576,880,732,905"/>
+<area shape="poly" id="edge31_Node000022_Node000023" title=" " alt="" coords="375,890,576,890,576,895,375,895"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="FIRRTLBundleField" name="FIRRTLBundleField">
+<area shape="rect" id="Node000001" title="Describes a field in a bundle type." alt="" coords="89,93,232,119"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,111,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,38,116,67,146,91,143,95,112,71,78,42"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="135,5,186,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,45,163,93,158,93,158,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="210,5,287,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="233,43,208,71,179,95,175,91,204,67,229,40"/>
+</map>

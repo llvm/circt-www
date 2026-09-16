@@ -1,0 +1,25 @@
+<map id="circt::FirMemLowering" name="circt::FirMemLowering">
+<area shape="rect" id="Node000001" title="FIR memory lowering helper." alt="" coords="845,128,1012,153"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="511,5,616,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="630,19,723,33,773,45,822,62,876,93,915,126,912,130,872,98,820,67,772,50,722,38,629,25"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="519,55,607,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="621,70,716,83,822,103,894,125,893,131,821,109,715,88,621,76"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1SymbolCache.html" title="Default symbol cache implementation; stores associations between names (StringAttr&#39;s) to mlir::Operat..." alt="" coords="490,104,637,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="650,120,845,133,845,138,650,125"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1SymbolCacheBase.html" title="Base symbol cache class to allow for cache lookup through a pointer to some abstract cache." alt="" coords="17,39,195,64"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="209,60,427,89,499,101,498,107,426,94,209,65"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,89,207,129"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="221,108,490,113,490,118,221,113"/>
+<area shape="rect" id="Node000007" href="$classcirct_1_1Namespace.html" title="A namespace that is used to store existing names and generate new names in some scope within the IR." alt="" coords="496,153,631,179"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="644,161,821,151,845,149,845,154,822,157,645,167"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="28,153,184,179"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="198,163,496,163,496,169,198,169"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="81,203,131,228"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="145,210,426,183,495,174,496,179,427,189,145,215"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="451,203,676,243"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="689,206,755,195,821,179,899,151,900,156,822,185,756,200,690,211"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="61,252,151,277"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="165,265,286,267,356,264,426,257,499,241,500,246,427,262,357,269,286,272,165,271"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="473,268,653,293"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="666,268,744,252,783,240,820,225,849,208,875,189,914,152,918,155,878,193,851,213,823,230,785,245,745,257,668,273"/>
+</map>

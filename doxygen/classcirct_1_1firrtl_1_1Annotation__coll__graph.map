@@ -1,0 +1,5 @@
+<map id="circt::firrtl::Annotation" name="circt::firrtl::Annotation">
+<area shape="rect" id="Node000001" title="This class provides a read&#45;only projection of an annotation." alt="" coords="5,93,169,119"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="48,5,127,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,45,90,93,85,93,85,45"/>
+</map>

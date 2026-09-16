@@ -1,0 +1,35 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Bindings/Python/SVModule.cpp" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Bindings/Python/SVModule.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="431,5,677,60"/>
+<area shape="rect" id="Node000002" href="$CIRCTModules_8h.html" title=" " alt="" coords="37,115,165,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="431,60,179,111,160,115,159,110,177,105,430,54"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,203,164,229"/>
+<area shape="poly" id="edge17_Node000001_Node000003" title=" " alt="" coords="431,36,316,40,195,52,140,62,91,74,53,90,27,110,21,119,19,129,26,151,42,173,61,192,57,196,38,177,21,154,14,130,16,118,23,106,50,86,89,69,138,56,194,47,315,35,430,31"/>
+<area shape="rect" id="Node000004" href="$SV_8h.html" title=" " alt="" coords="189,115,332,141"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="472,63,310,114,309,109,471,58"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="301,196,471,236"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="460,62,426,82,399,110,390,126,385,145,384,182,379,182,380,144,385,124,395,106,423,78,457,58"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="559,108,717,148"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="580,59,614,96,610,100,576,62"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="741,115,852,141"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="623,58,755,108,753,113,621,63"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="876,115,1024,141"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="666,57,889,110,888,115,665,63"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="1048,115,1223,141"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="678,49,1037,105,1064,110,1063,115,1036,111,677,54"/>
+<area shape="rect" id="Node000011" href="$NanobindUtils_8h.html" title=" " alt="" coords="408,115,535,141"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="533,62,493,107,489,103,529,59"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="1247,115,1402,141"/>
+<area shape="poly" id="edge18_Node000001_Node000015" title=" " alt="" coords="678,41,935,66,1236,105,1261,110,1260,115,1235,111,935,71,677,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="101,141,92,190,87,189,96,140"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="188,203,277,229"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="259,142,243,191,238,189,254,140"/>
+<area shape="poly" id="edge12_Node000011_Node000003" title=" " alt="" coords="420,143,150,203,149,198,419,138"/>
+<area shape="poly" id="edge14_Node000011_Node000005" title=" " alt="" coords="440,143,279,201,277,196,438,138"/>
+<area shape="poly" id="edge13_Node000011_Node000006" title=" " alt="" coords="462,143,417,188,413,184,458,139"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="495,203,554,229"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="481,139,512,190,508,193,476,142"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="579,203,684,229"/>
+<area shape="poly" id="edge15_Node000011_Node000013" title=" " alt="" coords="494,138,599,194,596,199,492,143"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="707,203,782,229"/>
+<area shape="poly" id="edge16_Node000011_Node000014" title=" " alt="" coords="514,138,697,193,704,196,703,201,696,199,513,143"/>
+</map>

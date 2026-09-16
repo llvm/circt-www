@@ -1,0 +1,10 @@
+<map id="esi::SegmentedMessageData" name="esi::SegmentedMessageData">
+<area shape="rect" id="Node000001" title="Abstract multi&#45;segment message." alt="" coords="119,5,331,31"/>
+<area shape="rect" id="Node000002" href="$structSerialCoordBurst.html" title=" " alt="" coords="5,79,136,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,39,97,81,95,76,187,34"/>
+<area shape="rect" id="Node000003" href="$structSerialCoordInput.html" title=" " alt="" coords="160,79,291,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="219,44,221,78,216,79,214,45"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="237,45,235,79,230,78,231,44"/>
+<area shape="rect" id="Node000004" href="$classesi_1_1MessageData.html" title="A concrete flat message backed by a single vector of bytes." alt="" coords="315,79,453,104"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="264,34,359,76,357,81,262,39"/>
+</map>

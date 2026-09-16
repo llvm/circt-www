@@ -1,0 +1,7 @@
+<map id="SerialCoordData" name="SerialCoordData">
+<area shape="rect" id="Node000001" title=" " alt="" coords="31,108,159,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,80,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="41,44,41,64,46,83,57,96,70,106,67,110,53,100,42,85,36,65,35,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="111,5,185,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="141,45,121,85,105,109,101,106,116,83,136,42"/>
+</map>

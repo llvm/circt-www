@@ -1,0 +1,7 @@
+<map id="circt::SymbolCacheBase" name="circt::SymbolCacheBase">
+<area shape="rect" id="Node000001" title="Base symbol cache class to allow for cache lookup through a pointer to some abstract cache." alt="" coords="87,5,265,31"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1SymbolCache.html" title="Default symbol cache implementation; stores associations between names (StringAttr&#39;s) to mlir::Operat..." alt="" coords="5,79,152,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,41,96,81,93,76,148,37"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1hw_1_1HWSymbolCache.html" title="This stores lookup tables to make manipulating and working with the IR more efficient." alt="" coords="177,79,373,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="204,36,260,76,257,81,201,41"/>
+</map>

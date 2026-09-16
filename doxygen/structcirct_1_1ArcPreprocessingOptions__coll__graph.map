@@ -1,0 +1,7 @@
+<map id="circt::ArcPreprocessingOptions" name="circt::ArcPreprocessingOptions">
+<area shape="rect" id="Node000001" title=" " alt="" coords="99,167,319,192"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,220,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,56,204,165,199,168,130,59"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="245,13,367,38"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="294,51,218,168,214,165,289,48"/>
+</map>

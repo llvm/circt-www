@@ -1,0 +1,7 @@
+<map id="circt::arc::runtime::impl::VCDSignalId" name="circt::arc::runtime::impl::VCDSignalId">
+<area shape="rect" id="Node000001" title="String identifier for a signal in a VCD file consisting of characters in the ASCII range from &#39;!..." alt="" coords="39,93,186,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,87,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,41,83,68,100,91,96,95,79,71,59,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="111,5,250,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,45,153,71,133,95,129,91,149,68,166,42"/>
+</map>

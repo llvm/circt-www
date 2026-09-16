@@ -1,0 +1,23 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Arc/Runtime/Internal.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Arc/Runtime/Internal.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="184,5,372,75"/>
+<area shape="rect" id="Node000002" href="$TraceEncoder_8h.html" title=" " alt="" coords="364,123,552,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="343,80,407,120,404,125,340,84"/>
+<area shape="rect" id="Node000006" href="$ArcRuntime_8cpp.html" title=" " alt="" coords="5,357,193,427"/>
+<area shape="poly" id="edge11_Node000001_Node000006" title=" " alt="" coords="236,87,178,156,150,197,127,241,117,271,110,301,103,357,98,357,104,300,112,269,122,239,145,195,174,153,232,83"/>
+<area shape="rect" id="Node000003" href="$FSTTraceEncoder_8h.html" title=" " alt="" coords="801,240,1006,309"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="566,181,789,237,801,241,800,246,788,243,565,186"/>
+<area shape="rect" id="Node000005" href="$ModelInstance_8h.html" title=" " alt="" coords="137,240,329,309"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="381,201,300,242,297,237,379,196"/>
+<area shape="rect" id="Node000008" href="$VCDTraceEncoder_8h.html" title=" " alt="" coords="353,240,563,309"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="461,206,461,240,455,240,455,206"/>
+<area shape="rect" id="Node000010" href="$TraceEncoder_8cpp.html" title=" " alt="" coords="588,240,776,309"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="537,196,618,237,615,242,534,201"/>
+<area shape="rect" id="Node000004" href="$FSTTraceEncoder_8cpp.html" title=" " alt="" coords="809,357,997,427"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="906,323,906,357,901,357,901,323"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="185,321,140,359,137,355,182,316"/>
+<area shape="rect" id="Node000007" href="$ModelInstance_8cpp.html" title=" " alt="" coords="217,357,405,427"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="266,320,291,356,286,359,261,323"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="406,320,356,359,353,355,403,316"/>
+<area shape="rect" id="Node000009" href="$VCDTraceEncoder_8cpp.html" title=" " alt="" coords="429,357,617,427"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="486,320,507,356,502,358,482,323"/>
+</map>

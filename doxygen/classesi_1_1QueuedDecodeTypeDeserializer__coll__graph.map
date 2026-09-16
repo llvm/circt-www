@@ -1,0 +1,9 @@
+<map id="esi::QueuedDecodeTypeDeserializer&lt; T &gt;" name="esi::QueuedDecodeTypeDeserializer&lt; T &gt;">
+<area shape="rect" id="Node000001" title="Helper base class for stateful deserializers which may emit zero, one, or many typed outputs for each..." alt="" coords="189,108,483,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,13,237,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,41,311,105,308,110,159,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="261,5,411,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="339,59,339,108,333,108,333,59"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="443,13,507,38"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="470,52,461,70,447,86,425,101,400,110,398,106,422,96,444,82,456,67,465,50"/>
+</map>

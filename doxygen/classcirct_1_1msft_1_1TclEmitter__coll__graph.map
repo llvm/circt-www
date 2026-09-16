@@ -1,0 +1,24 @@
+<map id="circt::msft::TclEmitter" name="circt::msft::TclEmitter">
+<area shape="rect" id="Node000001" title="Instantiate for all Tcl emissions." alt="" coords="924,158,1084,183"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="576,10,664,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="678,15,727,15,785,20,845,32,901,54,934,77,962,105,998,156,993,159,958,108,931,81,899,58,843,37,784,25,727,21,678,21"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="81,70,131,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="145,80,296,81,490,91,696,114,900,148,941,155,940,161,900,153,695,119,489,96,296,86,145,85"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1hw_1_1HWSymbolCache.html" title="This stores lookup tables to make manipulating and working with the IR more efficient." alt="" coords="522,158,718,183"/>
+<area shape="poly" id="edge6_Node000004_Node000003" title=" " alt="" coords="146,89,231,105,304,115,360,120,417,125,490,136,573,155,572,160,489,141,417,130,360,125,303,120,230,111,145,94"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="732,168,923,168,923,173,732,173"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1SymbolCacheBase.html" title="Base symbol cache class to allow for cache lookup through a pointer to some abstract cache." alt="" coords="17,126,195,151"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="210,142,522,162,522,167,209,148"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="76,175,136,201"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="150,187,300,189,489,184,527,181,528,186,489,189,300,194,150,192"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="5,225,207,279"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="220,247,350,235,420,225,488,209,512,199,569,181,571,186,514,204,490,215,421,230,351,241,221,252"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="521,214,719,298"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="732,228,945,181,946,186,733,234"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="61,310,151,335"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="165,328,232,334,313,337,402,333,489,319,519,309,549,296,551,301,521,314,490,324,402,338,313,342,232,339,165,333"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="513,335,727,361"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="681,329,785,295,843,271,899,244,948,212,987,181,990,186,951,217,901,249,845,276,787,300,683,334"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="64,359,148,385"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="162,371,310,371,489,364,542,358,543,363,490,369,310,377,162,376"/>
+</map>

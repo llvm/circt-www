@@ -1,0 +1,7 @@
+<map id="circt::arc::runtime::impl::FSTSignalTableEntry" name="circt::arc::runtime::impl::FSTSignalTableEntry">
+<area shape="rect" id="Node000001" title="A traced signal in the FST file." alt="" coords="5,108,204,148"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="18,5,93,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,44,72,83,88,106,84,109,68,85,56,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="117,5,191,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,44,127,85,116,109,111,107,122,83,141,42"/>
+</map>

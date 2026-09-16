@@ -1,0 +1,33 @@
+<map id="circt::firrtl::OwningModuleCache" name="circt::firrtl::OwningModuleCache">
+<area shape="rect" id="Node000001" title="This implements an analysis to determine which module owns a given path operation." alt="" coords="1268,118,1459,158"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="933,89,1103,129"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1118,114,1268,127,1268,133,1117,120"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="512,96,603,121"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="617,106,933,106,933,111,617,111"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1firrtl_1_1InstanceGraph.html" title="This graph tracks modules and where they are instantiated." alt="" coords="925,153,1111,179"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1125,161,1244,154,1267,151,1268,157,1244,159,1126,167"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1igraph_1_1InstanceGraph.html" title="This graph tracks modules and where they are instantiated." alt="" coords="457,149,658,175"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="672,160,925,163,924,168,672,166"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="79,149,165,175"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="179,159,456,159,456,165,179,165"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="16,199,228,224"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="241,198,416,179,471,172,472,177,416,185,242,203"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="19,5,225,60"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="239,40,329,62,375,79,418,101,426,109,430,116,442,131,478,147,476,152,438,135,426,119,422,112,414,106,373,84,328,67,238,46"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="5,85,239,125"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="253,118,416,139,469,147,468,152,416,145,252,123"/>
+<area shape="rect" id="Node000010" href="$classcirct_1_1igraph_1_1InstanceGraphNode.html" title="This is a Node in the InstanceGraph." alt="" coords="440,256,675,281"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="628,250,959,176,960,181,629,256"/>
+<area shape="rect" id="Node000013" href="$classcirct_1_1igraph_1_1InstanceRecord.html" title="This is an edge in the InstanceGraph." alt="" coords="915,320,1121,345"/>
+<area shape="poly" id="edge14_Node000013_Node000010" title=" " alt="" coords="688,270,788,278,891,293,981,317,980,322,890,298,787,283,688,275"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="26,249,218,289"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="232,266,440,266,440,271,232,271"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="49,313,195,339"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="208,313,416,286,468,279,469,284,416,291,209,318"/>
+<area shape="poly" id="edge12_Node000010_Node000013" title=" " alt="" coords="901,333,802,326,698,313,642,299,593,284,595,279,644,294,699,307,802,321,901,328"/>
+<area shape="poly" id="edge16_Node000013_Node000013" title=" " alt="" coords="984,306,994,297,1018,293,1038,296,1050,302,1053,312,1047,321,1043,318,1048,311,1046,305,1037,301,1018,299,996,302,987,310"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="462,328,653,383"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="667,347,914,335,915,340,667,353"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="481,407,634,432"/>
+<area shape="poly" id="edge15_Node000013_Node000015" title=" " alt="" coords="647,406,763,388,890,365,974,343,976,348,891,370,764,394,648,411"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="ServiceGenFunc" name="ServiceGenFunc">
+<area shape="rect" id="Node000001" title="Container for a Python function that will be called to generate a service." alt="" coords="5,93,132,119"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="37,5,100,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,45,71,93,66,93,66,45"/>
+</map>

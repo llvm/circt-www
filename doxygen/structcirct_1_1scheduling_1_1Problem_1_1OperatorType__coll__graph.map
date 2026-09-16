@@ -1,0 +1,5 @@
+<map id="circt::scheduling::Problem::OperatorType" name="circt::scheduling::Problem::OperatorType">
+<area shape="rect" id="Node000001" title="Operator types are distinguished by name (chosen by the client)." alt="" coords="5,93,176,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="49,5,133,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,44,93,93,88,93,88,44"/>
+</map>

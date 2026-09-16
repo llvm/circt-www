@@ -1,0 +1,9 @@
+<map id="esi::BitVector" name="esi::BitVector">
+<area shape="rect" id="Node000001" title="A lightweight, non&#45;owning bit vector view backed by a byte array span." alt="" coords="156,93,264,119"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,156,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,36,194,91,191,95,108,40"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="180,5,240,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,45,213,93,207,93,207,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="267,5,334,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="292,44,273,71,238,95,235,91,269,67,288,41"/>
+</map>

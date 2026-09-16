@@ -1,0 +1,17 @@
+<map id="circt::lsp::VerilogIndex" name="circt::lsp::VerilogIndex">
+<area shape="rect" id="Node000001" title=" " alt="" coords="928,169,1095,195"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="567,5,673,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="686,19,736,25,793,36,851,53,905,78,936,99,963,124,1002,167,998,171,959,128,932,104,903,83,849,58,792,41,736,30,686,24"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="580,55,660,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="674,71,775,90,892,129,983,167,981,172,890,134,774,95,673,76"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="465,105,775,203"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="789,163,928,173,928,179,788,169"/>
+<area shape="rect" id="Node000005" href="$classllvm_1_1SmallDenseMap.html" title=" " alt="" coords="517,227,723,297"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="736,236,948,192,949,197,737,241"/>
+<area shape="rect" id="Node000006" href="$classllvm_1_1SmallDenseMap.html" title=" " alt="" coords="5,235,225,289"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="239,259,517,259,517,265,239,265"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="575,321,665,347"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="678,326,725,318,774,306,812,292,840,278,903,242,988,192,991,197,905,247,842,283,814,297,775,311,726,324,679,331"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="551,371,689,396"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="702,379,750,373,803,362,855,344,902,318,937,289,965,254,1001,193,1006,196,969,257,940,292,906,323,857,349,804,367,751,378,702,384"/>
+</map>

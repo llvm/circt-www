@@ -1,0 +1,20 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Arc/Runtime/TraceTaps.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Arc/Runtime/TraceTaps.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="453,5,641,75"/>
+<area shape="rect" id="Node000002" href="$FSTTraceEncoder_8h.html" title=" " alt="" coords="33,123,238,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="441,74,239,130,238,125,440,69"/>
+<area shape="rect" id="Node000004" href="$VCDTraceEncoder_8h.html" title=" " alt="" coords="330,123,541,192"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="507,87,470,124,466,121,503,83"/>
+<area shape="rect" id="Node000005" href="$ModelInstance_8cpp.html" title=" " alt="" coords="217,240,405,309"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="441,56,407,65,374,80,345,99,320,124,307,151,301,182,302,212,306,240,300,240,296,213,296,181,302,150,316,121,341,95,372,75,405,60,439,50"/>
+<area shape="rect" id="Node000007" href="$LowerArcToLLVM_8cpp.html" title=" " alt="" coords="565,123,757,192"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="592,83,629,121,626,124,588,87"/>
+<area shape="rect" id="Node000008" href="$TraceEncoder_8cpp.html" title=" " alt="" coords="781,123,969,192"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="656,76,782,121,780,126,654,81"/>
+<area shape="rect" id="Node000009" href="$InsertRuntime_8cpp.html" title=" " alt="" coords="993,123,1187,192"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="655,55,811,83,983,120,994,123,992,128,981,125,810,88,655,61"/>
+<area shape="rect" id="Node000003" href="$FSTTraceEncoder_8cpp.html" title=" " alt="" coords="5,240,193,309"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,206,112,241,107,239,118,205"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="390,204,349,242,346,238,387,200"/>
+<area shape="rect" id="Node000006" href="$VCDTraceEncoder_8cpp.html" title=" " alt="" coords="429,240,617,309"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="472,202,500,238,495,241,467,205"/>
+</map>

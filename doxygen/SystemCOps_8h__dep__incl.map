@@ -1,0 +1,13 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/SystemC/SystemCOps.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/SystemC/SystemCOps.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="587,5,805,75"/>
+<area shape="rect" id="Node000002" href="$HWToSystemC_8cpp.html" title=" " alt="" coords="5,123,224,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="574,62,413,90,237,125,225,128,224,123,235,120,412,85,573,57"/>
+<area shape="rect" id="Node000003" href="$SystemCDialect_8cpp.html" title=" " alt="" coords="249,130,538,185"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="596,82,463,132,461,127,594,77"/>
+<area shape="rect" id="Node000004" href="$SystemCOps_8cpp.html" title=" " alt="" coords="562,130,830,185"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="699,89,699,130,693,130,693,89"/>
+<area shape="rect" id="Node000005" href="$SystemCLowerInstanceInterop_8cpp.html" title=" " alt="" coords="855,123,1105,192"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="792,77,898,120,896,125,790,82"/>
+<area shape="rect" id="Node000006" href="$SystemCEmissionPatterns_8cpp.html" title=" " alt="" coords="1129,123,1409,192"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="819,61,1118,120,1130,122,1128,128,1117,125,818,67"/>
+</map>

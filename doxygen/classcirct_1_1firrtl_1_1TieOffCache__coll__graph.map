@@ -1,0 +1,9 @@
+<map id="circt::firrtl::TieOffCache" name="circt::firrtl::TieOffCache">
+<area shape="rect" id="Node000001" title="Helper class to cache tie&#45;off values for different FIRRTL types." alt="" coords="63,225,235,251"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,130,163,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,165,143,224,139,227,98,168"/>
+<area shape="rect" id="Node000003" href="$classllvm_1_1SmallDenseMap.html" title=" " alt="" coords="187,123,352,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,173,166,227,162,223,233,169"/>
+<area shape="rect" id="Node000004" href="$classllvm_1_1SmallDenseMap.html" title=" " alt="" coords="159,5,379,60"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="272,74,272,122,267,122,267,74"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="circt::arc::runtime::impl::TraceBuffer" name="circt::arc::runtime::impl::TraceBuffer">
+<area shape="rect" id="Node000001" title="A heap allocated buffer containing raw trace data and time step markers." alt="" coords="341,107,481,147"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="67,5,142,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,20,234,33,277,44,318,60,357,81,389,105,386,109,354,86,316,64,275,50,233,38,155,25"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="71,55,138,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,69,230,78,318,94,355,105,354,110,317,99,229,83,152,74"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="67,109,142,135"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="156,121,228,123,341,125,341,130,228,129,156,127"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,159,204,213"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="217,164,317,145,341,140,342,145,318,150,218,169"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="15,237,195,263"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="175,231,245,211,316,182,380,145,383,150,319,187,246,216,177,236"/>
+</map>

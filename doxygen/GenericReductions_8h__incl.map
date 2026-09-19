@@ -1,0 +1,19 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Reduce/GenericReductions.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Reduce/GenericReductions.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="382,5,677,60"/>
+<area shape="rect" id="Node000002" href="$Reduction_8h.html" title=" " alt="" coords="362,108,545,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="508,62,475,99,471,96,504,58"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="569,108,644,133"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="555,58,589,96,585,99,551,62"/>
+<area shape="rect" id="Node000003" href="$LLVM_8h.html" title=" " alt="" coords="105,181,260,207"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="411,136,240,180,239,175,409,131"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="285,181,433,207"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="440,135,387,175,384,171,437,131"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="457,181,639,207"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="470,131,523,171,520,175,467,135"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="663,181,838,207"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="502,131,690,175,689,181,500,136"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,255,157,280"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="168,209,111,249,108,244,165,204"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="181,255,387,280"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="200,204,258,244,255,249,197,209"/>
+</map>

@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['hadsignednesssemantics_0',['hadSignednessSemantics',['../structcirct_1_1HWArithToHWTypeConverter_1_1ConvertedType.html#a2b23a13adb509593e56e69f1c210b527',1,'circt::HWArithToHWTypeConverter::ConvertedType']]],
+  ['handle_1',['handle',['../structcirct_1_1arc_1_1runtime_1_1impl_1_1FSTSignalTableEntry.html#a74618fd544f26e904fe3cee092e7db5a',1,'circt::arc::runtime::impl::FSTSignalTableEntry']]],
+  ['has_5fcycle_2',['has_cycle',['../classesiaccel_1_1codegen_1_1generator_1_1CppTypePlanner.html#a55766f1bc711ed4dc2743d9a3092ffa8',1,'esiaccel.codegen.generator.CppTypePlanner.has_cycle'],['../classesiaccel_1_1codegen_1_1generator_1_1CppTypeEmitter.html#a45a5147235ccfe297a7d7cbacdda2da7',1,'esiaccel.codegen.generator.CppTypeEmitter.has_cycle']]],
+  ['has_5fesi_5fid_5fv_3',['has_esi_id_v',['../namespaceesi.html#a4d175a039a6ee61e58aa28ab00baf0d5',1,'esi']]],
+  ['has_5fesi_5fwindow_5fid_5fv_4',['has_esi_window_id_v',['../namespaceesi.html#a9ae287ee383035c9094311f1615f9007',1,'esi']]],
+  ['has_5ftype_5fdeserializer_5fv_5',['has_type_deserializer_v',['../namespaceesi_1_1detail.html#a041d9ccd9027cbe9baca16965363b9ff',1,'esi::detail']]],
+  ['haseof_6',['hasEOF',['../structcirct_1_1pretty_1_1BufferingPP.html#a002af5e357dff2c6112c2434f8d88937',1,'circt::pretty::BufferingPP']]],
+  ['haslistfield_7',['hasListField',['../structesi_1_1ChannelPort_1_1TranslationInfo.html#aab7d3fb3fee4defb43d3af47e1a4616c',1,'esi::ChannelPort::TranslationInfo']]],
+  ['hasproperties_8',['hasProperties',['../classcirct_1_1firrtl_1_1InstanceInfo_1_1ModuleAttributes.html#ad7816b013e26be50ae8af1d611c5bfd6',1,'circt::firrtl::InstanceInfo::ModuleAttributes']]],
+  ['hasseensymbol_9',['hasSeenSymbol',['../structStructuralHasher.html#aba4b851e2af0d30f6439b1c9368b8971',1,'StructuralHasher']]],
+  ['hasselfloop_10',['hasselfloop',['../structcirct_1_1SparseOpSCC_1_1ForwardFrame.html#a39f375cfd5961ac284b2992ddc300e7b',1,'circt::SparseOpSCC::ForwardFrame::hasSelfLoop'],['../structcirct_1_1SparseOpSCC_1_1BackwardFrame.html#a01fccf8647d80fcfa66b86bc32a791ba',1,'circt::SparseOpSCC::BackwardFrame::hasSelfLoop']]],
+  ['hasuninferredreset_11',['hasUninferredReset',['../structcirct_1_1firrtl_1_1RecursiveTypeProperties.html#a62a255fa5cb9bf5bf114b072d61f2858',1,'circt::firrtl::RecursiveTypeProperties']]],
+  ['hasuninferredwidth_12',['hasUninferredWidth',['../structcirct_1_1firrtl_1_1RecursiveTypeProperties.html#ada3cd33b03cb606b9dee3f505173f1ef',1,'circt::firrtl::RecursiveTypeProperties']]],
+  ['header_13',['header',['../structSerialCoordInput.html#a8f168ca5f31efdd913114fb51a320e06',1,'SerialCoordInput::header'],['../structSerialCoordBurst.html#a864774b6b3d956df46b7d1b709a4d124',1,'SerialCoordBurst::header'],['../unionSerialCoordOutputFrame.html#a8969118f10f436513aea99bbbac982e0',1,'SerialCoordOutputFrame::header']]],
+  ['hellodone_14',['helloDone',['../structesi_1_1cosim_1_1RpcServer_1_1Impl_1_1ClientSession.html#ad55bc558e82d10cd3cf52290b004da72',1,'esi::cosim::RpcServer::Impl::ClientSession']]],
+  ['hiername_15',['hierName',['../structcirct_1_1ImportVerilog_1_1HierPathInfo.html#a2d86d988a0a66ad9c7fe6fb38e2cd069',1,'circt::ImportVerilog::HierPathInfo']]],
+  ['hierpathcache_16',['hierpathcache',['../classLowerLayersPass.html#aa0f037d806af526907ed24dede593541',1,'LowerLayersPass::hierPathCache'],['../classLowerXMRPass.html#a7addf15ab207904dd281c68a29a275ef',1,'LowerXMRPass::hierPathCache'],['../structcirct_1_1firrtl_1_1ApplyState.html#a03e79924a2ca153f76314ab317057c96',1,'circt::firrtl::ApplyState::hierPathCache']]],
+  ['hierpaths_17',['hierPaths',['../structcirct_1_1ImportVerilog_1_1Context.html#ac407a20ee28d469d0605f8ca01d4a5b8',1,'circt::ImportVerilog::Context']]],
+  ['hiervaluesymbols_18',['hierValueSymbols',['../structcirct_1_1ImportVerilog_1_1Context.html#a75a4bcad72c6a2603c6e4e521c178322',1,'circt::ImportVerilog::Context']]],
+  ['history_19',['history',['../structcirct_1_1synth_1_1OpenPath.html#af60dec216551d69b7f2a0ed94a9941d1',1,'circt::synth::OpenPath::history'],['../classsynth_1_1LongestPathHistory.html#ab23d80f26985dd1147555aec1bdc6190',1,'synth.LongestPathHistory.history'],['../classsynth_1_1LongestPathHistory.html#ae2baab796376c77c8889e5a95d3f2d2c',1,'synth.LongestPathHistory.history']]],
+  ['hits_20',['hits',['../classcirct_1_1firrtl_1_1FieldRefCache.html#a2071677a4fd25a816cfabf8fc3721305',1,'circt::firrtl::FieldRefCache']]],
+  ['host_21',['host',['../classRpcClient_1_1Impl.html#ac432113f957293514c62ca8d5561c130',1,'RpcClient::Impl']]],
+  ['hw_5fdir_22',['hw_dir',['../namespacetests_1_1integration_1_1conftest.html#aad13773c588375e1f3a04920302498b4',1,'tests.integration.conftest.HW_DIR'],['../namespacetest__advanced.html#ad838816a32f6f681248dc45c7f747888',1,'test_advanced.HW_DIR'],['../namespacetest__esi.html#a172a8e7f98eeb4c8279d2674091d619f',1,'test_esi.HW_DIR'],['../namespacetest__loopback.html#a18f1487168d976a17a3d7dbfc6f05ec0',1,'test_loopback.HW_DIR'],['../namespacetest__ram.html#a26b15e26dac15548ac7b7cfe5831978b',1,'test_ram.HW_DIR'],['../namespacetests_1_1integration_1_1test__channel__arbiter.html#a5da8f9782e71ba6299eaa44572cdb671',1,'tests.integration.test_channel_arbiter.HW_DIR']]],
+  ['hwbitwidth_23',['hwBitwidth',['../classesi_1_1Type.html#af6d4823b40f3ddaa86a369accae8556b',1,'esi::Type']]]
+];

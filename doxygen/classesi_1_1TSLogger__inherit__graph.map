@@ -1,0 +1,9 @@
+<map id="esi::TSLogger" name="esi::TSLogger">
+<area shape="rect" id="Node000001" title="A thread&#45;safe logger which calls functions implemented by subclasses." alt="" coords="106,79,215,104"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1ConsoleLogger.html" title="A logger that writes to the console. Includes color support." alt="" coords="5,152,151,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,115,93,154,90,150,135,111"/>
+<area shape="rect" id="Node000004" href="$classesi_1_1StreamLogger.html" title="A logger that writes to a C++ std::ostream." alt="" coords="175,152,315,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="186,111,233,150,229,154,183,115"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1Logger.html" title=" " alt="" coords="114,5,207,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,44,163,79,158,79,158,44"/>
+</map>

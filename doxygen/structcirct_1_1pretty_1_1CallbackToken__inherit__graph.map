@@ -1,0 +1,10 @@
+<map id="circt::pretty::CallbackToken" name="circt::pretty::CallbackToken">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,301,203,327"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1pretty_1_1TokenBase.html" title=" " alt="" coords="17,197,191,252"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,266,107,301,101,301,101,266"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1pretty_1_1Token.html" title=" " alt="" coords="28,5,169,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,44,106,197,101,197,97,44"/>
+<area shape="rect" id="Node000004" href="$structcirct_1_1pretty_1_1TokenBase.html" title="Helper class to CRTP&#45;derive common functions." alt="" coords="119,80,318,120"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="129,36,192,78,189,82,126,41"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="193,132,131,199,127,195,189,129"/>
+</map>

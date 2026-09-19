@@ -1,0 +1,21 @@
+<map id="esi::ChannelPort::TranslationInfo" name="esi::ChannelPort::TranslationInfo">
+<area shape="rect" id="Node000001" title="Instructions for translating windowed types." alt="" coords="281,328,513,353"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1WindowType.html" title="Windows represent a fixed&#45;size sliding window over a stream of data." alt="" coords="65,218,196,243"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,248,210,275,266,302,345,325,343,331,264,306,207,280,159,253"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1Type.html" title="Root class of the ESI type system." alt="" coords="93,101,171,126"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="132,140,131,157,132,218,127,218,125,157,127,139"/>
+<area shape="poly" id="edge6_Node000002_Node000003" title=" " alt="" coords="134,139,133,218,128,218,129,139"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,5,64,31"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="33,44,32,87,35,110,41,132,56,158,76,182,115,216,112,220,72,185,52,162,36,134,29,111,26,87,28,44"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="58,38,122,99,118,102,55,42"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="95,5,169,31"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="135,44,135,101,129,101,129,44"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="196,93,383,133"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="267,146,222,189,192,207,162,220,160,216,189,202,218,185,264,142"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="221,211,435,251"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="350,261,392,326,387,329,345,263"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="459,218,519,243"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="473,256,430,306,410,329,406,326,426,302,469,252"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="565,218,616,243"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="585,258,572,283,551,306,526,321,500,330,498,325,524,316,548,302,567,280,580,255"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="circt::firrtl::FIRRTLTypeSwitch&lt; T, ResultT &gt;" name="circt::firrtl::FIRRTLTypeSwitch&lt; T, ResultT &gt;">
+<area shape="rect" id="Node000001" title="This class implements the same functionality as TypeSwitch except that it uses firrtl::type_dyn_cast ..." alt="" coords="107,123,273,163"/>
+<area shape="rect" id="Node000002" href="$classllvm_1_1detail_1_1TypeSwitchBase.html" title=" " alt="" coords="5,5,191,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,69,176,120,172,124,128,73"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="215,20,349,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="265,58,208,124,204,121,261,54"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="circt::ArcOptimizationOptions" name="circt::ArcOptimizationOptions">
+<area shape="rect" id="Node000001" title=" " alt="" coords="97,152,310,177"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,212,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,55,197,150,193,153,127,58"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="237,13,359,38"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="284,51,214,153,209,150,280,48"/>
+</map>

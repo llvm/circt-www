@@ -1,0 +1,10 @@
+<map id="ListCreateElementRemover" name="ListCreateElementRemover">
+<area shape="rect" id="Node000001" title="A reduction pattern that removes elements from FIRRTL list create operations." alt="" coords="5,272,207,297"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="35,183,177,223"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,236,109,272,103,272,103,236"/>
+<area shape="rect" id="Node000003" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="39,5,162,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="104,44,108,183,103,183,99,45"/>
+<area shape="rect" id="Node000004" href="$structcirct_1_1OpReduction.html" title="A reduction pattern for a specific operation." alt="" coords="122,80,263,120"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="126,37,173,78,169,82,122,41"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="169,132,124,184,120,181,165,129"/>
+</map>

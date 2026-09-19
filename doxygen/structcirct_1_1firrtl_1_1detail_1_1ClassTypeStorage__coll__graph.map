@@ -1,0 +1,16 @@
+<map id="circt::firrtl::detail::ClassTypeStorage" name="circt::firrtl::detail::ClassTypeStorage">
+<area shape="rect" id="Node000001" title=" " alt="" coords="616,105,761,145"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="340,5,476,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="481,31,537,47,593,68,658,102,655,107,591,72,535,52,480,37"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="337,55,479,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="486,80,593,102,616,107,615,112,591,107,485,85"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="329,105,487,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="500,122,616,122,616,127,500,127"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,141,84,167"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="97,147,329,128,329,134,98,152"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="327,169,489,195"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="97,168,108,170,222,181,326,182,326,188,222,186,108,175,96,173"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="485,164,591,142,615,137,616,142,593,147,486,169"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="371,219,445,244"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="458,219,522,202,591,178,656,143,659,147,593,183,524,207,459,224"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="circt::hw::HWModulePortAccessor" name="circt::hw::HWModulePortAccessor">
+<area shape="rect" id="Node000001" title=" " alt="" coords="171,299,409,324"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,196,183,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,225,269,296,267,301,127,230"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="207,196,373,221"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="293,235,293,299,287,299,287,235"/>
+<area shape="rect" id="Node000004" href="$structcirct_1_1hw_1_1ModulePortInfo.html" title="This holds a decoded list of input/inout and output ports for a module or instance." alt="" coords="397,196,580,221"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="467,233,437,256,402,277,338,301,336,296,399,272,434,251,464,228"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="417,93,560,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="491,147,491,196,486,196,486,147"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="439,5,539,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="491,44,491,93,486,93,486,44"/>
+</map>

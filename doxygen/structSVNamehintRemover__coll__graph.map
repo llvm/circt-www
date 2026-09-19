@@ -1,0 +1,7 @@
+<map id="SVNamehintRemover" name="SVNamehintRemover">
+<area shape="rect" id="Node000001" title="Pseudo&#45;reduction that removes sv.namehint attributes from operations." alt="" coords="31,168,194,193"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="51,93,174,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,133,115,168,110,168,110,133"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,220,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="115,45,115,93,110,93,110,45"/>
+</map>

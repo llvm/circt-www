@@ -1,0 +1,5 @@
+<map id="circt::hw::TypeVariant&lt; Types &gt;" name="circt::hw::TypeVariant&lt; Types &gt;">
+<area shape="rect" id="Node000001" title="Utility type that wraps a type that may be one of several possible Types." alt="" coords="49,108,209,148"/>
+<area shape="rect" id="Node000002" href="$classmlir_1_1Type_1_1TypeBase.html" title=" " alt="" coords="5,5,252,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,74,131,108,126,108,126,74"/>
+</map>

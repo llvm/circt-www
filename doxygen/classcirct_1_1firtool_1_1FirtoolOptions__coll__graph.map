@@ -1,0 +1,27 @@
+<map id="circt::firtool::FirtoolOptions" name="circt::firtool::FirtoolOptions">
+<area shape="rect" id="Node000001" title="Set of options used to control the behavior of the firtool pipeline." alt="" coords="737,579,932,605"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="321,178,380,203"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="393,178,461,167,546,164,591,168,635,178,677,194,715,218,755,258,785,307,806,359,821,414,830,466,835,513,836,579,831,579,829,513,825,467,816,415,801,361,780,309,750,262,712,222,675,199,633,183,590,174,546,170,461,173,394,183"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="325,382,376,407"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="390,394,574,404,664,413,714,424,738,440,758,459,792,503,816,546,831,578,826,580,812,548,788,506,754,463,734,444,712,429,663,418,574,410,390,399"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="293,431,408,457"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="422,442,583,450,660,459,714,474,751,496,783,525,827,577,823,581,780,529,748,501,712,478,659,464,582,455,421,447"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="293,481,408,506"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="422,490,559,499,637,510,714,528,770,551,815,577,813,582,768,556,713,533,636,515,558,504,422,496"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="305,530,396,555"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="410,543,548,553,714,569,763,577,763,582,713,575,548,558,409,549"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="285,579,417,605"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="430,589,737,589,737,595,430,595"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="298,629,403,654"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="417,635,553,625,713,609,763,602,763,607,714,615,554,631,417,640"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="283,678,419,703"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="432,689,565,680,640,669,713,652,768,629,813,603,816,607,771,633,714,657,641,675,566,686,432,694"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="262,727,439,753"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="453,747,514,748,580,743,648,731,712,708,749,686,780,657,823,603,827,607,784,660,752,690,714,713,649,736,581,748,514,753,453,753"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="296,777,405,802"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="419,800,484,807,560,808,639,797,677,785,712,768,735,752,756,732,790,685,813,639,827,604,832,606,818,641,794,688,760,735,739,756,715,773,679,790,640,802,561,813,484,813,419,805"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="253,826,448,851"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="410,852,476,864,555,869,596,867,637,860,676,848,712,830,740,807,764,778,784,747,799,713,820,650,829,604,834,606,825,651,804,715,788,749,769,782,744,811,715,834,678,853,638,865,596,872,555,875,475,869,409,857"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="5,826,105,851"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="119,836,253,836,253,841,119,841"/>
+</map>

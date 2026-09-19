@@ -1,0 +1,9 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Target/ExportSystemC/Patterns/SystemCEmissionPatterns.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Target/ExportSystemC/Patterns/SystemCEmissionPatterns.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="142,5,407,75"/>
+<area shape="rect" id="Node000002" href="$SystemCEmissionPatterns_8cpp.html" title=" " alt="" coords="5,123,285,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,86,185,124,182,120,225,82"/>
+<area shape="rect" id="Node000003" href="$RegisterAllEmitters_8h.html" title=" " alt="" coords="310,123,501,192"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="325,82,369,120,365,124,321,86"/>
+<area shape="rect" id="Node000004" href="$ExportSystemC_8cpp.html" title=" " alt="" coords="310,240,501,309"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="408,206,408,240,403,240,403,206"/>
+</map>

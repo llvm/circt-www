@@ -1,0 +1,9 @@
+<map id="circt::hw::InnerSymbolNamespace" name="circt::hw::InnerSymbolNamespace">
+<area shape="rect" id="Node000001" title=" " alt="" coords="26,168,269,193"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1Namespace.html" title="A namespace that is used to store existing names and generate new names in some scope within the IR." alt="" coords="80,93,215,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,133,150,168,145,168,145,133"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,161,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="98,42,115,68,137,91,133,95,111,71,94,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="186,5,237,31"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="201,45,184,71,162,95,158,91,180,68,197,42"/>
+</map>

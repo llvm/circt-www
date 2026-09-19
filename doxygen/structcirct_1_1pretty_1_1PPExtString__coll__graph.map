@@ -1,0 +1,5 @@
+<map id="circt::pretty::PPExtString" name="circt::pretty::PPExtString">
+<area shape="rect" id="Node000001" title="String wrapper to indicate string has external storage." alt="" coords="5,93,184,119"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="53,5,136,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,45,97,93,92,93,92,45"/>
+</map>

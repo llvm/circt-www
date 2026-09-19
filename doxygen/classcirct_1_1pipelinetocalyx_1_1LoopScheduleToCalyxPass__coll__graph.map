@@ -1,0 +1,9 @@
+<map id="circt::pipelinetocalyx::LoopScheduleToCalyxPass" name="circt::pipelinetocalyx::LoopScheduleToCalyxPass">
+<area shape="rect" id="Node000001" title=" " alt="" coords="432,77,632,117"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1impl_1_1LoopScheduleToCalyxBase.html" title=" " alt="" coords="5,5,267,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="280,53,408,74,432,78,431,83,408,79,280,58"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="81,84,191,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="204,94,432,94,432,99,204,99"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="31,134,241,174"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="255,136,408,114,431,110,432,116,408,119,256,141"/>
+</map>

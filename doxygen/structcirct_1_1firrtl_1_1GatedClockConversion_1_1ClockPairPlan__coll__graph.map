@@ -1,0 +1,14 @@
+<map id="circt::firrtl::GatedClockConversion::ClockPairPlan" name="circt::firrtl::GatedClockConversion::ClockPairPlan">
+<area shape="rect" id="Node000001" title="(baseClk, enable) pair planned for a clock value." alt="" coords="158,196,349,236"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1firrtl_1_1GatedClockConversion_1_1MatRef.html" title="A reference to a clock/enable value that can also name values which do not exist yet (a planned port,..." alt="" coords="103,93,271,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,143,243,194,239,197,205,146"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,56,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="58,37,103,67,147,91,145,96,100,72,55,41"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="80,5,139,31"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="130,40,153,68,173,91,168,95,149,71,126,43"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="163,5,250,31"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="204,44,193,94,188,93,199,43"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="277,5,358,31"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="318,45,310,105,302,140,289,173,273,197,269,195,284,171,296,138,305,104,313,44"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="286,40,260,57,210,95,207,91,257,52,283,36"/>
+</map>

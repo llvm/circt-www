@@ -1,0 +1,7 @@
+<map id="circt::rtg::DictEntry" name="circt::rtg::DictEntry">
+<area shape="rect" id="Node000001" title="Defines an entry in an !rtg.dict." alt="" coords="21,93,165,119"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,89,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,42,71,68,86,92,82,95,66,71,54,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="113,5,165,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,44,101,94,97,92,124,41"/>
+</map>

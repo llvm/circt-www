@@ -1,0 +1,7 @@
+<map id="circt::synth::LongestPathAnalysisOptions" name="circt::synth::LongestPathAnalysisOptions">
+<area shape="rect" id="Node000001" title="Configuration options for the longest path analysis." alt="" coords="36,123,217,163"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,56,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="27,44,26,71,34,97,46,110,61,120,58,125,42,114,30,100,21,72,22,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="182,5,266,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,45,213,73,197,100,168,125,164,121,193,97,208,71,217,43"/>
+</map>

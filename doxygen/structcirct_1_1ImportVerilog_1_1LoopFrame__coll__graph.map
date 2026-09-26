@@ -1,0 +1,5 @@
+<map id="circt::ImportVerilog::LoopFrame" name="circt::ImportVerilog::LoopFrame">
+<area shape="rect" id="Node000001" title="Information about a loops continuation and exit blocks relevant while lowering the loop&#39;s body statem..." alt="" coords="5,108,152,148"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="49,5,108,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,45,81,108,76,108,76,45"/>
+</map>

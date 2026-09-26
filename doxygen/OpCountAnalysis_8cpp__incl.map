@@ -1,0 +1,16 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Analysis/OpCountAnalysis.cpp" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Analysis/OpCountAnalysis.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="336,5,579,60"/>
+<area shape="rect" id="Node000002" href="$OpCountAnalysis_8h.html" title=" " alt="" coords="262,108,498,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="436,62,402,99,398,96,432,58"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="475,181,621,207"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="480,59,512,107,541,167,536,169,507,109,475,62"/>
+<area shape="rect" id="Node000003" href="$LLVM_8h.html" title=" " alt="" coords="105,181,260,207"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="349,136,229,179,227,174,347,131"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="408,131,509,173,507,178,406,136"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="285,181,451,207"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="381,134,375,168,370,167,375,133"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,255,157,280"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="168,209,111,249,108,244,165,204"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="181,255,387,280"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="200,204,258,244,255,249,197,209"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="circt::calyx::MemoryPortsImpl" name="circt::calyx::MemoryPortsImpl">
+<area shape="rect" id="Node000001" title=" " alt="" coords="130,240,347,265"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,64,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="40,131,51,175,62,196,78,214,107,227,152,237,151,243,105,232,74,218,58,199,46,176,35,133"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="88,93,229,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,132,164,173,171,195,181,214,194,228,210,238,207,242,191,232,177,218,166,197,159,174,155,133"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="254,93,421,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="334,133,318,174,293,218,263,242,259,238,289,214,314,172,329,131"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="287,5,387,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="340,45,340,93,335,93,335,45"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="445,93,579,119"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="497,131,456,176,429,199,400,218,366,233,331,243,330,237,365,228,397,214,426,195,453,172,493,128"/>
+</map>

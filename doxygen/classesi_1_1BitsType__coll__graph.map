@@ -1,0 +1,13 @@
+<map id="esi::BitsType" name="esi::BitsType">
+<area shape="rect" id="Node000001" title="Bits are just an array of bits." alt="" coords="79,256,183,281"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1BitVectorType.html" title="Bit vectors include signed, unsigned, and signless integers." alt="" coords="61,181,200,207"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,221,133,256,128,256,128,221"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1Type.html" title="Root class of the ESI type system." alt="" coords="41,93,119,119"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,129,126,179,121,182,92,132"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,5,64,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="50,42,76,92,71,94,45,44"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="89,5,162,31"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="115,44,89,94,84,92,110,42"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="144,93,219,119"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="170,132,140,182,135,179,165,129"/>
+</map>

@@ -1,0 +1,24 @@
+<map id="circt::ExportSystemC::EmissionPrinter" name="circt::ExportSystemC::EmissionPrinter">
+<area shape="rect" id="Node000001" title="This is intended to be the driving class for all pattern&#45;based IR emission." alt="" coords="1113,256,1272,296"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1ExportSystemC_1_1FrozenEmissionPatternSet.html" title=" " alt="" coords="761,5,959,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="954,79,965,84,1031,120,1091,165,1139,211,1177,254,1173,257,1136,215,1088,169,1028,125,963,89,952,83"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,142,237,197"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="198,134,318,88,427,49,477,35,541,24,594,18,636,18,732,24,761,26,760,31,732,29,636,23,595,24,542,29,478,41,429,54,320,93,199,139"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1ExportSystemC_1_1FrozenEmissionPatternSet.html" title="This class intends to collect a set of emission patterns in a way to provide fast lookups,..." alt="" coords="319,103,517,158"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="251,150,318,141,319,146,251,155"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1ExportSystemC_1_1FrozenEmissionPatternSet.html" title=" " alt="" coords="756,99,964,168"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="225,198,333,221,396,230,462,236,530,237,599,232,666,220,731,200,743,190,754,178,774,166,777,170,758,182,746,194,733,205,668,226,600,238,530,242,462,241,395,235,332,226,224,203"/>
+<area shape="rect" id="Node000006" href="$classcirct_1_1ExportSystemC_1_1FrozenEmissionPatternSet.html" title=" " alt="" coords="759,192,961,261"/>
+<area shape="poly" id="edge9_Node000006_Node000003" title=" " alt="" coords="180,201,246,233,319,257,377,267,436,273,554,272,664,262,758,247,759,252,665,267,554,278,435,278,376,273,318,263,244,238,178,206"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="529,98,541,95,760,53,761,58,542,100,530,103"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="531,129,756,130,756,135,531,134"/>
+<area shape="poly" id="edge10_Node000006_Node000004" title=" " alt="" coords="518,159,542,165,654,190,759,209,758,214,653,195,541,171,517,164"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="962,171,1090,226,1151,254,1149,258,1088,230,960,176"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="975,241,1113,262,1113,267,975,246"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="767,286,953,311"/>
+<area shape="poly" id="edge11_Node000001_Node000007" title=" " alt="" coords="966,290,1089,281,1113,280,1113,285,1090,287,966,295"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="835,335,885,361"/>
+<area shape="poly" id="edge12_Node000001_Node000008" title=" " alt="" coords="899,341,986,329,1089,308,1137,293,1139,299,1090,313,987,334,900,346"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="821,385,899,410"/>
+<area shape="poly" id="edge13_Node000001_Node000009" title=" " alt="" coords="912,391,996,377,1043,365,1088,348,1132,323,1168,294,1171,298,1135,327,1090,353,1045,370,997,382,912,396"/>
+</map>

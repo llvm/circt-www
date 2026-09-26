@@ -1,0 +1,11 @@
+<map id="circt::datapath::CompressorTree" name="circt::datapath::CompressorTree">
+<area shape="rect" id="Node000001" title=" " alt="" coords="210,240,439,265"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,108,271,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,154,261,214,303,238,301,242,258,218,172,159"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="88,5,188,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="141,45,141,108,135,108,135,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="295,115,355,141"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="327,155,327,240,322,240,322,155"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="418,115,495,141"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="457,155,448,188,429,218,410,232,388,242,386,237,407,228,425,214,443,185,452,154"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="circt::synth::SynthOptimizationPipelineOptions" name="circt::synth::SynthOptimizationPipelineOptions">
+<area shape="rect" id="Node000001" title="Options for the synth optimization pipeline." alt="" coords="512,109,735,149"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,280,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="294,37,391,52,489,73,536,89,580,107,578,112,534,94,487,79,390,57,293,42"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="51,70,234,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="248,88,488,109,512,112,512,117,488,115,247,93"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="63,119,223,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="237,129,512,127,512,133,237,134"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="81,221,204,246"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="218,236,277,237,346,234,417,225,487,208,518,196,547,180,596,147,599,152,550,185,520,201,489,213,418,230,346,239,277,242,218,241"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="73,281,213,306"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="227,303,286,306,353,304,422,293,487,271,527,245,561,212,589,177,608,148,613,151,593,181,565,215,530,249,489,276,423,298,354,309,286,311,226,308"/>
+</map>

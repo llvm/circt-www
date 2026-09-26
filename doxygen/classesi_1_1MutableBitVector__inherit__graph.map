@@ -1,0 +1,9 @@
+<map id="esi::MutableBitVector" name="esi::MutableBitVector">
+<area shape="rect" id="Node000001" title="A mutable bit vector that owns its underlying storage." alt="" coords="6,79,167,104"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1Int.html" title=" " alt="" coords="5,152,72,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="73,117,49,153,44,150,69,114"/>
+<area shape="rect" id="Node000004" href="$classesi_1_1UInt.html" title=" " alt="" coords="97,152,173,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="104,114,129,150,125,153,100,117"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1BitVector.html" title="A lightweight, non&#45;owning bit vector view backed by a byte array span." alt="" coords="33,5,141,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,44,89,79,84,79,84,44"/>
+</map>

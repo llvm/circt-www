@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classcirct_1_1arc_1_1runtime_1_1impl_1_1TraceEncoder.html" title="Abstract TraceEncoder managing trace buffers and the encoder thread." alt="" coords="5,69,159,109"/>
+<area shape="rect" id="Node000001" href="$classcirct_1_1arc_1_1runtime_1_1impl_1_1DummyTraceEncoder.html" title="Dummy encoder discarding all produced trace data." alt="" coords="207,5,412,45"/>
+<area shape="poly" id="edge12_Node000000_Node000001" title=" " alt="" coords="167,63,237,43,239,48,168,68"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1arc_1_1runtime_1_1impl_1_1FSTTraceEncoder.html" title="Trace buffer encoder producing an FST file." alt="" coords="221,69,397,109"/>
+<area shape="poly" id="edge13_Node000000_Node000002" title=" " alt="" coords="172,87,221,87,221,92,172,92"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1arc_1_1runtime_1_1impl_1_1VCDTraceEncoder.html" title="Trace buffer encoder producing a VCD file." alt="" coords="219,133,400,173"/>
+<area shape="poly" id="edge14_Node000000_Node000003" title=" " alt="" coords="168,111,239,131,237,136,167,116"/>
+</map>

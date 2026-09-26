@@ -1,0 +1,7 @@
+<map id="circt::python::PyFileAccumulator" name="circt::python::PyFileAccumulator">
+<area shape="rect" id="Node000001" title="Taken from NanobindUtils.h in MLIR." alt="" coords="5,93,237,119"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="19,5,82,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="49,45,50,57,54,68,67,81,83,91,80,95,63,85,50,71,45,58,44,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="167,5,217,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="183,44,165,71,139,95,135,91,161,68,178,41"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="llvm::yaml::MappingContextTraits&lt; sv::InterfaceOp, Context &gt;::Interface" name="llvm::yaml::MappingContextTraits&lt; sv::InterfaceOp, Context &gt;::Interface">
+<area shape="rect" id="Node000001" title="A YAML&#45;serializable representation of an interface." alt="" coords="107,93,314,148"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,88,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,36,169,91,167,96,76,40"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="111,5,310,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,45,213,93,208,93,208,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="335,5,548,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="404,39,272,96,270,91,401,34"/>
+</map>

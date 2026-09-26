@@ -1,0 +1,15 @@
+<map id="circt::pipelinetocalyx::ComponentLoweringState" name="circt::pipelinetocalyx::ComponentLoweringState">
+<area shape="rect" id="Node000001" title="Handles the current state of lowering of a Calyx component." alt="" coords="1148,69,1347,109"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1calyx_1_1ComponentLoweringStateInterface.html" title=" " alt="" coords="856,5,1091,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1073,46,1162,67,1161,72,1072,51"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1calyx_1_1LoopLoweringStateInterface.html" title=" " alt="" coords="848,69,1099,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1112,87,1148,87,1148,92,1112,92"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1calyx_1_1LoopLoweringStateInterface.html" title=" " alt="" coords="452,69,643,109"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="656,87,848,87,848,92,656,92"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1pipelinetocalyx_1_1PipelineScheduler.html" title="Holds additional information required for scheduling Pipeline pipelines." alt="" coords="894,133,1053,173"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1066,129,1160,107,1161,112,1067,134"/>
+<area shape="rect" id="Node000006" href="$classcirct_1_1calyx_1_1SchedulerInterface.html" title=" " alt="" coords="436,133,659,173"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="672,151,894,151,894,156,672,156"/>
+<area shape="rect" id="Node000007" href="$classcirct_1_1calyx_1_1SchedulerInterface.html" title="Holds common utilities used for scheduling when lowering to Calyx." alt="" coords="5,141,267,166"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="281,151,436,151,436,156,281,156"/>
+</map>

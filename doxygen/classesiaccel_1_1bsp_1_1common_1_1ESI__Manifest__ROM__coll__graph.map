@@ -1,0 +1,7 @@
+<map id="esiaccel.bsp.common.ESI_Manifest_ROM" name="esiaccel.bsp.common.ESI_Manifest_ROM">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,93,192,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="25,5,95,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,42,93,92,88,94,68,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="119,5,158,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="131,44,109,94,104,92,126,42"/>
+</map>

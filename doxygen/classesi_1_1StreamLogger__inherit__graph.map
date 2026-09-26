@@ -1,0 +1,7 @@
+<map id="esi::StreamLogger" name="esi::StreamLogger">
+<area shape="rect" id="Node000001" title="A logger that writes to a C++ std::ostream." alt="" coords="5,152,145,177"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1TSLogger.html" title="A thread&#45;safe logger which calls functions implemented by subclasses." alt="" coords="21,79,130,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,118,78,152,73,152,73,118"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1Logger.html" title=" " alt="" coords="29,5,122,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="78,44,78,79,73,79,73,44"/>
+</map>

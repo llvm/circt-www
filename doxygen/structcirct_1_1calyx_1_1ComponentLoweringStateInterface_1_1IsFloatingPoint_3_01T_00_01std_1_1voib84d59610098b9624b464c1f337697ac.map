@@ -1,0 +1,5 @@
+<map id="circt::calyx::ComponentLoweringStateInterface::IsFloatingPoint&lt; T, std::void_t&lt; decltype(std::declval&lt; T &gt;().getFloatingPointStandard())&gt; &gt;" name="circt::calyx::ComponentLoweringStateInterface::IsFloatingPoint&lt; T, std::void_t&lt; decltype(std::declval&lt; T &gt;().getFloatingPointStandard())&gt; &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="348,5,683,75"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,13,300,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="314,37,348,37,348,43,314,43"/>
+</map>

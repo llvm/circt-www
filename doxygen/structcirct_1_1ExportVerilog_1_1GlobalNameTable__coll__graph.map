@@ -1,0 +1,15 @@
+<map id="circt::ExportVerilog::GlobalNameTable" name="circt::ExportVerilog::GlobalNameTable">
+<area shape="rect" id="Node000001" title="This class keeps track of global names at the module/interface level." alt="" coords="763,119,908,159"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="382,5,559,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="574,48,655,67,740,91,798,117,796,122,738,97,654,72,572,53"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,81,96,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="107,75,120,73,257,51,382,37,382,42,258,56,120,78,108,81"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="360,84,581,109"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="110,92,360,93,360,99,110,97"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="389,134,552,203"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="76,114,97,131,121,144,189,163,261,172,329,175,389,174,389,179,329,181,260,178,188,168,119,148,94,135,72,118"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="593,108,763,128,762,134,593,114"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="566,159,738,145,762,143,762,148,739,150,566,164"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="383,228,559,253"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="552,223,642,202,738,175,788,157,789,162,739,181,643,207,553,228"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="circt::lsp::VerilogServerContext" name="circt::lsp::VerilogServerContext">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,225,177,265"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1lsp_1_1VerilogServerOptions.html" title=" " alt="" coords="5,123,177,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,177,94,225,89,225,89,177"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,177,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,44,94,122,89,122,89,44"/>
+</map>

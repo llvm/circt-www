@@ -1,0 +1,29 @@
+<map id="esi::backends::cosim::CosimAccelerator" name="esi::backends::cosim::CosimAccelerator">
+<area shape="rect" id="Node000001" title="Connect to an ESI simulation." alt="" coords="1151,267,1308,307"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1AcceleratorConnection.html" title="Abstract class representing a connection to an accelerator." alt="" coords="795,185,991,211"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="979,211,1052,226,1127,246,1180,265,1179,270,1126,251,1051,231,978,216"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="432,5,596,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="610,50,690,74,772,108,833,146,879,183,875,187,830,151,769,112,688,79,608,56"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="421,85,607,125"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="621,120,771,154,859,183,857,188,770,159,620,126"/>
+<area shape="rect" id="Node000005" href="$classesi_1_1Context.html" title="AcceleratorConnections, Accelerators, and Manifests must all share a context." alt="" coords="464,149,564,175"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="578,165,795,186,794,191,577,171"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="43,92,235,117"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="236,117,464,152,463,157,236,122"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="5,142,272,182"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="286,159,464,159,464,165,286,165"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="51,206,226,246"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="239,206,463,168,464,173,240,212"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="423,199,605,253"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="619,221,770,213,811,208,811,213,771,218,619,227"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="411,278,617,318"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="630,283,701,267,769,241,781,231,793,221,825,208,827,213,796,226,784,235,772,246,702,272,632,288"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="403,343,625,368"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="639,352,673,345,708,335,740,320,769,299,779,281,780,262,781,242,793,222,812,209,815,213,797,225,786,243,786,262,785,283,773,302,743,324,710,340,675,350,639,357"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="795,235,990,275"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="1004,263,1151,277,1150,283,1003,268"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="806,299,979,339"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="993,308,1126,295,1150,293,1151,298,1127,301,994,313"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="829,364,957,389"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="970,361,1046,346,1126,325,1181,305,1183,310,1127,330,1047,351,971,366"/>
+</map>

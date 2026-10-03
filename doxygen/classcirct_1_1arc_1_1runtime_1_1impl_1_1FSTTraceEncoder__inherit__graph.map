@@ -1,0 +1,5 @@
+<map id="circt::arc::runtime::impl::FSTTraceEncoder" name="circt::arc::runtime::impl::FSTTraceEncoder">
+<area shape="rect" id="Node000001" title="Trace buffer encoder producing an FST file." alt="" coords="5,93,181,133"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1arc_1_1runtime_1_1impl_1_1TraceEncoder.html" title="Abstract TraceEncoder managing trace buffers and the encoder thread." alt="" coords="17,5,170,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,59,96,93,91,93,91,59"/>
+</map>

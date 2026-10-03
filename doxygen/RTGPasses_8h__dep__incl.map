@@ -1,0 +1,35 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/RTG/Transforms/RTGPasses.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/RTG/Transforms/RTGPasses.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1833,5,2021,75"/>
+<area shape="rect" id="Node000002" href="$InitAllPasses_8h.html" title=" " alt="" coords="5,130,208,185"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1819,46,1476,53,1014,68,555,92,365,107,220,125,187,133,186,127,220,120,364,102,555,86,1014,63,1476,48,1819,40"/>
+<area shape="rect" id="Node000003" href="$RTG_8cpp.html" title=" " alt="" coords="233,130,421,185"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1819,46,1514,55,1114,70,720,93,556,108,432,125,401,133,400,127,432,120,556,103,719,88,1114,65,1514,49,1819,41"/>
+<area shape="rect" id="Node000004" href="$ElaborationPass_8cpp.html" title=" " alt="" coords="445,123,643,192"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1819,48,1221,75,893,98,758,111,655,125,644,127,643,122,654,120,757,106,893,92,1221,70,1819,42"/>
+<area shape="rect" id="Node000005" href="$EmbedValidationValuesPass_8cpp.html" title=" " alt="" coords="667,123,901,192"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1819,47,1645,54,1419,68,1167,91,914,125,902,127,901,122,913,120,1166,85,1419,62,1645,48,1819,41"/>
+<area shape="rect" id="Node000006" href="$EmitRTGISAAssemblyPass_8cpp.html" title=" " alt="" coords="925,123,1149,192"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1819,50,1521,75,1340,96,1160,125,1150,127,1149,122,1160,120,1340,91,1520,70,1818,45"/>
+<area shape="rect" id="Node000007" href="$InlineSequencesPass_8cpp.html" title=" " alt="" coords="1173,123,1371,192"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1819,55,1616,83,1499,102,1383,125,1372,128,1371,123,1382,120,1498,97,1615,77,1819,50"/>
+<area shape="rect" id="Node000008" href="$InsertTestToFileMappingPass_8cpp.html" title=" " alt="" coords="1395,123,1634,192"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1820,74,1635,125,1633,120,1819,69"/>
+<area shape="rect" id="Node000009" href="$LinearScanRegisterAllocationPass_8cpp.html" title=" " alt="" coords="1659,123,1931,192"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1880,86,1835,124,1832,120,1876,82"/>
+<area shape="rect" id="Node000010" href="$LowerUniqueLabelsPass_8cpp.html" title=" " alt="" coords="1955,123,2165,192"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1978,82,2023,120,2019,124,1974,86"/>
+<area shape="rect" id="Node000011" href="$LowerValidateToLabelsPass_8cpp.html" title=" " alt="" coords="2189,123,2419,192"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="2035,71,2195,120,2193,125,2033,77"/>
+<area shape="rect" id="Node000012" href="$MaterializeConstraintsPass_8cpp.html" title=" " alt="" coords="2444,123,2673,192"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="2035,53,2221,81,2433,120,2444,123,2443,128,2431,125,2220,86,2034,58"/>
+<area shape="rect" id="Node000013" href="$MemoryAllocationPass_8cpp.html" title=" " alt="" coords="2698,123,2899,192"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="2035,44,2166,53,2330,68,2508,90,2686,120,2698,123,2697,128,2685,125,2507,95,2329,74,2166,59,2034,49"/>
+<area shape="rect" id="Node000014" href="$PrintTestNamesPass_8cpp.html" title=" " alt="" coords="2923,123,3122,192"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="2035,40,2205,46,2424,59,2668,83,2792,100,2912,120,2923,122,2922,127,2912,125,2791,105,2667,88,2423,65,2204,51,2035,46"/>
+<area shape="rect" id="Node000015" href="$RTGPassPipelines_8cpp.html" title=" " alt="" coords="3146,123,3345,192"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="2034,38,2239,40,2514,52,2666,62,2824,76,2981,96,3135,120,3146,122,3145,127,3134,125,2981,101,2823,82,2666,67,2514,57,2239,46,2034,43"/>
+<area shape="rect" id="Node000016" href="$SimpleTestInlinerPass_8cpp.html" title=" " alt="" coords="3369,123,3567,192"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="2035,42,2327,51,2709,67,3084,90,3240,104,3358,120,3369,122,3368,127,3357,125,3239,109,3084,95,2708,72,2327,56,2034,47"/>
+<area shape="rect" id="Node000017" href="$UniqueValidateOpsPass_8cpp.html" title=" " alt="" coords="3591,123,3798,192"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="2035,41,2369,49,2815,64,3257,87,3441,102,3580,120,3592,122,3591,127,3580,125,3441,108,3257,93,2815,69,2368,54,2035,46"/>
+</map>

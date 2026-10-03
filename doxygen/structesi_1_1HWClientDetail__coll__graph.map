@@ -1,0 +1,15 @@
+<map id="esi::HWClientDetail" name="esi::HWClientDetail">
+<area shape="rect" id="Node000001" title="A description of a hardware client." alt="" coords="659,89,808,115"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1AppIDPath.html" title=" " alt="" coords="317,5,433,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="447,22,537,36,635,58,708,87,706,92,634,63,536,41,446,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,165,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="179,15,317,15,317,21,179,21"/>
+<area shape="rect" id="Node000004" href="$structesi_1_1ServicePortDesc.html" title="A description of a service port." alt="" coords="297,55,452,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="466,73,658,92,658,97,466,79"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="56,55,115,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="129,65,297,65,297,70,129,70"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="279,105,471,145"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="484,123,634,115,662,112,662,117,635,121,484,128"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="295,169,454,209"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="468,177,549,164,634,143,673,129,707,112,709,117,675,134,635,149,550,169,468,182"/>
+</map>

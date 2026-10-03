@@ -1,0 +1,9 @@
+<map id="PointerLikeTypeTraits" name="PointerLikeTypeTraits">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,77,164,102"/>
+<area shape="rect" id="Node000002" href="$structllvm_1_1PointerLikeTypeTraits_3_01circt_1_1firrtl_1_1Annotation_01_4.html" title="Make Annotation behave like a Attribute in terms of pointer&#45;likeness." alt="" coords="212,5,408,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,70,238,43,240,48,144,75"/>
+<area shape="rect" id="Node000003" href="$structllvm_1_1PointerLikeTypeTraits_3_01circt_1_1llhd_1_1TimeAttr_01_4.html" title=" " alt="" coords="212,69,408,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="178,87,212,87,212,92,178,92"/>
+<area shape="rect" id="Node000004" href="$structllvm_1_1PointerLikeTypeTraits_3_01mlir_1_1ArrayAttr_01_4.html" title=" " alt="" coords="212,133,408,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="144,103,240,131,238,136,143,108"/>
+</map>

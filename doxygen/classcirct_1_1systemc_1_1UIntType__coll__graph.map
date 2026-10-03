@@ -1,0 +1,7 @@
+<map id="circt::systemc::UIntType" name="circt::systemc::UIntType">
+<area shape="rect" id="Node000001" title="Represents a limited word&#45;length unsigned integer in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="319,52,497,77"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,229,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="243,44,319,52,318,58,243,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="67,84,168,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,87,318,72,319,77,182,92"/>
+</map>

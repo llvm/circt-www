@@ -1,0 +1,9 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Emit/EmitPasses.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Emit/EmitPasses.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="239,5,428,75"/>
+<area shape="rect" id="Node000002" href="$InitAllPasses_8h.html" title=" " alt="" coords="5,130,208,185"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="256,83,159,132,157,128,254,79"/>
+<area shape="rect" id="Node000003" href="$StripEmit_8cpp.html" title=" " alt="" coords="232,123,435,192"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="336,89,336,122,331,122,331,89"/>
+<area shape="rect" id="Node000004" href="$pipelines_8cpp.html" title=" " alt="" coords="459,130,685,185"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="416,78,519,128,517,132,414,83"/>
+</map>

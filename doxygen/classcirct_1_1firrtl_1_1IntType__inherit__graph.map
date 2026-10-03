@@ -1,0 +1,15 @@
+<map id="circt::firrtl::IntType" name="circt::firrtl::IntType">
+<area shape="rect" id="Node000001" title="This is the common base class between SIntType and UIntType." alt="" coords="956,64,1096,89"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1firrtl_1_1FIRRTLBaseType.html" title=" " alt="" coords="708,28,907,53"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="898,53,956,63,955,68,898,58"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="325,5,567,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="581,33,708,36,708,41,581,38"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1firrtl_1_1WidthQualifiedTypeTrait.html" title=" " alt="" coords="713,85,902,125"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="915,88,955,83,956,88,916,93"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="313,85,579,125"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="592,102,713,102,713,107,592,107"/>
+<area shape="rect" id="Node000006" href="$classcirct_1_1firrtl_1_1WidthQualifiedTypeTrait.html" title="Trait for types which have a width." alt="" coords="347,149,545,189"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="559,146,712,119,713,124,559,151"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="5,141,264,196"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="278,166,346,166,346,171,278,171"/>
+</map>

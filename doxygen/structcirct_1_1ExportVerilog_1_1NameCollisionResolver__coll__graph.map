@@ -1,0 +1,15 @@
+<map id="circt::ExportVerilog::NameCollisionResolver" name="circt::ExportVerilog::NameCollisionResolver">
+<area shape="rect" id="Node000001" title=" " alt="" coords="401,328,583,368"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1LoweringOptions.html" title="Options which control the emission from CIRCT to Verilog." alt="" coords="317,240,483,265"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="423,273,475,326,471,330,419,277"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,56,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="25,44,15,82,10,128,15,174,23,196,36,214,49,221,73,227,145,236,317,246,316,252,144,241,72,232,47,226,33,218,19,198,10,176,5,128,10,81,20,43"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="242,5,323,31"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="277,45,268,81,263,126,267,173,275,195,286,214,300,228,318,238,315,242,297,232,282,218,270,197,262,174,258,126,263,80,272,43"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="451,5,586,31"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="525,44,527,81,525,127,514,175,505,197,491,218,475,232,456,242,453,238,472,228,487,214,500,195,509,173,520,126,522,81,520,45"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="611,5,733,31"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="679,44,683,83,682,129,671,177,660,199,644,218,484,243,483,238,641,214,655,196,666,175,677,129,678,83,674,45"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="507,240,663,265"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="566,277,513,330,509,326,562,273"/>
+</map>

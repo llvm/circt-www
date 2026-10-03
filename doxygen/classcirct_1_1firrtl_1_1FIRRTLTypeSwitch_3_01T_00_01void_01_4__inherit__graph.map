@@ -1,0 +1,5 @@
+<map id="circt::firrtl::FIRRTLTypeSwitch&lt; T, void &gt;" name="circt::firrtl::FIRRTLTypeSwitch&lt; T, void &gt;">
+<area shape="rect" id="Node000001" title="Specialization of FIRRTLTypeSwitch for void returning callables." alt="" coords="15,108,181,148"/>
+<area shape="rect" id="Node000002" href="$classllvm_1_1detail_1_1TypeSwitchBase.html" title=" " alt="" coords="5,5,191,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,74,101,108,95,108,95,74"/>
+</map>

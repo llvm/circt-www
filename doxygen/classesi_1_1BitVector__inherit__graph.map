@@ -1,0 +1,13 @@
+<map id="esi::BitVector" name="esi::BitVector">
+<area shape="rect" id="Node000001" title="A lightweight, non&#45;owning bit vector view backed by a byte array span." alt="" coords="155,5,263,31"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1IntView.html" title="Non&#45;owning view of a signed bit vector with toI64() and implicit conversions to signed scalar types." alt="" coords="5,79,104,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,39,81,81,79,76,171,34"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1MutableBitVector.html" title="A mutable bit vector that owns its underlying storage." alt="" coords="129,79,290,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="212,44,212,79,207,79,207,44"/>
+<area shape="rect" id="Node000006" href="$classesi_1_1UIntView.html" title="Non&#45;owning view of an unsigned bit vector with toUI64() and implicit conversions to unsigned scalar t..." alt="" coords="314,79,422,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="248,34,343,76,341,81,246,39"/>
+<area shape="rect" id="Node000004" href="$classesi_1_1Int.html" title=" " alt="" coords="128,152,195,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="196,117,171,153,167,150,192,114"/>
+<area shape="rect" id="Node000005" href="$classesi_1_1UInt.html" title=" " alt="" coords="219,152,295,177"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="227,114,252,150,247,153,223,117"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="esi::services::ChannelService::FromHost" name="esi::services::ChannelService::FromHost">
+<area shape="rect" id="Node000001" title="A port which writes data to the accelerator (from_host)." alt="" coords="5,152,217,192"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1services_1_1ServicePort.html" title="Add a custom interface to a service client at a particular point in the design hierarchy." alt="" coords="19,79,204,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,118,114,152,109,152,109,118"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1BundlePort.html" title="Services provide connections to &#39;bundles&#39; – collections of named, unidirectional communication channe..." alt="" coords="51,5,171,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="114,44,114,79,109,79,109,44"/>
+</map>

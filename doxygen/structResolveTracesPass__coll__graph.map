@@ -1,0 +1,23 @@
+<map id="ResolveTracesPass" name="ResolveTracesPass">
+<area shape="rect" id="Node000001" title=" " alt="" coords="779,159,923,184"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1firrtl_1_1impl_1_1ResolveTracesBase.html" title=" " alt="" coords="455,5,629,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="644,54,700,73,756,97,802,127,837,156,834,160,799,131,753,102,698,78,642,59"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1firrtl_1_1NLATable.html" title="This table tracks nlas and what modules participate in them." alt="" coords="465,84,619,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="633,108,755,135,818,156,816,161,754,141,631,114"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,33,228,88"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="242,69,465,88,465,93,242,74"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="31,113,203,153"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="216,122,465,100,465,106,217,127"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="435,133,649,159"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="663,153,779,163,778,168,663,159"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="501,183,583,208"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="597,194,671,193,754,187,793,181,793,187,755,193,672,198,597,199"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="459,233,625,273"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="638,240,696,229,754,214,792,199,826,182,828,187,795,204,755,219,697,234,639,245"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="71,240,162,265"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="175,250,458,250,458,255,175,255"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="449,297,635,323"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="647,292,701,277,753,254,779,238,802,219,837,183,840,186,805,222,782,242,756,259,703,282,648,297"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="67,297,167,323"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="180,307,448,307,448,313,180,313"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="circt::firrtl::detail::FIRRTLBaseTypeStorage" name="circt::firrtl::detail::FIRRTLBaseTypeStorage">
+<area shape="rect" id="Node000001" title=" " alt="" coords="189,133,376,173"/>
+<area shape="rect" id="Node000003" href="$structcirct_1_1firrtl_1_1detail_1_1BaseTypeAliasStorage.html" title=" " alt="" coords="424,5,599,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="318,123,367,89,423,55,449,43,451,48,425,60,370,93,321,127"/>
+<area shape="rect" id="Node000004" href="$structcirct_1_1firrtl_1_1detail_1_1BundleTypeStorage.html" title=" " alt="" coords="434,69,589,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="367,127,439,107,440,112,368,132"/>
+<area shape="rect" id="Node000005" href="$structcirct_1_1firrtl_1_1detail_1_1FEnumTypeStorage.html" title=" " alt="" coords="434,133,589,173"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="390,151,434,151,434,156,390,156"/>
+<area shape="rect" id="Node000006" href="$structcirct_1_1firrtl_1_1detail_1_1FVectorTypeStorage.html" title=" " alt="" coords="432,197,591,237"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="368,174,440,195,439,200,367,180"/>
+<area shape="rect" id="Node000007" href="$structcirct_1_1firrtl_1_1detail_1_1WidthTypeStorage.html" title=" " alt="" coords="437,261,585,301"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="321,179,370,214,425,247,451,259,449,264,423,252,367,218,318,184"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,141,141,166"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,151,189,151,189,156,155,156"/>
+</map>

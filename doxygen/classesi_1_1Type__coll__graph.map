@@ -1,0 +1,7 @@
+<map id="esi::Type" name="esi::Type">
+<area shape="rect" id="Node000001" title="Root class of the ESI type system." alt="" coords="41,93,119,119"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,64,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="50,42,76,92,71,94,45,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="89,5,162,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="115,44,89,94,84,92,110,42"/>
+</map>

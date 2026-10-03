@@ -1,0 +1,13 @@
+<map id="SerialCoordOutputFrame" name="SerialCoordOutputFrame">
+<area shape="rect" id="Node000001" title=" " alt="" coords="114,196,297,221"/>
+<area shape="rect" id="Node000002" href="$structSerialCoordOutputHeader.html" title=" " alt="" coords="10,108,198,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,140,193,193,190,197,127,144"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,80,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="38,44,36,64,41,83,53,96,69,106,66,110,50,100,36,85,30,64,32,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="125,5,192,31"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="151,45,132,85,115,109,111,106,127,83,147,42"/>
+<area shape="rect" id="Node000005" href="$structSerialCoordOutputData.html" title=" " alt="" coords="222,108,394,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="285,144,221,198,218,193,282,140"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="271,5,345,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="311,45,311,108,305,108,305,45"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="circt::arc::runtime::impl::TraceBufferMarker" name="circt::arc::runtime::impl::TraceBufferMarker">
+<area shape="rect" id="Node000001" title="Helper for marking time steps within a trace buffer." alt="" coords="5,108,191,148"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="11,5,86,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="47,44,48,64,52,83,71,106,67,109,48,85,42,65,42,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="111,5,186,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="141,44,122,85,110,109,105,106,117,83,136,42"/>
+</map>

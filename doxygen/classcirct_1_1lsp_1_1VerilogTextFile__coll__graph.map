@@ -1,0 +1,21 @@
+<map id="circt::lsp::VerilogTextFile" name="circt::lsp::VerilogTextFile">
+<area shape="rect" id="Node000001" title="This class represents a text file containing one or more Verilog documents." alt="" coords="1051,198,1231,223"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1lsp_1_1VerilogServerContext.html" title=" " alt="" coords="661,29,833,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="847,50,937,65,984,79,1028,98,1062,120,1092,147,1133,196,1128,200,1088,151,1059,124,1025,102,982,84,936,70,846,56"/>
+<area shape="rect" id="Node000003" href="$structcirct_1_1lsp_1_1VerilogServerOptions.html" title=" " alt="" coords="385,29,557,69"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="571,47,661,47,661,52,571,52"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,37,177,62"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="191,47,385,47,385,52,191,52"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="717,94,776,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="790,108,899,123,964,136,1028,153,1077,174,1119,196,1116,200,1075,179,1026,159,962,141,898,128,789,113"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="672,144,821,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="835,170,1027,192,1052,195,1052,201,1026,197,835,176"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="667,209,826,234"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="840,216,1051,210,1051,216,840,221"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="689,258,804,283"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="818,269,917,266,972,260,1026,251,1072,237,1112,221,1114,226,1074,242,1027,256,973,265,917,271,818,275"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="713,307,780,333"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="794,320,843,320,902,316,965,307,1026,290,1055,275,1083,257,1124,222,1128,226,1086,261,1058,280,1028,294,966,312,902,322,843,325,794,325"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="659,357,835,397"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="848,379,892,377,938,370,983,358,1025,340,1062,314,1092,281,1130,222,1135,225,1096,284,1065,318,1028,345,985,363,939,375,893,382,849,385"/>
+</map>

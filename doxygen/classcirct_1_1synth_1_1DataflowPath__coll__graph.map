@@ -1,0 +1,25 @@
+<map id="circt::synth::DataflowPath" name="circt::synth::DataflowPath">
+<area shape="rect" id="Node000001" title=" " alt="" coords="310,460,498,485"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="79,372,297,397"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,400,376,457,374,462,229,405"/>
+<area shape="rect" id="Node000003" href="$structcirct_1_1synth_1_1OpenPath.html" title=" " alt="" coords="322,372,486,397"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="407,411,407,459,401,459,401,411"/>
+<area shape="rect" id="Node000004" href="$structcirct_1_1synth_1_1Object.html" title=" " alt="" coords="203,277,347,302"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="295,311,332,346,376,370,373,374,329,350,291,315"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1igraph_1_1InstancePath.html" title="An instance path composed of a series of instances." alt="" coords="30,181,221,207"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="148,214,183,243,245,274,242,279,180,248,144,218"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,93,245,119"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="128,133,128,181,123,181,123,133"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="86,5,165,31"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="128,45,128,93,123,93,123,45"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="245,181,304,207"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="277,220,277,277,272,277,272,220"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="329,181,389,207"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="345,220,323,247,291,278,287,274,319,244,341,216"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="371,277,437,302"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="407,316,407,372,401,372,401,316"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="462,269,626,309"/>
+<area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="506,319,423,374,420,370,503,315"/>
+<area shape="rect" id="Node000012" href="$classhw_1_1HWModuleOp.html" title=" " alt="" coords="511,372,644,397"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="543,406,429,462,426,457,541,401"/>
+</map>

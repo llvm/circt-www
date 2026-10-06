@@ -1,0 +1,7 @@
+<map id="circt::systemc::LogicVectorType" name="circt::systemc::LogicVectorType">
+<area shape="rect" id="Node000001" title="Represents a finite word&#45;length bit vector (of four&#45;state values) in SystemC as described in IEEE 166..." alt="" coords="377,52,604,77"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,288,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="302,44,377,51,377,57,302,50"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="96,84,197,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="211,88,377,73,377,78,212,93"/>
+</map>

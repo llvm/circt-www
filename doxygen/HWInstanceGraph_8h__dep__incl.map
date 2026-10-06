@@ -1,0 +1,48 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/HW/HWInstanceGraph.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/HW/HWInstanceGraph.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="2154,5,2342,75"/>
+<area shape="rect" id="Node000002" href="$HWModuleGraph_8h.html" title=" " alt="" coords="235,123,423,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2140,45,1862,51,1466,64,1008,88,773,104,543,125,424,142,423,136,542,120,773,99,1008,82,1466,58,1861,45,2140,40"/>
+<area shape="rect" id="Node000004" href="$PortConverter_8h.html" title=" " alt="" coords="555,123,743,192"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="2140,47,1838,56,1440,72,1048,95,886,109,763,125,744,129,743,124,762,120,886,104,1048,90,1440,66,1838,51,2140,41"/>
+<area shape="rect" id="Node000008" href="$HWEliminateInOutPorts_8cpp.html" title=" " alt="" coords="911,240,1118,309"/>
+<area shape="poly" id="edge19_Node000001_Node000008" title=" " alt="" coords="2140,46,1800,55,1368,70,1162,81,988,94,864,108,826,116,808,125,798,140,795,156,799,173,809,190,821,199,846,211,916,237,914,242,844,216,818,204,805,194,794,175,790,156,793,138,805,121,825,111,863,103,988,88,1162,76,1368,65,1800,49,2140,41"/>
+<area shape="rect" id="Node000009" href="$TestPasses_8cpp.html" title=" " alt="" coords="819,130,1021,185"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="2140,43,1935,46,1659,58,1348,83,1190,101,1035,125,1002,133,1001,127,1034,120,1189,96,1347,77,1659,53,1934,41,2140,38"/>
+<area shape="rect" id="Node000010" href="$HW_8cpp.html" title=" " alt="" coords="1046,130,1234,185"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="2140,45,1968,50,1745,63,1496,87,1370,104,1247,125,1217,132,1216,127,1246,120,1369,99,1496,82,1745,58,1968,45,2140,40"/>
+<area shape="rect" id="Node000011" href="$PrintFSMGraph_8cpp.html" title=" " alt="" coords="1258,123,1457,192"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="2141,49,2005,58,1837,73,1653,95,1470,125,1458,128,1457,123,1469,120,1652,89,1837,67,2005,52,2140,44"/>
+<area shape="rect" id="Node000012" href="$HWInstanceGraph_8cpp.html" title=" " alt="" coords="1481,130,1748,185"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="2140,60,1962,89,1761,125,1726,133,1725,127,1759,120,1961,83,2140,55"/>
+<area shape="rect" id="Node000013" href="$HWReductions_8cpp.html" title=" " alt="" coords="1772,130,2017,185"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="2142,79,1976,133,1974,127,2140,74"/>
+<area shape="rect" id="Node000014" href="$FlattenModules_8cpp.html" title=" " alt="" coords="2041,123,2236,192"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="2208,87,2173,124,2169,121,2205,83"/>
+<area shape="rect" id="Node000015" href="$HWIMDeadCodeElim_8cpp.html" title=" " alt="" coords="2260,123,2455,192"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="2291,83,2327,121,2323,124,2288,87"/>
+<area shape="rect" id="Node000016" href="$HWParameterizeConstantPorts_8cpp.html" title=" " alt="" coords="2479,123,2732,192"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="2356,73,2502,120,2500,125,2354,78"/>
+<area shape="rect" id="Node000017" href="$HWPrintInstanceGraph_8cpp.html" title=" " alt="" coords="2756,123,2956,192"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="2356,52,2538,80,2745,120,2756,123,2755,128,2743,125,2538,85,2355,58"/>
+<area shape="rect" id="Node000018" href="$HandshakeUtils_8cpp.html" title=" " alt="" coords="2981,123,3225,192"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="2356,46,2634,73,2802,94,2968,120,2981,122,2980,128,2968,125,2801,99,2634,78,2355,52"/>
+<area shape="rect" id="Node000019" href="$FreezePaths_8cpp.html" title=" " alt="" coords="3249,123,3444,192"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="2356,40,2526,46,2747,59,2992,83,3116,99,3238,120,3250,123,3249,128,3237,125,3116,105,2991,88,2746,64,2526,51,2356,45"/>
+<area shape="rect" id="Node000020" href="$SVTraceIVerilog_8cpp.html" title=" " alt="" coords="3468,123,3657,192"/>
+<area shape="poly" id="edge20_Node000001_Node000020" title=" " alt="" coords="2356,37,2561,40,2835,50,2988,61,3145,75,3303,95,3456,120,3468,122,3467,128,3456,125,3302,100,3145,81,2988,66,2835,56,2561,45,2356,43"/>
+<area shape="rect" id="Node000021" href="$InferClockPorts_8cpp.html" title=" " alt="" coords="3682,123,3878,192"/>
+<area shape="poly" id="edge21_Node000001_Node000021" title=" " alt="" coords="2356,42,2647,51,3026,67,3398,90,3553,104,3670,120,3682,123,3681,128,3669,125,3552,109,3398,95,3026,72,2647,56,2356,47"/>
+<area shape="rect" id="Node000022" href="$LongestPathAnalysis_8cpp.html" title=" " alt="" coords="3903,123,4095,192"/>
+<area shape="poly" id="edge22_Node000001_Node000022" title=" " alt="" coords="2356,40,2688,48,3131,63,3571,86,3753,102,3891,120,3903,122,3902,128,3890,125,3752,107,3570,92,3131,68,2688,53,2356,46"/>
+<area shape="rect" id="Node000023" href="$ExternalizeRegisters_8cpp.html" title=" " alt="" coords="4119,123,4340,192"/>
+<area shape="poly" id="edge23_Node000001_Node000023" title=" " alt="" coords="2356,40,2726,48,3232,62,3738,86,3948,102,4107,120,4119,122,4118,127,4106,125,3947,107,3737,91,3232,68,2726,53,2356,46"/>
+<area shape="rect" id="Node000003" href="$PrintHWModuleGraph_8cpp.html" title=" " alt="" coords="5,240,200,309"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="252,201,170,242,168,237,250,196"/>
+<area shape="rect" id="Node000005" href="$ESILowerBundles_8cpp.html" title=" " alt="" coords="225,240,413,309"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="543,198,414,243,412,238,541,193"/>
+<area shape="rect" id="Node000006" href="$ESILowerPorts_8cpp.html" title=" " alt="" coords="437,240,625,309"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="607,204,567,242,564,238,603,200"/>
+<area shape="rect" id="Node000007" href="$PortConverter_8cpp.html" title=" " alt="" coords="649,247,887,302"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="696,200,743,245,739,249,692,204"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="757,190,912,238,910,243,755,195"/>
+</map>

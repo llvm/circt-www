@@ -1,0 +1,9 @@
+<map id="esi::AcceleratorConnection" name="esi::AcceleratorConnection">
+<area shape="rect" id="Node000001" title="Abstract class representing a connection to an accelerator." alt="" coords="5,77,201,102"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1backends_1_1cosim_1_1CosimAccelerator.html" title="Connect to an ESI simulation." alt="" coords="249,5,407,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,70,256,43,258,48,163,75"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1backends_1_1trace_1_1TraceAccelerator.html" title="Connect to an ESI simulation." alt="" coords="253,69,403,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="215,87,253,87,253,92,215,92"/>
+<area shape="rect" id="Node000004" href="$classesi_1_1backends_1_1xrt_1_1XrtAccelerator.html" title="Connect to an ESI simulation." alt="" coords="260,133,396,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="163,103,260,131,259,137,161,108"/>
+</map>

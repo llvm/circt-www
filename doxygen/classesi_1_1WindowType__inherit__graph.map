@@ -1,0 +1,5 @@
+<map id="esi::WindowType" name="esi::WindowType">
+<area shape="rect" id="Node000001" title="Windows represent a fixed&#45;size sliding window over a stream of data." alt="" coords="5,79,136,104"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1Type.html" title="Root class of the ESI type system." alt="" coords="31,5,110,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,44,73,79,68,79,68,44"/>
+</map>

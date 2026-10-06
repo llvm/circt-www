@@ -1,0 +1,13 @@
+<map id="circt::arc::runtime::impl::VCDSignalTableEntry" name="circt::arc::runtime::impl::VCDSignalTableEntry">
+<area shape="rect" id="Node000001" title="A traced signal in the VCD file." alt="" coords="146,196,349,236"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1arc_1_1runtime_1_1impl_1_1VCDSignalId.html" title="String identifier for a signal in a VCD file consisting of characters in the ASCII range from &#39;!..." alt="" coords="39,93,186,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,139,224,194,221,198,147,144"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,87,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="64,41,83,68,100,91,96,95,79,71,59,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="111,5,250,31"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="170,45,153,71,133,95,129,91,149,68,166,42"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="210,101,285,126"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="250,140,250,196,245,196,245,140"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="318,101,393,126"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="349,140,340,157,328,174,295,198,291,194,324,170,336,154,345,137"/>
+</map>

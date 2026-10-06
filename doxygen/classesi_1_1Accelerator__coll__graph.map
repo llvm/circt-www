@@ -1,0 +1,17 @@
+<map id="esi::Accelerator" name="esi::Accelerator">
+<area shape="rect" id="Node000001" title="Top level accelerator class." alt="" coords="500,159,623,184"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1HWModule.html" title="Represents either the top level or an instance of a hardware module." alt="" coords="331,159,451,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="464,169,500,169,500,174,464,174"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,211,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="184,32,212,41,262,62,308,91,349,125,380,157,376,160,345,129,305,95,260,66,210,46,183,37"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="21,55,195,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="196,97,308,133,363,156,361,161,306,138,195,102"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="29,119,187,159"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="202,147,331,162,330,167,201,152"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="29,183,187,223"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="201,191,306,179,330,176,331,182,307,185,201,196"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="13,247,203,287"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="204,241,306,209,365,182,367,186,308,214,206,246"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="29,311,187,351"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="199,304,253,283,305,253,347,217,377,182,381,186,351,220,308,258,255,287,200,309"/>
+</map>

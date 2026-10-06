@@ -1,0 +1,9 @@
+<map id="circt::firrtl::WiringProblem" name="circt::firrtl::WiringProblem">
+<area shape="rect" id="Node000001" title="A representation of a deferred Wiring problem consisting of a source that should be connected to a si..." alt="" coords="23,108,212,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,64,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="46,42,56,63,70,82,99,106,95,110,66,86,52,65,41,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="88,5,147,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="120,45,120,108,115,108,115,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="188,5,303,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="242,45,233,66,218,86,197,100,174,110,172,105,195,96,214,82,228,64,237,43"/>
+</map>

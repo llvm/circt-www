@@ -1,0 +1,11 @@
+<map id="AppIDIndex::ModuleAppIDs" name="AppIDIndex::ModuleAppIDs">
+<area shape="rect" id="Node000001" title="Helper class constructed on a per&#45;HWModuleLike basis." alt="" coords="717,49,916,74"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="335,5,508,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="522,32,717,50,717,55,522,37"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="10,13,101,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="114,23,334,23,334,28,114,28"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="335,70,507,125"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="520,86,717,68,718,73,521,91"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,85,105,110"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="119,95,335,95,335,100,119,100"/>
+</map>

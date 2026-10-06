@@ -1,0 +1,22 @@
+<map id="circt::igraph::InstancePathCache" name="circt::igraph::InstancePathCache">
+<area shape="rect" id="Node000001" title="A data structure that caches and provides paths to module instances in the IR." alt="" coords="880,191,1071,231"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1igraph_1_1InstanceGraph.html" title="This graph tracks modules and where they are instantiated." alt="" coords="482,119,683,144"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="691,143,857,174,911,189,910,194,855,179,690,149"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="79,5,165,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="179,19,303,33,375,47,446,65,510,90,561,116,558,121,507,95,445,70,374,52,302,39,179,24"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="16,55,228,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="232,79,446,109,496,116,496,121,445,114,231,84"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="19,104,225,159"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="239,129,482,129,482,134,239,134"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,183,239,223"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="252,180,500,141,501,147,253,186"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="515,175,651,200"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="665,190,880,203,880,208,664,195"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="469,225,696,265"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="710,234,856,222,880,220,880,225,856,227,710,239"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="77,272,167,297"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="181,277,469,252,469,257,182,282"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="491,289,674,344"/>
+<area shape="poly" id="edge10_Node000010_Node000009" title=" " alt="" coords="181,297,263,313,382,320,491,319,491,324,382,325,262,318,180,303"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="687,295,770,277,855,254,925,229,927,234,857,259,771,282,688,300"/>
+</map>

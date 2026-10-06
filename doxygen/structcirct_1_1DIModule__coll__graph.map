@@ -1,0 +1,16 @@
+<map id="circt::DIModule" name="circt::DIModule">
+<area shape="rect" id="Node000001" title=" " alt="" coords="536,112,656,137"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="307,5,393,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="407,29,459,46,513,68,550,89,580,110,577,114,547,93,511,72,458,51,406,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="308,55,392,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="406,77,513,102,543,109,542,114,511,107,405,82"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="279,105,421,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="435,122,536,122,536,127,435,127"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,145,105,171"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="119,148,278,130,279,135,119,154"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="279,169,421,209"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="98,173,130,182,206,190,278,191,278,196,206,196,129,187,96,178"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="434,164,546,135,547,140,435,169"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="325,233,375,259"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="388,237,448,222,511,196,551,166,582,136,586,139,555,170,513,200,449,227,390,242"/>
+</map>

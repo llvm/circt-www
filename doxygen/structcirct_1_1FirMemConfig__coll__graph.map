@@ -1,0 +1,19 @@
+<map id="circt::FirMemConfig" name="circt::FirMemConfig">
+<area shape="rect" id="Node000001" title="The configuration of a FIR memory." alt="" coords="404,299,552,324"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,101,65,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="31,140,26,171,25,207,32,243,40,259,50,273,67,281,99,287,192,298,404,306,404,312,192,303,98,293,65,286,47,277,35,262,27,244,20,207,21,170,26,139"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="169,101,224,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,140,188,170,187,206,194,242,201,259,212,273,224,282,242,289,291,299,348,305,404,308,403,313,347,311,290,305,240,294,222,286,208,277,197,261,189,244,182,207,183,170,188,139"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="306,101,365,126"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="332,140,328,170,327,206,334,241,351,273,375,292,405,303,403,308,372,297,347,276,329,243,322,206,323,170,327,139"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="389,93,537,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="468,147,480,298,474,299,463,147"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="413,5,513,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="466,44,466,93,461,93,461,44"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="562,101,645,126"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="604,140,596,215,588,252,576,276,559,291,539,301,537,296,556,287,572,273,582,250,590,214,599,140"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="694,101,745,126"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="721,140,713,216,704,252,692,277,669,290,634,299,552,309,552,304,633,294,667,285,688,273,699,251,708,215,716,139"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="789,101,868,126"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="835,139,837,171,834,208,823,245,814,262,801,277,766,288,703,298,552,309,552,304,702,292,765,283,798,272,809,259,818,243,829,207,831,171,830,139"/>
+</map>

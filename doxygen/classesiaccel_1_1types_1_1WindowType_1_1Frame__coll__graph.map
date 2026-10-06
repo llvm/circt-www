@@ -1,0 +1,9 @@
+<map id="esiaccel.types.WindowType.Frame" name="esiaccel.types.WindowType.Frame">
+<area shape="rect" id="Node000001" title=" " alt="" coords="49,93,254,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,108,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,38,134,91,130,95,76,42"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="132,5,171,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="154,44,154,93,149,93,149,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="201,5,246,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="213,45,196,71,174,95,170,91,192,68,209,42"/>
+</map>

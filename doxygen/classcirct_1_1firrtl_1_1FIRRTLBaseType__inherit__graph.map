@@ -1,0 +1,7 @@
+<map id="circt::firrtl::FIRRTLBaseType" name="circt::firrtl::FIRRTLBaseType">
+<area shape="rect" id="Node000001" title=" " alt="" coords="296,20,495,45"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1firrtl_1_1IntType.html" title="This is the common base class between SIntType and UIntType." alt="" coords="543,20,683,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="509,30,542,30,542,35,509,35"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,248,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="262,30,296,30,296,35,262,35"/>
+</map>

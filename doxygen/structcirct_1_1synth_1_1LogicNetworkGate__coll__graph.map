@@ -1,0 +1,11 @@
+<map id="circt::synth::LogicNetworkGate" name="circt::synth::LogicNetworkGate">
+<area shape="rect" id="Node000001" title="Represents a single gate/node in the flat logic network." alt="" coords="31,181,253,207"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,92,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,126,131,179,127,183,70,130"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="117,93,167,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="145,133,145,181,139,181,139,133"/>
+<area shape="rect" id="Node000004" href="$structcirct_1_1synth_1_1Signal.html" title="Edge representation in the logic network." alt="" coords="192,93,335,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="237,129,160,183,157,179,234,125"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="226,5,301,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="266,45,266,93,261,93,261,45"/>
+</map>

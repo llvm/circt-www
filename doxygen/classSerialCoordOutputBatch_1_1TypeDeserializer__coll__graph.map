@@ -1,0 +1,24 @@
+<map id="SerialCoordOutputBatch::TypeDeserializer" name="SerialCoordOutputBatch::TypeDeserializer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1356,181,1535,221"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1QueuedDecodeTypeDeserializer.html" title=" " alt="" coords="927,99,1183,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1197,137,1333,164,1385,179,1383,184,1331,169,1196,142"/>
+<area shape="rect" id="Node000003" href="$classdetail_1_1TypedReadOwnedCallback_3_01SerialCoordOutputBatch_01_4.html" title=" " alt="" coords="437,5,645,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="659,37,777,55,903,77,982,96,981,101,902,83,776,60,658,43"/>
+<area shape="rect" id="Node000004" href="$classstd_1_1queue_3_01std_1_1unique__ptr_3_01SerialCoordOutputBatch_01_4_01_4.html" title=" " alt="" coords="417,69,665,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="679,95,927,109,926,114,679,100"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="89,151,153,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="167,159,926,122,927,128,167,165"/>
+<area shape="rect" id="Node000006" href="$classesi_1_1QueuedDecodeTypeDeserializer.html" title="Helper base class for stateful deserializers which may emit zero, one, or many typed outputs for each..." alt="" coords="393,206,688,231"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="167,167,443,203,442,209,167,172"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="701,226,752,222,804,214,854,200,901,179,909,173,913,165,917,157,925,149,948,136,951,141,928,153,921,160,917,168,913,176,904,184,856,205,805,219,753,228,702,231"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="5,215,237,241"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="251,226,369,224,393,223,393,229,369,229,251,231"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="47,265,196,305"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="209,270,369,245,467,229,468,234,370,251,210,275"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="989,163,1120,189"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="1134,178,1356,193,1356,198,1134,184"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="985,213,1124,238"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="1138,224,1231,223,1332,217,1355,215,1356,220,1332,223,1231,228,1138,230"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="1025,262,1085,287"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="1098,271,1205,264,1269,255,1331,243,1400,219,1402,224,1333,248,1270,260,1206,269,1099,276"/>
+</map>

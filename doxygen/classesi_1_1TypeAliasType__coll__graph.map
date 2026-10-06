@@ -1,0 +1,11 @@
+<map id="esi::TypeAliasType" name="esi::TypeAliasType">
+<area shape="rect" id="Node000001" title="Type aliases provide a named type which forwards to an inner type." alt="" coords="17,181,159,207"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1Type.html" title="Root class of the ESI type system." alt="" coords="93,93,171,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,132,109,144,94,182,89,180,104,141,112,129"/>
+<area shape="poly" id="edge5_Node000001_Node000002" title=" " alt="" coords="122,132,96,182,92,180,117,130"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,64,31"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="35,44,35,80,41,118,59,153,79,180,75,183,54,155,36,120,29,80,29,44"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="60,38,120,91,117,95,56,42"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="95,5,169,31"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="135,45,135,93,129,93,129,45"/>
+</map>

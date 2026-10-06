@@ -1,0 +1,15 @@
+<map id="circt::ReducePatternDialectInterface" name="circt::ReducePatternDialectInterface">
+<area shape="rect" id="Node000001" title="A dialect interface to provide reduction patterns to a reducer tool." alt="" coords="271,133,469,173"/>
+<area shape="rect" id="Node000003" href="$structcirct_1_1arc_1_1ArcReducePatternDialectInterface.html" title="A dialect interface to provide reduction patterns to a reducer tool." alt="" coords="519,5,720,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="407,123,458,88,516,55,545,43,547,48,518,60,460,92,410,127"/>
+<area shape="rect" id="Node000004" href="$structcirct_1_1firrtl_1_1FIRRTLReducePatternDialectInterface.html" title="A dialect interface to provide reduction patterns to a reducer tool." alt="" coords="527,69,712,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="461,127,540,107,542,112,462,132"/>
+<area shape="rect" id="Node000005" href="$structcirct_1_1hw_1_1HWReducePatternDialectInterface.html" title="A dialect interface to provide reduction patterns to a reducer tool." alt="" coords="519,133,720,173"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="483,151,519,151,519,156,483,156"/>
+<area shape="rect" id="Node000006" href="$structcirct_1_1om_1_1OMReducePatternDialectInterface.html" title="A dialect interface to provide reduction patterns to a reducer tool." alt="" coords="518,197,721,237"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="462,174,542,195,540,200,461,179"/>
+<area shape="rect" id="Node000007" href="$structcirct_1_1rtg_1_1RTGReducePatternDialectInterface.html" title="A dialect interface to provide reduction patterns to a reducer tool." alt="" coords="517,261,721,301"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="410,180,460,214,518,247,547,259,545,264,516,252,458,219,407,184"/>
+<area shape="rect" id="Node000002" href="$classmlir_1_1DialectInterface_1_1Base.html" title=" " alt="" coords="5,126,223,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,151,270,151,270,156,236,156"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="esi::ConsoleLogger" name="esi::ConsoleLogger">
+<area shape="rect" id="Node000001" title="A logger that writes to the console. Includes color support." alt="" coords="83,284,229,309"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1TSLogger.html" title="A thread&#45;safe logger which calls functions implemented by subclasses." alt="" coords="48,196,157,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,232,151,282,146,285,115,235"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1Logger.html" title=" " alt="" coords="5,108,99,133"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="68,144,98,194,93,197,64,147"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="27,5,77,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="55,45,55,108,49,108,49,45"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="123,108,187,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="143,147,112,197,108,194,138,144"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="182,196,239,221"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="198,234,166,285,161,282,194,231"/>
+</map>

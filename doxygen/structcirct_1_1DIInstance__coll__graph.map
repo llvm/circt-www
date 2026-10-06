@@ -1,0 +1,7 @@
+<map id="circt::DIInstance" name="circt::DIInstance">
+<area shape="rect" id="Node000001" title=" " alt="" coords="40,93,167,119"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,92,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,41,98,91,93,94,61,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="116,5,200,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,44,113,94,109,91,141,41"/>
+</map>

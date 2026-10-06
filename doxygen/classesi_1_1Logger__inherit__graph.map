@@ -1,0 +1,11 @@
+<map id="esi::Logger" name="esi::Logger">
+<area shape="rect" id="Node000001" title=" " alt="" coords="87,5,181,31"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1NullLogger.html" title="A logger that does nothing." alt="" coords="5,79,124,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,43,78,80,74,77,111,39"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1TSLogger.html" title="A thread&#45;safe logger which calls functions implemented by subclasses." alt="" coords="149,79,258,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,39,194,77,190,80,153,43"/>
+<area shape="rect" id="Node000004" href="$classesi_1_1ConsoleLogger.html" title="A logger that writes to the console. Includes color support." alt="" coords="47,152,192,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="181,115,135,154,131,150,178,111"/>
+<area shape="rect" id="Node000005" href="$classesi_1_1StreamLogger.html" title="A logger that writes to a C++ std::ostream." alt="" coords="216,152,356,177"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="229,111,274,150,271,154,225,115"/>
+</map>

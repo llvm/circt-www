@@ -1,0 +1,7 @@
+<map id="circt::ArcStateLoweringOptions" name="circt::ArcStateLoweringOptions">
+<area shape="rect" id="Node000001" title=" " alt="" coords="98,108,321,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,221,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,53,199,106,195,110,141,57"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="245,13,368,38"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="287,49,223,110,220,106,283,46"/>
+</map>

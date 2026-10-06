@@ -1,0 +1,15 @@
+<map id="circt::firrtl::GatedClockConversion::RootRewrite" name="circt::firrtl::GatedClockConversion::RootRewrite">
+<area shape="rect" id="Node000001" title="Root rewrite applied by applyPlan(): clock the op by baseClk and sink enableId into it." alt="" coords="100,196,283,236"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,92,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,44,58,88,65,111,76,132,92,151,111,168,151,194,149,198,108,172,88,155,72,135,60,113,53,89,46,45"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1firrtl_1_1GatedClockConversion_1_1MatRef.html" title="A reference to a clock/enable value that can also name values which do not exist yet (a planned port,..." alt="" coords="107,93,275,133"/>
+<area shape="poly" id="edge5_Node000003_Node000002" title=" " alt="" coords="79,36,164,91,161,95,76,40"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,147,194,196,189,196,189,147"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="117,5,167,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="156,42,168,68,182,92,177,94,164,71,151,45"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="191,5,250,31"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="215,45,211,55,199,94,194,92,206,54,210,43"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="287,5,368,31"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="328,45,322,70,310,103,298,128,281,150,256,174,224,198,221,194,252,170,277,146,293,125,305,101,317,69,322,43"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="301,41,220,95,217,91,298,36"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="esi::HWModule" name="esi::HWModule">
+<area shape="rect" id="Node000001" title="Represents either the top level or an instance of a hardware module." alt="" coords="75,5,195,31"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1Accelerator.html" title="Top level accelerator class." alt="" coords="5,79,128,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,42,80,80,76,77,112,39"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1Instance.html" title="Subclass of HWModule which represents a submodule instance." alt="" coords="152,79,256,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,39,195,77,191,80,154,43"/>
+</map>

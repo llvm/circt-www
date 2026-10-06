@@ -1,0 +1,14 @@
+<map id="ModuleNameSanitizer" name="ModuleNameSanitizer">
+<area shape="rect" id="Node000001" title="Pseudo&#45;reduction that sanitizes module and port names." alt="" coords="81,272,247,297"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="5,183,152,223"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,230,153,270,150,274,107,234"/>
+<area shape="rect" id="Node000003" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="136,5,259,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="168,40,142,59,117,82,93,111,79,145,76,164,77,182,72,183,71,164,73,143,88,108,113,78,138,55,165,36"/>
+<area shape="rect" id="Node000004" href="$structcirct_1_1OpReduction.html" title="A reduction pattern for a specific operation." alt="" coords="127,80,268,120"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="200,44,200,80,195,80,195,44"/>
+<area shape="rect" id="Node000005" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="176,183,328,223"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="241,34,275,52,311,76,344,106,370,143,373,160,365,174,349,185,329,192,327,187,347,180,361,171,368,159,366,145,340,110,308,80,272,56,238,39"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="116,125,90,146,82,163,80,183,75,182,77,162,86,142,113,121"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="216,131,244,181,239,184,212,133"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="223,234,179,274,175,270,219,230"/>
+</map>

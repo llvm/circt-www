@@ -1,0 +1,20 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Dialect/FIRRTL/Import/FIRAnnotations.cpp" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Dialect/FIRRTL/Import/FIRAnnotations.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="370,5,558,75"/>
+<area shape="rect" id="Node000002" href="$FIRAnnotations_8h.html" title=" " alt="" coords="84,123,268,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="371,77,244,121,242,116,369,72"/>
+<area shape="rect" id="Node000006" href="$JSON_8h.html" title=" " alt="" coords="292,130,444,155"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="433,77,391,121,387,118,430,73"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="468,130,655,155"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="499,73,542,118,538,122,495,77"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="679,130,873,155"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="559,69,728,123,727,128,557,74"/>
+<area shape="rect" id="Node000003" href="$LLVM_8h.html" title=" " alt="" coords="105,211,260,236"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="180,163,183,197,178,197,175,163"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,284,157,309"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="168,238,111,278,108,274,165,234"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="181,284,387,309"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="200,234,258,274,255,278,197,238"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="342,158,223,208,221,203,340,153"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="291,211,445,236"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="371,156,371,197,365,197,365,156"/>
+</map>

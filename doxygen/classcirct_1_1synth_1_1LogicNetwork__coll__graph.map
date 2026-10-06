@@ -1,0 +1,11 @@
+<map id="circt::synth::LogicNetwork" name="circt::synth::LogicNetwork">
+<area shape="rect" id="Node000001" title="Flat logic network representation for efficient cut enumeration." alt="" coords="363,80,553,105"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="77,5,152,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,23,247,36,339,55,418,77,416,82,338,61,246,42,165,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,55,224,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="238,74,363,83,362,88,238,79"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="31,104,198,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="212,114,338,109,386,103,387,108,339,114,212,120"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="10,154,219,194"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="232,156,338,134,426,103,428,108,339,139,233,161"/>
+</map>

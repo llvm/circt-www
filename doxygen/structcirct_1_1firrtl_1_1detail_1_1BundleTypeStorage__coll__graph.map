@@ -1,0 +1,24 @@
+<map id="circt::firrtl::detail::BundleTypeStorage" name="circt::firrtl::detail::BundleTypeStorage">
+<area shape="rect" id="Node000001" title=" " alt="" coords="772,201,927,241"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1firrtl_1_1detail_1_1FIRRTLBaseTypeStorage.html" title=" " alt="" coords="425,38,611,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="625,78,688,99,749,128,797,163,833,199,829,202,793,167,747,132,686,104,624,83"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,141,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="156,19,399,38,425,41,424,46,398,43,155,25"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="48,55,99,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="112,64,425,57,425,63,113,69"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="423,102,613,142"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="626,143,749,177,804,198,802,203,747,182,625,148"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="23,132,123,157"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="137,139,423,124,423,129,138,144"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="440,166,596,206"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="137,154,166,158,311,172,440,180,440,185,311,177,165,163,137,159"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="610,193,772,210,772,215,609,198"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="481,231,555,256"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="569,241,653,240,748,234,771,231,772,237,748,239,653,245,569,246"/>
+<area shape="rect" id="Node000009" href="$structcirct_1_1firrtl_1_1RecursiveTypeProperties.html" title="A collection of bits indicating the recursive properties of a type." alt="" coords="439,281,597,321"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="610,288,678,277,747,261,806,238,808,243,749,266,679,282,611,294"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="48,288,99,313"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="113,298,439,298,439,303,113,303"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="469,345,567,371"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="580,356,662,347,706,336,747,320,773,302,797,281,832,239,836,243,801,285,776,307,749,324,707,341,663,352,581,361"/>
+</map>

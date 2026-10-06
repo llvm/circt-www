@@ -1,0 +1,9 @@
+<map id="esi::Context" name="esi::Context">
+<area shape="rect" id="Node000001" title="AcceleratorConnections, Accelerators, and Manifests must all share a context." alt="" coords="403,63,503,88"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="43,5,235,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="249,30,379,53,409,60,407,65,378,58,248,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,55,272,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="286,73,402,73,402,78,286,78"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="51,119,226,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="240,120,378,93,407,85,408,91,379,98,241,125"/>
+</map>

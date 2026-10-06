@@ -1,0 +1,11 @@
+<map id="circt::ImportVerilog::PortLowering" name="circt::ImportVerilog::PortLowering">
+<area shape="rect" id="Node000001" title="Port lowering information." alt="" coords="167,108,314,148"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,116,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,35,210,105,208,110,90,40"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="141,5,218,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,42,232,106,228,109,190,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="242,5,365,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="292,44,254,109,249,106,287,41"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="389,5,553,31"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="436,39,282,110,280,105,433,34"/>
+</map>

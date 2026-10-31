@@ -1,0 +1,5 @@
+<map id="esi::services::HostMemRegion" name="esi::services::HostMemRegion">
+<area shape="rect" id="Node000001" title="RAII memory region for host memory in accelerator&#45;accessible address space." alt="" coords="8,5,227,31"/>
+<area shape="rect" id="Node000002" href="$structTraceHostMem_1_1TraceHostMemRegion.html" title=" " alt="" coords="5,79,229,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,44,120,79,115,79,115,44"/>
+</map>

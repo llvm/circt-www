@@ -1,0 +1,19 @@
+<map id="circt::ExportVerilog::StringOrOpToEmit" name="circt::ExportVerilog::StringOrOpToEmit">
+<area shape="rect" id="Node000001" title="This class wraps an operation or a fixed string that should be emitted." alt="" coords="485,313,630,353"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1ExportVerilog_1_1OpLocMap.html" title="Track the output verilog line,column number information for every op." alt="" coords="271,211,417,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="397,254,519,311,516,316,395,259"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,93,176,133"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="145,136,304,208,302,213,143,141"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="45,5,136,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="93,44,93,93,88,93,88,44"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="201,101,391,126"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="308,137,339,209,334,211,304,140"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="415,101,499,126"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="440,138,391,189,366,212,363,209,387,185,436,134"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="465,211,650,251"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="560,265,560,313,555,313,555,265"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="528,101,635,126"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="579,140,564,211,559,210,573,139"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="674,218,734,243"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="686,255,646,292,603,316,601,311,642,287,683,251"/>
+</map>

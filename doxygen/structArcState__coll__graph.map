@@ -1,0 +1,11 @@
+<map id="ArcState" name="ArcState">
+<area shape="rect" id="Node000001" title="Combined runtime and model state for a hardware model instance." alt="" coords="141,108,219,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,67,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="51,41,66,63,86,82,113,97,142,108,140,113,111,102,82,86,62,66,47,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="91,5,165,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="126,44,126,64,132,83,142,96,156,106,153,110,138,100,127,85,121,65,121,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="195,5,269,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="224,45,205,85,190,109,186,106,200,83,220,42"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="329,5,396,31"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="355,45,342,67,323,86,298,100,271,110,220,120,219,115,270,105,296,95,320,82,338,63,350,42"/>
+</map>

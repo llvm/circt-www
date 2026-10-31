@@ -1,0 +1,40 @@
+<map id="circt::ExportSystemC::OpEmissionPattern&lt; Op &gt;" name="circt::ExportSystemC::OpEmissionPattern&lt; Op &gt;">
+<area shape="rect" id="Node000001" title="This is a convenience class providing default implementations for operation emission patterns." alt="" coords="448,289,649,329"/>
+<area shape="rect" id="Node000004" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPattern.html" title=" " alt="" coords="849,5,1013,60"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="560,275,578,238,602,195,633,152,672,115,714,88,759,67,805,52,849,42,850,47,807,58,761,72,716,93,675,119,637,155,607,198,582,240,565,277"/>
+<area shape="rect" id="Node000006" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPattern.html" title=" " alt="" coords="849,84,1013,139"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="575,277,618,234,672,194,715,172,761,153,848,127,850,132,763,158,718,177,675,199,621,238,578,280"/>
+<area shape="rect" id="Node000008" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPattern.html" title=" " alt="" coords="849,163,1013,217"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="610,281,673,258,848,207,850,213,674,263,612,286"/>
+<area shape="rect" id="Node000010" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPattern.html" title=" " alt="" coords="849,241,1013,296"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="662,294,849,275,849,280,663,299"/>
+<area shape="rect" id="Node000012" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPattern.html" title=" " alt="" coords="849,320,1013,375"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="663,318,674,319,849,337,849,342,673,325,663,324"/>
+<area shape="rect" id="Node000014" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPattern.html" title=" " alt="" coords="849,399,1013,453"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="614,331,674,353,850,403,848,408,673,358,612,336"/>
+<area shape="rect" id="Node000016" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPattern.html" title=" " alt="" coords="849,477,1013,532"/>
+<area shape="poly" id="edge16_Node000001_Node000016" title=" " alt="" coords="579,337,622,378,675,417,718,439,763,457,850,484,848,489,761,462,715,444,672,422,618,382,575,341"/>
+<area shape="rect" id="Node000018" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPattern.html" title=" " alt="" coords="849,556,1013,611"/>
+<area shape="poly" id="edge18_Node000001_Node000018" title=" " alt="" coords="565,341,583,377,607,419,638,461,675,497,716,523,761,543,806,558,849,569,848,574,805,563,759,548,713,528,672,501,634,465,602,422,578,380,561,343"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPatternBase.html" title="This is intended to be the base class for all emission patterns matching on operations." alt="" coords="213,289,399,329"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="412,306,448,306,448,311,412,311"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1ExportSystemC_1_1PatternBase.html" title="This is indented to be the base class for all emission patterns." alt="" coords="5,289,164,329"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="178,306,213,306,213,311,178,311"/>
+<area shape="rect" id="Node000005" href="$structVariableEmitter.html" title="Emit a systemc.cpp.variable operation." alt="" coords="1086,20,1209,45"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1027,39,1086,38,1086,44,1027,44"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="1027,21,1086,22,1086,27,1027,26"/>
+<area shape="rect" id="Node000007" href="$structAssignEmitter.html" title="Emit a systemc.cpp.assign operation." alt="" coords="1091,99,1204,124"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="1028,109,1090,109,1090,114,1028,114"/>
+<area shape="rect" id="Node000009" href="$structBindPortEmitter.html" title="Emit a systemc.instance.bind_port operation using the operator() rather than .bind() variant." alt="" coords="1085,177,1210,203"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="1028,187,1084,187,1084,193,1028,193"/>
+<area shape="rect" id="Node000011" href="$classCallEmitter.html" title="Emit a systemc.cpp.call operation." alt="" coords="1100,256,1195,281"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="1027,266,1100,266,1100,271,1027,271"/>
+<area shape="rect" id="Node000013" href="$classCallIndirectEmitter.html" title="Emit a systemc.cpp.call_indirect operation." alt="" coords="1075,335,1219,360"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="1027,345,1075,345,1075,350,1027,350"/>
+<area shape="rect" id="Node000015" href="$structFuncEmitter.html" title="Emit a systemc.cpp.func function." alt="" coords="1097,413,1197,439"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="1028,423,1097,423,1097,429,1028,429"/>
+<area shape="rect" id="Node000017" href="$structMemberAccessEmitter.html" title="Emit a systemc.cpp.member_access operation." alt="" coords="1063,492,1232,517"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="1027,502,1062,502,1062,507,1027,507"/>
+<area shape="rect" id="Node000019" href="$structReturnEmitter.html" title="Emit a systemc.cpp.return operation." alt="" coords="1091,571,1204,596"/>
+<area shape="poly" id="edge19_Node000018_Node000019" title=" " alt="" coords="1028,581,1090,581,1090,586,1028,586"/>
+</map>

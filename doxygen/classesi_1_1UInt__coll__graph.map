@@ -1,0 +1,15 @@
+<map id="esi::UInt" name="esi::UInt">
+<area shape="rect" id="Node000001" title=" " alt="" coords="241,256,317,281"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1MutableBitVector.html" title="A mutable bit vector that owns its underlying storage." alt="" coords="199,181,360,207"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="282,221,282,256,277,256,277,221"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1BitVector.html" title="A lightweight, non&#45;owning bit vector view backed by a byte array span." alt="" coords="156,93,264,119"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="230,128,272,179,268,182,226,131"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,5,156,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="111,36,194,91,191,95,108,40"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="180,5,240,31"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="213,45,213,93,207,93,207,45"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="267,5,334,31"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="292,44,273,71,238,95,235,91,269,67,288,41"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="289,93,411,119"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="334,131,291,182,287,179,330,127"/>
+</map>

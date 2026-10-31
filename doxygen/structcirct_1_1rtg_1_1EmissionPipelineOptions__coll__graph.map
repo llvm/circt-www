@@ -1,0 +1,9 @@
+<map id="circt::rtg::EmissionPipelineOptions" name="circt::rtg::EmissionPipelineOptions">
+<area shape="rect" id="Node000001" title="Options for the RTG emission pipeline." alt="" coords="344,63,539,103"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,219,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,44,344,63,343,68,232,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="51,70,173,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="187,80,343,80,343,85,187,85"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="32,119,192,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="205,117,320,100,343,96,344,102,320,105,206,122"/>
+</map>

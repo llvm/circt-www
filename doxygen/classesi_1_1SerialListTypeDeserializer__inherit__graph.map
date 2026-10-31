@@ -1,0 +1,5 @@
+<map id="esi::SerialListTypeDeserializer&lt; T &gt;" name="esi::SerialListTypeDeserializer&lt; T &gt;">
+<area shape="rect" id="Node000001" title="Reusable serial&#45;list window deserializer." alt="" coords="25,79,280,104"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1QueuedDecodeTypeDeserializer.html" title="Helper base class for stateful deserializers which may emit zero, one, or many typed outputs for each..." alt="" coords="5,5,300,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,44,155,79,150,79,150,44"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="circt::systemc::BigIntType" name="circt::systemc::BigIntType">
+<area shape="rect" id="Node000001" title="Represents a finite word&#45;length signed integer in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="15,108,205,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,215,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,74,113,108,107,108,107,74"/>
+</map>

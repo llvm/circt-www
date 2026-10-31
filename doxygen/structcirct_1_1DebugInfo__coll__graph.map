@@ -1,0 +1,15 @@
+<map id="circt::DebugInfo" name="circt::DebugInfo">
+<area shape="rect" id="Node000001" title="Debug information attached to an operation and the operations nested within." alt="" coords="793,127,919,152"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="480,5,567,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="581,23,672,42,722,57,771,76,811,100,842,125,839,129,808,104,768,80,720,62,670,47,580,28"/>
+<area shape="rect" id="Node000003" href="$classllvm_1_1MapVector.html" title=" " alt="" coords="419,55,628,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="642,93,770,117,803,124,802,129,769,122,641,98"/>
+<area shape="rect" id="Node000004" href="$classllvm_1_1MapVector.html" title=" " alt="" coords="5,55,253,95"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="267,73,418,73,418,78,267,78"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="430,119,617,159"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="630,137,793,137,793,142,630,142"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="430,183,617,223"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="629,183,769,157,802,149,803,155,770,162,630,188"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="430,247,617,287"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="630,245,699,225,768,198,807,175,838,150,842,155,810,179,771,203,701,230,631,250"/>
+</map>

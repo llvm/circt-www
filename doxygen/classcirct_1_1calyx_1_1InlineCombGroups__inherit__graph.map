@@ -1,0 +1,11 @@
+<map id="circt::calyx::InlineCombGroups" name="circt::calyx::InlineCombGroups">
+<area shape="rect" id="Node000001" title="This pass recursively inlines use&#45;def chains of combinational logic (from non&#45;stateful groups) into g..." alt="" coords="1119,37,1293,77"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1calyx_1_1PartialLoweringPattern.html" title=" " alt="" coords="823,30,1069,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1083,55,1118,55,1118,60,1083,60"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="286,5,533,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="547,30,799,44,823,46,822,51,799,49,547,35"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1calyx_1_1PartialLoweringPattern.html" title="Base class for partial lowering passes." alt="" coords="269,69,549,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="563,89,679,86,798,79,822,76,823,81,799,84,679,91,563,94"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,77,220,102"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="234,87,269,87,269,92,234,92"/>
+</map>

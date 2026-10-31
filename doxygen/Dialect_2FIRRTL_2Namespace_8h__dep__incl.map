@@ -1,0 +1,35 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/FIRRTL/Namespace.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/FIRRTL/Namespace.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1921,5,2124,75"/>
+<area shape="rect" id="Node000002" href="$LowerToHW_8cpp.html" title=" " alt="" coords="5,123,208,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1908,46,1545,53,1057,67,573,91,372,106,220,125,209,127,208,122,220,120,372,101,573,85,1057,62,1544,47,1907,40"/>
+<area shape="rect" id="Node000003" href="$FIREmitter_8cpp.html" title=" " alt="" coords="233,123,421,192"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1908,46,1584,54,1158,69,738,92,564,107,432,125,422,127,421,122,432,120,564,102,738,87,1157,64,1583,49,1907,41"/>
+<area shape="rect" id="Node000004" href="$FIRRTLAnnotations_8cpp.html" title=" " alt="" coords="445,130,739,185"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1908,46,1692,52,1405,66,1079,89,913,106,751,125,706,133,706,127,750,120,913,100,1079,84,1404,60,1692,47,1908,41"/>
+<area shape="rect" id="Node000005" href="$FIRRTLReductions_8cpp.html" title=" " alt="" coords="763,130,1050,185"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1908,49,1531,74,1297,96,1063,125,1021,133,1020,127,1062,120,1297,90,1531,68,1907,44"/>
+<area shape="rect" id="Node000006" href="$AddSeqMemPorts_8cpp.html" title=" " alt="" coords="1075,123,1291,192"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1908,51,1631,77,1467,98,1303,125,1292,128,1291,122,1302,120,1466,93,1631,72,1907,46"/>
+<area shape="rect" id="Node000007" href="$BlackBoxReader_8cpp.html" title=" " alt="" coords="1315,123,1531,192"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1908,60,1735,88,1543,125,1532,128,1531,123,1542,120,1734,83,1907,55"/>
+<area shape="rect" id="Node000008" href="$CreateSiFiveMetadata_8cpp.html" title=" " alt="" coords="1555,123,1771,192"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1909,80,1769,125,1767,120,1907,75"/>
+<area shape="rect" id="Node000009" href="$ExtractInstances_8cpp.html" title=" " alt="" coords="1795,123,2011,192"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1979,86,1940,124,1936,121,1976,83"/>
+<area shape="rect" id="Node000010" href="$GrandCentral_8cpp.html" title=" " alt="" coords="2035,123,2251,192"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="2070,83,2109,121,2106,124,2066,86"/>
+<area shape="rect" id="Node000011" href="$InjectDUTHierarchy_8cpp.html" title=" " alt="" coords="2275,123,2491,192"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="2138,75,2278,120,2277,125,2137,80"/>
+<area shape="rect" id="Node000012" href="$LowerDPI_8cpp.html" title=" " alt="" coords="2515,123,2731,192"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="2138,55,2311,83,2503,120,2515,123,2514,128,2502,125,2310,88,2137,60"/>
+<area shape="rect" id="Node000013" href="$LowerLayers_8cpp.html" title=" " alt="" coords="2755,123,2971,192"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="2138,46,2415,72,2579,93,2743,120,2755,122,2754,128,2742,125,2579,98,2414,77,2137,51"/>
+<area shape="rect" id="Node000014" href="$LowerMemory_8cpp.html" title=" " alt="" coords="2995,123,3211,192"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="2138,42,2304,49,2515,63,2749,86,2983,120,2995,122,2994,128,2982,125,2748,91,2515,68,2304,54,2138,47"/>
+<area shape="rect" id="Node000015" href="$LowerXMR_8cpp.html" title=" " alt="" coords="3235,123,3451,192"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="2138,39,2343,43,2613,55,2917,79,3072,97,3223,120,3235,122,3234,127,3222,125,3071,103,2917,84,2613,60,2343,48,2138,44"/>
+<area shape="rect" id="Node000016" href="$ModuleInliner_8cpp.html" title=" " alt="" coords="3475,123,3691,192"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="2138,42,2434,52,2816,69,3190,91,3345,105,3463,120,3475,122,3474,127,3462,125,3345,110,3190,97,2815,74,2434,57,2138,47"/>
+<area shape="rect" id="Node000017" href="$PopulateInstanceChoiceSymbols_8cpp.html" title=" " alt="" coords="3715,123,3981,192"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="2138,42,2479,52,2930,68,3377,91,3562,105,3703,120,3716,122,3715,127,3702,125,3562,110,3376,97,2930,74,2478,57,2138,47"/>
+</map>

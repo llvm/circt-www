@@ -1,0 +1,7 @@
+<map id="esi::services::HostMemAllocator" name="esi::services::HostMemAllocator">
+<area shape="rect" id="Node000001" title="Interface for anything which can allocate HostMemRegions." alt="" coords="5,5,237,31"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1services_1_1HostMem.html" title=" " alt="" coords="34,79,209,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,44,124,79,119,79,119,44"/>
+<area shape="rect" id="Node000003" href="$classTraceHostMem.html" title=" " alt="" coords="62,152,181,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="124,118,124,152,119,152,119,118"/>
+</map>

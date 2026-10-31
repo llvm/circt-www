@@ -1,0 +1,7 @@
+<map id="esi::ChannelPort::TranslationInfo::ListFieldInfo" name="esi::ChannelPort::TranslationInfo::ListFieldInfo">
+<area shape="rect" id="Node000001" title="Information about a list field within a frame (for parallel encoding)." alt="" coords="5,152,212,192"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="29,5,87,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,44,53,85,55,106,62,127,81,150,77,153,57,129,50,107,47,85,50,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="131,5,191,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,45,148,85,134,129,122,153,117,151,129,127,143,84,153,44"/>
+</map>

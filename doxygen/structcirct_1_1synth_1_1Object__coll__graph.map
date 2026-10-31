@@ -1,0 +1,13 @@
+<map id="circt::synth::Object" name="circt::synth::Object">
+<area shape="rect" id="Node000001" title=" " alt="" coords="203,269,347,295"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1igraph_1_1InstancePath.html" title="An instance path composed of a series of instances." alt="" coords="30,181,221,207"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,215,183,243,236,267,234,272,180,248,144,219"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,93,245,119"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="128,133,128,181,123,181,123,133"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="86,5,165,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="128,45,128,93,123,93,123,45"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="245,181,304,207"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="277,221,277,269,272,269,272,221"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="329,181,389,207"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="346,220,323,247,294,271,290,267,319,243,342,216"/>
+</map>

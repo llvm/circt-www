@@ -1,0 +1,17 @@
+<map id="circt::hw::PortInfo" name="circt::hw::PortInfo">
+<area shape="rect" id="Node000001" title="This holds the name, type, direction of a module&#39;s ports." alt="" coords="260,181,395,207"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1hw_1_1ModulePort.html" title=" " alt="" coords="60,93,219,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,122,303,179,301,183,176,127"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,89,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="68,40,94,67,124,91,121,95,91,71,64,43"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="113,5,165,31"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="142,45,142,93,137,93,137,45"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="189,5,271,31"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="210,42,180,71,154,95,150,91,176,67,206,39"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="243,93,303,119"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="285,130,299,156,318,179,314,183,294,159,280,132"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="327,93,440,119"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="373,132,356,159,339,183,334,180,352,156,368,129"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="465,93,566,119"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="479,127,354,183,352,179,477,122"/>
+</map>

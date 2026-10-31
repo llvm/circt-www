@@ -1,0 +1,9 @@
+<map id="esi::QueuedDecodeTypeDeserializer&lt; T &gt;" name="esi::QueuedDecodeTypeDeserializer&lt; T &gt;">
+<area shape="rect" id="Node000001" title="Helper base class for stateful deserializers which may emit zero, one, or many typed outputs for each..." alt="" coords="5,33,300,59"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1SerialListTypeDeserializer.html" title="Reusable serial&#45;list window deserializer." alt="" coords="539,5,794,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="313,35,539,22,539,28,314,40"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1QueuedDecodeTypeDeserializer.html" title=" " alt="" coords="539,55,795,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="314,53,324,54,539,66,538,71,324,59,313,59"/>
+<area shape="rect" id="Node000004" href="$classSerialCoordOutputBatch_1_1TypeDeserializer.html" title=" " alt="" coords="844,55,1023,95"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="809,73,844,73,844,78,809,78"/>
+</map>

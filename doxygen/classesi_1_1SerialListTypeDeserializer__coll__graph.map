@@ -1,0 +1,21 @@
+<map id="esi::SerialListTypeDeserializer&lt; T &gt;" name="esi::SerialListTypeDeserializer&lt; T &gt;">
+<area shape="rect" id="Node000001" title="Reusable serial&#45;list window deserializer." alt="" coords="853,187,1108,212"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1QueuedDecodeTypeDeserializer.html" title="Helper base class for stateful deserializers which may emit zero, one, or many typed outputs for each..." alt="" coords="393,63,688,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="668,87,749,103,830,125,901,154,958,184,956,189,899,159,828,130,748,108,667,93"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,237,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="229,30,447,60,447,65,228,35"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="47,55,196,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="210,73,393,73,393,78,210,78"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="89,120,153,145"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="167,124,447,85,447,91,168,129"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="511,112,571,137"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="585,127,696,141,830,162,930,184,929,189,829,167,695,146,584,132"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="471,161,610,187"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="624,176,853,189,853,195,624,181"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="443,211,639,236"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="653,221,829,215,890,209,890,215,830,221,653,227"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="457,260,625,285"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="638,265,731,256,829,241,889,226,942,210,944,215,890,231,830,246,732,261,639,270"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="493,309,588,335"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="602,317,709,305,769,294,828,278,866,263,903,245,960,210,962,214,905,249,868,268,830,283,771,299,710,311,602,322"/>
+</map>

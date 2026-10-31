@@ -1,0 +1,5 @@
+<map id="circt::systemc::UnsignedType" name="circt::systemc::UnsignedType">
+<area shape="rect" id="Node000001" title="Represents a finite word&#45;length unsigned integer in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="7,108,219,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,220,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,74,115,108,110,108,110,74"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="llvm::GraphTraits&lt; circt::hw::InstanceGraph * &gt;" name="llvm::GraphTraits&lt; circt::hw::InstanceGraph * &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="17,196,225,236"/>
+<area shape="rect" id="Node000002" href="$structllvm_1_1GraphTraits_3_01circt_1_1igraph_1_1InstanceGraph_01_5_01_4.html" title="Graph traits for the instance graph." alt="" coords="5,108,236,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,162,123,196,118,196,118,162"/>
+<area shape="rect" id="Node000003" href="$structllvm_1_1GraphTraits_3_01circt_1_1igraph_1_1InstanceGraphNode_01_5_01_4.html" title="Graph traits for modules." alt="" coords="18,5,223,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,74,123,108,118,108,118,74"/>
+</map>

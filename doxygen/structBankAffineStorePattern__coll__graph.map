@@ -1,0 +1,18 @@
+<map id="BankAffineStorePattern" name="BankAffineStorePattern">
+<area shape="rect" id="Node000001" title=" " alt="" coords="817,107,991,133"/>
+<area shape="rect" id="Node000002" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="431,5,653,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="660,46,794,79,871,105,869,110,793,84,659,51"/>
+<area shape="rect" id="Node000003" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="5,5,176,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="190,23,431,23,431,28,190,28"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="428,69,656,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="670,97,817,110,817,115,669,103"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="45,77,136,102"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="150,87,428,87,428,92,150,92"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="447,135,637,161"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="650,151,721,151,793,145,863,130,864,135,794,151,721,156,650,157"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="49,159,133,185"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="147,166,447,150,447,156,147,172"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="467,185,617,210"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="147,177,200,183,342,191,467,194,466,199,342,196,200,188,146,182"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="630,194,710,187,793,171,841,152,881,130,883,135,843,157,794,176,711,192,631,199"/>
+</map>

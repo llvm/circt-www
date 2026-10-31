@@ -1,0 +1,73 @@
+<map id="circt::pipelinetocalyx::ComponentLoweringState" name="circt::pipelinetocalyx::ComponentLoweringState">
+<area shape="rect" id="Node000001" title="Handles the current state of lowering of a Calyx component." alt="" coords="1919,793,2117,833"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1calyx_1_1ComponentLoweringStateInterface.html" title=" " alt="" coords="919,380,1153,420"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1098,423,1970,791,1968,796,1096,428"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="432,459,547,485"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="560,460,918,413,919,418,561,465"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="403,73,576,127"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="590,98,671,102,756,109,831,121,860,130,883,140,915,165,942,195,966,228,986,263,1015,329,1032,379,1027,381,1010,331,981,265,962,231,938,199,911,169,880,145,859,135,830,126,755,114,671,107,590,104"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,781,96,806"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="51,767,58,676,71,553,90,433,103,384,118,348,144,305,170,271,196,244,224,222,288,183,371,138,401,123,403,128,373,142,291,187,227,226,200,248,174,275,148,308,122,351,108,385,96,434,76,554,63,677,56,767"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="408,365,571,435"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="52,767,59,700,72,616,91,537,104,506,118,485,149,459,184,438,221,422,260,410,338,397,408,393,408,399,338,402,261,415,223,427,186,443,152,463,122,488,108,509,97,539,77,617,64,701,57,767"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="397,509,582,549"/>
+<area shape="poly" id="edge10_Node000009_Node000005" title=" " alt="" coords="48,767,51,721,60,666,81,610,97,585,118,563,149,542,183,527,219,516,256,509,330,505,397,509,396,515,330,510,257,514,220,521,185,532,152,547,122,567,102,588,86,612,65,667,56,722,54,767"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="405,573,574,613"/>
+<area shape="poly" id="edge12_Node000010_Node000005" title=" " alt="" coords="52,767,58,734,70,696,90,659,119,628,159,617,232,607,404,595,405,600,233,613,160,622,121,633,94,662,75,698,64,735,57,768"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="389,637,589,677"/>
+<area shape="poly" id="edge14_Node000011_Node000005" title=" " alt="" coords="61,767,84,731,100,714,119,700,167,683,236,671,389,658,389,664,237,677,168,689,121,705,104,718,88,735,66,770"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="405,701,574,741"/>
+<area shape="poly" id="edge16_Node000012_Node000005" title=" " alt="" coords="83,772,119,756,193,739,269,727,404,718,405,724,270,733,194,744,121,761,85,777"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="395,910,583,965"/>
+<area shape="poly" id="edge23_Node000018_Node000005" title=" " alt="" coords="64,818,86,859,102,879,121,895,153,912,188,925,259,941,331,947,395,946,395,951,330,952,259,946,186,930,151,917,119,900,98,883,81,862,59,820"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="404,845,575,885"/>
+<area shape="poly" id="edge25_Node000019_Node000005" title=" " alt="" coords="85,810,121,825,194,843,269,854,404,863,404,868,269,859,193,848,119,831,83,815"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="404,766,575,821"/>
+<area shape="poly" id="edge27_Node000020_Node000005" title=" " alt="" coords="110,791,404,791,404,796,110,796"/>
+<area shape="rect" id="Node000024" title=" " alt="" coords="631,1128,881,1168"/>
+<area shape="poly" id="edge35_Node000024_Node000005" title=" " alt="" coords="56,820,61,894,73,988,92,1077,106,1110,122,1131,146,1141,192,1148,324,1155,483,1155,630,1151,631,1156,483,1160,324,1160,191,1153,145,1146,118,1135,101,1113,87,1078,67,989,56,894,51,820"/>
+<area shape="rect" id="Node000026" title=" " alt="" coords="401,1188,577,1228"/>
+<area shape="poly" id="edge38_Node000026_Node000005" title=" " alt="" coords="55,820,58,908,67,1025,75,1084,87,1136,103,1178,122,1205,156,1227,195,1242,236,1250,278,1251,361,1243,430,1225,432,1231,362,1248,278,1257,235,1255,193,1247,154,1232,118,1209,98,1180,82,1137,70,1085,62,1026,52,909,49,820"/>
+<area shape="rect" id="Node000027" title=" " alt="" coords="1191,1007,1387,1047"/>
+<area shape="poly" id="edge40_Node000027_Node000005" title=" " alt="" coords="58,819,65,851,77,887,95,923,122,953,153,975,182,989,209,997,237,1000,297,1001,372,1004,602,1023,830,1030,1034,1031,1190,1028,1190,1033,1034,1036,830,1036,601,1028,372,1009,297,1006,236,1006,208,1002,180,994,150,980,118,957,91,926,72,889,60,852,53,820"/>
+<area shape="rect" id="Node000028" title=" " alt="" coords="650,1062,862,1117"/>
+<area shape="poly" id="edge43_Node000028_Node000005" title=" " alt="" coords="57,819,64,881,77,958,96,1029,108,1056,122,1073,148,1082,196,1090,336,1096,501,1095,650,1091,650,1096,501,1101,336,1101,196,1095,147,1088,118,1077,104,1058,91,1031,72,959,59,882,52,820"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="585,397,918,397,918,403,585,403"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="383,151,596,177"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="610,161,765,168,834,178,882,194,910,212,936,235,978,286,1009,338,1029,379,1024,381,1004,340,974,289,932,238,907,216,880,198,833,183,765,173,609,166"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="405,201,574,241"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="588,213,655,215,731,221,808,236,882,262,926,287,965,318,1021,378,1017,381,961,322,923,291,880,266,807,241,730,227,655,220,588,219"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="595,520,733,502,808,488,881,469,944,445,998,418,1000,423,946,450,882,475,809,493,734,508,596,525"/>
+<area shape="poly" id="edge11_Node000002_Node000010" title=" " alt="" coords="588,592,655,588,730,579,807,562,880,535,923,510,961,478,1017,419,1021,422,965,482,926,514,882,540,808,567,731,584,656,594,588,597"/>
+<area shape="poly" id="edge13_Node000002_Node000011" title=" " alt="" coords="603,652,762,639,832,627,880,610,908,590,932,567,974,514,1005,461,1024,419,1029,421,1010,463,979,517,936,571,911,594,883,614,833,632,762,644,604,657"/>
+<area shape="poly" id="edge15_Node000002_Node000012" title=" " alt="" coords="587,709,772,688,846,677,880,670,912,644,940,612,963,577,983,541,1012,472,1027,420,1032,421,1017,474,988,543,968,580,944,615,916,647,883,674,847,683,772,693,588,714"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="372,266,607,291"/>
+<area shape="poly" id="edge17_Node000002_Node000013" title=" " alt="" coords="621,281,748,296,816,308,882,324,947,349,1002,377,999,382,945,354,881,329,815,313,748,301,620,287"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="460,315,519,341"/>
+<area shape="poly" id="edge18_Node000002_Node000014" title=" " alt="" coords="533,331,919,382,918,387,532,336"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="395,23,584,49"/>
+<area shape="poly" id="edge19_Node000002_Node000015" title=" " alt="" coords="593,20,662,18,738,25,814,44,850,59,883,79,919,111,950,150,975,192,995,236,1021,318,1034,379,1029,380,1016,320,990,238,970,195,945,153,916,115,880,83,847,64,812,49,737,30,662,23,593,25"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="9,23,93,49"/>
+<area shape="poly" id="edge20_Node000015_Node000016" title=" " alt="" coords="107,33,394,33,394,39,107,39"/>
+<area shape="rect" id="Node000017" href="$classcirct_1_1calyx_1_1LoopLoweringStateInterface.html" title=" " alt="" coords="1411,793,1661,833"/>
+<area shape="poly" id="edge21_Node000001_Node000017" title=" " alt="" coords="1675,811,1918,811,1918,816,1675,816"/>
+<area shape="poly" id="edge22_Node000017_Node000018" title=" " alt="" coords="597,935,857,928,1012,918,1166,900,1248,886,1330,868,1468,831,1469,836,1331,873,1249,891,1167,905,1012,923,857,934,597,941"/>
+<area shape="rect" id="Node000021" href="$classcirct_1_1calyx_1_1LoopLoweringStateInterface.html" title=" " alt="" coords="941,836,1131,876"/>
+<area shape="poly" id="edge29_Node000021_Node000018" title=" " alt="" coords="596,915,630,909,756,895,881,880,940,871,941,876,882,885,756,900,631,915,597,920"/>
+<area shape="rect" id="Node000022" href="$classcirct_1_1pipelinetocalyx_1_1PipelineScheduler.html" title="Holds additional information required for scheduling Pipeline pipelines." alt="" coords="1711,1008,1869,1048"/>
+<area shape="poly" id="edge41_Node000022_Node000018" title=" " alt="" coords="597,939,1158,966,1464,985,1687,1005,1711,1009,1710,1014,1686,1011,1463,991,1158,972,597,944"/>
+<area shape="poly" id="edge24_Node000017_Node000019" title=" " alt="" coords="588,842,630,836,842,813,1008,802,1174,800,1387,804,1410,805,1410,810,1387,809,1174,805,1008,807,843,818,631,841,589,848"/>
+<area shape="poly" id="edge30_Node000021_Node000019" title=" " alt="" coords="589,861,940,855,941,860,589,866"/>
+<area shape="poly" id="edge26_Node000017_Node000020" title=" " alt="" coords="589,777,743,761,942,748,1052,746,1164,747,1277,754,1387,767,1436,777,1481,791,1480,796,1435,782,1386,772,1276,759,1164,753,1052,751,942,753,743,766,589,782"/>
+<area shape="poly" id="edge31_Node000021_Node000020" title=" " alt="" coords="589,802,941,842,940,848,588,807"/>
+<area shape="poly" id="edge28_Node000017_Node000021" title=" " alt="" coords="1145,844,1410,821,1411,827,1145,849"/>
+<area shape="poly" id="edge32_Node000001_Node000022" title=" " alt="" coords="1821,997,1994,832,1997,836,1824,1000"/>
+<area shape="rect" id="Node000023" href="$classcirct_1_1calyx_1_1SchedulerInterface.html" title=" " alt="" coords="1425,1127,1647,1167"/>
+<area shape="poly" id="edge33_Node000022_Node000023" title=" " alt="" coords="1650,1120,1685,1106,1730,1077,1766,1046,1770,1050,1733,1081,1688,1110,1652,1125"/>
+<area shape="poly" id="edge34_Node000023_Node000024" title=" " alt="" coords="895,1145,1424,1144,1424,1150,895,1150"/>
+<area shape="rect" id="Node000025" href="$classcirct_1_1calyx_1_1SchedulerInterface.html" title="Holds common utilities used for scheduling when lowering to Calyx." alt="" coords="905,1195,1167,1221"/>
+<area shape="poly" id="edge36_Node000023_Node000025" title=" " alt="" coords="1180,1198,1282,1190,1386,1177,1455,1164,1456,1169,1387,1183,1282,1195,1180,1204"/>
+<area shape="poly" id="edge37_Node000025_Node000026" title=" " alt="" coords="591,1205,905,1205,905,1211,591,1211"/>
+<area shape="poly" id="edge39_Node000022_Node000027" title=" " alt="" coords="1400,1024,1711,1025,1711,1030,1400,1030"/>
+<area shape="poly" id="edge42_Node000022_Node000028" title=" " alt="" coords="876,1092,1112,1095,1250,1093,1386,1085,1560,1065,1710,1041,1711,1046,1561,1071,1387,1091,1250,1098,1112,1100,876,1097"/>
+</map>

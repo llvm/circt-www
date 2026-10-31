@@ -1,0 +1,11 @@
+<map id="circt::arc::runtime::FmtDescriptor::IntFmt" name="circt::arc::runtime::FmtDescriptor::IntFmt">
+<area shape="rect" id="Node000001" title="Integer formatting options." alt="" coords="109,123,283,163"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,72,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="42,44,49,72,63,97,85,113,110,125,107,130,82,118,59,100,44,74,37,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="131,5,189,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,44,165,71,172,98,184,121,179,124,167,100,160,71,157,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="213,5,264,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="233,45,205,123,200,121,228,43"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="328,5,379,31"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="350,45,339,74,319,101,301,114,280,125,278,120,298,110,315,97,334,71,345,43"/>
+</map>

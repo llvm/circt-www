@@ -1,0 +1,5 @@
+<map id="circt::llhd::ConstProjectionRange" name="circt::llhd::ConstProjectionRange">
+<area shape="rect" id="Node000001" title="Portion of a signal selected by a projection, with a statically known offset and width in bits." alt="" coords="5,108,197,148"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="64,5,139,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,45,104,108,99,108,99,45"/>
+</map>

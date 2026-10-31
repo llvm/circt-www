@@ -1,0 +1,36 @@
+<map id="circt::scheduling::ChainingProblem" name="circt::scheduling::ChainingProblem">
+<area shape="rect" id="Node000001" title="This class models the accumulation of physical propagation delays on combinational paths along SSA de..." alt="" coords="1175,315,1311,355"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1scheduling_1_1Problem.html" title="This class models the most basic scheduling problem." alt="" coords="861,283,997,323"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1010,309,1175,326,1174,331,1010,314"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="476,5,635,31"/>
+<area shape="poly" id="edge15_Node000001_Node000003" title=" " alt="" coords="649,6,735,8,780,14,824,26,890,54,954,89,1015,129,1071,172,1164,253,1225,313,1221,317,1161,257,1068,176,1012,134,952,94,888,59,822,31,779,20,734,13,648,11"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="633,31,824,73,848,96,868,123,898,182,917,239,927,283,922,284,912,240,893,184,864,126,844,100,821,78,632,36"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="512,64,599,89"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="613,81,739,99,794,110,824,120,845,137,863,157,892,202,912,246,924,282,919,284,907,248,887,204,859,160,841,141,821,124,792,115,738,105,612,86"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="461,113,650,139"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="664,135,745,155,786,170,824,189,853,210,878,235,916,281,912,285,875,238,849,214,821,194,784,175,743,160,663,140"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="467,163,644,217"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="658,202,740,220,824,245,862,262,897,281,894,286,860,267,822,250,738,225,657,207"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="455,241,656,267"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="670,262,823,281,861,287,860,292,822,286,670,267"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="453,291,657,316"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="671,301,860,301,860,306,671,306"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="462,340,649,395"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="662,348,822,321,860,314,861,319,823,326,663,353"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="474,419,637,489"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="649,436,737,409,781,390,821,365,833,350,845,333,865,321,867,326,848,337,837,353,824,369,783,394,738,414,651,441"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="479,513,631,553"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="645,525,691,516,738,501,783,478,821,447,830,433,834,420,833,393,831,364,835,349,845,334,859,321,862,325,849,337,840,351,836,365,838,392,839,421,835,436,825,450,786,483,740,506,692,521,646,530"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="473,577,637,617"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="651,599,696,595,742,585,785,566,821,538,837,513,842,489,840,465,834,440,828,414,825,388,830,361,845,334,859,321,862,324,849,337,835,363,831,388,833,413,839,439,845,464,847,489,842,515,825,541,787,571,743,590,697,600,651,605"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="513,641,597,667"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="611,658,669,663,732,665,786,660,807,654,821,645,834,622,839,586,835,495,830,401,833,362,844,334,859,320,862,324,849,337,838,363,835,401,841,494,845,586,839,623,825,649,809,659,787,665,732,670,669,668,611,663"/>
+<area shape="rect" id="Node000014" href="$classllvm_1_1SmallDenseMap.html" title=" " alt="" coords="457,691,654,731"/>
+<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="668,728,709,728,750,722,788,708,821,684,829,672,835,657,840,616,839,567,835,514,828,409,832,366,844,334,859,320,862,324,849,337,837,367,834,409,840,513,845,567,846,617,840,658,834,675,825,688,791,713,751,727,709,734,668,734"/>
+<area shape="rect" id="Node000015" href="$classllvm_1_1SmallDenseMap.html" title=" " alt="" coords="5,684,225,739"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="239,709,456,709,456,714,239,714"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="847,347,1011,387"/>
+<area shape="poly" id="edge16_Node000001_Node000016" title=" " alt="" coords="1025,367,1087,365,1150,358,1176,353,1177,358,1151,363,1087,370,1025,372"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="853,411,1005,451"/>
+<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="1018,419,1084,407,1150,388,1183,372,1212,353,1215,358,1185,376,1152,392,1085,412,1019,425"/>
+</map>

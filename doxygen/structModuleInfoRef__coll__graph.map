@@ -1,0 +1,9 @@
+<map id="ModuleInfoRef" name="ModuleInfoRef">
+<area shape="rect" id="Node000001" title="A reference to a ModuleInfo that compares and hashes like it." alt="" coords="113,181,231,207"/>
+<area shape="rect" id="Node000002" href="$structModuleInfo.html" title=" " alt="" coords="125,93,219,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,133,175,181,169,181,169,133"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,160,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="105,39,134,67,160,91,157,95,130,71,101,42"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="184,5,339,31"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="253,44,234,71,199,95,196,91,230,67,249,41"/>
+</map>

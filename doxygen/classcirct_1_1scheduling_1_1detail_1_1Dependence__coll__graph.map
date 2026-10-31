@@ -1,0 +1,9 @@
+<map id="circt::scheduling::detail::Dependence" name="circt::scheduling::detail::Dependence">
+<area shape="rect" id="Node000001" title="A wrapper class to uniformly handle def&#45;use and auxiliary dependence edges." alt="" coords="89,108,237,148"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,92,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,39,109,82,138,106,135,110,106,86,65,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="116,5,211,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,45,166,108,161,108,161,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="235,5,358,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="274,42,221,86,190,110,187,106,218,82,271,38"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="circt::hw::HWSymbolCache::Item" name="circt::hw::HWSymbolCache::Item">
+<area shape="rect" id="Node000001" title=" " alt="" coords="7,93,203,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,103,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,41,97,92,92,94,64,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="127,5,187,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,44,118,94,113,92,141,41"/>
+</map>

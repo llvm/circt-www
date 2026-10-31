@@ -1,0 +1,9 @@
+<map id="test_codegen.EventStruct" name="test_codegen.EventStruct">
+<area shape="rect" id="Node000001" title=" " alt="" coords="20,93,208,119"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,65,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,39,105,91,101,95,53,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="89,5,139,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="117,45,117,93,111,93,111,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="163,5,209,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="170,43,126,95,122,91,166,39"/>
+</map>

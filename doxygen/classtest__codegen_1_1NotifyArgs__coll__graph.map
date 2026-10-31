@@ -1,0 +1,7 @@
+<map id="test_codegen.NotifyArgs" name="test_codegen.NotifyArgs">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,108,187,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="27,5,87,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,42,94,107,89,109,64,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="111,5,161,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,44,103,109,98,107,124,42"/>
+</map>

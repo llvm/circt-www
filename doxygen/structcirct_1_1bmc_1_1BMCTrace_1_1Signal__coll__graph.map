@@ -1,0 +1,7 @@
+<map id="circt::bmc::BMCTrace::Signal" name="circt::bmc::BMCTrace::Signal">
+<area shape="rect" id="Node000001" title="Metadata for a tracked signal in the trace." alt="" coords="5,93,164,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="9,5,67,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,42,64,68,77,92,72,94,60,71,47,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="92,5,173,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="123,44,97,94,92,92,118,42"/>
+</map>

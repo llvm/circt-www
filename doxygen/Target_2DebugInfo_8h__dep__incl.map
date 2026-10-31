@@ -1,0 +1,11 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Target/DebugInfo.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Target/DebugInfo.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="411,5,643,60"/>
+<area shape="rect" id="Node000002" href="$InitAllTranslations_8h.html" title=" " alt="" coords="5,115,243,170"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="416,66,222,118,221,113,415,61"/>
+<area shape="rect" id="Node000003" href="$DumpDebugInfo_8cpp.html" title=" " alt="" coords="267,108,509,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="484,71,433,110,430,106,480,67"/>
+<area shape="rect" id="Node000004" href="$EmitHGLDD_8cpp.html" title=" " alt="" coords="534,115,799,170"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="574,67,634,113,631,117,570,71"/>
+<area shape="rect" id="Node000005" href="$TranslateRegistration_8cpp.html" title=" " alt="" coords="823,108,1043,177"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="642,61,813,105,824,108,822,114,811,111,641,66"/>
+</map>

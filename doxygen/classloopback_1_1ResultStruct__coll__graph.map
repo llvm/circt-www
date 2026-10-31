@@ -1,0 +1,7 @@
+<map id="loopback.ResultStruct" name="loopback.ResultStruct">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,108,169,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="19,5,79,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,42,85,107,80,109,56,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="103,5,149,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="119,44,94,109,89,107,114,42"/>
+</map>

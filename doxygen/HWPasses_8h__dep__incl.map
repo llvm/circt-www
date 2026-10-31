@@ -1,0 +1,57 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/HW/HWPasses.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/HW/HWPasses.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="2862,5,3050,75"/>
+<area shape="rect" id="Node000002" href="$LongestPathAnalysis_8h.html" title=" " alt="" coords="463,123,694,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2848,45,2409,50,1789,63,1467,74,1164,87,904,104,707,125,695,127,694,122,706,120,903,99,1164,82,1466,68,1789,58,2408,45,2848,39"/>
+<area shape="rect" id="Node000008" href="$InitAllPasses_8h.html" title=" " alt="" coords="719,130,921,185"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="2848,45,2449,50,1895,64,1609,74,1340,88,1109,105,935,125,901,132,900,127,934,120,1109,99,1340,82,1608,69,1895,58,2448,45,2848,40"/>
+<area shape="rect" id="Node000009" href="$HW_8cpp.html" title=" " alt="" coords="946,130,1134,185"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="2848,45,2486,51,1995,65,1741,76,1504,89,1301,105,1147,125,1116,132,1115,127,1146,120,1300,100,1504,84,1741,70,1994,60,2486,46,2848,40"/>
+<area shape="rect" id="Node000010" href="$PruneZeroValuedLogic_8cpp.html" title=" " alt="" coords="1159,123,1369,192"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="2848,46,2529,55,2106,71,1688,94,1515,109,1383,125,1370,128,1369,122,1382,120,1514,104,1688,89,2106,66,2529,50,2848,41"/>
+<area shape="rect" id="Node000011" href="$HWToBTOR2_8cpp.html" title=" " alt="" coords="1394,123,1598,192"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="2848,47,2572,58,2215,74,1866,97,1721,111,1611,125,1599,128,1598,122,1610,120,1720,105,1865,92,2215,69,2572,52,2848,42"/>
+<area shape="rect" id="Node000012" href="$FlattenIO_8cpp.html" title=" " alt="" coords="1623,123,1817,192"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="2849,44,2656,47,2402,59,2116,84,1971,102,1830,125,1818,128,1817,122,1829,120,1971,97,2116,78,2402,54,2656,42,2848,38"/>
+<area shape="rect" id="Node000013" href="$FlattenModules_8cpp.html" title=" " alt="" coords="1841,123,2036,192"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="2848,46,2691,53,2491,67,2270,90,2048,125,2037,128,2036,123,2048,120,2269,85,2491,62,2691,48,2848,41"/>
+<area shape="rect" id="Node000014" href="$HWAggregateToComb_8cpp.html" title=" " alt="" coords="2060,123,2255,192"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="2848,51,2583,76,2425,97,2269,125,2255,128,2254,123,2267,120,2425,92,2583,71,2848,46"/>
+<area shape="rect" id="Node000015" href="$HWBypassInnerSymbols_8cpp.html" title=" " alt="" coords="2279,123,2491,192"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="2849,60,2686,88,2505,125,2493,128,2491,123,2503,120,2685,83,2848,55"/>
+<area shape="rect" id="Node000016" href="$HWConvertBitcasts_8cpp.html" title=" " alt="" coords="2516,123,2711,192"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="2850,80,2712,126,2710,121,2848,75"/>
+<area shape="rect" id="Node000017" href="$HWIMDeadCodeElim_8cpp.html" title=" " alt="" coords="2735,123,2929,192"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="2911,86,2870,124,2866,121,2908,83"/>
+<area shape="rect" id="Node000018" href="$HWParameterizeConstantPorts_8cpp.html" title=" " alt="" coords="2953,123,3207,192"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="3004,83,3046,121,3042,124,3001,86"/>
+<area shape="rect" id="Node000019" href="$HWPrintInstanceGraph_8cpp.html" title=" " alt="" coords="3231,123,3431,192"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="3064,71,3231,123,3230,128,3062,77"/>
+<area shape="rect" id="Node000020" href="$HWSpecialize_8cpp.html" title=" " alt="" coords="3455,123,3649,192"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="3064,53,3242,80,3443,120,3455,123,3454,128,3442,125,3241,85,3063,58"/>
+<area shape="rect" id="Node000021" href="$HWVectorization_8cpp.html" title=" " alt="" coords="3673,123,3868,192"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="3064,45,3337,70,3500,91,3662,120,3674,123,3673,128,3661,125,3499,97,3336,75,3064,50"/>
+<area shape="rect" id="Node000022" href="$PrintHWModuleGraph_8cpp.html" title=" " alt="" coords="3892,123,4087,192"/>
+<area shape="poly" id="edge21_Node000001_Node000022" title=" " alt="" coords="3064,41,3224,47,3428,61,3654,84,3769,101,3881,120,3892,123,3891,128,3879,125,3768,106,3653,90,3427,66,3223,53,3064,46"/>
+<area shape="rect" id="Node000023" href="$VerifyInnerRefNamespace_8cpp.html" title=" " alt="" coords="4111,123,4334,192"/>
+<area shape="poly" id="edge22_Node000001_Node000023" title=" " alt="" coords="3064,39,3258,44,3516,57,3807,81,3955,98,4099,120,4111,122,4111,128,4098,125,3954,104,3806,86,3516,62,3258,50,3064,45"/>
+<area shape="rect" id="Node000024" href="$KanagawaPassPipelines_8cpp.html" title=" " alt="" coords="4359,123,4599,192"/>
+<area shape="poly" id="edge23_Node000001_Node000024" title=" " alt="" coords="3064,38,3297,41,3616,52,3979,76,4165,96,4347,120,4359,122,4358,127,4346,125,4165,101,3979,82,3615,57,3297,46,3064,43"/>
+<area shape="rect" id="Node000025" href="$SynthesisPipeline_8cpp.html" title=" " alt="" coords="4623,123,4833,192"/>
+<area shape="poly" id="edge24_Node000001_Node000025" title=" " alt="" coords="3064,41,3398,49,3845,64,4288,88,4472,103,4611,120,4623,122,4622,127,4610,125,4471,108,4287,93,3844,70,3398,54,3064,46"/>
+<area shape="rect" id="Node000026" href="$VerifyClockedAssertLike_8cpp.html" title=" " alt="" coords="4857,123,5065,192"/>
+<area shape="poly" id="edge25_Node000001_Node000026" title=" " alt="" coords="3064,40,3440,46,3955,61,4470,84,4684,101,4846,120,4858,122,4857,127,4845,125,4683,106,4469,90,3955,66,3440,52,3064,45"/>
+<area shape="rect" id="Node000027" href="$Firtool_2Firtool_8cpp.html" title=" " alt="" coords="5090,130,5278,185"/>
+<area shape="poly" id="edge26_Node000001_Node000027" title=" " alt="" coords="3064,39,3482,43,4064,55,4367,65,4650,79,4894,97,5078,120,5110,127,5109,133,5077,125,4893,102,4650,84,4366,70,4064,60,3482,48,3064,44"/>
+<area shape="rect" id="Node000028" href="$pipelines_8cpp.html" title=" " alt="" coords="5303,130,5529,185"/>
+<area shape="poly" id="edge27_Node000001_Node000028" title=" " alt="" coords="3064,39,3518,44,4163,56,4499,67,4814,80,5086,98,5291,120,5329,127,5328,133,5290,125,5085,103,4814,86,4499,72,4162,61,3518,49,3064,45"/>
+<area shape="rect" id="Node000003" href="$Synth_8cpp.html" title=" " alt="" coords="5,247,200,302"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="450,187,213,243,187,250,185,245,211,237,449,182"/>
+<area shape="rect" id="Node000004" href="$DatapathToComb_8cpp.html" title=" " alt="" coords="224,240,459,309"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="498,200,412,242,410,237,496,196"/>
+<area shape="rect" id="Node000005" href="$LongestPathAnalysis_8cpp.html" title=" " alt="" coords="483,240,675,309"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="581,206,581,240,576,240,576,206"/>
+<area shape="rect" id="Node000006" href="$PrintLongestPathAnalysis_8cpp.html" title=" " alt="" coords="699,240,917,309"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="659,196,742,237,740,242,657,201"/>
+<area shape="rect" id="Node000007" href="$LowerVariadic_8cpp.html" title=" " alt="" coords="941,240,1150,309"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="708,189,821,213,930,237,941,240,940,245,929,243,820,219,707,195"/>
+</map>

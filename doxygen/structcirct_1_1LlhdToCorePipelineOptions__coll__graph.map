@@ -1,0 +1,7 @@
+<map id="circt::LlhdToCorePipelineOptions" name="circt::LlhdToCorePipelineOptions">
+<area shape="rect" id="Node000001" title="Convert LLHD dialect IR into core dialect IR." alt="" coords="126,137,307,177"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,231,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,55,204,136,200,139,139,58"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="255,13,378,38"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="302,51,234,139,229,135,297,47"/>
+</map>

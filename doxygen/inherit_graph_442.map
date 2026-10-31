@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$structesi_1_1services_1_1HostMemRegion.html" title="RAII memory region for host memory in accelerator&#45;accessible address space." alt="" coords="5,13,224,38"/>
+<area shape="rect" id="Node000001" href="$structTraceHostMem_1_1TraceHostMemRegion.html" title=" " alt="" coords="272,5,496,45"/>
+<area shape="poly" id="edge198_Node000000_Node000001" title=" " alt="" coords="237,23,272,23,272,28,237,28"/>
+</map>

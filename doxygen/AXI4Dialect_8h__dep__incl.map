@@ -1,0 +1,31 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/AXI4/AXI4Dialect.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/AXI4/AXI4Dialect.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="533,5,722,75"/>
+<area shape="rect" id="Node000002" href="$AXI4Attributes_8h.html" title=" " alt="" coords="599,123,789,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="656,85,677,121,672,124,651,88"/>
+<area shape="rect" id="Node000003" href="$AXI4Types_8h.html" title=" " alt="" coords="487,240,677,309"/>
+<area shape="poly" id="edge13_Node000001_Node000003" title=" " alt="" coords="603,88,590,123,582,185,582,240,577,240,576,184,585,122,598,86"/>
+<area shape="rect" id="Node000004" href="$AXI4Ops_8h.html" title=" " alt="" coords="355,357,545,427"/>
+<area shape="poly" id="edge9_Node000001_Node000004" title=" " alt="" coords="586,87,528,156,501,197,478,241,460,301,454,357,448,357,455,300,473,239,496,195,524,153,582,83"/>
+<area shape="rect" id="Node000005" href="$AXI4Dialect_8cpp.html" title=" " alt="" coords="5,482,239,537"/>
+<area shape="poly" id="edge16_Node000001_Node000005" title=" " alt="" coords="519,51,430,61,338,76,258,97,228,110,206,125,174,165,150,212,134,262,124,314,119,364,118,410,121,482,116,482,112,410,114,364,119,313,129,261,145,210,169,162,203,121,225,105,256,92,336,71,429,56,519,46"/>
+<area shape="rect" id="Node000008" href="$AXI4Types_8cpp.html" title=" " alt="" coords="722,365,946,419"/>
+<area shape="poly" id="edge17_Node000001_Node000008" title=" " alt="" coords="736,66,801,92,866,128,896,151,924,177,947,206,966,239,973,258,976,275,974,292,966,311,953,328,938,343,903,367,900,362,935,339,949,325,961,308,969,290,971,275,968,260,961,241,943,209,920,180,893,155,863,133,798,97,734,71"/>
+<area shape="rect" id="Node000009" href="$AXI4Attributes_8cpp.html" title=" " alt="" coords="701,247,951,302"/>
+<area shape="poly" id="edge15_Node000001_Node000009" title=" " alt="" coords="736,70,772,92,803,121,819,152,828,186,831,247,826,247,823,187,814,154,799,124,769,96,733,75"/>
+<area shape="rect" id="Node000010" href="$AXI4Passes_8h.html" title=" " alt="" coords="217,123,406,192"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="523,82,405,125,403,120,521,77"/>
+<area shape="rect" id="Node000012" href="$InitAllDialects_8h.html" title=" " alt="" coords="1025,130,1237,185"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="736,60,1008,120,1037,127,1036,133,1007,125,735,66"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="653,204,617,242,613,238,650,200"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="745,199,798,245,794,249,741,203"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="535,321,491,359,487,355,531,316"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="669,313,778,362,776,367,667,318"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="343,434,198,484,196,479,341,429"/>
+<area shape="rect" id="Node000006" href="$AXI4Ops_8cpp.html" title=" " alt="" coords="491,482,703,537"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="505,433,565,480,562,484,502,437"/>
+<area shape="rect" id="Node000007" href="$VerifyAXI4Networks_8cpp.html" title=" " alt="" coords="263,475,466,544"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="419,440,392,476,387,473,415,436"/>
+<area shape="poly" id="edge12_Node000010_Node000007" title=" " alt="" coords="234,202,215,220,200,241,193,259,191,274,200,308,225,357,257,402,292,441,325,472,321,476,288,445,252,406,220,360,196,310,186,274,188,258,196,239,211,217,231,198"/>
+<area shape="rect" id="Node000011" href="$InitAllPasses_8h.html" title=" " alt="" coords="210,247,413,302"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="314,206,314,247,309,247,309,206"/>
+</map>

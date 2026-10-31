@@ -1,0 +1,9 @@
+<map id="esi::backends::trace::TraceAccelerator::Impl" name="esi::backends::trace::TraceAccelerator::Impl">
+<area shape="rect" id="Node000001" title=" " alt="" coords="68,123,243,163"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,13,97,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,51,66,75,79,97,109,121,106,125,75,100,61,77,53,52"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="130,13,181,38"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,52,158,122,153,122,153,52"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="204,5,403,45"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="288,59,272,81,252,101,211,125,208,120,248,97,268,77,283,56"/>
+</map>

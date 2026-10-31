@@ -1,0 +1,11 @@
+<map id="circt::firrtl::InstanceInfo" name="circt::firrtl::InstanceInfo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="684,58,857,83"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1firrtl_1_1InstanceInfo_1_1CircuitAttributes.html" title="Information about a circuit." alt="" coords="341,15,514,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="528,42,684,59,683,64,528,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,21,152,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="166,31,341,32,341,37,166,36"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="336,79,519,134"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="532,93,684,77,684,82,533,98"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="33,95,124,121"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="138,105,336,104,336,110,138,110"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="llvm::yaml::MappingContextTraits&lt; DescribedSignal, Context &gt;::Field" name="llvm::yaml::MappingContextTraits&lt; DescribedSignal, Context &gt;::Field">
+<area shape="rect" id="Node000001" title="A one&#45;to&#45;one representation with a YAML representation of a signal/field." alt="" coords="174,181,381,236"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,88,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,122,218,179,216,184,84,127"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="112,93,283,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,128,258,179,254,183,213,131"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="307,93,512,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="385,129,314,183,310,179,382,125"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="359,5,459,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="412,45,412,93,407,93,407,45"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="537,93,618,119"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="537,126,445,160,369,184,367,179,443,155,535,121"/>
+</map>

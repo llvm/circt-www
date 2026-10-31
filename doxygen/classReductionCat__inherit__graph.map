@@ -1,0 +1,11 @@
+<map id="ReductionCat" name="ReductionCat">
+<area shape="rect" id="Node000001" title=" " alt="" coords="87,79,197,104"/>
+<area shape="rect" id="Node000003" href="$classAndRCat.html" title=" " alt="" coords="5,152,84,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="117,114,62,154,59,150,114,110"/>
+<area shape="rect" id="Node000004" href="$classOrRCat.html" title=" " alt="" coords="108,152,176,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="145,118,145,152,139,152,139,118"/>
+<area shape="rect" id="Node000005" href="$classXorRCat.html" title=" " alt="" coords="201,152,275,177"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="170,110,224,150,221,154,167,114"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="66,5,218,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,44,145,79,139,79,139,44"/>
+</map>

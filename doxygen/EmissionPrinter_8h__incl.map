@@ -1,0 +1,19 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Target/ExportSystemC/EmissionPrinter.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Target/ExportSystemC/EmissionPrinter.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="383,5,574,75"/>
+<area shape="rect" id="Node000002" href="$EmissionPattern_8h.html" title=" " alt="" coords="305,123,444,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="443,77,400,115,396,111,439,73"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="469,123,699,148"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="518,73,562,111,559,115,515,77"/>
+<area shape="rect" id="Node000003" href="$EmissionPatternSupport_8h.html" title=" " alt="" coords="88,196,277,221"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="345,151,228,193,226,188,343,146"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="302,196,447,221"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="377,148,377,182,372,182,372,148"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="471,196,518,221"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="395,146,464,186,462,191,393,150"/>
+<area shape="rect" id="Node000004" href="$LLVM_8h.html" title=" " alt="" coords="105,269,260,295"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="185,222,185,256,180,256,180,222"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,343,157,368"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="168,297,111,337,108,332,165,292"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="181,343,387,368"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="200,292,258,332,255,337,197,297"/>
+</map>

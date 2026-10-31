@@ -1,0 +1,5 @@
+<map id="circt::esi::OperatesOnESITypes&lt; ConcreteType &gt;" name="circt::esi::OperatesOnESITypes&lt; ConcreteType &gt;">
+<area shape="rect" id="Node000001" title="Trait marking an ESI op that operates on ESI types (e.g." alt="" coords="37,93,256,133"/>
+<area shape="rect" id="Node000002" href="$classmlir_1_1OpTrait_1_1TraitBase.html" title=" " alt="" coords="5,5,288,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,59,149,93,144,93,144,59"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="GenericLUT" name="GenericLUT">
+<area shape="rect" id="Node000001" title="A generic K&#45;input LUT pattern that can implement any boolean function with up to K inputs using a loo..." alt="" coords="196,196,293,221"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1synth_1_1CutRewritePattern.html" title="Base class for cut rewriting patterns used in combinational logic optimization." alt="" coords="5,93,180,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,138,227,194,225,198,134,143"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="35,5,151,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="95,44,95,93,90,93,90,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="204,101,285,126"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="247,140,247,196,242,196,242,140"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="309,101,524,126"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="385,135,267,198,265,194,382,130"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="367,5,467,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="419,44,419,101,414,101,414,44"/>
+</map>

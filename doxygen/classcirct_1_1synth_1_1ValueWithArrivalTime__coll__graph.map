@@ -1,0 +1,9 @@
+<map id="circt::synth::ValueWithArrivalTime" name="circt::synth::ValueWithArrivalTime">
+<area shape="rect" id="Node000001" title="Helper class for delay&#45;aware tree building." alt="" coords="92,108,336,133"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,156,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,51,199,106,196,110,117,55"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="181,13,247,38"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,52,217,108,211,108,211,52"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="295,13,355,38"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="319,52,310,70,297,86,277,100,256,110,254,105,275,96,293,82,306,67,314,50"/>
+</map>

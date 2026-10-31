@@ -1,0 +1,11 @@
+<map id="esi::BundleType" name="esi::BundleType">
+<area shape="rect" id="Node000001" title="Bundles represent a collection of channels." alt="" coords="93,211,217,236"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1Type.html" title="Root class of the ESI type system." alt="" coords="41,108,119,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,143,148,209,144,212,95,146"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,64,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="48,42,77,107,72,109,43,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="89,5,162,31"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="117,45,88,109,83,107,112,42"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="144,93,317,148"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="205,161,166,212,161,209,200,158"/>
+</map>

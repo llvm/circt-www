@@ -1,0 +1,35 @@
+<map id="Equivalence" name="Equivalence">
+<area shape="rect" id="Node000001" title="This class is for reporting differences between two modules which should have been deduplicated." alt="" coords="1224,100,1325,125"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="879,51,963,76"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="977,64,1081,73,1200,90,1232,97,1231,103,1200,95,1080,78,976,69"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="835,100,1006,125"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1020,110,1223,110,1223,115,1020,115"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="515,100,599,125"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="613,110,835,110,835,115,613,115"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1firrtl_1_1InstanceGraph.html" title="This graph tracks modules and where they are instantiated." alt="" coords="827,149,1014,175"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1028,152,1112,143,1199,130,1231,123,1232,128,1201,135,1113,149,1029,157"/>
+<area shape="rect" id="Node000006" href="$classcirct_1_1igraph_1_1InstanceGraph.html" title="This graph tracks modules and where they are instantiated." alt="" coords="457,149,658,175"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="672,159,827,159,827,165,672,165"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="79,149,165,175"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="179,159,456,159,456,165,179,165"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="16,199,228,224"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="241,198,416,179,471,172,472,177,416,185,242,203"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="19,5,225,60"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="239,39,284,47,330,60,375,78,418,101,426,110,430,119,434,127,442,134,467,147,465,152,438,139,430,130,426,121,422,113,414,105,373,83,328,65,282,53,238,44"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="5,85,239,125"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="253,118,416,139,469,147,468,152,416,145,252,123"/>
+<area shape="rect" id="Node000011" href="$classcirct_1_1igraph_1_1InstanceGraphNode.html" title="This is a Node in the InstanceGraph." alt="" coords="440,256,675,281"/>
+<area shape="poly" id="edge10_Node000005_Node000011" title=" " alt="" coords="614,250,875,172,877,177,615,255"/>
+<area shape="rect" id="Node000014" href="$classcirct_1_1igraph_1_1InstanceRecord.html" title="This is an edge in the InstanceGraph." alt="" coords="817,319,1024,344"/>
+<area shape="poly" id="edge15_Node000014_Node000011" title=" " alt="" coords="689,276,794,291,884,316,882,321,793,297,688,281"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="26,249,218,289"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="232,266,440,266,440,271,232,271"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="49,313,195,339"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="208,313,416,286,468,279,469,284,416,291,209,318"/>
+<area shape="poly" id="edge13_Node000011_Node000014" title=" " alt="" coords="803,326,698,311,596,284,597,279,699,306,804,321"/>
+<area shape="poly" id="edge17_Node000014_Node000014" title=" " alt="" coords="887,304,897,296,921,292,940,294,952,301,956,310,950,320,945,317,950,310,948,304,939,299,921,297,899,300,890,308"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="462,327,653,381"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="667,345,817,335,817,340,667,350"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="481,405,634,431"/>
+<area shape="poly" id="edge16_Node000014_Node000016" title=" " alt="" coords="635,400,674,391,872,342,873,347,675,397,636,405"/>
+</map>

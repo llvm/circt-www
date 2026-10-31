@@ -1,0 +1,19 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Synth/SynthOpInterfaces.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Synth/SynthOpInterfaces.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="596,5,792,75"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,130,140,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="596,56,392,85,153,125,132,130,131,124,152,120,391,80,595,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="165,130,327,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="596,66,311,130,310,124,595,61"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="352,130,484,155"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="603,77,463,128,462,123,601,72"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="509,130,663,155"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="659,77,610,122,607,118,656,73"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="687,130,917,155"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="732,73,781,118,778,122,729,77"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="941,130,1116,155"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="793,68,978,123,977,129,791,73"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="1140,130,1331,155"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="793,57,1161,125,1160,130,792,62"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="1355,123,1537,163"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="792,49,1038,78,1342,120,1341,125,1037,83,792,55"/>
+</map>

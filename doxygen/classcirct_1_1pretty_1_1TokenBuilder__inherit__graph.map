@@ -1,0 +1,12 @@
+<map id="circt::pretty::TokenBuilder&lt; PPTy &gt;" name="circt::pretty::TokenBuilder&lt; PPTy &gt;">
+<area shape="rect" id="Node000001" title="Add convenience methods for generating pretty&#45;printing tokens." alt="" coords="5,59,192,99"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1pretty_1_1TokenStream.html" title=" " alt="" coords="722,5,910,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,59,216,57,353,43,491,33,721,24,722,29,491,39,354,48,216,63,206,64"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1pretty_1_1TokenStream.html" title="Wrap a PrettyPrinter with TokenBuilder features as well as operator&lt;&lt;&#39;s." alt="" coords="357,59,545,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,76,357,76,357,81,206,81"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1pretty_1_1TokenBuilder.html" title=" " alt="" coords="358,123,545,163"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="206,95,358,123,357,128,205,101"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="559,68,686,52,734,43,735,48,687,57,560,73"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1pretty_1_1TokenStreamWithCallback.html" title="Wrap the TokenStream with a helper for CallbackTokens, to record the print events on the stream." alt="" coords="711,73,921,127"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="559,82,711,91,710,97,559,88"/>
+</map>

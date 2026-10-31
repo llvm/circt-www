@@ -1,0 +1,9 @@
+<map id="pytest._ChildResult" name="pytest._ChildResult">
+<area shape="rect" id="Node000001" title=" " alt="" coords="43,137,191,163"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,56,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="35,44,42,78,58,112,72,125,88,135,86,139,69,129,54,115,37,80,30,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="98,5,137,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="120,44,120,137,115,137,115,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="175,5,260,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="218,45,209,80,190,115,174,129,155,140,152,135,170,125,186,112,204,78,212,44"/>
+</map>

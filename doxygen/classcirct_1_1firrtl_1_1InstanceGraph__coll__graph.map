@@ -1,0 +1,27 @@
+<map id="circt::firrtl::InstanceGraph" name="circt::firrtl::InstanceGraph">
+<area shape="rect" id="Node000001" title="This graph tracks modules and where they are instantiated." alt="" coords="827,169,1014,195"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1igraph_1_1InstanceGraph.html" title="This graph tracks modules and where they are instantiated." alt="" coords="457,149,658,175"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="672,166,827,174,827,180,672,171"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="79,149,165,175"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="179,159,456,159,456,165,179,165"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="16,199,228,224"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="241,198,416,179,471,172,472,177,416,185,242,203"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="19,5,225,60"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="239,53,326,74,417,101,478,124,530,147,528,152,476,129,415,106,325,80,237,58"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,85,239,125"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="253,118,416,139,469,147,468,152,416,145,252,123"/>
+<area shape="rect" id="Node000007" href="$classcirct_1_1igraph_1_1InstanceGraphNode.html" title="This is a Node in the InstanceGraph." alt="" coords="440,256,675,281"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="624,250,866,192,867,197,625,255"/>
+<area shape="rect" id="Node000010" href="$classcirct_1_1igraph_1_1InstanceRecord.html" title="This is an edge in the InstanceGraph." alt="" coords="817,320,1024,345"/>
+<area shape="poly" id="edge11_Node000010_Node000007" title=" " alt="" coords="689,277,794,293,883,317,882,322,793,298,688,282"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="26,249,218,289"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="232,266,440,266,440,271,232,271"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="49,313,195,339"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="208,313,416,286,468,279,469,284,416,291,209,318"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="803,327,698,313,643,299,594,284,596,279,645,294,699,307,804,322"/>
+<area shape="poly" id="edge13_Node000010_Node000010" title=" " alt="" coords="887,306,897,297,921,293,940,296,952,302,956,312,950,321,945,318,950,311,948,305,939,301,921,299,899,302,890,310"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="462,328,653,383"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="667,346,817,336,817,342,667,351"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="481,407,634,432"/>
+<area shape="poly" id="edge12_Node000010_Node000012" title=" " alt="" coords="635,401,674,393,872,343,873,348,675,398,636,406"/>
+</map>

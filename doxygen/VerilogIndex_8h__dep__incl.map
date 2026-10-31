@@ -1,0 +1,21 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Tools/circt&#45;verilog&#45;lsp&#45;server/VerilogServerImpl/VerilogIndex.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Tools/circt&#45;verilog&#45;lsp&#45;server/VerilogServerImpl/VerilogIndex.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="476,5,688,89"/>
+<area shape="rect" id="Node000002" href="$VerilogDocument_8h.html" title=" " alt="" coords="359,137,571,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="538,102,504,139,500,135,534,98"/>
+<area shape="rect" id="Node000009" href="$VerilogIndex_8cpp.html" title=" " alt="" coords="595,137,807,221"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="631,98,665,135,661,139,627,102"/>
+<area shape="rect" id="Node000003" href="$LSPDiagnosticClient_8h.html" title=" " alt="" coords="191,269,403,353"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,232,352,271,348,267,399,228"/>
+<area shape="rect" id="Node000005" href="$VerilogDocument_8cpp.html" title=" " alt="" coords="241,401,453,485"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="457,236,441,294,416,355,385,403,381,400,412,352,436,292,451,234"/>
+<area shape="rect" id="Node000006" href="$VerilogTextFile_8cpp.html" title=" " alt="" coords="477,401,689,485"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="478,234,494,292,518,352,549,400,545,403,513,355,489,294,473,236"/>
+<area shape="rect" id="Node000007" href="$VerilogTextFile_8h.html" title=" " alt="" coords="527,269,739,353"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="530,228,581,267,578,271,527,232"/>
+<area shape="rect" id="Node000004" href="$LSPDiagnosticClient_8cpp.html" title=" " alt="" coords="5,401,217,485"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="228,364,172,403,169,399,225,359"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="320,365,334,400,329,402,315,367"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="615,367,602,402,597,400,610,365"/>
+<area shape="rect" id="Node000008" href="$VerilogServer_8cpp.html" title=" " alt="" coords="713,401,925,485"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="705,359,762,399,758,403,702,364"/>
+</map>

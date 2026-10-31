@@ -1,0 +1,5 @@
+<map id="circt::pretty::PPSaveString" name="circt::pretty::PPSaveString">
+<area shape="rect" id="Node000001" title="String wrapper to indicate string needs to be saved." alt="" coords="5,93,196,119"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="59,5,142,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,45,103,93,98,93,98,45"/>
+</map>

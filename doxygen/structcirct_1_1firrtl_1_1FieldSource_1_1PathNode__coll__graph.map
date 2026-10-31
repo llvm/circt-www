@@ -1,0 +1,11 @@
+<map id="circt::firrtl::FieldSource::PathNode" name="circt::firrtl::FieldSource::PathNode">
+<area shape="rect" id="Node000001" title=" " alt="" coords="31,196,199,236"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,101,64,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,135,102,194,98,198,50,138"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="88,101,141,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="117,140,117,196,112,196,112,140"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="166,93,314,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="207,144,140,198,136,194,204,140"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="190,5,290,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="243,44,243,93,237,93,237,44"/>
+</map>

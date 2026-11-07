@@ -1,0 +1,19 @@
+<map id="ResolveTracesPass" name="ResolveTracesPass">
+<area shape="rect" id="Node000001" title=" " alt="" coords="688,173,831,201"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1firrtl_1_1impl_1_1ResolveTracesBase.html" title=" " alt="" coords="363,5,536,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="551,48,609,64,665,89,692,107,716,130,751,173,746,172,712,133,689,112,663,93,608,69,551,53"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1firrtl_1_1NLATable.html" title="This table tracks nlas and what modules participate in them." alt="" coords="373,92,526,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="541,111,603,122,665,138,703,153,737,173,732,172,700,158,663,143,602,127,541,117"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,36,227,98"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="241,79,375,95,370,98,242,84"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="30,122,202,166"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="216,130,375,113,370,116,218,135"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="343,145,556,173"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="571,167,690,180,685,181,572,172"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="409,198,490,226"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="505,214,580,216,664,211,714,202,719,201,664,216,581,221,505,219"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="366,250,532,294"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="547,269,606,262,663,247,706,224,740,202,745,200,709,229,665,252,607,267,548,274"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="356,318,542,346"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="558,327,612,317,663,296,691,275,716,249,748,203,753,200,720,252,695,279,665,301,613,322,558,333"/>
+</map>

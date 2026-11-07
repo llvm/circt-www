@@ -1,0 +1,12 @@
+<map id="esi::BitVector::bit_iterator" name="esi::BitVector::bit_iterator">
+<area shape="rect" id="Node000001" title="Forward iterator for iterating over bits from LSB (index 0) to MSB." alt="" coords="270,207,403,251"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1BitVector.html" title="A lightweight, non&#45;owning bit vector view backed by a byte array span." alt="" coords="196,106,304,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="271,143,322,206,316,206,269,148"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,156,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="108,40,167,80,218,105,213,106,165,84,108,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="316,5,376,33"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="365,44,371,56,380,91,383,120,380,149,371,184,357,208,354,204,366,182,375,148,378,120,375,92,366,58,363,49"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="322,42,307,59,263,107,259,103,304,55,317,45"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="179,5,246,33"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="210,46,212,65,217,81,235,106,230,105,212,83,207,66,208,51"/>
+</map>

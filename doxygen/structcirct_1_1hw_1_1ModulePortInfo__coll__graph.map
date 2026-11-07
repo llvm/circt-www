@@ -1,0 +1,5 @@
+<map id="circt::hw::ModulePortInfo" name="circt::hw::ModulePortInfo">
+<area shape="rect" id="Node000001" title="This holds a decoded list of input/inout and output ports for a module or instance." alt="" coords="5,123,188,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="25,5,168,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,64,99,123,94,122,94,67"/>
+</map>

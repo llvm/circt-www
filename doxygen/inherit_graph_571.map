@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$structllvm_1_1GraphTraits_3_01circt_1_1igraph_1_1InstanceGraphNode_01_5_01_4.html" title="Graph traits for modules." alt="" coords="5,32,210,93"/>
+<area shape="rect" id="Node000001" href="$structllvm_1_1GraphTraits_3_01circt_1_1igraph_1_1InstanceGraph_01_5_01_4.html" title="Graph traits for the instance graph." alt="" coords="258,40,488,85"/>
+<area shape="poly" id="edge333_Node000000_Node000001" title=" " alt="" coords="225,60,260,62,255,63,225,65"/>
+<area shape="rect" id="Node000002" href="$structllvm_1_1GraphTraits_3_01circt_1_1firrtl_1_1InstanceGraph_01_5_01_4.html" title=" " alt="" coords="536,5,752,50"/>
+<area shape="poly" id="edge334_Node000001_Node000002" title=" " alt="" coords="503,43,538,41,533,42,504,48"/>
+<area shape="rect" id="Node000003" href="$structllvm_1_1GraphTraits_3_01circt_1_1hw_1_1InstanceGraph_01_5_01_4.html" title=" " alt="" coords="540,75,748,119"/>
+<area shape="poly" id="edge335_Node000001_Node000003" title=" " alt="" coords="504,76,543,84,537,84,503,82"/>
+</map>

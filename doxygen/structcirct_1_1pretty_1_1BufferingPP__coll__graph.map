@@ -1,0 +1,7 @@
+<map id="circt::pretty::BufferingPP" name="circt::pretty::BufferingPP">
+<area shape="rect" id="Node000001" title="Buffer tokens for clients that need to adjust things." alt="" coords="13,106,191,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,103,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,46,73,81,91,105,86,105,69,83,58,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="127,5,176,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="141,46,124,83,111,107,107,104,120,81,137,49"/>
+</map>

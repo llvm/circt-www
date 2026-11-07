@@ -1,0 +1,9 @@
+<map id="circt::Tester" name="circt::Tester">
+<area shape="rect" id="Node000001" title="A testing environment for reduction attempts." alt="" coords="111,128,208,156"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,55,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="33,46,42,77,57,103,82,121,114,133,108,134,80,125,53,106,37,79,31,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="119,5,200,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,47,162,129,157,127,157,50"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="225,5,398,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="296,44,269,77,237,106,194,130,192,125,234,102,265,73,291,47"/>
+</map>

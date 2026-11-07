@@ -1,0 +1,11 @@
+<map id="circt::ImportVerilog::HierPathInfo" name="circt::ImportVerilog::HierPathInfo">
+<area shape="rect" id="Node000001" title="Hierarchical path information." alt="" coords="421,88,566,132"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="107,5,191,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,22,297,37,398,62,452,87,447,87,396,67,296,42,207,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="75,57,223,102"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="239,84,423,102,418,105,239,90"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="77,125,221,153"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="236,139,315,138,396,131,423,129,418,130,397,136,315,143,237,144"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,177,293,256"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="307,194,352,183,396,168,430,151,460,134,465,132,433,156,398,173,354,188,308,199"/>
+</map>

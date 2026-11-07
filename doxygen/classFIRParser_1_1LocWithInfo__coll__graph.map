@@ -1,0 +1,9 @@
+<map id="FIRParser::LocWithInfo" name="FIRParser::LocWithInfo">
+<area shape="rect" id="Node000001" title="This helper class is used to handle Info records, which specify higher level symbolic source location..." alt="" coords="120,106,287,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,148,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,41,150,80,185,106,180,106,147,84,101,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="172,5,235,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,47,206,107,201,104,201,50"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="260,5,419,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="312,42,223,108,220,103,307,43"/>
+</map>

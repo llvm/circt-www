@@ -1,0 +1,7 @@
+<map id="CoordTranslateArg" name="CoordTranslateArg">
+<area shape="rect" id="Node000001" title="Translated argument struct for CoordTranslator." alt="" coords="28,128,168,156"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,65,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="29,46,31,76,38,103,49,116,65,127,60,129,46,120,34,106,25,77,28,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="123,5,198,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,46,147,77,133,106,114,130,110,126,129,103,142,75,152,50"/>
+</map>

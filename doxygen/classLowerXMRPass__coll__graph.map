@@ -1,0 +1,33 @@
+<map id="LowerXMRPass" name="LowerXMRPass">
+<area shape="rect" id="Node000001" title=" " alt="" coords="927,346,1046,374"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1firrtl_1_1impl_1_1LowerXMRBase.html" title=" " alt="" coords="465,7,724,52"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="738,3,782,4,826,11,867,25,904,49,922,71,937,104,961,191,977,281,986,347,981,344,972,282,956,192,932,106,917,74,901,53,865,30,825,16,782,10,740,8"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="474,76,715,121"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="729,79,775,80,821,88,865,102,904,126,929,150,947,178,962,209,972,241,984,301,987,347,983,344,979,302,967,243,957,211,943,181,924,153,901,130,863,107,820,93,775,86,731,84"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="500,145,689,172"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="704,155,820,162,870,170,904,184,924,201,940,222,964,267,978,311,985,347,981,345,973,313,959,269,936,225,920,205,901,189,868,176,820,167,705,160"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="493,198,696,226"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="710,212,823,221,870,229,904,242,932,264,955,293,982,346,977,345,950,296,928,268,901,246,869,235,822,226,712,217"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="498,250,691,278"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="706,266,804,279,855,290,904,306,939,323,970,346,965,345,937,328,902,310,853,295,803,284,707,271"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="519,302,670,346"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="685,330,929,354,924,355,685,335"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="510,371,679,416"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="694,391,795,387,902,377,933,374,928,375,903,382,796,393,695,396"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="492,439,697,467"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="712,454,807,445,855,435,902,420,940,398,969,375,974,373,943,402,904,425,857,440,807,450,713,459"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="481,491,708,536"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="723,522,768,520,814,514,859,501,901,481,929,458,952,428,978,376,982,372,956,431,933,461,904,486,861,506,815,519,769,526,723,528"/>
+<area shape="rect" id="Node000011" href="$structcirct_1_1firrtl_1_1CircuitNamespace.html" title="The namespace of a CircuitOp, generally inhabited by modules." alt="" coords="489,559,700,587"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="676,587,731,592,790,590,848,578,876,567,901,552,922,534,939,512,962,461,976,411,982,376,986,372,981,413,967,463,943,514,926,537,904,556,878,572,850,583,790,596,730,597,676,593"/>
+<area shape="rect" id="Node000012" href="$classcirct_1_1Namespace.html" title="A namespace that is used to store existing names and generate new names in some scope within the IR." alt="" coords="282,559,416,587"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="431,571,491,573,486,574,432,576"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="5,531,161,559"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="176,552,284,565,279,568,177,558"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="58,587,108,615"/>
+<area shape="poly" id="edge13_Node000012_Node000014" title=" " alt="" coords="123,599,186,598,257,592,296,587,291,589,258,597,187,603,124,604"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="531,611,658,639"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="674,633,738,638,805,640,863,636,885,631,901,623,928,597,949,565,963,530,973,493,982,424,984,376,987,372,988,424,979,494,968,532,953,568,932,600,904,627,887,636,864,641,805,646,738,644,674,638"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="503,663,686,708"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="702,708,752,712,805,709,856,696,879,685,901,671,917,650,932,617,956,529,972,439,982,376,985,372,978,439,961,531,937,619,922,653,904,675,882,690,858,701,806,714,752,717,701,713"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,74,202,102"/>
+<area shape="rect" id="Node000001" href="$classcustom__channel__service_1_1CustomChannelService.html" title=" " alt="" coords="267,5,502,50"/>
+<area shape="poly" id="edge227_Node000000_Node000001" title=" " alt="" coords="186,67,279,50,274,52,187,73"/>
+<area shape="rect" id="Node000002" href="$classesiaccel_1_1bsp_1_1common_1_1ChannelMMIO.html" title=" " alt="" coords="256,74,513,102"/>
+<area shape="poly" id="edge228_Node000000_Node000002" title=" " alt="" coords="217,85,258,87,253,88,218,90"/>
+<area shape="rect" id="Node000003" href="$classesiaccel_1_1bsp_1_1common_1_1TelemetryMMIO.html" title=" " alt="" coords="250,126,519,154"/>
+<area shape="poly" id="edge229_Node000000_Node000003" title=" " alt="" coords="197,102,308,125,303,126,197,108"/>
+</map>

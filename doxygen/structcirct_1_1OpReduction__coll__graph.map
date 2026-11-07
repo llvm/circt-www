@@ -1,0 +1,7 @@
+<map id="circt::OpReduction&lt; OpTy &gt;" name="circt::OpReduction&lt; OpTy &gt;">
+<area shape="rect" id="Node000001" title="A reduction pattern for a specific operation." alt="" coords="42,183,182,228"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="51,106,173,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,147,114,183,110,181,110,151"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,219,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="113,46,115,106,109,105,111,51"/>
+</map>

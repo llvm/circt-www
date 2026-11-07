@@ -1,0 +1,17 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/HW/ConversionPatterns.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/HW/ConversionPatterns.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="742,5,930,84"/>
+<area shape="rect" id="Node000002" href="$DCToHW_8cpp.html" title=" " alt="" coords="5,140,270,202"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="724,60,520,92,282,135,248,142,246,137,281,129,519,87,729,59"/>
+<area shape="rect" id="Node000003" href="$HWArithToHW_8cpp.html" title=" " alt="" coords="294,132,506,211"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="730,74,520,135,507,138,506,133,518,129,725,75"/>
+<area shape="rect" id="Node000004" href="$SeqToSV_8cpp.html" title=" " alt="" coords="530,132,718,211"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="760,91,691,134,689,129,755,93"/>
+<area shape="rect" id="Node000005" href="$ESILowerTypes_8cpp.html" title=" " alt="" coords="742,132,930,211"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="838,98,838,133,834,130,834,102"/>
+<area shape="rect" id="Node000006" href="$ConversionPatterns_8cpp.html" title=" " alt="" coords="954,140,1230,202"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="930,89,1033,140,1027,140,929,94"/>
+<area shape="rect" id="Node000007" href="$KanagawaCallPrep_8cpp.html" title=" " alt="" coords="1254,132,1493,211"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="945,64,1087,94,1242,129,1256,135,1251,135,1241,135,1086,99,945,70"/>
+<area shape="rect" id="Node000008" href="$KanagawaConvertHandshakeToDC_8cpp.html" title=" " alt="" coords="1517,132,1793,211"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="945,53,1202,82,1354,104,1506,129,1519,134,1514,134,1505,135,1354,109,1202,87,945,59"/>
+</map>

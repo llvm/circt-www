@@ -1,0 +1,5 @@
+<map id="RpcClient" name="RpcClient">
+<area shape="rect" id="Node000001" title="A client for the cosim RPC server." alt="" coords="47,123,131,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,173,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,64,92,123,86,122,87,67"/>
+</map>

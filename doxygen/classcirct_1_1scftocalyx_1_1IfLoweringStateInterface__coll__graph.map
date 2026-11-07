@@ -1,0 +1,9 @@
+<map id="circt::scftocalyx::IfLoweringStateInterface" name="circt::scftocalyx::IfLoweringStateInterface">
+<area shape="rect" id="Node000001" title=" " alt="" coords="318,84,499,129"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="14,5,184,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,35,294,54,364,83,359,84,293,60,200,40"/>
+<area shape="rect" id="Node000003" href="$classDenseMap_3_01Operation_01_5_00_01calyx_1_1GroupOp_01_4.html" title=" " alt="" coords="14,84,184,129"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,104,320,105,315,108,199,109"/>
+<area shape="rect" id="Node000004" href="$classDenseMap_3_01Operation_01_5_00_01DenseMap_3_01unsigned_00_01calyx_1_1RegisterOp_01_4_01_4.html" title=" " alt="" coords="5,153,193,214"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="207,155,293,134,325,129,320,130,294,139,208,161"/>
+</map>

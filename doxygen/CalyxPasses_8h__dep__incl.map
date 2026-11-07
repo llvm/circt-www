@@ -1,0 +1,25 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Calyx/CalyxPasses.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Calyx/CalyxPasses.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1172,5,1367,84"/>
+<area shape="rect" id="Node000002" href="$InitAllPasses_8h.html" title=" " alt="" coords="5,140,208,202"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1153,47,975,54,741,67,481,93,349,111,220,135,190,142,188,137,219,129,348,106,480,87,741,62,975,48,1159,46"/>
+<area shape="rect" id="Node000003" href="$AffineParallelUnroll_8cpp.html" title=" " alt="" coords="232,132,440,211"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1154,51,1014,62,838,77,645,101,452,135,441,137,440,132,451,129,644,95,837,72,1014,56,1159,50"/>
+<area shape="rect" id="Node000004" href="$AffinePloopUnparallelize_8cpp.html" title=" " alt="" coords="464,132,677,211"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1154,58,939,88,814,109,690,135,677,138,677,132,689,129,813,104,938,83,1159,57"/>
+<area shape="rect" id="Node000005" href="$AffineToSCF_8cpp.html" title=" " alt="" coords="701,132,909,211"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1159,71,922,135,910,138,909,133,920,129,1154,72"/>
+<area shape="rect" id="Node000006" href="$ClkResetInsertion_8cpp.html" title=" " alt="" coords="933,132,1141,211"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1186,91,1110,134,1108,129,1181,92"/>
+<area shape="rect" id="Node000007" href="$CompileControl_8cpp.html" title=" " alt="" coords="1165,132,1373,211"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1271,98,1271,133,1267,130,1267,102"/>
+<area shape="rect" id="Node000008" href="$ExcludeExecuteRegionCanonicalize_8cpp.html" title=" " alt="" coords="1397,132,1680,211"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1367,88,1457,132,1452,131,1366,94"/>
+<area shape="rect" id="Node000009" href="$GICM_8cpp.html" title=" " alt="" coords="1704,132,1912,211"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1382,63,1531,92,1692,129,1706,135,1700,135,1691,135,1530,97,1382,68"/>
+<area shape="rect" id="Node000010" href="$GoInsertion_8cpp.html" title=" " alt="" coords="1936,132,2144,211"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1382,52,1632,79,1779,101,1924,129,1938,135,1932,134,1923,135,1778,106,1632,84,1382,57"/>
+<area shape="rect" id="Node000011" href="$RemoveCombGroups_8cpp.html" title=" " alt="" coords="2168,132,2376,211"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1382,46,1536,54,1730,69,1944,93,2156,129,2170,135,2164,134,2155,135,1943,98,1730,74,1536,59,1382,52"/>
+<area shape="rect" id="Node000012" href="$RemoveGroups_8cpp.html" title=" " alt="" coords="2400,132,2608,211"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="1382,43,1574,47,1826,60,2107,86,2249,105,2388,129,2402,135,2397,134,2387,135,2248,110,2106,91,1825,65,1574,52,1382,48"/>
+</map>

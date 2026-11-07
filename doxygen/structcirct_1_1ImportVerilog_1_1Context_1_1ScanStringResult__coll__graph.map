@@ -1,0 +1,7 @@
+<map id="circt::ImportVerilog::Context::ScanStringResult" name="circt::ImportVerilog::Context::ScanStringResult">
+<area shape="rect" id="Node000001" title="Result of converting a scan format string." alt="" coords="15,140,213,185"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,22,63,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,61,103,139,97,140,49,65"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="87,5,304,67"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,80,168,118,146,142,142,137,164,114,181,84"/>
+</map>

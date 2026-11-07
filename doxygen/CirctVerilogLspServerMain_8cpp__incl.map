@@ -1,0 +1,32 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Tools/circt&#45;verilog&#45;lsp&#45;server/CirctVerilogLspServerMain.cpp" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Tools/circt&#45;verilog&#45;lsp&#45;server/CirctVerilogLspServerMain.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="330,5,565,101"/>
+<area shape="rect" id="Node000002" href="$CirctVerilogLspServerMain_8h.html" title=" " alt="" coords="425,149,660,211"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="484,99,513,137,507,136,483,104"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,259,213,286"/>
+<area shape="poly" id="edge18_Node000001_Node000005" title=" " alt="" coords="372,100,294,151,142,252,139,247,292,147,367,103"/>
+<area shape="rect" id="Node000010" href="$LSPServer_8h.html" title=" " alt="" coords="304,166,402,194"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="414,100,374,156,370,152,410,103"/>
+<area shape="rect" id="Node000011" href="$VerilogServer_8h.html" title=" " alt="" coords="702,158,889,202"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="566,94,724,152,718,152,565,99"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="237,259,389,286"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="469,211,361,255,360,250,463,212"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="596,259,752,286"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="587,209,645,250,640,249,585,214"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="427,208,415,213,194,258,193,253,414,208,422,209"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="412,259,488,286"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="514,210,476,250,473,245,509,212"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="777,259,852,286"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="634,209,765,254,760,254,633,214"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="513,259,572,286"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="544,209,544,245,540,241,540,213"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="875,259,938,286"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="660,205,863,258,857,258,659,211"/>
+<area shape="poly" id="edge10_Node000010_Node000005" title=" " alt="" coords="320,196,159,255,158,250,316,192"/>
+<area shape="poly" id="edge11_Node000010_Node000006" title=" " alt="" coords="368,192,428,248,423,248,366,197"/>
+<area shape="poly" id="edge13_Node000011_Node000004" title=" " alt="" coords="769,202,705,251,703,247,764,203"/>
+<area shape="poly" id="edge15_Node000011_Node000006" title=" " alt="" coords="716,203,504,260,503,255,710,203"/>
+<area shape="poly" id="edge16_Node000011_Node000007" title=" " alt="" coords="802,200,811,245,806,242,798,205"/>
+<area shape="poly" id="edge17_Node000011_Node000009" title=" " alt="" coords="823,200,881,249,876,248,821,205"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="962,259,1162,286"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="860,200,1012,253,1006,253,859,205"/>
+</map>

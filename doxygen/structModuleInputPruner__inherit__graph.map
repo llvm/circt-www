@@ -1,0 +1,5 @@
+<map id="ModuleInputPruner" name="ModuleInputPruner">
+<area shape="rect" id="Node000001" title="Remove unused module input ports." alt="" coords="5,81,150,109"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="16,5,139,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,47,80,81,75,80,76,51"/>
+</map>

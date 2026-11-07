@@ -1,0 +1,18 @@
+<map id="circt::firrtl::GatedClockConversion::WirePairPlan" name="circt::firrtl::GatedClockConversion::WirePairPlan">
+<area shape="rect" id="Node000001" title="Temporary (base clock, enable) carrier wires at the top of mod, standing in for a wire/node alias of ..." alt="" coords="208,224,392,268"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,114,101,142"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,147,201,197,254,223,249,223,199,202,93,152"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1firrtl_1_1GatedClockConversion_1_1MatRef.html" title="A reference to a clock/enable value that can also name values which do not exist yet (a planned port,..." alt="" coords="125,106,293,151"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="235,161,264,198,284,224,279,223,260,201,233,166"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="21,5,72,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="66,42,108,80,152,104,147,107,105,84,66,47"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="95,5,152,33"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="141,44,168,80,190,105,185,106,164,84,140,49"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="177,5,273,33"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="222,47,215,106,210,104,219,51"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="300,5,380,33"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="342,47,339,118,334,160,325,200,314,225,311,221,320,199,329,159,334,118,338,51"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="300,43,280,59,230,107,226,103,277,55,304,39"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="430,114,506,142"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="439,150,332,226,330,221,434,152"/>
+</map>

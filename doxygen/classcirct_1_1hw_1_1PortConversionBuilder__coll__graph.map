@@ -1,0 +1,35 @@
+<map id="circt::hw::PortConversionBuilder" name="circt::hw::PortConversionBuilder">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1050,482,1233,526"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1hw_1_1PortConverterImpl.html" title=" " alt="" coords="728,490,930,518"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="945,502,1052,504,1047,505,946,507"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="337,328,544,373"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="559,356,632,370,703,395,739,416,771,441,818,490,813,489,767,445,736,420,701,400,631,375,560,361"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="407,397,475,425"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="490,412,590,424,703,448,755,467,802,490,797,490,753,472,701,453,589,430,491,417"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1igraph_1_1InstanceGraphNode.html" title="This is a Node in the InstanceGraph." alt="" coords="324,226,558,254"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="507,256,619,292,669,312,704,331,745,370,780,415,824,491,819,489,776,418,741,374,700,336,667,317,617,297,508,262"/>
+<area shape="rect" id="Node000009" href="$classcirct_1_1igraph_1_1InstanceRecord.html" title="This is an edge in the InstanceGraph." alt="" coords="726,132,932,159"/>
+<area shape="poly" id="edge10_Node000009_Node000005" title=" " alt="" coords="529,220,701,181,786,159,781,161,703,186,531,225"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,158,197,202"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="211,194,291,207,375,224,371,227,290,212,213,199"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="28,226,174,254"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="188,238,325,238,321,242,191,243"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="9,282,193,310"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="207,281,290,268,375,253,371,256,291,273,210,285"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="807,168,761,210,733,228,703,241,667,250,630,256,559,257,557,252,630,250,666,245,701,236,731,223,758,205,802,172"/>
+<area shape="poly" id="edge12_Node000009_Node000009" title=" " alt="" coords="799,114,810,108,829,105,847,107,859,113,862,123,857,133,853,129,857,122,855,117,846,112,829,110,812,113,802,119"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="346,5,536,67"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="550,52,626,69,703,90,755,109,801,131,796,132,753,114,701,95,625,74,552,57"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="365,92,517,119"/>
+<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="532,112,728,134,723,136,533,117"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="355,730,526,758"/>
+<area shape="poly" id="edge13_Node000002_Node000012" title=" " alt="" coords="542,754,582,753,623,748,663,737,701,719,727,698,750,673,786,615,809,559,822,520,826,517,814,561,790,618,754,676,731,702,703,723,665,742,624,753,582,758,542,759"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="398,452,484,479"/>
+<area shape="poly" id="edge14_Node000002_Node000013" title=" " alt="" coords="499,469,730,493,725,495,499,474"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="315,522,567,566"/>
+<area shape="poly" id="edge15_Node000002_Node000014" title=" " alt="" coords="582,549,642,547,702,541,749,530,790,519,795,518,750,535,702,546,643,552,583,554"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="357,591,524,652"/>
+<area shape="poly" id="edge16_Node000002_Node000015" title=" " alt="" coords="540,626,620,621,662,613,701,601,736,583,767,561,813,520,818,517,771,565,738,588,703,606,663,618,621,626,541,631"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="393,677,489,705"/>
+<area shape="poly" id="edge17_Node000002_Node000016" title=" " alt="" coords="505,693,550,692,601,687,652,675,701,655,742,624,776,586,802,547,819,520,823,517,806,550,780,589,745,628,703,659,654,680,602,692,550,697,505,698"/>
+</map>

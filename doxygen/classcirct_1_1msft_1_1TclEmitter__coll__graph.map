@@ -1,0 +1,20 @@
+<map id="circt::msft::TclEmitter" name="circt::msft::TclEmitter">
+<area shape="rect" id="Node000001" title="Instantiate for all Tcl emissions." alt="" coords="762,149,921,177"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="412,12,500,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="515,22,565,25,622,32,682,46,739,67,768,85,794,106,832,149,827,148,790,110,765,89,737,72,681,51,621,38,565,30,516,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="81,93,130,121"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="145,102,249,99,396,99,566,108,653,117,739,129,803,148,797,148,737,135,653,122,566,113,396,105,249,104,146,107"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1hw_1_1HWSymbolCache.html" title="This stores lookup tables to make manipulating and working with the IR more efficient." alt="" coords="358,149,554,177"/>
+<area shape="poly" id="edge6_Node000004_Node000003" title=" " alt="" coords="145,113,230,129,360,150,356,152,229,134,146,118"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="569,160,764,162,759,163,569,165"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1SymbolCacheBase.html" title="Base symbol cache class to allow for cache lookup through a pointer to some abstract cache." alt="" coords="16,160,195,187"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="209,168,360,164,356,167,210,173"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="76,212,135,239"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="150,222,233,215,279,208,325,197,349,186,388,176,383,178,351,191,327,202,280,213,233,221,152,227"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="5,264,206,326"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="221,289,276,275,301,263,324,247,333,233,335,218,337,202,348,186,364,178,368,176,352,190,342,204,340,219,338,235,328,251,304,268,277,280,222,295"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="357,200,554,296"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="570,226,737,191,793,178,798,177,739,196,571,231"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="350,320,562,347"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="564,313,651,289,695,273,737,252,764,234,789,213,826,178,831,176,792,217,767,238,739,257,697,278,652,295,565,319"/>
+</map>

@@ -1,0 +1,25 @@
+<map id="esi::WriteChannelPort" name="esi::WriteChannelPort">
+<area shape="rect" id="Node000001" title="A ChannelPort which sends data to the accelerator." alt="" coords="962,232,1125,260"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1ChannelPort.html" title="Unidirectional channels are the basic communication primitive between the host and accelerator." alt="" coords="610,98,737,125"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="752,106,845,114,893,125,940,143,970,162,997,186,1035,233,1030,231,993,189,967,166,937,147,892,130,844,119,753,111"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1Type.html" title="Root class of the ESI type system." alt="" coords="273,38,352,65"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="367,55,545,81,614,97,609,98,545,86,367,60"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="12,10,71,37"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="86,26,275,46,271,50,87,31"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,66,78,93"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="92,73,182,65,275,55,271,58,183,70,94,78"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="220,89,405,134"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="420,109,611,110,607,113,421,114"/>
+<area shape="rect" id="Node000007" href="$classesi_1_1MessageData.html" title="A concrete flat message backed by a single vector of bytes." alt="" coords="604,158,742,185"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="757,170,846,177,939,194,982,211,1021,232,1015,231,980,215,938,199,845,182,758,175"/>
+<area shape="rect" id="Node000008" href="$classesi_1_1SegmentedMessageData.html" title="Abstract multi&#45;segment message." alt="" coords="207,158,418,185"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="433,169,606,171,601,172,434,174"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="244,210,381,237"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="396,216,545,199,622,185,617,187,545,205,397,221"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="648,232,698,260"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="713,244,964,246,959,247,713,249"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="569,288,777,316"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="793,293,865,285,938,274,997,261,1002,260,939,279,866,291,793,298"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="644,344,703,372"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="718,357,821,350,880,340,937,322,964,309,988,292,1026,262,1031,260,992,296,966,313,939,327,881,345,822,356,719,362"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="circt::firrtl::InstanceInfo::ModuleAttributes" name="circt::firrtl::InstanceInfo::ModuleAttributes">
+<area shape="rect" id="Node000001" title="Information about a module." alt="" coords="72,316,244,360"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1firrtl_1_1InstanceInfo_1_1LatticeValue.html" title="A lattice value to record the value of a property." alt="" coords="5,107,178,152"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,165,79,196,78,228,81,260,92,290,101,303,114,315,109,315,97,306,87,293,76,261,72,228,74,195,81,170"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="66,5,117,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="92,46,94,107,89,107,91,51"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="171,5,220,33"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="207,45,211,56,226,123,237,177,238,203,235,230,227,259,214,293,194,317,191,313,209,290,222,258,230,229,232,203,231,178,221,124,206,58,206,50"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="172,46,114,109,110,105,174,42"/>
+</map>

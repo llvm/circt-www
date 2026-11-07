@@ -1,0 +1,7 @@
+<map id="ArcTraceTap" name="ArcTraceTap">
+<area shape="rect" id="Node000001" title=" " alt="" coords="51,128,149,156"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,80,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="37,46,39,76,46,103,57,116,72,128,66,128,53,120,41,106,33,77,36,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="120,5,194,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,46,130,106,113,130,110,126,125,103,148,49"/>
+</map>

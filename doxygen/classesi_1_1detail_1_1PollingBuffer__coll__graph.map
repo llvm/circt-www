@@ -1,0 +1,11 @@
+<map id="esi::detail::PollingBuffer&lt; BufferedT &gt;" name="esi::detail::PollingBuffer&lt; BufferedT &gt;">
+<area shape="rect" id="Node000001" title="Shared queue/promise helper for polling&#45;style read APIs." alt="" coords="152,123,328,168"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,14,69,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,49,134,97,184,122,178,123,131,101,63,54"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="93,14,248,42"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,54,203,98,221,123,216,122,198,100,179,58"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="272,14,346,42"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="302,55,282,100,263,125,260,121,277,98,298,58"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="370,5,528,50"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="427,61,408,84,386,101,359,116,329,127,328,122,356,111,384,97,405,80,423,63"/>
+</map>

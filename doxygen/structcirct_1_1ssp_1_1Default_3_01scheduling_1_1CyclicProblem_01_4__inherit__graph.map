@@ -1,0 +1,5 @@
+<map id="circt::ssp::Default&lt; scheduling::CyclicProblem &gt;" name="circt::ssp::Default&lt; scheduling::CyclicProblem &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,123,228,168"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1ssp_1_1Default.html" title="Dummy struct to query a problem&#39;s default properties (i.e." alt="" coords="49,5,184,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,64,119,123,114,122,115,68"/>
+</map>

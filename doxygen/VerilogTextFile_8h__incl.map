@@ -1,0 +1,35 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Tools/circt&#45;verilog&#45;lsp&#45;server/VerilogServerImpl/VerilogTextFile.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Tools/circt&#45;verilog&#45;lsp&#45;server/VerilogServerImpl/VerilogTextFile.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="226,5,438,101"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,225,206,252"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,104,135,217,131,213,273,99"/>
+<area shape="rect" id="Node000003" href="$VerilogDocument_8h.html" title=" " alt="" coords="486,149,632,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="432,99,520,142,515,142,431,104"/>
+<area shape="poly" id="edge9_Node000003_Node000002" title=" " alt="" coords="485,178,202,224,201,219,487,173"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="412,300,588,328"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="483,170,424,179,359,190,305,206,285,215,272,226,263,243,263,257,273,268,289,278,338,294,400,306,394,306,337,299,287,283,269,272,258,258,257,242,267,223,282,211,303,201,358,185,423,174,488,169"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="281,225,434,252"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="525,176,408,222,407,216,520,178"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="458,225,660,252"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="561,175,561,211,557,207,557,179"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="685,225,857,252"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="597,175,721,219,716,219,596,180"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="881,225,1044,252"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="632,175,878,221,872,222,631,180"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="1069,225,1225,252"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="632,170,1056,223,1051,225,632,175"/>
+<area shape="rect" id="Node000010" href="$VerilogIndex_8h.html" title=" " alt="" coords="1250,225,1364,252"/>
+<area shape="poly" id="edge10_Node000003_Node000010" title=" " alt="" coords="632,166,894,185,1062,201,1237,224,1231,224,1061,207,893,191,632,171"/>
+<area shape="poly" id="edge11_Node000010_Node000004" title=" " alt="" coords="1252,250,1238,255,1064,275,890,291,604,310,603,305,889,285,1063,270,1237,250,1246,251"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="771,300,915,328"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="1252,250,1238,255,930,302,930,297,1237,250,1247,251"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="938,300,1102,328"/>
+<area shape="poly" id="edge13_Node000010_Node000012" title=" " alt="" coords="1258,253,1087,299,1086,293,1253,253"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="1126,300,1293,328"/>
+<area shape="poly" id="edge14_Node000010_Node000013" title=" " alt="" coords="1292,252,1239,294,1238,289,1287,254"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="1316,300,1492,328"/>
+<area shape="poly" id="edge15_Node000010_Node000014" title=" " alt="" coords="1325,250,1378,292,1373,290,1323,255"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="1516,300,1698,328"/>
+<area shape="poly" id="edge16_Node000010_Node000015" title=" " alt="" coords="1361,250,1541,296,1536,296,1360,256"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="1721,300,1895,328"/>
+<area shape="poly" id="edge17_Node000010_Node000016" title=" " alt="" coords="1365,246,1709,298,1703,298,1364,251"/>
+</map>

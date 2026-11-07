@@ -1,0 +1,5 @@
+<map id="llvm::DenseMapInfo&lt; circt::firrtl::Annotation &gt;" name="llvm::DenseMapInfo&lt; circt::firrtl::Annotation &gt;">
+<area shape="rect" id="Node000001" title="Make Annotation hash just like Attribute." alt="" coords="5,123,199,168"/>
+<area shape="rect" id="Node000002" href="$structllvm_1_1DenseMapInfo.html" title=" " alt="" coords="26,5,178,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,64,105,123,99,122,100,68"/>
+</map>

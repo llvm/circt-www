@@ -1,0 +1,7 @@
+<map id="esi::services::MMIO::MMIORegion" name="esi::services::MMIO::MMIORegion">
+<area shape="rect" id="Node000001" title="A &quot;slice&quot; of some parent MMIO space." alt="" coords="23,157,172,201"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1services_1_1ServicePort.html" title="Add a custom interface to a service client at a particular point in the design hierarchy." alt="" coords="5,81,190,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,123,100,157,95,155,96,127"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1BundlePort.html" title="Services provide connections to &#39;bundles&#39; – collections of named, unidirectional communication channe..." alt="" coords="38,5,157,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,46,100,81,95,80,96,51"/>
+</map>

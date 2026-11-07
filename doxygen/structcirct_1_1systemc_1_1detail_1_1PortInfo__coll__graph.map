@@ -1,0 +1,7 @@
+<map id="circt::systemc::detail::PortInfo" name="circt::systemc::detail::PortInfo">
+<area shape="rect" id="Node000001" title="A struct containing minimal information for a systemc module port." alt="" coords="14,106,171,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,89,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,46,67,81,80,106,75,106,62,83,52,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="113,5,165,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,46,104,107,100,104,125,48"/>
+</map>

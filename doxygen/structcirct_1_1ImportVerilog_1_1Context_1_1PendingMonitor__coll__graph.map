@@ -1,0 +1,9 @@
+<map id="circt::ImportVerilog::Context::PendingMonitor" name="circt::ImportVerilog::Context::PendingMonitor">
+<area shape="rect" id="Node000001" title="Information about a pending $monitor call that needs to be converted after the current module&#39;s body ..." alt="" coords="53,106,243,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,86,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,42,130,104,125,106,67,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="110,5,186,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="150,47,151,106,146,104,146,51"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="211,5,339,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="250,43,175,108,172,103,245,44"/>
+</map>

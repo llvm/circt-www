@@ -1,0 +1,25 @@
+<map id="circt::calyx::InlineCombGroups" name="circt::calyx::InlineCombGroups">
+<area shape="rect" id="Node000001" title="This pass recursively inlines use&#45;def chains of combinational logic (from non&#45;stateful groups) into g..." alt="" coords="1250,247,1425,291"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1calyx_1_1PartialLoweringPattern.html" title=" " alt="" coords="930,138,1176,200"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1158,203,1274,246,1269,246,1157,208"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="383,75,620,119"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="635,112,932,152,927,154,635,117"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="38,135,161,163"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="175,149,362,154,931,165,928,170,362,159,177,154"/>
+<area shape="rect" id="Node000006" href="$classcirct_1_1calyx_1_1PartialLoweringPattern.html" title="Base class for partial lowering passes." alt="" coords="362,5,641,50"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="154,127,361,60,407,49,402,52,362,65,157,132"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,206,194,234"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="209,212,641,190,932,175,927,177,641,195,210,217"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="207,202,242,192,276,178,308,159,336,136,346,118,347,100,348,80,360,61,379,49,375,52,364,64,353,82,352,100,351,120,340,140,311,164,278,182,244,197,210,207"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="643,51,772,78,907,113,975,137,969,138,905,118,771,84,644,56"/>
+<area shape="rect" id="Node000007" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="15,5,184,50"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="198,25,363,26,359,29,200,30"/>
+<area shape="rect" id="Node000008" href="$classcirct_1_1calyx_1_1CalyxLoweringState.html" title="An interface for conversion passes that lower Calyx programs." alt="" coords="955,317,1151,362"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="1160,310,1247,291,1253,290,1161,316"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="461,298,542,326"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="558,312,957,334,952,336,558,317"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="458,354,545,382"/>
+<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="560,367,717,367,906,359,957,356,952,357,906,365,717,373,561,372"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="377,406,626,484"/>
+<area shape="poly" id="edge12_Node000008_Node000011" title=" " alt="" coords="641,437,770,424,839,413,905,398,958,381,1004,363,1009,362,960,386,907,403,840,418,771,429,642,442"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="esi::backends::cosim::RpcClient::ChannelDesc" name="esi::backends::cosim::RpcClient::ChannelDesc">
+<area shape="rect" id="Node000001" title="Description of a channel from the server." alt="" coords="5,128,190,173"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="8,5,67,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,45,90,128,85,129,48,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="91,5,224,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,46,129,106,115,130,111,126,124,103,147,49"/>
+</map>

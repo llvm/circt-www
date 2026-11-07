@@ -1,0 +1,13 @@
+<map id="VariableEmitter" name="VariableEmitter">
+<area shape="rect" id="Node000001" title="Emit a systemc.cpp.variable operation." alt="" coords="1016,22,1138,50"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPattern.html" title=" " alt="" coords="803,5,966,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="982,43,1018,45,1013,45,982,48"/>
+<area shape="poly" id="edge6_Node000001_Node000002" title=" " alt="" coords="982,25,1018,28,1013,28,982,30"/>
+<area shape="rect" id="Node000003" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPatternBase.html" title="This is intended to be the base class for all emission patterns matching on operations." alt="" coords="212,15,396,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="412,28,584,21,779,23,805,27,800,27,779,28,584,26,412,33"/>
+<area shape="rect" id="Node000005" href="$structcirct_1_1ExportSystemC_1_1OpEmissionPattern.html" title="This is a convenience class providing default implementations for operation emission patterns." alt="" coords="446,44,646,89"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="412,48,448,55,443,55,412,53"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1ExportSystemC_1_1PatternBase.html" title="This is indented to be the base class for all emission patterns." alt="" coords="5,15,163,60"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="178,35,214,37,209,38,179,40"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="662,58,779,48,800,48,805,48,779,53,662,63"/>
+</map>

@@ -1,0 +1,26 @@
+<map id="circt::pretty::PrettyPrinter" name="circt::pretty::PrettyPrinter">
+<area shape="rect" id="Node000001" title=" " alt="" coords="604,513,789,541"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="16,230,91,258"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,225,201,200,261,191,326,185,392,185,459,194,523,212,582,243,614,271,639,306,659,344,674,384,691,459,697,513,692,511,686,460,669,386,654,346,635,309,610,275,578,248,521,217,458,199,392,190,326,190,262,196,202,206,108,229"/>
+<area shape="rect" id="Node000007" href="$structcirct_1_1pretty_1_1PrettyPrinter_1_1PrintEntry.html" title="Printing information for active scope, stored in printStack." alt="" coords="228,270,414,314"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="104,258,126,262,230,280,226,284,125,268,107,262"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="288,358,354,386"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="369,370,416,373,470,381,527,395,581,416,615,438,644,463,687,513,682,512,641,467,612,442,579,421,525,400,469,386,415,379,371,375"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="202,410,440,454"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="455,445,518,456,581,472,629,490,671,512,666,512,626,495,579,477,517,462,456,450"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="249,478,393,506"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="408,497,606,517,601,519,409,503"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="242,531,400,592"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="414,556,580,544,620,540,615,542,580,549,415,561"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="428,273,467,273,507,278,546,288,581,306,608,327,630,353,664,412,685,469,695,513,690,511,680,471,659,414,626,356,604,331,579,310,544,293,506,283,467,279,430,278"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="5,309,102,337"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="116,322,177,318,230,312,226,315,178,324,119,326"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="261,617,381,645"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="395,622,485,608,579,584,630,562,670,542,675,540,632,567,581,589,486,613,397,627"/>
+<area shape="rect" id="Node000010" href="$structcirct_1_1pretty_1_1PrettyPrinter_1_1Listener.html" title="Listener to Token storage events." alt="" coords="228,668,414,713"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="428,683,504,669,543,657,579,641,613,618,642,590,684,542,688,539,646,594,616,623,581,646,545,662,506,674,429,689"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="296,745,346,773"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="361,763,408,767,465,765,524,755,552,745,579,730,603,711,624,687,657,632,678,580,690,543,694,539,683,581,662,635,628,690,607,715,581,735,555,749,526,760,466,771,408,772,361,768"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="228,796,414,841"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="429,832,467,831,507,826,544,815,578,796,608,769,633,736,652,700,666,662,684,591,692,543,696,539,690,592,671,664,657,702,637,739,612,773,582,801,546,820,508,831,468,836,429,837"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="circt::handshake::HandshakeLowering" name="circt::handshake::HandshakeLowering">
+<area shape="rect" id="Node000001" title=" " alt="" coords="67,123,274,168"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,14,86,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,50,150,121,145,124,70,55"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="110,14,232,42"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,55,173,124,168,122,169,59"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="255,5,412,50"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="295,58,239,101,204,125,202,120,236,97,290,60"/>
+</map>

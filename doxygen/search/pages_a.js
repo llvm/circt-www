@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['a_20deserializer_0',['Raw ReadChannelPort hookup with a deserializer',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2docs_2MessageData.html#autotoc_md85',1,'']]],
+  ['a_20generated_20type_1',['TypedReadPort hookup for a generated type',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2docs_2MessageData.html#autotoc_md86',1,'']]],
+  ['abi_20compatibility_2',['ABI compatibility',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2docs_2MessageData.html#autotoc_md62',1,'']]],
+  ['accelerator_20runtime_3',['ESI Accelerator Runtime',['../dir_644d1b30b8a73660321c217714582ca2.html#autotoc_md90',1,'']]],
+  ['accelerator_20runtime_20changelog_4',['ESI Accelerator Runtime changelog',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2CHANGELOG.html',1,'']]],
+  ['added_5',['Added',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2CHANGELOG.html#autotoc_md25',1,'']]],
+  ['additions_6',['Port API additions',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2docs_2MessageData.html#autotoc_md66',1,'']]],
+  ['allocates_20objects_7',['Why the deserializer allocates objects',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2docs_2MessageData.html#autotoc_md76',1,'']]],
+  ['an_20existing_20circt_20build_20for_20local_20debugging_8',['Use an existing CIRCT build for local debugging',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2AGENTS.html#autotoc_md4',1,'']]],
+  ['analysis_9',['Cost analysis',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2docs_2MessageData.html#autotoc_md70',1,'']]],
+  ['and_20deserialization_10',['SegmentedMessageData: multi-segment serialization and deserialization',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2docs_2MessageData.html',1,'']]],
+  ['and_20first_11',['&lt;span class=&quot;tt&quot;&gt;hello&lt;/span&gt; (client → server, exactly once and first)',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2cosim-protocol.html#autotoc_md37',1,'']]],
+  ['and_20serial_20window_20wire_20layout_12',['Union and serial-window wire layout',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2docs_2MessageData.html#autotoc_md67',1,'']]],
+  ['api_13',['Proposed generated API',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2docs_2MessageData.html#autotoc_md75',1,'']]],
+  ['api_20additions_14',['Port API additions',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2docs_2MessageData.html#autotoc_md66',1,'']]],
+  ['api_20details_15',['API Details',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2docs_2MessageData.html#autotoc_md65',1,'']]],
+  ['apis_20no_20backend_20changes_20needed_16',['Sending through existing port APIs (no backend changes needed)',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2docs_2MessageData.html#autotoc_md83',1,'']]],
+  ['arbitration_20default_17',['7. Control — round-robin arbitration (default)',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2docs_2components_2ChannelArbiter.html#autotoc_md56',1,'']]],
+  ['architecture_18',['6. Architecture',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2docs_2components_2ChannelArbiter.html#autotoc_md55',1,'']]],
+  ['architecture_20notes_19',['Key architecture notes',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2AGENTS.html#autotoc_md9',1,'']]],
+  ['async_20dma_20',['Backend storing message for partial / async DMA',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2docs_2MessageData.html#autotoc_md88',1,'']]],
+  ['at_20the_20call_20site_21',['Usage at the call site',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2docs_2MessageData.html#autotoc_md71',1,'']]],
+  ['auto_20from_20type_22',['5. Last-flit detection (auto from type)',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2docs_2components_2ChannelArbiter.html#autotoc_md54',1,'']]]
+];

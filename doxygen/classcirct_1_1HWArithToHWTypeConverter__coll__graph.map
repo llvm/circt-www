@@ -1,0 +1,7 @@
+<map id="circt::HWArithToHWTypeConverter" name="circt::HWArithToHWTypeConverter">
+<area shape="rect" id="Node000001" title="A helper type converter class that automatically populates the relevant materializations and type con..." alt="" coords="42,106,283,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,155,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,42,154,105,149,106,99,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="179,5,312,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,44,175,107,172,103,222,46"/>
+</map>

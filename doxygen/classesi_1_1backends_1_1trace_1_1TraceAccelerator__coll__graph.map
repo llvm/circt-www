@@ -1,0 +1,25 @@
+<map id="esi::backends::trace::TraceAccelerator" name="esi::backends::trace::TraceAccelerator">
+<area shape="rect" id="Node000001" title="Connect to an ESI simulation." alt="" coords="1079,236,1230,281"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1AcceleratorConnection.html" title="Abstract class representing a connection to an accelerator." alt="" coords="799,198,994,226"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="992,227,1082,245,1076,245,992,232"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="434,5,597,67"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="612,45,694,65,736,79,776,98,811,121,842,148,887,198,881,197,838,151,807,125,774,102,734,84,693,70,612,51"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="423,91,608,136"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="623,123,699,136,776,155,827,174,872,198,866,198,825,179,774,160,698,141,623,128"/>
+<area shape="rect" id="Node000005" href="$classesi_1_1Context.html" title="AcceleratorConnections, Accelerators, and Manifests must all share a context." alt="" coords="466,160,565,187"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="581,177,801,202,796,203,581,183"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="42,100,234,127"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="249,122,381,140,468,161,463,163,380,145,250,127"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="5,151,271,196"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="286,171,467,172,463,175,286,176"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="51,220,225,265"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="239,225,380,201,468,184,463,186,381,206,241,231"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="425,212,606,274"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="621,240,775,232,830,226,825,227,775,237,622,246"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="412,298,618,342"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="634,315,706,301,741,288,773,271,781,264,785,255,789,246,797,237,819,228,824,226,801,241,793,249,790,257,785,267,777,275,743,293,707,306,634,321"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="405,366,626,394"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="642,389,677,385,712,377,745,363,773,343,783,331,786,319,785,293,784,265,787,251,797,237,813,228,818,226,801,241,792,253,789,266,791,293,792,320,787,334,777,347,747,368,714,382,678,391,642,394"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="800,251,993,312"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="1008,269,1055,265,1082,265,1076,266,1056,270,1009,275"/>
+</map>

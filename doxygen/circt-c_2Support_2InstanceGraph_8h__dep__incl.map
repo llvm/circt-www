@@ -1,0 +1,14 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt&#45;c/Support/InstanceGraph.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt&#45;c/Support/InstanceGraph.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="560,5,748,84"/>
+<area shape="rect" id="Node000002" href="$Synth_8h.html" title=" " alt="" coords="399,132,586,211"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="594,93,544,134,542,129,590,95"/>
+<area shape="rect" id="Node000005" href="$Synth_8cpp.html" title=" " alt="" coords="588,259,782,320"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="663,97,683,259,679,257,659,101"/>
+<area shape="rect" id="Node000006" href="$CAPI_2Support_2InstanceGraph_8cpp.html" title=" " alt="" coords="691,140,945,202"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="718,91,781,140,776,140,716,96"/>
+<area shape="rect" id="Node000003" href="$CIRCTModule_8cpp.html" title=" " alt="" coords="5,259,274,320"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="387,207,232,261,231,256,382,209"/>
+<area shape="rect" id="Node000004" href="$SynthModule_8cpp.html" title=" " alt="" coords="298,259,565,320"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="468,223,449,260,446,256,463,226"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="570,216,638,259,632,258,569,221"/>
+</map>

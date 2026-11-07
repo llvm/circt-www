@@ -1,0 +1,9 @@
+<map id="esi::TypedFunction&lt; ArgT, ResultT, SkipTypeCheck &gt;" name="esi::TypedFunction&lt; ArgT, ResultT, SkipTypeCheck &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,84,250,129"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1TypedFunction_3_01ArgT_00_01void_00_01SkipTypeCheck_01_4.html" title="Partial specialization: typed argument, void result." alt="" coords="517,5,740,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,76,273,54,399,36,519,29,514,31,399,41,274,60,201,81"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1TypedFunction_3_01void_00_01ResultT_00_01SkipTypeCheck_01_4.html" title="Partial specialization: void argument, typed result." alt="" coords="508,84,750,129"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="265,104,509,105,505,108,265,109"/>
+<area shape="rect" id="Node000004" href="$classesi_1_1TypedFunction_3_01void_00_01void_00_01SkipTypeCheck_01_4.html" title="Full specialization: void argument, void result." alt="" coords="518,153,740,198"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="247,129,274,134,400,151,520,166,515,166,400,157,273,139,247,135"/>
+</map>

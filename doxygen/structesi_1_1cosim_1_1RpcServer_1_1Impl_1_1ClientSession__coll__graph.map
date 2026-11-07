@@ -1,0 +1,11 @@
+<map id="esi::cosim::RpcServer::Impl::ClientSession" name="esi::cosim::RpcServer::Impl::ClientSession">
+<area shape="rect" id="Node000001" title=" " alt="" coords="269,128,430,173"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,217,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,40,186,71,238,102,292,128,286,128,236,107,184,76,140,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="241,5,304,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="270,46,272,76,281,103,304,128,299,127,276,106,267,77,267,50"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="328,5,526,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="423,46,414,77,400,106,378,130,376,126,395,103,409,75,419,50"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="550,5,674,33"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="590,42,550,77,503,107,431,134,430,129,500,102,547,72,585,44"/>
+</map>

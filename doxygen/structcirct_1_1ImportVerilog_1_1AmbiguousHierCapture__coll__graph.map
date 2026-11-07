@@ -1,0 +1,7 @@
+<map id="circt::ImportVerilog::AmbiguousHierCapture" name="circt::ImportVerilog::AmbiguousHierCapture">
+<area shape="rect" id="Node000001" title="A function whose hierarchical reference resolves to one symbol reachable through more than one instan..." alt="" coords="70,106,250,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,157,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,43,146,105,141,106,98,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="181,5,298,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="223,44,178,107,174,103,218,47"/>
+</map>

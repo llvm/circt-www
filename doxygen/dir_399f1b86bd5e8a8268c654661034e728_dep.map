@@ -1,0 +1,25 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Kanagawa" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Kanagawa">
+<area shape="rect" id="node1" href="dir_0c12d0cee40a488bbfb15275733a0ebe.html" title="SSP" alt="" coords="27,130,72,158"/>
+<area shape="rect" id="node2" href="dir_742d3e22f90944a0a2235b25522b3bc4.html" title="DC" alt="" coords="96,130,136,158"/>
+<area shape="rect" id="node3" href="dir_7b9052d7999efcfec78cbb218e5321c2.html" title="Handshake" alt="" coords="160,130,253,158"/>
+<area shape="rect" id="node4" href="dir_8859be770cea9c8fbcf56faf0a8d4668.html" title="Pipeline" alt="" coords="278,130,351,158"/>
+<area shape="rect" id="node5" href="dir_bbc986687dd9656ae8e748f49ab15b10.html" title="HW" alt="" coords="375,130,420,158"/>
+<area shape="rect" id="node6" href="dir_e619da50f45208cedc804c252ed2bf20.html" title="Seq" alt="" coords="444,130,489,158"/>
+<area shape="rect" id="node7" href="dir_399f1b86bd5e8a8268c654661034e728.html" title="Kanagawa" alt="" coords="270,54,359,82"/>
+<area shape="poly" id="edge2" href="dir_000129_000182.html" alt="" coords="270,83,88,132,86,127,269,77"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000129_000182.html" title="1" alt="" coords="88,128,96,145"/>
+<area shape="poly" id="edge3" href="dir_000129_000056.html" alt="" coords="281,82,152,131,150,126,276,83"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000129_000056.html" title="2" alt="" coords="153,127,161,144"/>
+<area shape="poly" id="edge4" href="dir_000129_000098.html" alt="" coords="298,82,240,123,237,119,293,83"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000129_000098.html" title="1" alt="" coords="242,118,250,135"/>
+<area shape="poly" id="edge5" href="dir_000129_000150.html" alt="" coords="316,81,317,116,312,113,313,85"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000129_000150.html" title="1" alt="" coords="319,103,327,120"/>
+<area shape="poly" id="edge6" href="dir_000129_000102.html" alt="" coords="330,80,374,120,369,119,329,85"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000129_000102.html" title="2" alt="" coords="371,103,379,120"/>
+<area shape="poly" id="edge7" href="dir_000129_000175.html" alt="" coords="342,80,433,125,427,125,341,85"/>
+<area shape="rect" id="edge7-headlabel" href="dir_000129_000175.html" title="1" alt="" coords="427,108,435,125"/>
+<area shape="rect" id="node8" href="dir_0568441755aceafcfdf1bfdd141d8b0e.html" title="Support" alt="" coords="514,130,585,158"/>
+<area shape="poly" id="edge1" href="dir_000129_000185.html" alt="" coords="357,80,502,126,496,127,356,85"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000129_000185.html" title="3" alt="" coords="494,109,502,126"/>
+<area shape="rect" id="clust1" href="dir_7d8a60676879864b2b723a77f7e28ce9.html" title="Dialect" alt="" coords="16,16,500,168"/>
+</map>

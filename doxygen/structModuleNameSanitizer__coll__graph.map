@@ -1,0 +1,18 @@
+<map id="ModuleNameSanitizer" name="ModuleNameSanitizer">
+<area shape="rect" id="Node000001" title="Pseudo&#45;reduction that sanitizes module and port names." alt="" coords="1236,87,1401,115"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="930,9,1076,54"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1092,48,1255,86,1249,86,1091,53"/>
+<area shape="rect" id="Node000003" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="430,52,552,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="545,44,601,29,685,12,751,4,818,4,904,10,932,16,927,16,903,15,818,9,752,9,686,17,602,34,546,49"/>
+<area shape="rect" id="Node000005" href="$structcirct_1_1OpReduction.html" title="A reduction pattern for a specific operation." alt="" coords="601,44,742,88"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="567,63,603,66,598,66,568,69"/>
+<area shape="rect" id="Node000006" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="928,78,1079,123"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="543,83,602,98,688,108,776,111,930,108,925,108,776,116,688,113,601,103,542,88"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,52,219,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="234,63,432,64,427,68,234,69"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="757,55,932,39,927,39,758,60"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="757,82,766,83,849,92,930,99,925,99,849,97,765,88,757,87"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="1095,98,1238,101,1233,101,1095,103"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="974,147,1033,175"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="1048,154,1125,144,1211,128,1270,115,1275,115,1213,134,1125,149,1049,159"/>
+</map>

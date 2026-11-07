@@ -1,0 +1,5 @@
+<map id="circt::firrtl::CircuitNamespace" name="circt::firrtl::CircuitNamespace">
+<area shape="rect" id="Node000001" title="The namespace of a CircuitOp, generally inhabited by modules." alt="" coords="5,81,217,109"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1Namespace.html" title="A namespace that is used to store existing names and generate new names in some scope within the IR." alt="" coords="44,5,178,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,47,113,82,109,79,109,51"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="circt::pretty::TokenBuilder&lt; PPTy &gt;" name="circt::pretty::TokenBuilder&lt; PPTy &gt;">
+<area shape="rect" id="Node000001" title="Add convenience methods for generating pretty&#45;printing tokens." alt="" coords="5,103,192,148"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="82,86,88,79,98,77,108,79,115,85,117,103,112,102,110,88,106,84,99,82,91,84,86,89"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="64,88,63,75,69,63,81,55,99,52,120,56,132,69,134,86,127,104,122,101,129,85,127,71,117,61,98,57,83,60,73,66,68,76,69,89"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1pretty_1_1TokenBuilder.html" title=" " alt="" coords="360,103,546,148"/>
+<area shape="poly" id="edge3_Node000001_Node000002" title=" " alt="" coords="207,123,361,124,357,127,207,128"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1pretty_1_1TokenStream.html" title=" " alt="" coords="951,89,1138,133"/>
+<area shape="poly" id="edge4_Node000002_Node000003" title=" " alt="" coords="561,119,595,118,807,111,953,111,948,112,807,116,595,123,562,124"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1pretty_1_1TokenStream.html" title="Wrap a PrettyPrinter with TokenBuilder features as well as operator&lt;&lt;&#39;s." alt="" coords="595,133,783,177"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="562,136,598,143,592,143,562,142"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1pretty_1_1TokenStreamWithCallback.html" title="Wrap the TokenStream with a helper for CallbackTokens, to record the print events on the stream." alt="" coords="1187,80,1397,142"/>
+<area shape="poly" id="edge5_Node000003_Node000004" title=" " alt="" coords="1154,108,1189,111,1184,111,1154,114"/>
+<area shape="poly" id="edge8_Node000005_Node000003" title=" " alt="" coords="798,149,926,136,950,134,956,134,927,141,799,154"/>
+<area shape="rect" id="Node000006" href="$classcirct_1_1pretty_1_1TokenStream.html" title=" " alt="" coords="951,174,1138,219"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="760,180,807,192,880,199,953,202,948,203,880,205,806,197,760,185"/>
+</map>

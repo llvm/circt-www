@@ -1,0 +1,13 @@
+<map id="circt::scftocalyx::BuildIfGroups" name="circt::scftocalyx::BuildIfGroups">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1211,40,1342,85"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1calyx_1_1FuncOpPartialLoweringPattern.html" title="FuncOpPartialLoweringPatterns are patterns which intend to match on FuncOps and then perform their ow..." alt="" coords="972,40,1161,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1177,60,1213,62,1208,62,1177,65"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1calyx_1_1PartialLoweringPattern.html" title=" " alt="" coords="707,40,923,85"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="938,60,974,62,969,62,938,65"/>
+<area shape="rect" id="Node000004" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="279,5,448,50"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="464,33,709,54,704,55,464,38"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1calyx_1_1PartialLoweringPattern.html" title="Base class for partial lowering passes." alt="" coords="224,75,503,119"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="519,90,683,79,704,80,709,79,684,85,519,96"/>
+<area shape="rect" id="Node000006" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="5,75,175,119"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="190,94,226,97,221,97,190,100"/>
+</map>

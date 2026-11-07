@@ -1,0 +1,15 @@
+<map id="circt::pretty::PrintEventAndStorageListener&lt; CallableTy, DataTy &gt;" name="circt::pretty::PrintEventAndStorageListener&lt; CallableTy, DataTy &gt;">
+<area shape="rect" id="Node000001" title="Note: Callable class must implement a callable with signature: void (Data)." alt="" coords="346,241,580,302"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1pretty_1_1TokenStringSaver.html" title="PrettyPrinter::Listener that saves strings while live." alt="" coords="193,123,371,168"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="327,174,422,240,417,240,325,179"/>
+<area shape="rect" id="Node000003" href="$structcirct_1_1pretty_1_1PrettyPrinter_1_1Listener.html" title="Listener to Token storage events." alt="" coords="5,5,191,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,56,250,121,245,124,145,61"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="214,14,350,42"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="283,55,284,124,280,122,281,59"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="374,14,470,42"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="397,50,310,125,306,120,393,53"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="395,132,532,159"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="465,173,466,242,461,239,461,177"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="556,132,658,159"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="584,168,499,243,497,238,579,170"/>
+</map>

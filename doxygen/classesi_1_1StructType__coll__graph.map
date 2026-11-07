@@ -1,0 +1,13 @@
+<map id="esi::StructType" name="esi::StructType">
+<area shape="rect" id="Node000001" title="Structs are an ordered collection of fields, each with a name and a type." alt="" coords="154,241,270,268"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1Type.html" title="Root class of the ESI type system." alt="" coords="39,123,118,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,158,199,239,194,241,104,163"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,64,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="46,45,76,122,71,123,44,50"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="88,5,160,33"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="114,45,86,123,81,121,112,50"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="141,106,282,168"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="214,181,214,241,209,239,210,185"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="307,123,356,151"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="314,162,262,219,232,242,229,238,258,215,309,164"/>
+</map>

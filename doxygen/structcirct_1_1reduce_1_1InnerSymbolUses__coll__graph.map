@@ -1,0 +1,7 @@
+<map id="circt::reduce::InnerSymbolUses" name="circt::reduce::InnerSymbolUses">
+<area shape="rect" id="Node000001" title="A helper struct that scans a root operation and all its nested operations for InnerRefAttrs." alt="" coords="98,145,322,173"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,204,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,60,202,144,197,145,130,64"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="228,14,403,42"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="303,53,282,89,256,123,229,147,227,142,252,120,278,86,299,56"/>
+</map>

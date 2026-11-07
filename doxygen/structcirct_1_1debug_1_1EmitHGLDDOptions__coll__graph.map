@@ -1,0 +1,7 @@
+<map id="circt::debug::EmitHGLDDOptions" name="circt::debug::EmitHGLDDOptions">
+<area shape="rect" id="Node000001" title="Options for HGLDD emission." alt="" coords="5,151,238,178"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="10,5,92,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="45,46,43,87,46,107,54,125,66,138,82,150,77,150,62,142,50,128,41,108,38,87,43,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="168,5,217,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,47,183,88,165,128,142,152,139,148,161,125,178,86,187,51"/>
+</map>

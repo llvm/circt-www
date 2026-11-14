@@ -1,0 +1,29 @@
+<map id="circt::scheduling::Problem" name="circt::scheduling::Problem">
+<area shape="rect" id="Node000001" title="This class models the most basic scheduling problem." alt="" coords="851,358,986,403"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="478,31,636,59"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="651,28,697,28,743,34,789,48,829,72,858,103,881,140,897,180,909,221,920,299,921,359,916,357,914,300,903,222,892,182,876,142,854,107,825,76,786,53,742,39,696,33,653,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="509,87,606,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="620,98,738,105,792,114,828,129,853,154,873,183,889,214,900,247,914,309,919,359,914,357,909,310,895,248,884,216,869,185,849,157,826,134,791,119,738,110,622,103"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="463,139,652,167"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="666,157,762,169,801,179,828,192,848,209,865,230,890,275,907,320,916,359,911,357,902,322,885,277,860,233,844,213,826,196,799,184,761,174,668,162"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="469,191,646,253"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="660,219,746,232,788,245,828,264,855,284,877,309,909,359,904,358,873,312,851,288,826,268,787,250,744,237,662,224"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="457,278,658,305"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="672,293,750,304,828,324,860,338,889,358,884,358,857,343,826,329,749,309,673,298"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="456,330,659,357"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="674,353,853,373,848,375,675,358"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="465,382,650,444"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="665,410,745,407,827,399,853,397,848,399,827,404,745,412,666,416"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="477,468,638,547"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="653,491,739,471,826,441,859,422,888,405,892,402,862,427,828,446,740,476,654,496"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="482,570,633,615"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="647,581,692,572,738,559,784,541,825,516,853,490,876,459,906,405,910,402,880,462,857,493,829,520,786,545,740,564,693,578,649,586"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="476,640,639,684"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="654,661,698,656,743,646,787,629,825,604,847,582,864,557,890,501,905,447,913,406,917,402,910,448,895,503,869,560,851,586,829,608,789,633,745,651,699,661,655,666"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="516,722,599,749"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="614,741,672,746,734,749,790,746,811,741,825,734,844,711,860,675,886,580,903,479,913,406,917,401,908,480,891,581,865,677,848,714,829,738,812,746,790,751,734,755,672,752,614,746"/>
+<area shape="rect" id="Node000013" href="$classllvm_1_1SmallDenseMap.html" title=" " alt="" coords="459,773,656,818"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="671,816,712,817,752,813,791,801,825,780,845,753,862,712,877,660,889,603,905,488,914,406,917,401,910,489,894,603,882,661,867,713,850,756,829,784,793,806,754,818,712,822,671,821"/>
+<area shape="rect" id="Node000014" href="$classllvm_1_1SmallDenseMap.html" title=" " alt="" coords="5,765,225,826"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="240,793,461,794,456,797,240,798"/>
+</map>

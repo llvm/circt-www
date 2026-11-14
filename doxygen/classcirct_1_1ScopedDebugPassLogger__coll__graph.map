@@ -1,0 +1,7 @@
+<map id="circt::ScopedDebugPassLogger" name="circt::ScopedDebugPassLogger">
+<area shape="rect" id="Node000001" title="RAII helper for creating a pass header and footer automatically." alt="" coords="5,106,225,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="38,5,99,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,45,98,81,110,106,105,105,93,83,78,50"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="123,5,203,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="153,46,136,83,124,107,120,104,131,81,148,49"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="circt::calyx::PartialLoweringPattern&lt; OpType, RewritePatternType &gt;" name="circt::calyx::PartialLoweringPattern&lt; OpType, RewritePatternType &gt;">
+<area shape="rect" id="Node000001" title="Base class for partial lowering passes." alt="" coords="120,123,399,168"/>
+<area shape="rect" id="Node000002" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="5,5,175,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,57,230,121,225,123,133,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="198,14,320,42"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="261,55,262,124,257,121,257,59"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="345,14,534,42"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="427,53,409,80,386,101,341,125,339,120,383,97,405,76,422,56"/>
+</map>

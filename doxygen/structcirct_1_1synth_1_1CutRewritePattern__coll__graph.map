@@ -1,0 +1,5 @@
+<map id="circt::synth::CutRewritePattern" name="circt::synth::CutRewritePattern">
+<area shape="rect" id="Node000001" title="Base class for cut rewriting patterns used in combinational logic optimization." alt="" coords="5,106,179,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="34,5,150,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,47,95,106,89,105,90,50"/>
+</map>

@@ -1,0 +1,41 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Kanagawa/KanagawaPasses.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Kanagawa/KanagawaPasses.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="2209,5,2436,84"/>
+<area shape="rect" id="Node000002" href="$KanagawaPassPipelines_8h.html" title=" " alt="" coords="12,132,238,211"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2191,47,1777,56,1216,70,927,81,658,95,426,113,251,135,240,137,238,132,250,129,426,108,657,90,927,75,1216,64,1777,50,2196,47"/>
+<area shape="rect" id="Node000004" href="$InitAllPasses_8h.html" title=" " alt="" coords="262,140,465,202"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="2191,48,1819,57,1323,71,1070,82,834,96,631,113,477,135,446,142,444,137,477,129,630,108,833,91,1070,77,1323,66,1819,51,2196,47"/>
+<area shape="rect" id="Node000005" href="$Kanagawa_8cpp.html" title=" " alt="" coords="489,140,713,202"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="2191,49,1866,61,1442,77,1027,102,856,117,725,135,691,142,689,137,725,129,855,112,1027,96,1442,72,1865,56,2196,49"/>
+<area shape="rect" id="Node000006" href="$KanagawaAddOperatorLibrary_8cpp.html" title=" " alt="" coords="737,132,982,211"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="2191,46,1967,51,1668,64,1502,75,1332,90,1161,110,995,135,983,137,982,132,994,129,1161,104,1331,84,1502,69,1667,58,1966,46,2196,45"/>
+<area shape="rect" id="Node000007" href="$KanagawaArgifyBlocksPass_8cpp.html" title=" " alt="" coords="1007,132,1246,211"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="2191,48,2009,58,1776,72,1517,97,1386,114,1259,135,1247,137,1246,132,1258,129,1386,108,1517,91,1775,67,2009,52,2196,48"/>
+<area shape="rect" id="Node000008" href="$KanagawaCallPrep_8cpp.html" title=" " alt="" coords="1271,132,1510,211"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="2191,53,1887,82,1704,104,1523,135,1511,137,1510,132,1522,129,1703,99,1886,76,2196,53"/>
+<area shape="rect" id="Node000009" href="$KanagawaCleanSelfdrivers_8cpp.html" title=" " alt="" coords="1535,132,1774,211"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="2196,62,2001,94,1787,135,1775,137,1774,132,1786,129,2000,88,2191,63"/>
+<area shape="rect" id="Node000010" href="$KanagawaContainerize_8cpp.html" title=" " alt="" coords="1799,132,2038,211"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="2197,85,2039,136,2038,131,2192,86"/>
+<area shape="rect" id="Node000011" href="$KanagawaContainersToHW_8cpp.html" title=" " alt="" coords="2063,132,2302,211"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="2270,94,2227,134,2225,129,2265,96"/>
+<area shape="rect" id="Node000012" href="$KanagawaConvertCFToHandshake_8cpp.html" title=" " alt="" coords="2326,132,2599,211"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="2378,92,2421,132,2416,131,2376,97"/>
+<area shape="rect" id="Node000013" href="$KanagawaConvertHandshakeToDC_8cpp.html" title=" " alt="" coords="2623,132,2899,211"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="2451,80,2627,132,2622,131,2450,85"/>
+<area shape="rect" id="Node000014" href="$KanagawaEliminateRedundantOps_8cpp.html" title=" " alt="" coords="2924,132,3201,211"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="2451,58,2668,88,2912,129,2926,135,2921,134,2911,135,2667,93,2451,64"/>
+<area shape="rect" id="Node000015" href="$KanagawaInlineSBlocksPass_8cpp.html" title=" " alt="" coords="3225,132,3465,211"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="2451,48,2606,57,2797,73,3006,96,3213,129,3227,135,3222,134,3213,135,3005,102,2796,78,2606,63,2451,54"/>
+<area shape="rect" id="Node000016" href="$KanagawaMethodsToContainers_8cpp.html" title=" " alt="" coords="3488,132,3748,211"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="2451,45,2650,51,2906,65,3191,90,3336,108,3477,129,3490,134,3485,134,3477,135,3335,113,3191,96,2906,71,2650,57,2451,50"/>
+<area shape="rect" id="Node000017" href="$KanagawaPortrefLowering_8cpp.html" title=" " alt="" coords="3772,132,4011,211"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="2451,47,2749,58,3126,76,3494,100,3646,114,3761,129,3774,134,3769,134,3761,135,3645,119,3493,105,3126,81,2749,64,2451,53"/>
+<area shape="rect" id="Node000018" href="$KanagawaPrepareScheduling_8cpp.html" title=" " alt="" coords="4035,132,4276,211"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="2451,46,2799,55,3252,72,3699,96,3884,112,4024,129,4037,134,4032,134,4023,135,3883,117,3698,101,3252,77,2798,61,2451,51"/>
+<area shape="rect" id="Node000019" href="$KanagawaReblockPass_8cpp.html" title=" " alt="" coords="4300,132,4539,211"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="2451,45,2848,52,3379,67,3905,92,4124,109,4289,129,4302,134,4297,134,4289,135,4123,114,3905,98,3379,73,2848,57,2451,50"/>
+<area shape="rect" id="Node000020" href="$KanagawaTunneling_8cpp.html" title=" " alt="" coords="4564,132,4803,211"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="2451,44,2895,50,3502,63,3816,74,4109,89,4361,107,4552,129,4566,134,4561,134,4551,135,4361,112,4109,94,3816,80,3502,69,2895,55,2451,50"/>
+<area shape="rect" id="Node000003" href="$KanagawaPassPipelines_8cpp.html" title=" " alt="" coords="5,259,245,337"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="126,224,128,259,122,257,124,229"/>
+</map>

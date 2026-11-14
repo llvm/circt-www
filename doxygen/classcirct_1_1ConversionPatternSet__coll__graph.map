@@ -1,0 +1,7 @@
+<map id="circt::ConversionPatternSet" name="circt::ConversionPatternSet">
+<area shape="rect" id="Node000001" title="Extension of RewritePatternSet that allows adding matchAndRewrite functions with op adaptors and Conv..." alt="" coords="64,106,261,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,144,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,42,153,105,148,106,95,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="168,5,336,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="233,43,176,107,173,103,228,45"/>
+</map>

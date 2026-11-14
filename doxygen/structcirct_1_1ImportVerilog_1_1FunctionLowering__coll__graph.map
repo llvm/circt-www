@@ -1,0 +1,7 @@
+<map id="circt::ImportVerilog::FunctionLowering" name="circt::ImportVerilog::FunctionLowering">
+<area shape="rect" id="Node000001" title="Function lowering information." alt="" coords="104,140,249,185"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,22,158,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,60,162,139,157,140,99,64"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="182,5,363,67"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="242,78,195,142,191,138,237,81"/>
+</map>

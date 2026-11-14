@@ -1,0 +1,7 @@
+<map id="circt::FieldInfo" name="circt::FieldInfo">
+<area shape="rect" id="Node000001" title="A named and typed field of an aggregate type." alt="" coords="36,106,149,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,89,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,46,67,81,83,105,78,106,62,83,51,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="113,5,165,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,46,101,107,96,104,124,48"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="circt::firrtl::AnnoPathValue" name="circt::firrtl::AnnoPathValue">
+<area shape="rect" id="Node000001" title=" " alt="" coords="220,324,409,352"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,224,208,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,256,289,322,284,325,147,261"/>
+<area shape="rect" id="Node000003" href="$structcirct_1_1firrtl_1_1AnnoTarget.html" title="An annotation target is used to keep track of something that is targeted by an Annotation." alt="" coords="232,224,397,251"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="316,265,317,325,312,322,313,269"/>
+<area shape="rect" id="Node000004" href="$structcirct_1_1firrtl_1_1detail_1_1AnnoTargetImpl.html" title=" " alt="" coords="249,106,380,151"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="316,164,317,225,312,222,313,168"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="216,5,312,33"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="277,45,307,106,302,105,276,50"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="336,5,395,33"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="354,45,327,107,323,104,351,49"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="421,224,501,251"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="432,260,335,326,333,321,427,261"/>
+</map>

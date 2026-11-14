@@ -1,0 +1,11 @@
+var searchData=
+[
+  ['backend_20changes_20needed_0',['Sending through existing port APIs (no backend changes needed)',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2docs_2MessageData.html#autotoc_md86',1,'']]],
+  ['backend_20scatter_20gather_20override_20synchronous_1',['Backend scatter-gather override (synchronous)',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2docs_2MessageData.html#autotoc_md90',1,'']]],
+  ['backend_20storing_20message_20for_20partial_20async_20dma_2',['Backend storing message for partial / async DMA',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2docs_2MessageData.html#autotoc_md91',1,'']]],
+  ['background_3',['Background',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2docs_2MessageData.html#autotoc_md66',1,'']]],
+  ['based_4',['Why the interface is callback-based',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2docs_2MessageData.html#autotoc_md82',1,'']]],
+  ['breaking_20changes_5',['Breaking changes',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2CHANGELOG.html#autotoc_md24',1,'Breaking changes'],['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2CHANGELOG.html#autotoc_md28',1,'Breaking changes']]],
+  ['buffering_20optional_6',['8. Input buffering (optional)',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2docs_2components_2ChannelArbiter.html#autotoc_md61',1,'']]],
+  ['build_20for_20local_20debugging_7',['Use an existing CIRCT build for local debugging',['../md__2home_2runner_2work_2circt-www_2circt-www_2circt__src_2lib_2Dialect_2ESI_2runtime_2AGENTS.html#autotoc_md4',1,'']]]
+];

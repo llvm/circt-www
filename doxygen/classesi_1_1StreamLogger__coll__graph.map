@@ -1,0 +1,15 @@
+<map id="esi::StreamLogger" name="esi::StreamLogger">
+<area shape="rect" id="Node000001" title="A logger that writes to a C++ std::ostream." alt="" coords="139,352,278,380"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1TSLogger.html" title="A thread&#45;safe logger which calls functions implemented by subclasses." alt="" coords="48,229,156,257"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,266,200,351,195,352,122,271"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1Logger.html" title=" " alt="" coords="5,128,98,156"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="65,167,98,228,93,229,64,172"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="27,5,76,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="52,46,54,128,49,128,51,51"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="121,128,184,156"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="141,167,111,230,107,227,138,172"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="181,229,237,257"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="211,271,211,352,206,350,207,274"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="263,229,352,257"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="305,270,297,302,280,330,265,344,246,354,245,349,261,339,276,326,292,299,301,273"/>
+</map>

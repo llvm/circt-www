@@ -1,0 +1,30 @@
+<map id="circt::pretty::Token" name="circt::pretty::Token">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,316,146,343"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1pretty_1_1TokenBase.html" title=" " alt="" coords="619,147,812,208"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,302,147,247,221,178,265,143,313,110,364,81,416,59,461,46,498,41,535,45,580,59,682,146,676,147,577,64,534,50,498,46,462,51,418,64,366,86,316,114,268,147,225,182,151,250,100,305"/>
+<area shape="rect" id="Node000004" href="$structcirct_1_1pretty_1_1TokenBase.html" title=" " alt="" coords="619,5,812,67"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="83,300,99,260,122,211,153,161,193,117,241,83,294,57,350,39,407,27,465,20,521,18,621,22,616,25,521,23,465,25,408,32,351,44,296,62,244,87,197,121,158,164,126,213,103,262,88,302"/>
+<area shape="rect" id="Node000006" href="$structcirct_1_1pretty_1_1TokenBase.html" title=" " alt="" coords="628,368,803,430"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="111,349,169,383,243,421,328,457,418,482,499,494,534,492,577,482,663,431,668,429,579,487,534,497,498,499,417,487,327,462,241,426,166,387,111,355"/>
+<area shape="rect" id="Node000008" href="$structcirct_1_1pretty_1_1TokenBase.html" title=" " alt="" coords="602,483,829,528"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="90,355,108,387,131,422,161,456,196,482,245,504,297,520,350,530,404,535,509,535,599,528,604,528,510,540,404,541,350,535,296,525,243,509,194,486,157,460,127,426,104,390,89,360"/>
+<area shape="rect" id="Node000010" href="$structcirct_1_1pretty_1_1TokenBase.html" title=" " alt="" coords="619,249,812,311"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="134,346,223,368,334,386,395,390,457,390,518,383,577,370,666,313,671,310,579,375,519,389,457,395,395,395,334,391,222,373,135,351"/>
+<area shape="rect" id="Node000012" href="$structcirct_1_1pretty_1_1TokenBase.html" title="Helper class to CRTP&#45;derive common functions." alt="" coords="195,260,393,305"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="157,310,197,302,193,306,160,314"/>
+<area shape="rect" id="Node000003" href="$structcirct_1_1pretty_1_1BeginToken.html" title=" " alt="" coords="888,164,1065,191"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="827,175,890,177,885,178,828,180"/>
+<area shape="rect" id="Node000005" href="$structcirct_1_1pretty_1_1BreakToken.html" title=" " alt="" coords="887,22,1065,50"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="827,34,889,35,884,37,828,39"/>
+<area shape="rect" id="Node000007" href="$structcirct_1_1pretty_1_1CallbackToken.html" title=" " alt="" coords="878,385,1074,413"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="818,396,880,399,875,399,818,401"/>
+<area shape="rect" id="Node000009" href="$structcirct_1_1pretty_1_1EndToken.html" title=" " alt="" coords="894,492,1058,519"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="844,503,896,505,891,506,845,508"/>
+<area shape="rect" id="Node000011" href="$structcirct_1_1pretty_1_1StringToken.html" title="Token types." alt="" coords="887,266,1065,294"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="827,278,889,280,884,281,828,283"/>
+<area shape="poly" id="edge12_Node000012_Node000002" title=" " alt="" coords="351,251,417,226,520,201,621,186,616,189,521,206,418,231,354,256"/>
+<area shape="poly" id="edge13_Node000012_Node000004" title=" " alt="" coords="316,246,358,191,385,163,416,138,465,109,517,86,621,55,616,57,519,91,467,114,419,142,389,166,362,194,320,249"/>
+<area shape="poly" id="edge14_Node000012_Node000006" title=" " alt="" coords="358,309,418,332,527,361,631,384,625,385,526,366,417,337,358,314"/>
+<area shape="poly" id="edge15_Node000012_Node000008" title=" " alt="" coords="317,316,360,373,388,401,419,425,462,449,509,467,605,493,599,493,508,472,460,453,416,430,384,405,356,377,316,321"/>
+<area shape="poly" id="edge16_Node000012_Node000010" title=" " alt="" coords="408,279,621,280,616,282,409,285"/>
+</map>

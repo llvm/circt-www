@@ -1,0 +1,30 @@
+<map id="esi::TypedWritePort&lt; T, SkipTypeCheck &gt;" name="esi::TypedWritePort&lt; T, SkipTypeCheck &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1241,300,1406,345"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1WriteChannelPort.html" title="A ChannelPort which sends data to the accelerator." alt="" coords="962,260,1125,288"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1140,288,1243,308,1237,308,1140,293"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1ChannelPort.html" title="Unidirectional channels are the basic communication primitive between the host and accelerator." alt="" coords="610,98,737,125"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="752,104,797,105,845,111,894,123,940,143,974,169,1002,201,1038,261,1033,259,998,204,970,172,937,147,892,128,844,116,796,111,753,109"/>
+<area shape="rect" id="Node000004" href="$classesi_1_1Type.html" title="Root class of the ESI type system." alt="" coords="273,38,352,65"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="366,55,545,81,614,97,609,98,545,86,367,60"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="12,10,71,37"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="85,26,275,46,271,50,87,31"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,66,78,93"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="92,73,182,65,275,55,271,58,183,70,94,78"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="220,89,405,134"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="420,109,611,110,607,113,421,114"/>
+<area shape="rect" id="Node000008" href="$classesi_1_1MessageData.html" title="A concrete flat message backed by a single vector of bytes." alt="" coords="604,158,742,185"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="757,169,846,178,894,187,939,201,989,228,1029,260,1024,259,987,233,937,206,892,192,846,183,758,174"/>
+<area shape="rect" id="Node000009" href="$classesi_1_1SegmentedMessageData.html" title="Abstract multi&#45;segment message." alt="" coords="207,158,418,185"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="433,169,606,171,601,173,434,174"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="244,210,381,237"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="396,216,545,199,622,185,617,187,545,205,397,221"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="648,232,698,260"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="713,247,964,268,959,269,713,252"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="569,288,777,316"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="793,302,865,300,938,294,982,289,987,288,939,299,865,305,793,307"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="644,383,703,411"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="718,388,820,368,879,353,937,333,983,310,1020,289,1025,288,985,315,939,338,881,358,821,374,719,393"/>
+<area shape="rect" id="Node000014" href="$structesi_1_1WireInfo.html" title="Compute the wire byte count for a port type." alt="" coords="992,384,1095,412"/>
+<area shape="poly" id="edge14_Node000014_Node000013" title=" " alt="" coords="718,410,758,423,802,432,870,439,938,432,975,423,1008,413,1013,412,977,428,939,438,870,445,801,438,757,428,717,416"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="1110,378,1238,345,1243,344,1111,383"/>
+</map>

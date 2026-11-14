@@ -1,0 +1,9 @@
+<map id="circt::ReachableMuxes" name="circt::ReachableMuxes">
+<area shape="rect" id="Node000001" title=" " alt="" coords="344,75,511,102"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="38,5,149,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,26,320,55,383,74,378,74,319,60,164,32"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,58,182,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,86,345,87,341,90,197,91"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,144,182,188"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="197,143,319,116,375,104,381,102,320,121,198,149"/>
+</map>

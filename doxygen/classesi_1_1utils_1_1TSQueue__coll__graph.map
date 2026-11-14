@@ -1,0 +1,13 @@
+<map id="esi::utils::TSQueue&lt; T &gt;" name="esi::utils::TSQueue&lt; T &gt;">
+<area shape="rect" id="Node000001" title="Thread safe queue." alt="" coords="196,128,376,156"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,69,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,41,97,73,141,102,173,115,209,128,204,128,172,120,138,107,94,78,59,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="93,5,192,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,41,273,127,268,128,168,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="216,5,357,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="288,47,289,129,284,126,284,50"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="382,5,431,33"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="385,43,301,130,298,125,380,45"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="454,5,593,33"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="509,44,481,78,445,107,412,122,378,132,377,127,410,117,442,102,477,75,504,47"/>
+</map>

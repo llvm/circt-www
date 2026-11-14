@@ -1,0 +1,9 @@
+<map id="circt::lsp::PendingChanges" name="circt::lsp::PendingChanges">
+<area shape="rect" id="Node000001" title="Accumulated edits + timing for a single document key." alt="" coords="234,145,426,173"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,273,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,57,264,119,306,145,301,145,261,124,176,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="296,14,363,42"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="332,55,332,146,327,143,328,59"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="387,14,478,42"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="427,54,414,90,393,123,361,147,359,142,389,120,410,88,423,58"/>
+</map>

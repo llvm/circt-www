@@ -1,0 +1,9 @@
+<map id="esi::TSLogger" name="esi::TSLogger">
+<area shape="rect" id="Node000001" title="A thread&#45;safe logger which calls functions implemented by subclasses." alt="" coords="73,229,182,257"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1Logger.html" title=" " alt="" coords="5,128,98,156"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,166,120,228,115,229,69,171"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="27,5,76,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="52,46,54,128,49,127,51,51"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="121,128,184,156"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="148,170,133,230,129,227,143,172"/>
+</map>

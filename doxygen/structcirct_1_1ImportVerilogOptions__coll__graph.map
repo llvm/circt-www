@@ -1,0 +1,15 @@
+<map id="circt::ImportVerilogOptions" name="circt::ImportVerilogOptions">
+<area shape="rect" id="Node000001" title="Options that control how Verilog input files are parsed and processed." alt="" coords="424,454,619,481"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="61,35,119,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,38,192,29,263,29,300,33,336,42,370,56,401,76,442,119,472,169,494,224,509,281,518,335,522,384,523,455,518,452,517,384,513,336,504,282,489,226,468,172,438,122,398,80,368,61,334,47,299,38,262,34,192,35,135,42"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="65,135,115,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,147,197,148,277,153,351,164,380,172,401,183,433,213,459,248,479,287,494,327,514,401,521,455,516,452,508,402,489,328,474,289,454,251,429,216,398,187,378,177,350,169,276,158,197,153,132,151"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="11,414,169,441"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="184,434,425,457,421,461,184,439"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="11,492,169,520"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="184,510,288,511,399,502,442,492,485,481,480,483,444,497,400,507,288,516,185,515"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="24,615,156,643"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="171,639,225,642,283,640,343,630,398,609,438,581,470,546,495,510,511,484,515,480,499,512,474,549,441,585,401,614,344,635,284,645,225,647,172,644"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="5,671,175,699"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="167,699,222,706,282,706,342,696,371,686,398,673,424,654,446,630,480,576,502,522,515,484,519,480,507,524,485,578,450,634,427,658,401,678,373,691,344,701,282,711,221,711,167,705"/>
+</map>

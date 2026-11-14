@@ -1,0 +1,17 @@
+<map id="circt::igraph::InstanceGraphNode" name="circt::igraph::InstanceGraphNode">
+<area shape="rect" id="Node000001" title="This is a Node in the InstanceGraph." alt="" coords="315,198,549,226"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1igraph_1_1InstanceRecord.html" title="This is an edge in the InstanceGraph." alt="" coords="660,132,866,159"/>
+<area shape="poly" id="edge6_Node000005_Node000001" title=" " alt="" coords="564,193,635,180,715,160,721,159,637,185,565,198"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,130,197,174"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,165,291,179,371,197,366,198,290,184,212,171"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="28,198,174,226"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,210,317,211,312,213,189,215"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="9,254,193,282"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="208,253,290,240,366,227,371,226,291,245,209,258"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="741,169,695,210,667,228,637,241,593,249,547,247,505,240,470,229,471,224,506,234,548,242,592,244,635,236,665,223,692,206,736,171"/>
+<area shape="poly" id="edge8_Node000005_Node000005" title=" " alt="" coords="734,114,744,108,763,105,781,107,792,113,796,123,790,133,787,129,790,122,788,117,779,112,763,110,746,113,736,119"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="337,5,526,67"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="541,61,637,90,734,131,729,131,635,95,541,66"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="356,92,508,119"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="524,114,662,133,657,133,524,119"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="SerialCoordOutputBatch" name="SerialCoordOutputBatch">
+<area shape="rect" id="Node000001" title="Deserialized result batch from the serial coord translator." alt="" coords="5,106,183,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="29,5,159,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,47,97,106,91,105,92,50"/>
+</map>

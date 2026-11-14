@@ -1,0 +1,7 @@
+<map id="CollapseUnaryControl&lt; CtrlOp &gt;" name="CollapseUnaryControl&lt; CtrlOp &gt;">
+<area shape="rect" id="Node000001" title="This pattern collapses a calyx.seq or calyx.par operation when it contains exactly one calyx...." alt="" coords="8,217,172,262"/>
+<area shape="rect" id="Node000002" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="5,123,175,168"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,181,93,217,87,216,88,185"/>
+<area shape="rect" id="Node000003" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="5,5,175,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,63,93,123,87,122,89,68"/>
+</map>

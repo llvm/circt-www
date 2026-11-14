@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classesi_1_1BitVector.html" title="A lightweight, non&#45;owning bit vector view backed by a byte array span." alt="" coords="5,57,113,85"/>
+<area shape="rect" id="Node000001" href="$classesi_1_1IntView.html" title="Non&#45;owning view of a signed bit vector with toI64() and implicit conversions to signed scalar types." alt="" coords="192,5,290,33"/>
+<area shape="poly" id="edge233_Node000000_Node000001" title=" " alt="" coords="123,50,194,32,189,35,125,55"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1MutableBitVector.html" title="A mutable bit vector that owns its underlying storage." alt="" coords="161,57,321,85"/>
+<area shape="poly" id="edge234_Node000000_Node000002" title=" " alt="" coords="128,69,163,70,158,72,129,74"/>
+<area shape="rect" id="Node000005" href="$classesi_1_1UIntView.html" title="Non&#45;owning view of an unsigned bit vector with toUI64() and implicit conversions to unsigned scalar t..." alt="" coords="187,109,294,137"/>
+<area shape="poly" id="edge237_Node000000_Node000005" title=" " alt="" coords="125,87,192,108,187,110,124,92"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1Int.html" title=" " alt="" coords="374,32,439,60"/>
+<area shape="poly" id="edge235_Node000002_Node000003" title=" " alt="" coords="336,54,376,50,371,51,337,59"/>
+<area shape="rect" id="Node000004" href="$classesi_1_1UInt.html" title=" " alt="" coords="369,84,444,112"/>
+<area shape="poly" id="edge236_Node000002_Node000004" title=" " alt="" coords="337,84,371,92,366,92,336,89"/>
+</map>

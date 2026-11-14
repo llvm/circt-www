@@ -1,0 +1,5 @@
+<map id="circt::hw::ProbeTypeDialectInterface" name="circt::hw::ProbeTypeDialectInterface">
+<area shape="rect" id="Node000001" title="Interface for dialects to classify their types as valid probe payloads." alt="" coords="38,98,235,143"/>
+<area shape="rect" id="Node000002" href="$classmlir_1_1DialectInterface_1_1Base.html" title=" " alt="" coords="5,5,268,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,64,139,99,134,97,135,68"/>
+</map>

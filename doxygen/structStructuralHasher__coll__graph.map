@@ -1,0 +1,21 @@
+<map id="StructuralHasher" name="StructuralHasher">
+<area shape="rect" id="Node000001" title=" " alt="" coords="821,197,951,225"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="386,28,612,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="627,27,671,30,715,36,758,49,798,69,831,97,856,133,873,168,883,198,878,195,868,170,851,135,827,101,796,73,756,54,714,42,670,35,628,32"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="459,81,539,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="554,90,608,91,670,97,735,109,798,131,822,145,843,162,876,197,871,196,840,166,819,149,796,136,734,115,669,102,607,96,555,95"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="395,132,602,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="618,158,707,167,798,182,846,196,841,196,796,187,706,173,618,164"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="422,201,576,229"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="591,211,823,211,818,212,592,217"/>
+<area shape="rect" id="Node000006" href="$structStructuralHasherSharedConstants.html" title="This struct contains constant string attributes shared across different threads." alt="" coords="379,253,619,281"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="634,262,715,255,796,241,850,226,856,225,798,246,716,260,635,267"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="49,225,132,253"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="147,240,380,256,377,261,148,245"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="5,281,176,309"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="191,291,354,284,405,281,400,282,355,289,191,297"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="463,309,535,337"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="550,325,603,327,666,324,733,313,796,292,820,278,841,259,872,226,877,224,845,263,823,282,798,297,734,318,667,329,603,332,550,330"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="469,365,528,393"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="544,385,598,391,664,392,732,382,765,372,796,356,828,327,852,290,869,253,879,227,883,223,874,255,857,293,832,331,798,361,767,376,734,387,664,398,598,397,544,390"/>
+</map>

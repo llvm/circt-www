@@ -1,0 +1,11 @@
+<map id="circt::arc::ModelInfo" name="circt::arc::ModelInfo">
+<area shape="rect" id="Node000001" title="Gathers information about a given Arc model." alt="" coords="111,145,262,173"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,14,64,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="36,54,44,90,51,106,61,119,84,136,113,149,108,150,82,141,57,123,46,108,39,91,34,59"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="88,14,147,42"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="112,54,112,89,114,105,121,120,132,133,148,145,143,144,129,137,116,123,109,107,106,89,109,59"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="185,5,327,50"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="251,63,243,95,229,123,206,147,203,143,224,120,238,93,247,67"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="350,14,492,42"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="399,51,355,89,301,124,241,147,239,142,299,119,351,85,394,53"/>
+</map>

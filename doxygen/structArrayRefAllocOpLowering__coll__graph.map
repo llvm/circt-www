@@ -1,0 +1,9 @@
+<map id="ArrayRefAllocOpLowering" name="ArrayRefAllocOpLowering">
+<area shape="rect" id="Node000001" title=" " alt="" coords="117,241,304,268"/>
+<area shape="rect" id="Node000002" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="5,123,198,168"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,176,200,240,195,241,133,181"/>
+<area shape="rect" id="Node000003" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="5,5,198,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="103,63,104,123,99,122,100,68"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="222,123,418,168"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="290,178,225,243,223,238,285,179"/>
+</map>

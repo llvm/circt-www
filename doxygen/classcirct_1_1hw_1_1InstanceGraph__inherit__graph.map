@@ -1,0 +1,5 @@
+<map id="circt::hw::InstanceGraph" name="circt::hw::InstanceGraph">
+<area shape="rect" id="Node000001" title="HW&#45;specific instance graph with a virtual entry node linking to all publicly visible modules." alt="" coords="17,81,194,109"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1igraph_1_1InstanceGraph.html" title="This graph tracks modules and where they are instantiated." alt="" coords="5,5,206,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,47,108,82,103,79,104,51"/>
+</map>

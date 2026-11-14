@@ -1,0 +1,37 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Sim/SimTypes.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Sim/SimTypes.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1528,5,1715,84"/>
+<area shape="rect" id="Node000002" href="$SimOps_8h.html" title=" " alt="" coords="1463,132,1650,211"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1597,96,1578,134,1575,129,1592,99"/>
+<area shape="rect" id="Node000007" href="$SimToSV_8cpp.html" title=" " alt="" coords="5,259,193,337"/>
+<area shape="poly" id="edge16_Node000001_Node000007" title=" " alt="" coords="1510,55,1274,81,948,122,766,149,578,181,389,219,205,261,194,264,192,259,204,256,388,213,577,176,765,144,948,117,1274,76,1515,55"/>
+<area shape="rect" id="Node000015" href="$ProceduralizeSim_8cpp.html" title=" " alt="" coords="2934,259,3130,337"/>
+<area shape="poly" id="edge18_Node000001_Node000015" title=" " alt="" coords="1648,96,1686,168,1714,209,1744,220,1792,229,1931,242,2111,248,2311,249,2694,248,2838,250,2923,256,2936,261,2931,261,2923,261,2838,255,2694,253,2311,254,2111,253,1931,247,1791,235,1743,225,1711,213,1682,170,1646,100"/>
+<area shape="rect" id="Node000017" href="$SimTypes_8cpp.html" title=" " alt="" coords="1724,140,1938,202"/>
+<area shape="poly" id="edge17_Node000001_Node000017" title=" " alt="" coords="1700,90,1783,140,1778,139,1699,95"/>
+<area shape="rect" id="Node000003" href="$LowerArcToLLVM_8cpp.html" title=" " alt="" coords="217,259,408,337"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1444,178,1211,192,915,209,628,233,510,247,421,261,409,264,408,259,420,256,510,241,628,228,914,204,1210,186,1450,177"/>
+<area shape="rect" id="Node000004" href="$ConvertToArcs_8cpp.html" title=" " alt="" coords="433,259,648,337"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="1445,176,1293,186,1096,201,878,225,661,261,649,264,648,259,660,256,877,220,1095,196,1292,181,1450,175"/>
+<area shape="rect" id="Node000005" href="$LowerToHW_8cpp.html" title=" " alt="" coords="672,259,875,337"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="1445,180,1190,209,1038,232,888,261,876,264,875,259,886,256,1037,226,1190,204,1450,180"/>
+<area shape="rect" id="Node000006" href="$MooreToCore_8cpp.html" title=" " alt="" coords="899,259,1107,337"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="1450,190,1292,222,1120,261,1108,265,1107,259,1118,256,1291,217,1444,191"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="1445,181,732,223,381,246,205,261,194,264,192,259,204,256,380,241,732,218,1449,177"/>
+<area shape="rect" id="Node000008" href="$LowerState_8cpp.html" title=" " alt="" coords="1131,259,1323,337"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="1451,213,1324,263,1323,258,1446,214"/>
+<area shape="rect" id="Node000009" href="$SplitLoops_8cpp.html" title=" " alt="" coords="1347,259,1539,337"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="1513,221,1479,261,1477,256,1508,223"/>
+<area shape="rect" id="Node000010" href="$LowerDPI_8cpp.html" title=" " alt="" coords="1563,259,1779,337"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="1603,220,1638,259,1633,257,1601,225"/>
+<area shape="rect" id="Node000011" href="$SimDialect_8cpp.html" title=" " alt="" coords="1802,267,2025,329"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="1665,208,1830,267,1824,266,1664,213"/>
+<area shape="rect" id="Node000012" href="$SimOps_8cpp.html" title=" " alt="" coords="2049,267,2250,329"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="1665,207,1669,208,1771,226,1853,232,1934,238,2037,256,2069,267,2063,266,2036,261,1933,243,1852,237,1771,231,1668,213,1665,213"/>
+<area shape="rect" id="Node000013" href="$FoldValueFormatters_8cpp.html" title=" " alt="" coords="2274,259,2470,337"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="1665,207,1669,208,1758,223,1834,230,1966,232,2097,233,2174,240,2264,256,2276,261,2271,261,2262,261,2173,246,2097,238,1966,237,1834,236,1757,229,1668,213,1665,213"/>
+<area shape="rect" id="Node000014" href="$LowerDPIFunc_8cpp.html" title=" " alt="" coords="2494,259,2690,337"/>
+<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="1665,207,1669,208,1791,227,1896,235,1989,235,2076,232,2163,228,2256,228,2361,236,2483,256,2496,261,2491,261,2483,261,2360,242,2256,234,2163,233,2076,237,1989,240,1896,240,1791,232,1668,213,1665,213"/>
+<area shape="poly" id="edge14_Node000002_Node000015" title=" " alt="" coords="1665,207,1669,208,1767,224,1858,235,2019,244,2162,240,2296,231,2430,222,2573,219,2734,228,2825,240,2923,256,2936,261,2931,261,2923,261,2824,245,2734,234,2573,224,2430,227,2296,237,2162,246,2019,249,1857,240,1766,229,1668,213,1665,213"/>
+<area shape="rect" id="Node000016" href="$SquashSimTriggered_8cpp.html" title=" " alt="" coords="2714,259,2910,337"/>
+<area shape="poly" id="edge15_Node000002_Node000016" title=" " alt="" coords="1665,207,1669,208,1824,231,1957,239,2075,238,2186,231,2296,225,2414,224,2548,232,2703,256,2716,261,2711,261,2703,261,2547,238,2414,229,2296,230,2186,237,2075,243,1957,245,1824,236,1668,213,1665,213"/>
+</map>

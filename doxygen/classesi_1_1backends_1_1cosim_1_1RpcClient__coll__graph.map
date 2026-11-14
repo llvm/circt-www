@@ -1,0 +1,7 @@
+<map id="esi::backends::cosim::RpcClient" name="esi::backends::cosim::RpcClient">
+<area shape="rect" id="Node000001" title="A client for the cosim RPC server." alt="" coords="77,145,233,190"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,14,86,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="39,54,39,89,42,105,49,120,62,134,79,146,74,147,58,138,45,123,37,107,34,89,38,59"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="182,5,349,50"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="262,64,254,95,238,123,209,147,206,142,234,120,249,93,259,67"/>
+</map>

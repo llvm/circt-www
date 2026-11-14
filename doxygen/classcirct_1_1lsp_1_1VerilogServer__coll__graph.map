@@ -1,0 +1,5 @@
+<map id="circt::lsp::VerilogServer" name="circt::lsp::VerilogServer">
+<area shape="rect" id="Node000001" title="This class implements all of the Verilog related functionality necessary for a language server." alt="" coords="5,140,177,168"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="19,5,163,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,81,94,140,88,139,89,84"/>
+</map>

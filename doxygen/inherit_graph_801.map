@@ -1,0 +1,27 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,312,127,340"/>
+<area shape="rect" id="Node000001" href="$classcirct_1_1systemc_1_1BigIntType.html" title="Represents a finite word&#45;length signed integer in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="193,5,382,33"/>
+<area shape="poly" id="edge622_Node000000_Node000001" title=" " alt="" coords="67,296,76,242,94,174,107,138,125,104,147,72,173,44,195,31,192,36,176,48,151,75,129,106,112,140,99,176,81,243,72,297"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1systemc_1_1BigUIntType.html" title="Represents a finite word&#45;length unsigned integer in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="188,57,386,85"/>
+<area shape="poly" id="edge623_Node000000_Node000002" title=" " alt="" coords="70,297,81,252,101,197,131,142,150,116,173,94,194,83,191,88,176,99,154,120,135,144,105,199,86,253,75,298"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1systemc_1_1BitVectorBaseType.html" title="Represents a finite word&#45;length bit vector in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="198,109,377,154"/>
+<area shape="poly" id="edge624_Node000000_Node000003" title=" " alt="" coords="76,297,113,230,140,194,173,164,199,150,196,155,176,168,144,198,118,233,81,299"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1systemc_1_1BitVectorType.html" title="Represents a finite word&#45;length bit vector in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="183,177,392,205"/>
+<area shape="poly" id="edge625_Node000000_Node000004" title=" " alt="" coords="84,298,122,255,147,234,173,215,205,204,201,207,176,220,150,238,126,259,89,301"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1systemc_1_1IntBaseType.html" title="Represents a limited word&#45;length signed integer in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="188,229,387,257"/>
+<area shape="poly" id="edge626_Node000000_Node000005" title=" " alt="" coords="102,302,174,267,216,256,213,259,176,272,106,306"/>
+<area shape="rect" id="Node000006" href="$classcirct_1_1systemc_1_1IntType.html" title="Represents a limited word&#45;length signed integer in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="204,281,371,309"/>
+<area shape="poly" id="edge627_Node000000_Node000006" title=" " alt="" coords="141,313,205,305,201,309,143,318"/>
+<area shape="rect" id="Node000007" href="$classcirct_1_1systemc_1_1LogicVectorBaseType.html" title="Represents a finite word&#45;length bit vector in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="190,333,385,378"/>
+<area shape="poly" id="edge628_Node000000_Node000007" title=" " alt="" coords="141,333,192,341,187,344,143,338"/>
+<area shape="rect" id="Node000008" href="$classcirct_1_1systemc_1_1LogicVectorType.html" title="Represents a finite word&#45;length bit vector (of four&#45;state values) in SystemC as described in IEEE 166..." alt="" coords="175,401,400,429"/>
+<area shape="poly" id="edge629_Node000000_Node000008" title=" " alt="" coords="99,346,136,368,176,387,211,400,206,402,174,392,133,373,100,351"/>
+<area shape="rect" id="Node000009" href="$classcirct_1_1systemc_1_1SignedType.html" title="Represents a finite word&#45;length signed integer in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="190,453,384,481"/>
+<area shape="poly" id="edge630_Node000000_Node000009" title=" " alt="" coords="85,350,125,396,149,419,176,438,205,452,200,454,173,443,146,423,121,400,85,355"/>
+<area shape="rect" id="Node000010" href="$classcirct_1_1systemc_1_1UIntBaseType.html" title="Represents a limited word&#45;length unsigned integer in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="183,505,392,533"/>
+<area shape="poly" id="edge631_Node000000_Node000010" title=" " alt="" coords="78,352,95,386,116,423,143,460,176,490,200,504,195,505,173,495,139,463,111,426,90,388,78,357"/>
+<area shape="rect" id="Node000011" href="$classcirct_1_1systemc_1_1UIntType.html" title="Represents a limited word&#45;length unsigned integer in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="199,557,376,585"/>
+<area shape="poly" id="edge632_Node000000_Node000011" title=" " alt="" coords="73,352,88,397,108,448,137,499,155,522,176,542,201,558,195,558,173,547,151,526,132,502,103,450,83,398,73,358"/>
+<area shape="rect" id="Node000012" href="$classcirct_1_1systemc_1_1UnsignedType.html" title="Represents a finite word&#45;length unsigned integer in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="182,609,393,637"/>
+<area shape="poly" id="edge633_Node000000_Node000012" title=" " alt="" coords="71,353,82,407,100,472,131,538,151,568,176,594,196,609,191,609,173,599,147,572,126,541,95,474,77,408,70,358"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="esi::services::ChannelService" name="esi::services::ChannelService">
+<area shape="rect" id="Node000001" title="Service for raw communication channels to/from the accelerator." alt="" coords="5,81,217,109"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1services_1_1Service.html" title="Parent class of all APIs modeled as &#39;services&#39;." alt="" coords="32,5,190,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,47,113,82,109,79,109,51"/>
+</map>

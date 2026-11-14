@@ -1,0 +1,7 @@
+<map id="circt::detail::OpSCCIterator&lt; BaseIteratorT &gt;" name="circt::detail::OpSCCIterator&lt; BaseIteratorT &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="369,61,563,106"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="12,5,240,84"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="255,57,371,72,366,73,255,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,108,247,136"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="262,106,344,96,366,96,371,96,345,102,262,111"/>
+</map>

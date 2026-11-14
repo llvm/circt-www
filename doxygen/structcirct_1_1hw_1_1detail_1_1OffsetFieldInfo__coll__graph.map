@@ -1,0 +1,9 @@
+<map id="circt::hw::detail::OffsetFieldInfo" name="circt::hw::detail::OffsetFieldInfo">
+<area shape="rect" id="Node000001" title="Struct defining a field with an offset. Used in unions." alt="" coords="75,106,203,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,89,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="63,44,91,80,115,105,110,106,87,84,62,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="113,5,165,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="141,47,142,106,136,104,137,51"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="189,5,249,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="207,45,184,84,163,108,160,103,180,80,203,48"/>
+</map>

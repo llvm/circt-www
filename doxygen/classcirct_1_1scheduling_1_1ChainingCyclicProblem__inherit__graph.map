@@ -1,0 +1,10 @@
+<map id="circt::scheduling::ChainingCyclicProblem" name="circt::scheduling::ChainingCyclicProblem">
+<area shape="rect" id="Node000001" title="This class models the accumulation of physical propagation delays on combinational paths along SSA de..." alt="" coords="67,191,239,235"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1scheduling_1_1ChainingProblem.html" title="This class models the accumulation of physical propagation delays on combinational paths along SSA de..." alt="" coords="5,98,141,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,152,137,190,132,191,101,157"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1scheduling_1_1Problem.html" title="This class models the most basic scheduling problem." alt="" coords="85,5,221,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="122,64,94,99,90,96,125,60"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1scheduling_1_1CyclicProblem.html" title="This class models a cyclic scheduling problem." alt="" coords="165,98,301,143"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="183,59,217,98,212,98,182,64"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="206,153,173,193,170,188,201,156"/>
+</map>

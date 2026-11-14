@@ -1,0 +1,69 @@
+<map id="circt::scftocalyx::ComponentLoweringState" name="circt::scftocalyx::ComponentLoweringState">
+<area shape="rect" id="Node000001" title="Handles the current state of lowering of a Calyx component." alt="" coords="1559,1069,1749,1113"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1calyx_1_1ComponentLoweringStateInterface.html" title=" " alt="" coords="1273,386,1507,431"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1407,443,1647,1068,1641,1068,1404,447"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="883,386,998,414"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1012,401,1095,404,1275,408,1270,410,1095,409,1014,406"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="854,439,1027,500"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="1041,460,1141,450,1245,436,1289,430,1284,432,1246,441,1141,455,1043,465"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="860,525,1021,604"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="1035,545,1138,520,1245,485,1303,458,1356,429,1352,432,1305,463,1247,490,1139,525,1037,550"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="834,628,1047,655"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="1061,626,1155,602,1201,584,1244,562,1285,531,1320,495,1372,433,1376,429,1324,499,1288,535,1247,566,1203,589,1156,607,1063,631"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="856,679,1025,724"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="1040,704,1091,700,1144,691,1196,675,1244,650,1272,627,1297,599,1336,538,1364,477,1381,433,1384,429,1369,479,1341,540,1301,603,1276,630,1247,654,1198,680,1145,696,1091,705,1041,709"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="848,749,1033,793"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="1048,779,1098,778,1149,770,1199,755,1244,730,1279,698,1307,660,1330,618,1349,575,1372,492,1384,433,1388,429,1378,493,1354,576,1335,620,1312,663,1283,701,1247,734,1201,760,1150,775,1098,783,1049,784"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="856,23,1025,68"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="1039,28,1091,27,1146,33,1199,47,1247,73,1284,106,1314,146,1337,190,1356,235,1379,321,1389,387,1384,385,1374,322,1351,237,1332,192,1309,149,1280,110,1244,77,1197,52,1145,38,1091,33,1042,33"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="841,93,1040,137"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="1055,99,1104,100,1153,106,1202,119,1247,142,1278,167,1305,197,1327,231,1345,266,1372,333,1386,386,1381,384,1367,334,1340,268,1322,233,1300,201,1274,171,1244,146,1200,124,1152,111,1103,105,1057,104"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="856,162,1025,207"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="1039,172,1090,172,1144,177,1197,190,1247,211,1272,229,1295,249,1334,297,1363,345,1382,386,1377,385,1358,347,1330,300,1292,253,1269,233,1244,216,1195,195,1143,182,1090,177,1041,176"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="824,230,1057,258"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="1072,236,1160,245,1205,256,1247,271,1287,295,1323,325,1375,386,1370,385,1319,329,1284,299,1245,276,1203,261,1159,250,1073,241"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="912,282,969,310"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="984,294,1104,302,1176,312,1247,330,1305,354,1357,385,1352,386,1303,359,1245,335,1175,318,1104,307,986,299"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="846,334,1035,362"/>
+<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="1050,356,1246,379,1275,385,1270,386,1245,384,1051,361"/>
+<area shape="rect" id="Node000015" href="$classcirct_1_1scftocalyx_1_1WhileLoopLoweringStateInterface.html" title=" " alt="" coords="1270,919,1510,964"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="1470,968,1511,987,1574,1027,1628,1069,1622,1068,1571,1032,1509,992,1470,973"/>
+<area shape="rect" id="Node000016" href="$classcirct_1_1calyx_1_1LoopLoweringStateInterface.html" title=" " alt="" coords="831,818,1050,863"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="1058,864,1290,918,1285,919,1058,869"/>
+<area shape="rect" id="Node000017" href="$classDenseMap_3_01Operation_01_5_00_01DenseMap_3_01unsigned_00_01calyx_1_1RegisterOp_01_4_01_4.html" title=" " alt="" coords="5,985,193,1047"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="206,979,216,976,302,958,375,949,502,942,628,935,701,924,786,904,844,884,899,862,894,864,846,889,787,909,702,929,628,940,502,948,376,954,303,964,217,981,209,983"/>
+<area shape="rect" id="Node000020" href="$classcirct_1_1calyx_1_1LoopLoweringStateInterface.html" title=" " alt="" coords="358,831,548,876"/>
+<area shape="poly" id="edge20_Node000020_Node000017" title=" " alt="" coords="159,975,215,943,302,905,386,875,382,878,304,910,218,948,163,979"/>
+<area shape="rect" id="Node000022" href="$classcirct_1_1calyx_1_1LoopLoweringStateInterface.html" title=" " alt="" coords="840,977,1041,1021"/>
+<area shape="poly" id="edge25_Node000022_Node000017" title=" " alt="" coords="202,1049,217,1051,249,1054,275,1054,334,1051,441,1053,548,1051,701,1035,842,1016,837,1017,702,1040,548,1056,441,1059,334,1056,275,1059,249,1060,216,1056,204,1054"/>
+<area shape="rect" id="Node000023" href="$classcirct_1_1scftocalyx_1_1IfLoweringStateInterface.html" title=" " alt="" coords="362,1121,544,1165"/>
+<area shape="poly" id="edge32_Node000023_Node000017" title=" " alt="" coords="137,1055,175,1088,218,1113,253,1126,290,1134,364,1144,359,1146,289,1140,251,1131,216,1118,172,1092,137,1061"/>
+<area shape="rect" id="Node000018" href="$classDenseMap_3_01Operation_01_5_00_01calyx_1_1GroupOp_01_4.html" title=" " alt="" coords="14,827,184,872"/>
+<area shape="poly" id="edge17_Node000016_Node000018" title=" " alt="" coords="178,819,333,760,357,750,422,739,477,734,527,736,573,743,668,768,787,799,854,817,849,818,786,804,666,773,572,748,526,742,478,740,423,744,358,755,335,765,181,824"/>
+<area shape="poly" id="edge21_Node000020_Node000018" title=" " alt="" coords="198,848,359,851,355,854,200,853"/>
+<area shape="poly" id="edge26_Node000022_Node000018" title=" " alt="" coords="198,853,280,865,313,875,335,888,345,899,348,912,348,936,347,958,351,968,359,978,383,987,427,994,554,1001,703,1002,842,1001,837,1003,703,1007,554,1006,426,999,382,992,356,982,346,971,342,959,342,935,343,912,340,902,332,892,311,880,279,871,200,858"/>
+<area shape="poly" id="edge31_Node000023_Node000018" title=" " alt="" coords="124,882,167,939,218,996,359,1099,397,1120,391,1120,356,1104,215,1000,163,942,124,888"/>
+<area shape="rect" id="Node000019" href="$classDenseMap_3_01Operation_01_5_00_01SmallVector_3_01calyx_1_1GroupOp_01_4_01_4.html" title=" " alt="" coords="14,661,184,723"/>
+<area shape="poly" id="edge18_Node000016_Node000019" title=" " alt="" coords="197,673,216,671,275,668,334,671,405,674,468,673,576,670,627,675,677,689,730,714,788,753,798,766,801,779,804,792,812,804,833,819,828,819,808,807,799,794,796,781,793,768,785,757,728,718,675,694,626,681,576,676,468,678,405,679,334,676,275,673,217,676,201,677"/>
+<area shape="poly" id="edge22_Node000020_Node000019" title=" " alt="" coords="180,728,359,810,401,830,396,831,357,815,181,733"/>
+<area shape="poly" id="edge27_Node000022_Node000019" title=" " alt="" coords="198,678,234,680,270,685,304,697,335,716,347,732,349,749,350,766,359,780,572,820,787,859,829,885,867,916,924,977,918,976,863,920,826,889,785,864,571,825,356,785,345,768,343,750,342,734,332,720,302,702,269,691,234,685,200,683"/>
+<area shape="poly" id="edge19_Node000016_Node000020" title=" " alt="" coords="563,834,572,834,707,829,833,833,828,835,707,834,572,839,565,839"/>
+<area shape="poly" id="edge28_Node000022_Node000020" title=" " alt="" coords="545,878,865,975,860,977,545,883"/>
+<area shape="rect" id="Node000021" href="$classcirct_1_1scftocalyx_1_1ForLoopLoweringStateInterface.html" title=" " alt="" coords="1278,1002,1502,1047"/>
+<area shape="poly" id="edge23_Node000001_Node000021" title=" " alt="" coords="1496,1048,1565,1068,1560,1068,1495,1054"/>
+<area shape="poly" id="edge24_Node000021_Node000022" title=" " alt="" coords="1056,1003,1280,1018,1275,1018,1057,1008"/>
+<area shape="poly" id="edge29_Node000001_Node000023" title=" " alt="" coords="559,1136,1559,1092,1559,1098,559,1141"/>
+<area shape="rect" id="Node000024" title=" " alt="" coords="14,1179,184,1224"/>
+<area shape="poly" id="edge30_Node000023_Node000024" title=" " alt="" coords="199,1189,333,1169,365,1165,360,1167,334,1175,200,1194"/>
+<area shape="rect" id="Node000025" href="$classcirct_1_1scftocalyx_1_1SeqOpLoweringStateInterface.html" title="Stores the state information for condition checks involving sequential computation." alt="" coords="572,1173,786,1217"/>
+<area shape="poly" id="edge34_Node000025_Node000024" title=" " alt="" coords="199,1216,217,1217,310,1221,404,1219,574,1208,569,1209,405,1224,310,1226,216,1223,200,1221"/>
+<area shape="poly" id="edge33_Node000001_Node000025" title=" " alt="" coords="801,1186,1192,1159,1391,1142,1535,1123,1581,1114,1586,1113,1536,1128,1391,1147,1193,1165,802,1191"/>
+<area shape="rect" id="Node000026" href="$classcirct_1_1calyx_1_1SchedulerInterface.html" title=" " alt="" coords="1279,1205,1501,1249"/>
+<area shape="poly" id="edge35_Node000001_Node000026" title=" " alt="" coords="1489,1196,1534,1177,1584,1145,1625,1115,1630,1113,1587,1149,1537,1181,1490,1201"/>
+<area shape="rect" id="Node000027" href="$classDenseMap_3_01mlir_1_1Block_01_5_00_01SmallVector_3_01Scheduleable_01_4_01_4.html" title=" " alt="" coords="815,1205,1066,1249"/>
+<area shape="poly" id="edge36_Node000026_Node000027" title=" " alt="" coords="1081,1224,1281,1227,1275,1227,1081,1230"/>
+<area shape="rect" id="Node000028" href="$classcirct_1_1calyx_1_1SchedulerInterface.html" title="Holds common utilities used for scheduling when lowering to Calyx." alt="" coords="810,1274,1071,1302"/>
+<area shape="poly" id="edge37_Node000026_Node000028" title=" " alt="" coords="1086,1274,1245,1255,1284,1250,1290,1250,1246,1260,1086,1279"/>
+<area shape="rect" id="Node000029" title=" " alt="" coords="365,1267,540,1312"/>
+<area shape="poly" id="edge38_Node000028_Node000029" title=" " alt="" coords="556,1287,813,1288,807,1289,556,1292"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="circt::firrtl::FIRParserOptions" name="circt::firrtl::FIRParserOptions">
+<area shape="rect" id="Node000001" title=" " alt="" coords="330,173,484,218"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,132,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,46,67,73,70,99,78,125,93,147,108,158,131,167,192,179,263,187,333,193,327,193,262,192,191,185,130,172,106,162,89,151,73,128,64,101,61,73,64,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="198,5,278,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="237,46,243,99,251,125,266,147,295,170,333,186,327,185,293,174,262,151,247,127,238,100,234,51"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="382,5,432,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="409,47,410,174,405,172,405,50"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="530,5,687,33"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="612,47,607,100,597,127,581,151,560,168,536,180,485,194,484,189,534,175,557,163,577,147,593,125,602,99,608,50"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="712,5,943,33"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="823,46,803,102,785,129,762,151,741,162,712,171,640,183,560,191,484,195,484,190,559,186,640,178,711,165,739,157,759,147,781,126,798,100,819,50"/>
+</map>

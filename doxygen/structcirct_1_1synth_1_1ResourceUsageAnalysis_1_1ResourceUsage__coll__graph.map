@@ -1,0 +1,5 @@
+<map id="circt::synth::ResourceUsageAnalysis::ResourceUsage" name="circt::synth::ResourceUsageAnalysis::ResourceUsage">
+<area shape="rect" id="Node000001" title="Resource usage counts for a set of operations." alt="" coords="5,106,208,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="21,5,192,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,47,109,106,104,105,105,51"/>
+</map>

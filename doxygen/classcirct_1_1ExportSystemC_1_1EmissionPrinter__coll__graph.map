@@ -1,0 +1,21 @@
+<map id="circt::ExportSystemC::EmissionPrinter" name="circt::ExportSystemC::EmissionPrinter">
+<area shape="rect" id="Node000001" title="This is intended to be the driving class for all pattern&#45;based IR emission." alt="" coords="1122,273,1280,318"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1ExportSystemC_1_1FrozenEmissionPatternSet.html" title=" " alt="" coords="766,5,965,84"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="979,87,1042,120,1100,161,1128,188,1152,218,1189,273,1184,271,1148,221,1124,192,1097,165,1039,125,978,92"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1ExportSystemC_1_1FrozenEmissionPatternSet.html" title="This class intends to collect a set of emission patterns in a way to provide fast lookups,..." alt="" coords="322,116,520,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="498,108,543,91,658,66,769,52,764,54,659,71,545,97,500,112"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1ExportSystemC_1_1FrozenEmissionPatternSet.html" title=" " alt="" coords="762,108,969,187"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="535,145,764,146,759,148,536,150"/>
+<area shape="rect" id="Node000006" href="$classcirct_1_1ExportSystemC_1_1FrozenEmissionPatternSet.html" title=" " alt="" coords="765,211,966,289"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="500,182,545,197,658,223,767,241,762,241,657,228,543,203,500,187"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,116,237,178"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="251,145,324,146,319,149,253,150"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="984,186,1099,234,1166,273,1161,272,1097,239,983,191"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="982,263,1125,285,1119,285,982,268"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="774,314,958,341"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="973,321,1098,311,1119,311,1124,310,1099,316,974,326"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="841,366,890,393"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="906,377,995,371,1047,363,1097,350,1133,334,1164,319,1170,317,1136,339,1099,355,1048,368,996,376,906,382"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="828,422,904,449"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="919,435,960,434,1005,429,1053,418,1097,401,1124,383,1148,361,1183,319,1188,317,1152,365,1127,387,1100,405,1054,423,1006,434,960,439,919,440"/>
+</map>

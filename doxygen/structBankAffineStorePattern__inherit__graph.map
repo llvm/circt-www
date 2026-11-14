@@ -1,0 +1,7 @@
+<map id="BankAffineStorePattern" name="BankAffineStorePattern">
+<area shape="rect" id="Node000001" title=" " alt="" coords="29,217,202,245"/>
+<area shape="rect" id="Node000002" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="5,123,226,168"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,181,118,218,113,215,114,185"/>
+<area shape="rect" id="Node000003" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="31,5,200,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,64,118,123,113,122,114,68"/>
+</map>

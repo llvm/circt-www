@@ -1,0 +1,5 @@
+<map id="esi::services::MMIO::RegionDescriptor" name="esi::services::MMIO::RegionDescriptor">
+<area shape="rect" id="Node000001" title="Describe a region (slice) of MMIO space." alt="" coords="5,128,154,173"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="42,5,117,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,47,82,129,77,128,77,50"/>
+</map>

@@ -1,0 +1,24 @@
+<map id="TechLibraryPattern" name="TechLibraryPattern">
+<area shape="rect" id="Node000001" title="Simple technology library encoded as a HWModuleOp." alt="" coords="867,136,1009,164"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1synth_1_1CutRewritePattern.html" title="Base class for cut rewriting patterns used in combinational logic optimization." alt="" coords="579,8,752,53"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="767,46,807,58,845,73,890,103,925,137,920,135,887,108,842,78,805,63,767,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="258,16,374,44"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="389,28,581,29,576,32,390,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="614,76,718,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="734,96,844,117,900,136,894,136,843,122,734,102"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="591,128,740,173"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="756,148,869,150,864,151,756,153"/>
+<area shape="rect" id="Node000006" href="$classhw_1_1HWModuleOp.html" title=" " alt="" coords="600,196,732,224"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="747,197,843,178,894,165,899,164,844,183,748,202"/>
+<area shape="rect" id="Node000007" href="$structcirct_1_1NPNClass.html" title="Represents the canonical form of a boolean function under NPN equivalence." alt="" coords="606,250,726,278"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="741,252,792,241,842,222,887,193,920,166,925,164,890,197,845,227,793,246,742,258"/>
+<area shape="rect" id="Node000008" href="$structcirct_1_1BinaryTruthTable.html" title="Represents a boolean function as a truth table." alt="" coords="233,251,398,279"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="414,262,608,263,603,264,414,267"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="5,218,86,246"/>
+<area shape="poly" id="edge11_Node000007_Node000009" title=" " alt="" coords="100,215,109,213,154,211,198,213,377,215,456,219,555,232,622,249,616,249,555,237,455,224,377,220,198,218,154,216,110,218,102,219"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="83,250,110,260,172,269,235,272,230,273,172,275,109,266,83,256"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="18,307,73,335"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="88,316,141,311,197,301,221,292,265,280,270,279,223,297,198,306,141,316,89,321"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="222,306,410,334"/>
+<area shape="poly" id="edge10_Node000007_Node000011" title=" " alt="" coords="425,310,554,293,619,279,624,278,556,298,425,315"/>
+</map>

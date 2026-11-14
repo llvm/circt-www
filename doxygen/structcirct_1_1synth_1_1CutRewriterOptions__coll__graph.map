@@ -1,0 +1,13 @@
+<map id="circt::synth::CutRewriterOptions" name="circt::synth::CutRewriterOptions">
+<area shape="rect" id="Node000001" title="Configuration options for the cut&#45;based rewriting algorithm." alt="" coords="224,251,403,296"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,106,166,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,146,120,188,136,208,154,225,188,244,227,259,221,260,186,249,151,229,132,212,116,191,95,151"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="189,106,270,134"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="224,147,223,188,226,208,233,226,244,238,258,251,253,250,240,242,229,229,221,209,217,188,221,151"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="373,106,422,134"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="396,148,388,189,370,229,348,253,345,249,366,226,383,187,393,151"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1NPNTable.html" title="Precomputed NPN canonicalization table for 4&#45;input single&#45;output functions." alt="" coords="504,106,624,134"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="566,147,559,191,549,212,535,229,513,242,481,252,404,266,403,261,480,247,511,237,532,225,545,209,553,189,562,151"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="492,5,636,33"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="566,47,566,107,562,104,563,51"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="circt::firrtl::FieldRefCache" name="circt::firrtl::FieldRefCache">
+<area shape="rect" id="Node000001" title="Caching version of getFieldRefFromValue." alt="" coords="63,168,249,195"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,171,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,63,153,167,147,167,102,67"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="194,14,254,42"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,55,180,145,166,169,162,165,175,142,212,57"/>
+</map>

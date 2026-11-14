@@ -1,0 +1,11 @@
+<map id="esiaccel.types.WindowType" name="esiaccel.types.WindowType">
+<area shape="rect" id="Node000001" title=" " alt="" coords="125,207,326,234"/>
+<area shape="rect" id="Node000002" href="$classesiaccel_1_1types_1_1ESIType.html" title=" " alt="" coords="5,106,174,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,140,210,205,205,207,118,145"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="70,5,109,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,46,92,106,87,105,88,51"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="198,106,253,134"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="228,148,228,207,223,205,223,151"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="453,106,494,134"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="469,147,460,169,446,185,425,195,397,203,326,214,326,209,395,198,424,190,443,181,456,166,465,150"/>
+</map>

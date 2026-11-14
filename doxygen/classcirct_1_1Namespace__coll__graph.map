@@ -1,0 +1,7 @@
+<map id="circt::Namespace" name="circt::Namespace">
+<area shape="rect" id="Node000001" title="A namespace that is used to store existing names and generate new names in some scope within the IR." alt="" coords="78,106,213,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,161,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,46,110,81,132,106,126,106,105,83,90,50"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="185,5,234,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="201,46,183,84,161,108,158,103,178,80,197,49"/>
+</map>

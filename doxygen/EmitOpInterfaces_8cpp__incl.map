@@ -1,0 +1,21 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Dialect/Emit/EmitOpInterfaces.cpp" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Dialect/Emit/EmitOpInterfaces.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="518,5,788,67"/>
+<area shape="rect" id="Node000002" href="$EmitOpInterfaces_8h.html" title=" " alt="" coords="287,115,438,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="562,69,441,112,439,107,567,66"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="461,124,648,151"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="625,66,580,114,577,110,621,69"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="672,124,831,151"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="684,65,731,113,725,112,682,70"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="855,115,1043,160"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="744,65,872,109,867,110,743,70"/>
+<area shape="rect" id="Node000003" href="$LLVM_8h.html" title=" " alt="" coords="104,216,258,244"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="317,162,222,211,220,206,321,159"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="282,216,443,244"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="364,158,365,202,360,199,361,162"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="468,208,641,252"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="409,158,498,201,492,201,408,163"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,300,157,328"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="168,244,110,293,107,288,162,245"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="180,300,384,328"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="198,242,257,290,252,291,196,247"/>
+</map>

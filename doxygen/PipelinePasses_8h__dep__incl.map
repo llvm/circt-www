@@ -1,0 +1,11 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Pipeline/PipelinePasses.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Pipeline/PipelinePasses.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="351,5,561,84"/>
+<area shape="rect" id="Node000002" href="$InitAllPasses_8h.html" title=" " alt="" coords="5,140,208,202"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="334,89,192,142,191,137,339,87"/>
+<area shape="rect" id="Node000003" href="$Pipeline_8cpp.html" title=" " alt="" coords="232,140,440,202"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="410,94,366,142,363,138,406,96"/>
+<area shape="rect" id="Node000004" href="$ExplicitRegs_8cpp.html" title=" " alt="" coords="464,132,688,211"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="505,93,541,132,536,131,503,98"/>
+<area shape="rect" id="Node000005" href="$ScheduleLinearPipeline_8cpp.html" title=" " alt="" coords="712,132,936,211"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="576,84,715,132,709,132,575,89"/>
+</map>

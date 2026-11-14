@@ -1,0 +1,27 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/SV/SVPasses.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/SV/SVPasses.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1233,5,1420,84"/>
+<area shape="rect" id="Node000002" href="$InitAllPasses_8h.html" title=" " alt="" coords="5,140,208,202"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1215,46,1028,52,779,65,500,90,358,110,220,135,189,143,187,137,219,129,357,105,499,85,778,59,1028,47,1220,45"/>
+<area shape="rect" id="Node000003" href="$SV_8cpp.html" title=" " alt="" coords="232,140,419,202"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1215,48,1062,57,865,71,648,96,538,113,431,135,402,143,401,137,430,129,537,108,647,90,865,65,1062,51,1220,47"/>
+<area shape="rect" id="Node000004" href="$GeneratorCallout_8cpp.html" title=" " alt="" coords="443,132,631,211"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1214,53,1098,65,954,80,798,103,643,135,632,137,631,132,642,129,797,98,953,75,1098,59,1220,52"/>
+<area shape="rect" id="Node000005" href="$HWCleanup_8cpp.html" title=" " alt="" coords="655,132,843,211"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1220,60,1047,92,856,135,844,138,843,133,855,129,1046,87,1215,61"/>
+<area shape="rect" id="Node000006" href="$HWEliminateInOutPorts_8cpp.html" title=" " alt="" coords="868,132,1073,211"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1221,83,1074,137,1073,131,1216,84"/>
+<area shape="rect" id="Node000007" href="$HWExportModuleHierarchy_8cpp.html" title=" " alt="" coords="1097,132,1324,211"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1282,95,1248,134,1245,129,1278,97"/>
+<area shape="rect" id="Node000008" href="$HWLegalizeModules_8cpp.html" title=" " alt="" coords="1348,132,1537,211"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1374,93,1409,132,1404,131,1372,98"/>
+<area shape="rect" id="Node000009" href="$HWStubExternalModules_8cpp.html" title=" " alt="" coords="1561,132,1774,211"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1435,83,1565,132,1559,131,1434,88"/>
+<area shape="rect" id="Node000010" href="$PrettifyVerilog_8cpp.html" title=" " alt="" coords="1799,132,1987,211"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1435,59,1602,87,1787,129,1801,136,1796,135,1786,135,1601,93,1435,64"/>
+<area shape="rect" id="Node000011" href="$SVMaskNonSynthesizable_8cpp.html" title=" " alt="" coords="2012,132,2233,211"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1436,51,1695,79,1848,101,2000,129,2014,135,2009,134,1999,135,1847,106,1694,84,1435,57"/>
+<area shape="rect" id="Node000012" href="$SVTraceIVerilog_8cpp.html" title=" " alt="" coords="2258,132,2446,211"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="1435,45,1595,51,1798,65,2022,90,2135,108,2246,129,2260,135,2255,135,2245,135,2134,113,2021,95,1797,70,1595,56,1436,50"/>
+<area shape="rect" id="Node000013" href="$Firtool_2Firtool_8cpp.html" title=" " alt="" coords="2470,140,2658,202"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="1436,48,1672,59,1967,77,2252,101,2370,114,2459,129,2491,140,2485,140,2458,135,2369,120,2251,106,1966,82,1672,65,1436,53"/>
+</map>

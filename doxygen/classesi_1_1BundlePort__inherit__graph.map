@@ -1,0 +1,17 @@
+<map id="esi::BundlePort" name="esi::BundlePort">
+<area shape="rect" id="Node000001" title="Services provide connections to &#39;bundles&#39; – collections of named, unidirectional communication channe..." alt="" coords="5,187,125,215"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1services_1_1ServicePort.html" title="Add a custom interface to a service client at a particular point in the design hierarchy." alt="" coords="173,187,357,215"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,199,175,200,170,202,141,203"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1services_1_1CallService_1_1Callback.html" title="A function call which gets attached to a service port." alt="" coords="419,5,602,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="284,173,334,116,367,86,404,60,430,49,426,52,406,65,371,90,338,120,288,177"/>
+<area shape="rect" id="Node000004" href="$classesi_1_1services_1_1ChannelService_1_1FromHost.html" title="A port which writes data to the accelerator (from_host)." alt="" coords="405,75,616,119"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="304,177,404,129,438,119,434,121,406,134,307,182"/>
+<area shape="rect" id="Node000005" href="$classesi_1_1services_1_1ChannelService_1_1ToHost.html" title="A port which reads data from the accelerator (to_host)." alt="" coords="405,144,616,189"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="372,183,407,180,402,182,373,188"/>
+<area shape="rect" id="Node000006" href="$classesi_1_1services_1_1FuncService_1_1Function.html" title="A function call which gets attached to a service port." alt="" coords="416,213,605,258"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="372,213,419,222,413,223,373,219"/>
+<area shape="rect" id="Node000007" href="$classesi_1_1services_1_1MMIO_1_1MMIORegion.html" title="A &quot;slice&quot; of some parent MMIO space." alt="" coords="436,283,585,327"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="306,220,406,268,439,282,433,282,404,273,305,225"/>
+<area shape="rect" id="Node000008" href="$classesi_1_1services_1_1TelemetryService_1_1Metric.html" title="A telemetry port which gets attached to a service port." alt="" coords="423,352,598,397"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="287,225,338,282,371,312,406,337,431,352,425,351,404,342,367,316,334,286,285,230"/>
+</map>

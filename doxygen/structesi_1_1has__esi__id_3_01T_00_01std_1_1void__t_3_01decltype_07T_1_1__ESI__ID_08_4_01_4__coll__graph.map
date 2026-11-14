@@ -1,0 +1,10 @@
+<map id="esi::has_esi_id&lt; T, std::void_t&lt; decltype(T::_ESI_ID)&gt; &gt;" name="esi::has_esi_id&lt; T, std::void_t&lt; decltype(T::_ESI_ID)&gt; &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="563,42,728,104"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,22,123,49"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,20,221,10,322,4,431,6,486,11,540,21,592,42,587,41,539,26,486,17,431,11,322,9,221,15,139,25"/>
+<area shape="rect" id="Node000004" href="$structesi_1_1has__esi__id.html" title=" " alt="" coords="183,43,326,87"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="138,44,185,53,180,55,139,50"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="172,111,337,173"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="352,122,560,88,566,87,353,128"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="342,67,361,68,566,73,561,74,361,74,342,73"/>
+</map>

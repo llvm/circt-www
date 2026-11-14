@@ -1,0 +1,16 @@
+<map id="circt::firrtl::FIRLexer" name="circt::firrtl::FIRLexer">
+<area shape="rect" id="Node000001" title="This implements a lexer for .fir files." alt="" coords="263,207,412,234"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,106,110,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,146,75,166,88,181,118,193,162,203,265,215,260,217,161,208,116,198,85,185,71,169,63,151"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="133,106,216,134"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,147,171,166,178,181,190,190,211,198,265,211,260,211,209,203,188,195,174,184,166,167,167,151"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="320,5,401,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="358,46,352,106,341,208,336,205,347,106,355,50"/>
+<area shape="rect" id="Node000006" href="$classcirct_1_1firrtl_1_1FIRToken.html" title="This represents a specific token for .fir files." alt="" coords="428,106,578,134"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="388,41,440,80,481,106,475,105,437,84,387,46"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="602,106,652,134"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="596,141,556,166,512,185,462,200,413,211,412,206,461,195,510,180,554,161,591,143"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="471,141,361,209,359,204,465,142"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="478,5,528,33"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="505,47,505,107,501,104,501,51"/>
+</map>

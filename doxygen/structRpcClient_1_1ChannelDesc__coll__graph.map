@@ -1,0 +1,7 @@
+<map id="RpcClient::ChannelDesc" name="RpcClient::ChannelDesc">
+<area shape="rect" id="Node000001" title="Description of a channel from the server." alt="" coords="6,128,183,156"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,64,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="49,45,91,127,85,128,46,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="88,5,221,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,46,141,77,127,106,109,130,106,126,123,103,136,75,146,50"/>
+</map>

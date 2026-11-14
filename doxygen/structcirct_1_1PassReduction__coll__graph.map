@@ -1,0 +1,15 @@
+<map id="circt::PassReduction" name="circt::PassReduction">
+<area shape="rect" id="Node000001" title="A reduction pattern that applies an mlir::Pass." alt="" coords="416,229,568,257"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="51,106,173,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,137,241,169,338,202,431,228,426,228,337,208,239,175,157,142"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,219,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="113,46,115,106,109,105,111,51"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="197,106,347,134"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="310,139,471,228,465,229,308,144"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="372,106,612,134"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="494,148,494,230,490,227,490,151"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="637,106,718,134"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="647,142,513,231,511,226,642,143"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="751,106,801,134"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="762,145,736,180,701,207,669,222,635,232,568,243,568,237,634,227,667,217,699,203,732,176,758,148"/>
+</map>

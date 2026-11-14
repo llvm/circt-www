@@ -1,0 +1,9 @@
+<map id="esi::AnyType" name="esi::AnyType">
+<area shape="rect" id="Node000001" title="The &quot;any&quot; type is a special type which can be used to represent any type, as identified by the type i..." alt="" coords="27,183,130,211"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1Type.html" title="Root class of the ESI type system." alt="" coords="39,106,118,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,147,81,184,76,182,77,151"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,64,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="47,44,75,105,70,106,45,49"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="88,5,160,33"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="113,45,87,107,82,104,110,49"/>
+</map>

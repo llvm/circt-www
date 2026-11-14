@@ -1,0 +1,5 @@
+<map id="esi::ServicePortDesc" name="esi::ServicePortDesc">
+<area shape="rect" id="Node000001" title="A description of a service port." alt="" coords="5,128,160,156"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="53,5,112,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,47,85,128,80,127,80,50"/>
+</map>

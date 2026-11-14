@@ -1,0 +1,10 @@
+<map id="ModuleConventionRemover" name="ModuleConventionRemover">
+<area shape="rect" id="Node000001" title="Reduction that removes the convention attribute from regular modules." alt="" coords="5,294,208,322"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1OpReduction.html" title=" " alt="" coords="36,200,177,245"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,258,109,295,104,292,105,262"/>
+<area shape="rect" id="Node000003" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="40,5,162,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="104,47,109,200,103,200,100,50"/>
+<area shape="rect" id="Node000004" href="$structcirct_1_1OpReduction.html" title="A reduction pattern for a specific operation." alt="" coords="123,82,263,127"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="127,41,172,81,167,83,127,46"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="170,138,125,201,121,198,166,142"/>
+</map>

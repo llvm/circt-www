@@ -1,0 +1,9 @@
+<map id="circt::sim::DPIArgument" name="circt::sim::DPIArgument">
+<area shape="rect" id="Node000001" title="A single argument in a DPI function type." alt="" coords="51,106,227,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,89,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="63,44,91,80,120,105,115,106,87,84,61,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="113,5,165,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="141,47,141,106,137,104,137,50"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="189,5,292,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="221,43,184,84,157,108,154,103,180,80,216,46"/>
+</map>

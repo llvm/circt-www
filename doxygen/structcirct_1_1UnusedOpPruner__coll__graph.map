@@ -1,0 +1,7 @@
+<map id="circt::UnusedOpPruner" name="circt::UnusedOpPruner">
+<area shape="rect" id="Node000001" title="Utility that tracks operations that have potentially become unused and allows them to be cleaned up a..." alt="" coords="166,106,332,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,231,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,40,234,105,229,106,146,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="254,5,504,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="371,46,360,67,345,84,324,98,301,108,300,103,322,93,342,80,356,64,366,49"/>
+</map>

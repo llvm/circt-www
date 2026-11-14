@@ -1,0 +1,37 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Target/ExportSystemC/EmissionPatternSupport.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Target/ExportSystemC/EmissionPatternSupport.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="769,5,961,84"/>
+<area shape="rect" id="Node000002" href="$EmissionPattern_8h.html" title=" " alt="" coords="257,132,446,211"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="751,67,613,97,459,135,448,138,446,133,458,129,611,91,756,64"/>
+<area shape="rect" id="Node000010" href="$BuiltinEmissionPatterns_8h.html" title=" " alt="" coords="470,132,718,211"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="765,92,680,134,677,129,770,90"/>
+<area shape="rect" id="Node000012" href="$EmitCEmissionPatterns_8h.html" title=" " alt="" coords="742,132,988,211"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="867,98,867,133,863,130,863,102"/>
+<area shape="rect" id="Node000013" href="$HWEmissionPatterns_8h.html" title=" " alt="" coords="1012,132,1241,211"/>
+<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="960,88,1048,131,1042,131,960,94"/>
+<area shape="rect" id="Node000014" href="$SystemCEmissionPatterns_8h.html" title=" " alt="" coords="1265,132,1529,211"/>
+<area shape="poly" id="edge19_Node000001_Node000014" title=" " alt="" coords="976,67,1254,129,1267,135,1262,135,1252,135,976,72"/>
+<area shape="rect" id="Node000003" href="$EmissionPrinter_8h.html" title=" " alt="" coords="577,259,766,337"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="461,212,579,259,574,260,461,218"/>
+<area shape="rect" id="Node000004" href="$EmissionPrinter_8cpp.html" title=" " alt="" coords="577,385,766,464"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="673,351,674,386,670,383,670,355"/>
+<area shape="rect" id="Node000005" href="$ExportSystemC_8cpp.html" title=" " alt="" coords="790,385,980,464"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="752,343,821,385,816,384,750,348"/>
+<area shape="rect" id="Node000006" href="$BuiltinEmissionPatterns_8cpp.html" title=" " alt="" coords="5,385,269,464"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="560,325,280,388,270,391,268,385,279,383,563,320"/>
+<area shape="rect" id="Node000007" href="$EmitCEmissionPatterns_8cpp.html" title=" " alt="" coords="292,385,552,464"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="583,344,501,387,499,382,578,345"/>
+<area shape="rect" id="Node000008" href="$HWEmissionPatterns_8cpp.html" title=" " alt="" coords="1004,385,1248,464"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="781,335,888,360,992,383,1006,389,1001,388,991,388,887,366,781,341"/>
+<area shape="rect" id="Node000009" href="$SystemCEmissionPatterns_8cpp.html" title=" " alt="" coords="1272,385,1551,464"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="782,335,854,349,916,356,1022,362,1128,366,1261,383,1274,387,1269,387,1261,388,1128,372,1022,368,916,362,853,354,781,340"/>
+<area shape="poly" id="edge10_Node000010_Node000006" title=" " alt="" coords="512,221,209,387,206,382,509,216"/>
+<area shape="rect" id="Node000011" href="$RegisterAllEmitters_8h.html" title=" " alt="" coords="790,259,980,337"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="699,214,797,258,792,258,698,220"/>
+<area shape="poly" id="edge12_Node000011_Node000005" title=" " alt="" coords="887,351,887,387,883,383,883,355"/>
+<area shape="poly" id="edge14_Node000012_Node000007" title=" " alt="" coords="725,212,566,261,530,289,498,322,448,387,444,383,494,318,527,285,564,256,730,211"/>
+<area shape="poly" id="edge15_Node000012_Node000011" title=" " alt="" coords="875,224,881,260,877,257,872,228"/>
+<area shape="poly" id="edge17_Node000013_Node000008" title=" " alt="" coords="1128,225,1129,386,1124,383,1124,228"/>
+<area shape="poly" id="edge18_Node000013_Node000011" title=" " alt="" coords="1040,217,961,261,959,256,1035,219"/>
+<area shape="poly" id="edge20_Node000014_Node000009" title=" " alt="" coords="1402,225,1412,386,1407,383,1398,228"/>
+<area shape="poly" id="edge21_Node000014_Node000011" title=" " alt="" coords="1252,211,981,278,980,273,1247,212"/>
+</map>

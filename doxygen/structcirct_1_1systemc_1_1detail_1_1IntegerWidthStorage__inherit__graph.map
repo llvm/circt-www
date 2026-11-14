@@ -1,0 +1,5 @@
+<map id="circt::systemc::detail::IntegerWidthStorage" name="circt::systemc::detail::IntegerWidthStorage">
+<area shape="rect" id="Node000001" title="Integer Type Storage and Uniquing." alt="" coords="5,81,169,126"/>
+<area shape="rect" id="Node000002" href="$classTypeStorage.html" title=" " alt="" coords="36,5,138,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,47,90,81,84,80,85,51"/>
+</map>

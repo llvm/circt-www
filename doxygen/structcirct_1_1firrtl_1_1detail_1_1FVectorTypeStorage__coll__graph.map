@@ -1,0 +1,19 @@
+<map id="circt::firrtl::detail::FVectorTypeStorage" name="circt::firrtl::detail::FVectorTypeStorage">
+<area shape="rect" id="Node000001" title=" " alt="" coords="793,161,951,206"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1firrtl_1_1detail_1_1FIRRTLBaseTypeStorage.html" title=" " alt="" coords="439,44,624,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="640,60,706,68,739,76,770,87,796,102,819,121,856,161,851,160,816,125,793,107,768,92,737,81,705,73,640,65"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="58,5,194,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="209,19,305,24,409,35,442,42,436,44,408,40,305,29,210,24"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="101,57,151,85"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="165,68,440,65,437,69,166,73"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1firrtl_1_1FIRRTLBaseType.html" title=" " alt="" coords="433,139,631,166"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="646,160,795,176,790,176,646,165"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,119,247,181"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="262,148,434,150,430,153,263,153"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="502,197,562,225"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="577,211,666,213,769,207,795,205,790,206,769,212,666,219,577,217"/>
+<area shape="rect" id="Node000008" href="$structcirct_1_1firrtl_1_1RecursiveTypeProperties.html" title="A collection of bits indicating the recursive properties of a type." alt="" coords="454,274,610,319"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="625,282,696,267,768,244,806,225,838,207,843,205,809,230,770,249,697,272,626,287"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="101,315,151,342"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="166,325,275,322,408,313,451,310,456,310,409,318,276,327,167,331"/>
+</map>

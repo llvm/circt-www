@@ -1,0 +1,7 @@
+<map id="circt::ArcConversionOptions" name="circt::ArcConversionOptions">
+<area shape="rect" id="Node000001" title=" " alt="" coords="93,145,294,173"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,201,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,60,187,144,182,145,125,65"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="224,14,347,42"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="270,53,205,147,201,143,265,55"/>
+</map>

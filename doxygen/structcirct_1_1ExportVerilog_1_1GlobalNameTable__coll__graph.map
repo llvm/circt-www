@@ -1,0 +1,11 @@
+<map id="circt::ExportVerilog::GlobalNameTable" name="circt::ExportVerilog::GlobalNameTable">
+<area shape="rect" id="Node000001" title="This class keeps track of global names at the module/interface level." alt="" coords="411,122,555,166"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="27,5,204,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,46,303,62,388,87,420,102,451,121,445,121,418,107,386,92,301,67,219,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,92,226,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="241,116,412,135,408,138,242,121"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="35,144,196,222"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="212,177,297,171,386,161,413,159,408,161,387,166,297,176,213,182"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="28,246,203,274"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="218,247,301,231,386,204,421,186,451,168,456,166,424,190,388,209,303,236,219,252"/>
+</map>

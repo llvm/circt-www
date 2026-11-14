@@ -1,0 +1,9 @@
+<map id="circt::synth::MatchResult" name="circt::synth::MatchResult">
+<area shape="rect" id="Node000001" title="Result of matching a cut against a pattern." alt="" coords="92,123,274,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,14,71,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,49,168,121,163,124,67,54"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="95,14,272,42"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,55,186,123,181,121,181,59"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="296,5,463,50"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="353,60,330,83,305,101,276,115,246,125,245,120,274,110,302,97,327,79,349,62"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="InstancePathCache" name="InstancePathCache">
+<area shape="rect" id="Node000001" title="A data structure that caches and provides paths to module instances in the IR." alt="" coords="855,182,999,210"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1igraph_1_1InstanceGraph.html" title="This graph tracks modules and where they are instantiated." alt="" coords="455,97,656,124"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="671,113,751,123,832,143,872,160,907,182,902,181,869,165,830,148,750,129,671,118"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="73,7,170,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="184,21,295,31,358,40,419,53,477,73,528,96,523,97,475,77,418,58,357,45,295,36,186,26"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="16,61,227,88"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="243,82,457,101,452,104,243,87"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="19,113,224,175"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="239,139,418,129,473,124,468,126,419,134,240,145"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,199,238,244"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="253,218,337,203,379,189,417,169,425,162,428,154,433,145,441,136,467,126,472,124,444,141,437,148,433,156,429,165,420,174,381,194,339,208,254,223"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="488,150,623,178"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="639,168,857,189,852,190,639,174"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="443,202,668,246"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="683,226,757,225,831,218,878,211,883,210,831,224,757,230,684,232"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="464,270,646,332"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="662,293,746,281,789,271,830,257,874,234,907,211,912,209,876,238,832,262,790,276,747,286,662,299"/>
+</map>

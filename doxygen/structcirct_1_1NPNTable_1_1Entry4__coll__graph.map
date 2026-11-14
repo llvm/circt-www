@@ -1,0 +1,11 @@
+<map id="circt::NPNTable::Entry4" name="circt::NPNTable::Entry4">
+<area shape="rect" id="Node000001" title=" " alt="" coords="168,106,338,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,80,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="46,46,54,65,65,80,82,89,106,97,170,110,165,111,105,102,79,94,62,84,50,68,45,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="104,5,250,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,46,175,65,181,81,193,93,210,106,205,105,190,98,177,83,170,66,170,51"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="296,5,362,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="322,46,302,84,275,108,273,103,298,80,317,49"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="435,5,484,33"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="451,46,438,68,421,84,382,104,339,115,338,110,380,99,418,80,434,64,446,48"/>
+</map>

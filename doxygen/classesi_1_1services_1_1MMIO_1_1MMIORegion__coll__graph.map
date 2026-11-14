@@ -1,0 +1,58 @@
+<map id="esi::services::MMIO::MMIORegion" name="esi::services::MMIO::MMIORegion">
+<area shape="rect" id="Node000001" title="A &quot;slice&quot; of some parent MMIO space." alt="" coords="1708,319,1856,363"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1services_1_1ServicePort.html" title="Add a custom interface to a service client at a particular point in the design hierarchy." alt="" coords="1426,215,1610,243"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1567,247,1730,318,1725,318,1566,252"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1BundlePort.html" title="Services provide connections to &#39;bundles&#39; – collections of named, unidirectional communication channe..." alt="" coords="1130,112,1250,140"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1252,143,1473,214,1468,215,1252,148"/>
+<area shape="rect" id="Node000004" href="$structesi_1_1AppID.html" title=" " alt="" coords="472,64,559,92"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="574,80,1085,116,1133,121,1128,122,1084,121,575,85"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="109,92,167,120"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="182,101,473,79,470,84,184,106"/>
+<area shape="rect" id="Node000008" href="$classesi_1_1Type.html" title="Root class of the ESI type system." alt="" coords="476,120,554,148"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="181,110,295,122,478,132,473,135,294,127,184,115"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="59,8,217,36"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="231,34,381,56,474,71,469,73,380,61,233,39"/>
+<area shape="rect" id="Node000007" href="$classesi_1_1BundleType.html" title="Bundles represent a collection of channels." alt="" coords="835,147,958,175"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="973,152,1084,141,1132,136,1127,137,1085,146,975,158"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="570,135,837,155,832,158,571,141"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="102,176,174,204"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="188,183,380,158,478,141,473,144,381,163,191,188"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="429,173,602,234"/>
+<area shape="poly" id="edge10_Node000007_Node000010" title=" " alt="" coords="616,196,775,181,837,172,832,175,775,186,618,201"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="801,5,992,50"/>
+<area shape="poly" id="edge11_Node000003_Node000011" title=" " alt="" coords="1001,52,1085,78,1161,112,1156,112,1083,84,1002,57"/>
+<area shape="rect" id="Node000012" href="$classesi_1_1services_1_1MMIO.html" title=" " alt="" coords="1444,327,1592,355"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="1607,338,1710,341,1705,341,1608,344"/>
+<area shape="rect" id="Node000013" href="$classesi_1_1services_1_1Service.html" title="Parent class of all APIs modeled as &#39;services&#39;." alt="" coords="1111,370,1269,398"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="1284,369,1446,350,1441,351,1285,374"/>
+<area shape="rect" id="Node000014" href="$classesi_1_1AcceleratorConnection.html" title="Abstract class representing a connection to an accelerator." alt="" coords="799,412,994,440"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="1009,407,1113,395,1108,396,1011,413"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="434,465,597,526"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="611,481,774,454,845,440,840,441,776,459,613,486"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="423,551,608,595"/>
+<area shape="poly" id="edge16_Node000014_Node000016" title=" " alt="" coords="622,552,698,533,774,505,832,472,876,442,881,440,835,476,776,510,699,538,623,557"/>
+<area shape="rect" id="Node000017" href="$classesi_1_1Context.html" title="AcceleratorConnections, Accelerators, and Manifests must all share a context." alt="" coords="466,619,565,647"/>
+<area shape="poly" id="edge17_Node000014_Node000017" title=" " alt="" coords="580,629,626,624,676,614,726,599,774,576,812,544,845,506,870,469,886,442,890,439,874,472,849,509,816,548,776,580,728,604,677,619,626,629,581,634"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="42,619,234,647"/>
+<area shape="poly" id="edge18_Node000017_Node000018" title=" " alt="" coords="249,630,468,631,463,635,249,636"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="5,671,271,715"/>
+<area shape="poly" id="edge19_Node000017_Node000019" title=" " alt="" coords="286,675,380,661,463,646,468,645,381,666,287,680"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="51,551,225,595"/>
+<area shape="poly" id="edge20_Node000017_Node000020" title=" " alt="" coords="240,580,381,600,468,621,462,622,380,605,240,586"/>
+<area shape="rect" id="Node000021" title=" " alt="" coords="425,258,606,320"/>
+<area shape="poly" id="edge21_Node000014_Node000021" title=" " alt="" coords="621,301,699,319,776,345,834,377,880,412,875,412,831,382,774,350,697,324,621,307"/>
+<area shape="rect" id="Node000022" title=" " alt="" coords="412,344,618,389"/>
+<area shape="poly" id="edge22_Node000014_Node000022" title=" " alt="" coords="634,374,775,393,848,412,843,412,775,398,634,379"/>
+<area shape="rect" id="Node000023" title=" " alt="" coords="405,412,626,440"/>
+<area shape="poly" id="edge23_Node000014_Node000023" title=" " alt="" coords="641,424,801,426,796,427,642,429"/>
+<area shape="rect" id="Node000024" title=" " alt="" coords="1142,422,1238,450"/>
+<area shape="poly" id="edge24_Node000012_Node000024" title=" " alt="" coords="1253,428,1325,417,1401,398,1451,377,1492,356,1497,354,1453,381,1403,403,1326,422,1254,433"/>
+<area shape="rect" id="Node000025" title=" " alt="" coords="1158,231,1222,259"/>
+<area shape="poly" id="edge25_Node000012_Node000025" title=" " alt="" coords="1237,250,1315,267,1403,290,1489,327,1484,327,1401,296,1314,272,1237,256"/>
+<area shape="rect" id="Node000026" title=" " alt="" coords="1108,284,1272,345"/>
+<area shape="poly" id="edge26_Node000012_Node000026" title=" " alt="" coords="1287,320,1446,335,1441,335,1287,325"/>
+<area shape="rect" id="Node000027" href="$structesi_1_1services_1_1MMIO_1_1RegionDescriptor.html" title="Describe a region (slice) of MMIO space." alt="" coords="1444,411,1592,455"/>
+<area shape="poly" id="edge27_Node000001_Node000027" title=" " alt="" coords="1598,403,1713,365,1718,363,1599,408"/>
+<area shape="rect" id="Node000028" title=" " alt="" coords="1153,483,1227,511"/>
+<area shape="poly" id="edge28_Node000027_Node000028" title=" " alt="" coords="1243,501,1318,503,1360,500,1401,492,1445,475,1482,457,1487,455,1447,480,1402,498,1361,505,1319,508,1243,506"/>
+</map>

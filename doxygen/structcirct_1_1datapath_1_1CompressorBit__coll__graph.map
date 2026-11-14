@@ -1,0 +1,7 @@
+<map id="circt::datapath::CompressorBit" name="circt::datapath::CompressorBit">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,106,225,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="44,5,101,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,45,112,105,107,105,82,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="124,5,191,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,46,123,107,119,104,144,48"/>
+</map>

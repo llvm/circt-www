@@ -1,0 +1,7 @@
+<map id="esi::MessageData" name="esi::MessageData">
+<area shape="rect" id="Node000001" title="A concrete flat message backed by a single vector of bytes." alt="" coords="141,106,278,134"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1SegmentedMessageData.html" title="Abstract multi&#45;segment message." alt="" coords="5,5,217,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,41,199,105,194,106,133,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="241,5,378,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="289,43,225,108,222,103,283,44"/>
+</map>

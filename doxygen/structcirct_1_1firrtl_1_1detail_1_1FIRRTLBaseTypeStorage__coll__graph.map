@@ -1,0 +1,7 @@
+<map id="circt::firrtl::detail::FIRRTLBaseTypeStorage" name="circt::firrtl::detail::FIRRTLBaseTypeStorage">
+<area shape="rect" id="Node000001" title=" " alt="" coords="38,106,223,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,141,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,44,121,105,116,106,86,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="164,5,214,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,45,144,107,140,104,172,48"/>
+</map>

@@ -1,0 +1,21 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Support/SparseOpSCC.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Support/SparseOpSCC.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="726,5,989,67"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,124,150,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="723,47,464,75,313,94,162,118,141,122,139,117,161,112,312,88,464,69,729,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="174,124,328,151"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="723,55,543,83,341,118,319,122,318,117,340,112,542,78,728,54"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="352,124,518,151"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="731,67,506,122,505,117,726,68"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="543,115,743,160"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="795,67,705,111,703,105,789,68"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="767,124,948,151"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="859,66,860,109,855,106,856,69"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="973,124,1201,151"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="928,65,1045,117,1040,117,927,70"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="1225,124,1383,151"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="989,63,1214,112,1236,120,1231,119,1213,118,989,68"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="1408,124,1582,151"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="989,51,1182,78,1395,112,1424,120,1418,120,1394,118,1181,83,989,57"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="1606,124,1698,151"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="989,39,1117,47,1269,61,1433,82,1594,112,1608,119,1603,118,1593,118,1432,87,1269,66,1117,52,989,45"/>
+</map>

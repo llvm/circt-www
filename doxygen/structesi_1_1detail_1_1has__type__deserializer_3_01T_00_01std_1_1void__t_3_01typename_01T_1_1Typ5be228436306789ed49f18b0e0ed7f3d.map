@@ -1,0 +1,10 @@
+<map id="esi::detail::has_type_deserializer&lt; T, std::void_t&lt; typename T::TypeDeserializer &gt; &gt;" name="esi::detail::has_type_deserializer&lt; T, std::void_t&lt; typename T::TypeDeserializer &gt; &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="98,222,267,301"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,123,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="62,46,66,86,76,126,89,152,106,177,143,222,138,222,101,180,84,155,71,128,61,87,62,51"/>
+<area shape="rect" id="Node000004" href="$structesi_1_1detail_1_1has__type__deserializer.html" title=" " alt="" coords="85,82,302,127"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="96,39,162,81,157,83,97,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="335,91,446,118"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="394,132,390,168,384,185,374,200,351,220,325,236,268,254,267,249,323,231,348,216,370,197,379,183,385,167,390,136"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="186,140,187,151,184,223,179,221,181,151,184,145"/>
+</map>

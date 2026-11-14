@@ -1,0 +1,7 @@
+<map id="esi::ChannelPort::ConnectOptions" name="esi::ChannelPort::ConnectOptions">
+<area shape="rect" id="Node000001" title=" " alt="" coords="58,106,246,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,169,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,45,118,81,135,106,130,105,113,83,97,50"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="193,5,242,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="209,45,191,83,173,108,169,104,186,81,205,49"/>
+</map>

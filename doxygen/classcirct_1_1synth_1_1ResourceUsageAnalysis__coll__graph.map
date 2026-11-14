@@ -1,0 +1,15 @@
+<map id="circt::synth::ResourceUsageAnalysis" name="circt::synth::ResourceUsageAnalysis">
+<area shape="rect" id="Node000001" title="Analysis that computes resource usage for Synth dialect operations." alt="" coords="852,63,1054,108"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="443,7,672,86"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="687,57,854,75,849,76,688,62"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1igraph_1_1InstanceGraph.html" title="This graph tracks modules and where they are instantiated." alt="" coords="457,110,658,138"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="673,115,828,101,854,100,849,101,828,106,674,120"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="73,21,170,49"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="184,27,238,26,298,31,361,44,420,67,429,74,433,82,437,89,444,95,472,110,466,110,441,100,433,92,429,84,425,78,417,72,359,49,298,36,238,32,186,32"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="16,74,227,102"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="243,95,459,114,454,117,243,101"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="19,127,224,188"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="239,153,418,142,474,138,469,139,419,148,239,158"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="5,212,238,257"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="253,217,335,203,418,183,477,160,526,139,531,138,480,165,419,188,336,208,254,223"/>
+</map>

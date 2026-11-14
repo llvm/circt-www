@@ -1,0 +1,7 @@
+<map id="esi::WindowType::Frame" name="esi::WindowType::Frame">
+<area shape="rect" id="Node000001" title="Frame information describing which fields are included in a particular frame." alt="" coords="18,123,198,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,14,64,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,53,101,122,96,123,51,57"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="88,5,274,50"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,62,119,125,115,121,155,64"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="circt::FirRegLowering::RegCondition" name="circt::FirRegLowering::RegCondition">
+<area shape="rect" id="Node000001" title="The conditions under which a register is defined." alt="" coords="19,123,176,168"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,190,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,64,100,123,95,122,96,68"/>
+</map>

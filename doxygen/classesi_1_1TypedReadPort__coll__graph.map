@@ -1,0 +1,45 @@
+<map id="esi::TypedReadPort&lt; T, SkipTypeCheck &gt;" name="esi::TypedReadPort&lt; T, SkipTypeCheck &gt;">
+<area shape="rect" id="Node000001" title="Strongly typed wrapper around a raw read channel." alt="" coords="1344,403,1509,448"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1ReadChannelPort.html" title="A ChannelPort which reads data from the accelerator." alt="" coords="1038,327,1199,355"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1214,352,1320,376,1382,403,1377,402,1319,381,1214,357"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1ChannelPort.html" title="Unidirectional channels are the basic communication primitive between the host and accelerator." alt="" coords="602,150,729,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="744,162,890,169,957,179,1005,194,1043,223,1075,260,1098,297,1113,328,1108,326,1094,299,1071,263,1040,227,1002,198,956,184,890,175,745,167"/>
+<area shape="rect" id="Node000004" href="$classesi_1_1Type.html" title="Root class of the ESI type system." alt="" coords="260,119,338,147"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="353,135,604,157,600,160,355,140"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="12,91,71,119"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="85,108,262,127,258,131,87,112"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,147,78,175"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="92,156,182,148,262,138,258,141,183,153,95,160"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="207,171,392,216"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="406,193,519,188,604,176,599,179,519,193,408,198"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="628,25,703,52"/>
+<area shape="poly" id="edge20_Node000001_Node000008" title=" " alt="" coords="717,22,778,11,851,4,929,7,967,14,1004,25,1078,62,1146,108,1209,160,1266,216,1315,272,1357,323,1413,403,1408,402,1353,326,1311,275,1262,220,1206,164,1143,112,1075,66,1002,30,966,19,928,12,851,9,779,16,720,27"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="717,50,813,73,868,78,914,76,957,80,980,89,1005,104,1032,129,1054,158,1088,222,1108,283,1117,329,1113,326,1103,284,1083,224,1050,161,1028,133,1002,109,978,94,956,85,913,81,868,83,812,78,718,55"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="543,254,788,316"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="804,290,903,299,1004,312,1065,326,1060,327,1003,317,902,304,805,295"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="610,341,721,368"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="736,350,1041,343,1036,345,737,355"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="562,392,769,437"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="784,407,891,397,1003,378,1080,355,1075,357,1004,384,892,402,785,412"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="597,462,734,490"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="749,480,821,483,895,482,960,475,984,468,1002,458,1010,449,1014,440,1014,419,1014,395,1017,383,1025,371,1050,357,1055,354,1029,375,1022,386,1019,396,1020,419,1019,441,1015,452,1005,463,986,473,961,480,895,488,821,489,750,486"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="636,693,695,720"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="710,701,882,683,961,670,988,663,1001,656,1013,634,1017,601,1014,517,1011,432,1014,397,1025,372,1047,357,1051,354,1029,375,1020,399,1016,433,1020,517,1023,601,1018,635,1005,660,990,668,962,676,882,689,711,706"/>
+<area shape="rect" id="Node000018" href="$structesi_1_1WireInfo.html" title="Compute the wire byte count for a port type." alt="" coords="1067,385,1170,412"/>
+<area shape="poly" id="edge18_Node000018_Node000013" title=" " alt="" coords="707,725,772,753,810,765,851,774,892,778,932,775,969,763,1002,741,1009,731,1015,718,1020,681,1016,589,1010,494,1013,455,1025,426,1043,411,1064,405,1069,403,1046,415,1029,430,1019,456,1015,494,1021,588,1025,682,1020,719,1014,734,1005,745,971,768,933,780,892,783,850,780,809,770,770,758,706,730"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="641,517,690,544"/>
+<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="705,532,779,538,868,540,949,534,980,526,1002,515,1014,499,1019,483,1015,448,1010,411,1014,391,1025,371,1048,357,1053,354,1029,375,1019,393,1016,411,1021,447,1024,484,1019,502,1005,519,982,531,950,540,868,546,779,543,706,537"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="589,569,742,631"/>
+<area shape="poly" id="edge14_Node000002_Node000015" title=" " alt="" coords="757,602,828,603,900,600,962,590,985,581,1002,571,1018,548,1024,525,1022,501,1016,477,1010,451,1006,425,1010,399,1025,372,1048,357,1052,354,1029,375,1015,400,1012,425,1015,450,1021,475,1027,501,1029,526,1023,551,1005,575,988,586,964,595,901,605,828,608,758,608"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="634,98,697,126"/>
+<area shape="poly" id="edge15_Node000002_Node000016" title=" " alt="" coords="713,116,890,141,1004,160,1027,178,1047,199,1080,246,1102,292,1115,328,1110,326,1097,294,1075,249,1043,202,1024,182,1002,165,890,146,714,121"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="595,202,736,230"/>
+<area shape="poly" id="edge16_Node000002_Node000017" title=" " alt="" coords="752,214,874,226,940,240,1004,260,1033,274,1061,291,1104,327,1099,327,1058,296,1031,279,1002,265,939,245,873,232,753,220"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="1185,402,1346,418,1340,418,1186,407"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="1090,439,1147,467"/>
+<area shape="poly" id="edge19_Node000001_Node000019" title=" " alt="" coords="1162,451,1236,450,1319,444,1346,442,1341,443,1320,449,1236,455,1163,456"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="1027,495,1210,523"/>
+<area shape="poly" id="edge21_Node000001_Node000020" title=" " alt="" coords="1224,500,1272,492,1319,480,1356,464,1388,449,1393,447,1358,469,1321,485,1273,497,1225,505"/>
+<area shape="rect" id="Node000021" title=" " alt="" coords="1035,548,1202,609"/>
+<area shape="poly" id="edge22_Node000001_Node000021" title=" " alt="" coords="1217,563,1269,550,1318,528,1345,510,1369,489,1406,449,1411,447,1373,492,1348,514,1321,533,1270,555,1218,569"/>
+</map>

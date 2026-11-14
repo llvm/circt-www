@@ -1,0 +1,10 @@
+<map id="circt::pretty::BreakToken" name="circt::pretty::BreakToken">
+<area shape="rect" id="Node000001" title=" " alt="" coords="13,333,191,361"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1pretty_1_1TokenBase.html" title=" " alt="" coords="5,222,199,284"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,298,104,334,100,332,100,301"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1pretty_1_1Token.html" title=" " alt="" coords="26,5,167,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,47,104,222,99,222,95,50"/>
+<area shape="rect" id="Node000004" href="$structcirct_1_1pretty_1_1TokenBase.html" title="Helper class to CRTP&#45;derive common functions." alt="" coords="118,82,316,127"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="128,39,188,81,183,83,128,45"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="192,137,127,224,123,220,189,141"/>
+</map>

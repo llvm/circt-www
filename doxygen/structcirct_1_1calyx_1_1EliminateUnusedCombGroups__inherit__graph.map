@@ -1,0 +1,7 @@
+<map id="circt::calyx::EliminateUnusedCombGroups" name="circt::calyx::EliminateUnusedCombGroups">
+<area shape="rect" id="Node000001" title="Removes calyx::CombGroupOps which are unused." alt="" coords="5,217,217,262"/>
+<area shape="rect" id="Node000002" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="16,123,206,168"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,181,113,217,109,216,109,185"/>
+<area shape="rect" id="Node000003" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="26,5,196,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="112,64,114,123,108,122,110,68"/>
+</map>

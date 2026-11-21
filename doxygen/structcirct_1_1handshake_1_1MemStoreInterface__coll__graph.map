@@ -1,0 +1,7 @@
+<map id="circt::handshake::MemStoreInterface" name="circt::handshake::MemStoreInterface">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,151,208,195"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="20,5,100,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="63,46,71,86,82,126,94,150,89,150,77,128,66,87,62,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="124,5,182,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,46,126,127,117,152,113,149,121,126,144,49"/>
+</map>

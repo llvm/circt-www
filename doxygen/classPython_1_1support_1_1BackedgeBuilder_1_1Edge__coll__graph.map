@@ -1,0 +1,9 @@
+<map id="Python.support.BackedgeBuilder.Edge" name="Python.support.BackedgeBuilder.Edge">
+<area shape="rect" id="Node000001" title=" " alt="" coords="70,183,338,211"/>
+<area shape="rect" id="Node000002" href="$classPython_1_1support_1_1BackedgeBuilder.html" title=" " alt="" coords="5,82,238,110"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,119,196,182,190,183,141,124"/>
+<area shape="rect" id="Node000003" href="$classAbstractContextManager.html" title=" " alt="" coords="30,5,213,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,46,124,83,119,81,120,51"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="262,82,312,110"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="269,121,217,184,214,180,264,123"/>
+</map>

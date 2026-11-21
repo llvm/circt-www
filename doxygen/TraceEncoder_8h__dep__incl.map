@@ -1,0 +1,20 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Arc/Runtime/TraceEncoder.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Arc/Runtime/TraceEncoder.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="347,5,534,84"/>
+<area shape="rect" id="Node000002" href="$FSTTraceEncoder_8h.html" title=" " alt="" coords="5,132,210,211"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="330,88,211,134,209,129,334,85"/>
+<area shape="rect" id="Node000004" href="$ModelInstance_8h.html" title=" " alt="" coords="233,132,424,211"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="398,94,365,133,362,129,394,97"/>
+<area shape="rect" id="Node000007" href="$VCDTraceEncoder_8h.html" title=" " alt="" coords="448,132,658,211"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="486,93,521,132,515,131,485,98"/>
+<area shape="rect" id="Node000009" href="$TraceEncoder_8cpp.html" title=" " alt="" coords="682,132,869,211"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="549,83,684,135,679,136,549,89"/>
+<area shape="rect" id="Node000003" href="$FSTTraceEncoder_8cpp.html" title=" " alt="" coords="14,259,201,337"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="109,224,110,259,105,257,106,229"/>
+<area shape="rect" id="Node000005" href="$ArcRuntime_8cpp.html" title=" " alt="" coords="230,259,417,337"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="328,224,327,260,323,257,325,228"/>
+<area shape="rect" id="Node000006" href="$ModelInstance_8cpp.html" title=" " alt="" coords="442,259,629,337"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="407,216,474,258,469,258,406,222"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="547,224,543,260,539,256,543,228"/>
+<area shape="rect" id="Node000008" href="$VCDTraceEncoder_8cpp.html" title=" " alt="" coords="654,259,841,337"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="627,217,690,259,684,258,626,222"/>
+</map>

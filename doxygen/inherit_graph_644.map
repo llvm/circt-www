@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="5,5,175,50"/>
+<area shape="rect" id="Node000001" href="$structcirct_1_1calyx_1_1MultipleGroupDonePattern.html" title="When building groups which contain accesses to multiple sequential components, a group_done op is cre..." alt="" coords="223,5,415,50"/>
+<area shape="poly" id="edge397_Node000000_Node000001" title=" " alt="" coords="190,25,225,27,219,28,190,30"/>
+</map>

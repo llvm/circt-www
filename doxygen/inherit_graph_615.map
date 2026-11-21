@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="5,24,206,68"/>
+<area shape="rect" id="Node000001" href="$classAffineParallelOpLowering.html" title=" " alt="" coords="254,5,438,33"/>
+<area shape="poly" id="edge366_Node000000_Node000001" title=" " alt="" coords="221,30,256,29,250,30,222,36"/>
+<area shape="rect" id="Node000002" href="$classAffinePloopUnparallelize.html" title=" " alt="" coords="255,57,436,85"/>
+<area shape="poly" id="edge367_Node000000_Node000002" title=" " alt="" coords="221,55,257,62,252,62,221,61"/>
+</map>

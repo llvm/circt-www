@@ -1,0 +1,7 @@
+<map id="circt::hw::ModulePortLookupInfo" name="circt::hw::ModulePortLookupInfo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="61,145,289,173"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,177,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,63,112,93,128,120,155,145,149,145,124,123,107,95,98,68"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="201,14,317,42"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="257,54,249,90,232,123,218,137,203,147,201,142,215,132,228,120,244,88,253,58"/>
+</map>

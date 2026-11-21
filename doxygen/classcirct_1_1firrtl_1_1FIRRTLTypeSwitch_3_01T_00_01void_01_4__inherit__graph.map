@@ -1,0 +1,9 @@
+<map id="circt::firrtl::FIRRTLTypeSwitch&lt; T, void &gt;" name="circt::firrtl::FIRRTLTypeSwitch&lt; T, void &gt;">
+<area shape="rect" id="Node000001" title="Specialization of FIRRTLTypeSwitch for void returning callables." alt="" coords="534,14,700,58"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,190,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,41,535,40,533,46,205,46"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="205,26,535,27,533,32,205,31"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1firrtl_1_1FIRRTLTypeSwitch.html" title="This class implements the same functionality as TypeSwitch except that it uses firrtl::type_dyn_cast ..." alt="" coords="239,86,404,130"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="205,68,252,85,247,85,204,73"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="420,104,465,99,510,89,547,75,579,60,584,58,549,80,511,94,466,104,420,110"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,14,187,58"/>
+<area shape="rect" id="Node000001" href="$classcirct_1_1calyx_1_1PartialLoweringPattern.html" title=" " alt="" coords="235,5,481,67"/>
+<area shape="poly" id="edge392_Node000000_Node000001" title=" " alt="" coords="202,34,237,36,232,36,203,39"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1calyx_1_1InlineCombGroups.html" title="This pass recursively inlines use&#45;def chains of combinational logic (from non&#45;stateful groups) into g..." alt="" coords="529,14,703,58"/>
+<area shape="poly" id="edge393_Node000001_Node000002" title=" " alt="" coords="497,34,531,36,526,36,497,39"/>
+</map>

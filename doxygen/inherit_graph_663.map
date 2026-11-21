@@ -1,0 +1,25 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,281,192,309"/>
+<area shape="rect" id="Node000001" href="$structcirct_1_1ArcConversionOptions.html" title=" " alt="" coords="250,5,452,33"/>
+<area shape="poly" id="edge432_Node000000_Node000001" title=" " alt="" coords="105,266,122,217,149,157,187,96,211,68,238,44,263,31,260,36,241,48,215,72,191,99,153,160,127,219,110,268"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1ArcOptimizationOptions.html" title=" " alt="" coords="245,57,457,85"/>
+<area shape="poly" id="edge433_Node000000_Node000002" title=" " alt="" coords="109,267,129,228,157,181,193,135,238,96,265,84,262,88,241,100,197,138,161,184,133,230,114,269"/>
+<area shape="rect" id="Node000003" href="$structcirct_1_1ArcPreprocessingOptions.html" title=" " alt="" coords="241,109,460,137"/>
+<area shape="poly" id="edge434_Node000000_Node000003" title=" " alt="" coords="115,267,166,205,200,173,238,146,266,136,262,139,241,151,203,177,170,209,120,270"/>
+<area shape="rect" id="Node000004" href="$structcirct_1_1ArcStateAllocationOptions.html" title=" " alt="" coords="262,161,440,206"/>
+<area shape="poly" id="edge435_Node000000_Node000004" title=" " alt="" coords="133,271,183,243,239,215,272,204,268,208,241,220,185,247,137,275"/>
+<area shape="rect" id="Node000005" href="$structcirct_1_1ArcStateLoweringOptions.html" title=" " alt="" coords="240,229,462,257"/>
+<area shape="poly" id="edge436_Node000000_Node000005" title=" " alt="" coords="183,275,282,256,278,260,186,280"/>
+<area shape="rect" id="Node000006" href="$structcirct_1_1ArcToLLVMOptions.html" title=" " alt="" coords="263,281,439,309"/>
+<area shape="poly" id="edge437_Node000000_Node000006" title=" " alt="" coords="206,293,264,294,260,297,208,298"/>
+<area shape="rect" id="Node000007" href="$structcirct_1_1LlhdToCorePipelineOptions.html" title="Convert LLHD dialect IR into core dialect IR." alt="" coords="261,333,441,378"/>
+<area shape="poly" id="edge438_Node000000_Node000007" title=" " alt="" coords="174,310,263,332,258,335,175,316"/>
+<area shape="rect" id="Node000008" href="$structcirct_1_1rtg_1_1EmissionPipelineOptions.html" title="Options for the RTG emission pipeline." alt="" coords="254,402,448,447"/>
+<area shape="poly" id="edge439_Node000000_Node000008" title=" " alt="" coords="129,316,181,353,241,387,270,401,265,402,238,392,178,357,129,321"/>
+<area shape="rect" id="Node000009" href="$structcirct_1_1rtg_1_1RandomizationPipelineOptions.html" title="Options for the RTG randomization pipeline." alt="" coords="260,472,442,516"/>
+<area shape="poly" id="edge440_Node000000_Node000009" title=" " alt="" coords="116,320,168,389,202,426,241,457,264,471,258,471,238,461,199,429,164,392,116,325"/>
+<area shape="rect" id="Node000010" href="$structcirct_1_1synth_1_1CombLoweringPipelineOptions.html" title="Options for the aig lowering pipeline." alt="" coords="252,541,450,586"/>
+<area shape="poly" id="edge441_Node000000_Node000010" title=" " alt="" coords="109,320,129,367,157,422,194,478,217,504,241,526,261,540,255,540,238,531,213,508,190,481,152,425,125,369,109,326"/>
+<area shape="rect" id="Node000011" href="$structcirct_1_1synth_1_1SynthOptimizationPipelineOptions.html" title="Options for the synth optimization pipeline." alt="" coords="240,610,462,655"/>
+<area shape="poly" id="edge442_Node000000_Node000011" title=" " alt="" coords="106,322,122,381,148,454,165,493,187,530,212,565,241,596,259,610,254,609,238,600,208,569,182,533,160,495,143,456,117,383,105,327"/>
+</map>

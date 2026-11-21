@@ -1,0 +1,13 @@
+<map id="circt::hw::HierPathCache" name="circt::hw::HierPathCache">
+<area shape="rect" id="Node000001" title=" " alt="" coords="248,224,427,251"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1Namespace.html" title="A namespace that is used to store existing names and generate new names in some scope within the IR." alt="" coords="78,114,213,142"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,148,316,222,311,224,182,153"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,161,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="92,45,110,81,135,114,130,115,105,83,91,50"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="185,5,234,33"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="200,46,183,83,159,116,155,112,178,81,197,50"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="238,106,438,151"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="340,164,340,225,335,222,336,168"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="461,114,553,142"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="484,152,422,202,374,226,372,220,419,197,479,154"/>
+</map>

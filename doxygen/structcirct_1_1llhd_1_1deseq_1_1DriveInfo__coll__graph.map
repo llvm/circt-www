@@ -1,0 +1,15 @@
+<map id="circt::llhd::deseq::DriveInfo" name="circt::llhd::deseq::DriveInfo">
+<area shape="rect" id="Node000001" title="A drive op and the clock and reset that resulted from trigger analysis." alt="" coords="130,268,258,313"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,159,106,187"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,194,171,267,166,269,82,199"/>
+<area shape="rect" id="Node000003" href="$structcirct_1_1llhd_1_1deseq_1_1ClockInfo.html" title="A single clock extracted from a process during trigger analysis." alt="" coords="282,151,410,195"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="308,205,224,270,221,266,303,206"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="146,5,203,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="182,45,198,95,209,125,235,136,284,153,279,154,233,141,206,129,193,97,181,51"/>
+<area shape="rect" id="Node000006" href="$structcirct_1_1llhd_1_1deseq_1_1ResetInfo.html" title="A single reset extracted from a process during trigger analysis." alt="" coords="130,151,258,195"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="145,46,141,58,131,92,133,107,140,125,161,150,155,151,136,128,128,109,126,92,136,56,147,42"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="324,5,374,33"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="370,44,377,56,383,92,377,128,365,152,361,149,372,126,378,92,372,58,369,49"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="309,41,293,59,283,76,280,92,277,109,267,128,239,152,236,148,263,125,272,108,275,91,278,74,289,55,313,38"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="196,209,197,269,192,267,192,213"/>
+</map>

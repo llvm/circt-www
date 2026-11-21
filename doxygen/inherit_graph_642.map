@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="5,5,195,50"/>
+<area shape="rect" id="Node000001" href="$structcirct_1_1calyx_1_1EliminateUnusedCombGroups.html" title="Removes calyx::CombGroupOps which are unused." alt="" coords="243,5,454,50"/>
+<area shape="poly" id="edge395_Node000000_Node000001" title=" " alt="" coords="210,25,245,27,239,28,211,30"/>
+</map>

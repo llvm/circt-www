@@ -1,0 +1,7 @@
+<map id="circt::calyx::NonTerminatingGroupDonePattern" name="circt::calyx::NonTerminatingGroupDonePattern">
+<area shape="rect" id="Node000001" title="GroupDoneOp&#39;s are terminator operations and should therefore be the last operator in a group." alt="" coords="5,217,209,262"/>
+<area shape="rect" id="Node000002" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="14,123,200,168"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,181,109,217,105,216,105,185"/>
+<area shape="rect" id="Node000003" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="22,5,192,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="108,64,110,123,104,122,106,68"/>
+</map>

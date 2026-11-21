@@ -1,0 +1,7 @@
+<map id="circt::firrtl::InstanceInfo::LatticeValue" name="circt::firrtl::InstanceInfo::LatticeValue">
+<area shape="rect" id="Node000001" title="A lattice value to record the value of a property." alt="" coords="5,106,178,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="30,5,81,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,46,66,81,78,106,73,106,61,83,56,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="104,5,154,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="122,46,101,107,97,104,117,49"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="circt::ImportVerilog::VirtualInterfaceLowering" name="circt::ImportVerilog::VirtualInterfaceLowering">
+<area shape="rect" id="Node000001" title="Cached lowering information for representing SystemVerilog virtual interface handles as Moore types (..." alt="" coords="89,106,278,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,159,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,42,165,105,160,106,104,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="182,5,390,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="265,44,206,107,203,103,260,45"/>
+</map>

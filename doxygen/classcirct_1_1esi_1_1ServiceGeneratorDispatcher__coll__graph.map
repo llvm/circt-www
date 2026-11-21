@@ -1,0 +1,7 @@
+<map id="circt::esi::ServiceGeneratorDispatcher" name="circt::esi::ServiceGeneratorDispatcher">
+<area shape="rect" id="Node000001" title="Class which &quot;dispatches&quot; a service implementation request to its specified generator." alt="" coords="69,123,266,168"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,189,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,63,95,82,101,98,110,110,123,123,118,122,106,114,96,100,90,83,90,68"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="215,14,264,42"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="233,55,213,100,193,125,190,120,208,98,229,58"/>
+</map>

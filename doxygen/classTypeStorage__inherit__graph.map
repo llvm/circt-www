@@ -1,0 +1,7 @@
+<map id="TypeStorage" name="TypeStorage">
+<area shape="rect" id="Node000001" title=" " alt="" coords="119,5,220,33"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1hw_1_1detail_1_1ModuleTypeStorage.html" title=" " alt="" coords="5,81,155,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,43,105,82,102,78,141,45"/>
+<area shape="rect" id="Node000003" href="$structcirct_1_1systemc_1_1detail_1_1IntegerWidthStorage.html" title="Integer Type Storage and Uniquing." alt="" coords="178,81,342,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,41,239,80,233,80,194,46"/>
+</map>

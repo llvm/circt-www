@@ -1,0 +1,9 @@
+<map id="esiaccel.codegen.ports.CppPortKind" name="esiaccel.codegen.ports.CppPortKind">
+<area shape="rect" id="Node000001" title=" " alt="" coords="104,195,303,240"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,82,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="41,46,42,77,46,109,54,141,71,170,86,184,106,196,101,197,83,188,67,173,50,143,40,110,37,77,40,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="183,5,224,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,47,206,196,201,194,201,50"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="338,5,376,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="361,47,361,77,357,110,347,143,329,173,298,197,296,192,326,170,343,141,352,109,356,77,358,51"/>
+</map>

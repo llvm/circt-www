@@ -1,0 +1,57 @@
+<map id="circt::ExportVerilog::SharedEmitterState" name="circt::ExportVerilog::SharedEmitterState">
+<area shape="rect" id="Node000001" title="This class tracks the top&#45;level state for the emitters, which is built and then shared across all per..." alt="" coords="967,918,1123,963"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="596,290,683,317"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="697,306,758,317,826,337,859,352,891,370,920,392,945,419,967,460,986,519,1002,589,1016,666,1035,814,1045,919,1040,917,1030,814,1011,666,997,590,981,520,962,463,941,422,917,396,888,375,857,357,824,342,757,322,699,311"/>
+<area shape="rect" id="Node000003" href="$structcirct_1_1ExportVerilog_1_1FileInfo.html" title="Information to control the emission of a list of operations into a file." alt="" coords="567,341,712,386"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="694,392,754,430,821,481,888,542,918,576,945,613,969,652,988,695,1017,782,1035,860,1044,919,1039,917,1030,861,1012,783,983,697,964,655,941,616,914,580,884,546,818,485,751,434,695,397"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="18,36,240,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="254,31,320,28,388,34,421,42,452,54,481,71,508,92,519,112,523,140,522,210,520,280,523,308,532,327,548,341,569,353,564,354,545,346,528,330,518,309,515,280,517,210,518,141,513,114,504,96,478,75,450,59,419,47,387,39,320,33,257,36"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="104,223,154,251"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="167,226,249,208,350,194,399,190,444,190,481,196,507,208,519,222,525,237,522,267,519,298,523,313,532,327,548,341,569,352,564,353,545,345,528,331,518,315,514,298,517,267,519,238,515,225,504,212,479,201,443,195,399,195,350,199,250,214,170,230"/>
+<area shape="rect" id="Node000011" href="$classcirct_1_1hw_1_1HWSymbolCache.html" title="This stores lookup tables to make manipulating and working with the IR more efficient." alt="" coords="542,591,737,619"/>
+<area shape="poly" id="edge13_Node000011_Node000005" title=" " alt="" coords="168,236,368,247,461,255,507,264,521,280,528,295,530,326,527,359,528,378,532,397,556,455,583,509,631,590,626,590,579,512,551,457,527,399,522,378,521,359,524,326,523,296,516,282,504,268,461,260,368,252,171,241"/>
+<area shape="rect" id="Node000015" href="$structcirct_1_1LoweringOptions.html" title="Options which control the emission from CIRCT to Verilog." alt="" coords="556,763,722,791"/>
+<area shape="poly" id="edge16_Node000015_Node000005" title=" " alt="" coords="137,263,155,320,183,389,223,459,249,490,278,518,308,535,336,543,364,544,392,542,420,541,448,542,477,551,507,571,519,585,523,598,526,613,532,629,583,705,628,763,623,763,579,708,527,631,521,614,518,600,514,587,504,575,475,556,447,548,420,546,392,548,364,550,336,548,306,540,275,522,245,494,219,462,178,391,150,322,137,269"/>
+<area shape="rect" id="Node000006" href="$classllvm_1_1MapVector.html" title=" " alt="" coords="530,814,749,859"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="764,846,854,861,944,885,978,899,1010,918,1005,918,975,904,942,890,853,866,765,851"/>
+<area shape="rect" id="Node000007" href="$classllvm_1_1MapVector.html" title=" " alt="" coords="5,1025,253,1070"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="268,1062,340,1066,408,1066,466,1059,488,1052,504,1042,519,1023,524,1004,523,983,518,961,510,916,514,893,528,870,545,858,541,861,532,873,519,895,516,916,523,960,528,982,530,1004,524,1026,507,1046,490,1056,468,1064,409,1071,339,1072,269,1067"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="549,884,730,928"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="745,912,969,933,964,935,745,918"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="550,953,728,998"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="744,972,841,968,943,959,969,957,964,959,943,964,841,974,745,977"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="577,1022,702,1049"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="717,1035,826,1027,885,1018,942,1002,981,984,1013,965,1018,962,983,988,944,1007,886,1023,826,1033,718,1040"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="712,621,769,640,830,666,890,700,945,743,980,786,1008,834,1027,880,1040,919,1035,917,1022,882,1003,836,976,789,941,747,887,705,827,671,767,645,713,626"/>
+<area shape="rect" id="Node000012" href="$classcirct_1_1SymbolCacheBase.html" title="Base symbol cache class to allow for cache lookup through a pointer to some abstract cache." alt="" coords="40,526,218,553"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="233,545,364,557,506,575,575,589,570,591,505,581,363,563,235,550"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="99,578,159,605"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="173,593,277,600,415,604,544,605,539,608,415,609,277,606,175,598"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="29,630,229,692"/>
+<area shape="poly" id="edge14_Node000011_Node000014" title=" " alt="" coords="243,656,370,649,505,634,589,618,585,621,506,639,371,654,246,661"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="737,770,788,773,841,781,894,795,944,817,974,839,999,865,1035,919,1029,917,995,869,970,843,942,822,892,800,840,786,787,779,738,776"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="89,908,169,936"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="184,924,267,928,362,928,448,919,481,911,504,898,513,888,517,877,516,852,515,826,518,813,528,800,558,784,554,787,531,804,523,815,520,827,521,852,522,878,518,891,507,903,483,916,449,925,362,933,267,933,186,929"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="62,964,196,992"/>
+<area shape="poly" id="edge18_Node000015_Node000017" title=" " alt="" coords="211,984,293,988,380,988,455,980,484,971,504,960,518,942,522,924,521,904,517,884,510,843,514,821,528,800,558,783,554,786,532,804,519,823,516,843,522,883,527,904,528,924,522,944,507,964,486,976,456,985,380,994,293,993,213,989"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="75,716,183,744"/>
+<area shape="poly" id="edge19_Node000015_Node000018" title=" " alt="" coords="197,728,340,733,506,747,578,761,573,763,505,753,340,739,199,733"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="68,768,190,796"/>
+<area shape="poly" id="edge20_Node000015_Node000019" title=" " alt="" coords="205,779,557,776,554,780,206,784"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="551,1073,728,1118"/>
+<area shape="poly" id="edge21_Node000001_Node000020" title=" " alt="" coords="743,1102,792,1101,843,1095,894,1083,942,1063,971,1042,996,1015,1031,965,1035,962,1000,1019,975,1046,944,1068,896,1088,844,1100,792,1106,744,1107"/>
+<area shape="rect" id="Node000021" href="$structcirct_1_1ExportVerilog_1_1GlobalNameTable.html" title="This class keeps track of global names at the module/interface level." alt="" coords="567,1142,712,1187"/>
+<area shape="poly" id="edge22_Node000001_Node000021" title=" " alt="" coords="727,1174,779,1176,835,1171,891,1158,942,1133,962,1116,980,1095,1008,1048,1026,1001,1038,965,1041,962,1031,1003,1013,1051,984,1098,966,1120,944,1137,893,1163,836,1177,779,1181,727,1180"/>
+<area shape="rect" id="Node000022" title=" " alt="" coords="41,1094,217,1156"/>
+<area shape="poly" id="edge23_Node000021_Node000022" title=" " alt="" coords="232,1130,506,1151,569,1158,564,1160,505,1157,233,1135"/>
+<area shape="rect" id="Node000023" title=" " alt="" coords="19,1180,239,1208"/>
+<area shape="poly" id="edge24_Node000021_Node000023" title=" " alt="" coords="255,1189,505,1176,569,1173,564,1174,506,1182,255,1194"/>
+<area shape="rect" id="Node000024" title=" " alt="" coords="48,1232,210,1311"/>
+<area shape="poly" id="edge25_Node000021_Node000024" title=" " alt="" coords="225,1271,290,1267,361,1259,435,1243,504,1218,516,1208,528,1197,564,1184,569,1182,531,1202,520,1212,507,1223,436,1248,362,1264,290,1273,226,1276"/>
+<area shape="rect" id="Node000025" title=" " alt="" coords="41,1335,217,1363"/>
+<area shape="poly" id="edge26_Node000021_Node000025" title=" " alt="" coords="229,1362,297,1365,370,1359,407,1351,442,1338,474,1322,504,1300,513,1289,517,1277,516,1252,515,1225,519,1211,528,1198,545,1183,564,1177,569,1175,548,1188,532,1201,523,1214,520,1226,521,1252,522,1278,518,1291,508,1304,477,1326,444,1343,408,1356,371,1364,297,1370,229,1367"/>
+<area shape="rect" id="Node000026" title=" " alt="" coords="554,1212,725,1256"/>
+<area shape="poly" id="edge27_Node000001_Node000026" title=" " alt="" coords="740,1248,791,1250,844,1245,895,1232,941,1206,968,1181,990,1151,1006,1117,1019,1082,1035,1015,1041,965,1045,961,1040,1016,1024,1084,1011,1119,994,1153,972,1184,945,1211,897,1236,845,1250,791,1255,741,1254"/>
+<area shape="rect" id="Node000027" title=" " alt="" coords="554,1281,725,1326"/>
+<area shape="poly" id="edge28_Node000001_Node000027" title=" " alt="" coords="741,1321,792,1324,845,1320,896,1307,920,1296,941,1281,959,1259,976,1225,1004,1133,1025,1037,1039,965,1042,962,1031,1038,1010,1135,981,1227,964,1262,945,1285,922,1300,898,1312,846,1326,792,1329,741,1326"/>
+</map>

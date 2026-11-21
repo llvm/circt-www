@@ -1,0 +1,5 @@
+<map id="circt::synth::Signal" name="circt::synth::Signal">
+<area shape="rect" id="Node000001" title="Edge representation in the logic network." alt="" coords="5,106,147,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="39,5,113,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,47,79,106,73,105,74,50"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="circt::ImportVerilog::LocationKey" name="circt::ImportVerilog::LocationKey">
+<area shape="rect" id="Node000001" title="ImportVerilog Elaboration Phases for Hierarchical Names." alt="" coords="15,106,160,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,80,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="42,46,49,81,65,105,60,106,44,83,40,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="104,5,163,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="124,46,99,107,95,104,119,49"/>
+</map>

@@ -1,0 +1,28 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Target/ExportSystemC/Patterns/EmitCEmissionPatterns.cpp" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Target/ExportSystemC/Patterns/EmitCEmissionPatterns.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="328,5,588,84"/>
+<area shape="rect" id="Node000002" href="$EmitCEmissionPatterns_8h.html" title=" " alt="" coords="94,225,278,252"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="367,86,329,109,291,134,245,175,208,214,204,211,241,171,287,130,327,104,371,83"/>
+<area shape="rect" id="Node000007" href="$EmissionPrinter_8h.html" title=" " alt="" coords="301,140,448,168"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="430,83,396,130,392,126,426,87"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="472,132,612,177"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="489,82,519,120,514,119,488,87"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="636,140,808,168"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="554,82,679,134,673,135,554,87"/>
+<area shape="rect" id="Node000003" href="$EmissionPatternSupport_8h.html" title=" " alt="" coords="81,300,281,328"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="187,250,186,286,181,284,184,255"/>
+<area shape="rect" id="Node000004" href="$LLVM_8h.html" title=" " alt="" coords="104,376,258,404"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="182,326,183,361,179,359,180,331"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,452,157,479"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="166,403,112,445,109,440,161,405"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="180,452,384,479"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="200,402,255,442,249,442,198,407"/>
+<area shape="rect" id="Node000008" href="$EmissionPattern_8h.html" title=" " alt="" coords="305,225,444,252"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="376,166,377,210,372,208,373,171"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="467,225,698,252"/>
+<area shape="poly" id="edge11_Node000007_Node000011" title=" " alt="" coords="408,166,538,218,532,219,408,171"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="338,254,230,297,228,292,342,251"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="305,300,449,328"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="376,251,378,286,374,283,373,255"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="473,300,518,328"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="396,250,464,292,459,292,396,256"/>
+</map>

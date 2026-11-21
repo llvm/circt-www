@@ -1,0 +1,24 @@
+<map id="circt::scftocalyx::ComponentLoweringState" name="circt::scftocalyx::ComponentLoweringState">
+<area shape="rect" id="Node000001" title="Handles the current state of lowering of a Calyx component." alt="" coords="1080,179,1269,223"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1calyx_1_1ComponentLoweringStateInterface.html" title=" " alt="" coords="793,5,1027,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1020,54,1032,60,1070,87,1106,118,1158,179,1153,178,1102,122,1067,91,1029,65,1020,59"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1scftocalyx_1_1WhileLoopLoweringStateInterface.html" title=" " alt="" coords="790,75,1030,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1011,122,1031,129,1133,178,1128,178,1029,134,1011,127"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1calyx_1_1LoopLoweringStateInterface.html" title=" " alt="" coords="378,75,596,119"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="611,94,792,96,787,98,612,100"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1calyx_1_1LoopLoweringStateInterface.html" title=" " alt="" coords="5,109,196,154"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="210,119,379,105,375,109,212,124"/>
+<area shape="rect" id="Node000007" href="$classcirct_1_1calyx_1_1LoopLoweringStateInterface.html" title=" " alt="" coords="386,144,588,189"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="210,148,220,149,388,162,383,165,219,154,212,153"/>
+<area shape="rect" id="Node000006" href="$classcirct_1_1scftocalyx_1_1ForLoopLoweringStateInterface.html" title=" " alt="" coords="798,144,1022,189"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1038,180,1082,188,1077,189,1038,186"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="603,164,801,166,795,167,603,169"/>
+<area shape="rect" id="Node000008" href="$classcirct_1_1scftocalyx_1_1IfLoweringStateInterface.html" title=" " alt="" coords="820,213,1001,258"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="1016,219,1082,213,1077,214,1017,224"/>
+<area shape="rect" id="Node000009" href="$classcirct_1_1scftocalyx_1_1SeqOpLoweringStateInterface.html" title="Stores the state information for condition checks involving sequential computation." alt="" coords="803,283,1017,327"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="1010,275,1029,268,1128,225,1133,223,1031,273,1012,280"/>
+<area shape="rect" id="Node000010" href="$classcirct_1_1calyx_1_1SchedulerInterface.html" title=" " alt="" coords="799,352,1021,397"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="1019,343,1029,337,1067,311,1102,280,1153,225,1158,223,1106,284,1070,315,1032,342,1021,348"/>
+<area shape="rect" id="Node000011" href="$classcirct_1_1calyx_1_1SchedulerInterface.html" title="Holds common utilities used for scheduling when lowering to Calyx." alt="" coords="357,360,617,388"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="632,372,801,374,796,374,632,377"/>
+</map>

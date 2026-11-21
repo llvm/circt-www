@@ -1,0 +1,9 @@
+<map id="circt::scftocalyx::WhileLoopLoweringStateInterface" name="circt::scftocalyx::WhileLoopLoweringStateInterface">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,217,246,262"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1scftocalyx_1_1ComponentLoweringState.html" title="Handles the current state of lowering of a Calyx component." alt="" coords="31,311,220,356"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="127,275,128,312,123,309,124,279"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1calyx_1_1LoopLoweringStateInterface.html" title=" " alt="" coords="16,123,235,168"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,181,128,217,123,216,124,186"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1calyx_1_1LoopLoweringStateInterface.html" title=" " alt="" coords="30,5,221,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="126,63,128,123,123,122,125,68"/>
+</map>

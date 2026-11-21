@@ -1,0 +1,7 @@
+<map id="circt::synth::LongestPathCollection" name="circt::synth::LongestPathCollection">
+<area shape="rect" id="Node000001" title=" " alt="" coords="102,123,283,168"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,204,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,60,179,122,173,123,129,65"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="228,14,333,42"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="264,53,211,125,207,121,259,55"/>
+</map>

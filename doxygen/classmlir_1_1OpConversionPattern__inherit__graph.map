@@ -1,0 +1,99 @@
+<map id="mlir::OpConversionPattern&lt; SourceOp &gt;" name="mlir::OpConversionPattern&lt; SourceOp &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,1097,198,1142"/>
+<area shape="rect" id="Node000002" href="$classStreamLowering.html" title=" " alt="" coords="496,5,727,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,1081,115,866,139,557,155,402,174,267,195,164,207,129,220,107,248,82,279,61,314,45,350,33,424,20,497,17,493,20,425,25,352,38,316,50,282,66,251,86,224,111,212,131,200,165,179,268,160,403,144,557,120,866,107,1082"/>
+<area shape="rect" id="Node000003" href="$classStreamLowering.html" title=" " alt="" coords="497,75,726,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="102,1081,116,877,140,587,157,443,175,316,196,220,208,187,220,167,248,142,280,122,315,107,352,96,426,84,499,83,495,87,427,90,353,101,317,112,283,127,251,146,224,171,212,190,201,221,181,317,162,443,146,588,121,877,108,1082"/>
+<area shape="rect" id="Node000004" href="$structcirct_1_1esi_1_1detail_1_1RemoveOpLowering.html" title="Generic pattern for removing an op during pattern conversion." alt="" coords="526,144,697,205"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="102,1082,116,888,141,615,158,479,176,361,197,271,208,241,220,222,252,196,289,176,328,163,370,155,452,150,528,157,523,160,452,155,370,160,330,168,291,181,255,200,224,225,213,243,202,272,181,362,163,480,147,616,122,888,108,1082"/>
+<area shape="rect" id="Node000005" href="$structcirct_1_1msft_1_1RemoveOpLowering.html" title="Generic pattern for removing an op during pattern conversion." alt="" coords="499,229,724,274"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="99,1081,100,907,104,788,113,661,127,536,149,422,163,373,179,330,198,295,220,268,254,244,291,227,332,216,373,211,456,214,531,227,527,230,456,219,374,217,333,222,293,232,256,248,223,272,203,298,184,332,168,374,154,423,133,536,118,661,110,788,105,907,105,1082"/>
+<area shape="rect" id="Node000006" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="515,299,708,343"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="100,1081,105,924,121,707,136,597,156,497,184,415,201,384,220,360,251,336,287,318,324,305,364,298,443,293,517,300,513,303,443,299,365,303,326,310,289,323,254,340,224,364,205,387,189,417,162,498,141,597,126,707,110,924,106,1082"/>
+<area shape="rect" id="Node000008" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="511,368,712,413"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="101,1081,107,937,125,741,141,642,161,552,187,479,202,451,220,430,240,416,269,406,343,393,429,386,513,386,509,390,429,392,344,398,270,411,243,421,223,434,207,454,192,481,166,553,146,643,131,741,113,937,106,1082"/>
+<area shape="rect" id="Node000011" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="515,437,708,482"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="102,1082,110,951,130,775,146,687,165,607,190,543,204,518,220,499,241,486,270,475,345,462,432,456,517,456,513,459,432,461,346,467,271,481,243,491,223,503,208,521,195,545,170,609,151,688,136,776,116,951,107,1082"/>
+<area shape="rect" id="Node000013" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="515,507,708,551"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="103,1081,114,964,135,809,151,732,170,663,193,606,206,585,220,568,241,555,270,545,346,532,432,526,517,525,513,528,432,531,346,537,272,550,243,560,223,572,210,588,197,609,175,664,156,733,141,810,119,964,108,1082"/>
+<area shape="rect" id="Node000015" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="515,576,708,621"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="104,1082,117,978,140,844,156,778,174,718,196,670,220,638,241,625,270,615,346,602,432,595,517,595,513,598,432,601,347,607,272,620,243,630,223,642,200,673,179,720,161,779,146,845,123,978,109,1082"/>
+<area shape="rect" id="Node000017" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="515,645,708,690"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="106,1082,121,991,146,879,179,774,198,734,220,707,241,694,271,685,346,671,433,665,517,664,513,668,433,670,347,677,272,690,244,699,223,711,203,737,184,776,151,880,126,992,111,1082"/>
+<area shape="rect" id="Node000019" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="514,715,708,759"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="101,1081,108,1014,126,930,141,887,161,846,187,808,220,776,242,764,271,755,346,742,432,735,516,734,512,737,432,740,347,747,272,760,244,769,223,780,192,812,166,849,146,889,131,932,113,1015,106,1082"/>
+<area shape="rect" id="Node000021" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="515,784,708,829"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="105,1081,116,1027,137,962,152,929,171,898,193,870,220,845,242,834,272,825,347,812,433,806,517,804,513,807,433,811,348,817,273,830,244,839,223,850,197,873,175,901,157,932,142,964,121,1028,110,1082"/>
+<area shape="rect" id="Node000023" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="515,853,708,898"/>
+<area shape="poly" id="edge22_Node000001_Node000023" title=" " alt="" coords="110,1082,125,1041,148,995,179,950,199,930,220,913,243,903,273,894,348,882,433,876,517,874,513,877,434,881,349,888,274,900,245,908,223,918,202,934,184,953,153,997,130,1043,116,1083"/>
+<area shape="rect" id="Node000025" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="515,923,708,967"/>
+<area shape="poly" id="edge24_Node000001_Node000025" title=" " alt="" coords="123,1084,164,1034,191,1011,220,992,294,964,371,947,447,939,517,938,513,941,447,944,372,952,295,969,223,997,194,1015,168,1038,128,1086"/>
+<area shape="rect" id="Node000027" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="515,992,708,1037"/>
+<area shape="poly" id="edge26_Node000001_Node000027" title=" " alt="" coords="156,1088,221,1062,297,1044,374,1031,517,1017,513,1021,375,1036,298,1049,222,1068,160,1092"/>
+<area shape="rect" id="Node000029" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="491,1061,732,1106"/>
+<area shape="poly" id="edge28_Node000001_Node000029" title=" " alt="" coords="212,1110,492,1090,489,1094,215,1114"/>
+<area shape="rect" id="Node000031" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="515,1131,708,1175"/>
+<area shape="poly" id="edge30_Node000001_Node000031" title=" " alt="" coords="211,1138,222,1138,376,1148,517,1152,513,1155,376,1154,221,1143,214,1142"/>
+<area shape="rect" id="Node000033" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="515,1200,708,1245"/>
+<area shape="poly" id="edge32_Node000001_Node000033" title=" " alt="" coords="148,1148,185,1166,222,1181,298,1199,375,1211,517,1221,512,1225,374,1216,297,1204,221,1186,183,1171,150,1152"/>
+<area shape="rect" id="Node000035" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="515,1269,708,1314"/>
+<area shape="poly" id="edge34_Node000001_Node000035" title=" " alt="" coords="124,1152,167,1204,193,1228,223,1248,258,1263,295,1275,372,1291,447,1297,517,1298,512,1301,447,1302,371,1296,294,1280,256,1268,220,1252,190,1233,163,1208,125,1158"/>
+<area shape="rect" id="Node000037" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="515,1339,708,1383"/>
+<area shape="poly" id="edge36_Node000001_Node000037" title=" " alt="" coords="112,1155,129,1198,151,1246,183,1292,202,1311,223,1328,257,1346,293,1360,370,1375,446,1379,517,1375,513,1379,446,1384,369,1380,292,1365,255,1351,220,1332,198,1315,178,1295,147,1248,124,1200,113,1160"/>
+<area shape="rect" id="Node000039" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="515,1408,708,1453"/>
+<area shape="poly" id="edge37_Node000001_Node000039" title=" " alt="" coords="106,1155,118,1215,137,1285,152,1321,171,1354,195,1384,223,1409,256,1429,292,1442,330,1452,368,1457,445,1458,517,1451,512,1454,445,1463,368,1462,329,1457,290,1448,254,1433,220,1413,191,1388,167,1357,148,1323,132,1287,112,1216,106,1160"/>
+<area shape="rect" id="Node000040" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="515,1477,708,1522"/>
+<area shape="poly" id="edge38_Node000001_Node000040" title=" " alt="" coords="102,1155,108,1231,114,1276,124,1323,139,1370,160,1415,188,1456,223,1489,244,1500,273,1507,347,1514,433,1513,517,1508,512,1511,433,1518,347,1519,272,1512,242,1505,220,1494,184,1459,156,1418,134,1372,119,1324,109,1277,103,1232,102,1160"/>
+<area shape="rect" id="Node000042" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="515,1547,708,1591"/>
+<area shape="poly" id="edge39_Node000001_Node000042" title=" " alt="" coords="108,1154,125,1251,149,1369,164,1426,182,1478,202,1519,223,1545,256,1566,291,1582,329,1592,367,1597,445,1598,518,1591,513,1593,445,1603,367,1603,327,1597,289,1587,253,1571,220,1549,197,1522,177,1480,159,1428,144,1370,120,1252,108,1160"/>
+<area shape="rect" id="Node000044" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="515,1616,708,1661"/>
+<area shape="poly" id="edge40_Node000001_Node000044" title=" " alt="" coords="106,1155,120,1268,142,1412,157,1484,176,1547,198,1598,210,1617,223,1631,244,1641,272,1649,347,1655,432,1654,517,1648,512,1651,433,1659,347,1661,271,1654,242,1646,220,1635,206,1620,193,1601,171,1549,152,1485,136,1413,114,1269,106,1160"/>
+<area shape="rect" id="Node000045" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="515,1685,708,1730"/>
+<area shape="poly" id="edge41_Node000001_Node000045" title=" " alt="" coords="105,1155,117,1280,138,1440,153,1520,173,1592,196,1649,209,1671,223,1687,256,1709,293,1725,332,1735,372,1740,452,1739,527,1729,523,1732,453,1744,372,1746,331,1740,291,1730,254,1714,220,1691,205,1674,191,1652,168,1594,148,1521,133,1441,112,1280,105,1160"/>
+<area shape="rect" id="Node000046" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="515,1755,708,1799"/>
+<area shape="poly" id="edge42_Node000001_Node000046" title=" " alt="" coords="104,1155,113,1296,131,1483,146,1577,166,1661,192,1729,207,1754,223,1772,243,1783,272,1791,347,1797,432,1794,517,1788,512,1791,433,1800,346,1802,271,1796,241,1788,220,1776,203,1757,187,1731,161,1663,141,1578,126,1484,108,1296,104,1160"/>
+<area shape="rect" id="Node000048" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="515,1824,708,1869"/>
+<area shape="poly" id="edge43_Node000001_Node000048" title=" " alt="" coords="103,1155,111,1306,128,1510,143,1613,163,1705,190,1780,206,1808,223,1828,243,1840,272,1848,346,1857,432,1857,517,1854,512,1857,432,1863,346,1862,270,1853,241,1844,220,1832,201,1811,185,1782,158,1707,137,1614,122,1511,106,1307,103,1160"/>
+<area shape="rect" id="Node000051" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="515,1893,708,1938"/>
+<area shape="poly" id="edge44_Node000001_Node000051" title=" " alt="" coords="103,1155,109,1317,114,1425,124,1539,139,1652,160,1754,188,1836,204,1867,223,1889,255,1913,291,1929,329,1940,369,1946,449,1946,524,1938,519,1940,449,1951,368,1951,328,1945,289,1934,253,1917,220,1893,200,1870,183,1838,154,1755,133,1653,119,1540,109,1425,103,1318,103,1160"/>
+<area shape="rect" id="Node000053" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="515,1963,708,2007"/>
+<area shape="poly" id="edge45_Node000001_Node000053" title=" " alt="" coords="105,1155,122,1345,146,1608,163,1737,181,1850,202,1935,212,1963,223,1979,243,1990,271,1998,346,2004,432,2002,517,1997,512,1998,433,2007,346,2010,271,2003,241,1995,220,1983,208,1965,196,1937,176,1852,157,1738,141,1608,116,1346,105,1160"/>
+<area shape="rect" id="Node000055" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="515,2032,708,2077"/>
+<area shape="poly" id="edge46_Node000001_Node000055" title=" " alt="" coords="105,1155,120,1357,145,1637,161,1776,179,1898,201,1989,212,2019,224,2036,243,2048,271,2056,346,2065,432,2066,517,2063,512,2064,432,2071,346,2071,270,2062,241,2053,220,2040,207,2021,195,1990,174,1899,155,1777,139,1638,115,1357,105,1160"/>
+<area shape="rect" id="Node000057" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="515,2101,708,2146"/>
+<area shape="poly" id="edge47_Node000001_Node000057" title=" " alt="" coords="105,1155,119,1368,143,1668,159,1817,178,1948,199,2046,211,2079,224,2097,243,2110,271,2119,346,2129,432,2131,518,2131,512,2131,432,2137,345,2134,270,2124,241,2114,220,2101,207,2081,194,2048,172,1949,153,1818,137,1668,114,1368,104,1160"/>
+<area shape="rect" id="Node000058" href="$classmlir_1_1OpConversionPattern.html" title=" " alt="" coords="474,2175,749,2219"/>
+<area shape="poly" id="edge48_Node000001_Node000058" title=" " alt="" coords="104,1155,117,1386,139,1714,155,1878,174,2021,197,2129,210,2165,224,2185,258,2210,296,2226,337,2235,380,2239,423,2238,465,2233,537,2220,542,2220,465,2238,423,2243,380,2244,336,2241,294,2231,255,2214,220,2189,205,2167,192,2131,169,2022,150,1879,134,1714,112,1386,104,1161"/>
+<area shape="rect" id="Node000007" href="$classAffineLoadLowering.html" title="Apply the affine map from an &#39;affine.load&#39; operation to its operands, and feed the results to a newly..." alt="" coords="843,299,992,327"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="721,316,845,313,840,317,724,320"/>
+<area shape="rect" id="Node000009" href="$classAffineParallelOpLowering.html" title=" " alt="" coords="825,351,1010,379"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="726,379,827,371,823,374,729,383"/>
+<area shape="rect" id="Node000010" href="$classAffinePloopUnparallelize.html" title=" " alt="" coords="827,403,1008,431"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="726,398,829,408,824,411,728,403"/>
+<area shape="rect" id="Node000012" href="$classAffineStoreLowering.html" title="Apply the affine map from an &#39;affine.store&#39; operation to its operands, and feed the results to a newl..." alt="" coords="841,455,994,483"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="721,461,843,465,839,468,724,465"/>
+<area shape="rect" id="Node000014" href="$structArrayRefAllocOpLowering.html" title=" " alt="" coords="824,515,1011,543"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="721,527,826,527,821,531,724,531"/>
+<area shape="rect" id="Node000016" href="$structArrayRefCopyOpLowering.html" title=" " alt="" coords="823,584,1012,612"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="722,596,825,597,821,600,725,601"/>
+<area shape="rect" id="Node000018" href="$structArrayRefCreateOpLowering.html" title=" " alt="" coords="818,654,1017,682"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="722,665,820,666,816,669,724,670"/>
+<area shape="rect" id="Node000020" href="$structArrayRefFromArrayOpLowering.html" title=" " alt="" coords="806,723,1029,751"/>
+<area shape="poly" id="edge19_Node000019_Node000020" title=" " alt="" coords="723,735,808,736,803,738,725,739"/>
+<area shape="rect" id="Node000022" href="$structArrayRefGetOpLowering.html" title=" " alt="" coords="828,792,1007,820"/>
+<area shape="poly" id="edge21_Node000021_Node000022" title=" " alt="" coords="722,804,830,805,826,808,724,809"/>
+<area shape="rect" id="Node000024" href="$structArrayRefInjectOpLowering.html" title=" " alt="" coords="822,862,1013,890"/>
+<area shape="poly" id="edge23_Node000023_Node000024" title=" " alt="" coords="722,873,824,874,819,877,724,878"/>
+<area shape="rect" id="Node000026" href="$structArrayRefSliceOpLowering.html" title=" " alt="" coords="824,931,1011,959"/>
+<area shape="poly" id="edge25_Node000025_Node000026" title=" " alt="" coords="722,943,826,944,822,946,724,947"/>
+<area shape="rect" id="Node000028" href="$structArrayRefToArrayOpLowering.html" title=" " alt="" coords="815,1000,1020,1028"/>
+<area shape="poly" id="edge27_Node000027_Node000028" title=" " alt="" coords="722,1012,817,1013,813,1016,724,1017"/>
+<area shape="rect" id="Node000030" href="$structArrayRefToLLVMArrayOpLowering.html" title=" " alt="" coords="798,1070,1037,1098"/>
+<area shape="poly" id="edge29_Node000029_Node000030" title=" " alt="" coords="747,1081,800,1082,796,1085,749,1086"/>
+<area shape="rect" id="Node000032" href="$structConvertAssignOp.html" title=" " alt="" coords="851,1139,984,1167"/>
+<area shape="poly" id="edge31_Node000031_Node000032" title=" " alt="" coords="722,1151,853,1152,848,1154,724,1155"/>
+<area shape="rect" id="Node000034" href="$structConvertComponentOp.html" title="ConversionPatterns." alt="" coords="835,1208,1000,1236"/>
+<area shape="poly" id="edge33_Node000033_Node000034" title=" " alt="" coords="722,1220,837,1221,832,1224,724,1225"/>
+<area shape="rect" id="Node000036" href="$structConvertControlOp.html" title=" " alt="" coords="849,1278,986,1306"/>
+<area shape="poly" id="edge35_Node000035_Node000036" title=" " alt="" coords="722,1289,851,1290,846,1293,724,1294"/>
+</map>

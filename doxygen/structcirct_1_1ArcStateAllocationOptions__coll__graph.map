@@ -1,0 +1,9 @@
+<map id="circt::ArcStateAllocationOptions" name="circt::ArcStateAllocationOptions">
+<area shape="rect" id="Node000001" title=" " alt="" coords="412,65,589,110"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,227,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,34,388,54,425,65,419,65,387,60,242,40"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="39,74,193,102"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,85,413,86,409,90,209,90"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="55,130,177,158"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="192,137,286,130,387,115,419,111,424,110,388,121,286,135,193,143"/>
+</map>

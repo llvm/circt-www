@@ -1,0 +1,7 @@
+<map id="circt::pretty::PrettyPrinter::PrintEntry" name="circt::pretty::PrettyPrinter::PrintEntry">
+<area shape="rect" id="Node000001" title="Printing information for active scope, stored in printStack." alt="" coords="5,106,191,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="6,5,80,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,45,90,105,84,106,55,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="104,5,201,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,45,126,83,112,107,108,104,121,81,138,49"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="circt::firrtl::CircuitTargetCache" name="circt::firrtl::CircuitTargetCache">
+<area shape="rect" id="Node000001" title="Cache AnnoTargets for a circuit&#39;s modules, walked as needed." alt="" coords="10,140,185,185"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,190,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,81,100,140,95,139,95,84"/>
+</map>

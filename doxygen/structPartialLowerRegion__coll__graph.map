@@ -1,0 +1,17 @@
+<map id="PartialLowerRegion" name="PartialLowerRegion">
+<area shape="rect" id="Node000001" title="Allows to partially lower a region by matching on the parent operation to then call the provided part..." alt="" coords="615,83,761,110"/>
+<area shape="rect" id="Node000002" href="$classConversionPattern.html" title=" " alt="" coords="303,5,443,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="459,24,525,34,592,50,629,64,663,82,658,82,627,69,590,55,524,39,459,29"/>
+<area shape="rect" id="Node000003" href="$classLowerRegionTarget.html" title=" " alt="" coords="300,57,446,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="461,76,617,90,612,91,461,81"/>
+<area shape="rect" id="Node000004" href="$classConversionTarget.html" title=" " alt="" coords="5,5,140,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="155,25,243,38,319,56,314,58,242,43,156,30"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="48,57,97,85"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="113,69,301,69,298,73,113,74"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="32,113,113,141"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="127,117,242,99,317,85,312,87,243,104,129,123"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="312,111,434,138"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="449,124,518,122,591,116,631,111,636,110,591,121,518,127,449,129"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="267,163,479,225"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="494,179,543,168,590,154,632,132,666,112,671,110,635,137,592,159,544,174,495,184"/>
+</map>

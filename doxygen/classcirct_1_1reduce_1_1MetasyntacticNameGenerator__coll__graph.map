@@ -1,0 +1,7 @@
+<map id="circt::reduce::MetasyntacticNameGenerator" name="circt::reduce::MetasyntacticNameGenerator">
+<area shape="rect" id="Node000001" title="A utility class that generates metasyntactic variable names for use in reductions." alt="" coords="5,106,207,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="38,5,97,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,46,75,81,89,106,84,106,70,83,65,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="121,5,171,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,46,116,107,112,104,134,49"/>
+</map>

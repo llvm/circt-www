@@ -1,0 +1,9 @@
+<map id="llvm::Dependence" name="llvm::Dependence">
+<area shape="rect" id="Node000001" title="A wrapper class to uniformly handle def&#45;use and auxiliary dependence edges." alt="" coords="957,98,1096,125"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="206,42,303,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="318,51,433,49,587,51,759,61,933,82,985,97,980,97,932,87,759,67,586,57,433,54,319,56"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="202,98,307,125"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="322,109,957,109,956,114,323,114"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,154,504,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="519,172,722,164,829,154,932,139,987,126,992,125,933,144,829,160,723,170,519,177"/>
+</map>

@@ -1,0 +1,31 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/AXI4/AXI4Dialect.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/AXI4/AXI4Dialect.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="533,5,721,84"/>
+<area shape="rect" id="Node000002" href="$AXI4Attributes_8h.html" title=" " alt="" coords="599,132,788,211"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="655,95,675,132,670,131,654,101"/>
+<area shape="rect" id="Node000003" href="$AXI4Types_8h.html" title=" " alt="" coords="487,259,676,337"/>
+<area shape="poly" id="edge13_Node000001_Node000003" title=" " alt="" coords="600,96,589,133,581,198,581,259,576,257,576,198,584,131,597,101"/>
+<area shape="rect" id="Node000004" href="$AXI4Ops_8h.html" title=" " alt="" coords="355,385,544,464"/>
+<area shape="poly" id="edge9_Node000001_Node000004" title=" " alt="" coords="583,94,526,171,499,214,477,260,467,292,460,325,453,386,448,383,454,324,462,290,472,258,495,212,522,168,579,98"/>
+<area shape="rect" id="Node000005" href="$AXI4Dialect_8cpp.html" title=" " alt="" coords="5,520,238,582"/>
+<area shape="poly" id="edge16_Node000001_Node000005" title=" " alt="" coords="515,56,428,68,336,84,257,106,227,119,206,134,172,178,147,228,130,283,120,338,115,392,115,442,120,521,115,520,109,443,110,392,115,338,125,281,142,226,167,175,202,130,224,114,255,101,335,79,427,63,519,53"/>
+<area shape="rect" id="Node000008" href="$AXI4Types_8cpp.html" title=" " alt="" coords="722,394,945,456"/>
+<area shape="poly" id="edge17_Node000001_Node000008" title=" " alt="" coords="735,75,801,103,867,142,897,166,924,193,947,224,965,258,973,280,977,298,974,317,965,339,939,371,905,396,903,391,935,367,961,336,969,316,971,299,968,281,960,260,943,227,920,197,893,170,864,147,799,108,736,80"/>
+<area shape="rect" id="Node000009" href="$AXI4Attributes_8cpp.html" title=" " alt="" coords="700,267,951,329"/>
+<area shape="poly" id="edge15_Node000001_Node000009" title=" " alt="" coords="735,78,773,100,802,130,820,164,829,201,832,236,831,268,826,265,827,236,823,201,815,166,798,134,769,105,735,83"/>
+<area shape="rect" id="Node000010" href="$AXI4Passes_8h.html" title=" " alt="" coords="217,132,405,211"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="516,90,407,135,404,131,520,87"/>
+<area shape="rect" id="Node000012" href="$InitAllDialects_8h.html" title=" " alt="" coords="1025,140,1236,202"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="736,66,867,95,1008,129,1038,140,1033,140,1006,135,866,100,737,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="651,221,618,260,615,256,646,224"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="746,219,796,267,791,267,745,224"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="532,347,492,387,489,383,527,350"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="674,342,775,393,770,393,673,347"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="344,466,202,522,200,517,339,468"/>
+<area shape="rect" id="Node000006" href="$AXI4Ops_8cpp.html" title=" " alt="" coords="488,520,699,582"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="507,472,561,521,556,520,505,477"/>
+<area shape="rect" id="Node000007" href="$VerifyAXI4Networks_8cpp.html" title=" " alt="" coords="262,512,464,591"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="416,475,391,514,388,509,412,478"/>
+<area shape="poly" id="edge12_Node000010_Node000007" title=" " alt="" coords="227,223,213,240,200,260,192,280,190,297,200,336,223,387,255,434,289,476,322,512,317,511,285,479,250,438,219,390,195,338,185,298,187,279,195,257,209,237,230,218"/>
+<area shape="rect" id="Node000011" href="$InitAllPasses_8h.html" title=" " alt="" coords="210,267,412,329"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="312,224,313,268,308,266,310,229"/>
+</map>

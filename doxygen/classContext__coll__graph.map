@@ -1,0 +1,23 @@
+<map id="Context" name="Context">
+<area shape="rect" id="Node000001" title="This class provides a thread&#45;safe interface to access the analysis results." alt="" coords="900,204,972,231"/>
+<area shape="rect" id="Node000002" href="$classllvm_1_1MapVector.html" title=" " alt="" coords="507,41,750,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="764,87,823,109,878,140,909,170,930,204,925,202,905,174,874,144,821,114,764,93"/>
+<area shape="rect" id="Node000003" href="$classllvm_1_1MapVector.html" title=" " alt="" coords="5,26,253,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="268,50,508,58,504,61,269,55"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1igraph_1_1InstanceGraph.html" title="This graph tracks modules and where they are instantiated." alt="" coords="528,150,728,178"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="744,166,810,174,877,188,911,204,905,203,875,194,809,180,744,172"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="81,94,177,122"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="192,109,327,119,483,135,559,149,554,150,482,140,326,124,193,114"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="23,148,235,175"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="249,160,277,160,530,162,526,166,277,165,251,165"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="27,200,231,262"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="246,219,361,208,482,192,568,178,563,180,483,197,362,213,247,225"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="13,286,245,331"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="261,313,317,309,375,297,431,278,481,247,490,235,492,221,495,205,505,190,526,180,531,178,509,194,500,207,498,221,495,237,484,251,433,282,376,303,318,314,261,318"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="550,204,707,231"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="723,215,902,217,897,218,723,220"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="541,260,716,287"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="731,269,803,261,875,245,910,233,915,231,877,251,803,266,731,274"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="526,316,731,343"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="746,330,812,320,845,310,875,295,892,281,907,264,927,233,931,230,911,267,896,285,877,300,847,315,814,325,747,336"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="InnerSymbolDCEPass" name="InnerSymbolDCEPass">
+<area shape="rect" id="Node000001" title=" " alt="" coords="322,61,481,89"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1firrtl_1_1impl_1_1InnerSymbolDCEBase.html" title=" " alt="" coords="10,5,199,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,48,324,64,319,65,215,53"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,91,204,136"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="219,99,297,89,324,88,319,89,298,94,219,104"/>
+</map>

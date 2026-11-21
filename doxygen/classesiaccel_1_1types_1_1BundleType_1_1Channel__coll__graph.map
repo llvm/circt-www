@@ -1,0 +1,9 @@
+<map id="esiaccel.types.BundleType.Channel" name="esiaccel.types.BundleType.Channel">
+<area shape="rect" id="Node000001" title=" " alt="" coords="55,106,252,151"/>
+<area shape="rect" id="Node000002" href="$classNamedTuple.html" title=" " alt="" coords="5,5,108,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,42,137,105,132,106,77,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="132,5,176,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,47,156,106,151,104,152,51"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="231,5,269,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="243,46,223,84,195,108,192,103,218,80,238,49"/>
+</map>

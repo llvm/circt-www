@@ -1,0 +1,5 @@
+<map id="HWOperandForwarder&lt; OpNum &gt;" name="HWOperandForwarder&lt; OpNum &gt;">
+<area shape="rect" id="Node000001" title="A sample reduction pattern that replaces all uses of an operation with one of its operands." alt="" coords="5,81,170,126"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="26,5,149,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,47,90,81,85,80,86,51"/>
+</map>

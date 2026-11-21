@@ -1,0 +1,10 @@
+<map id="esi::ChannelType" name="esi::ChannelType">
+<area shape="rect" id="Node000001" title="Channels are the basic communication primitives." alt="" coords="13,207,144,234"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1Type.html" title="Root class of the ESI type system." alt="" coords="39,106,118,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,147,78,158,78,183,80,207,75,205,73,183,73,158,75,152"/>
+<area shape="poly" id="edge4_Node000001_Node000002" title=" " alt="" coords="81,148,81,207,76,205,76,151"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,64,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="47,44,75,105,70,106,46,50"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="88,5,160,33"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="113,45,87,107,82,104,110,49"/>
+</map>

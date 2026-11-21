@@ -1,0 +1,9 @@
+<map id="circt::firrtl::HierPathCache" name="circt::firrtl::HierPathCache">
+<area shape="rect" id="Node000001" title="A cache of existing HierPathOps, mostly used to facilitate HierPathOp reuse." alt="" coords="105,123,292,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,14,91,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,49,142,97,179,122,174,123,139,101,75,54"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="114,5,283,50"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="201,64,201,124,196,121,197,67"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="306,14,411,42"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="329,50,220,125,217,120,324,51"/>
+</map>

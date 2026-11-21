@@ -1,0 +1,13 @@
+<map id="circt::LoweringOptions" name="circt::LoweringOptions">
+<area shape="rect" id="Node000001" title="Options which control the emission from CIRCT to Verilog." alt="" coords="462,329,628,357"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="16,5,66,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="30,51,18,103,9,172,9,208,15,243,27,275,47,303,67,313,104,321,213,332,343,337,464,342,459,342,343,342,213,337,103,326,65,318,44,307,22,278,10,244,4,208,3,171,13,102,31,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="261,5,341,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="295,46,287,102,283,171,286,207,294,242,308,275,328,303,349,316,381,325,464,338,459,338,380,330,347,321,325,307,303,277,289,244,281,208,278,171,281,102,292,50"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="478,5,612,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="547,47,547,330,543,328,543,50"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="641,5,748,33"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="697,47,698,111,695,187,686,259,678,287,667,307,650,322,629,333,628,328,647,318,663,304,673,285,681,257,690,186,693,111,694,51"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="772,5,894,33"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="841,46,849,103,850,172,845,209,835,245,820,278,797,307,770,323,728,333,629,343,628,338,727,328,768,318,794,303,815,275,830,243,840,208,844,172,844,103,838,51"/>
+</map>

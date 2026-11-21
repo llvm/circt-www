@@ -1,0 +1,7 @@
+<map id="esi::ChannelAssignment" name="esi::ChannelAssignment">
+<area shape="rect" id="Node000001" title="Details about how to connect to a particular channel." alt="" coords="11,123,189,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,14,64,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,53,94,122,89,123,49,57"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="87,5,246,50"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,62,110,124,106,121,143,64"/>
+</map>

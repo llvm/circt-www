@@ -1,0 +1,5 @@
+<map id="circt::firrtl::AnnotationSet" name="circt::firrtl::AnnotationSet">
+<area shape="rect" id="Node000001" title="This class provides a read&#45;only projection over the MLIR attributes that represent a set of annotatio..." alt="" coords="5,106,190,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="57,5,138,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,47,100,106,95,105,95,50"/>
+</map>

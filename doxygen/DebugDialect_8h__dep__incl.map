@@ -1,0 +1,67 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Debug/DebugDialect.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Debug/DebugDialect.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1878,5,2078,84"/>
+<area shape="rect" id="Node000002" href="$DebugOps_8h.html" title=" " alt="" coords="1420,132,1620,211"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1866,71,1632,135,1621,138,1620,133,1631,129,1860,73"/>
+<area shape="rect" id="Node000017" href="$LowerSMTToZ3LLVM_8cpp.html" title=" " alt="" coords="5,259,221,337"/>
+<area shape="poly" id="edge30_Node000001_Node000017" title=" " alt="" coords="1860,49,1660,58,1392,73,1090,98,937,114,787,135,629,161,508,187,234,261,222,264,220,260,232,256,507,182,628,156,786,129,936,109,1090,92,1391,68,1659,53,1865,48"/>
+<area shape="rect" id="Node000019" href="$DebugDialect_8cpp.html" title=" " alt="" coords="245,267,501,329"/>
+<area shape="poly" id="edge31_Node000001_Node000019" title=" " alt="" coords="1860,58,1617,89,1281,132,899,190,704,224,514,261,479,269,478,264,512,256,703,219,898,185,1281,127,1616,83,1865,58"/>
+<area shape="rect" id="Node000027" href="$InitAllDialects_8h.html" title=" " alt="" coords="1643,140,1855,202"/>
+<area shape="poly" id="edge26_Node000001_Node000027" title=" " alt="" coords="1896,91,1806,142,1804,137,1891,93"/>
+<area shape="rect" id="Node000028" href="$CAPI_2Dialect_2Debug_8cpp.html" title=" " alt="" coords="1879,140,2078,202"/>
+<area shape="poly" id="edge27_Node000001_Node000028" title=" " alt="" coords="1980,98,1980,142,1976,138,1977,102"/>
+<area shape="rect" id="Node000029" href="$Conversion_2ExportVerilog_2ExportVerilog_8cpp.html" title=" " alt="" coords="2102,132,2311,211"/>
+<area shape="poly" id="edge28_Node000001_Node000029" title=" " alt="" coords="2063,89,2138,132,2133,131,2062,94"/>
+<area shape="rect" id="Node000030" href="$PrepareForEmission_8cpp.html" title=" " alt="" coords="2335,132,2544,211"/>
+<area shape="poly" id="edge29_Node000001_Node000030" title=" " alt="" coords="2094,70,2324,129,2337,135,2332,135,2323,135,2093,75"/>
+<area shape="rect" id="Node000031" href="$DebugTypes_8cpp.html" title=" " alt="" coords="2568,140,2815,202"/>
+<area shape="poly" id="edge32_Node000001_Node000031" title=" " alt="" coords="2094,56,2310,85,2434,106,2558,129,2593,140,2588,140,2556,135,2434,111,2309,90,2094,61"/>
+<area shape="rect" id="Node000032" href="$TranslateRegistration_8cpp.html" title=" " alt="" coords="2839,132,3059,211"/>
+<area shape="poly" id="edge33_Node000001_Node000032" title=" " alt="" coords="2094,48,2241,56,2425,71,2627,95,2828,129,2841,135,2836,134,2827,135,2626,101,2425,77,2241,62,2094,53"/>
+<area shape="rect" id="Node000003" href="$DebugAnalysis_8cpp.html" title=" " alt="" coords="2059,267,2287,329"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1635,209,1751,227,1843,233,1934,239,2048,256,2083,267,2078,266,2047,261,1934,244,1843,238,1751,232,1635,214"/>
+<area shape="rect" id="Node000004" href="$DebugInfo_8cpp.html" title=" " alt="" coords="2311,267,2510,329"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="1635,208,1736,224,1822,231,1969,231,2116,232,2201,239,2300,256,2333,267,2328,266,2299,261,2200,245,2116,237,1969,237,1821,237,1735,229,1635,214"/>
+<area shape="rect" id="Node000005" href="$ImportVerilogInternals_8h.html" title=" " alt="" coords="2533,259,2744,337"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="1635,208,1769,228,1883,236,1984,236,2079,232,2174,229,2275,229,2389,236,2521,256,2536,261,2530,261,2521,261,2388,242,2275,234,2174,234,2079,238,1984,242,1883,242,1768,233,1635,214"/>
+<area shape="rect" id="Node000016" href="$MooreToCore_8cpp.html" title=" " alt="" coords="2768,259,2975,337"/>
+<area shape="poly" id="edge15_Node000002_Node000016" title=" " alt="" coords="1635,208,1804,232,1949,241,2077,239,2197,232,2316,226,2444,224,2588,232,2756,256,2770,261,2765,261,2755,261,2588,238,2444,229,2317,231,2197,238,2077,245,1949,246,1804,238,1635,214"/>
+<area shape="poly" id="edge16_Node000002_Node000017" title=" " alt="" coords="1401,177,1137,191,800,209,472,232,336,246,233,261,222,263,220,259,233,256,336,241,471,227,800,203,1137,185,1407,176"/>
+<area shape="rect" id="Node000018" href="$VerifToSMT_8cpp.html" title=" " alt="" coords="3000,259,3194,337"/>
+<area shape="poly" id="edge17_Node000002_Node000018" title=" " alt="" coords="1635,208,1742,225,1839,236,2014,245,2168,241,2313,231,2457,220,2612,217,2785,227,2882,239,2988,256,3002,261,2997,261,2987,261,2882,244,2785,232,2612,222,2458,226,2313,236,2169,246,2014,250,1839,241,1741,230,1635,214"/>
+<area shape="poly" id="edge18_Node000002_Node000019" title=" " alt="" coords="1402,185,1132,213,957,224,821,229,686,237,513,261,476,269,475,264,513,256,685,232,821,223,957,219,1131,208,1407,184"/>
+<area shape="rect" id="Node000020" href="$DebugOps_8cpp.html" title=" " alt="" coords="3218,267,3453,329"/>
+<area shape="poly" id="edge19_Node000002_Node000020" title=" " alt="" coords="1635,208,1759,228,1872,241,1977,248,2074,252,2254,248,2421,237,2589,225,2768,219,2865,221,2970,228,3083,239,3207,256,3246,267,3241,266,3206,261,3083,244,2970,233,2865,227,2768,225,2589,230,2422,242,2254,253,2074,257,1977,254,1872,246,1758,233,1635,214"/>
+<area shape="rect" id="Node000021" href="$LowerLayers_8cpp.html" title=" " alt="" coords="525,259,741,337"/>
+<area shape="poly" id="edge20_Node000002_Node000021" title=" " alt="" coords="1401,185,1027,227,853,247,753,261,742,264,741,259,753,256,853,242,1027,222,1406,184"/>
+<area shape="rect" id="Node000022" href="$MaterializeDebugInfo_8cpp.html" title=" " alt="" coords="765,259,981,337"/>
+<area shape="poly" id="edge21_Node000002_Node000022" title=" " alt="" coords="1402,187,1211,218,1102,238,994,261,981,264,980,259,992,256,1101,233,1211,213,1407,186"/>
+<area shape="rect" id="Node000023" href="$ModuleInliner_8cpp.html" title=" " alt="" coords="1005,259,1221,337"/>
+<area shape="poly" id="edge22_Node000002_Node000023" title=" " alt="" coords="1407,206,1234,261,1222,265,1220,260,1232,256,1402,207"/>
+<area shape="rect" id="Node000024" href="$EmitHGLDD_8cpp.html" title=" " alt="" coords="1245,267,1509,329"/>
+<area shape="poly" id="edge23_Node000002_Node000024" title=" " alt="" coords="1466,220,1413,269,1410,264,1461,222"/>
+<area shape="rect" id="Node000025" href="$LowerToBMC_8cpp.html" title=" " alt="" coords="1534,267,1791,329"/>
+<area shape="poly" id="edge24_Node000002_Node000025" title=" " alt="" coords="1576,219,1631,267,1625,266,1575,224"/>
+<area shape="rect" id="Node000026" href="$MaterializeDebugVariables_8cpp.html" title=" " alt="" coords="1815,259,2035,337"/>
+<area shape="poly" id="edge25_Node000002_Node000026" title=" " alt="" coords="1635,209,1804,256,1817,262,1812,262,1803,261,1635,214"/>
+<area shape="rect" id="Node000006" href="$AssertionExpr_8cpp.html" title=" " alt="" coords="1477,385,1688,464"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="2521,337,2395,358,2289,366,2195,366,2107,363,2020,361,1927,362,1822,369,1700,388,1688,391,1687,385,1699,383,1822,364,1926,356,2020,355,2107,358,2195,361,2288,360,2394,353,2515,338"/>
+<area shape="rect" id="Node000007" href="$Expressions_8cpp.html" title=" " alt="" coords="1712,385,1922,464"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="2521,337,2430,354,2354,361,2225,364,2096,366,2022,373,1935,388,1923,391,1922,385,1934,383,2021,368,2096,361,2224,358,2354,356,2430,349,2516,338"/>
+<area shape="rect" id="Node000008" href="$FormatStrings_8cpp.html" title=" " alt="" coords="1946,385,2157,464"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="2521,337,2420,357,2342,364,2265,371,2170,388,2157,391,2157,386,2168,383,2265,366,2342,359,2419,352,2516,338"/>
+<area shape="rect" id="Node000009" href="$HierarchicalNames_8cpp.html" title=" " alt="" coords="2181,385,2392,464"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="2521,341,2392,389,2391,384,2516,342"/>
+<area shape="rect" id="Node000010" href="$ImportVerilog_8cpp.html" title=" " alt="" coords="2416,385,2626,464"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="2594,348,2559,387,2556,382,2589,350"/>
+<area shape="rect" id="Node000011" href="$ScanStrings_8cpp.html" title=" " alt="" coords="2650,385,2861,464"/>
+<area shape="poly" id="edge10_Node000005_Node000011" title=" " alt="" coords="2686,346,2722,386,2717,384,2684,351"/>
+<area shape="rect" id="Node000012" href="$Statements_8cpp.html" title=" " alt="" coords="2885,385,3096,464"/>
+<area shape="poly" id="edge11_Node000005_Node000012" title=" " alt="" coords="2759,339,2887,387,2882,386,2758,344"/>
+<area shape="rect" id="Node000013" href="$Structure_8cpp.html" title=" " alt="" coords="3120,385,3330,464"/>
+<area shape="poly" id="edge12_Node000005_Node000013" title=" " alt="" coords="2759,335,2857,352,2935,359,3012,366,3108,383,3122,389,3117,388,3107,388,3011,371,2935,364,2857,357,2758,340"/>
+<area shape="rect" id="Node000014" href="$TimingControls_8cpp.html" title=" " alt="" coords="3354,385,3565,464"/>
+<area shape="poly" id="edge13_Node000005_Node000014" title=" " alt="" coords="2758,335,2847,349,2923,356,3052,358,3181,361,3256,368,3343,383,3357,388,3352,388,3342,388,3255,373,3181,366,3052,364,2922,361,2846,354,2758,340"/>
+<area shape="rect" id="Node000015" href="$Conversion_2ImportVerilog_2Types_8cpp.html" title=" " alt="" coords="3589,385,3800,464"/>
+<area shape="poly" id="edge14_Node000005_Node000015" title=" " alt="" coords="2759,335,2883,353,2988,360,3082,361,3170,358,3257,355,3350,356,3455,364,3577,383,3592,388,3586,388,3577,388,3455,369,3350,362,3257,361,3170,363,3082,366,2988,366,2882,358,2758,340"/>
+</map>

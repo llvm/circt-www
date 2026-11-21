@@ -1,0 +1,5 @@
+<map id="circt::llhd::WrapperType" name="circt::llhd::WrapperType">
+<area shape="rect" id="Node000001" title="Common base of types wrapping a nested type." alt="" coords="5,81,180,109"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="50,5,135,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,47,95,82,90,80,91,51"/>
+</map>

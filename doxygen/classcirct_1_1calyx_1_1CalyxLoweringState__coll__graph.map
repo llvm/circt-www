@@ -1,0 +1,9 @@
+<map id="circt::calyx::CalyxLoweringState" name="circt::calyx::CalyxLoweringState">
+<area shape="rect" id="Node000001" title="An interface for conversion passes that lower Calyx programs." alt="" coords="425,53,621,98"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="89,5,171,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,21,287,30,401,46,427,52,421,53,400,51,286,36,187,26"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="86,61,174,89"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,73,426,73,423,77,190,78"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,113,255,192"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="269,128,400,103,431,99,436,98,401,108,270,133"/>
+</map>

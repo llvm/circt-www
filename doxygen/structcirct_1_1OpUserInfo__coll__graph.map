@@ -1,0 +1,11 @@
+<map id="circt::OpUserInfo" name="circt::OpUserInfo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="416,130,546,158"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="64,16,161,43"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,25,225,26,280,32,338,44,393,63,417,77,438,94,471,130,466,129,435,98,414,81,391,68,336,49,279,37,224,31,177,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,72,220,134"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="235,114,418,135,413,138,235,119"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="34,158,191,202"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="206,175,296,170,391,160,418,158,413,159,392,165,297,175,207,180"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="88,226,137,254"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="153,238,262,232,327,221,391,203,431,181,462,159,466,157,434,185,393,208,329,226,263,237,153,244"/>
+</map>

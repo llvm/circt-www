@@ -1,0 +1,11 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Target/ExportSystemC/Patterns/SystemCEmissionPatterns.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Target/ExportSystemC/Patterns/SystemCEmissionPatterns.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="49,5,313,84"/>
+<area shape="rect" id="Node000002" href="$EmissionPatternSupport_8h.html" title=" " alt="" coords="81,132,281,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,82,184,117,178,116,180,87"/>
+<area shape="rect" id="Node000003" href="$LLVM_8h.html" title=" " alt="" coords="104,208,258,235"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="182,158,183,193,179,191,180,162"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,283,157,311"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="166,235,112,276,109,272,161,237"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="180,283,384,311"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="200,233,255,274,249,274,198,238"/>
+</map>

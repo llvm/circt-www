@@ -1,0 +1,5 @@
+<map id="circt::rtg::MutResource" name="circt::rtg::MutResource">
+<area shape="rect" id="Node000001" title="Abstract memory resource for RTG mutable&#45;cell operations." alt="" coords="39,98,208,126"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,242,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,64,126,99,121,96,122,68"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="esiaccel.bsp.common.TelemetryMMIO" name="esiaccel.bsp.common.TelemetryMMIO">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,275,109"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="42,5,238,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,47,142,82,138,79,138,51"/>
+</map>

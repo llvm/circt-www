@@ -1,0 +1,13 @@
+<map id="SerialCoordBurst" name="SerialCoordBurst">
+<area shape="rect" id="Node000001" title=" " alt="" coords="247,229,378,257"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1SegmentedMessageData.html" title="Abstract multi&#45;segment message." alt="" coords="5,128,217,156"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,161,288,227,283,230,151,166"/>
+<area shape="rect" id="Node000003" href="$structSerialCoordHeader.html" title=" " alt="" coords="241,128,384,156"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="314,170,315,230,310,227,310,173"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="215,5,290,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="248,46,249,76,256,103,267,116,282,128,277,128,263,120,252,106,243,77,245,50"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="335,5,410,33"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="367,46,359,77,345,106,327,130,324,126,341,103,354,75,364,50"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="408,128,606,156"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="471,163,339,231,337,226,465,164"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="esi::backends::cosim::RpcClient.Impl::ChannelMeta" name="esi::backends::cosim::RpcClient.Impl::ChannelMeta">
+<area shape="rect" id="Node000001" title=" " alt="" coords="24,128,242,173"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,80,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="62,43,121,127,116,129,59,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="104,5,162,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="135,47,136,129,131,127,131,50"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="186,5,320,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="237,44,186,106,160,130,157,126,182,102,232,47"/>
+</map>

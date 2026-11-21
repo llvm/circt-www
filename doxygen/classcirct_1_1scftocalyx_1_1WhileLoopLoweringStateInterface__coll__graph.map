@@ -1,0 +1,16 @@
+<map id="circt::scftocalyx::WhileLoopLoweringStateInterface" name="circt::scftocalyx::WhileLoopLoweringStateInterface">
+<area shape="rect" id="Node000001" title=" " alt="" coords="977,109,1217,154"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1calyx_1_1LoopLoweringStateInterface.html" title=" " alt="" coords="709,109,927,154"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="943,129,979,131,973,132,943,134"/>
+<area shape="rect" id="Node000003" href="$classDenseMap_3_01Operation_01_5_00_01DenseMap_3_01unsigned_00_01calyx_1_1RegisterOp_01_4_01_4.html" title=" " alt="" coords="5,7,193,69"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="208,29,310,27,431,31,560,45,624,56,686,72,731,88,775,109,770,108,729,92,684,77,623,61,559,50,431,36,310,32,209,34"/>
+<area shape="rect" id="Node000006" href="$classcirct_1_1calyx_1_1LoopLoweringStateInterface.html" title=" " alt="" coords="358,66,548,111"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="207,55,217,56,359,77,355,79,216,62,209,60"/>
+<area shape="rect" id="Node000004" href="$classDenseMap_3_01Operation_01_5_00_01calyx_1_1GroupOp_01_4.html" title=" " alt="" coords="14,120,184,164"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="199,142,358,146,453,147,548,146,711,139,706,140,548,151,453,152,358,151,199,148"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="198,125,359,101,355,105,200,130"/>
+<area shape="rect" id="Node000005" href="$classDenseMap_3_01Operation_01_5_00_01SmallVector_3_01calyx_1_1GroupOp_01_4_01_4.html" title=" " alt="" coords="14,194,184,256"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="199,215,333,203,441,192,548,178,706,153,711,152,548,183,441,198,334,209,199,220"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="198,203,266,182,332,152,344,140,356,128,388,113,393,111,359,132,348,144,335,156,268,187,199,209"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="563,99,711,118,706,119,563,104"/>
+</map>

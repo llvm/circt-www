@@ -1,0 +1,5 @@
+<map id="circt::msft::PlacementDB::PlacementCell" name="circt::msft::PlacementDB::PlacementCell">
+<area shape="rect" id="Node000001" title="A memory slot." alt="" coords="5,106,188,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="7,5,186,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,47,99,106,94,105,95,51"/>
+</map>

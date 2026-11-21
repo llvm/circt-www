@@ -1,0 +1,7 @@
+<map id="esi::SegmentedMessageDataCursor" name="esi::SegmentedMessageDataCursor">
+<area shape="rect" id="Node000001" title="Cursor for incremental consumption of a SegmentedMessageData." alt="" coords="85,128,297,173"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1SegmentedMessageData.html" title="Abstract multi&#45;segment message." alt="" coords="5,5,217,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,44,180,128,175,128,126,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="241,5,301,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="257,45,206,130,202,126,253,47"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="circt::firrtl::ModuleModifications" name="circt::firrtl::ModuleModifications">
+<area shape="rect" id="Node000001" title="A store of pending modifications to a FIRRTL module associated with solving one or more WiringProblem..." alt="" coords="222,106,449,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,210,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,37,251,80,307,105,302,105,249,84,151,42"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="234,5,437,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="337,47,338,107,333,104,334,50"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="460,5,648,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="524,41,449,84,384,108,383,103,446,80,519,42"/>
+</map>

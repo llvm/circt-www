@@ -1,0 +1,10 @@
+<map id="esi::has_esi_window_id&lt; T, std::void_t&lt; decltype(T::_ESI_WINDOW_ID)&gt; &gt;" name="esi::has_esi_window_id&lt; T, std::void_t&lt; decltype(T::_ESI_WINDOW_ID)&gt; &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="608,32,815,111"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,20,123,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,20,228,10,340,4,463,5,525,10,585,20,623,32,617,32,584,25,524,16,463,11,340,9,229,16,139,26"/>
+<area shape="rect" id="Node000004" href="$structesi_1_1has__esi__window__id.html" title=" " alt="" coords="198,41,352,86"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="138,42,200,52,195,54,138,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="172,110,378,172"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="393,119,605,88,611,88,394,125"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="368,66,402,67,610,71,605,73,402,72,368,71"/>
+</map>

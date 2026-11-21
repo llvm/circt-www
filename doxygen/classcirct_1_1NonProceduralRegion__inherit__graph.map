@@ -1,0 +1,5 @@
+<map id="circt::NonProceduralRegion&lt; ConcreteType &gt;" name="circt::NonProceduralRegion&lt; ConcreteType &gt;">
+<area shape="rect" id="Node000001" title="Signals that an operation&#39;s regions are non&#45;procedural." alt="" coords="50,98,248,143"/>
+<area shape="rect" id="Node000002" href="$classmlir_1_1OpTrait_1_1TraitBase.html" title=" " alt="" coords="5,5,293,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,64,151,99,147,97,147,68"/>
+</map>

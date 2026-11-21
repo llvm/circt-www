@@ -1,0 +1,18 @@
+<map id="circt::esi::AppIDIndex" name="circt::esi::AppIDIndex">
+<area shape="rect" id="Node000001" title="An index for resolving AppIDPaths to dynamic instances." alt="" coords="745,99,904,127"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="350,5,582,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="597,50,722,78,783,98,778,99,720,84,597,55"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="81,104,130,132"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,115,745,111,744,116,146,121"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1hw_1_1HWSymbolCache.html" title="This stores lookup tables to make manipulating and working with the IR more efficient." alt="" coords="368,166,564,194"/>
+<area shape="poly" id="edge6_Node000004_Node000003" title=" " alt="" coords="145,124,230,141,370,164,365,167,229,146,146,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="578,165,720,141,782,127,777,128,722,146,579,170"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1SymbolCacheBase.html" title="Base symbol cache class to allow for cache lookup through a pointer to some abstract cache." alt="" coords="16,171,195,199"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="210,181,370,180,366,183,211,186"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="76,223,135,251"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="150,232,232,226,325,211,349,204,401,193,396,195,350,209,326,217,233,231,152,238"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="5,276,206,337"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="221,299,275,285,301,273,324,257,333,245,335,232,338,218,348,204,367,195,372,193,351,208,343,220,340,233,338,248,328,261,303,277,277,290,222,304"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="418,218,514,246"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="529,228,622,218,672,207,720,190,746,176,771,159,808,128,813,126,774,163,749,181,722,195,673,212,623,223,530,233"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="WireLowering" name="WireLowering">
+<area shape="rect" id="Node000001" title=" " alt="" coords="32,128,142,156"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,75,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="40,46,44,76,52,103,72,127,66,128,48,106,39,77,38,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="99,5,168,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,46,106,105,95,130,91,126,102,103,123,49"/>
+</map>

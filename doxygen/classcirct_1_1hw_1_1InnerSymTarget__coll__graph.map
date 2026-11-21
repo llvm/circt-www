@@ -1,0 +1,7 @@
+<map id="circt::hw::InnerSymTarget" name="circt::hw::InnerSymTarget">
+<area shape="rect" id="Node000001" title="The target of an inner symbol, the entity the symbol is a handle for." alt="" coords="12,151,197,178"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,102,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,46,102,150,97,150,61,50"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="125,5,184,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,47,123,128,112,152,108,148,118,126,144,49"/>
+</map>

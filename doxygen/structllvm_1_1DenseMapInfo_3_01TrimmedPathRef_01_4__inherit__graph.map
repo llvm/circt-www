@@ -1,0 +1,5 @@
+<map id="llvm::DenseMapInfo&lt; TrimmedPathRef &gt;" name="llvm::DenseMapInfo&lt; TrimmedPathRef &gt;">
+<area shape="rect" id="Node000001" title="DenseMapInfo specialization for TrimmedPathRef to enable deduplication." alt="" coords="5,123,164,168"/>
+<area shape="rect" id="Node000002" href="$structllvm_1_1DenseMapInfo.html" title=" " alt="" coords="8,5,161,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,64,87,123,82,122,82,68"/>
+</map>

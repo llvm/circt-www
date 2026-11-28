@@ -1,0 +1,9 @@
+<map id="circt::moore::DPIArgInfo" name="circt::moore::DPIArgInfo">
+<area shape="rect" id="Node000001" title="Information about one DPI&#45;imported function argument." alt="" coords="51,106,227,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,89,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="63,44,91,80,120,105,115,106,87,84,61,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="113,5,165,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="141,47,141,106,137,104,137,50"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="189,5,313,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="228,42,183,84,156,108,153,103,180,80,223,45"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,57,157,85"/>
+<area shape="rect" id="Node000001" href="$classReductionCat.html" title=" " alt="" coords="205,57,313,85"/>
+<area shape="poly" id="edge445_Node000000_Node000001" title=" " alt="" coords="172,69,207,71,202,72,173,74"/>
+<area shape="rect" id="Node000002" href="$classAndRCat.html" title=" " alt="" coords="361,5,438,33"/>
+<area shape="poly" id="edge446_Node000001_Node000002" title=" " alt="" coords="312,49,358,34,363,33,314,54"/>
+<area shape="rect" id="Node000003" href="$classOrRCat.html" title=" " alt="" coords="366,57,433,85"/>
+<area shape="poly" id="edge447_Node000001_Node000003" title=" " alt="" coords="328,69,368,71,363,71,329,74"/>
+<area shape="rect" id="Node000004" href="$classXorRCat.html" title=" " alt="" coords="362,109,437,137"/>
+<area shape="poly" id="edge448_Node000001_Node000004" title=" " alt="" coords="313,88,365,110,359,109,312,94"/>
+</map>

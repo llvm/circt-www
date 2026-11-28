@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$structcirct_1_1pretty_1_1PrettyPrinter_1_1Listener.html" title="Listener to Token storage events." alt="" coords="5,56,191,101"/>
+<area shape="rect" id="Node000001" href="$classcirct_1_1pretty_1_1TokenStringSaver.html" title="PrettyPrinter::Listener that saves strings while live." alt="" coords="239,56,417,101"/>
+<area shape="poly" id="edge136_Node000000_Node000001" title=" " alt="" coords="206,76,241,78,235,79,206,81"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1pretty_1_1PrintEventAndStorageListener.html" title=" " alt="" coords="465,5,715,67"/>
+<area shape="poly" id="edge137_Node000001_Node000002" title=" " alt="" coords="432,59,467,56,462,57,433,64"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1pretty_1_1PrintEventAndStorageListener.html" title="Note: Callable class must implement a callable with signature: void (Data)." alt="" coords="473,91,707,152"/>
+<area shape="poly" id="edge138_Node000001_Node000003" title=" " alt="" coords="432,93,475,102,470,102,432,98"/>
+</map>

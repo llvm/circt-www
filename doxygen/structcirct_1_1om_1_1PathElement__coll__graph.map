@@ -1,0 +1,5 @@
+<map id="circt::om::PathElement" name="circt::om::PathElement">
+<area shape="rect" id="Node000001" title="A module name, and the name of an instance inside that module." alt="" coords="5,128,174,156"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="48,5,131,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,47,92,128,87,127,87,50"/>
+</map>

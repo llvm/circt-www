@@ -1,0 +1,7 @@
+<map id="circt::msft::PrimitiveDB" name="circt::msft::PrimitiveDB">
+<area shape="rect" id="Node000001" title="A data structure to contain locations of the primitives on the device." alt="" coords="128,106,301,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,235,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,42,205,105,199,106,142,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="258,5,363,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="298,45,270,84,238,108,236,103,266,80,293,48"/>
+</map>

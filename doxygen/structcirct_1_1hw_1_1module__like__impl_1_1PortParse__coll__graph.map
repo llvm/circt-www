@@ -1,0 +1,9 @@
+<map id="circt::hw::module_like_impl::PortParse" name="circt::hw::module_like_impl::PortParse">
+<area shape="rect" id="Node000001" title=" " alt="" coords="169,106,331,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,186,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,40,221,104,216,106,126,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="210,5,290,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="252,47,253,107,248,104,248,51"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="317,5,375,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="339,46,319,84,291,108,288,103,315,80,335,49"/>
+</map>

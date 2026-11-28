@@ -1,0 +1,13 @@
+<map id="esi::detail::PODTypeDeserializer&lt; T &gt;" name="esi::detail::PODTypeDeserializer&lt; T &gt;">
+<area shape="rect" id="Node000001" title="Default deserializer for simple 1:1 typed reads." alt="" coords="241,229,508,257"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,128,237,156"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,160,261,203,332,228,327,228,259,207,162,166"/>
+<area shape="rect" id="Node000003" href="$structesi_1_1WireInfo.html" title="Compute the wire byte count for a port type." alt="" coords="261,128,365,156"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="316,169,321,188,328,204,338,216,352,229,347,228,335,220,323,206,315,189,313,173"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="283,5,343,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="315,47,315,129,311,127,311,51"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="389,128,453,156"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="411,169,382,230,379,226,406,171"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="477,128,605,156"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="517,165,460,207,410,231,408,226,457,203,511,167"/>
+</map>

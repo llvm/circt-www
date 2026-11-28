@@ -1,0 +1,13 @@
+<map id="circt::SparseOpSCC&lt; Direction, NumInlineElts &gt;" name="circt::SparseOpSCC&lt; Direction, NumInlineElts &gt;">
+<area shape="rect" id="Node000001" title="Iterative Tarjan SCC analysis on a sparse subgraph of MLIR operations." alt="" coords="772,138,981,182"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="431,5,580,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="594,55,671,76,749,102,830,137,825,137,747,107,669,81,594,60"/>
+<area shape="rect" id="Node000003" href="$classllvm_1_1SmallDenseMap.html" title=" " alt="" coords="423,91,588,152"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="603,129,774,149,769,150,603,134"/>
+<area shape="rect" id="Node000004" href="$classllvm_1_1SmallDenseMap.html" title=" " alt="" coords="5,91,225,152"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="240,119,425,120,420,123,241,124"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="430,176,581,221"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="596,189,748,175,774,174,769,175,748,180,597,194"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="409,246,602,290"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="617,249,682,235,747,217,792,200,831,184,836,182,794,205,749,222,683,241,618,254"/>
+</map>

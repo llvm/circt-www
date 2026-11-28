@@ -1,0 +1,21 @@
+<map id="esi::AcceleratorServiceThread" name="esi::AcceleratorServiceThread">
+<area shape="rect" id="Node000001" title="Background thread which services various requests." alt="" coords="768,159,983,186"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="465,5,589,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="603,25,674,40,745,66,781,87,814,112,864,159,858,158,811,116,778,91,743,71,673,45,604,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="495,61,558,89"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="574,78,655,92,745,114,800,134,849,158,843,158,798,139,743,119,654,97,575,84"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="495,113,558,141"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="573,130,770,158,765,159,574,136"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="405,165,649,260"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="664,194,770,184,765,186,665,199"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="448,285,606,330"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="620,280,648,270,757,225,843,188,848,186,759,230,650,275,621,285"/>
+<area shape="rect" id="Node000007" href="$classesi_1_1Context.html" title="AcceleratorConnections, Accelerators, and Manifests must all share a context." alt="" coords="477,353,576,381"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="591,355,648,339,697,320,742,291,810,235,859,188,864,186,814,239,746,296,700,324,650,344,592,360"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="42,293,234,321"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="249,316,381,334,405,339,479,357,474,357,404,344,380,339,249,321"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="5,345,271,390"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="286,365,479,366,474,368,286,370"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="51,414,225,459"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="239,419,380,395,474,378,479,378,381,400,240,424"/>
+</map>

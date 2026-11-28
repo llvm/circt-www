@@ -1,0 +1,11 @@
+<map id="llvm::yaml::MappingContextTraits&lt; DescribedInstance, Context &gt;::Instance" name="llvm::yaml::MappingContextTraits&lt; DescribedInstance, Context &gt;::Instance">
+<area shape="rect" id="Node000001" title="A YAML&#45;serializable representation of an interface instantiation." alt="" coords="183,123,389,185"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,14,87,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,46,181,97,228,122,223,123,178,101,83,52"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="111,14,280,42"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="215,52,267,123,262,123,213,56"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="304,5,452,50"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="359,62,333,101,314,125,311,120,329,97,354,65"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="475,14,617,42"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="519,50,481,77,438,101,382,125,381,120,435,97,478,73,514,52"/>
+</map>

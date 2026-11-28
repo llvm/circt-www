@@ -1,0 +1,9 @@
+<map id="circt::fsm::FSMGraph" name="circt::fsm::FSMGraph">
+<area shape="rect" id="Node000001" title="Graph representing FSM machines, their states and transitions between these." alt="" coords="134,123,291,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,14,100,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,49,145,97,188,122,182,123,142,101,78,54"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="123,14,302,42"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="215,55,215,124,210,121,210,59"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="326,5,542,50"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="378,57,241,125,239,120,373,57"/>
+</map>

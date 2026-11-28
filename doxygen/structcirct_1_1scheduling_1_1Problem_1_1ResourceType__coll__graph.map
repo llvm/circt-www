@@ -1,0 +1,5 @@
+<map id="circt::scheduling::Problem::ResourceType" name="circt::scheduling::Problem::ResourceType">
+<area shape="rect" id="Node000001" title="Resource types are distinguished by name (chosen by the client)." alt="" coords="5,106,179,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="50,5,134,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,47,95,106,89,105,90,50"/>
+</map>

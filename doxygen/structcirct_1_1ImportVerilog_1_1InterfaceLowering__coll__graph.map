@@ -1,0 +1,7 @@
+<map id="circt::ImportVerilog::InterfaceLowering" name="circt::ImportVerilog::InterfaceLowering">
+<area shape="rect" id="Node000001" title="Lowering information for an expanded interface instance." alt="" coords="122,123,268,168"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,185,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,61,135,97,162,123,157,123,131,101,109,66"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="209,5,381,50"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="287,63,268,101,239,125,237,120,264,97,283,66"/>
+</map>

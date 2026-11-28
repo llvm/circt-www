@@ -1,0 +1,9 @@
+<map id="circt::hw::detail::ModuleTypeStorage" name="circt::hw::detail::ModuleTypeStorage">
+<area shape="rect" id="Node000001" title=" " alt="" coords="128,190,277,235"/>
+<area shape="rect" id="Node000002" href="$classTypeStorage.html" title=" " alt="" coords="5,14,107,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,52,188,189,183,191,75,56"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="130,5,275,50"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,64,205,190,200,189,200,67"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="299,14,466,42"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="362,52,251,168,227,192,224,187,247,164,357,53"/>
+</map>

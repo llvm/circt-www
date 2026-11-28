@@ -1,0 +1,7 @@
+<map id="circt::analysis::OpCountAnalysis" name="circt::analysis::OpCountAnalysis">
+<area shape="rect" id="Node000001" title=" " alt="" coords="383,40,558,85"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="11,5,223,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,37,385,53,380,55,239,42"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,75,229,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="244,89,358,79,380,79,385,78,359,85,245,95"/>
+</map>

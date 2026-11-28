@@ -1,0 +1,15 @@
+<map id="circt::detail::DebugInfoBuilder" name="circt::detail::DebugInfoBuilder">
+<area shape="rect" id="Node000001" title="Helper to populate a DebugInfo with nodes." alt="" coords="552,129,721,173"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1DebugInfo.html" title="Debug information attached to an operation and the operations nested within." alt="" coords="360,137,484,165"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="499,148,554,150,549,151,500,153"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="50,8,146,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="160,21,247,33,293,46,337,64,361,80,382,99,413,137,408,137,378,103,358,84,334,69,291,51,246,38,162,26"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="12,59,184,104"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="198,91,267,102,336,118,388,136,382,137,335,123,266,108,199,96"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,129,191,173"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="205,148,361,149,357,152,206,153"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,198,191,243"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="205,204,335,179,387,164,382,166,336,184,207,209"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="5,267,191,312"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="205,275,271,259,334,232,357,217,378,198,408,166,412,164,381,202,360,221,337,237,273,264,206,280"/>
+</map>

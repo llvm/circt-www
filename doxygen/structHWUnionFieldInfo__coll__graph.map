@@ -1,0 +1,9 @@
+<map id="HWUnionFieldInfo" name="HWUnionFieldInfo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="103,106,241,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,110,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,42,124,80,156,105,150,106,120,84,80,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="134,5,210,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,47,175,106,170,104,170,50"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="234,5,294,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="248,44,217,84,190,108,187,103,213,80,244,46"/>
+</map>

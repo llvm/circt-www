@@ -1,0 +1,5 @@
+<map id="circt::igraph::InstancePath" name="circt::igraph::InstancePath">
+<area shape="rect" id="Node000001" title="An instance path composed of a series of instances." alt="" coords="30,106,220,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,245,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,47,128,106,122,104,123,50"/>
+</map>

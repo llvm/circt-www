@@ -1,0 +1,29 @@
+<map id="circt::hw::InstanceGraph" name="circt::hw::InstanceGraph">
+<area shape="rect" id="Node000001" title="HW&#45;specific instance graph with a virtual entry node linking to all publicly visible modules." alt="" coords="802,183,980,210"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1igraph_1_1InstanceGraph.html" title="This graph tracks modules and where they are instantiated." alt="" coords="460,152,660,180"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="675,174,805,188,800,189,676,179"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="73,212,170,240"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="185,219,294,209,418,194,501,179,497,181,419,199,295,215,186,224"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="16,5,227,33"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="242,31,331,49,420,77,489,113,543,151,538,152,486,117,418,82,330,54,243,36"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="19,58,224,119"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="239,103,419,133,499,151,494,152,418,138,240,108"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,144,238,188"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="252,163,461,164,457,168,254,168"/>
+<area shape="rect" id="Node000007" href="$classcirct_1_1igraph_1_1InstanceGraphNode.html" title="This is a Node in the InstanceGraph." alt="" coords="443,320,677,348"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="609,311,853,212,858,210,611,316"/>
+<area shape="rect" id="Node000011" href="$classcirct_1_1igraph_1_1InstanceRecord.html" title="This is an edge in the InstanceGraph." alt="" coords="788,383,994,410"/>
+<area shape="poly" id="edge12_Node000011_Node000007" title=" " alt="" coords="693,335,765,346,816,361,862,382,857,382,814,366,763,351,693,340"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="26,317,217,362"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="232,335,444,333,440,337,233,340"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="49,385,194,413"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="209,391,310,381,418,366,510,348,504,349,419,371,310,386,210,396"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="30,265,213,293"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="228,290,445,318,441,321,229,295"/>
+<area shape="poly" id="edge10_Node000007_Node000011" title=" " alt="" coords="770,385,700,376,605,351,606,346,702,371,775,385"/>
+<area shape="poly" id="edge14_Node000011_Node000011" title=" " alt="" coords="862,365,872,359,891,356,909,358,920,364,924,374,918,384,915,380,918,373,916,368,907,363,891,361,874,364,864,370"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="465,388,654,450"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="670,409,791,403,785,404,670,414"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="484,475,636,502"/>
+<area shape="poly" id="edge13_Node000011_Node000013" title=" " alt="" coords="639,468,676,459,763,438,848,411,854,410,765,443,678,464,640,473"/>
+</map>

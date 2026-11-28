@@ -1,0 +1,9 @@
+<map id="FIRRTLClassElement" name="FIRRTLClassElement">
+<area shape="rect" id="Node000001" title="Describes an element in a class type." alt="" coords="95,106,249,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,110,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,42,124,80,156,105,150,106,120,84,80,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="134,5,210,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,47,175,106,170,104,170,50"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="235,5,400,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="289,41,193,108,190,103,283,42"/>
+</map>

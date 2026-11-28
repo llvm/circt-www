@@ -1,0 +1,5 @@
+<map id="esi::UnionType" name="esi::UnionType">
+<area shape="rect" id="Node000001" title="Unions contain one active field without storing a tag." alt="" coords="5,81,122,109"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1Type.html" title="Root class of the ESI type system." alt="" coords="24,5,103,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,47,66,81,61,80,62,51"/>
+</map>

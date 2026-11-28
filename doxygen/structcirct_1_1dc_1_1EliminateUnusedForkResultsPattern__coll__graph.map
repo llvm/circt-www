@@ -1,0 +1,7 @@
+<map id="circt::dc::EliminateUnusedForkResultsPattern" name="circt::dc::EliminateUnusedForkResultsPattern">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,217,197,262"/>
+<area shape="rect" id="Node000002" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="16,123,186,168"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,181,104,217,98,216,99,185"/>
+<area shape="rect" id="Node000003" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="16,5,186,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,64,104,123,98,122,100,68"/>
+</map>

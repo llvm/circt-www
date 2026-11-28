@@ -1,0 +1,7 @@
+<map id="circt::hw::InnerSymbolTable" name="circt::hw::InnerSymbolTable">
+<area shape="rect" id="Node000001" title="A table of inner symbols and their resolutions." alt="" coords="32,123,232,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,14,102,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,55,65,78,76,97,88,110,105,122,99,122,85,114,71,101,60,80,56,60"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="125,5,296,50"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="202,63,184,101,156,125,154,120,179,97,198,66"/>
+</map>

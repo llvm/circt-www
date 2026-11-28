@@ -1,0 +1,5 @@
+<map id="circt::arc::runtime::FmtDescriptor::SmallLiteral" name="circt::arc::runtime::FmtDescriptor::SmallLiteral">
+<area shape="rect" id="Node000001" title="Literal string (small string optimization)." alt="" coords="5,106,214,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="85,5,134,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,47,112,106,107,105,108,51"/>
+</map>

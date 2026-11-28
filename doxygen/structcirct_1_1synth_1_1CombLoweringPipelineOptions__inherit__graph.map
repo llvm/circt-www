@@ -1,0 +1,5 @@
+<map id="circt::synth::CombLoweringPipelineOptions" name="circt::synth::CombLoweringPipelineOptions">
+<area shape="rect" id="Node000001" title="Options for the aig lowering pipeline." alt="" coords="31,98,230,143"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,256,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,64,133,99,128,97,129,68"/>
+</map>

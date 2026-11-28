@@ -1,0 +1,7 @@
+<map id="esi::NullLogger" name="esi::NullLogger">
+<area shape="rect" id="Node000001" title="A logger that does nothing." alt="" coords="5,205,124,233"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1Logger.html" title=" " alt="" coords="18,128,111,156"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,170,67,206,62,204,63,173"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="40,5,89,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="66,46,67,128,62,127,63,51"/>
+</map>

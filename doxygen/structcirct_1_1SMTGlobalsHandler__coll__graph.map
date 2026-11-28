@@ -1,0 +1,19 @@
+<map id="circt::SMTGlobalsHandler" name="circt::SMTGlobalsHandler">
+<area shape="rect" id="Node000001" title="A symbol cache for LLVM globals and functions relevant to SMT lowering patterns." alt="" coords="729,200,914,227"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="340,48,422,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="436,53,495,50,564,53,637,64,672,75,706,89,742,113,773,143,815,200,809,199,769,146,739,117,704,93,671,80,635,69,563,58,495,55,438,58"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1Namespace.html" title="A namespace that is used to store existing names and generate new names in some scope within the IR." alt="" coords="314,100,448,127"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="463,114,579,125,643,137,706,152,757,174,801,199,795,199,755,178,704,158,642,142,579,131,464,119"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,72,161,99"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="175,92,315,106,311,109,176,97"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="58,128,108,155"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="122,138,257,129,316,123,311,126,258,135,124,143"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="282,151,480,196"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="495,181,705,200,731,205,726,205,705,206,495,187"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="303,227,459,272"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="475,255,585,257,645,254,705,248,746,238,782,229,787,227,747,243,705,253,646,260,585,262,475,260"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="293,297,469,341"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="485,320,592,313,649,303,704,288,733,275,760,259,802,229,807,227,763,263,736,280,706,293,650,309,593,318,485,325"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="293,380,468,407"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="482,407,536,409,593,406,650,395,704,373,725,359,744,341,776,300,799,259,813,229,817,226,804,261,781,303,748,345,728,363,706,378,652,400,594,411,536,415,482,412"/>
+</map>

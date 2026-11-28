@@ -1,0 +1,16 @@
+<map id="circt::scftocalyx::ScfWhileOp" name="circt::scftocalyx::ScfWhileOp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="228,378,359,422"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1calyx_1_1WhileOpInterface.html" title=" " alt="" coords="187,284,400,328"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="296,342,296,379,291,376,292,346"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1calyx_1_1LoopInterface.html" title=" " alt="" coords="187,82,376,110"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="285,124,295,284,290,282,281,127"/>
+<area shape="rect" id="Node000006" href="$classcirct_1_1calyx_1_1WhileOpInterface.html" title=" " alt="" coords="5,183,257,211"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="248,121,153,184,149,180,251,116"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1calyx_1_1BasicLoopInterface.html" title=" " alt="" coords="170,5,394,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="283,46,284,83,279,81,281,51"/>
+<area shape="rect" id="Node000005" href="$classscf_1_1WhileOp.html" title=" " alt="" coords="332,183,408,211"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="354,222,311,285,307,281,349,225"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="137,223,147,243,158,258,195,282,190,284,154,262,142,245,136,229"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="112,82,150,110"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="132,123,134,183,128,182,130,128"/>
+</map>

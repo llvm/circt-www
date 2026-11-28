@@ -1,0 +1,9 @@
+<map id="circt::ExportVerilog::OpLocMap" name="circt::ExportVerilog::OpLocMap">
+<area shape="rect" id="Node000001" title="Track the output verilog line,column number information for every op." alt="" coords="222,145,366,190"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,175,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,56,264,144,260,146,133,61"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="199,14,389,42"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="296,55,296,146,292,144,292,58"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="412,14,496,42"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="435,52,361,123,329,147,327,142,358,119,430,53"/>
+</map>

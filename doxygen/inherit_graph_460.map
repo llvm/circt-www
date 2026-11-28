@@ -1,0 +1,33 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classesi_1_1Type.html" title="Root class of the ESI type system." alt="" coords="5,265,84,293"/>
+<area shape="rect" id="Node000001" href="$classesi_1_1AnyType.html" title="The &quot;any&quot; type is a special type which can be used to represent any type, as identified by the type i..." alt="" coords="150,5,254,33"/>
+<area shape="poly" id="edge274_Node000000_Node000001" title=" " alt="" coords="46,250,54,205,69,150,93,94,110,68,130,44,151,31,148,35,133,48,114,71,98,96,74,152,59,206,51,250"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1ArrayType.html" title="Arrays have a compile time specified (static) size and an element type." alt="" coords="145,57,258,85"/>
+<area shape="poly" id="edge275_Node000000_Node000002" title=" " alt="" coords="50,250,60,215,76,174,99,132,130,96,151,83,148,88,133,100,104,135,81,176,65,217,55,251"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1BitVectorType.html" title="Bit vectors include signed, unsigned, and signless integers." alt="" coords="133,109,270,137"/>
+<area shape="poly" id="edge276_Node000000_Node000003" title=" " alt="" coords="56,250,85,198,106,171,130,148,153,136,150,140,133,152,110,175,90,201,61,252"/>
+<area shape="rect" id="Node000008" href="$classesi_1_1BundleType.html" title="Bundles represent a collection of channels." alt="" coords="140,161,264,189"/>
+<area shape="poly" id="edge281_Node000000_Node000008" title=" " alt="" coords="67,252,96,225,130,200,158,188,154,192,133,204,99,229,71,255"/>
+<area shape="rect" id="Node000009" href="$classesi_1_1ChannelType.html" title="Channels are the basic communication primitives." alt="" coords="136,213,268,241"/>
+<area shape="poly" id="edge282_Node000000_Node000009" title=" " alt="" coords="97,259,159,239,156,244,100,264"/>
+<area shape="rect" id="Node000010" href="$classesi_1_1ListType.html" title="Lists represent variable&#45;length sequences of elements of a single type." alt="" coords="151,265,252,293"/>
+<area shape="poly" id="edge283_Node000000_Node000010" title=" " alt="" coords="98,277,153,277,149,281,100,282"/>
+<area shape="rect" id="Node000011" href="$classesi_1_1StructType.html" title="Structs are an ordered collection of fields, each with a name and a type." alt="" coords="144,317,260,345"/>
+<area shape="poly" id="edge284_Node000000_Node000011" title=" " alt="" coords="98,294,160,315,156,318,99,299"/>
+<area shape="rect" id="Node000012" href="$classesi_1_1TypeAliasType.html" title="Type aliases provide a named type which forwards to an inner type." alt="" coords="132,369,272,397"/>
+<area shape="poly" id="edge285_Node000000_Node000012" title=" " alt="" coords="69,302,99,329,133,354,159,368,154,370,130,359,96,333,69,307"/>
+<area shape="rect" id="Node000013" href="$classesi_1_1UnionType.html" title="Unions contain one active field without storing a tag." alt="" coords="144,421,260,449"/>
+<area shape="poly" id="edge286_Node000000_Node000013" title=" " alt="" coords="58,305,90,357,110,383,133,406,154,420,149,421,130,411,106,387,85,360,58,310"/>
+<area shape="rect" id="Node000014" href="$classesi_1_1VoidType.html" title="The &quot;void&quot; type is a special type which can be used to represent no type." alt="" coords="149,473,255,501"/>
+<area shape="poly" id="edge287_Node000000_Node000014" title=" " alt="" coords="52,305,65,342,81,382,104,423,133,459,152,472,147,473,130,462,99,426,76,384,60,343,52,311"/>
+<area shape="rect" id="Node000015" href="$classesi_1_1WindowType.html" title="Windows represent a fixed&#45;size sliding window over a stream of data." alt="" coords="137,525,267,553"/>
+<area shape="poly" id="edge288_Node000000_Node000015" title=" " alt="" coords="49,306,59,352,74,406,98,462,114,488,133,511,151,525,146,525,130,514,110,491,93,464,69,408,54,353,49,311"/>
+<area shape="rect" id="Node000004" href="$classesi_1_1BitsType.html" title="Bits are just an array of bits." alt="" coords="330,84,434,112"/>
+<area shape="poly" id="edge277_Node000003_Node000004" title=" " alt="" coords="284,109,332,104,328,107,287,114"/>
+<area shape="rect" id="Node000005" href="$classesi_1_1IntegerType.html" title="Integers are bit vectors which may be signed or unsigned and are interpreted as numbers." alt="" coords="320,136,444,164"/>
+<area shape="poly" id="edge278_Node000003_Node000005" title=" " alt="" coords="285,133,322,140,317,142,287,138"/>
+<area shape="rect" id="Node000006" href="$classesi_1_1SIntType.html" title="Signed integer." alt="" coords="493,109,597,137"/>
+<area shape="poly" id="edge279_Node000005_Node000006" title=" " alt="" coords="459,135,495,130,491,133,461,140"/>
+<area shape="rect" id="Node000007" href="$classesi_1_1UIntType.html" title="Unsigned integer." alt="" coords="492,161,598,189"/>
+<area shape="poly" id="edge280_Node000005_Node000007" title=" " alt="" coords="459,159,495,166,489,168,461,165"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="circt::ExportSystemC::FrozenEmissionPatternSet&lt; PatternTy, KeyTy &gt;::Impl" name="circt::ExportSystemC::FrozenEmissionPatternSet&lt; PatternTy, KeyTy &gt;::Impl">
+<area shape="rect" id="Node000001" title="The internal implementation of the frozen pattern set." alt="" coords="431,32,629,93"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,192,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,34,432,52,428,56,207,39"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="23,75,174,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,93,294,88,406,79,428,79,433,79,407,85,294,93,190,98"/>
+</map>

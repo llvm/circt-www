@@ -1,0 +1,21 @@
+<map id="circt::igraph::InstanceGraphNode::UseIterator" name="circt::igraph::InstanceGraphNode::UseIterator">
+<area shape="rect" id="Node000001" title="Iterator for module uses." alt="" coords="647,48,847,92"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="321,5,496,84"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="511,50,649,62,644,63,512,55"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1igraph_1_1InstanceRecord.html" title="This is an edge in the InstanceGraph." alt="" coords="306,179,512,206"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="463,171,685,92,681,94,465,176"/>
+<area shape="poly" id="edge10_Node000003_Node000003" title=" " alt="" coords="379,161,390,155,409,152,427,154,438,160,441,170,436,180,432,176,436,170,434,164,425,159,409,157,392,160,382,166"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1igraph_1_1InstanceGraphNode.html" title="This is a Node in the InstanceGraph." alt="" coords="630,272,864,300"/>
+<area shape="poly" id="edge8_Node000005_Node000003" title=" " alt="" coords="453,211,537,243,651,271,646,272,535,248,453,216"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,127,195,189"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="210,168,308,180,303,182,211,173"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="708,264,661,240,605,218,559,207,512,200,512,195,560,202,607,213,663,235,713,264"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="313,257,504,302"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="520,279,632,283,627,284,520,284"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="336,326,482,353"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="497,327,606,311,675,301,680,300,606,316,498,332"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="317,380,500,408"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="515,376,605,352,669,326,719,301,724,299,671,330,607,358,516,381"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="24,214,176,241"/>
+<area shape="poly" id="edge9_Node000003_Node000009" title=" " alt="" coords="191,216,281,206,308,205,303,207,282,211,193,221"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="circt::bmc::BMCTrace" name="circt::bmc::BMCTrace">
+<area shape="rect" id="Node000001" title=" " alt="" coords="177,123,334,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,14,64,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,49,95,74,133,97,199,122,194,123,131,101,92,79,61,54"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="88,5,245,50"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,60,248,123,242,123,193,64"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="269,14,424,42"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="328,53,269,124,265,120,323,54"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="448,14,570,42"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="484,50,448,79,406,101,370,115,332,125,331,120,368,110,404,97,445,74,479,52"/>
+</map>

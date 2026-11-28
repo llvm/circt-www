@@ -1,0 +1,21 @@
+<map id="circt::firrtl::detail::BundleTypeStorage" name="circt::firrtl::detail::BundleTypeStorage">
+<area shape="rect" id="Node000001" title=" " alt="" coords="678,190,832,235"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1firrtl_1_1detail_1_1FIRRTLBaseTypeStorage.html" title=" " alt="" coords="329,22,514,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="529,56,594,74,655,102,682,122,706,144,742,191,736,189,702,148,678,126,653,107,592,79,529,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,141,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="155,23,330,36,326,40,157,28"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="48,57,98,85"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="112,70,200,69,302,63,331,61,326,64,303,68,200,74,114,74"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="327,92,516,136"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="531,130,593,144,655,162,715,190,709,190,653,167,592,149,531,135"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="344,161,499,206"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="514,189,680,205,675,206,514,194"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="384,229,458,257"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="473,241,558,239,654,231,680,229,675,230,654,236,559,244,474,246"/>
+<area shape="rect" id="Node000008" href="$structcirct_1_1firrtl_1_1RecursiveTypeProperties.html" title="A collection of bits indicating the recursive properties of a type." alt="" coords="343,281,500,326"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="515,297,584,287,653,270,689,253,721,236,726,234,692,258,655,275,585,293,515,302"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="48,289,98,317"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="113,301,344,301,342,306,114,306"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="373,361,470,389"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="485,379,525,379,568,374,612,364,653,347,683,323,709,292,742,236,747,234,713,296,687,327,655,351,614,370,569,380,525,384,485,384"/>
+</map>

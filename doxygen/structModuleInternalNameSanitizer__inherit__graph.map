@@ -1,0 +1,6 @@
+<map id="ModuleInternalNameSanitizer" name="ModuleInternalNameSanitizer">
+<area shape="rect" id="Node000001" title="Pseudo&#45;reduction that sanitizes the names of operations inside modules." alt="" coords="5,81,221,109"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1Reduction.html" title="An abstract reduction pattern." alt="" coords="52,5,174,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,47,108,82,103,80,102,50"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="124,47,122,82,118,79,120,50"/>
+</map>

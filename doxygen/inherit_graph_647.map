@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="5,5,175,50"/>
+<area shape="rect" id="Node000001" href="$structCollapseUnaryControl.html" title="This pattern collapses a calyx.seq or calyx.par operation when it contains exactly one calyx...." alt="" coords="223,5,386,50"/>
+<area shape="poly" id="edge403_Node000000_Node000001" title=" " alt="" coords="190,25,225,27,219,28,190,30"/>
+</map>

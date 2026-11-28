@@ -1,0 +1,9 @@
+<map id="serialization_probes.SignResult13" name="serialization_probes.SignResult13">
+<area shape="rect" id="Node000001" title=" " alt="" coords="20,128,204,173"/>
+<area shape="rect" id="Node000002" href="$classStruct.html" title=" " alt="" coords="5,5,65,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,44,102,127,97,129,49,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="89,5,136,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="114,47,115,129,110,127,110,50"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="186,5,234,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="207,46,198,78,182,106,156,130,153,125,178,103,193,76,203,50"/>
+</map>

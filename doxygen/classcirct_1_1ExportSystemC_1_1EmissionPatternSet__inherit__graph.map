@@ -1,0 +1,9 @@
+<map id="circt::ExportSystemC::EmissionPatternSet&lt; PatternTy &gt;" name="circt::ExportSystemC::EmissionPatternSet&lt; PatternTy &gt;">
+<area shape="rect" id="Node000001" title="This class collects a set of emission patterns with base type &#39;PatternTy&#39;." alt="" coords="5,91,163,152"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1ExportSystemC_1_1EmissionPatternSet.html" title=" " alt="" coords="422,5,628,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,91,186,88,307,64,424,48,419,50,308,69,187,93,179,95"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1ExportSystemC_1_1EmissionPatternSet.html" title=" " alt="" coords="416,91,634,152"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="178,119,417,119,414,124,179,124"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1ExportSystemC_1_1EmissionPatternSet.html" title=" " alt="" coords="419,176,631,238"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="178,147,187,149,307,173,421,193,415,194,306,178,186,154,178,152"/>
+</map>

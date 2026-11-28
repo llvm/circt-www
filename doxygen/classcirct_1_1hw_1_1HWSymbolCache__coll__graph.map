@@ -1,0 +1,11 @@
+<map id="circt::hw::HWSymbolCache" name="circt::hw::HWSymbolCache">
+<area shape="rect" id="Node000001" title="This stores lookup tables to make manipulating and working with the IR more efficient." alt="" coords="350,85,545,113"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1SymbolCacheBase.html" title="Base symbol cache class to allow for cache lookup through a pointer to some abstract cache." alt="" coords="16,5,195,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,27,268,36,326,49,374,65,418,85,413,85,372,70,325,54,267,41,211,32"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="76,57,135,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,72,351,89,348,93,151,77"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="81,113,130,141"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="145,125,229,123,325,116,369,113,364,114,326,121,229,128,146,130"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,166,206,227"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="220,178,325,152,375,132,417,114,423,113,378,137,326,157,222,183"/>
+</map>

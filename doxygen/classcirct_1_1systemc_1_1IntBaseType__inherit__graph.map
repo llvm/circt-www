@@ -1,0 +1,5 @@
+<map id="circt::systemc::IntBaseType" name="circt::systemc::IntBaseType">
+<area shape="rect" id="Node000001" title="Represents a limited word&#45;length signed integer in SystemC as described in IEEE 1666&#45;2011 §7...." alt="" coords="43,98,242,126"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,280,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,64,145,99,140,96,141,68"/>
+</map>

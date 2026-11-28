@@ -1,0 +1,9 @@
+<map id="circt::firrtl::ClockEdge" name="circt::firrtl::ClockEdge">
+<area shape="rect" id="Node000001" title=" " alt="" coords="55,106,216,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,63,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,41,124,104,119,107,57,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="87,5,184,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="137,47,138,106,133,104,133,50"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="208,5,290,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="225,43,152,108,149,103,220,43"/>
+</map>

@@ -1,0 +1,87 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$structcirct_1_1OpRewritePattern.html" title=" " alt="" coords="5,593,177,638"/>
+<area shape="rect" id="Node000001" href="$classcirct_1_1calyx_1_1PartialLoweringPattern.html" title=" " alt="" coords="257,628,472,673"/>
+<area shape="poly" id="edge88_Node000000_Node000001" title=" " alt="" coords="191,626,259,635,254,638,194,631"/>
+<area shape="rect" id="Node000024" href="$classcirct_1_1calyx_1_1PartialLoweringPattern.html" title=" " alt="" coords="264,697,465,742"/>
+<area shape="poly" id="edge110_Node000000_Node000024" title=" " alt="" coords="165,643,178,648,202,666,226,683,266,698,261,701,223,687,199,670,175,653,168,647"/>
+<area shape="rect" id="Node000026" href="$classcirct_1_1calyx_1_1PartialLoweringPattern.html" title="Base class for partial lowering passes." alt="" coords="225,767,504,811"/>
+<area shape="poly" id="edge112_Node000000_Node000026" title=" " alt="" coords="172,645,179,648,190,662,197,676,202,703,208,728,215,740,226,752,245,765,239,767,223,756,211,744,203,730,197,704,192,678,185,665,175,652,174,650"/>
+<area shape="rect" id="Node000027" href="$classcirct_1_1dc_1_1EliminateBranchToSelectPattern.html" title=" " alt="" coords="271,836,458,881"/>
+<area shape="poly" id="edge113_Node000000_Node000027" title=" " alt="" coords="174,646,179,649,194,672,201,694,202,738,203,781,211,801,227,822,247,837,273,848,268,850,244,841,223,826,206,804,198,782,196,739,196,695,189,674,175,652,175,651"/>
+<area shape="rect" id="Node000028" href="$classcirct_1_1dc_1_1EliminateForkOfSourcePattern.html" title=" " alt="" coords="279,905,450,950"/>
+<area shape="poly" id="edge114_Node000000_Node000028" title=" " alt="" coords="174,646,179,649,198,681,206,713,205,744,201,774,197,804,198,833,206,862,227,891,251,909,281,921,276,923,248,914,223,895,201,864,192,834,192,803,196,773,200,743,200,713,193,683,175,652,175,651"/>
+<area shape="rect" id="Node000029" href="$classcirct_1_1dc_1_1EliminateForkToForkPattern.html" title=" " alt="" coords="279,975,450,1019"/>
+<area shape="poly" id="edge115_Node000000_Node000029" title=" " alt="" coords="175,646,179,649,202,690,210,731,208,770,200,809,193,847,192,885,202,923,212,941,227,960,251,979,281,991,276,993,248,983,223,964,207,944,197,925,187,886,188,847,195,808,202,770,205,731,197,692,174,652,176,651"/>
+<area shape="rect" id="Node000030" href="$structcirct_1_1dc_1_1EliminatePackOfUnpackPattern.html" title=" " alt="" coords="278,1044,450,1089"/>
+<area shape="poly" id="edge116_Node000000_Node000030" title=" " alt="" coords="175,646,179,649,195,674,206,700,213,725,215,749,210,797,200,845,190,891,187,937,190,960,197,983,209,1006,227,1030,250,1048,280,1061,275,1062,247,1053,223,1034,204,1009,192,985,184,961,181,937,184,890,194,843,205,796,209,749,207,725,201,701,191,677,175,652,176,651"/>
+<area shape="rect" id="Node000031" href="$structcirct_1_1dc_1_1EliminateRedundantUnpackPattern.html" title=" " alt="" coords="258,231,470,275"/>
+<area shape="poly" id="edge117_Node000000_Node000031" title=" " alt="" coords="94,578,105,514,128,435,145,394,166,355,192,318,223,286,259,266,256,270,226,290,196,321,171,357,150,397,133,437,111,515,99,578"/>
+<area shape="rect" id="Node000032" href="$structcirct_1_1dc_1_1JoinOnBranchPattern.html" title=" " alt="" coords="258,299,471,327"/>
+<area shape="poly" id="edge118_Node000000_Node000032" title=" " alt="" coords="96,578,110,523,135,457,171,391,195,362,223,336,259,319,256,324,226,341,199,365,176,394,140,459,115,524,102,579"/>
+<area shape="rect" id="Node000033" href="$structcirct_1_1dc_1_1RemoveDuplicateJoinOperandsPattern.html" title=" " alt="" coords="266,351,462,395"/>
+<area shape="poly" id="edge119_Node000000_Node000033" title=" " alt="" coords="103,578,121,537,147,491,181,444,223,405,267,385,264,389,226,410,185,448,152,493,126,540,108,580"/>
+<area shape="rect" id="Node000034" href="$structcirct_1_1dc_1_1RemoveJoinOnSourcePattern.html" title=" " alt="" coords="254,420,474,465"/>
+<area shape="poly" id="edge120_Node000000_Node000034" title=" " alt="" coords="114,580,161,525,190,498,223,475,255,461,252,465,226,479,194,502,165,529,119,582"/>
+<area shape="rect" id="Node000035" href="$structcirct_1_1dc_1_1StaggeredJoinCanonicalization.html" title=" " alt="" coords="279,489,450,534"/>
+<area shape="poly" id="edge121_Node000000_Node000035" title=" " alt="" coords="141,584,224,544,280,527,277,531,226,549,145,587"/>
+<area shape="rect" id="Node000036" href="$classcirct_1_1scftocalyx_1_1InlineExecuteRegionOpPattern.html" title="Inlines Calyx ExecuteRegionOp operations within their parent blocks." alt="" coords="256,559,473,603"/>
+<area shape="poly" id="edge122_Node000000_Node000036" title=" " alt="" coords="190,601,257,593,253,597,194,605"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1calyx_1_1FuncOpPartialLoweringPattern.html" title="FuncOpPartialLoweringPatterns are patterns which intend to match on FuncOps and then perform their ow..." alt="" coords="560,628,749,673"/>
+<area shape="poly" id="edge89_Node000001_Node000002" title=" " alt="" coords="487,648,561,649,557,652,489,653"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1calyx_1_1BuildBasicBlockRegs.html" title="Builds registers for each block argument in the program." alt="" coords="827,5,995,50"/>
+<area shape="poly" id="edge90_Node000002_Node000003" title=" " alt="" coords="658,612,676,489,707,324,727,241,749,166,774,103,802,61,828,44,825,48,806,64,779,106,754,167,732,242,712,325,681,490,663,614"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1calyx_1_1BuildCallInstance.html" title="Builds instance for the calyx.invoke and calyx.group in order to initialize the instance." alt="" coords="804,74,1018,102"/>
+<area shape="poly" id="edge91_Node000002_Node000004" title=" " alt="" coords="658,612,678,498,709,349,729,274,751,206,776,150,802,112,823,100,819,104,806,116,780,153,756,208,734,275,714,350,683,499,663,614"/>
+<area shape="rect" id="Node000005" href="$classcirct_1_1calyx_1_1BuildReturnRegs.html" title="Builds registers for the return statement of the program and constant assignments to the component re..." alt="" coords="807,126,1015,154"/>
+<area shape="poly" id="edge92_Node000002_Node000005" title=" " alt="" coords="653,612,658,521,666,463,679,400,698,336,724,273,758,214,803,163,822,152,818,156,806,167,763,217,729,275,703,337,684,401,671,464,663,522,658,614"/>
+<area shape="rect" id="Node000006" href="$classcirct_1_1calyx_1_1ConvertIndexTypes.html" title="Converts all index&#45;typed operations and values to i32 values." alt="" coords="817,177,1005,222"/>
+<area shape="poly" id="edge93_Node000002_Node000006" title=" " alt="" coords="656,612,666,534,691,432,710,378,734,326,765,276,802,232,821,221,818,225,806,236,769,279,739,328,715,380,696,434,672,535,661,614"/>
+<area shape="rect" id="Node000007" href="$classcirct_1_1pipelinetocalyx_1_1BuildControl.html" title="Builds a control schedule by traversing the CFG of the function and associating this with the previou..." alt="" coords="832,247,990,291"/>
+<area shape="poly" id="edge94_Node000002_Node000007" title=" " alt="" coords="659,611,673,546,700,463,719,419,742,377,770,337,803,302,834,284,830,288,806,306,774,340,747,379,724,421,705,465,679,547,664,614"/>
+<area shape="rect" id="Node000008" href="$classcirct_1_1pipelinetocalyx_1_1BuildOpGroups.html" title="Iterate through the operations of a source function and instantiate components or primitives based on..." alt="" coords="832,316,990,361"/>
+<area shape="poly" id="edge95_Node000002_Node000008" title=" " alt="" coords="663,612,682,559,710,494,750,428,775,398,803,371,834,355,830,358,806,375,779,401,755,431,715,496,687,561,668,614"/>
+<area shape="rect" id="Node000009" href="$classcirct_1_1pipelinetocalyx_1_1BuildPipelineGroups.html" title="Builds groups for assigning registers for pipeline stages." alt="" coords="831,385,991,430"/>
+<area shape="poly" id="edge96_Node000002_Node000009" title=" " alt="" coords="670,613,692,573,722,527,759,480,803,440,833,426,828,429,806,444,763,484,726,530,696,576,674,616"/>
+<area shape="rect" id="Node000010" href="$classcirct_1_1pipelinetocalyx_1_1BuildPipelineRegs.html" title="Builds registers for each pipeline stage in the program." alt="" coords="832,455,990,499"/>
+<area shape="poly" id="edge97_Node000002_Node000010" title=" " alt="" coords="682,614,735,561,768,533,803,509,834,497,830,500,806,514,771,538,739,565,686,618"/>
+<area shape="rect" id="Node000011" href="$classcirct_1_1pipelinetocalyx_1_1BuildWhileGroups.html" title="In BuildWhileGroups, a register is created for each iteration argumenet of the while op." alt="" coords="832,524,990,569"/>
+<area shape="poly" id="edge98_Node000002_Node000011" title=" " alt="" coords="713,619,803,579,838,568,834,571,805,583,716,623"/>
+<area shape="rect" id="Node000012" href="$classcirct_1_1pipelinetocalyx_1_1CleanupFuncOps.html" title="Erases FuncOp operations." alt="" coords="832,593,990,638"/>
+<area shape="poly" id="edge99_Node000002_Node000012" title=" " alt="" coords="763,633,834,625,830,627,765,638"/>
+<area shape="rect" id="Node000013" href="$structcirct_1_1pipelinetocalyx_1_1FuncOpConversion.html" title="Creates a new Calyx component for each FuncOp in the program." alt="" coords="832,663,990,707"/>
+<area shape="poly" id="edge100_Node000002_Node000013" title=" " alt="" coords="764,663,834,674,829,675,765,668"/>
+<area shape="rect" id="Node000014" href="$classcirct_1_1pipelinetocalyx_1_1LateSSAReplacement.html" title="LateSSAReplacement contains various functions for replacing SSA values that were not replaced during ..." alt="" coords="826,732,996,777"/>
+<area shape="poly" id="edge101_Node000002_Node000014" title=" " alt="" coords="744,677,758,683,782,700,806,717,834,731,828,732,803,722,779,705,755,687,745,682"/>
+<area shape="rect" id="Node000015" href="$classcirct_1_1scftocalyx_1_1BuildControl.html" title="Builds a control schedule by traversing the CFG of the function and associating this with the previou..." alt="" coords="845,801,977,846"/>
+<area shape="poly" id="edge102_Node000002_Node000015" title=" " alt="" coords="753,679,758,683,770,696,777,710,783,737,789,762,795,775,806,787,825,800,848,811,842,812,822,805,803,791,791,778,784,764,778,738,772,712,765,699,754,687,753,684"/>
+<area shape="rect" id="Node000016" href="$classcirct_1_1scftocalyx_1_1BuildForGroups.html" title="In BuildForGroups, a register is created for the iteration argument of the for op." alt="" coords="845,871,977,915"/>
+<area shape="poly" id="edge103_Node000002_Node000016" title=" " alt="" coords="754,680,758,683,774,706,782,728,783,772,784,815,791,835,806,856,824,871,848,882,842,883,822,875,802,860,786,838,779,815,778,772,777,729,769,708,754,687,754,685"/>
+<area shape="rect" id="Node000017" href="$classcirct_1_1scftocalyx_1_1BuildIfGroups.html" title=" " alt="" coords="845,940,977,985"/>
+<area shape="poly" id="edge104_Node000002_Node000017" title=" " alt="" coords="755,680,758,683,779,715,787,746,787,777,783,807,779,837,779,866,787,896,806,926,824,940,848,953,842,953,821,945,802,929,782,898,774,867,774,836,777,806,781,776,781,747,774,717,754,687,754,686"/>
+<area shape="rect" id="Node000018" href="$classcirct_1_1scftocalyx_1_1BuildOpGroups.html" title="Iterate through the operations of a source function and instantiate components or primitives based on..." alt="" coords="845,1009,977,1054"/>
+<area shape="poly" id="edge105_Node000002_Node000018" title=" " alt="" coords="755,680,758,683,783,724,792,764,790,803,783,842,776,880,774,918,782,956,806,995,824,1010,848,1023,842,1022,821,1015,802,999,777,958,769,918,770,879,777,841,785,802,786,764,778,726,754,687,754,686"/>
+<area shape="rect" id="Node000019" href="$classcirct_1_1scftocalyx_1_1BuildWhileGroups.html" title="In BuildWhileGroups, a register is created for each iteration argumenet of the while op." alt="" coords="842,1079,980,1123"/>
+<area shape="poly" id="edge106_Node000002_Node000019" title=" " alt="" coords="755,681,758,683,776,708,787,733,794,758,797,782,793,830,783,877,772,923,769,970,771,993,778,1017,789,1040,806,1065,823,1079,845,1091,839,1091,820,1083,802,1068,785,1043,773,1018,766,994,763,970,767,922,777,875,788,829,791,782,789,759,782,735,771,711,754,687,755,686"/>
+<area shape="rect" id="Node000020" href="$classcirct_1_1scftocalyx_1_1CleanupFuncOps.html" title="Erases FuncOp operations." alt="" coords="845,1148,977,1193"/>
+<area shape="poly" id="edge107_Node000002_Node000020" title=" " alt="" coords="755,681,758,683,778,713,792,742,799,771,802,800,796,856,783,911,769,966,764,1021,766,1049,774,1077,787,1105,806,1134,824,1149,847,1162,842,1161,821,1154,802,1137,782,1108,769,1079,761,1050,758,1021,764,965,777,910,791,855,796,800,794,772,787,744,774,716,754,687,755,686"/>
+<area shape="rect" id="Node000021" href="$structcirct_1_1scftocalyx_1_1FuncOpConversion.html" title="Creates a new Calyx component for each FuncOp in the program." alt="" coords="840,1217,982,1262"/>
+<area shape="poly" id="edge108_Node000002_Node000021" title=" " alt="" coords="755,681,759,683,770,704,779,729,787,792,787,866,783,945,779,1025,779,1098,787,1160,795,1184,806,1203,822,1217,842,1230,837,1229,819,1222,802,1207,790,1186,782,1161,774,1098,774,1025,777,945,781,866,781,792,773,730,765,706,754,687,755,686"/>
+<area shape="rect" id="Node000022" href="$classcirct_1_1scftocalyx_1_1LateSSAReplacement.html" title="LateSSAReplacement contains various functions for replacing SSA values that were not replaced during ..." alt="" coords="830,1287,992,1331"/>
+<area shape="poly" id="edge109_Node000002_Node000022" title=" " alt="" coords="755,681,759,683,772,707,781,735,789,806,788,890,783,980,777,1070,777,1153,785,1223,794,1251,806,1273,833,1295,827,1294,802,1276,789,1253,780,1224,771,1153,772,1070,777,980,783,890,784,806,776,736,767,709,754,687,755,686"/>
+<area shape="rect" id="Node000025" href="$classcirct_1_1calyx_1_1RewriteMemoryAccesses.html" title="This pass rewrites memory accesses that have a width mismatch." alt="" coords="552,697,756,742"/>
+<area shape="poly" id="edge111_Node000024_Node000025" title=" " alt="" coords="480,717,554,718,549,721,482,722"/>
+<area shape="rect" id="Node000023" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="6,663,176,707"/>
+<area shape="poly" id="edge123_Node000023_Node000001" title=" " alt="" coords="190,670,258,662,254,666,193,674"/>
+<area shape="poly" id="edge124_Node000023_Node000024" title=" " alt="" coords="190,695,266,705,261,708,193,700"/>
+<area shape="poly" id="edge125_Node000023_Node000026" title=" " alt="" coords="142,713,226,752,262,765,257,767,224,757,144,718"/>
+<area shape="poly" id="edge126_Node000023_Node000027" title=" " alt="" coords="116,717,165,772,194,799,226,821,273,842,268,844,223,826,190,803,161,776,117,722"/>
+<area shape="poly" id="edge127_Node000023_Node000028" title=" " alt="" coords="106,719,126,761,152,807,185,853,226,891,252,905,281,916,276,918,249,910,223,895,181,856,147,810,121,763,106,724"/>
+<area shape="poly" id="edge128_Node000023_Node000029" title=" " alt="" coords="100,720,117,776,141,840,177,906,200,935,226,960,251,976,281,987,276,989,249,980,223,964,196,938,173,908,136,843,112,778,100,725"/>
+<area shape="poly" id="edge129_Node000023_Node000030" title=" " alt="" coords="96,720,109,789,131,872,148,915,169,957,195,996,226,1030,251,1046,280,1058,275,1059,248,1050,223,1034,191,999,164,960,143,918,126,874,103,790,95,725"/>
+<area shape="poly" id="edge130_Node000023_Node000031" title=" " alt="" coords="173,651,175,649,190,625,200,602,208,556,204,511,195,467,185,422,183,377,186,355,193,332,205,309,223,286,238,272,259,263,256,267,241,277,227,289,210,312,198,334,191,356,188,378,191,421,200,466,210,511,213,556,205,604,195,628,179,652,178,653"/>
+<area shape="poly" id="edge131_Node000023_Node000032" title=" " alt="" coords="173,651,175,649,188,628,197,609,204,569,202,530,194,491,187,452,185,414,196,375,207,356,223,336,238,324,259,316,255,320,241,329,227,340,211,359,201,377,191,414,192,452,199,490,207,529,210,569,202,610,193,631,179,652,178,653"/>
+<area shape="poly" id="edge132_Node000023_Node000033" title=" " alt="" coords="173,651,175,649,193,618,200,588,200,557,196,527,192,497,192,467,201,436,223,406,242,390,267,380,264,385,245,395,227,409,206,439,198,468,197,497,201,527,205,557,206,588,198,620,179,652,177,654"/>
+<area shape="poly" id="edge133_Node000023_Node000034" title=" " alt="" coords="172,651,175,649,189,627,196,605,196,562,198,519,206,497,223,475,255,455,252,460,226,479,211,499,203,520,202,562,201,606,194,629,179,652,177,654"/>
+<area shape="poly" id="edge134_Node000023_Node000035" title=" " alt="" coords="171,652,175,648,185,636,192,623,197,597,203,570,211,557,223,544,249,528,281,518,277,522,251,533,226,548,215,560,208,572,202,598,197,625,190,639,179,652,175,655"/>
+<area shape="poly" id="edge135_Node000023_Node000036" title=" " alt="" coords="164,654,175,648,199,630,223,613,257,602,253,606,226,618,202,635,178,653,169,657"/>
+</map>

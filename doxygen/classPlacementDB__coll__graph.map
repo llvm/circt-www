@@ -1,0 +1,7 @@
+<map id="PlacementDB" name="PlacementDB">
+<area shape="rect" id="Node000001" title=" " alt="" coords="38,207,147,234"/>
+<area shape="rect" id="Node000002" href="$structCirctMSFTPlacementDB.html" title=" " alt="" coords="5,106,180,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,148,95,207,90,205,90,151"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="62,5,123,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,46,95,106,90,105,91,51"/>
+</map>

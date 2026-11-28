@@ -1,0 +1,5 @@
+<map id="circt::arc::runtime::impl::DummyTraceEncoder" name="circt::arc::runtime::impl::DummyTraceEncoder">
+<area shape="rect" id="Node000001" title="Dummy encoder discarding all produced trace data." alt="" coords="5,98,210,143"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1arc_1_1runtime_1_1impl_1_1TraceEncoder.html" title="Abstract TraceEncoder managing trace buffers and the encoder thread." alt="" coords="31,5,184,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,64,110,99,105,97,106,68"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="llvm::PointerLikeTypeTraits&lt; circt::firrtl::Annotation &gt;" name="llvm::PointerLikeTypeTraits&lt; circt::firrtl::Annotation &gt;">
+<area shape="rect" id="Node000001" title="Make Annotation behave like a Attribute in terms of pointer&#45;likeness." alt="" coords="5,98,201,143"/>
+<area shape="rect" id="Node000002" href="$classPointerLikeTypeTraits.html" title=" " alt="" coords="24,5,182,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,64,105,99,101,97,101,68"/>
+</map>

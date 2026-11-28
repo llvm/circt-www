@@ -1,0 +1,17 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Target/ExportSystemC/EmissionPattern.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/lib/Target/ExportSystemC/EmissionPattern.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="612,5,801,84"/>
+<area shape="rect" id="Node000002" href="$EmissionPrinter_8h.html" title=" " alt="" coords="612,132,801,211"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="708,98,709,133,704,130,705,102"/>
+<area shape="rect" id="Node000003" href="$EmissionPrinter_8cpp.html" title=" " alt="" coords="5,259,195,337"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="594,187,414,217,310,237,207,261,196,264,194,259,206,256,309,232,413,212,600,185"/>
+<area shape="rect" id="Node000004" href="$ExportSystemC_8cpp.html" title=" " alt="" coords="219,259,408,337"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="600,204,421,261,409,265,408,260,419,256,594,205"/>
+<area shape="rect" id="Node000005" href="$BuiltinEmissionPatterns_8cpp.html" title=" " alt="" coords="432,259,696,337"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="653,220,610,261,607,256,648,222"/>
+<area shape="rect" id="Node000006" href="$EmitCEmissionPatterns_8cpp.html" title=" " alt="" coords="719,259,980,337"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="763,219,808,259,802,257,762,224"/>
+<area shape="rect" id="Node000007" href="$HWEmissionPatterns_8cpp.html" title=" " alt="" coords="1003,259,1248,337"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="817,202,1006,260,1000,260,816,208"/>
+<area shape="rect" id="Node000008" href="$SystemCEmissionPatterns_8cpp.html" title=" " alt="" coords="1271,259,1550,337"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="817,184,1023,214,1261,256,1273,261,1268,261,1259,261,1023,219,817,189"/>
+</map>

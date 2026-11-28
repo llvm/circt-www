@@ -1,0 +1,11 @@
+<map id="esi::utils::ReadyIdSet&lt; ID &gt;" name="esi::utils::ReadyIdSet&lt; ID &gt;">
+<area shape="rect" id="Node000001" title="Multi&#45;producer / single&#45;consumer dirty&#45;set of channel ids, with CV&#45;style blocking drain semantics." alt="" coords="180,106,339,151"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,69,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,39,143,80,200,105,195,106,140,84,69,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="93,5,234,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="186,42,243,105,237,105,184,47"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="258,5,456,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="338,43,281,108,278,103,333,45"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="480,5,530,33"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="469,39,374,84,317,108,315,103,372,80,464,40"/>
+</map>

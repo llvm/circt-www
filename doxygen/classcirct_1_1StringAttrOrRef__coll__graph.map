@@ -1,0 +1,5 @@
+<map id="circt::StringAttrOrRef" name="circt::StringAttrOrRef">
+<area shape="rect" id="Node000001" title="A helper union that can represent a StringAttr, StringRef, or Twine." alt="" coords="14,140,170,168"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,179,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,81,95,140,89,139,90,84"/>
+</map>

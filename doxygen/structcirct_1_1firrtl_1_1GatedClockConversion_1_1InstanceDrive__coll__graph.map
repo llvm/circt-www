@@ -1,0 +1,16 @@
+<map id="circt::firrtl::GatedClockConversion::InstanceDrive" name="circt::firrtl::GatedClockConversion::InstanceDrive">
+<area shape="rect" id="Node000001" title="Caller&#45;side connects driving a planned input port pair." alt="" coords="51,249,243,293"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,127,100,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,167,80,196,99,223,122,248,117,249,94,226,76,198,63,172"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="119,5,199,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,47,151,249,146,248,155,49"/>
+<area shape="rect" id="Node000004" href="$classcirct_1_1firrtl_1_1GatedClockConversion_1_1MatRef.html" title="A reference to a clock/enable value that can also name values which do not exist yet (a planned port,..." alt="" coords="236,118,403,163"/>
+<area shape="poly" id="edge7_Node000004_Node000003" title=" " alt="" coords="183,41,229,80,284,117,279,119,226,84,183,47"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="280,173,177,251,174,246,275,173"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="235,5,286,33"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="272,45,290,81,309,118,304,117,285,83,271,50"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="309,5,366,33"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="335,46,325,119,320,117,332,50"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="391,5,487,33"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="419,43,382,84,344,120,341,116,379,80,415,46"/>
+</map>

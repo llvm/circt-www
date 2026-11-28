@@ -1,0 +1,10 @@
+<map id="circt::pretty::BeginToken" name="circt::pretty::BeginToken">
+<area shape="rect" id="Node000001" title=" " alt="" coords="13,333,190,361"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1pretty_1_1TokenBase.html" title=" " alt="" coords="5,222,198,284"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,298,104,334,99,332,100,301"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1pretty_1_1Token.html" title=" " alt="" coords="26,5,166,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,47,103,222,98,222,95,50"/>
+<area shape="rect" id="Node000004" href="$structcirct_1_1pretty_1_1TokenBase.html" title="Helper class to CRTP&#45;derive common functions." alt="" coords="117,82,315,127"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="127,39,187,81,182,83,128,45"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="192,137,127,224,123,220,188,141"/>
+</map>

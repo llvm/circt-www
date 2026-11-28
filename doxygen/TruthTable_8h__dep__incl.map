@@ -1,0 +1,26 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Support/TruthTable.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Support/TruthTable.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="588,5,828,67"/>
+<area shape="rect" id="Node000002" href="$CutRewriter_8h.html" title=" " alt="" coords="476,115,671,194"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="664,76,620,117,617,112,659,79"/>
+<area shape="rect" id="Node000003" href="$CutRewriter_8cpp.html" title=" " alt="" coords="5,242,214,320"/>
+<area shape="poly" id="edge9_Node000001_Node000003" title=" " alt="" coords="570,62,481,86,388,117,326,146,266,179,165,243,162,239,263,174,324,141,386,113,479,81,575,60"/>
+<area shape="rect" id="Node000005" href="$GenericLUTMapper_8cpp.html" title=" " alt="" coords="237,242,446,320"/>
+<area shape="poly" id="edge11_Node000001_Node000005" title=" " alt="" coords="571,65,518,88,466,117,433,145,405,178,363,243,359,239,401,175,430,141,463,113,516,83,576,63"/>
+<area shape="rect" id="Node000006" href="$SOPBalancing_8cpp.html" title=" " alt="" coords="1165,242,1374,320"/>
+<area shape="poly" id="edge12_Node000001_Node000006" title=" " alt="" coords="704,81,705,111,710,140,720,168,737,192,770,211,817,223,873,229,935,232,1059,232,1112,234,1154,239,1167,245,1162,244,1153,244,1112,239,1059,237,935,237,873,235,816,228,768,216,733,196,715,171,704,142,700,111,701,85"/>
+<area shape="rect" id="Node000009" href="$SimplifyTruthTable_8cpp.html" title=" " alt="" coords="746,115,956,194"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="758,74,806,115,801,114,756,80"/>
+<area shape="rect" id="Node000010" href="$ExactSynthesis_8cpp.html" title=" " alt="" coords="980,115,1188,194"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="826,69,969,112,983,119,977,119,967,118,826,74"/>
+<area shape="rect" id="Node000011" href="$TruthTable_8cpp.html" title=" " alt="" coords="1212,124,1404,185"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="844,49,1015,74,1109,92,1201,112,1231,123,1225,123,1200,118,1108,97,1014,80,844,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="460,184,226,244,215,248,213,243,225,239,462,179"/>
+<area shape="rect" id="Node000004" href="$FunctionalReduction_8cpp.html" title=" " alt="" coords="469,242,678,320"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="575,207,576,243,571,239,572,211"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="491,201,415,244,413,239,485,202"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="686,190,690,191,760,204,819,211,922,215,1024,219,1084,226,1154,239,1167,244,1162,244,1153,244,1083,232,1024,225,921,220,819,216,759,209,689,196,686,196"/>
+<area shape="rect" id="Node000007" href="$TechMapper_8cpp.html" title=" " alt="" coords="701,242,910,320"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="660,199,736,241,731,241,658,204"/>
+<area shape="rect" id="Node000008" href="$TestPriorityCuts_8cpp.html" title=" " alt="" coords="933,242,1142,320"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="686,190,690,191,755,206,806,215,857,224,922,239,935,245,930,245,921,244,856,229,805,220,754,211,689,196,685,195"/>
+</map>

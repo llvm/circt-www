@@ -1,0 +1,5 @@
+<map id="esi::TypedReadPort&lt; T, SkipTypeCheck &gt;" name="esi::TypedReadPort&lt; T, SkipTypeCheck &gt;">
+<area shape="rect" id="Node000001" title="Strongly typed wrapper around a raw read channel." alt="" coords="5,5,171,50"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1TypedReadPort_3_01void_01_4.html" title="Specialization for void — read discards data and returns nothing." alt="" coords="15,123,161,168"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,64,91,123,85,122,86,68"/>
+</map>

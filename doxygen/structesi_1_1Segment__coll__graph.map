@@ -1,0 +1,9 @@
+<map id="esi::Segment" name="esi::Segment">
+<area shape="rect" id="Node000001" title="A contiguous, non&#45;owning view of bytes within a SegmentedMessageData." alt="" coords="72,106,178,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,72,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="56,44,85,80,111,105,106,106,81,84,54,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="96,5,155,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,47,128,106,123,104,123,50"/>
+<area shape="rect" id="Node000004" href="$structesi_1_1services_1_1HostMemRegion.html" title="RAII memory region for host memory in accelerator&#45;accessible address space." alt="" coords="179,5,397,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="256,42,148,108,146,103,251,41"/>
+</map>

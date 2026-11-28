@@ -1,0 +1,7 @@
+<map id="esi::cosim::FaultStash" name="esi::cosim::FaultStash">
+<area shape="rect" id="Node000001" title="Cross&#45;thread error channel for the IXWebSocket network thread." alt="" coords="10,106,173,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,69,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="51,45,71,81,86,106,80,105,66,83,49,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="92,5,203,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,46,121,83,104,107,100,103,116,81,134,49"/>
+</map>

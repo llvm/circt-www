@@ -1,0 +1,9 @@
+<map id="circt::firrtl::TokenAnnoTarget" name="circt::firrtl::TokenAnnoTarget">
+<area shape="rect" id="Node000001" title="The parsed annotation path." alt="" coords="329,97,491,142"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="62,46,143,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,63,229,72,305,86,338,96,333,97,304,92,228,78,159,68"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,97,200,142"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="215,117,331,119,326,121,216,122"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="24,167,181,211"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="195,170,304,147,331,143,336,142,305,153,196,176"/>
+</map>

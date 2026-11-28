@@ -1,0 +1,7 @@
+<map id="circt::calyx::PredicateInfo" name="circt::calyx::PredicateInfo">
+<area shape="rect" id="Node000001" title="Predicate information for the floating point comparisons." alt="" coords="34,140,220,168"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,22,99,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,61,121,139,116,140,67,65"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="122,5,280,67"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,79,137,141,133,138,171,81"/>
+</map>

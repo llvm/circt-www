@@ -1,0 +1,9 @@
+<map id="circt::pretty::TokenStringSaver" name="circt::pretty::TokenStringSaver">
+<area shape="rect" id="Node000001" title="PrettyPrinter::Listener that saves strings while live." alt="" coords="193,123,371,168"/>
+<area shape="rect" id="Node000002" href="$structcirct_1_1pretty_1_1PrettyPrinter_1_1Listener.html" title="Listener to Token storage events." alt="" coords="5,5,191,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,56,250,121,245,124,144,61"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="214,14,350,42"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="284,55,284,124,280,121,280,59"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="374,14,470,42"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="397,51,309,125,307,120,392,52"/>
+</map>

@@ -1,0 +1,53 @@
+<map id="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Moore/MooreAttributes.h" name="/home/runner/work/circt&#45;www/circt&#45;www/circt_src/include/circt/Dialect/Moore/MooreAttributes.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="3002,5,3201,84"/>
+<area shape="rect" id="Node000002" href="$MooreOps_8h.html" title=" " alt="" coords="2563,132,2762,211"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2989,78,2763,144,2762,139,2984,79"/>
+<area shape="rect" id="Node000021" href="$MooreOps_8cpp.html" title=" " alt="" coords="3286,267,3519,329"/>
+<area shape="poly" id="edge29_Node000001_Node000021" title=" " alt="" coords="3098,97,3099,127,3104,156,3113,184,3128,209,3304,267,3299,266,3125,213,3108,187,3099,158,3094,128,3094,101"/>
+<area shape="rect" id="Node000022" href="$MooreAttributes_8cpp.html" title=" " alt="" coords="3138,140,3411,202"/>
+<area shape="poly" id="edge28_Node000001_Node000022" title=" " alt="" coords="3168,91,3235,141,3230,139,3166,96"/>
+<area shape="rect" id="Node000003" href="$MoorePasses_8h.html" title=" " alt="" coords="2400,259,2600,337"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="2603,219,2551,261,2549,256,2598,221"/>
+<area shape="rect" id="Node000006" href="$CreateVTables_8cpp.html" title=" " alt="" coords="2579,385,2791,464"/>
+<area shape="poly" id="edge25_Node000002_Node000006" title=" " alt="" coords="2665,224,2672,337,2679,387,2675,383,2667,338,2661,228"/>
+<area shape="rect" id="Node000007" href="$SimplifyProcedures_8cpp.html" title=" " alt="" coords="2815,385,3027,464"/>
+<area shape="poly" id="edge26_Node000002_Node000007" title=" " alt="" coords="2671,224,2689,283,2703,311,2722,335,2759,360,2817,387,2812,386,2756,364,2718,339,2699,313,2684,285,2668,228"/>
+<area shape="rect" id="Node000008" href="$SimplifyRefs_8cpp.html" title=" " alt="" coords="3051,385,3263,464"/>
+<area shape="poly" id="edge27_Node000002_Node000008" title=" " alt="" coords="2696,221,2719,257,2731,281,2738,301,2748,319,2765,335,2801,356,2834,368,2865,373,2895,374,2960,372,2998,375,3040,383,3053,388,3048,388,3039,388,2997,380,2960,378,2895,379,2864,378,2833,373,2799,361,2762,339,2743,322,2733,303,2726,283,2715,260,2694,226"/>
+<area shape="rect" id="Node000009" href="$AssertionExpr_8cpp.html" title=" " alt="" coords="5,385,216,464"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="2545,174,2149,183,1603,198,1321,209,1058,223,832,240,660,261,538,287,417,319,305,355,212,387,210,382,304,350,415,314,537,281,659,256,831,235,1058,218,1321,204,1603,193,2149,178,2550,174"/>
+<area shape="rect" id="Node000010" href="$Expressions_8cpp.html" title=" " alt="" coords="240,385,450,464"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="2544,175,2297,184,1955,198,1563,223,1363,241,1167,261,967,286,812,310,659,341,463,388,451,391,450,386,462,383,658,336,811,304,966,281,1166,256,1362,235,1563,218,1954,193,2297,179,2550,174"/>
+<area shape="rect" id="Node000011" href="$ImportVerilogInternals_8h.html" title=" " alt="" coords="1179,259,1389,337"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="2544,184,1390,290,1389,285,2550,183"/>
+<area shape="rect" id="Node000015" href="$Statements_8cpp.html" title=" " alt="" coords="1883,385,2093,464"/>
+<area shape="poly" id="edge21_Node000002_Node000015" title=" " alt="" coords="2551,206,2389,261,2222,326,2076,387,2075,382,2220,321,2387,256,2546,207"/>
+<area shape="rect" id="Node000019" href="$MooreToCore_8cpp.html" title=" " alt="" coords="2776,259,2984,337"/>
+<area shape="poly" id="edge22_Node000002_Node000019" title=" " alt="" coords="2744,216,2815,259,2810,258,2743,221"/>
+<area shape="rect" id="Node000020" href="$MooreDialect_8cpp.html" title=" " alt="" coords="3007,267,3262,329"/>
+<area shape="poly" id="edge23_Node000002_Node000020" title=" " alt="" coords="2777,199,2997,256,3028,267,3023,266,2995,261,2777,204"/>
+<area shape="poly" id="edge24_Node000002_Node000021" title=" " alt="" coords="2778,181,3008,210,3142,231,3274,256,3308,267,3303,266,3273,261,3141,236,3007,215,2778,186"/>
+<area shape="rect" id="Node000004" href="$InitAllPasses_8h.html" title=" " alt="" coords="2352,394,2554,456"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="2482,351,2466,396,2463,391,2478,354"/>
+<area shape="rect" id="Node000005" href="$ImportVerilog_8cpp.html" title=" " alt="" coords="2117,385,2328,464"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="2402,344,2309,387,2308,382,2397,345"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="2571,344,2630,385,2625,384,2569,349"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="2615,328,2805,383,2817,389,2812,388,2803,388,2614,333"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="2615,317,2720,335,2881,355,2951,365,3040,383,3053,388,3048,388,3039,388,2950,370,2880,360,2719,340,2615,322"/>
+<area shape="poly" id="edge15_Node000011_Node000005" title=" " alt="" coords="1404,301,1548,310,1723,326,1915,349,2106,383,2120,388,2115,388,2105,388,1914,354,1723,331,1547,316,1405,307"/>
+<area shape="poly" id="edge11_Node000011_Node000009" title=" " alt="" coords="1161,300,981,308,747,322,488,347,356,365,228,388,216,391,215,385,227,383,355,360,487,342,747,316,981,303,1166,300"/>
+<area shape="poly" id="edge12_Node000011_Node000010" title=" " alt="" coords="1163,314,463,388,451,391,450,385,462,383,1163,309"/>
+<area shape="rect" id="Node000012" href="$FormatStrings_8cpp.html" title=" " alt="" coords="475,385,685,464"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="1161,311,946,342,821,362,698,388,686,391,685,386,697,383,820,357,945,336,1166,311"/>
+<area shape="rect" id="Node000013" href="$HierarchicalNames_8cpp.html" title=" " alt="" coords="709,385,920,464"/>
+<area shape="poly" id="edge14_Node000011_Node000013" title=" " alt="" coords="1166,326,933,388,920,391,919,386,931,383,1161,327"/>
+<area shape="rect" id="Node000014" href="$ScanStrings_8cpp.html" title=" " alt="" coords="944,385,1154,464"/>
+<area shape="poly" id="edge16_Node000011_Node000014" title=" " alt="" coords="1200,344,1123,387,1121,382,1195,346"/>
+<area shape="poly" id="edge17_Node000011_Node000015" title=" " alt="" coords="1404,308,1623,336,1748,357,1871,383,1885,389,1880,388,1870,388,1747,362,1622,342,1404,314"/>
+<area shape="rect" id="Node000016" href="$Structure_8cpp.html" title=" " alt="" coords="1179,385,1389,464"/>
+<area shape="poly" id="edge18_Node000011_Node000016" title=" " alt="" coords="1286,351,1286,387,1282,383,1282,355"/>
+<area shape="rect" id="Node000017" href="$TimingControls_8cpp.html" title=" " alt="" coords="1413,385,1624,464"/>
+<area shape="poly" id="edge19_Node000011_Node000017" title=" " alt="" coords="1371,342,1448,385,1443,384,1370,348"/>
+<area shape="rect" id="Node000018" href="$Conversion_2ImportVerilog_2Types_8cpp.html" title=" " alt="" coords="1648,385,1858,464"/>
+<area shape="poly" id="edge20_Node000011_Node000018" title=" " alt="" coords="1405,324,1637,383,1650,389,1645,388,1635,388,1404,329"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="circt::esi::ServicePortInfo" name="circt::esi::ServicePortInfo">
+<area shape="rect" id="Node000001" title="Describes a service port." alt="" coords="38,106,222,134"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,106,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,43,123,105,118,106,73,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="130,5,280,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,45,142,107,138,103,183,46"/>
+</map>

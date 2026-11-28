@@ -1,0 +1,9 @@
+<map id="circt::synth::CutRewritePatternSet" name="circt::synth::CutRewritePatternSet">
+<area shape="rect" id="Node000001" title="Manages a collection of rewriting patterns for combinational logic optimization." alt="" coords="397,124,570,169"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="10,5,224,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,69,409,123,405,125,236,75"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,90,229,203"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="244,144,398,146,394,148,245,149"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,227,229,288"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="235,219,404,170,409,169,237,224"/>
+</map>

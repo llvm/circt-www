@@ -1,0 +1,25 @@
+<map id="circt::calyx::RewriteMemoryAccesses" name="circt::calyx::RewriteMemoryAccesses">
+<area shape="rect" id="Node000001" title="This pass rewrites memory accesses that have a width mismatch." alt="" coords="1106,247,1311,291"/>
+<area shape="rect" id="Node000002" href="$classcirct_1_1calyx_1_1PartialLoweringPattern.html" title=" " alt="" coords="831,147,1032,191"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1010,194,1147,246,1142,246,1010,200"/>
+<area shape="rect" id="Node000003" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="417,75,586,119"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="601,111,833,151,828,153,602,116"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="38,135,161,163"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="175,149,362,154,832,165,829,169,362,159,177,154"/>
+<area shape="rect" id="Node000006" href="$classcirct_1_1calyx_1_1PartialLoweringPattern.html" title="Base class for partial lowering passes." alt="" coords="362,5,641,50"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="154,127,361,60,407,49,402,52,362,65,157,132"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,206,194,234"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="209,213,641,191,833,178,828,179,641,197,210,218"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="207,202,242,192,276,178,308,159,336,136,346,118,347,100,348,80,360,61,379,49,375,52,364,64,353,82,352,100,351,120,340,140,311,164,278,182,244,197,210,207"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="612,52,642,60,726,85,808,115,881,146,876,146,806,119,724,90,640,65,613,57"/>
+<area shape="rect" id="Node000007" href="$structmlir_1_1OpRewritePattern.html" title=" " alt="" coords="15,5,184,50"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="198,25,363,26,359,29,200,30"/>
+<area shape="rect" id="Node000008" href="$classcirct_1_1calyx_1_1CalyxLoweringState.html" title="An interface for conversion passes that lower Calyx programs." alt="" coords="834,317,1030,362"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="1036,310,1116,292,1121,291,1037,316"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="461,298,542,326"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="558,313,836,333,830,334,558,318"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="458,354,545,382"/>
+<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="561,367,675,367,807,359,836,358,830,359,807,365,675,372,561,372"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="377,406,626,484"/>
+<area shape="poly" id="edge12_Node000008_Node000011" title=" " alt="" coords="641,430,724,417,806,397,850,380,888,363,894,362,852,385,808,402,725,422,642,436"/>
+</map>

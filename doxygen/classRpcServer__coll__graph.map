@@ -1,0 +1,13 @@
+<map id="RpcServer" name="RpcServer">
+<area shape="rect" id="Node000001" title="TODO: make this a proper backend (as much as possible)." alt="" coords="661,97,748,125"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1Context.html" title="AcceleratorConnections, Accelerators, and Manifests must all share a context." alt="" coords="441,65,540,93"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="555,86,663,105,658,105,555,91"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="42,5,234,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="249,26,381,46,447,65,441,65,380,51,249,32"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,57,271,102"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="286,77,443,78,438,80,286,82"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="51,126,225,171"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="240,132,380,107,439,94,444,93,381,112,241,137"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="405,117,576,162"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="591,139,636,134,669,126,674,125,638,139,592,144"/>
+</map>

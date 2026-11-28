@@ -1,0 +1,9 @@
+<map id="loopback.OddStruct" name="loopback.OddStruct">
+<area shape="rect" id="Node000001" title=" " alt="" coords="38,106,186,134"/>
+<area shape="rect" id="Node000002" href="$classStruct.html" title=" " alt="" coords="5,5,65,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="56,43,104,105,99,106,53,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="88,5,136,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="114,47,115,106,110,105,110,50"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="161,5,208,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="169,45,124,107,120,103,164,46"/>
+</map>

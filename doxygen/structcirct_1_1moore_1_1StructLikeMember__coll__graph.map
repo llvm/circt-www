@@ -1,0 +1,9 @@
+<map id="circt::moore::StructLikeMember" name="circt::moore::StructLikeMember">
+<area shape="rect" id="Node000001" title="A member of a struct." alt="" coords="5,183,177,228"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="12,82,95,110"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,123,86,182,81,182,62,127"/>
+<area shape="rect" id="Node000003" href="$classcirct_1_1moore_1_1UnpackedType.html" title="An unpacked SystemVerilog type." alt="" coords="120,82,321,110"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,120,119,184,116,180,190,120"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="195,5,246,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="222,46,223,83,218,81,219,51"/>
+</map>

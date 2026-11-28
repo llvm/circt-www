@@ -1,0 +1,9 @@
+<map id="RpcClient" name="RpcClient">
+<area shape="rect" id="Node000001" title="A client for the cosim RPC server." alt="" coords="224,145,307,173"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,14,86,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="47,54,55,90,62,106,73,119,98,132,137,142,226,154,221,156,136,147,96,137,69,123,58,109,50,92,45,59"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="236,14,295,42"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="268,55,268,146,263,144,263,59"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="335,5,502,50"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="417,64,409,96,391,123,373,137,351,147,308,158,307,153,349,142,370,133,388,120,404,94,413,67"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="SerialCoordOutputBatch::TypeDeserializer" name="SerialCoordOutputBatch::TypeDeserializer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1362,145,1540,190"/>
+<area shape="rect" id="Node000002" href="$classesi_1_1QueuedDecodeTypeDeserializer.html" title=" " alt="" coords="931,57,1186,102"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1202,91,1271,102,1339,118,1405,145,1400,144,1338,123,1270,107,1202,96"/>
+<area shape="rect" id="Node000003" href="$classesi_1_1QueuedDecodeTypeDeserializer.html" title="Helper base class for stateful deserializers which may emit zero, one, or many typed outputs for each..." alt="" coords="396,65,689,93"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="705,77,933,79,928,80,705,82"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,5,237,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="252,30,372,46,470,64,464,65,371,51,252,36"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="47,57,195,102"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="211,77,397,77,393,81,211,82"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="89,125,153,153"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="168,132,371,107,468,93,463,94,372,112,169,137"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="994,125,1124,153"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1139,142,1365,161,1359,161,1139,148"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="990,181,1127,209"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1143,195,1237,194,1338,187,1359,187,1364,186,1339,192,1237,199,1143,200"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="1029,237,1088,265"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1104,250,1212,246,1275,238,1338,224,1378,208,1413,191,1418,189,1380,213,1339,229,1276,244,1212,252,1104,255"/>
+</map>
